@@ -3,6 +3,7 @@ CONTENT[18] = {
   {
    "pool": [
     {
+     "id": "18.1-1",
      "q": "Ali SI bilan butun kafe sayti qilmoqchi. Avval SI'dan nima so'raydi?",
      "o": [
       "Ish rejasini",
@@ -13,6 +14,7 @@ CONTENT[18] = {
      "e": "Katta ishdan oldin SI'dan reja so'ra."
     },
     {
+     "id": "18.1-2",
      "q": "Qaysi ish uchun avval reja so'rash kerak?",
      "o": [
       "Butun gul do'koni sayti",
@@ -23,6 +25,7 @@ CONTENT[18] = {
      "e": "Butun sayt — katta ish, unga reja kerak."
     },
     {
+     "id": "18.1-3",
      "q": "Qaysi prompt SI'dan reja so'raydi?",
      "o": [
       "\"Boshlamay, avval reja yozib ber\"",
@@ -33,6 +36,7 @@ CONTENT[18] = {
      "e": "Bu prompt SI'dan ishdan oldin reja so'raydi."
     },
     {
+     "id": "18.1-4",
      "q": "Reja senga nimaga yordam beradi?",
      "o": [
       "SI nima qilishini oldindan bilasan",
@@ -43,6 +47,7 @@ CONTENT[18] = {
      "e": "Reja SI qiladigan ishlarni oldindan ko'rsatadi."
     },
     {
+     "id": "18.1-5",
      "q": "Madina sarlavhadagi bitta harfni tuzatmoqchi. Reja kerakmi?",
      "o": [
       "Yo'q, bu kichik ish",
@@ -53,6 +58,7 @@ CONTENT[18] = {
      "e": "Reja katta ish uchun kerak, bitta harf kichik ish."
     },
     {
+     "id": "18.1-6",
      "q": "Jasur reja so'ramay, darhol butun botni so'radi. Qanday xavf bor?",
      "o": [
       "SI keraksiz ish qilgan bo'lishi mumkin",
@@ -67,6 +73,7 @@ CONTENT[18] = {
   {
    "pool": [
     {
+     "id": "18.2-1",
      "q": "Alining logotipi tayyor, rejada esa \"Logotip chizish\" bor. Bu qadam qanday?",
      "o": [
       "Keraksiz qadam",
@@ -77,6 +84,7 @@ CONTENT[18] = {
      "e": "Logotip tayyor, demak uni chizish qadami keraksiz."
     },
     {
+     "id": "18.2-2",
      "q": "Madinaga faqat gul narxlari sahifasi kerak. Qaysi qadam keraksiz?",
      "o": [
       "Video qo'shish",
@@ -87,6 +95,7 @@ CONTENT[18] = {
      "e": "Narxlar sahifasiga video kerak emas."
     },
     {
+     "id": "18.2-3",
      "q": "Keraksiz qadam rejada qolib ketsa, nima bo'ladi?",
      "o": [
       "SI ortiqcha ish qiladi",
@@ -97,6 +106,7 @@ CONTENT[18] = {
      "e": "SI rejadagi hamma qadamni bajaradi, keraksizini ham."
     },
     {
+     "id": "18.2-4",
      "q": "Kamolaning rejasida 2 ta keraksiz qadam bor. U nima qiladi?",
      "o": [
       "Ikkalasini olib tashlashni aytadi",
@@ -107,6 +117,7 @@ CONTENT[18] = {
      "e": "Har bir keraksiz qadamni olib tashlashni ayt."
     },
     {
+     "id": "18.2-5",
      "q": "Sport zali rejasi: 1) Sarlavha 2) Narxlar 3) Musiqa. Musiqa kerak emas, nima yozasan?",
      "o": [
       "\"3-qadamni olib tashla\"",
@@ -117,6 +128,7 @@ CONTENT[18] = {
      "e": "Musiqa 3-qadam, uni olib tashlashni aytasan."
     },
     {
+     "id": "18.2-6",
      "q": "SI \"Keraksiz qadamni olib tashla\" gapini tushunmadi. Nimani qo'shish kerak?",
      "o": [
       "Qadamning raqami yoki nomi",
@@ -131,6 +143,7 @@ CONTENT[18] = {
   {
    "pool": [
     {
+     "id": "18.3-1",
      "q": "Rejada keraksiz \"O'yin\" bor, \"Telefon raqami\" yo'q. Nima yozasan?",
      "o": [
       "\"O'yinni olib tashla, raqamni qo'sh\"",
@@ -141,6 +154,7 @@ CONTENT[18] = {
      "e": "Keraksizini olib tashlaysan, yetishmaganini qo'shasan."
     },
     {
+     "id": "18.3-2",
      "q": "Bot buyurtma olishi kerak, rejada esa faqat salom va menyu bor. Nima yetishmaydi?",
      "o": [
       "Buyurtma olish qadami",
@@ -151,6 +165,7 @@ CONTENT[18] = {
      "e": "Buyurtma olish kerak, lekin rejada u yo'q."
     },
     {
+     "id": "18.3-3",
      "q": "Yetishmagan qadamni qanday topasan?",
      "o": [
       "Kerakli narsalarni rejadan qidiraman",
@@ -161,6 +176,7 @@ CONTENT[18] = {
      "e": "Har bir kerakli narsa rejada bormi, qarab chiq."
     },
     {
+     "id": "18.3-4",
      "q": "Jasur yetishmagan qadamni SI'ga aytmadi. Nima bo'ladi?",
      "o": [
       "Saytda o'sha narsa bo'lmaydi",
@@ -171,6 +187,7 @@ CONTENT[18] = {
      "e": "Rejada yo'q qadamni SI bajarmaydi."
     },
     {
+     "id": "18.3-5",
      "q": "Kamolaga kitob rasmlari kerak, rejada ular yo'q. Qaysi prompt aniq?",
      "o": [
       "\"Kitob rasmlari qadamini qo'sh\"",
@@ -181,6 +198,7 @@ CONTENT[18] = {
      "e": "Bu prompt qaysi qadamni qo'shishni aniq aytadi."
     },
     {
+     "id": "18.3-6",
      "q": "Otabek rejani o'qidi, hamma kerakli qadam bor. Nima qiladi?",
      "o": [
       "Rejani shu holicha ma'qullaydi",

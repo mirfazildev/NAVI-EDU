@@ -3,6 +3,7 @@ CONTENT[16] = {
   {
    "pool": [
     {
+     "id": "16.1-1",
      "q": "SI qachon aylanib qolgan bo'ladi?",
      "o": [
       "Bitta xatoni 3 marta tuzata olmasa",
@@ -13,6 +14,7 @@ CONTENT[16] = {
      "e": "Bitta xatoni 3 marta tuzata olmasa, SI aylanib qolgan bo'ladi."
     },
     {
+     "id": "16.1-2",
      "q": "SI Alining menyusini 3 marta tuzatdi, menyu hali buzuq. SI qanday holatda?",
      "o": [
       "SI aylanib qolgan",
@@ -23,6 +25,7 @@ CONTENT[16] = {
      "e": "Bitta xato 3 marta tuzalmadi, demak SI aylanib qolgan."
     },
     {
+     "id": "16.1-3",
      "q": "SI Madinaning rasmini bir marta tuzata olmadi. SI aylanib qoldimi?",
      "o": [
       "Yo'q, bu faqat birinchi urinish",
@@ -33,6 +36,7 @@ CONTENT[16] = {
      "e": "Aylanib qolish uchun bitta xato 3 marta tuzalmasligi kerak."
     },
     {
+     "id": "16.1-4",
      "q": "SI 3 xil xatoni tuzatdi, har birini birinchi urinishda. Bu aylanib qolishmi?",
      "o": [
       "Yo'q, har biri birdan tuzaldi",
@@ -43,6 +47,7 @@ CONTENT[16] = {
      "e": "Aylanib qolish — bitta xatoni qayta-qayta tuzata olmaslik."
     },
     {
+     "id": "16.1-5",
      "q": "SI gul do'koni narxini 2 marta tuzata olmadi. Jasur endi nima qiladi?",
      "o": [
       "Uchinchi marta so'rab ko'radi",
@@ -53,6 +58,7 @@ CONTENT[16] = {
      "e": "Hali 2 marta bo'ldi, aylanib qolish uchun 3 marta kerak."
     },
     {
+     "id": "16.1-6",
      "q": "SI matndagi xatoni faqat uchinchi urinishda tuzatdi. SI aylanib qoldimi?",
      "o": [
       "Yo'q, oxiri tuzatdi",
@@ -67,6 +73,7 @@ CONTENT[16] = {
   {
    "pool": [
     {
+     "id": "16.2-1",
      "q": "Ali 3 marta \"Rasm chiqmayapti\" deb yozdi, foyda yo'q. Endi nima qiladi?",
      "o": [
       "Muammoni boshqa so'zlar bilan yozadi",
@@ -77,6 +84,7 @@ CONTENT[16] = {
      "e": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntir."
     },
     {
+     "id": "16.2-2",
      "q": "Nega o'sha gapni yana yuborish yordam bermaydi?",
      "o": [
       "SI yana o'sha javobni beradi",
@@ -87,6 +95,7 @@ CONTENT[16] = {
      "e": "Bir xil gapga SI yana o'sha javobni berishi mumkin."
     },
     {
+     "id": "16.2-3",
      "q": "Jasur gapini o'zgartirdi: \"Tugma ishlamayapti!!!\". Bu boshqacha tushuntirishmi?",
      "o": [
       "Yo'q, faqat belgi qo'shildi",
@@ -97,6 +106,7 @@ CONTENT[16] = {
      "e": "Undov belgisi qo'shish yangi so'zlar bilan tushuntirish emas."
     },
     {
+     "id": "16.2-4",
      "q": "Kamola muammoni boshqacha yozmoqchi. Gapiga nimani qo'shsa yaxshi?",
      "o": [
       "Nima bo'lishi kerak edi, nima bo'ldi",
@@ -107,6 +117,7 @@ CONTENT[16] = {
      "e": "Nima kutilgani va nima bo'lgani muammoni aniq ko'rsatadi."
     },
     {
+     "id": "16.2-5",
      "q": "Sardor aylanib qolgan SI'ga muammoni yangi so'zlar bilan yozdi. Bu nimaga yordam beradi?",
      "o": [
       "SI muammoni yangicha tushunadi",
@@ -117,6 +128,7 @@ CONTENT[16] = {
      "e": "Yangi so'zlar SI'ga muammoni boshqa tomondan ko'rsatadi."
     },
     {
+     "id": "16.2-6",
      "q": "Zarinaning boti salom bermayapti. Qaysi biri muammoni boshqacha tushuntiradi?",
      "o": [
       "\"Salom yozsam, bot jim turibdi\"",
@@ -131,6 +143,7 @@ CONTENT[16] = {
   {
    "pool": [
     {
+     "id": "16.3-1",
      "q": "Kamolaning SI'si xatoni 3 marta tuzata olmadi, boshqacha yozish ham foyda bermadi. Endi nima qiladi?",
      "o": [
       "Yangi suhbat ochadi",
@@ -141,6 +154,7 @@ CONTENT[16] = {
      "e": "Boshqacha yozish yordam bermasa, yangi suhbat och."
     },
     {
+     "id": "16.3-2",
      "q": "Madina yangi suhbatda yozdi: \"O'sha xatoni tuzat\". Nega SI tushunmaydi?",
      "o": [
       "Yangi suhbat eski gapni bilmaydi",
@@ -151,6 +165,7 @@ CONTENT[16] = {
      "e": "Yangi suhbatdagi SI oldingi suhbatni bilmaydi."
     },
     {
+     "id": "16.3-3",
      "q": "Qaysi xabar yangi suhbatni boshlash uchun yaxshi?",
      "o": [
       "\"Gul saytimda savatcha tugmasi ishlamayapti\"",
@@ -161,6 +176,7 @@ CONTENT[16] = {
      "e": "Bu xabarda loyiha va muammo qaytadan aytilgan."
     },
     {
+     "id": "16.3-4",
      "q": "Sardor yangi suhbatda faqat xato xabarini yubordi. Nima yetishmayapti?",
      "o": [
       "Loyiha nima haqida ekani",
@@ -171,6 +187,7 @@ CONTENT[16] = {
      "e": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayt."
     },
     {
+     "id": "16.3-5",
      "q": "Eski suhbatda Nilufar sayt rangini aytgan edi. Yangi suhbatda SI uni biladimi?",
      "o": [
       "Yo'q, rangni qayta aytish kerak",
@@ -181,6 +198,7 @@ CONTENT[16] = {
      "e": "Yangi suhbat eski gaplarni bilmaydi, kerakli ma'lumotni qayta ber."
     },
     {
+     "id": "16.3-6",
      "q": "Nega yangi suhbat aylanib qolgan SI'ga yordam beradi?",
      "o": [
       "SI ishni toza boshdan boshlaydi",
@@ -195,6 +213,7 @@ CONTENT[16] = {
   {
    "pool": [
     {
+     "id": "16.4-1",
      "q": "Oldin: \"Rasm chiqmayapti\". Qaysi yangi gap aniqroq?",
      "o": [
       "\"Bosh sahifada mushuk rasmi ko'rinmayapti\"",
@@ -205,6 +224,7 @@ CONTENT[16] = {
      "e": "Bu gapda qaysi rasm va qayerda ekani aytilgan."
     },
     {
+     "id": "16.4-2",
      "q": "Laylo yozdi: \"Tugma bosilsa xabar chiqishi kerak.\" Yana nimani qo'shsin?",
      "o": [
       "Hozir nima bo'layotganini",
@@ -215,6 +235,7 @@ CONTENT[16] = {
      "e": "Nima bo'lishi kerakligi bor, endi nima bo'layotganini ham ayt."
     },
     {
+     "id": "16.4-3",
      "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",
      "o": [
       "Bot nima qilishi kerakligi",
@@ -225,6 +246,7 @@ CONTENT[16] = {
      "e": "\"Yomon\" so'zi muammo nimada ekanini aytmaydi."
     },
     {
+     "id": "16.4-4",
      "q": "Sport zali sayti. Qaysi gapda kutilgan va bo'lgan narsa bor?",
      "o": [
       "\"Soat chiqishi kerak, bo'sh joy chiqyapti\"",
@@ -235,6 +257,7 @@ CONTENT[16] = {
      "e": "Bu gapda nima bo'lishi kerak edi va nima bo'ldi aytilgan."
     },
     {
+     "id": "16.4-5",
      "q": "Aziz \"Forma ishlamayapti\" o'rniga \"Forma buzildi\" deb yozdi. Bu yetarlimi?",
      "o": [
       "Yo'q, faqat bitta so'z almashdi",
@@ -245,6 +268,7 @@ CONTENT[16] = {
      "e": "Bitta so'zni almashtirish muammoni yangicha tushuntirmaydi."
     },
     {
+     "id": "16.4-6",
      "q": "Bobur yozdi: \"/start bossam, bot hech narsa yozmayapti.\" Bu gap nimasi bilan yaxshi?",
      "o": [
       "Nima qilgani va nima bo'lgani bor",

@@ -21,6 +21,7 @@ const ctx = new Function("CONTENT", ["01","02","03","04","05","06","07","08","09
   .map(n => rd(`content/t${n}.js`)).join("\n"));
 ctx(CONTENT);
 
+const BN_NAMES = JSON.parse(fs.readFileSync(new URL("./bn_names.json", import.meta.url), "utf8"));
 const PRACTICE_IDS = [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21];
 const cleanText = s => s.replace(/<code class="ecode">(.*?)<\/code>/g, "`$1`").replace(/<br\s*\/?>/g, "\n");
 const parseExample = ex => ex ? ex.split(ROW).filter(Boolean).map(r => { const [label, text] = r.split("\u0002"); return { label, text: cleanText(text) }; }) : [];
@@ -32,8 +33,10 @@ const topics = data.TOPICS.map(t => ({
   name: t.name,
   pre: t.pre,
   bns: t.bns.map((b, k) => {
-    const pool = (CONTENT[t.id]?.bns?.[k]?.pool || []).map(q => ({ q: q.q, options: q.o, correct: 0, explain: q.e }));
-    const bn = { n: k + 1, text: b.t, example: parseExample(b.ex), kind: b.practice ? "practice" : "test", pool };
+    const pool = (CONTENT[t.id]?.bns?.[k]?.pool || []).map(q => { if (!q.id) throw new Error(`savol id yo'q: ${t.id}.${k+1}`); return { id: q.id, q: q.q, options: q.o, correct: 0, explain: q.e }; });
+    const bnId = `${String(t.id).padStart(2, "0")}.${k + 1}`;
+    if (!BN_NAMES[bnId]) throw new Error(`BN nomi yo'q: ${bnId}`);
+    const bn = { id: bnId, n: k + 1, name: BN_NAMES[bnId], text: b.t, example: parseExample(b.ex), kind: b.practice ? "practice" : "test", pool };
     if (b.practice) bn.practice = `T${String(t.id).padStart(2, "0")}`;
     return bn;
   })
@@ -43,6 +46,7 @@ for (const t of topics) for (const b of t.bns) {
   if (/<[a-z]/i.test(all.replace(/«|»/g, ""))) throw new Error(`HTML qoldi: mavzu ${t.id} BN${b.n}`);
   if (b.kind === "practice" && !PRACTICE_IDS.includes(t.id)) throw new Error(`amaliyot generatori yo'q: ${t.id}`);
 }
+{ const seen = new Set(); for (const t of topics) for (const bn of t.bns) for (const q of bn.pool) { if (seen.has(q.id)) throw new Error("takror savol id: " + q.id); seen.add(q.id); } }
 const content = { module: "si-asoslari", title: "Sun'iy intellekt asoslari", version: VERSION, topics };
 const contentStr = JSON.stringify(content, null, 2) + "\n";
 fs.writeFileSync(path.join(OUT, "content.json"), contentStr);

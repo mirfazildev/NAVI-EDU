@@ -3,6 +3,7 @@ CONTENT[5] = {
   {
    "pool": [
     {
+     "id": "05.1-1",
      "q": "Prompt nima?",
      "o": [
       "SI'ga yozgan so'roving",
@@ -13,6 +14,7 @@ CONTENT[5] = {
      "e": "Prompt — sen SI'ga yozgan so'rov."
     },
     {
+     "id": "05.1-2",
      "q": "Aziz SI'ga «Gul do'koniga nom top» deb yozdi. Bu gap nima?",
      "o": [
       "Prompt",
@@ -23,6 +25,7 @@ CONTENT[5] = {
      "e": "SI'ga yozilgan so'rov prompt deyiladi."
     },
     {
+     "id": "05.1-3",
      "q": "SI «Somsa House» deb javob berdi. Bu prompt hisoblanadimi?",
      "o": [
       "Yo'q, bu SI javobi",
@@ -33,6 +36,7 @@ CONTENT[5] = {
      "e": "Prompt — sen yozgan so'rov, bu esa SI javobi."
     },
     {
+     "id": "05.1-4",
      "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
      "o": [
       "Sen yozgan «Rasm chiz» xabari",
@@ -43,6 +47,7 @@ CONTENT[5] = {
      "e": "Prompt — sen SI'ga yozgan so'rov."
     },
     {
+     "id": "05.1-5",
      "q": "Bobur SI'ga hali hech narsa yozmadi. SI javob beradimi?",
      "o": [
       "Yo'q, avval prompt kerak",
@@ -53,6 +58,7 @@ CONTENT[5] = {
      "e": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
     },
     {
+     "id": "05.1-6",
      "q": "Do'sting SI'ga nima deb yozganini ko'rsatdi. Sen nimani ko'ryapsan?",
      "o": [
       "Uning promptini",
@@ -67,6 +73,7 @@ CONTENT[5] = {
   {
    "pool": [
     {
+     "id": "05.2-1",
      "q": "Qaysi prompt aniqroq?",
      "o": [
       "«Kafe saytiga sarlavha yoz»",
@@ -77,6 +84,7 @@ CONTENT[5] = {
      "e": "Unda nima kerakligi aniq yozilgan: kafe saytiga sarlavha."
     },
     {
+     "id": "05.2-2",
      "q": "Lola «Gul do'koni uchun yoz» dedi. Nima yetishmayapti?",
      "o": [
       "Nima yozish kerakligi",
@@ -87,6 +95,7 @@ CONTENT[5] = {
      "e": "Aniq promptda nima kerakligi yoziladi."
     },
     {
+     "id": "05.2-3",
      "q": "«Maktab saytiga ... yoz» promptida nuqtalar o'rniga nima yoziladi?",
      "o": [
       "yangilik matni",
@@ -97,6 +106,7 @@ CONTENT[5] = {
      "e": "Nima kerakligi aniq aytilishi kerak: yangilik matni."
     },
     {
+     "id": "05.2-4",
      "q": "Prompt faqat «Rasm» deb yozildi. SI nima qiladi?",
      "o": [
       "Nima kerakligini taxmin qiladi",
@@ -107,6 +117,7 @@ CONTENT[5] = {
      "e": "Nima kerakligi yozilmasa, SI taxmin qilishga majbur."
     },
     {
+     "id": "05.2-5",
      "q": "Jasur faqat «Kitob do'koni» deb yozdi. Qanday tuzatish kerak?",
      "o": [
       "«Kitob do'koniga sarlavha yoz»",
@@ -117,6 +128,7 @@ CONTENT[5] = {
      "e": "Promptga nima kerakligi qo'shildi: sarlavha."
     },
     {
+     "id": "05.2-6",
      "q": "«Botga salomlashish matni yoz». Bu promptda nima kerakligi aytilganmi?",
      "o": [
       "Ha, salomlashish matni",
@@ -131,6 +143,7 @@ CONTENT[5] = {
   {
    "pool": [
     {
+     "id": "05.3-1",
      "q": "Promptga til va uzunlik qo'shmoqchisan. Qaysi qo'shimcha to'g'ri?",
      "o": [
       "«O'zbekcha, 6 so'zgacha»",
@@ -141,6 +154,7 @@ CONTENT[5] = {
      "e": "Bu qo'shimchada til ham, uzunlik ham bor."
     },
     {
+     "id": "05.3-2",
      "q": "«Gul do'koniga sarlavha yoz. 5 so'zgacha.» Nima yetishmayapti?",
      "o": [
       "Qaysi tilda ekani",
@@ -151,6 +165,7 @@ CONTENT[5] = {
      "e": "Uzunlik bor, lekin til yozilmagan."
     },
     {
+     "id": "05.3-3",
      "q": "SI juda uzun sarlavha yozdi. Promptga nima qo'shish kerak edi?",
      "o": [
       "So'zlar soni chegarasi",
@@ -161,6 +176,7 @@ CONTENT[5] = {
      "e": "Uzunlik yozilsa, SI qisqa sarlavha yozadi."
     },
     {
+     "id": "05.3-4",
      "q": "SI matnni ruscha yozdi, senga o'zbekcha kerak edi. Promptda nima yo'q edi?",
      "o": [
       "Matn tili",
@@ -171,6 +187,7 @@ CONTENT[5] = {
      "e": "Til yozilmagani uchun SI boshqa tilda yozdi."
     },
     {
+     "id": "05.3-5",
      "q": "Aniq promptda nima kerakligidan tashqari yana nima yoziladi?",
      "o": [
       "Tili va uzunligi",
@@ -181,6 +198,7 @@ CONTENT[5] = {
      "e": "Aniq promptda tili va uzunligi ham yoziladi."
     },
     {
+     "id": "05.3-6",
      "q": "«Kitob do'koni botiga salom yoz. O'zbekcha, 2 gap.» Uzunlik qayerda?",
      "o": [
       "«2 gap» qismida",

@@ -3,6 +3,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
+     "id": "04.1-1",
      "q": "SI tavsiya qilgan «Quyosh bolalari» kitobi hech qayerda yo'q. Bu nimani bildiradi?",
      "o": [
       "SI kitobni o'zi to'qib chiqargan",
@@ -13,6 +14,7 @@ CONTENT[4] = {
      "e": "SI yo'q narsani o'ylab topishi mumkin."
     },
     {
+     "id": "04.1-2",
      "q": "SI bergan manzil bo'yicha sayt topilmadi. Endi nima qilasan?",
      "o": [
       "Saytni boshqa yo'l bilan qidiraman",
@@ -23,6 +25,7 @@ CONTENT[4] = {
      "e": "SI manzilni o'ylab topgan bo'lishi mumkin, boshqacha qidirish kerak."
     },
     {
+     "id": "04.1-3",
      "q": "SI o'ylab topgan narsa qanday ko'rinadi?",
      "o": [
       "Xuddi haqiqiydek ko'rinadi",
@@ -33,6 +36,7 @@ CONTENT[4] = {
      "e": "SI ishonch bilan gapiradi, o'ylab topgani ham haqiqiydek ko'rinadi."
     },
     {
+     "id": "04.1-4",
      "q": "SI gul do'koniga «Moviy lola» gulini maqtadi. Bunday gul borligini qanday bilasan?",
      "o": [
       "Gulchidan so'rab bilaman",
@@ -43,6 +47,7 @@ CONTENT[4] = {
      "e": "SI gulni o'ylab topgan bo'lishi mumkin, tekshirish kerak."
     },
     {
+     "id": "04.1-5",
      "q": "SI kafe saytiga mijoz fikrini yozdi, lekin bunday mijoz yo'q. Bu fikr qanday?",
      "o": [
       "Bu haqiqiy fikr emas",
@@ -53,6 +58,7 @@ CONTENT[4] = {
      "e": "Mijoz bo'lmasa, SI fikrni o'ylab topgan."
     },
     {
+     "id": "04.1-6",
      "q": "SI sport zali murabbiyining ismini aytdi. Nega buni tekshiramiz?",
      "o": [
       "Ism o'ylab topilgan bo'lishi mumkin",
@@ -67,6 +73,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
+     "id": "04.2-1",
      "q": "«Sarlavhani kattalashtir» deding, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
      "o": [
       "Nimani kattalashtirish kerakligini",
@@ -77,6 +84,7 @@ CONTENT[4] = {
      "e": "SI sarlavha o'rniga rasmni olib, vazifani noto'g'ri tushundi."
     },
     {
+     "id": "04.2-2",
      "q": "Kafe uchun qisqa menyu so'rading, SI uzun hikoya yozdi. Nima bo'ldi?",
      "o": [
       "Sen so'ragan narsa chiqmadi",
@@ -87,6 +95,7 @@ CONTENT[4] = {
      "e": "SI vazifani noto'g'ri tushunib, boshqa narsa yozdi."
     },
     {
+     "id": "04.2-3",
      "q": "SI vazifani doim to'g'ri tushunadimi?",
      "o": [
       "Yo'q, adashishi mumkin",
@@ -97,6 +106,7 @@ CONTENT[4] = {
      "e": "SI vazifani noto'g'ri tushunishi mumkin."
     },
     {
+     "id": "04.2-4",
      "q": "Ali «Gul do'koniga nom top» dedi, SI gul nomlarini yozdi. Xato qayerda?",
      "o": [
       "Do'kon nomi o'rniga gul nomlari",
@@ -107,6 +117,7 @@ CONTENT[4] = {
      "e": "Do'kon nomi so'ralgan edi, SI buni noto'g'ri tushundi."
     },
     {
+     "id": "04.2-5",
      "q": "SI vazifani noto'g'ri tushunsa, nima qilasan?",
      "o": [
       "Vazifani aniqroq qilib qayta yozaman",
@@ -117,6 +128,7 @@ CONTENT[4] = {
      "e": "Aniqroq yozilgan vazifani SI to'g'riroq tushunadi."
     },
     {
+     "id": "04.2-6",
      "q": "Botga «Salom» tugmasini so'rading, SI faqat «Salom» matnini yozdi. Bu qaysi xato?",
      "o": [
       "Vazifani noto'g'ri tushunish",
@@ -131,6 +143,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
+     "id": "04.3-1",
      "q": "«Faqat sarlavhani o'zgartir» deding, SI tugma rangini ham o'zgartirdi. Bu qanday xato?",
      "o": [
       "Ortiqcha joyni o'zgartirdi",
@@ -141,6 +154,7 @@ CONTENT[4] = {
      "e": "SI so'ralmagan joyni ham o'zgartirib yubordi."
     },
     {
+     "id": "04.3-2",
      "q": "Kafe sahifasida faqat narxni tuzattirding, lekin kafe nomi ham o'zgaribdi. Nima qilasan?",
      "o": [
       "Nomni qaytarishni so'rayman",
@@ -151,6 +165,7 @@ CONTENT[4] = {
      "e": "SI so'ralmagan joyni o'zgartirdi, uni qaytarish kerak."
     },
     {
+     "id": "04.3-3",
      "q": "SI ishni bajargach, nimani tekshirish kerak?",
      "o": [
       "Boshqa joylar o'zgarmaganini",
@@ -161,6 +176,7 @@ CONTENT[4] = {
      "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
     },
     {
+     "id": "04.3-4",
      "q": "SI so'ralmagan joyni o'zgartira oladimi?",
      "o": [
       "Ha, shunday bo'lishi mumkin",
@@ -171,6 +187,7 @@ CONTENT[4] = {
      "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
     },
     {
+     "id": "04.3-5",
      "q": "Sen faqat telefon raqamini tuzattirding. Qaysi o'zgarish ortiqcha?",
      "o": [
       "Gullar rasmi almashgan",
@@ -181,6 +198,7 @@ CONTENT[4] = {
      "e": "Rasm so'ralmagan edi, uni o'zgartirish ortiqcha."
     },
     {
+     "id": "04.3-6",
      "q": "Qanday yozsang, SI ortiqcha joyga kamroq tegadi?",
      "o": [
       "«Faqat shu joyni o'zgartir» deb",
@@ -195,6 +213,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
+     "id": "04.4-1",
      "q": "«Kafe menyusini yoz» deding, SI kafe tarixini yozdi. Xato turi qaysi?",
      "o": [
       "Vazifani noto'g'ri tushundi",
@@ -205,6 +224,7 @@ CONTENT[4] = {
      "e": "Menyu so'ralgan, tarix yozildi — vazifa noto'g'ri tushunilgan."
     },
     {
+     "id": "04.4-2",
      "q": "Faqat narxni tuzatish kerak edi, SI rasmlarni ham almashtirdi. SI nima qildi?",
      "o": [
       "So'ralmagan joyga tegdi",
@@ -215,6 +235,7 @@ CONTENT[4] = {
      "e": "Rasm so'ralmagan edi — bu ortiqcha o'zgartirish."
     },
     {
+     "id": "04.4-3",
      "q": "Qaysi holatda SI yo'q narsani o'ylab topgan?",
      "o": [
       "Bunday sport zali umuman yo'q",
@@ -225,6 +246,7 @@ CONTENT[4] = {
      "e": "Yo'q zal haqida yozish — o'ylab topish."
     },
     {
+     "id": "04.4-4",
      "q": "SI bot matniga hech qachon bo'lmagan chegirmani qo'shdi. Kim to'g'ri aytdi?",
      "o": [
       "Ali: «SI uni o'ylab topdi»",
@@ -235,6 +257,7 @@ CONTENT[4] = {
      "e": "Yo'q chegirma — SI o'ylab topgan narsa."
     },
     {
+     "id": "04.4-5",
      "q": "«Osmonni ko'k qil» deding, SI daraxtlarni ham o'chirdi. Qaysi qism xato?",
      "o": [
       "Daraxtlarni o'chirish",
@@ -245,6 +268,7 @@ CONTENT[4] = {
      "e": "Daraxtlar so'ralmagan edi, ularni o'chirish ortiqcha."
     },
     {
+     "id": "04.4-6",
      "q": "Xato turini bilish nega kerak?",
      "o": [
       "To'g'ri tuzatishni so'rash uchun",

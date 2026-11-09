@@ -1,4 +1,4 @@
-// NAVI amaliyot moduli v1.1.0. Generatorlar va tekshiruv — sof JS (DOM yo'q, tarmoq yo'q).
+// NAVI amaliyot moduli v1.2.0. Generatorlar va tekshiruv — sof JS (DOM yo'q, tarmoq yo'q).
 // API: create(topicId, seed) -> {task, state};  check(state, answer) -> {ok, messages, reply, cheat}
 //      siRequest(state, answer) -> {topic, task, rubric, prompt} | null;  siVerdict(state, answer, algo, si) -> {ok, messages, reply}
 //      siBody(req) -> Gemini so'rov tanasi;  mask(text) -> text (Gemini'ga yuborishdan oldin);  has(topicId) -> boolean
@@ -462,7 +462,7 @@ function mulberry32(a){ return function(){ a|=0; a=a+0x6D2B79F5|0; let t=Math.im
 function seeded(seed, fn){ const orig=Math.random; Math.random=mulberry32(seed>>>0); try{ return fn(); } finally { Math.random=orig; } }
 const TOPIC_NAMES = {"1":"Sun'iy intellekt nima","2":"SI qanday javob beradi","3":"SI nimani bilmaydi","4":"SI xatolarining turlari","5":"Aniq vazifa berish","6":"Kontekst berish","7":"Cheklov berish","8":"Misol bilan tushuntirish","9":"Katta vazifani qadamlarga bo'lish","10":"Kutilgan natijani oldindan yozish","11":"Natijani kutilgan bilan solishtirish","12":"Farqni so'z bilan aytish","13":"Xato belgilarini ajratish","14":"Xato xabarini SI'ga to'liq berish","15":"Nima qilganingni qadam-baqadam aytish","16":"SI aylanib qolganda nima qilish","17":"Agent rejimi nima","18":"SI'dan reja so'rash","19":"O'zgarishni qabul yoki rad qilish","20":"SI'ga nima berilmaydi","21":"Xavfli taklifni tanish"};
 
-export const VERSION = "1.1.0";
+export const VERSION = "1.2.0";
 export function has(topicId){ return PR.has(topicId) || PR2.has(topicId); }
 function build(topicId, seed){ return seeded(seed, () => PR.has(topicId) ? PR.make(topicId) : PR2.make(topicId)); }
 

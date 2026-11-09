@@ -3,6 +3,7 @@ CONTENT[12] = {
   {
    "pool": [
     {
+     "id": "12.1-1",
      "q": "Ali SI'ga «Tugma noto'g'ri» deb yozdi. Saytda 5 ta tugma bor. Nima yetishmaydi?",
      "o": [
       "Qaysi tugma ekani, qayerdaligi",
@@ -13,6 +14,7 @@ CONTENT[12] = {
      "e": "SI qaysi tugmani tuzatishni bilishi uchun joyini aytish kerak."
     },
     {
+     "id": "12.1-2",
      "q": "Kafe saytida bitta rasm xira. Qaysi so'zlar joyni aniq aytadi?",
      "o": [
       "Menyu ostidagi birinchi rasm",
@@ -23,6 +25,7 @@ CONTENT[12] = {
      "e": "«Menyu ostidagi birinchi» deganda SI qaysi rasmligini aniq biladi."
     },
     {
+     "id": "12.1-3",
      "q": "Gul do'koni saytida pastdagi tugma noto'g'ri. «Qayerda?» savoliga javob qaysi?",
      "o": [
       "Sahifaning pastida",
@@ -33,6 +36,7 @@ CONTENT[12] = {
      "e": "«Qayerda?» savoliga joy bilan javob beriladi."
     },
     {
+     "id": "12.1-4",
      "q": "Nega farq qayerda ekanini SI'ga aytasan?",
      "o": [
       "SI qaysi joyni tuzatishni bilishi uchun",
@@ -43,6 +47,7 @@ CONTENT[12] = {
      "e": "Joyni bilmasa, SI boshqa joyni o'zgartirib yuborishi mumkin."
     },
     {
+     "id": "12.1-5",
      "q": "Laylo botga yozdi. Botning ikkinchi javobida xato bor. Laylo SI'ga qaysi joyni aytadi?",
      "o": [
       "Botning ikkinchi javobini",
@@ -53,6 +58,7 @@ CONTENT[12] = {
      "e": "Xato ikkinchi javobda, shuni aniq aytish kerak."
     },
     {
+     "id": "12.1-6",
      "q": "Sardor SI yozgan hikoyaning uchinchi gapida xato ko'rdi. Joyni qanday aytadi?",
      "o": [
       "«Uchinchi gapda»",
@@ -67,6 +73,7 @@ CONTENT[12] = {
   {
    "pool": [
     {
+     "id": "12.2-1",
      "q": "Ali SI'ga «Sarlavha yomon» deb yozdi. Gapni qanday aniqroq qiladi?",
      "o": [
       "«Sarlavha hozir juda kichik» deb",
@@ -77,6 +84,7 @@ CONTENT[12] = {
      "e": "«Hozir juda kichik» deganda SI sarlavha qanday ekanini biladi."
     },
     {
+     "id": "12.2-2",
      "q": "Rasmdagi mushuk ko'k, lekin kulrang bo'lishi kerak. Qaysi so'z hozirgi holatni aytadi?",
      "o": [
       "Ko'k",
@@ -87,6 +95,7 @@ CONTENT[12] = {
      "e": "Hozir mushuk ko'k, kulrang esa bo'lishi kerak bo'lgan rang."
     },
     {
+     "id": "12.2-3",
      "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasan?",
      "o": [
       "SI sening ekraningni ko'rmaydi",
@@ -97,6 +106,7 @@ CONTENT[12] = {
      "e": "SI ekraningni ko'rmaydi, shuning uchun holatni sen aytasan."
     },
     {
+     "id": "12.2-4",
      "q": "«Savat tugmasi bosilganda sahifa oqarib qoladi.» Bu gap nimani aytyapti?",
      "o": [
       "Hozir qanday ekanini",
@@ -107,6 +117,7 @@ CONTENT[12] = {
      "e": "Bu gap hozir nima bo'layotganini tasvirlaydi."
     },
     {
+     "id": "12.2-5",
      "q": "Kutilgan matn 5 gapli edi. SI 9 gap yozdi. «Hozir qanday?» savoliga javob?",
      "o": [
       "Matnda 9 ta gap bor",
@@ -117,6 +128,7 @@ CONTENT[12] = {
      "e": "Hozirgi holat — matnda 9 ta gap borligi."
     },
     {
+     "id": "12.2-6",
      "q": "Bot «Salom» o'rniga «Hello» deyapti. Qaysi gap hozirgi holatni aniq aytadi?",
      "o": [
       "Bot hozir «Hello» deyapti",
@@ -131,6 +143,7 @@ CONTENT[12] = {
   {
    "pool": [
     {
+     "id": "12.3-1",
      "q": "Sen SI'ga «Tugma hozir qizil» deb yozding. SI yana nimani bilishi kerak?",
      "o": [
       "Tugma qaysi rangda bo'lishi kerakligini",
@@ -141,6 +154,7 @@ CONTENT[12] = {
      "e": "Qanday bo'lishi kerakligini aytmasang, SI qaysi rangni qo'yishni bilmaydi."
     },
     {
+     "id": "12.3-2",
      "q": "Kafe saytida narxlar dollarda, so'mda bo'lishi kerak. Qaysi qism istakni aytadi?",
      "o": [
       "«So'mda bo'lsin»",
@@ -151,6 +165,7 @@ CONTENT[12] = {
      "e": "«So'mda bo'lsin» — narx qanday bo'lishi kerakligi."
     },
     {
+     "id": "12.3-3",
      "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasan?",
      "o": [
       "SI o'zicha taxmin qilmasligi uchun",
@@ -161,6 +176,7 @@ CONTENT[12] = {
      "e": "Aytmasang, SI o'zicha taxmin qilib, xato qilishi mumkin."
     },
     {
+     "id": "12.3-4",
      "q": "Gul do'koni sarlavhasi juda kichik. Qaysi istakni tekshirib ko'rsa bo'ladi?",
      "o": [
       "Sarlavha ikki barobar katta bo'lsin",
@@ -171,6 +187,7 @@ CONTENT[12] = {
      "e": "«Ikki barobar katta» deganni ekranda aniq tekshirsa bo'ladi."
     },
     {
+     "id": "12.3-5",
      "q": "Hikoya 9 gapli, 5 gapli bo'lishi kerak. «Qanday bo'lsin?» savoliga javob?",
      "o": [
       "5 ta gapdan iborat bo'lsin",
@@ -181,6 +198,7 @@ CONTENT[12] = {
      "e": "«Qanday bo'lsin?» — kerakli holatni aytadi: 5 ta gap."
     },
     {
+     "id": "12.3-6",
      "q": "Jasur yozdi: «Jadval hozir bo'sh.» Boshqa hech narsa yozmadi. SI nima qilishi mumkin?",
      "o": [
       "Jadvalni o'zicha, noto'g'ri to'ldirishi",

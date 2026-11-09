@@ -3,6 +3,7 @@ CONTENT[11] = {
   {
    "pool": [
     {
+     "id": "11.1-1",
      "q": "SI kafe sayti uchun menyu qildi va «Tayyor!» dedi. Ali endi nima qiladi?",
      "o": [
       "Saytni ochib, menyuni o'zi ko'radi",
@@ -13,6 +14,7 @@ CONTENT[11] = {
      "e": "SI «tayyor» desa ham, natijani o'zing ochib ko'rasan."
     },
     {
+     "id": "11.1-2",
      "q": "Nega natijani SI'ning so'ziga emas, o'zingga ishonib tekshirasan?",
      "o": [
       "SI xato qilsa ham ishonch bilan gapiradi",
@@ -23,6 +25,7 @@ CONTENT[11] = {
      "e": "SI xato qilganda ham ishonch bilan «tayyor» deyishi mumkin."
     },
     {
+     "id": "11.1-3",
      "q": "Sardor rasmni ochmay «zo'r» dedi. Keyin qarasa, mushuk o'rniga it. Qayerda adashdi?",
      "o": [
       "Rasmni o'zi ochib ko'rmadi",
@@ -33,6 +36,7 @@ CONTENT[11] = {
      "e": "Rasmni o'zi ochib ko'rganida, xatoni darhol sezardi."
     },
     {
+     "id": "11.1-4",
      "q": "Telegram bot salom berishi kerak. SI «Bot tayyor» dedi. Qanday tekshirasan?",
      "o": [
       "Botga o'zim yozib ko'raman",
@@ -43,6 +47,7 @@ CONTENT[11] = {
      "e": "Botga o'zing yozsang, u salom beradimi-yo'qmi ko'rasan."
     },
     {
+     "id": "11.1-5",
      "q": "Nilufar SI bilan buvisiga tabrik yozdi. Yuborishdan oldin uni kim o'qiydi?",
      "o": [
       "Nilufarning o'zi",
@@ -53,6 +58,7 @@ CONTENT[11] = {
      "e": "Natijani boshqaga berishdan oldin o'zing ko'rib chiqasan."
     },
     {
+     "id": "11.1-6",
      "q": "SI sport zali saytiga dars jadvalini qo'shdi. Tekshirish uchun nimaga qaraysan?",
      "o": [
       "Ekrandagi jadvalning o'ziga",
@@ -67,6 +73,7 @@ CONTENT[11] = {
   {
    "pool": [
     {
+     "id": "11.2-1",
      "q": "Kutilgan natijada kafe nomi, telefon raqami va xarita bor. Nechtasini tekshirasan?",
      "o": [
       "Uchalasini, birma-bir",
@@ -77,6 +84,7 @@ CONTENT[11] = {
      "e": "Kutilgan natijadagi har bir band bittalab tekshiriladi."
     },
     {
+     "id": "11.2-2",
      "q": "Kutilgan: gul nomi, rasmi, narxi. Aziza nom va rasmni ko'rdi. Endi nima qiladi?",
      "o": [
       "Narxni ham tekshiradi",
@@ -87,6 +95,7 @@ CONTENT[11] = {
      "e": "Narx ham kutilgan natijadagi band, uni ham ko'rish kerak."
     },
     {
+     "id": "11.2-3",
      "q": "Bandlarni bittalab tekshirish nega kerak?",
      "o": [
       "Birorta band tushib qolmasligi uchun",
@@ -97,6 +106,7 @@ CONTENT[11] = {
      "e": "Bittalab tekshirsang, hech bir band esdan chiqmaydi."
     },
     {
+     "id": "11.2-4",
      "q": "Bobur gul do'koni saytiga bir qaradi-yu, «Zo'r, tayyor» dedi. U to'g'ri qildimi?",
      "o": [
       "Yo'q, har bandni alohida ko'rishi kerak",
@@ -107,6 +117,7 @@ CONTENT[11] = {
      "e": "Bir qarashda band tushib qolishi mumkin, har biri alohida ko'riladi."
     },
     {
+     "id": "11.2-5",
      "q": "Kutilgan natijada 5 ta band bor. Qaysi usul to'g'ri?",
      "o": [
       "Birinchisidan boshlab, bittalab ko'rish",
@@ -117,6 +128,7 @@ CONTENT[11] = {
      "e": "Bandlarni tartib bilan, bittalab tekshirasan."
     },
     {
+     "id": "11.2-6",
      "q": "Kutilgan: hikoya o'zbekcha, 5 gapli, sarlavhali. Nodir faqat sarlavhaga qaradi. Nima qoldi?",
      "o": [
       "Tili va gaplar soni",
@@ -131,6 +143,7 @@ CONTENT[11] = {
   {
    "pool": [
     {
+     "id": "11.3-1",
      "q": "Kafe saytida menyu va manzil bor, telefon raqami yo'q. Ish tugadimi?",
      "o": [
       "Yo'q, telefon raqami yetishmaydi",
@@ -141,6 +154,7 @@ CONTENT[11] = {
      "e": "Bitta band bajarilmasa ham, ish hali tugamagan."
     },
     {
+     "id": "11.3-2",
      "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasan?",
      "o": [
       "SI'dan narxlarni qo'shishni so'rayman",
@@ -151,6 +165,7 @@ CONTENT[11] = {
      "e": "Bajarilmagan band bor ekan, ish davom etadi."
     },
     {
+     "id": "11.3-3",
      "q": "Ish qachon tugagan bo'ladi?",
      "o": [
       "Hamma bandlar bajarilganda",
@@ -161,6 +176,7 @@ CONTENT[11] = {
      "e": "Ish faqat hamma bandlar bajarilganda tugaydi."
     },
     {
+     "id": "11.3-4",
      "q": "Ali: «9 ta band bor, bittasi qolgan, bo'ldi». Vali: «Davom etamiz». Kim haq?",
      "o": [
       "Vali haq, bitta band qolgan",
@@ -171,6 +187,7 @@ CONTENT[11] = {
      "e": "Bitta band qolgan bo'lsa ham, ish tugamagan."
     },
     {
+     "id": "11.3-5",
      "q": "Kutilgan rasmda quyosh, daraxt va it bor. Qaysi rasm tayyor?",
      "o": [
       "Quyosh, daraxt va it bor",
@@ -181,6 +198,7 @@ CONTENT[11] = {
      "e": "Faqat uchala band ham bor rasm tayyor hisoblanadi."
     },
     {
+     "id": "11.3-6",
      "q": "Maktab saytida bitta band bajarilmagan. Saytni hozir hammaga ko'rsatasanmi?",
      "o": [
       "Yo'q, avval o'sha band to'g'rilanadi",

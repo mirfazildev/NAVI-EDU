@@ -3,6 +3,7 @@ CONTENT[17] = {
   {
    "pool": [
     {
+     "id": "17.1-1",
      "q": "Agent rejimida SI nima qiladi?",
      "o": [
       "Fayllarni o'zi o'zgartiradi",
@@ -13,6 +14,7 @@ CONTENT[17] = {
      "e": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
     },
     {
+     "id": "17.1-2",
      "q": "Chatda SI Aliga sarlavha matnini yozib berdi. Uni faylga kim qo'yadi?",
      "o": [
       "Ali o'zi qo'yadi",
@@ -23,6 +25,7 @@ CONTENT[17] = {
      "e": "Chatda SI faqat javob yozadi, faylni sen o'zgartirasan."
     },
     {
+     "id": "17.1-3",
      "q": "Madina \"Saytga tugma qo'sh\" dedi va fayl o'zi o'zgardi. Bu qaysi rejim?",
      "o": [
       "Agent rejimi",
@@ -33,6 +36,7 @@ CONTENT[17] = {
      "e": "Fayl o'zi o'zgardi, demak bu agent rejimi."
     },
     {
+     "id": "17.1-4",
      "q": "Chatda SI \"Tugma qo'shdim\" deb yozdi. Fayl o'zgardimi?",
      "o": [
       "Yo'q, chat faqat javob yozadi",
@@ -43,6 +47,7 @@ CONTENT[17] = {
      "e": "Chatda SI faylni o'zgartirmaydi, faqat javob yozadi."
     },
     {
+     "id": "17.1-5",
      "q": "Nilufar faqat bitta she'r so'ramoqchi, fayl kerak emas. Qaysi rejim mos?",
      "o": [
       "Oddiy chat",
@@ -53,6 +58,7 @@ CONTENT[17] = {
      "e": "Faqat javob kerak bo'lsa, oddiy chat yetadi."
     },
     {
+     "id": "17.1-6",
      "q": "Agent rejimi Otabekni qaysi ishdan qutqaradi?",
      "o": [
       "Kodni faylga qo'lda ko'chirishdan",
@@ -67,6 +73,7 @@ CONTENT[17] = {
   {
    "pool": [
     {
+     "id": "17.2-1",
      "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
      "o": [
       "O'zgarishni senga ko'rsatadi",
@@ -77,6 +84,7 @@ CONTENT[17] = {
      "e": "Agent har bir o'zgarishni senga ko'rsatadi."
     },
     {
+     "id": "17.2-2",
      "q": "Agent 3 ta faylni o'zgartirdi. Nechtasini senga ko'rsatadi?",
      "o": [
       "Uchalasini ham",
@@ -87,6 +95,7 @@ CONTENT[17] = {
      "e": "Agent har bir o'zgarishni ko'rsatadi, birortasini yashirmaydi."
     },
     {
+     "id": "17.2-3",
      "q": "Nega agent o'zgarishni senga ko'rsatadi?",
      "o": [
       "Sen ko'rib chiqishing uchun",
@@ -97,6 +106,7 @@ CONTENT[17] = {
      "e": "Sen o'zgarishni ko'rib, to'g'rimi yo'qmi bilishing kerak."
     },
     {
+     "id": "17.2-4",
      "q": "Agent ishidan keyin Madina \"qizil\" o'chib, \"ko'k\" yozilganini ko'rdi. Bu nima?",
      "o": [
       "Agent ko'rsatgan o'zgarish",
@@ -107,6 +117,7 @@ CONTENT[17] = {
      "e": "Agent nimani o'zgartirganini senga ko'rsatib beradi."
     },
     {
+     "id": "17.2-5",
      "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
      "o": [
       "Ortiqcha o'zgarishni sezishga",
@@ -117,6 +128,7 @@ CONTENT[17] = {
      "e": "O'zgarishlar ko'rsatilgani uchun Jasur ortiqcha narsani sezdi."
     },
     {
+     "id": "17.2-6",
      "q": "Sardor ko'rsatilgan o'zgarishlarni o'qimay o'tkazib yubordi. Nima bo'lishi mumkin?",
      "o": [
       "Xatoni sezmay qoladi",
@@ -131,6 +143,7 @@ CONTENT[17] = {
   {
    "pool": [
     {
+     "id": "17.3-1",
      "q": "Agent o'zgarish qildi, Ali hali qabul qilmadi. O'zgarish saqlandimi?",
      "o": [
       "Yo'q, hali saqlanmadi",
@@ -141,6 +154,7 @@ CONTENT[17] = {
      "e": "Sen qabul qilmaguningcha o'zgarish saqlanmaydi."
     },
     {
+     "id": "17.3-2",
      "q": "Madina o'zgarishni ko'rdi va qabul qildi. Endi nima bo'ladi?",
      "o": [
       "O'zgarish faylda saqlanadi",
@@ -151,6 +165,7 @@ CONTENT[17] = {
      "e": "Qabul qilingan o'zgarish saqlanadi."
     },
     {
+     "id": "17.3-3",
      "q": "O'zgarish saqlanadimi yo'qmi — buni kim hal qiladi?",
      "o": [
       "Sen o'zing",
@@ -161,6 +176,7 @@ CONTENT[17] = {
      "e": "O'zgarish faqat sen qabul qilsang saqlanadi."
     },
     {
+     "id": "17.3-4",
      "q": "Agent kafe menyusini o'zgartirdi, Kamolaga yoqmadi. Nima qiladi?",
      "o": [
       "Qabul qilmaydi",
@@ -171,6 +187,7 @@ CONTENT[17] = {
      "e": "Qabul qilinmasa, yoqmagan o'zgarish saqlanmaydi."
     },
     {
+     "id": "17.3-5",
      "q": "Nega \"Qabul qilish\" tugmasi foydali?",
      "o": [
       "Xato o'zgarish o'zi saqlanmaydi",
@@ -181,6 +198,7 @@ CONTENT[17] = {
      "e": "Sen ko'rib qabul qilmaguncha hech narsa saqlanmaydi."
     },
     {
+     "id": "17.3-6",
      "q": "Nilufar 2 ta o'zgarishdan faqat birinchisini qabul qildi. Qaysi biri saqlanadi?",
      "o": [
       "Faqat birinchisi",

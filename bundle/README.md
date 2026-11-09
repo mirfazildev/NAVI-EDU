@@ -1,4 +1,4 @@
-# NAVI matnli darslar paketi — v1.1.0
+# NAVI matnli darslar paketi — v1.2.0
 
 "Sun'iy intellekt asoslari" moduli matnli ko'rinishda: 21 mavzu, 84 BN, 414 savol va 20 ta amaliyot generatori.
 
@@ -17,13 +17,14 @@ Fayl butunligini tekshirish: `sha256sum content.json practice.mjs` natijasi `man
 ```
 { module, title, version,
   topics: [ { id, block, blockName, name, pre:[id...],
-              bns: [ { n, text, example:[{label, text}], kind:"test"|"practice", pool:[...], practice?:"T05" } ] } ] }
+              bns: [ { id, n, name, text, example:[{label, text}], kind:"test"|"practice", pool:[...], practice?:"T05" } ] } ] }
 ```
 
 - `pre` — oldingi mavzular (graf). Mavzu barcha `pre` mavzulari o'tilganda ochiladi.
 - `text` va `example[].text` ichida `==so'z==` — sariq belgi. `` `...` `` — kod (xato xabari).
   Namunaning har qatori: kichik `label` va katta `text`.
-- Savol formati: `{ q, options:[4], correct:0, explain }`. To'g'ri javob doim 0-indeksda — ko'rsatishda variantlarni aralashtiring.
+- BN: `id` — doimiy (`"05.1"` = 5-mavzu, 1-BN), `name` — qisqa nom (≤ 40 belgi) ro'yxat, Portfolio va panel uchun.
+- Savol formati: `{ id, q, options:[4], correct:0, explain }`. `id` doimiy (`"05.1-3"`): bir marta berilgan id o'zgarmaydi va qayta ishlatilmaydi. Yangi savol yangi id oladi (oxirgi raqamdan keyingisi), o'chirilgan savolning id'si bo'sh qoladi. Savol matni tahrirlansa, id o'sha qoladi. To'g'ri javob doim 0-indeksda — ko'rsatishda variantlarni aralashtiring.
 - `kind:"test"` — 64 ta BN, har birida 6 ta savol (jami 384).
 - `kind:"practice"` — 20 ta BN (1-mavzudan boshqa hammasida 4-BN). Darsda bu BN'da test emas, amaliyot beriladi (`practice` — generator nomi).
   Ulardan 5 tasining (2, 3, 4, 13, 16-mavzular) `pool`ida 6 tadan savol bor (jami 30). Bu savollar faqat takrorlash va quiz'da ishlatiladi.
@@ -81,6 +82,7 @@ Paket NAVI-EDU prototipidan `node build.mjs <navi-app> <chiqish> <versiya>` bila
 
 ## O'zgarishlar
 
+- **1.2.0** — har savolga doimiy `id`, har BN'ga `id` va qisqa `name` (Ilyos IS-1, IS-2). Matnlar o'zgarmagan.
 - **1.1.0** — o'quvchiga murojaat «siz» → «sen» (Mirfazil qarori, S7): BN matnlari, namunalar, 414 savol, amaliyot vazifalari, izohlar va SI javoblari. «…» ichidagi iqtiboslar (bola prompti, sayt matni) o'zgarmagan. SI promptiga «sen» deb murojaat qilish qo'shildi. Savollar va tekshiruv mantig'i o'zgarmagan.
 - **1.0.2** — `siBody`: bola matnidagi `$` belgilari (`` $` ``, `$'`, `$&`) so'rov tanasini buzmaydi — almashtirish bir o'tishda, funksiya bilan (Ilyos topgan). Tizim promptiga til darajasi qo'shildi: o'quvchi 12–17 yosh, matnlar 8–10 yoshli bola tushunadigan sodda tilda.
 - **1.0.1** — `siBody(req)`, `SI_MODEL` va `si.template.json` qo'shildi (Gemini tizim prompti va sxemasi paket ichida). Kontent o'zgarmagan.

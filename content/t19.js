@@ -3,6 +3,7 @@ CONTENT[19] = {
   {
    "pool": [
     {
+     "id": "19.1-1",
      "q": "Agent botga /menu buyrug'ini qo'shdi. Madina qanday tekshiradi?",
      "o": [
       "Botga /menu yozib ko'radi",
@@ -13,6 +14,7 @@ CONTENT[19] = {
      "e": "Natijani o'zing ishlatib ko'rib tekshirasan."
     },
     {
+     "id": "19.1-2",
      "q": "SI \"Hammasi tayyor!\" dedi. Ali nima qiladi?",
      "o": [
       "Natijani o'zi ochib ko'radi",
@@ -23,6 +25,7 @@ CONTENT[19] = {
      "e": "SI xato qilganda ham \"tayyor\" deyishi mumkin."
     },
     {
+     "id": "19.1-3",
      "q": "Ochilgan natijani nima bilan solishtirasan?",
      "o": [
       "Kutgan natijang bilan",
@@ -33,6 +36,7 @@ CONTENT[19] = {
      "e": "Natija kutilgan natija bilan solishtiriladi."
     },
     {
+     "id": "19.1-4",
      "q": "Agent telefon uchun menyuni o'zgartirdi. Nilufar qayerda tekshiradi?",
      "o": [
       "Saytni telefonda ochib",
@@ -43,6 +47,7 @@ CONTENT[19] = {
      "e": "O'zgarish qayerda bo'lsa, o'sha yerda ochib ko'riladi."
     },
     {
+     "id": "19.1-5",
      "q": "Kamola saytni ochmay o'zgarishni qabul qildi. Qanday xavf bor?",
      "o": [
       "Buzilgan narsa saqlanib qolishi mumkin",
@@ -53,6 +58,7 @@ CONTENT[19] = {
      "e": "Tekshirmasang, xato ham saqlanib qolishi mumkin."
     },
     {
+     "id": "19.1-6",
      "q": "Sardor sahifada sarlavhani ko'rdi, rasmga hali qaramadi. Tekshirish tugadimi?",
      "o": [
       "Yo'q, rasmni ham ko'rish kerak",
@@ -67,6 +73,7 @@ CONTENT[19] = {
   {
    "pool": [
     {
+     "id": "19.2-1",
      "q": "Ali \"Gul do'koni\" sarlavhasini kutgan edi va aynan shu chiqdi. Nima qiladi?",
      "o": [
       "Qabul qiladi",
@@ -77,6 +84,7 @@ CONTENT[19] = {
      "e": "Natija kutilgan bilan bir xil, demak qabul qilinadi."
     },
     {
+     "id": "19.2-2",
      "q": "Madina hali saytni ochib ko'rmadi. Hozir qabul qilsa bo'ladimi?",
      "o": [
       "Yo'q, avval ochib ko'radi",
@@ -87,6 +95,7 @@ CONTENT[19] = {
      "e": "Qabul qilish uchun natija kutilgandek ekanini ko'rish kerak."
     },
     {
+     "id": "19.2-3",
      "q": "Jasur katta qizil tugma kutgan edi, kichik qizil tugma chiqdi. Nima qiladi?",
      "o": [
       "Hali qabul qilmaydi",
@@ -97,6 +106,7 @@ CONTENT[19] = {
      "e": "Bitta band ham mos kelmasa, natija kutilgandek emas."
     },
     {
+     "id": "19.2-4",
      "q": "Sardor kutgan ko'k fon chiqdi, SI esa yana o'zgartirmoqchi. Sardor nima qiladi?",
      "o": [
       "Shu natijani qabul qilib qo'yadi",
@@ -107,6 +117,7 @@ CONTENT[19] = {
      "e": "Hammasi kutilgandek, endi qabul qilish vaqti."
     },
     {
+     "id": "19.2-5",
      "q": "Nilufar o'zgarishni qabul qildi. U bilan nima bo'ladi?",
      "o": [
       "Saqlanib qoladi",
@@ -117,6 +128,7 @@ CONTENT[19] = {
      "e": "Qabul qilingan o'zgarish saqlanadi."
     },
     {
+     "id": "19.2-6",
      "q": "Otabekning sayti kutilgandek ishlayapti, lekin u qabul qilmadi. Nima bo'ladi?",
      "o": [
       "Yaxshi o'zgarish saqlanmaydi",
@@ -131,6 +143,7 @@ CONTENT[19] = {
   {
    "pool": [
     {
+     "id": "19.3-1",
      "q": "Agent ishidan keyin bot javob bermayapti. Bobur nima qiladi?",
      "o": [
       "Rad qilib, SI'ga yozadi",
@@ -141,6 +154,7 @@ CONTENT[19] = {
      "e": "Buzilgan natija rad qilinadi va SI'ga aytiladi."
     },
     {
+     "id": "19.3-2",
      "q": "Logotip yo'qolib qoldi. Qaysi xabar SI'ga yaxshi?",
      "o": [
       "\"Rad qilaman: logotip yo'qolib qoldi\"",
@@ -151,6 +165,7 @@ CONTENT[19] = {
      "e": "Bu xabarda nima buzilgani aniq aytilgan."
     },
     {
+     "id": "19.3-3",
      "q": "Sardor yozdi: \"Rad qilaman. Buzildi.\" Bu xabarda nima yetishmaydi?",
      "o": [
       "Aynan nima buzilgani",
@@ -161,6 +176,7 @@ CONTENT[19] = {
      "e": "SI nima buzilganini bilmasa, uni tuzata olmaydi."
     },
     {
+     "id": "19.3-4",
      "q": "Jasur o'zgarishni rad qildi. Sayt endi qanday?",
      "o": [
       "O'zgarishdan oldingidek",
@@ -171,6 +187,7 @@ CONTENT[19] = {
      "e": "Rad qilingan o'zgarish saqlanmaydi."
     },
     {
+     "id": "19.3-5",
      "q": "Yangi tugma ishlayapti, lekin sarlavha yo'qolgan. Kamola nima qiladi?",
      "o": [
       "Sarlavha yo'qolgani uchun rad qiladi",
@@ -181,6 +198,7 @@ CONTENT[19] = {
      "e": "Bitta narsa buzilgan bo'lsa ham, natija buzilgan hisoblanadi."
     },
     {
+     "id": "19.3-6",
      "q": "Nega SI'ga nima buzilganini aytasan?",
      "o": [
       "SI aynan shuni tuzatishi uchun",

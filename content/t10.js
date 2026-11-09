@@ -3,6 +3,7 @@ CONTENT[10] = {
   {
    "pool": [
     {
+     "id": "10.1-1",
      "q": "Kutilgan natijani qachon yozasan?",
      "o": [
       "Prompt yozishdan oldin",
@@ -13,6 +14,7 @@ CONTENT[10] = {
      "e": "Natija qanday bo'lishini prompt yozishdan oldin yozib qo'yasan."
     },
     {
+     "id": "10.1-2",
      "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
      "o": [
       "Tugma qanday bo'lishini yozib qo'yadi",
@@ -23,6 +25,7 @@ CONTENT[10] = {
      "e": "Avval natija qanday bo'lishini yozadi, keyin prompt."
     },
     {
+     "id": "10.1-3",
      "q": "Malika avval prompt yubordi, keyin natijani yozdi. Nimani o'zgartirishi kerak?",
      "o": [
       "Ish tartibini",
@@ -33,6 +36,7 @@ CONTENT[10] = {
      "e": "Avval kutilgan natija, keyin prompt yoziladi."
     },
     {
+     "id": "10.1-4",
      "q": "Bozorga borishdan oldin xarid ro'yxatini yozasan. Bu nimaga o'xshaydi?",
      "o": [
       "Natijani oldindan yozib qo'yishga",
@@ -43,6 +47,7 @@ CONTENT[10] = {
      "e": "Ro'yxat ham nima kerakligini oldindan yozib qo'yadi."
     },
     {
+     "id": "10.1-5",
      "q": "Jasur menyu qanday bo'lishini oldin yozdi, keyin SI javob berdi. Endi nima qiladi?",
      "o": [
       "Javobni yozganiga solishtiradi",
@@ -53,6 +58,7 @@ CONTENT[10] = {
      "e": "Oldindan yozilgan natija bilan javobni solishtirish mumkin."
     },
     {
+     "id": "10.1-6",
      "q": "Nodira gul do'koni sayti ustida ishlayapti. Qaysi tartib to'g'ri?",
      "o": [
       "Natijani yozish → prompt → javob",
@@ -67,6 +73,7 @@ CONTENT[10] = {
   {
    "pool": [
     {
+     "id": "10.2-1",
      "q": "Qaysi kutilgan natija yaxshi?",
      "o": [
       "Tugma ko'k rangda",
@@ -77,6 +84,7 @@ CONTENT[10] = {
      "e": "«Tugma ko'k» — buni ko'rib tekshirsa bo'ladi."
     },
     {
+     "id": "10.2-2",
      "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasan?",
      "o": [
       "Sarlavhadagi so'zlarni sanayman",
@@ -87,6 +95,7 @@ CONTENT[10] = {
      "e": "So'zlarni sanab, 6 tadan oshmaganini ko'rasan."
     },
     {
+     "id": "10.2-3",
      "q": "Kutilgan natija «Saytda 5 ta kitob», lekin saytda 4 ta. Nima deysan?",
      "o": [
       "Natija bajarilmagan",
@@ -97,6 +106,7 @@ CONTENT[10] = {
      "e": "Sanab ko'rding: 5 emas, 4 ta, demak bajarilmagan."
     },
     {
+     "id": "10.2-4",
      "q": "Bot «Assalomu alaykum» deyishi kerak. Buni ko'rish uchun nima qilasan?",
      "o": [
       "Botga yozib, javobiga qarayman",
@@ -107,6 +117,7 @@ CONTENT[10] = {
      "e": "Bot javobini ko'rib, natijani tekshirasan."
     },
     {
+     "id": "10.2-5",
      "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
      "o": [
       "Alining, uni sanab ko'rsa bo'ladi",
@@ -117,6 +128,7 @@ CONTENT[10] = {
      "e": "Qatorlarni sanab tekshirsa bo'ladi, «qiziq»ni esa yo'q."
     },
     {
+     "id": "10.2-6",
      "q": "Yaxshi kutilgan natijaning belgisi nima?",
      "o": [
       "Uni ko'rib tekshirsa bo'ladi",
@@ -131,6 +143,7 @@ CONTENT[10] = {
   {
    "pool": [
     {
+     "id": "10.3-1",
      "q": "Qaysi so'z ham «chiroyli» kabi tekshirib bo'lmaydigan?",
      "o": [
       "«Ajoyib»",
@@ -141,6 +154,7 @@ CONTENT[10] = {
      "e": "«Ajoyib» ham har kimga har xil, uni o'lchab bo'lmaydi."
     },
     {
+     "id": "10.3-2",
      "q": "Qaysi kutilgan natijani tekshirib bo'lmaydi?",
      "o": [
       "Menyu chiroyli bo'lsin",
@@ -151,6 +165,7 @@ CONTENT[10] = {
      "e": "«Chiroyli»ni ko'rib tekshirib bo'lmaydi, qolganlarini bo'ladi."
     },
     {
+     "id": "10.3-3",
      "q": "Sardor «Logo chiroyli bo'lsin» deb yozdi. Uni qanday tuzatadi?",
      "o": [
       "«Logo yashil va dumaloq» deb",
@@ -161,6 +176,7 @@ CONTENT[10] = {
      "e": "Rang va shaklni ko'rib tekshirsa bo'ladi."
     },
     {
+     "id": "10.3-4",
      "q": "Kutilgan natija «Rasm chiroyli» edi, SI rasm chizdi. Natija bajarildimi?",
      "o": [
       "Aniq aytib bo'lmaydi",
@@ -171,6 +187,7 @@ CONTENT[10] = {
      "e": "«Chiroyli»ni tekshirib bo'lmaydi, shuning uchun aniq javob yo'q."
     },
     {
+     "id": "10.3-5",
      "q": "Ali bitta saytni «chiroyli» dedi, Vali «chiroyli emas» dedi. Nega shunday?",
      "o": [
       "Har kimga har xil yoqadi",
@@ -181,6 +198,7 @@ CONTENT[10] = {
      "e": "Chiroyli yoki yo'qligi har kimga har xil ko'rinadi."
     },
     {
+     "id": "10.3-6",
      "q": "Nega «chiroyli bo'lsin» yomon kutilgan natija?",
      "o": [
       "Uni ko'rib tekshirib bo'lmaydi",

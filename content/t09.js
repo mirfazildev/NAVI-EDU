@@ -3,6 +3,7 @@ CONTENT[9] = {
   {
    "pool": [
     {
+     "id": "09.1-1",
      "q": "Ali bitta promptda butun do'kon saytini so'radi. Nima bo'lishi mumkin?",
      "o": [
       "SI ko'proq xato qilishi mumkin",
@@ -13,6 +14,7 @@ CONTENT[9] = {
      "e": "Katta vazifa bitta promptda bo'lsa, SI ko'proq xato qiladi."
     },
     {
+     "id": "09.1-2",
      "q": "Qaysi prompt juda katta vazifa?",
      "o": [
       "«Butun kafe saytini to'liq qil»",
@@ -23,6 +25,7 @@ CONTENT[9] = {
      "e": "Butun sayt — ko'p ishdan iborat katta vazifa."
     },
     {
+     "id": "09.1-3",
      "q": "Malika bitta promptda 10 ta ish so'radi va SI adashdi. Sabab nima?",
      "o": [
       "Bir promptda juda ko'p ish bor",
@@ -33,6 +36,7 @@ CONTENT[9] = {
      "e": "Ish ko'p bo'lsa, SI ko'proq adashadi."
     },
     {
+     "id": "09.1-4",
      "q": "A — bitta katta prompt, B — bir nechta kichik prompt. Qayerda xato ko'proq?",
      "o": [
       "A yo'lda",
@@ -43,6 +47,7 @@ CONTENT[9] = {
      "e": "Bitta katta promptda SI ko'proq xato qilishi mumkin."
     },
     {
+     "id": "09.1-5",
      "q": "Qaysi holatda SI kamroq xato qiladi?",
      "o": [
       "Vazifa kichik bo'lganda",
@@ -53,6 +58,7 @@ CONTENT[9] = {
      "e": "Kichik vazifada SI kamroq adashadi."
     },
     {
+     "id": "09.1-6",
      "q": "Qaysi o'quvchi SI'dan ko'proq xato javob olishi mumkin?",
      "o": [
       "Butun saytni birdan so'ragan Ali",
@@ -67,6 +73,7 @@ CONTENT[9] = {
   {
    "pool": [
     {
+     "id": "09.2-1",
      "q": "Kafe sayti katta vazifa. Uni qanday so'raysan?",
      "o": [
       "Kichik qadamlarga bo'lib so'rayman",
@@ -77,6 +84,7 @@ CONTENT[9] = {
      "e": "Katta vazifani kichik qadamlarga bo'lish kerak."
     },
     {
+     "id": "09.2-2",
      "q": "Gul do'koni saytini qadamlarga bo'lyapsan. Qaysi biri kichik qadam?",
      "o": [
       "Sarlavha yozish",
@@ -87,6 +95,7 @@ CONTENT[9] = {
      "e": "Sarlavha — saytning kichik bir qismi."
     },
     {
+     "id": "09.2-3",
      "q": "Qaysi reja kichik qadamlarga bo'lingan?",
      "o": [
       "1) Sarlavha, 2) Menyu, 3) Tugma",
@@ -97,6 +106,7 @@ CONTENT[9] = {
      "e": "Har bir qadam — bitta kichik ish."
     },
     {
+     "id": "09.2-4",
      "q": "Tort pishirish ham katta ish. Uni qanday qadamlarga bo'lasan?",
      "o": [
       "Xamir qorish, pishirish, bezash",
@@ -107,6 +117,7 @@ CONTENT[9] = {
      "e": "Katta ish kichik qadamlarga bo'linsa, oson bajariladi."
     },
     {
+     "id": "09.2-5",
      "q": "Jasur maktab sayti uchun 4 ta qadam yozdi. Bu nega yaxshi?",
      "o": [
       "Har qadamda SI kamroq adashadi",
@@ -117,6 +128,7 @@ CONTENT[9] = {
      "e": "Kichik qadamda SI kamroq xato qiladi."
     },
     {
+     "id": "09.2-6",
      "q": "Sport zali sayti: sarlavha, jadval, narxlar, aloqa. Nechta qadamga bo'lsa bo'ladi?",
      "o": [
       "4 ta qadamga",
@@ -131,6 +143,7 @@ CONTENT[9] = {
   {
    "pool": [
     {
+     "id": "09.3-1",
      "q": "Qaysi prompt faqat bitta qadamni so'raydi?",
      "o": [
       "«Faqat sarlavhani qil»",
@@ -141,6 +154,7 @@ CONTENT[9] = {
      "e": "Unda faqat bitta ish — sarlavha so'ralgan."
     },
     {
+     "id": "09.3-2",
      "q": "Ali 1-promptda sarlavhani oldi. 2-promptda nima so'raydi?",
      "o": [
       "Endi faqat menyuni",
@@ -151,6 +165,7 @@ CONTENT[9] = {
      "e": "Har promptda keyingi bitta qadam so'raladi."
     },
     {
+     "id": "09.3-3",
      "q": "Prompt: «Sarlavha yoz, menyu qil, rasm qo'sh». Nima xato?",
      "o": [
       "Bitta promptda uchta qadam bor",
@@ -161,6 +176,7 @@ CONTENT[9] = {
      "e": "Bitta promptda faqat bitta qadam so'rash kerak."
     },
     {
+     "id": "09.3-4",
      "q": "Lola gul do'koni saytini 3 qadamga bo'ldi. Qadamlarni SI'ga qanday beradi?",
      "o": [
       "Har birini alohida promptda",
@@ -171,6 +187,7 @@ CONTENT[9] = {
      "e": "Bitta promptda bitta qadam bo'lishi kerak."
     },
     {
+     "id": "09.3-5",
      "q": "Bot uchun prompt: «Faqat salom xabarini qil». Bu nechta qadam?",
      "o": [
       "Bitta qadam",
@@ -181,6 +198,7 @@ CONTENT[9] = {
      "e": "Unda faqat bitta ish so'ralgan."
     },
     {
+     "id": "09.3-6",
      "q": "Zarina «Menyu va tugma qil» deb yozdi. Promptni qanday tuzatadi?",
      "o": [
       "Uni ikki promptga bo'ladi",

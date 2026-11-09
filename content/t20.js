@@ -3,6 +3,7 @@ CONTENT[20] = {
   {
    "pool": [
     {
+     "id": "20.1-1",
      "q": "SI \"Parolingni yoz\" dedi. Ali nima qiladi?",
      "o": [
       "Parolni yozmaydi",
@@ -13,6 +14,7 @@ CONTENT[20] = {
      "e": "Parol SI'ga berilmaydi, SI so'rasa ham."
     },
     {
+     "id": "20.1-2",
      "q": "Qaysi promptda parol bor?",
      "o": [
       "\"Parolim gul-fake-1, saytga kirolmayapman\"",
@@ -23,6 +25,7 @@ CONTENT[20] = {
      "e": "Bu promptda parol yozilgan, uni SI'ga berish mumkin emas."
     },
     {
+     "id": "20.1-3",
      "q": "Madina saytga kira olmayapti. SI'ga qanday yozadi?",
      "o": [
       "Xatoni yozadi, parolsiz",
@@ -33,6 +36,7 @@ CONTENT[20] = {
      "e": "Yordam so'rash uchun parol kerak emas, xatoni yozish yetadi."
     },
     {
+     "id": "20.1-4",
      "q": "Jasur promptdagi parolni yuborishdan oldin sezib qoldi. Nima qiladi?",
      "o": [
       "Parolni o'chirib, keyin yuboradi",
@@ -43,6 +47,7 @@ CONTENT[20] = {
      "e": "Parol promptda qolmasligi kerak."
     },
     {
+     "id": "20.1-5",
      "q": "Nilufar SI'ga yozmoqchi. Qaysi birini yozsa bo'ladi?",
      "o": [
       "Saytining nomini",
@@ -53,6 +58,7 @@ CONTENT[20] = {
      "e": "Sayt nomi maxfiy emas, parollar esa SI'ga berilmaydi."
     },
     {
+     "id": "20.1-6",
      "q": "Nega parol SI'ga berilmaydi?",
      "o": [
       "Parol faqat senda qolishi kerak",
@@ -67,6 +73,7 @@ CONTENT[20] = {
   {
    "pool": [
     {
+     "id": "20.2-1",
      "q": "Qaysi biri bot tokeniga o'xshaydi?",
      "o": [
       "7123456:ABC-fake",
@@ -77,6 +84,7 @@ CONTENT[20] = {
      "e": "Token raqam va harflardan iborat uzun maxfiy yozuv."
     },
     {
+     "id": "20.2-2",
      "q": "Gul do'koni boti ishlamayapti. Qaysi prompt xavfsiz?",
      "o": [
       "\"@gul_bot javob bermayapti. Yordam ber\"",
@@ -87,6 +95,7 @@ CONTENT[20] = {
      "e": "Bu promptda token yo'q, faqat bot nomi bor."
     },
     {
+     "id": "20.2-3",
      "q": "SI \"Kalitni yubor, tekshirib beraman\" dedi. Ali nima qiladi?",
      "o": [
       "Kalitni yubormaydi",
@@ -97,6 +106,7 @@ CONTENT[20] = {
      "e": "Kalit SI'ga berilmaydi, SI so'rasa ham."
     },
     {
+     "id": "20.2-4",
      "q": "Kalit va token nimaga o'xshaydi?",
      "o": [
       "Parolga, ular ham maxfiy",
@@ -107,6 +117,7 @@ CONTENT[20] = {
      "e": "Kalit va token parolga o'xshab maxfiy saqlanadi."
     },
     {
+     "id": "20.2-5",
      "q": "Jasur ko'chirgan xato xabarida token ham bor. Nima qiladi?",
      "o": [
       "Tokenni olib tashlab yuboradi",
@@ -117,6 +128,7 @@ CONTENT[20] = {
      "e": "Xato xabarini yuborishdan oldin tokenni olib tashla."
     },
     {
+     "id": "20.2-6",
      "q": "Kafe boti uchun SI'ga nimani aytsa bo'ladi?",
      "o": [
       "Bot nima qilishi kerakligini",
@@ -131,6 +143,7 @@ CONTENT[20] = {
   {
    "pool": [
     {
+     "id": "20.3-1",
      "q": "Qaysi biri shaxsiy ma'lumot?",
      "o": [
       "Uy manziling",
@@ -141,6 +154,7 @@ CONTENT[20] = {
      "e": "Uy manzili shaxsiy ma'lumot, u SI'ga berilmaydi."
     },
     {
+     "id": "20.3-2",
      "q": "Saytga telefon raqami uchun joy kerak. Promptga nima yozasan?",
      "o": [
       "\"Telefon raqami uchun joy qoldir\"",
@@ -151,6 +165,7 @@ CONTENT[20] = {
      "e": "Joy so'rash yetarli, haqiqiy raqam kerak emas."
     },
     {
+     "id": "20.3-3",
      "q": "Qaysi promptda shaxsiy ma'lumot bor?",
      "o": [
       "\"Raqamim +998 90 000 00 00\"",
@@ -161,6 +176,7 @@ CONTENT[20] = {
      "e": "Telefon raqami shaxsiy ma'lumot."
     },
     {
+     "id": "20.3-4",
      "q": "Madina yetkazib berish formasi so'ramoqchi. U uy manzilini yozsinmi?",
      "o": [
       "Yo'q, \"manzil joyi\" deydi",
@@ -171,6 +187,7 @@ CONTENT[20] = {
      "e": "Formaga manzil joyi kerak, haqiqiy manzil emas."
     },
     {
+     "id": "20.3-5",
      "q": "Jasur SI'ga hujjat raqamini yozmoqchi. Nima deysan?",
      "o": [
       "Hujjat raqami berilmaydi",
@@ -181,6 +198,7 @@ CONTENT[20] = {
      "e": "Hujjat raqami shaxsiy ma'lumot, u SI'ga berilmaydi."
     },
     {
+     "id": "20.3-6",
      "q": "Kamola sinf boti qilyapti. Do'stlarining raqamlarini SI'ga beradimi?",
      "o": [
       "Yo'q, ular ham shaxsiy",

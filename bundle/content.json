@@ -1,7 +1,7 @@
 {
   "module": "si-asoslari",
   "title": "Sun'iy intellekt asoslari",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "topics": [
     {
       "id": 1,
@@ -11,12 +11,15 @@
       "pre": [],
       "bns": [
         {
+          "id": "01.1",
           "n": 1,
+          "name": "SI nima degani",
           "text": "Sun'iy intellekt qisqacha ==SI== deb yoziladi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "01.1-1",
               "q": "Sun'iy intellekt qisqacha qanday yoziladi?",
               "options": [
                 "SI",
@@ -28,6 +31,7 @@
               "explain": "Sun'iy intellekt qisqacha SI deb yoziladi."
             },
             {
+              "id": "01.1-2",
               "q": "Matnda: «SI menga she'r yozib berdi». SI kim?",
               "options": [
                 "Sun'iy intellekt",
@@ -39,6 +43,7 @@
               "explain": "Matndagi SI — Sun'iy intellektning qisqa yozilishi."
             },
             {
+              "id": "01.1-3",
               "q": "«SI» so'zidagi «I» harfi qaysi so'zdan olingan?",
               "options": [
                 "Intellekt",
@@ -50,6 +55,7 @@
               "explain": "SI — Sun'iy Intellekt, I harfi «Intellekt» so'zidan."
             },
             {
+              "id": "01.1-4",
               "q": "Malika «Sun'iy intellekt»ni qisqa yozmoqchi. Nechta harf yozadi?",
               "options": [
                 "Ikkita harf",
@@ -61,6 +67,7 @@
               "explain": "Qisqasi SI — ikki harfdan iborat."
             },
             {
+              "id": "01.1-5",
               "q": "Jasur «Sun'iy intellekt»ni «IS» deb yozdi. Xatosi nimada?",
               "options": [
                 "Harflar o'rni almashgan",
@@ -72,6 +79,7 @@
               "explain": "To'g'risi SI: avval S, keyin I yoziladi."
             },
             {
+              "id": "01.1-6",
               "q": "Telegram botda «SI» va «Sun'iy intellekt» tugmalari bor. Ular farqlimi?",
               "options": [
                 "Yo'q, ikkalasi bir narsa",
@@ -85,12 +93,15 @@
           ]
         },
         {
+          "id": "01.2",
           "n": 2,
+          "name": "SI — javob beradigan dastur",
           "text": "SI — so'rovingga javob beradigan dastur.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "01.2-1",
               "q": "SI nima?",
               "options": [
                 "So'rovga javob beradigan dastur",
@@ -102,6 +113,7 @@
               "explain": "SI — so'rovingga javob beradigan dastur."
             },
             {
+              "id": "01.2-2",
               "q": "Dilnoza SI'ga «Gul nomlarini yoz» deb yozdi. Keyin nima bo'ladi?",
               "options": [
                 "SI gul nomlarini yozadi",
@@ -113,6 +125,7 @@
               "explain": "SI so'rovga javob beradi, shuning uchun gul nomlarini yozadi."
             },
             {
+              "id": "01.2-3",
               "q": "Sardor SI'dan javob olmoqchi. Avval nima qilishi kerak?",
               "options": [
                 "SI'ga so'rov yozishi",
@@ -124,6 +137,7 @@
               "explain": "SI so'rovga javob beradi, demak avval so'rov yoziladi."
             },
             {
+              "id": "01.2-4",
               "q": "Sport zali murabbiyi so'radi: «SI odammi?» To'g'ri javob qaysi?",
               "options": [
                 "Yo'q, u dastur",
@@ -135,6 +149,7 @@
               "explain": "SI odam emas, u — dastur."
             },
             {
+              "id": "01.2-5",
               "q": "Qaysi holatda SI ishlayapti?",
               "options": [
                 "Bot savolingga javob yozdi",
@@ -146,6 +161,7 @@
               "explain": "So'rovga javob yozish — SI ishi."
             },
             {
+              "id": "01.2-6",
               "q": "Bekzod SI'ga uchta savol yozdi. Qaysilariga javob oladi?",
               "options": [
                 "Uchala savoliga",
@@ -159,12 +175,15 @@
           ]
         },
         {
+          "id": "01.3",
           "n": 3,
+          "name": "SI ma'lumotlardan o'rgangan",
           "text": "SI internetdagi juda ko'p ma'lumotlardan o'rgangan va shu ma'lumotlar asosida javob beradi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "01.3-1",
               "q": "SI qayerdan o'rgangan?",
               "options": [
                 "Internetdagi ko'p ma'lumotlardan",
@@ -176,6 +195,7 @@
               "explain": "SI internetdagi juda ko'p ma'lumotlardan o'rgangan."
             },
             {
+              "id": "01.3-2",
               "q": "SI «Toshkent — O'zbekiston poytaxti» dedi. Buni qanday bildi?",
               "options": [
                 "Ko'p matnlarda o'qigan",
@@ -187,6 +207,7 @@
               "explain": "SI bu ma'lumotni o'rgangan ko'p matnlaridan biladi."
             },
             {
+              "id": "01.3-3",
               "q": "Nega SI ham gul, ham futbol haqida javob bera oladi?",
               "options": [
                 "Ko'p mavzudan o'rgangan",
@@ -198,6 +219,7 @@
               "explain": "SI juda ko'p mavzudagi ma'lumotlardan o'rgangan."
             },
             {
+              "id": "01.3-4",
               "q": "Kafe egasi hayron: «SI kafemni qayerdan biladi?» Qachon bilishi mumkin?",
               "options": [
                 "Kafe haqida internetda yozilgan bo'lsa",
@@ -209,6 +231,7 @@
               "explain": "SI internetdagi ma'lumotlardan o'rganadi."
             },
             {
+              "id": "01.3-5",
               "q": "Laylo uyda daftariga she'r yozdi, hech kimga ko'rsatmadi. SI uni biladimi?",
               "options": [
                 "Yo'q, u internetda yo'q",
@@ -220,6 +243,7 @@
               "explain": "SI faqat o'rgangan ma'lumotini biladi, daftar internetda yo'q."
             },
             {
+              "id": "01.3-6",
               "q": "Sport zali haqida so'rading. SI javobni qanday tuzadi?",
               "options": [
                 "O'rganganlari asosida yozadi",
@@ -233,12 +257,15 @@
           ]
         },
         {
+          "id": "01.4",
           "n": 4,
+          "name": "SI o'zi ish boshlamaydi",
           "text": "SI inson kabi his qila olmaydi va ishni o'zi boshlamaydi. Sen buyursang ishlaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "01.4-1",
               "q": "SI «Men juda xursandman!» deb yozdi. Bu nimani bildiradi?",
               "options": [
                 "Bu shunchaki so'z",
@@ -250,6 +277,7 @@
               "explain": "SI inson kabi his qila olmaydi, bu faqat so'z."
             },
             {
+              "id": "01.4-2",
               "q": "Tun bo'yi hech kim SI'ga yozmadi. Ertalab SI nima qilgan bo'ladi?",
               "options": [
                 "Hech narsa qilmagan",
@@ -261,6 +289,7 @@
               "explain": "SI ishni o'zi boshlamaydi, buyruq bo'lmasa ishlamaydi."
             },
             {
+              "id": "01.4-3",
               "q": "Gul do'koniga reklama matni kerak. Matn paydo bo'lishi uchun nima qilish kerak?",
               "options": [
                 "SI'ga matn yozishni buyurish",
@@ -272,6 +301,7 @@
               "explain": "SI sen buyursang ishlaydi."
             },
             {
+              "id": "01.4-4",
               "q": "Ali tun bo'yi SI bilan gaplashdi. SI charchaydimi?",
               "options": [
                 "Charchamaydi, u his qilmaydi",
@@ -283,6 +313,7 @@
               "explain": "Charchash — his qilish, SI esa his qila olmaydi."
             },
             {
+              "id": "01.4-5",
               "q": "Ishni kim boshlaydi: sen yoki SI?",
               "options": [
                 "Sen buyruq berasan",
@@ -294,6 +325,7 @@
               "explain": "SI ishni o'zi boshlamaydi, sen buyurasan."
             },
             {
+              "id": "01.4-6",
               "q": "Telegram botga SI ulangan. Bot qachon xabar yozadi?",
               "options": [
                 "Sen unga yozganingda",
@@ -318,12 +350,15 @@
       ],
       "bns": [
         {
+          "id": "02.1",
           "n": 1,
+          "name": "Javob har safar har xil",
           "text": "SI javobni har safar yangidan yozadi. Bitta savolga har xil javob berishi mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "02.1-1",
               "q": "Aziz va Bobur SI'ga bir xil savol berishdi. Javoblar qanday bo'ladi?",
               "options": [
                 "Har xil bo'lishi mumkin",
@@ -335,6 +370,7 @@
               "explain": "SI har safar javobni yangidan yozadi."
             },
             {
+              "id": "02.1-2",
               "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasang nima bo'ladi?",
               "options": [
                 "Boshqa nom chiqishi mumkin",
@@ -346,6 +382,7 @@
               "explain": "Bitta savolga SI har xil javob berishi mumkin."
             },
             {
+              "id": "02.1-3",
               "q": "Kecha SI bir she'r yozdi, bugun boshqasini. Nega?",
               "options": [
                 "SI har safar yangidan yozadi",
@@ -357,6 +394,7 @@
               "explain": "SI javobni har safar yangidan yozadi."
             },
             {
+              "id": "02.1-4",
               "q": "Malika SI'ning yoqqan javobini saqlamadi. Nega saqlash foydali edi?",
               "options": [
                 "Qayta so'rasa, boshqacha chiqadi",
@@ -368,6 +406,7 @@
               "explain": "SI har safar yangidan yozadi, o'sha javob qaytmasligi mumkin."
             },
             {
+              "id": "02.1-5",
               "q": "Gul do'koni uchun SI'dan 3 marta reklama gapi so'rading. Natija?",
               "options": [
                 "Uchta har xil gap",
@@ -379,6 +418,7 @@
               "explain": "Har safar yangidan yozgani uchun gaplar har xil chiqadi."
             },
             {
+              "id": "02.1-6",
               "q": "Sanjar maktab sayti uchun yana bir sarlavha varianti olmoqchi. Nima qiladi?",
               "options": [
                 "Savolni yana bir bor beradi",
@@ -392,12 +432,15 @@
           ]
         },
         {
+          "id": "02.2",
           "n": 2,
+          "name": "SI xatoda ham ishonch bilan gapiradi",
           "text": "SI doim ishonch bilan gapiradi, xato qilganda ham.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "02.2-1",
               "q": "SI kitob do'koni ish vaqtini xato aytdi. Javobi qanday yozilgan edi?",
               "options": [
                 "Xuddi to'g'ridek, ishonch bilan",
@@ -409,6 +452,7 @@
               "explain": "SI xato qilganda ham ishonch bilan gapiradi."
             },
             {
+              "id": "02.2-2",
               "q": "Lola: «SI ikkilanmay aytdi, demak to'g'ri». Lola nimani bilmaydi?",
               "options": [
                 "SI xatoda ham ikkilanmaydi",
@@ -420,6 +464,7 @@
               "explain": "SI doim ishonch bilan gapiradi, xato qilganda ham."
             },
             {
+              "id": "02.2-3",
               "q": "Ikki javob bor: biri to'g'ri, biri xato. SI qaysini ishonchliroq aytadi?",
               "options": [
                 "Ikkalasini bir xil ishonch bilan",
@@ -431,6 +476,7 @@
               "explain": "SI to'g'ri javobni ham, xatoni ham ishonch bilan aytadi."
             },
             {
+              "id": "02.2-4",
               "q": "Akmal so'ragan ertak qahramonini SI xato aytdi, lekin «albatta» dedi. Bu g'alatimi?",
               "options": [
                 "Yo'q, SI shunday gapiradi",
@@ -442,6 +488,7 @@
               "explain": "SI xato qilganda ham ishonch bilan gapiradi."
             },
             {
+              "id": "02.2-5",
               "q": "Telegram bot sport zali narxini «100% aniq» deb yozdi. Nima qilasan?",
               "options": [
                 "Avval tekshirib ko'raman",
@@ -453,6 +500,7 @@
               "explain": "SI ishonch bilan yozsa ham, xato bo'lishi mumkin."
             },
             {
+              "id": "02.2-6",
               "q": "Qaysi biri SI uchun odatiy?",
               "options": [
                 "Xatoni ham ishonch bilan aytish",
@@ -466,12 +514,15 @@
           ]
         },
         {
+          "id": "02.3",
           "n": 3,
+          "name": "Ishonch — to'g'rilik emas",
           "text": "Ishonch bilan aytilgan gap har doim ham to'g'ri bo'lavermaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "02.3-1",
               "q": "Sinfdoshing: «Ertaga dars yo'q, aniq bilaman!» dedi. Nima qilasan?",
               "options": [
                 "Ustozdan so'rab bilaman",
@@ -483,6 +534,7 @@
               "explain": "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin."
             },
             {
+              "id": "02.3-2",
               "q": "Reklamada «Eng arzon gul do'koni!» deyilgan. Bu albatta rostmi?",
               "options": [
                 "Shart emas, solishtirish kerak",
@@ -494,6 +546,7 @@
               "explain": "Ishonch bilan yozilgan gap har doim to'g'ri bo'lavermaydi."
             },
             {
+              "id": "02.3-3",
               "q": "Ishonch bilan aytilgan gap har doim to'g'rimi?",
               "options": [
                 "Yo'q, xato bo'lishi mumkin",
@@ -505,6 +558,7 @@
               "explain": "Ishonch bilan aytilgan gap har doim ham to'g'ri emas."
             },
             {
+              "id": "02.3-4",
               "q": "SI «Bu kitob 1990-yilda chiqqan» dedi. Qanday bilasan?",
               "options": [
                 "Kitobning o'zidan qarayman",
@@ -516,6 +570,7 @@
               "explain": "Ishonchli gapni haqiqiy manbadan tekshirish kerak."
             },
             {
+              "id": "02.3-5",
               "q": "Ikki do'st bahslashdi: biri ishonch bilan, biri ikkilanib gapirdi. Kim haq?",
               "options": [
                 "Tekshirmasdan bilib bo'lmaydi",
@@ -527,6 +582,7 @@
               "explain": "Ishonch emas, tekshiruv kim haq ekanini ko'rsatadi."
             },
             {
+              "id": "02.3-6",
               "q": "Ukang juda ishonch bilan «Kit — baliq!» dedi. Bu haqda nima deysan?",
               "options": [
                 "Ishonch rostlikni isbotlamaydi",
@@ -540,7 +596,9 @@
           ]
         },
         {
+          "id": "02.4",
           "n": 4,
+          "name": "Amaliyot: nom va raqamni tekshirish",
           "text": "SI javobidagi ==nom, raqam va manzil==ni tekshirish kerak.",
           "example": [
             {
@@ -555,6 +613,7 @@
           "kind": "practice",
           "pool": [
             {
+              "id": "02.4-1",
               "q": "SI: «Lola kafesi Navoiy ko'chasi, 12-uyda». Nimani tekshirasan?",
               "options": [
                 "Manzilni",
@@ -566,6 +625,7 @@
               "explain": "SI javobidagi manzilni tekshirish kerak."
             },
             {
+              "id": "02.4-2",
               "q": "SI sport zali telefon raqamini berdi. Qanday tekshirasan?",
               "options": [
                 "Zal saytidan raqamni topaman",
@@ -577,6 +637,7 @@
               "explain": "Raqamni SI emas, boshqa ishonchli joydan tekshiramiz."
             },
             {
+              "id": "02.4-3",
               "q": "SI javobidagi qaysi narsalarni tekshirish kerak?",
               "options": [
                 "Nom, raqam va manzil",
@@ -588,6 +649,7 @@
               "explain": "SI javobidagi nom, raqam va manzilni tekshirish kerak."
             },
             {
+              "id": "02.4-4",
               "q": "SI uchta gap yozdi. Qaysi birini tekshirish shart?",
               "options": [
                 "«Bayram 5-may kuni bo'ladi»",
@@ -599,6 +661,7 @@
               "explain": "Sanada raqam bor, raqamni tekshirish kerak."
             },
             {
+              "id": "02.4-5",
               "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasan?",
               "options": [
                 "Kitob nomini tekshiraman",
@@ -610,6 +673,7 @@
               "explain": "SI aytgan nomni tekshirish kerak."
             },
             {
+              "id": "02.4-6",
               "q": "Do'sting SI bergan manzilga tekshirmasdan bordi. Nima bo'lishi mumkin?",
               "options": [
                 "Noto'g'ri joyga borib qoladi",
@@ -635,12 +699,15 @@
       ],
       "bns": [
         {
+          "id": "03.1",
           "n": 1,
+          "name": "SI ekraningni ko'rmaydi",
           "text": "SI sening ekraningni ko'rmaydi. Nimani ko'rayotganingni unga yozib ber.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "03.1-1",
               "q": "Sardor SI'ga «Bu rasm chiroylimi?» deb yozdi, rasmni yubormadi. Muammo nima?",
               "options": [
                 "SI rasmni ko'rmaydi",
@@ -652,6 +719,7 @@
               "explain": "SI ekraningni ko'rmaydi, rasmni unga berish kerak."
             },
             {
+              "id": "03.1-2",
               "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
               "options": [
                 "Ali: «Sarlavha qizil chiqdi»",
@@ -663,6 +731,7 @@
               "explain": "SI ekranni ko'rmaydi, ko'rganingni so'z bilan yoz."
             },
             {
+              "id": "03.1-3",
               "q": "SI sening ekraningni ko'radimi?",
               "options": [
                 "Yo'q, ko'rmaydi",
@@ -674,6 +743,7 @@
               "explain": "SI ekraningni ko'rmaydi."
             },
             {
+              "id": "03.1-4",
               "q": "Malika: «Bu yerdagi rangni o'zgartir» dedi. SI nega tushunmadi?",
               "options": [
                 "«Bu yer» qayerligini bilmaydi",
@@ -685,6 +755,7 @@
               "explain": "SI ekranni ko'rmaydi, «bu yer» qayerligini bilmaydi."
             },
             {
+              "id": "03.1-5",
               "q": "Kafe menyusida narx xato chiqdi. SI'ga nimani yozish kerak?",
               "options": [
                 "Qaysi taomda qanday narx chiqqanini",
@@ -696,6 +767,7 @@
               "explain": "SI ko'rmaydi, shuning uchun ko'rganingni aniq yozasan."
             },
             {
+              "id": "03.1-6",
               "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
               "options": [
                 "Sen yozib berganingda",
@@ -709,12 +781,15 @@
           ]
         },
         {
+          "id": "03.2",
           "n": 2,
+          "name": "SI loyihangni bilmaydi",
           "text": "Sen aytmasang, SI loyihangni bilmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "03.2-1",
               "q": "Aziz: «Saytimga sarlavha yoz» dedi. SI nimani bilmaydi?",
               "options": [
                 "Sayt nima haqida ekanini",
@@ -726,6 +801,7 @@
               "explain": "Sen aytmasang, SI loyihangni bilmaydi."
             },
             {
+              "id": "03.2-2",
               "q": "Kafe saytiga matn kerak. SI'ga avval nimani aytasan?",
               "options": [
                 "Kafe nomi va taomlarini",
@@ -737,6 +813,7 @@
               "explain": "SI loyihani bilmaydi, kerakli ma'lumotni sen aytasan."
             },
             {
+              "id": "03.2-3",
               "q": "Nodira gul do'koni saytini bir oy qurdi. SI bu haqda biladimi?",
               "options": [
                 "Yo'q, Nodira aytmaguncha",
@@ -748,6 +825,7 @@
               "explain": "Sen aytmasang, SI loyihangni bilmaydi."
             },
             {
+              "id": "03.2-4",
               "q": "SI sport zali saytiga «Kafemizga xush kelibsiz» deb yozdi. Nega?",
               "options": [
                 "Unga sayt haqida aytilmagan",
@@ -759,6 +837,7 @@
               "explain": "Loyiha haqida aytilmasa, SI taxmin qilib yozadi."
             },
             {
+              "id": "03.2-5",
               "q": "Kitob do'koni boti uchun qaysi so'rov yaxshiroq?",
               "options": [
                 "«Kitob do'koni botiga salom yoz»",
@@ -770,6 +849,7 @@
               "explain": "Faqat shu so'rovda loyiha nima ekani aytilgan."
             },
             {
+              "id": "03.2-6",
               "q": "SI loyihangga mos javob berishi uchun nima qilish kerak?",
               "options": [
                 "Loyiha haqida yozib berish",
@@ -783,12 +863,15 @@
           ]
         },
         {
+          "id": "03.3",
           "n": 3,
+          "name": "Yangi suhbat — yangi xotira",
           "text": "Yangi suhbat ochsang, SI oldingi suhbatni bilmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "03.3-1",
               "q": "Kecha SI bilan kafe nomini tanlading. Bugun yangi suhbatda SI uni eslaydimi?",
               "options": [
                 "Yo'q, eslamaydi",
@@ -800,6 +883,7 @@
               "explain": "Yangi suhbatda SI oldingi suhbatni bilmaydi."
             },
             {
+              "id": "03.3-2",
               "q": "Lola yangi suhbatda «Kechagi rasmni tuzat» dedi. Nima bo'ladi?",
               "options": [
                 "SI qaysi rasmligini bilmaydi",
@@ -811,6 +895,7 @@
               "explain": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
             },
             {
+              "id": "03.3-3",
               "q": "Yangi suhbatda SI ishni davom ettirishi uchun nima qilasan?",
               "options": [
                 "Kerakli ma'lumotni qayta yozaman",
@@ -822,6 +907,7 @@
               "explain": "SI oldingi suhbatni bilmaydi, ma'lumotni qayta berish kerak."
             },
             {
+              "id": "03.3-4",
               "q": "SI gul do'koni haqidagi gapni qaysi holatda biladi?",
               "options": [
                 "Shu suhbatda aytilgan bo'lsa",
@@ -833,6 +919,7 @@
               "explain": "SI faqat shu suhbatda aytilganni biladi."
             },
             {
+              "id": "03.3-5",
               "q": "Bobur ikki suhbat ochdi: biri sport zali, biri kitob do'koni haqida. Ikkinchisidagi SI zalni biladimi?",
               "options": [
                 "Yo'q, zal boshqa suhbatda",
@@ -844,6 +931,7 @@
               "explain": "Har bir suhbat alohida, SI boshqa suhbatni bilmaydi."
             },
             {
+              "id": "03.3-6",
               "q": "Kecha botga 5 ta qoida aytding. Bugun yangi suhbatda SI ularga nega amal qilmadi?",
               "options": [
                 "U qoidalarni bilmaydi",
@@ -857,7 +945,9 @@
           ]
         },
         {
+          "id": "03.4",
           "n": 4,
+          "name": "Amaliyot: ko'rganingni SI'ga yozish",
           "text": "Sahifada xato ko'rsang, SI'ga yoz va tuzatishni so'ra.",
           "example": [
             {
@@ -872,6 +962,7 @@
           "kind": "practice",
           "pool": [
             {
+              "id": "03.4-1",
               "q": "Sardor sahifada xato ko'rdi, lekin SI'ga yozmadi. Xato nima bo'ladi?",
               "options": [
                 "Tuzatilmay qoladi",
@@ -883,6 +974,7 @@
               "explain": "SI ekranni ko'rmaydi, unga yozmasang xato qoladi."
             },
             {
+              "id": "03.4-2",
               "q": "Kafe sahifasida narx «0 so'm» chiqdi. Birinchi qadam nima?",
               "options": [
                 "SI'ga yozib, tuzatishni so'rash",
@@ -894,6 +986,7 @@
               "explain": "Xato ko'rsang, SI'ga yoz va tuzatishni so'ra."
             },
             {
+              "id": "03.4-3",
               "q": "Telegram bot noto'g'ri tugma chiqardi. Xatoni kim tuzatib beradi?",
               "options": [
                 "SI, sen so'rasang",
@@ -905,6 +998,7 @@
               "explain": "SI sen yozib so'rasang tuzatadi."
             },
             {
+              "id": "03.4-4",
               "q": "SI xatoni tuzatdi. Keyin nima qilasan?",
               "options": [
                 "Sahifani qayta ko'rib chiqaman",
@@ -916,6 +1010,7 @@
               "explain": "Tuzatish to'g'ri bo'lganini ko'zing bilan tekshirasan."
             },
             {
+              "id": "03.4-5",
               "q": "Nilufar SI'ga faqat «Sarlavha qiyshiq» deb yozdi. U nimani yozmadi?",
               "options": [
                 "Tuzatishni so'rashni",
@@ -927,6 +1022,7 @@
               "explain": "Xatoni yozgach, tuzatishni ham so'rash kerak."
             },
             {
+              "id": "03.4-6",
               "q": "Kitob do'koni sahifasida narx ikki marta yozilgan. SI'ga eng yaxshi so'rov qaysi?",
               "options": [
                 "«Narx ikki marta yozilgan, bittasini o'chir»",
@@ -952,12 +1048,15 @@
       ],
       "bns": [
         {
+          "id": "04.1",
           "n": 1,
+          "name": "SI o'ylab topadi",
           "text": "SI yo'q narsani ==o'ylab topishi== mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "04.1-1",
               "q": "SI tavsiya qilgan «Quyosh bolalari» kitobi hech qayerda yo'q. Bu nimani bildiradi?",
               "options": [
                 "SI kitobni o'zi to'qib chiqargan",
@@ -969,6 +1068,7 @@
               "explain": "SI yo'q narsani o'ylab topishi mumkin."
             },
             {
+              "id": "04.1-2",
               "q": "SI bergan manzil bo'yicha sayt topilmadi. Endi nima qilasan?",
               "options": [
                 "Saytni boshqa yo'l bilan qidiraman",
@@ -980,6 +1080,7 @@
               "explain": "SI manzilni o'ylab topgan bo'lishi mumkin, boshqacha qidirish kerak."
             },
             {
+              "id": "04.1-3",
               "q": "SI o'ylab topgan narsa qanday ko'rinadi?",
               "options": [
                 "Xuddi haqiqiydek ko'rinadi",
@@ -991,6 +1092,7 @@
               "explain": "SI ishonch bilan gapiradi, o'ylab topgani ham haqiqiydek ko'rinadi."
             },
             {
+              "id": "04.1-4",
               "q": "SI gul do'koniga «Moviy lola» gulini maqtadi. Bunday gul borligini qanday bilasan?",
               "options": [
                 "Gulchidan so'rab bilaman",
@@ -1002,6 +1104,7 @@
               "explain": "SI gulni o'ylab topgan bo'lishi mumkin, tekshirish kerak."
             },
             {
+              "id": "04.1-5",
               "q": "SI kafe saytiga mijoz fikrini yozdi, lekin bunday mijoz yo'q. Bu fikr qanday?",
               "options": [
                 "Bu haqiqiy fikr emas",
@@ -1013,6 +1116,7 @@
               "explain": "Mijoz bo'lmasa, SI fikrni o'ylab topgan."
             },
             {
+              "id": "04.1-6",
               "q": "SI sport zali murabbiyining ismini aytdi. Nega buni tekshiramiz?",
               "options": [
                 "Ism o'ylab topilgan bo'lishi mumkin",
@@ -1026,12 +1130,15 @@
           ]
         },
         {
+          "id": "04.2",
           "n": 2,
+          "name": "SI noto'g'ri tushunadi",
           "text": "SI vazifani ==noto'g'ri tushunishi== mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "04.2-1",
               "q": "«Sarlavhani kattalashtir» deding, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
               "options": [
                 "Nimani kattalashtirish kerakligini",
@@ -1043,6 +1150,7 @@
               "explain": "SI sarlavha o'rniga rasmni olib, vazifani noto'g'ri tushundi."
             },
             {
+              "id": "04.2-2",
               "q": "Kafe uchun qisqa menyu so'rading, SI uzun hikoya yozdi. Nima bo'ldi?",
               "options": [
                 "Sen so'ragan narsa chiqmadi",
@@ -1054,6 +1162,7 @@
               "explain": "SI vazifani noto'g'ri tushunib, boshqa narsa yozdi."
             },
             {
+              "id": "04.2-3",
               "q": "SI vazifani doim to'g'ri tushunadimi?",
               "options": [
                 "Yo'q, adashishi mumkin",
@@ -1065,6 +1174,7 @@
               "explain": "SI vazifani noto'g'ri tushunishi mumkin."
             },
             {
+              "id": "04.2-4",
               "q": "Ali «Gul do'koniga nom top» dedi, SI gul nomlarini yozdi. Xato qayerda?",
               "options": [
                 "Do'kon nomi o'rniga gul nomlari",
@@ -1076,6 +1186,7 @@
               "explain": "Do'kon nomi so'ralgan edi, SI buni noto'g'ri tushundi."
             },
             {
+              "id": "04.2-5",
               "q": "SI vazifani noto'g'ri tushunsa, nima qilasan?",
               "options": [
                 "Vazifani aniqroq qilib qayta yozaman",
@@ -1087,6 +1198,7 @@
               "explain": "Aniqroq yozilgan vazifani SI to'g'riroq tushunadi."
             },
             {
+              "id": "04.2-6",
               "q": "Botga «Salom» tugmasini so'rading, SI faqat «Salom» matnini yozdi. Bu qaysi xato?",
               "options": [
                 "Vazifani noto'g'ri tushunish",
@@ -1100,12 +1212,15 @@
           ]
         },
         {
+          "id": "04.3",
           "n": 3,
+          "name": "SI ortiqcha o'zgartiradi",
           "text": "SI so'ralmagan joyni ham ==o'zgartirib yuborishi== mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "04.3-1",
               "q": "«Faqat sarlavhani o'zgartir» deding, SI tugma rangini ham o'zgartirdi. Bu qanday xato?",
               "options": [
                 "Ortiqcha joyni o'zgartirdi",
@@ -1117,6 +1232,7 @@
               "explain": "SI so'ralmagan joyni ham o'zgartirib yubordi."
             },
             {
+              "id": "04.3-2",
               "q": "Kafe sahifasida faqat narxni tuzattirding, lekin kafe nomi ham o'zgaribdi. Nima qilasan?",
               "options": [
                 "Nomni qaytarishni so'rayman",
@@ -1128,6 +1244,7 @@
               "explain": "SI so'ralmagan joyni o'zgartirdi, uni qaytarish kerak."
             },
             {
+              "id": "04.3-3",
               "q": "SI ishni bajargach, nimani tekshirish kerak?",
               "options": [
                 "Boshqa joylar o'zgarmaganini",
@@ -1139,6 +1256,7 @@
               "explain": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
             },
             {
+              "id": "04.3-4",
               "q": "SI so'ralmagan joyni o'zgartira oladimi?",
               "options": [
                 "Ha, shunday bo'lishi mumkin",
@@ -1150,6 +1268,7 @@
               "explain": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
             },
             {
+              "id": "04.3-5",
               "q": "Sen faqat telefon raqamini tuzattirding. Qaysi o'zgarish ortiqcha?",
               "options": [
                 "Gullar rasmi almashgan",
@@ -1161,6 +1280,7 @@
               "explain": "Rasm so'ralmagan edi, uni o'zgartirish ortiqcha."
             },
             {
+              "id": "04.3-6",
               "q": "Qanday yozsang, SI ortiqcha joyga kamroq tegadi?",
               "options": [
                 "«Faqat shu joyni o'zgartir» deb",
@@ -1174,7 +1294,9 @@
           ]
         },
         {
+          "id": "04.4",
           "n": 4,
+          "name": "Amaliyot: xato turini topish",
           "text": "Endi xato turini o'zing top.",
           "example": [
             {
@@ -1193,6 +1315,7 @@
           "kind": "practice",
           "pool": [
             {
+              "id": "04.4-1",
               "q": "«Kafe menyusini yoz» deding, SI kafe tarixini yozdi. Xato turi qaysi?",
               "options": [
                 "Vazifani noto'g'ri tushundi",
@@ -1204,6 +1327,7 @@
               "explain": "Menyu so'ralgan, tarix yozildi — vazifa noto'g'ri tushunilgan."
             },
             {
+              "id": "04.4-2",
               "q": "Faqat narxni tuzatish kerak edi, SI rasmlarni ham almashtirdi. SI nima qildi?",
               "options": [
                 "So'ralmagan joyga tegdi",
@@ -1215,6 +1339,7 @@
               "explain": "Rasm so'ralmagan edi — bu ortiqcha o'zgartirish."
             },
             {
+              "id": "04.4-3",
               "q": "Qaysi holatda SI yo'q narsani o'ylab topgan?",
               "options": [
                 "Bunday sport zali umuman yo'q",
@@ -1226,6 +1351,7 @@
               "explain": "Yo'q zal haqida yozish — o'ylab topish."
             },
             {
+              "id": "04.4-4",
               "q": "SI bot matniga hech qachon bo'lmagan chegirmani qo'shdi. Kim to'g'ri aytdi?",
               "options": [
                 "Ali: «SI uni o'ylab topdi»",
@@ -1237,6 +1363,7 @@
               "explain": "Yo'q chegirma — SI o'ylab topgan narsa."
             },
             {
+              "id": "04.4-5",
               "q": "«Osmonni ko'k qil» deding, SI daraxtlarni ham o'chirdi. Qaysi qism xato?",
               "options": [
                 "Daraxtlarni o'chirish",
@@ -1248,6 +1375,7 @@
               "explain": "Daraxtlar so'ralmagan edi, ularni o'chirish ortiqcha."
             },
             {
+              "id": "04.4-6",
               "q": "Xato turini bilish nega kerak?",
               "options": [
                 "To'g'ri tuzatishni so'rash uchun",
@@ -1273,12 +1401,15 @@
       ],
       "bns": [
         {
+          "id": "05.1",
           "n": 1,
+          "name": "Prompt nima",
           "text": "Prompt — Sun'iy intellektga yozgan so'roving.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "05.1-1",
               "q": "Prompt nima?",
               "options": [
                 "SI'ga yozgan so'roving",
@@ -1290,6 +1421,7 @@
               "explain": "Prompt — sen SI'ga yozgan so'rov."
             },
             {
+              "id": "05.1-2",
               "q": "Aziz SI'ga «Gul do'koniga nom top» deb yozdi. Bu gap nima?",
               "options": [
                 "Prompt",
@@ -1301,6 +1433,7 @@
               "explain": "SI'ga yozilgan so'rov prompt deyiladi."
             },
             {
+              "id": "05.1-3",
               "q": "SI «Somsa House» deb javob berdi. Bu prompt hisoblanadimi?",
               "options": [
                 "Yo'q, bu SI javobi",
@@ -1312,6 +1445,7 @@
               "explain": "Prompt — sen yozgan so'rov, bu esa SI javobi."
             },
             {
+              "id": "05.1-4",
               "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
               "options": [
                 "Sen yozgan «Rasm chiz» xabari",
@@ -1323,6 +1457,7 @@
               "explain": "Prompt — sen SI'ga yozgan so'rov."
             },
             {
+              "id": "05.1-5",
               "q": "Bobur SI'ga hali hech narsa yozmadi. SI javob beradimi?",
               "options": [
                 "Yo'q, avval prompt kerak",
@@ -1334,6 +1469,7 @@
               "explain": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
             },
             {
+              "id": "05.1-6",
               "q": "Do'sting SI'ga nima deb yozganini ko'rsatdi. Sen nimani ko'ryapsan?",
               "options": [
                 "Uning promptini",
@@ -1347,7 +1483,9 @@
           ]
         },
         {
+          "id": "05.2",
           "n": 2,
+          "name": "Nima kerakligini yozish",
           "text": "Aniq promptda ==nima kerakligi== yoziladi.",
           "example": [
             {
@@ -1358,6 +1496,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "05.2-1",
               "q": "Qaysi prompt aniqroq?",
               "options": [
                 "«Kafe saytiga sarlavha yoz»",
@@ -1369,6 +1508,7 @@
               "explain": "Unda nima kerakligi aniq yozilgan: kafe saytiga sarlavha."
             },
             {
+              "id": "05.2-2",
               "q": "Lola «Gul do'koni uchun yoz» dedi. Nima yetishmayapti?",
               "options": [
                 "Nima yozish kerakligi",
@@ -1380,6 +1520,7 @@
               "explain": "Aniq promptda nima kerakligi yoziladi."
             },
             {
+              "id": "05.2-3",
               "q": "«Maktab saytiga ... yoz» promptida nuqtalar o'rniga nima yoziladi?",
               "options": [
                 "yangilik matni",
@@ -1391,6 +1532,7 @@
               "explain": "Nima kerakligi aniq aytilishi kerak: yangilik matni."
             },
             {
+              "id": "05.2-4",
               "q": "Prompt faqat «Rasm» deb yozildi. SI nima qiladi?",
               "options": [
                 "Nima kerakligini taxmin qiladi",
@@ -1402,6 +1544,7 @@
               "explain": "Nima kerakligi yozilmasa, SI taxmin qilishga majbur."
             },
             {
+              "id": "05.2-5",
               "q": "Jasur faqat «Kitob do'koni» deb yozdi. Qanday tuzatish kerak?",
               "options": [
                 "«Kitob do'koniga sarlavha yoz»",
@@ -1413,6 +1556,7 @@
               "explain": "Promptga nima kerakligi qo'shildi: sarlavha."
             },
             {
+              "id": "05.2-6",
               "q": "«Botga salomlashish matni yoz». Bu promptda nima kerakligi aytilganmi?",
               "options": [
                 "Ha, salomlashish matni",
@@ -1426,7 +1570,9 @@
           ]
         },
         {
+          "id": "05.3",
           "n": 3,
+          "name": "Qanday bo'lishini yozish",
           "text": "Aniq promptda qanday bo'lishi ham yoziladi: ==tili== va ==uzunligi==.",
           "example": [
             {
@@ -1437,6 +1583,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "05.3-1",
               "q": "Promptga til va uzunlik qo'shmoqchisan. Qaysi qo'shimcha to'g'ri?",
               "options": [
                 "«O'zbekcha, 6 so'zgacha»",
@@ -1448,6 +1595,7 @@
               "explain": "Bu qo'shimchada til ham, uzunlik ham bor."
             },
             {
+              "id": "05.3-2",
               "q": "«Gul do'koniga sarlavha yoz. 5 so'zgacha.» Nima yetishmayapti?",
               "options": [
                 "Qaysi tilda ekani",
@@ -1459,6 +1607,7 @@
               "explain": "Uzunlik bor, lekin til yozilmagan."
             },
             {
+              "id": "05.3-3",
               "q": "SI juda uzun sarlavha yozdi. Promptga nima qo'shish kerak edi?",
               "options": [
                 "So'zlar soni chegarasi",
@@ -1470,6 +1619,7 @@
               "explain": "Uzunlik yozilsa, SI qisqa sarlavha yozadi."
             },
             {
+              "id": "05.3-4",
               "q": "SI matnni ruscha yozdi, senga o'zbekcha kerak edi. Promptda nima yo'q edi?",
               "options": [
                 "Matn tili",
@@ -1481,6 +1631,7 @@
               "explain": "Til yozilmagani uchun SI boshqa tilda yozdi."
             },
             {
+              "id": "05.3-5",
               "q": "Aniq promptda nima kerakligidan tashqari yana nima yoziladi?",
               "options": [
                 "Tili va uzunligi",
@@ -1492,6 +1643,7 @@
               "explain": "Aniq promptda tili va uzunligi ham yoziladi."
             },
             {
+              "id": "05.3-6",
               "q": "«Kitob do'koni botiga salom yoz. O'zbekcha, 2 gap.» Uzunlik qayerda?",
               "options": [
                 "«2 gap» qismida",
@@ -1505,7 +1657,9 @@
           ]
         },
         {
+          "id": "05.4",
           "n": 4,
+          "name": "Amaliyot: aniq prompt",
           "text": "Endi promptni o'zing yoz.",
           "example": [
             {
@@ -1530,12 +1684,15 @@
       ],
       "bns": [
         {
+          "id": "06.1",
           "n": 1,
+          "name": "Kontekst nima",
           "text": "==Kontekst== — SI bilmaydigan, lekin ish uchun kerak bo'lgan ma'lumot.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "06.1-1",
               "q": "Kontekst nima?",
               "options": [
                 "SI bilmaydigan, lekin ishga kerak ma'lumot",
@@ -1547,6 +1704,7 @@
               "explain": "Kontekst — SI o'zi bilmaydigan, lekin ish uchun kerak ma'lumot."
             },
             {
+              "id": "06.1-2",
               "q": "Aziz o'z kafesi uchun menyu so'radi. Qaysi ma'lumotni SI o'zi bilmaydi?",
               "options": [
                 "Kafedagi taomlar va narxlar",
@@ -1558,6 +1716,7 @@
               "explain": "Azizning kafesida nima borligini SI bilmaydi, buni Aziz aytishi kerak."
             },
             {
+              "id": "06.1-3",
               "q": "Malika gul do'koni sayti uchun matn so'raydi. Qaysi gap kontekst?",
               "options": [
                 "«Do'konda faqat atirgul sotiladi»",
@@ -1569,6 +1728,7 @@
               "explain": "Bu gap SI bilmaydigan, lekin matn uchun kerak ma'lumot."
             },
             {
+              "id": "06.1-4",
               "q": "Sardor maktab sayti uchun matn so'radi, lekin maktab nomini aytmadi. Nima bo'ladi?",
               "options": [
                 "SI nomni o'zi taxmin qilib yozadi",
@@ -1580,6 +1740,7 @@
               "explain": "SI maktab nomini bilmaydi, shuning uchun o'zi taxmin qiladi."
             },
             {
+              "id": "06.1-5",
               "q": "Jasur kitob do'koni saytiga ish vaqtini yozdirmoqchi. SI'ga nimani aytishi kerak?",
               "options": [
                 "Do'kon soat 9 dan 18 gacha ochiq",
@@ -1591,6 +1752,7 @@
               "explain": "Ish vaqti matn uchun kerak, SI esa uni bilmaydi."
             },
             {
+              "id": "06.1-6",
               "q": "Bobur matnni qisqartirishni so'radi, lekin matnni yubormadi. Nima yetishmaydi?",
               "options": [
                 "Qisqartiriladigan matnning o'zi",
@@ -1604,7 +1766,9 @@
           ]
         },
         {
+          "id": "06.2",
           "n": 2,
+          "name": "Loyiha nima haqida",
           "text": "Loyiha ==nima haqida== ekanini ayt.",
           "example": [
             {
@@ -1615,6 +1779,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "06.2-1",
               "q": "Gul do'koni uchun sayt qilyapsan. Promptga qaysi gapni qo'shasan?",
               "options": [
                 "«Bu gul do'konining sayti»",
@@ -1626,6 +1791,7 @@
               "explain": "Bu gap loyiha nima haqida ekanini aytadi."
             },
             {
+              "id": "06.2-2",
               "q": "SI sport zali saytiga taomlar menyusini yozdi. Promptda nima aytilmagan edi?",
               "options": [
                 "Sayt sport zali haqida ekani",
@@ -1637,6 +1803,7 @@
               "explain": "Loyiha aytilmasa, SI o'zi taxmin qiladi va adashadi."
             },
             {
+              "id": "06.2-3",
               "q": "Qaysi prompt yaxshiroq: «Matn yoz» yoki «Bu hayvonot bog'i sayti. Matn yoz»?",
               "options": [
                 "Ikkinchisi, unda loyiha aytilgan",
@@ -1648,6 +1815,7 @@
               "explain": "Ikkinchi promptda sayt nima haqida ekani bor, SI adashmaydi."
             },
             {
+              "id": "06.2-4",
               "q": "Sen «Bu bolalar kutubxonasi sayti» deb yozding. Bu SI'ga nimani aytadi?",
               "options": [
                 "Sayt nima haqida ekanini",
@@ -1659,6 +1827,7 @@
               "explain": "Bu gap loyiha — bolalar kutubxonasi ekanini aytadi."
             },
             {
+              "id": "06.2-5",
               "q": "Telegram bot uchun prompt yozyapsan. Qaysi gap bot nima haqida ekanini aytadi?",
               "options": [
                 "«Bu bot kino chiptalarini sotadi»",
@@ -1670,6 +1839,7 @@
               "explain": "Bu gap bot qanday loyiha ekanini — kino chiptalari haqida ekanini aytadi."
             },
             {
+              "id": "06.2-6",
               "q": "Nega loyiha nima haqida ekanini aytish kerak?",
               "options": [
                 "SI loyihangni o'zi bilmaydi",
@@ -1683,7 +1853,9 @@
           ]
         },
         {
+          "id": "06.3",
           "n": 3,
+          "name": "Kim uchun",
           "text": "==Kim uchun== ekanini ayt.",
           "example": [
             {
@@ -1694,6 +1866,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "06.3-1",
               "q": "Sayt bobolar va buvilar uchun. Promptga nima yozasan?",
               "options": [
                 "«Saytga keksa odamlar kiradi»",
@@ -1705,6 +1878,7 @@
               "explain": "Bu gap sayt kim uchun ekanini aytadi."
             },
             {
+              "id": "06.3-2",
               "q": "«Saytga 12–15 yoshli bolalar kiradi». Bu gap nimani aytadi?",
               "options": [
                 "Sayt kim uchun ekanini",
@@ -1716,6 +1890,7 @@
               "explain": "Bu gap saytga kim kirishini aytadi."
             },
             {
+              "id": "06.3-3",
               "q": "Nilufar ukasi uchun o'yin qoidalarini so'radi, SI qiyin so'zlar yozdi. Nima aytilmagan?",
               "options": [
                 "Qoidalarni kichik bola o'qishi",
@@ -1727,6 +1902,7 @@
               "explain": "SI kim o'qishini bilmagani uchun qiyin so'zlar yozdi."
             },
             {
+              "id": "06.3-4",
               "q": "Qaysi gap sayt kim uchun ekanini aytadi?",
               "options": [
                 "«Saytga sayyohlar kiradi»",
@@ -1738,6 +1914,7 @@
               "explain": "«Sayyohlar kiradi» — saytdan kim foydalanishini aytadi."
             },
             {
+              "id": "06.3-5",
               "q": "Akmal 1-sinflar o'qiydigan sayt uchun matn so'raydi. Qaysi prompt yaxshi?",
               "options": [
                 "«Saytni 7 yoshli bolalar o'qiydi. Matn yoz»",
@@ -1749,6 +1926,7 @@
               "explain": "Unda matnni kim o'qishi aytilgan, SI oson so'zlar tanlaydi."
             },
             {
+              "id": "06.3-6",
               "q": "Nega sayt kim uchun ekanini aytish kerak?",
               "options": [
                 "SI kimga mos yozishni bilishi uchun",
@@ -1762,7 +1940,9 @@
           ]
         },
         {
+          "id": "06.4",
           "n": 4,
+          "name": "Amaliyot: kontekstli prompt",
           "text": "Endi kontekstli prompt yoz.",
           "example": [
             {
@@ -1794,12 +1974,15 @@
       ],
       "bns": [
         {
+          "id": "07.1",
           "n": 1,
+          "name": "Cheklov nima",
           "text": "==Cheklov== — SI nima qilmasligi kerakligi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "07.1-1",
               "q": "Cheklov nima?",
               "options": [
                 "SI nima qilmasligi kerakligi",
@@ -1811,6 +1994,7 @@
               "explain": "Cheklov SI'ga nima qilmaslik kerakligini aytadi."
             },
             {
+              "id": "07.1-2",
               "q": "«Rasm qo'shma». Bu gap SI'ga nimani aytadi?",
               "options": [
                 "Nima qilmaslik kerakligini",
@@ -1822,6 +2006,7 @@
               "explain": "«Qo'shma» — qilmaslik haqida, demak bu cheklov."
             },
             {
+              "id": "07.1-3",
               "q": "SI sport zali matniga keraksiz narx qo'shdi. Promptda nima yetishmadi?",
               "options": [
                 "Promptda cheklov yo'q edi",
@@ -1833,6 +2018,7 @@
               "explain": "«Narx yozma» desang, SI narx qo'shmasdi."
             },
             {
+              "id": "07.1-4",
               "q": "Jasur gul do'koni matnini so'raydi, telefon raqami kerak emas. U nima yozadi?",
               "options": [
                 "«Telefon raqamini yozma»",
@@ -1844,6 +2030,7 @@
               "explain": "Bu cheklov — SI telefon raqamini yozmaydi."
             },
             {
+              "id": "07.1-5",
               "q": "«Matn yoz. Rasm qo'shma. Narx yozma». Bu promptda nechta cheklov bor?",
               "options": [
                 "2 ta",
@@ -1855,6 +2042,7 @@
               "explain": "«Rasm qo'shma» va «Narx yozma» — ikkalasi ham cheklov."
             },
             {
+              "id": "07.1-6",
               "q": "Hayotda qaysi gap cheklovga o'xshaydi?",
               "options": [
                 "«Darsda telefon ishlatma»",
@@ -1868,7 +2056,9 @@
           ]
         },
         {
+          "id": "07.2",
           "n": 2,
+          "name": "Nimaga tegmaslik",
           "text": "==Nimaga tegmaslik== kerakligini ayt.",
           "example": [
             {
@@ -1879,6 +2069,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "07.2-1",
               "q": "Sen faqat sarlavhani o'zgartirmoqchisan. Promptga yana nima qo'shasan?",
               "options": [
                 "«Qolganiga tegma»",
@@ -1890,6 +2081,7 @@
               "explain": "«Qolganiga tegma» deganda SI faqat sarlavhani o'zgartiradi."
             },
             {
+              "id": "07.2-2",
               "q": "Lola tugmani qizil qilishni so'radi, SI yozuvni ham o'zgartirdi. Nima yetishmadi?",
               "options": [
                 "«Yozuvga tegma» degan gap",
@@ -1901,6 +2093,7 @@
               "explain": "Nimaga tegmaslikni aytmasa, SI boshqa joyni ham o'zgartirishi mumkin."
             },
             {
+              "id": "07.2-3",
               "q": "Kafe saytidagi menyu tayyor va yaxshi. Promptda menyu haqida nima deysan?",
               "options": [
                 "«Menyuga tegma»",
@@ -1912,6 +2105,7 @@
               "explain": "Tayyor menyu buzilmasligi uchun «tegma» deb yozasan."
             },
             {
+              "id": "07.2-4",
               "q": "Qaysi promptda nimaga tegmaslik aytilgan?",
               "options": [
                 "«Rasmni almashtir, matnga tegma»",
@@ -1923,6 +2117,7 @@
               "explain": "«Matnga tegma» — SI matnni o'zgartirmasligi kerak."
             },
             {
+              "id": "07.2-5",
               "q": "«Faqat narxlarni yangila. Qolganiga tegma». SI nimani o'zgartiradi?",
               "options": [
                 "Faqat narxlarni",
@@ -1934,6 +2129,7 @@
               "explain": "Promptda faqat narxlar so'ralgan, qolgani o'zgarmaydi."
             },
             {
+              "id": "07.2-6",
               "q": "Nega «qolganiga tegma» deb yozish foydali?",
               "options": [
                 "SI so'ralmagan joyni o'zgartirmaydi",
@@ -1947,7 +2143,9 @@
           ]
         },
         {
+          "id": "07.3",
           "n": 3,
+          "name": "Keraksizni aniq yozish",
           "text": "Keraksiz narsani aniq yoz.",
           "example": [
             {
@@ -1958,6 +2156,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "07.3-1",
               "q": "SI kafe matniga keraksiz narx qo'shdi. Keyingi safar nima yozasan?",
               "options": [
                 "«Narx yozma»",
@@ -1969,6 +2168,7 @@
               "explain": "«Narx yozma» deb aniq aytsang, SI narx qo'shmaydi."
             },
             {
+              "id": "07.3-2",
               "q": "Qaysi cheklov keraksiz narsani aniq aytadi?",
               "options": [
                 "«Rasm qo'shma»",
@@ -1980,6 +2180,7 @@
               "explain": "Unda nima keraksizligi — rasm — aniq aytilgan."
             },
             {
+              "id": "07.3-3",
               "q": "Dilnoza «Keraksiz narsa yozma» deb yozdi. Nega bu yaxshi emas?",
               "options": [
                 "SI nima keraksizligini bilmaydi",
@@ -1991,6 +2192,7 @@
               "explain": "Nima keraksizligini SI bilmaydi, uni nomi bilan yozish kerak."
             },
             {
+              "id": "07.3-4",
               "q": "Keraksiz narsani promptda qanday yozgan yaxshi?",
               "options": [
                 "Har birini nomi bilan yozish",
@@ -2002,6 +2204,7 @@
               "explain": "Aniq nomini yozsang, SI nima kerak emasligini biladi."
             },
             {
+              "id": "07.3-5",
               "q": "Maktab e'loniga telefon va manzil kerak emas. Qaysi prompt to'g'ri?",
               "options": [
                 "«E'lon yoz. Telefon, manzil yozma»",
@@ -2013,6 +2216,7 @@
               "explain": "Ikkala keraksiz narsa ham aniq aytilgan."
             },
             {
+              "id": "07.3-6",
               "q": "Prompt: «Menyu yoz. Ichimliklarni yozma». SI nimani yozmaydi?",
               "options": [
                 "Choy va sharbatlarni",
@@ -2026,7 +2230,9 @@
           ]
         },
         {
+          "id": "07.4",
           "n": 4,
+          "name": "Amaliyot: cheklovli prompt",
           "text": "Endi cheklovli prompt yoz.",
           "example": [
             {
@@ -2054,12 +2260,15 @@
       ],
       "bns": [
         {
+          "id": "08.1",
           "n": 1,
+          "name": "Misol nima",
           "text": "==Misol== — SI'ga \"shunga o'xshash qil\" deb ko'rsatilgan namuna.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "08.1-1",
               "q": "Misol nima?",
               "options": [
                 "SI'ga ko'rsatilgan namuna",
@@ -2071,6 +2280,7 @@
               "explain": "Misol — SI'ga «shunga o'xshash qil» deb ko'rsatilgan namuna."
             },
             {
+              "id": "08.1-2",
               "q": "Aziz «Bahor» kafesi saytiga o'xshash sayt istaydi. Bu yerda misol qaysi?",
               "options": [
                 "«Bahor» kafesining sayti",
@@ -2082,6 +2292,7 @@
               "explain": "Aziz «Bahor» saytini namuna qilib ko'rsatyapti."
             },
             {
+              "id": "08.1-3",
               "q": "Qaysi promptda misol bor?",
               "options": [
                 "«Mana shu matnga o'xshatib yoz: ...»",
@@ -2093,6 +2304,7 @@
               "explain": "Unda SI'ga o'xshatish uchun namuna berilgan."
             },
             {
+              "id": "08.1-4",
               "q": "Sardor qanday tugma kerakligini so'z bilan tushuntira olmayapti. Nima qilgani yaxshi?",
               "options": [
                 "O'xshash tugmani misol qilib beradi",
@@ -2104,6 +2316,7 @@
               "explain": "Misol so'z bilan aytish qiyin narsani ko'rsatib beradi."
             },
             {
+              "id": "08.1-5",
               "q": "Nodira do'stining tabrik matnini misol qilib berdi. SI qanday matn yozadi?",
               "options": [
                 "Shu tabrikka o'xshash matn",
@@ -2115,6 +2328,7 @@
               "explain": "Misol bersang, SI shunga o'xshash narsa qiladi."
             },
             {
+              "id": "08.1-6",
               "q": "Malika SI'ga yoqqan e'lonni yubordi: «Shunga o'xshash yoz». U nima qildi?",
               "options": [
                 "SI'ga misol ko'rsatdi",
@@ -2128,12 +2342,15 @@
           ]
         },
         {
+          "id": "08.2",
           "n": 2,
+          "name": "Misol turlari",
           "text": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "08.2-1",
               "q": "Lola SI'ga do'kon saytining rasmini yubordi. Bu misol bo'ladimi?",
               "options": [
                 "Ha, rasm ham misol bo'ladi",
@@ -2145,6 +2362,7 @@
               "explain": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
             },
             {
+              "id": "08.2-2",
               "q": "Jasur «Shu saytdagidek menyu qil» deb boshqa saytni ko'rsatdi. Misol qaysi turda?",
               "options": [
                 "Boshqa sayt",
@@ -2156,6 +2374,7 @@
               "explain": "Jasur namuna sifatida boshqa saytni ko'rsatdi."
             },
             {
+              "id": "08.2-3",
               "q": "Gul do'koni sayti uchun rang tanlayapsan. Qaysi misol eng qulay?",
               "options": [
                 "Yoqqan gul do'konining rasmi",
@@ -2167,6 +2386,7 @@
               "explain": "Rasmda ranglar ko'rinadi, u yaxshi misol bo'ladi."
             },
             {
+              "id": "08.2-4",
               "q": "Nodira yoqqan matnni misol qilmoqchi. Uni SI'ga qanday beradi?",
               "options": [
                 "Matnni promptga qo'yib yuboradi",
@@ -2178,6 +2398,7 @@
               "explain": "SI ekraningni ko'rmaydi, matnni promptga qo'yish kerak."
             },
             {
+              "id": "08.2-5",
               "q": "Misol qanday bo'lishi mumkin?",
               "options": [
                 "Matn, rasm yoki boshqa sayt",
@@ -2189,6 +2410,7 @@
               "explain": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
             },
             {
+              "id": "08.2-6",
               "q": "Boshqa Telegram botning javobi senga yoqdi. O'z boting uchun nima qilasan?",
               "options": [
                 "Uni SI'ga misol qilib beraman",
@@ -2202,7 +2424,9 @@
           ]
         },
         {
+          "id": "08.3",
           "n": 3,
+          "name": "Misoldan nimani olish",
           "text": "Misoldan ==nimani olish== kerakligini ayt: rangini, uslubini yoki tuzilishini.",
           "example": [
             {
@@ -2213,6 +2437,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "08.3-1",
               "q": "Senga «Bahor» saytining faqat rangi yoqdi. Promptga nima yozasan?",
               "options": [
                 "«Faqat rangini ol»",
@@ -2224,6 +2449,7 @@
               "explain": "Nimani olishni aytsang, SI faqat rangni oladi."
             },
             {
+              "id": "08.3-2",
               "q": "Ali misol berdi, lekin nimani olishni aytmadi. Nima bo'lishi mumkin?",
               "options": [
                 "SI keraksiz narsani ham oladi",
@@ -2235,6 +2461,7 @@
               "explain": "Nima kerakligini bilmasa, SI misoldan boshqa narsalarni ham oladi."
             },
             {
+              "id": "08.3-3",
               "q": "Prompt: «Shu menyu kabi qil. Faqat tuzilishini ol». SI nimani oladi?",
               "options": [
                 "Bo'limlar tartibini",
@@ -2246,6 +2473,7 @@
               "explain": "Tuzilish — qismlar qanday tartibda turgani."
             },
             {
+              "id": "08.3-4",
               "q": "Misoldan nimalarni olishni aytish mumkin?",
               "options": [
                 "Rangini, uslubini yoki tuzilishini",
@@ -2257,6 +2485,7 @@
               "explain": "Misoldan rang, uslub yoki tuzilishni olishni aytasan."
             },
             {
+              "id": "08.3-5",
               "q": "Do'stingning tabrigi quvnoq ohangda, senga ham shunday kerak. Nimani olasan?",
               "options": [
                 "Uslubini",
@@ -2268,6 +2497,7 @@
               "explain": "Matnning ohangi — uning uslubi."
             },
             {
+              "id": "08.3-6",
               "q": "«Faqat rangini ol» degan eding, SI matnni ham ko'chirdi. Bu to'g'rimi?",
               "options": [
                 "Yo'q, faqat rangni olishi kerak edi",
@@ -2281,7 +2511,9 @@
           ]
         },
         {
+          "id": "08.4",
           "n": 4,
+          "name": "Amaliyot: misolli prompt",
           "text": "Endi misolli prompt yoz.",
           "example": [
             {
@@ -2310,12 +2542,15 @@
       ],
       "bns": [
         {
+          "id": "09.1",
           "n": 1,
+          "name": "Katta vazifa — ko'p xato",
           "text": "Katta vazifani bitta promptda bersang, SI ko'proq xato qilishi mumkin.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "09.1-1",
               "q": "Ali bitta promptda butun do'kon saytini so'radi. Nima bo'lishi mumkin?",
               "options": [
                 "SI ko'proq xato qilishi mumkin",
@@ -2327,6 +2562,7 @@
               "explain": "Katta vazifa bitta promptda bo'lsa, SI ko'proq xato qiladi."
             },
             {
+              "id": "09.1-2",
               "q": "Qaysi prompt juda katta vazifa?",
               "options": [
                 "«Butun kafe saytini to'liq qil»",
@@ -2338,6 +2574,7 @@
               "explain": "Butun sayt — ko'p ishdan iborat katta vazifa."
             },
             {
+              "id": "09.1-3",
               "q": "Malika bitta promptda 10 ta ish so'radi va SI adashdi. Sabab nima?",
               "options": [
                 "Bir promptda juda ko'p ish bor",
@@ -2349,6 +2586,7 @@
               "explain": "Ish ko'p bo'lsa, SI ko'proq adashadi."
             },
             {
+              "id": "09.1-4",
               "q": "A — bitta katta prompt, B — bir nechta kichik prompt. Qayerda xato ko'proq?",
               "options": [
                 "A yo'lda",
@@ -2360,6 +2598,7 @@
               "explain": "Bitta katta promptda SI ko'proq xato qilishi mumkin."
             },
             {
+              "id": "09.1-5",
               "q": "Qaysi holatda SI kamroq xato qiladi?",
               "options": [
                 "Vazifa kichik bo'lganda",
@@ -2371,6 +2610,7 @@
               "explain": "Kichik vazifada SI kamroq adashadi."
             },
             {
+              "id": "09.1-6",
               "q": "Qaysi o'quvchi SI'dan ko'proq xato javob olishi mumkin?",
               "options": [
                 "Butun saytni birdan so'ragan Ali",
@@ -2384,12 +2624,15 @@
           ]
         },
         {
+          "id": "09.2",
           "n": 2,
+          "name": "Kichik qadamlarga bo'lish",
           "text": "Katta vazifani ==kichik qadamlar==ga bo'l.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "09.2-1",
               "q": "Kafe sayti katta vazifa. Uni qanday so'raysan?",
               "options": [
                 "Kichik qadamlarga bo'lib so'rayman",
@@ -2401,6 +2644,7 @@
               "explain": "Katta vazifani kichik qadamlarga bo'lish kerak."
             },
             {
+              "id": "09.2-2",
               "q": "Gul do'koni saytini qadamlarga bo'lyapsan. Qaysi biri kichik qadam?",
               "options": [
                 "Sarlavha yozish",
@@ -2412,6 +2656,7 @@
               "explain": "Sarlavha — saytning kichik bir qismi."
             },
             {
+              "id": "09.2-3",
               "q": "Qaysi reja kichik qadamlarga bo'lingan?",
               "options": [
                 "1) Sarlavha, 2) Menyu, 3) Tugma",
@@ -2423,6 +2668,7 @@
               "explain": "Har bir qadam — bitta kichik ish."
             },
             {
+              "id": "09.2-4",
               "q": "Tort pishirish ham katta ish. Uni qanday qadamlarga bo'lasan?",
               "options": [
                 "Xamir qorish, pishirish, bezash",
@@ -2434,6 +2680,7 @@
               "explain": "Katta ish kichik qadamlarga bo'linsa, oson bajariladi."
             },
             {
+              "id": "09.2-5",
               "q": "Jasur maktab sayti uchun 4 ta qadam yozdi. Bu nega yaxshi?",
               "options": [
                 "Har qadamda SI kamroq adashadi",
@@ -2445,6 +2692,7 @@
               "explain": "Kichik qadamda SI kamroq xato qiladi."
             },
             {
+              "id": "09.2-6",
               "q": "Sport zali sayti: sarlavha, jadval, narxlar, aloqa. Nechta qadamga bo'lsa bo'ladi?",
               "options": [
                 "4 ta qadamga",
@@ -2458,7 +2706,9 @@
           ]
         },
         {
+          "id": "09.3",
           "n": 3,
+          "name": "Bir promptda bitta qadam",
           "text": "Bitta promptda ==faqat bitta qadam==ni so'ra.",
           "example": [
             {
@@ -2473,6 +2723,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "09.3-1",
               "q": "Qaysi prompt faqat bitta qadamni so'raydi?",
               "options": [
                 "«Faqat sarlavhani qil»",
@@ -2484,6 +2735,7 @@
               "explain": "Unda faqat bitta ish — sarlavha so'ralgan."
             },
             {
+              "id": "09.3-2",
               "q": "Ali 1-promptda sarlavhani oldi. 2-promptda nima so'raydi?",
               "options": [
                 "Endi faqat menyuni",
@@ -2495,6 +2747,7 @@
               "explain": "Har promptda keyingi bitta qadam so'raladi."
             },
             {
+              "id": "09.3-3",
               "q": "Prompt: «Sarlavha yoz, menyu qil, rasm qo'sh». Nima xato?",
               "options": [
                 "Bitta promptda uchta qadam bor",
@@ -2506,6 +2759,7 @@
               "explain": "Bitta promptda faqat bitta qadam so'rash kerak."
             },
             {
+              "id": "09.3-4",
               "q": "Lola gul do'koni saytini 3 qadamga bo'ldi. Qadamlarni SI'ga qanday beradi?",
               "options": [
                 "Har birini alohida promptda",
@@ -2517,6 +2771,7 @@
               "explain": "Bitta promptda bitta qadam bo'lishi kerak."
             },
             {
+              "id": "09.3-5",
               "q": "Bot uchun prompt: «Faqat salom xabarini qil». Bu nechta qadam?",
               "options": [
                 "Bitta qadam",
@@ -2528,6 +2783,7 @@
               "explain": "Unda faqat bitta ish so'ralgan."
             },
             {
+              "id": "09.3-6",
               "q": "Zarina «Menyu va tugma qil» deb yozdi. Promptni qanday tuzatadi?",
               "options": [
                 "Uni ikki promptga bo'ladi",
@@ -2541,7 +2797,9 @@
           ]
         },
         {
+          "id": "09.4",
           "n": 4,
+          "name": "Amaliyot: birinchi qadam",
           "text": "Endi birinchi qadam uchun prompt yoz.",
           "example": [
             {
@@ -2565,12 +2823,15 @@
       ],
       "bns": [
         {
+          "id": "10.1",
           "n": 1,
+          "name": "Natijani oldindan yozish",
           "text": "Prompt yozishdan oldin natija qanday bo'lishi kerakligini yozib qo'y.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "10.1-1",
               "q": "Kutilgan natijani qachon yozasan?",
               "options": [
                 "Prompt yozishdan oldin",
@@ -2582,6 +2843,7 @@
               "explain": "Natija qanday bo'lishini prompt yozishdan oldin yozib qo'yasan."
             },
             {
+              "id": "10.1-2",
               "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
               "options": [
                 "Tugma qanday bo'lishini yozib qo'yadi",
@@ -2593,6 +2855,7 @@
               "explain": "Avval natija qanday bo'lishini yozadi, keyin prompt."
             },
             {
+              "id": "10.1-3",
               "q": "Malika avval prompt yubordi, keyin natijani yozdi. Nimani o'zgartirishi kerak?",
               "options": [
                 "Ish tartibini",
@@ -2604,6 +2867,7 @@
               "explain": "Avval kutilgan natija, keyin prompt yoziladi."
             },
             {
+              "id": "10.1-4",
               "q": "Bozorga borishdan oldin xarid ro'yxatini yozasan. Bu nimaga o'xshaydi?",
               "options": [
                 "Natijani oldindan yozib qo'yishga",
@@ -2615,6 +2879,7 @@
               "explain": "Ro'yxat ham nima kerakligini oldindan yozib qo'yadi."
             },
             {
+              "id": "10.1-5",
               "q": "Jasur menyu qanday bo'lishini oldin yozdi, keyin SI javob berdi. Endi nima qiladi?",
               "options": [
                 "Javobni yozganiga solishtiradi",
@@ -2626,6 +2891,7 @@
               "explain": "Oldindan yozilgan natija bilan javobni solishtirish mumkin."
             },
             {
+              "id": "10.1-6",
               "q": "Nodira gul do'koni sayti ustida ishlayapti. Qaysi tartib to'g'ri?",
               "options": [
                 "Natijani yozish → prompt → javob",
@@ -2639,7 +2905,9 @@
           ]
         },
         {
+          "id": "10.2",
           "n": 2,
+          "name": "Ko'rib tekshirsa bo'ladigan natija",
           "text": "Yaxshi kutilgan natijani ==ko'rib tekshirsa== bo'ladi.",
           "example": [
             {
@@ -2654,6 +2922,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "10.2-1",
               "q": "Qaysi kutilgan natija yaxshi?",
               "options": [
                 "Tugma ko'k rangda",
@@ -2665,6 +2934,7 @@
               "explain": "«Tugma ko'k» — buni ko'rib tekshirsa bo'ladi."
             },
             {
+              "id": "10.2-2",
               "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasan?",
               "options": [
                 "Sarlavhadagi so'zlarni sanayman",
@@ -2676,6 +2946,7 @@
               "explain": "So'zlarni sanab, 6 tadan oshmaganini ko'rasan."
             },
             {
+              "id": "10.2-3",
               "q": "Kutilgan natija «Saytda 5 ta kitob», lekin saytda 4 ta. Nima deysan?",
               "options": [
                 "Natija bajarilmagan",
@@ -2687,6 +2958,7 @@
               "explain": "Sanab ko'rding: 5 emas, 4 ta, demak bajarilmagan."
             },
             {
+              "id": "10.2-4",
               "q": "Bot «Assalomu alaykum» deyishi kerak. Buni ko'rish uchun nima qilasan?",
               "options": [
                 "Botga yozib, javobiga qarayman",
@@ -2698,6 +2970,7 @@
               "explain": "Bot javobini ko'rib, natijani tekshirasan."
             },
             {
+              "id": "10.2-5",
               "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
               "options": [
                 "Alining, uni sanab ko'rsa bo'ladi",
@@ -2709,6 +2982,7 @@
               "explain": "Qatorlarni sanab tekshirsa bo'ladi, «qiziq»ni esa yo'q."
             },
             {
+              "id": "10.2-6",
               "q": "Yaxshi kutilgan natijaning belgisi nima?",
               "options": [
                 "Uni ko'rib tekshirsa bo'ladi",
@@ -2722,12 +2996,15 @@
           ]
         },
         {
+          "id": "10.3",
           "n": 3,
+          "name": "\"Chiroyli\"ni tekshirib bo'lmaydi",
           "text": "\"Chiroyli bo'lsin\" degan gapni ==tekshirib bo'lmaydi==.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "10.3-1",
               "q": "Qaysi so'z ham «chiroyli» kabi tekshirib bo'lmaydigan?",
               "options": [
                 "«Ajoyib»",
@@ -2739,6 +3016,7 @@
               "explain": "«Ajoyib» ham har kimga har xil, uni o'lchab bo'lmaydi."
             },
             {
+              "id": "10.3-2",
               "q": "Qaysi kutilgan natijani tekshirib bo'lmaydi?",
               "options": [
                 "Menyu chiroyli bo'lsin",
@@ -2750,6 +3028,7 @@
               "explain": "«Chiroyli»ni ko'rib tekshirib bo'lmaydi, qolganlarini bo'ladi."
             },
             {
+              "id": "10.3-3",
               "q": "Sardor «Logo chiroyli bo'lsin» deb yozdi. Uni qanday tuzatadi?",
               "options": [
                 "«Logo yashil va dumaloq» deb",
@@ -2761,6 +3040,7 @@
               "explain": "Rang va shaklni ko'rib tekshirsa bo'ladi."
             },
             {
+              "id": "10.3-4",
               "q": "Kutilgan natija «Rasm chiroyli» edi, SI rasm chizdi. Natija bajarildimi?",
               "options": [
                 "Aniq aytib bo'lmaydi",
@@ -2772,6 +3052,7 @@
               "explain": "«Chiroyli»ni tekshirib bo'lmaydi, shuning uchun aniq javob yo'q."
             },
             {
+              "id": "10.3-5",
               "q": "Ali bitta saytni «chiroyli» dedi, Vali «chiroyli emas» dedi. Nega shunday?",
               "options": [
                 "Har kimga har xil yoqadi",
@@ -2783,6 +3064,7 @@
               "explain": "Chiroyli yoki yo'qligi har kimga har xil ko'rinadi."
             },
             {
+              "id": "10.3-6",
               "q": "Nega «chiroyli bo'lsin» yomon kutilgan natija?",
               "options": [
                 "Uni ko'rib tekshirib bo'lmaydi",
@@ -2796,7 +3078,9 @@
           ]
         },
         {
+          "id": "10.4",
           "n": 4,
+          "name": "Amaliyot: kutilgan natija",
           "text": "Endi kutilgan natijani o'zing yoz.",
           "example": [
             {
@@ -2824,12 +3108,15 @@
       ],
       "bns": [
         {
+          "id": "11.1",
           "n": 1,
+          "name": "Natijani o'zing ochib ko'r",
           "text": "SI ishni tugatgach, natijani o'zing ochib ko'r.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "11.1-1",
               "q": "SI kafe sayti uchun menyu qildi va «Tayyor!» dedi. Ali endi nima qiladi?",
               "options": [
                 "Saytni ochib, menyuni o'zi ko'radi",
@@ -2841,6 +3128,7 @@
               "explain": "SI «tayyor» desa ham, natijani o'zing ochib ko'rasan."
             },
             {
+              "id": "11.1-2",
               "q": "Nega natijani SI'ning so'ziga emas, o'zingga ishonib tekshirasan?",
               "options": [
                 "SI xato qilsa ham ishonch bilan gapiradi",
@@ -2852,6 +3140,7 @@
               "explain": "SI xato qilganda ham ishonch bilan «tayyor» deyishi mumkin."
             },
             {
+              "id": "11.1-3",
               "q": "Sardor rasmni ochmay «zo'r» dedi. Keyin qarasa, mushuk o'rniga it. Qayerda adashdi?",
               "options": [
                 "Rasmni o'zi ochib ko'rmadi",
@@ -2863,6 +3152,7 @@
               "explain": "Rasmni o'zi ochib ko'rganida, xatoni darhol sezardi."
             },
             {
+              "id": "11.1-4",
               "q": "Telegram bot salom berishi kerak. SI «Bot tayyor» dedi. Qanday tekshirasan?",
               "options": [
                 "Botga o'zim yozib ko'raman",
@@ -2874,6 +3164,7 @@
               "explain": "Botga o'zing yozsang, u salom beradimi-yo'qmi ko'rasan."
             },
             {
+              "id": "11.1-5",
               "q": "Nilufar SI bilan buvisiga tabrik yozdi. Yuborishdan oldin uni kim o'qiydi?",
               "options": [
                 "Nilufarning o'zi",
@@ -2885,6 +3176,7 @@
               "explain": "Natijani boshqaga berishdan oldin o'zing ko'rib chiqasan."
             },
             {
+              "id": "11.1-6",
               "q": "SI sport zali saytiga dars jadvalini qo'shdi. Tekshirish uchun nimaga qaraysan?",
               "options": [
                 "Ekrandagi jadvalning o'ziga",
@@ -2898,12 +3190,15 @@
           ]
         },
         {
+          "id": "11.2",
           "n": 2,
+          "name": "Har bandni tekshirish",
           "text": "Kutilgan natijadagi ==har bir bandni== bittalab tekshir.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "11.2-1",
               "q": "Kutilgan natijada kafe nomi, telefon raqami va xarita bor. Nechtasini tekshirasan?",
               "options": [
                 "Uchalasini, birma-bir",
@@ -2915,6 +3210,7 @@
               "explain": "Kutilgan natijadagi har bir band bittalab tekshiriladi."
             },
             {
+              "id": "11.2-2",
               "q": "Kutilgan: gul nomi, rasmi, narxi. Aziza nom va rasmni ko'rdi. Endi nima qiladi?",
               "options": [
                 "Narxni ham tekshiradi",
@@ -2926,6 +3222,7 @@
               "explain": "Narx ham kutilgan natijadagi band, uni ham ko'rish kerak."
             },
             {
+              "id": "11.2-3",
               "q": "Bandlarni bittalab tekshirish nega kerak?",
               "options": [
                 "Birorta band tushib qolmasligi uchun",
@@ -2937,6 +3234,7 @@
               "explain": "Bittalab tekshirsang, hech bir band esdan chiqmaydi."
             },
             {
+              "id": "11.2-4",
               "q": "Bobur gul do'koni saytiga bir qaradi-yu, «Zo'r, tayyor» dedi. U to'g'ri qildimi?",
               "options": [
                 "Yo'q, har bandni alohida ko'rishi kerak",
@@ -2948,6 +3246,7 @@
               "explain": "Bir qarashda band tushib qolishi mumkin, har biri alohida ko'riladi."
             },
             {
+              "id": "11.2-5",
               "q": "Kutilgan natijada 5 ta band bor. Qaysi usul to'g'ri?",
               "options": [
                 "Birinchisidan boshlab, bittalab ko'rish",
@@ -2959,6 +3258,7 @@
               "explain": "Bandlarni tartib bilan, bittalab tekshirasan."
             },
             {
+              "id": "11.2-6",
               "q": "Kutilgan: hikoya o'zbekcha, 5 gapli, sarlavhali. Nodir faqat sarlavhaga qaradi. Nima qoldi?",
               "options": [
                 "Tili va gaplar soni",
@@ -2972,12 +3272,15 @@
           ]
         },
         {
+          "id": "11.3",
           "n": 3,
+          "name": "Bitta band qolsa — ish tugamagan",
           "text": "==Bitta band== bajarilmagan bo'lsa ham, ish hali tugamagan.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "11.3-1",
               "q": "Kafe saytida menyu va manzil bor, telefon raqami yo'q. Ish tugadimi?",
               "options": [
                 "Yo'q, telefon raqami yetishmaydi",
@@ -2989,6 +3292,7 @@
               "explain": "Bitta band bajarilmasa ham, ish hali tugamagan."
             },
             {
+              "id": "11.3-2",
               "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasan?",
               "options": [
                 "SI'dan narxlarni qo'shishni so'rayman",
@@ -3000,6 +3304,7 @@
               "explain": "Bajarilmagan band bor ekan, ish davom etadi."
             },
             {
+              "id": "11.3-3",
               "q": "Ish qachon tugagan bo'ladi?",
               "options": [
                 "Hamma bandlar bajarilganda",
@@ -3011,6 +3316,7 @@
               "explain": "Ish faqat hamma bandlar bajarilganda tugaydi."
             },
             {
+              "id": "11.3-4",
               "q": "Ali: «9 ta band bor, bittasi qolgan, bo'ldi». Vali: «Davom etamiz». Kim haq?",
               "options": [
                 "Vali haq, bitta band qolgan",
@@ -3022,6 +3328,7 @@
               "explain": "Bitta band qolgan bo'lsa ham, ish tugamagan."
             },
             {
+              "id": "11.3-5",
               "q": "Kutilgan rasmda quyosh, daraxt va it bor. Qaysi rasm tayyor?",
               "options": [
                 "Quyosh, daraxt va it bor",
@@ -3033,6 +3340,7 @@
               "explain": "Faqat uchala band ham bor rasm tayyor hisoblanadi."
             },
             {
+              "id": "11.3-6",
               "q": "Maktab saytida bitta band bajarilmagan. Saytni hozir hammaga ko'rsatasanmi?",
               "options": [
                 "Yo'q, avval o'sha band to'g'rilanadi",
@@ -3046,7 +3354,9 @@
           ]
         },
         {
+          "id": "11.4",
           "n": 4,
+          "name": "Amaliyot: solishtirish",
           "text": "Endi natijani kutilgan bilan solishtir.",
           "example": [
             {
@@ -3078,7 +3388,9 @@
       ],
       "bns": [
         {
+          "id": "12.1",
           "n": 1,
+          "name": "Farq qayerda",
           "text": "Farq ==qayerda== ekanini ayt.",
           "example": [
             {
@@ -3089,6 +3401,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "12.1-1",
               "q": "Ali SI'ga «Tugma noto'g'ri» deb yozdi. Saytda 5 ta tugma bor. Nima yetishmaydi?",
               "options": [
                 "Qaysi tugma ekani, qayerdaligi",
@@ -3100,6 +3413,7 @@
               "explain": "SI qaysi tugmani tuzatishni bilishi uchun joyini aytish kerak."
             },
             {
+              "id": "12.1-2",
               "q": "Kafe saytida bitta rasm xira. Qaysi so'zlar joyni aniq aytadi?",
               "options": [
                 "Menyu ostidagi birinchi rasm",
@@ -3111,6 +3425,7 @@
               "explain": "«Menyu ostidagi birinchi» deganda SI qaysi rasmligini aniq biladi."
             },
             {
+              "id": "12.1-3",
               "q": "Gul do'koni saytida pastdagi tugma noto'g'ri. «Qayerda?» savoliga javob qaysi?",
               "options": [
                 "Sahifaning pastida",
@@ -3122,6 +3437,7 @@
               "explain": "«Qayerda?» savoliga joy bilan javob beriladi."
             },
             {
+              "id": "12.1-4",
               "q": "Nega farq qayerda ekanini SI'ga aytasan?",
               "options": [
                 "SI qaysi joyni tuzatishni bilishi uchun",
@@ -3133,6 +3449,7 @@
               "explain": "Joyni bilmasa, SI boshqa joyni o'zgartirib yuborishi mumkin."
             },
             {
+              "id": "12.1-5",
               "q": "Laylo botga yozdi. Botning ikkinchi javobida xato bor. Laylo SI'ga qaysi joyni aytadi?",
               "options": [
                 "Botning ikkinchi javobini",
@@ -3144,6 +3461,7 @@
               "explain": "Xato ikkinchi javobda, shuni aniq aytish kerak."
             },
             {
+              "id": "12.1-6",
               "q": "Sardor SI yozgan hikoyaning uchinchi gapida xato ko'rdi. Joyni qanday aytadi?",
               "options": [
                 "«Uchinchi gapda»",
@@ -3157,7 +3475,9 @@
           ]
         },
         {
+          "id": "12.2",
           "n": 2,
+          "name": "Hozir qanday",
           "text": "Hozir ==qanday== ekanini ayt.",
           "example": [
             {
@@ -3168,6 +3488,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "12.2-1",
               "q": "Ali SI'ga «Sarlavha yomon» deb yozdi. Gapni qanday aniqroq qiladi?",
               "options": [
                 "«Sarlavha hozir juda kichik» deb",
@@ -3179,6 +3500,7 @@
               "explain": "«Hozir juda kichik» deganda SI sarlavha qanday ekanini biladi."
             },
             {
+              "id": "12.2-2",
               "q": "Rasmdagi mushuk ko'k, lekin kulrang bo'lishi kerak. Qaysi so'z hozirgi holatni aytadi?",
               "options": [
                 "Ko'k",
@@ -3190,6 +3512,7 @@
               "explain": "Hozir mushuk ko'k, kulrang esa bo'lishi kerak bo'lgan rang."
             },
             {
+              "id": "12.2-3",
               "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasan?",
               "options": [
                 "SI sening ekraningni ko'rmaydi",
@@ -3201,6 +3524,7 @@
               "explain": "SI ekraningni ko'rmaydi, shuning uchun holatni sen aytasan."
             },
             {
+              "id": "12.2-4",
               "q": "«Savat tugmasi bosilganda sahifa oqarib qoladi.» Bu gap nimani aytyapti?",
               "options": [
                 "Hozir qanday ekanini",
@@ -3212,6 +3536,7 @@
               "explain": "Bu gap hozir nima bo'layotganini tasvirlaydi."
             },
             {
+              "id": "12.2-5",
               "q": "Kutilgan matn 5 gapli edi. SI 9 gap yozdi. «Hozir qanday?» savoliga javob?",
               "options": [
                 "Matnda 9 ta gap bor",
@@ -3223,6 +3548,7 @@
               "explain": "Hozirgi holat — matnda 9 ta gap borligi."
             },
             {
+              "id": "12.2-6",
               "q": "Bot «Salom» o'rniga «Hello» deyapti. Qaysi gap hozirgi holatni aniq aytadi?",
               "options": [
                 "Bot hozir «Hello» deyapti",
@@ -3236,7 +3562,9 @@
           ]
         },
         {
+          "id": "12.3",
           "n": 3,
+          "name": "Qanday bo'lishi kerak",
           "text": "Qanday ==bo'lishi kerak==ligini ayt.",
           "example": [
             {
@@ -3247,6 +3575,7 @@
           "kind": "test",
           "pool": [
             {
+              "id": "12.3-1",
               "q": "Sen SI'ga «Tugma hozir qizil» deb yozding. SI yana nimani bilishi kerak?",
               "options": [
                 "Tugma qaysi rangda bo'lishi kerakligini",
@@ -3258,6 +3587,7 @@
               "explain": "Qanday bo'lishi kerakligini aytmasang, SI qaysi rangni qo'yishni bilmaydi."
             },
             {
+              "id": "12.3-2",
               "q": "Kafe saytida narxlar dollarda, so'mda bo'lishi kerak. Qaysi qism istakni aytadi?",
               "options": [
                 "«So'mda bo'lsin»",
@@ -3269,6 +3599,7 @@
               "explain": "«So'mda bo'lsin» — narx qanday bo'lishi kerakligi."
             },
             {
+              "id": "12.3-3",
               "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasan?",
               "options": [
                 "SI o'zicha taxmin qilmasligi uchun",
@@ -3280,6 +3611,7 @@
               "explain": "Aytmasang, SI o'zicha taxmin qilib, xato qilishi mumkin."
             },
             {
+              "id": "12.3-4",
               "q": "Gul do'koni sarlavhasi juda kichik. Qaysi istakni tekshirib ko'rsa bo'ladi?",
               "options": [
                 "Sarlavha ikki barobar katta bo'lsin",
@@ -3291,6 +3623,7 @@
               "explain": "«Ikki barobar katta» deganni ekranda aniq tekshirsa bo'ladi."
             },
             {
+              "id": "12.3-5",
               "q": "Hikoya 9 gapli, 5 gapli bo'lishi kerak. «Qanday bo'lsin?» savoliga javob?",
               "options": [
                 "5 ta gapdan iborat bo'lsin",
@@ -3302,6 +3635,7 @@
               "explain": "«Qanday bo'lsin?» — kerakli holatni aytadi: 5 ta gap."
             },
             {
+              "id": "12.3-6",
               "q": "Jasur yozdi: «Jadval hozir bo'sh.» Boshqa hech narsa yozmadi. SI nima qilishi mumkin?",
               "options": [
                 "Jadvalni o'zicha, noto'g'ri to'ldirishi",
@@ -3315,7 +3649,9 @@
           ]
         },
         {
+          "id": "12.4",
           "n": 4,
+          "name": "Amaliyot: farqni SI'ga yozish",
           "text": "Endi farqni SI'ga yoz.",
           "example": [
             {
@@ -3339,12 +3675,15 @@
       ],
       "bns": [
         {
+          "id": "13.1",
           "n": 1,
+          "name": "Ko'rinmayapti",
           "text": "==Ko'rinmayapti== — kutilgan narsa ekranda yo'q.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "13.1-1",
               "q": "Kafe saytida menyu bo'lishi kerak edi. Sahifada menyu yo'q. Bu qaysi belgi?",
               "options": [
                 "Ko'rinmayapti",
@@ -3356,6 +3695,7 @@
               "explain": "Kutilgan menyu ekranda yo'q — bu «Ko'rinmayapti»."
             },
             {
+              "id": "13.1-2",
               "q": "Qaysi holatda narsa «Ko'rinmayapti»?",
               "options": [
                 "Gul do'konida narxlar umuman yo'q",
@@ -3367,6 +3707,7 @@
               "explain": "Narxlar umuman yo'q — kutilgan narsa ekranda ko'rinmayapti."
             },
             {
+              "id": "13.1-3",
               "q": "«Ko'rinmayapti» deganda ekranda nima bo'ladi?",
               "options": [
                 "Kutilgan narsa umuman yo'q bo'ladi",
@@ -3378,6 +3719,7 @@
               "explain": "«Ko'rinmayapti» — kutilgan narsa ekranda yo'q."
             },
             {
+              "id": "13.1-4",
               "q": "Bot menyu tugmalarini chiqarishi kerak edi. Tugmalar chiqmadi. SI'ga nima deb yozasan?",
               "options": [
                 "Menyu tugmalari ko'rinmayapti",
@@ -3389,6 +3731,7 @@
               "explain": "Tugmalar ekranda yo'q, demak ular ko'rinmayapti."
             },
             {
+              "id": "13.1-5",
               "q": "Maktab saytidagi rasm bor, lekin juda kichik. Bu «Ko'rinmayapti»mi?",
               "options": [
                 "Yo'q, rasm bor, faqat boshqacha",
@@ -3400,6 +3743,7 @@
               "explain": "Rasm ekranda bor, shuning uchun bu «Ko'rinmayapti» emas."
             },
             {
+              "id": "13.1-6",
               "q": "Kutilgan: 3 ta murabbiy rasmi. Sport zali saytida 2 ta rasm bor. Nima ko'rinmayapti?",
               "options": [
                 "Uchinchi murabbiy rasmi",
@@ -3413,12 +3757,15 @@
           ]
         },
         {
+          "id": "13.2",
           "n": 2,
+          "name": "Noto'g'ri ko'rinyapti",
           "text": "==Noto'g'ri ko'rinyapti== — narsa bor, lekin boshqacha.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "13.2-1",
               "q": "Gul do'koni saytida narxlar bor, lekin inglizcha yozilgan. Bu qaysi belgi?",
               "options": [
                 "Noto'g'ri ko'rinyapti",
@@ -3430,6 +3777,7 @@
               "explain": "Narxlar bor, lekin boshqacha — bu «Noto'g'ri ko'rinyapti»."
             },
             {
+              "id": "13.2-2",
               "q": "«Noto'g'ri ko'rinyapti»ni «Ko'rinmayapti»dan nima ajratadi?",
               "options": [
                 "Narsa ekranda bor, lekin boshqacha",
@@ -3441,6 +3789,7 @@
               "explain": "«Noto'g'ri ko'rinyapti»da narsa bor, faqat kutilgandek emas."
             },
             {
+              "id": "13.2-3",
               "q": "Qaysi holatda logotip noto'g'ri ko'rinyapti?",
               "options": [
                 "Logotip bor, lekin teskari turibdi",
@@ -3452,6 +3801,7 @@
               "explain": "Logotip bor, ammo teskari — demak boshqacha ko'rinyapti."
             },
             {
+              "id": "13.2-4",
               "q": "Bot javob beryapti, lekin ismingni xato yozyapti. SI'ga nima deysan?",
               "options": [
                 "Bot ismimni noto'g'ri ko'rsatyapti",
@@ -3463,6 +3813,7 @@
               "explain": "Ism bor, lekin xato yozilgan — bu noto'g'ri ko'rinish."
             },
             {
+              "id": "13.2-5",
               "q": "Kutilgan: sarlavha ko'k. Ekranda sarlavha bor, lekin yashil. Nimasi farq qilyapti?",
               "options": [
                 "Rangi",
@@ -3474,6 +3825,7 @@
               "explain": "Sarlavha bor, faqat rangi kutilgandek emas."
             },
             {
+              "id": "13.2-6",
               "q": "SI chizgan rasmda daraxt bor, lekin osmonda uchib yuribdi. Nega bu «Ko'rinmayapti» emas?",
               "options": [
                 "Daraxt rasmda bor-ku",
@@ -3487,12 +3839,15 @@
           ]
         },
         {
+          "id": "13.3",
           "n": 3,
+          "name": "Ishlamayapti",
           "text": "==Ishlamayapti== — bosganda hech narsa bo'lmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "13.3-1",
               "q": "Kafe saytida «Buyurtma berish» tugmasini bosding. Hech narsa bo'lmadi. Bu qaysi belgi?",
               "options": [
                 "Ishlamayapti",
@@ -3504,6 +3859,7 @@
               "explain": "Bosganda hech narsa bo'lmasa — bu «Ishlamayapti»."
             },
             {
+              "id": "13.3-2",
               "q": "Tugma ishlamayotganini qanday bilasan?",
               "options": [
                 "Bosaman, hech narsa bo'lmaydi",
@@ -3515,6 +3871,7 @@
               "explain": "«Ishlamayapti» — bosganda hech narsa bo'lmaydi."
             },
             {
+              "id": "13.3-3",
               "q": "Qaysi holatda bot ishlamayapti?",
               "options": [
                 "«Start» bosildi, bot jim turibdi",
@@ -3526,6 +3883,7 @@
               "explain": "Bosding, bot hech narsa qilmadi — demak ishlamayapti."
             },
             {
+              "id": "13.3-4",
               "q": "Zarina gul do'koni saytiga faqat qaradi. Tugmalar joyida. Ular ishlashini biladimi?",
               "options": [
                 "Yo'q, bosib ko'rishi kerak",
@@ -3537,6 +3895,7 @@
               "explain": "Tugma ishlashini faqat bosib ko'rib bilasan."
             },
             {
+              "id": "13.3-5",
               "q": "Rasm bosilganda kattalashishi kerak. Bosding, rasm o'zgarmadi. SI'ga qanday yozasan?",
               "options": [
                 "Rasm bosilganda ishlamayapti",
@@ -3548,6 +3907,7 @@
               "explain": "Rasm bor, lekin bosganda hech narsa bo'lmaydi — ishlamayapti."
             },
             {
+              "id": "13.3-6",
               "q": "Tugmani bosding, ekranda «Xatolik» yozuvi chiqdi. Bu «Ishlamayapti»mi?",
               "options": [
                 "Yo'q, bu «Xato xabari chiqdi»",
@@ -3561,7 +3921,9 @@
           ]
         },
         {
+          "id": "13.4",
           "n": 4,
+          "name": "Amaliyot: xato xabari chiqdi",
           "text": "==Xato xabari chiqdi== — ekranda xato haqida yozuv paydo bo'ldi.",
           "example": [
             {
@@ -3576,6 +3938,7 @@
           "kind": "practice",
           "pool": [
             {
+              "id": "13.4-1",
               "q": "Maktab sayti ochildi, o'rtada «Error: page not found» yozuvi. Bu qaysi belgi?",
               "options": [
                 "Xato xabari chiqdi",
@@ -3587,6 +3950,7 @@
               "explain": "Ekranda xato haqida yozuv chiqdi — bu xato xabari."
             },
             {
+              "id": "13.4-2",
               "q": "«Xato xabari chiqdi» deganda ekranda nima bo'ladi?",
               "options": [
                 "Xato haqida yozuv paydo bo'ladi",
@@ -3598,6 +3962,7 @@
               "explain": "Xato xabari — ekranda paydo bo'lgan xato haqidagi yozuv."
             },
             {
+              "id": "13.4-3",
               "q": "Qaysi yozuv xato xabariga o'xshaydi?",
               "options": [
                 "«Xatolik: fayl topilmadi»",
@@ -3609,6 +3974,7 @@
               "explain": "Bu yozuv nimadir xato bo'lganini aytyapti."
             },
             {
+              "id": "13.4-4",
               "q": "Qaysi holatda «Xato xabari chiqdi» deysan?",
               "options": [
                 "Bot «Error 500» deb yozdi",
@@ -3620,6 +3986,7 @@
               "explain": "«Error 500» — xato haqidagi yozuv."
             },
             {
+              "id": "13.4-5",
               "q": "Kafe saytida tugmani bosding, hech narsa bo'lmadi. Xato xabari chiqdimi?",
               "options": [
                 "Yo'q, bu «Ishlamayapti»",
@@ -3631,6 +3998,7 @@
               "explain": "Ekranda yozuv chiqmadi, tugma shunchaki ishlamadi."
             },
             {
+              "id": "13.4-6",
               "q": "Xato yozuvi ingliz tilida chiqdi. Bu baribir xato xabarimi?",
               "options": [
                 "Ha, tili muhim emas",
@@ -3657,12 +4025,15 @@
       ],
       "bns": [
         {
+          "id": "14.1",
           "n": 1,
+          "name": "Xato xabarini nusxalash",
           "text": "Xato xabarini o'zing qayta yozma, ==nusxalab ol==.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "14.1-1",
               "q": "Ekranda uzun inglizcha xato xabari chiqdi. Uni SI'ga qanday berasan?",
               "options": [
                 "Nusxalab, promptga qo'yaman",
@@ -3674,6 +4045,7 @@
               "explain": "Nusxalasang, xabar aynan ekrandagidek boradi."
             },
             {
+              "id": "14.1-2",
               "q": "Nega xato xabarini qo'lda qayta yozmaysan?",
               "options": [
                 "Bitta harf ham xato ketishi mumkin",
@@ -3685,6 +4057,7 @@
               "explain": "Qayta yozganda bitta harf adashsa ham, ma'no o'zgaradi."
             },
             {
+              "id": "14.1-3",
               "q": "Ekranda «defined» edi. Kamola qo'lda «defind» deb yozdi. Nima bo'ldi?",
               "options": [
                 "Kamola xabarni xato ko'chirdi",
@@ -3696,6 +4069,7 @@
               "explain": "Qo'lda yozganda harf tushib qoldi — nusxalash kerak edi."
             },
             {
+              "id": "14.1-4",
               "q": "Jasur xato xabarini nusxalamoqchi. Birinchi nima qiladi?",
               "options": [
                 "Xabar matnini belgilab oladi",
@@ -3707,6 +4081,7 @@
               "explain": "Nusxalash uchun avval xabar matnini belgilash kerak."
             },
             {
+              "id": "14.1-5",
               "q": "Xabar inglizcha. Nodira uni o'zbekchaga tarjima qilib bermoqchi. To'g'rimi?",
               "options": [
                 "Yo'q, aynan o'zini nusxalashi kerak",
@@ -3718,6 +4093,7 @@
               "explain": "Xabar o'zgartirilmasdan, aynan o'zi nusxalab beriladi."
             },
             {
+              "id": "14.1-6",
               "q": "Xato xabari 3 qatorli. Qaysi yo'l tezroq va aniqroq?",
               "options": [
                 "Nusxalash",
@@ -3731,12 +4107,15 @@
           ]
         },
         {
+          "id": "14.2",
           "n": 2,
+          "name": "Xabarni to'liq berish",
           "text": "Xabarni bir qismini emas, ==to'liq== ber.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "14.2-1",
               "q": "Xabar 4 qatorli. Ozoda faqat birinchi qatorini berdi. To'g'ri qildimi?",
               "options": [
                 "Yo'q, 4 qatorni ham berishi kerak",
@@ -3748,6 +4127,7 @@
               "explain": "Xabar bir qismi emas, to'liq beriladi."
             },
             {
+              "id": "14.2-2",
               "q": "Nega xato xabarini to'liq berasan?",
               "options": [
                 "Muhim qism oxirida bo'lishi mumkin",
@@ -3759,6 +4139,7 @@
               "explain": "Kerakli ma'lumot xabarning istalgan qismida bo'lishi mumkin."
             },
             {
+              "id": "14.2-3",
               "q": "Malika xabardan faqat «Error» so'zini berdi. SI nima qila oladi?",
               "options": [
                 "Xato sababini bila olmaydi",
@@ -3770,6 +4151,7 @@
               "explain": "Bitta so'zdan SI xato sababini bila olmaydi, u ekranni ko'rmaydi."
             },
             {
+              "id": "14.2-4",
               "q": "Qaysi prompt xato xabarini to'liq beradi?",
               "options": [
                 "Xato: TypeError: price is undefined, 12-qator",
@@ -3781,6 +4163,7 @@
               "explain": "Bu promptda xabarning hamma qismi bor."
             },
             {
+              "id": "14.2-5",
               "q": "Sherzod xabarni nusxaladi, lekin oxiri qolib ketdi. Endi nima qiladi?",
               "options": [
                 "Qaytadan, oxirigacha nusxalaydi",
@@ -3792,6 +4175,7 @@
               "explain": "Xabar to'liq bo'lishi uchun oxirigacha nusxalash kerak."
             },
             {
+              "id": "14.2-6",
               "q": "SI xato sababini topa olmadi. Avval nimani tekshirasan?",
               "options": [
                 "Xabarni to'liq berganimni",
@@ -3805,12 +4189,15 @@
           ]
         },
         {
+          "id": "14.3",
           "n": 3,
+          "name": "Skrinshot berish",
           "text": "Nusxalab bo'lmasa, ==skrinshot== ber.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "14.3-1",
               "q": "Xato xabari rasm kabi chiqdi, uni belgilab bo'lmaydi. Nima qilasan?",
               "options": [
                 "Skrinshot olib, SI'ga beraman",
@@ -3822,6 +4209,7 @@
               "explain": "Nusxalab bo'lmasa, skrinshot beriladi."
             },
             {
+              "id": "14.3-2",
               "q": "Skrinshot nima?",
               "options": [
                 "Ekranning rasmi",
@@ -3833,6 +4221,7 @@
               "explain": "Skrinshot — ekranda ko'ringan narsaning rasmi."
             },
             {
+              "id": "14.3-3",
               "q": "Xato xabarining skrinshotini qachon berasan?",
               "options": [
                 "Xabarni nusxalab bo'lmaganda",
@@ -3844,6 +4233,7 @@
               "explain": "Skrinshot — nusxalab bo'lmagandagi yo'l."
             },
             {
+              "id": "14.3-4",
               "q": "Xato xabarini bemalol belgilab, nusxalasa bo'ladi. Nima qilasan?",
               "options": [
                 "Matnni nusxalab beraman",
@@ -3855,6 +4245,7 @@
               "explain": "Nusxalash mumkin bo'lsa, matnning o'zi beriladi."
             },
             {
+              "id": "14.3-5",
               "q": "Bobur skrinshot oldi, lekin xabarning yarmi rasmga tushmadi. Nima qiladi?",
               "options": [
                 "Butun xabar bilan qayta oladi",
@@ -3866,6 +4257,7 @@
               "explain": "Skrinshotda ham xabar to'liq ko'rinishi kerak."
             },
             {
+              "id": "14.3-6",
               "q": "Laylo skrinshot oldi, lekin SI'ga yubormadi. SI xatoni biladimi?",
               "options": [
                 "Yo'q, SI ekranni ko'rmaydi",
@@ -3879,7 +4271,9 @@
           ]
         },
         {
+          "id": "14.4",
           "n": 4,
+          "name": "Amaliyot: xato xabarini berish",
           "text": "Endi xato xabari bilan prompt yoz. Bu yerda nusxalab qo'yish mumkin.",
           "example": [
             {
@@ -3907,12 +4301,15 @@
       ],
       "bns": [
         {
+          "id": "15.1",
           "n": 1,
+          "name": "Nima qilganingni aytish",
           "text": "Xato qayerdan chiqqanini SI bilishi uchun nima qilganingni ayt.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "15.1-1",
               "q": "Bot ishlamay qoldi. Qaysi gapda Madina nima qilganini aytgan?",
               "options": [
                 "«Botga /start deb yozdim»",
@@ -3924,6 +4321,7 @@
               "explain": "Bu gap Madina aynan nima qilganini aytadi."
             },
             {
+              "id": "15.1-2",
               "q": "Nega nima qilganingni SI'ga aytasan?",
               "options": [
                 "Xato qayerdan chiqqanini bilishi uchun",
@@ -3935,6 +4333,7 @@
               "explain": "Nima qilganingni bilsa, SI xato qayerdan chiqqanini topadi."
             },
             {
+              "id": "15.1-3",
               "q": "SI ekraningni ko'rmaydi. Sen nima qilganingni qayerdan biladi?",
               "options": [
                 "Faqat sen yozib bersang",
@@ -3946,6 +4345,7 @@
               "explain": "SI ekranni ko'rmaydi, shuning uchun qilganingni o'zing yozasan."
             },
             {
+              "id": "15.1-4",
               "q": "Xato faqat savatga gul qo'shganda chiqadi. Buni aytmasang, nima bo'ladi?",
               "options": [
                 "SI xatoni boshqa joydan qidiradi",
@@ -3957,6 +4357,7 @@
               "explain": "Qayerda xato chiqqanini bilmasa, SI noto'g'ri joyni qidiradi."
             },
             {
+              "id": "15.1-5",
               "q": "Qaysi prompt SI'ga ko'proq yordam beradi?",
               "options": [
                 "«Jadvalni ochdim, xato chiqdi»",
@@ -3968,6 +4369,7 @@
               "explain": "Bu promptda xato chiqishidan oldin nima qilingani aytilgan."
             },
             {
+              "id": "15.1-6",
               "q": "Maktab saytiga rasm yuklaganda xato chiqdi. SI'ga yana nimani aytasan?",
               "options": [
                 "Qaysi rasmni yuklaganimni",
@@ -3981,12 +4383,15 @@
           ]
         },
         {
+          "id": "15.2",
           "n": 2,
+          "name": "Qadamlarni tartib bilan",
           "text": "Qadamlarni ==tartib bilan== yoz: avval…, keyin….",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "15.2-1",
               "q": "Sardor yozdi: «Xato chiqdi. Tugmani bosdim. Saytni ochdim.» Nima noto'g'ri?",
               "options": [
                 "Qadamlar teskari tartibda",
@@ -3998,6 +4403,7 @@
               "explain": "Qadamlar «avval…, keyin…» tartibida yozilishi kerak."
             },
             {
+              "id": "15.2-2",
               "q": "Kafe saytida 3 qadam qilding. SI'ga qaysi qadamdan boshlab yozasan?",
               "options": [
                 "Eng birinchi qilgan qadamdan",
@@ -4009,6 +4415,7 @@
               "explain": "Qadamlar avvalgisidan boshlab, tartib bilan yoziladi."
             },
             {
+              "id": "15.2-3",
               "q": "Nega qadamlarni tartib bilan yozasan?",
               "options": [
                 "SI nima ketidan nima bo'lganini bilishi uchun",
@@ -4020,6 +4427,7 @@
               "explain": "Tartib bo'lsa, SI qaysi qadamdan keyin xato chiqqanini tushunadi."
             },
             {
+              "id": "15.2-4",
               "q": "Jasur: «Avval saytni ochdim, keyin xato chiqdi.» Aslida u «Kirish»ni bosgandi. Nima yetishmaydi?",
               "options": [
                 "«Kirish»ni bosgan qadami",
@@ -4031,6 +4439,7 @@
               "explain": "Bitta qadam tushib qolsa, SI xato qayerdan chiqqanini bilmaydi."
             },
             {
+              "id": "15.2-5",
               "q": "Botda nima qilganingni qanday yozgan ma'qul?",
               "options": [
                 "Har qadamni alohida, ketma-ket",
@@ -4042,6 +4451,7 @@
               "explain": "Qadamlar alohida va ketma-ket yozilsa, tushunish oson."
             },
             {
+              "id": "15.2-6",
               "q": "Dilnoza o'yinda avval «Boshlash»ni, keyin «Ovoz»ni bosdi. Xato chiqdi. Qanday yozadi?",
               "options": [
                 "Avval Boshlashni, keyin Ovozni bosdim",
@@ -4055,12 +4465,15 @@
           ]
         },
         {
+          "id": "15.3",
           "n": 3,
+          "name": "Kutilgan va bo'lgan",
           "text": "Ikkalasini ham ayt: ==nima bo'lishi kerak edi== va ==nima bo'ldi==.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "15.3-1",
               "q": "Aziz yozdi: «Aloqa tugmasini bosdim, sahifa oqarib qoldi.» Yana nima kerak?",
               "options": [
                 "Nima bo'lishi kerak edi",
@@ -4072,6 +4485,7 @@
               "explain": "Aziz nima bo'lganini aytdi, lekin nima kutganini aytmadi."
             },
             {
+              "id": "15.3-2",
               "q": "Shaxzoda yozdi: «Bot hech narsa demadi.» Bu promptning qaysi qismi?",
               "options": [
                 "Aslida nima bo'lgani",
@@ -4083,6 +4497,7 @@
               "explain": "«Hech narsa demadi» — aslida nima bo'lganini aytadi."
             },
             {
+              "id": "15.3-3",
               "q": "Nega ikkalasini ham aytasan: nima kutildi va nima bo'ldi?",
               "options": [
                 "SI farqni ko'rib, nimani tuzatishni bilishi uchun",
@@ -4094,6 +4509,7 @@
               "explain": "Ikkalasini bilsa, SI farqni ko'radi va nimani tuzatishni biladi."
             },
             {
+              "id": "15.3-4",
               "q": "Kafe sayti. Qaysi promptda ikkala qism ham bor?",
               "options": [
                 "Menyu ochilishi kerak edi, lekin ochilmadi",
@@ -4105,6 +4521,7 @@
               "explain": "Bu promptda ham kutilgani, ham bo'lgani aytilgan."
             },
             {
+              "id": "15.3-5",
               "q": "Savatga 1 ta gul qo'shding, savatda 3 ta chiqdi. Kutilganini qanday aytasan?",
               "options": [
                 "«Savatda 1 ta gul bo'lishi kerak edi»",
@@ -4116,6 +4533,7 @@
               "explain": "Kutilgani — savatda 1 ta gul bo'lishi."
             },
             {
+              "id": "15.3-6",
               "q": "«Jadval» tugmasini bosding, hech narsa bo'lmadi. «Nima bo'ldi» qismiga nima yozasan?",
               "options": [
                 "Hech narsa bo'lmadi",
@@ -4129,7 +4547,9 @@
           ]
         },
         {
+          "id": "15.4",
           "n": 4,
+          "name": "Amaliyot: bo'lganini tushuntirish",
           "text": "Endi nima bo'lganini SI'ga tushuntir.",
           "example": [
             {
@@ -4162,12 +4582,15 @@
       ],
       "bns": [
         {
+          "id": "16.1",
           "n": 1,
+          "name": "SI aylanib qolishi",
           "text": "SI bitta xatoni ==3 marta== tuzata olmasa, u aylanib qolgan bo'ladi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "16.1-1",
               "q": "SI qachon aylanib qolgan bo'ladi?",
               "options": [
                 "Bitta xatoni 3 marta tuzata olmasa",
@@ -4179,6 +4602,7 @@
               "explain": "Bitta xatoni 3 marta tuzata olmasa, SI aylanib qolgan bo'ladi."
             },
             {
+              "id": "16.1-2",
               "q": "SI Alining menyusini 3 marta tuzatdi, menyu hali buzuq. SI qanday holatda?",
               "options": [
                 "SI aylanib qolgan",
@@ -4190,6 +4614,7 @@
               "explain": "Bitta xato 3 marta tuzalmadi, demak SI aylanib qolgan."
             },
             {
+              "id": "16.1-3",
               "q": "SI Madinaning rasmini bir marta tuzata olmadi. SI aylanib qoldimi?",
               "options": [
                 "Yo'q, bu faqat birinchi urinish",
@@ -4201,6 +4626,7 @@
               "explain": "Aylanib qolish uchun bitta xato 3 marta tuzalmasligi kerak."
             },
             {
+              "id": "16.1-4",
               "q": "SI 3 xil xatoni tuzatdi, har birini birinchi urinishda. Bu aylanib qolishmi?",
               "options": [
                 "Yo'q, har biri birdan tuzaldi",
@@ -4212,6 +4638,7 @@
               "explain": "Aylanib qolish — bitta xatoni qayta-qayta tuzata olmaslik."
             },
             {
+              "id": "16.1-5",
               "q": "SI gul do'koni narxini 2 marta tuzata olmadi. Jasur endi nima qiladi?",
               "options": [
                 "Uchinchi marta so'rab ko'radi",
@@ -4223,6 +4650,7 @@
               "explain": "Hali 2 marta bo'ldi, aylanib qolish uchun 3 marta kerak."
             },
             {
+              "id": "16.1-6",
               "q": "SI matndagi xatoni faqat uchinchi urinishda tuzatdi. SI aylanib qoldimi?",
               "options": [
                 "Yo'q, oxiri tuzatdi",
@@ -4236,12 +4664,15 @@
           ]
         },
         {
+          "id": "16.2",
           "n": 2,
+          "name": "Boshqacha so'zlar bilan",
           "text": "Muammoni ==boshqacha so'zlar== bilan tushuntir.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "16.2-1",
               "q": "Ali 3 marta \"Rasm chiqmayapti\" deb yozdi, foyda yo'q. Endi nima qiladi?",
               "options": [
                 "Muammoni boshqa so'zlar bilan yozadi",
@@ -4253,6 +4684,7 @@
               "explain": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntir."
             },
             {
+              "id": "16.2-2",
               "q": "Nega o'sha gapni yana yuborish yordam bermaydi?",
               "options": [
                 "SI yana o'sha javobni beradi",
@@ -4264,6 +4696,7 @@
               "explain": "Bir xil gapga SI yana o'sha javobni berishi mumkin."
             },
             {
+              "id": "16.2-3",
               "q": "Jasur gapini o'zgartirdi: \"Tugma ishlamayapti!!!\". Bu boshqacha tushuntirishmi?",
               "options": [
                 "Yo'q, faqat belgi qo'shildi",
@@ -4275,6 +4708,7 @@
               "explain": "Undov belgisi qo'shish yangi so'zlar bilan tushuntirish emas."
             },
             {
+              "id": "16.2-4",
               "q": "Kamola muammoni boshqacha yozmoqchi. Gapiga nimani qo'shsa yaxshi?",
               "options": [
                 "Nima bo'lishi kerak edi, nima bo'ldi",
@@ -4286,6 +4720,7 @@
               "explain": "Nima kutilgani va nima bo'lgani muammoni aniq ko'rsatadi."
             },
             {
+              "id": "16.2-5",
               "q": "Sardor aylanib qolgan SI'ga muammoni yangi so'zlar bilan yozdi. Bu nimaga yordam beradi?",
               "options": [
                 "SI muammoni yangicha tushunadi",
@@ -4297,6 +4732,7 @@
               "explain": "Yangi so'zlar SI'ga muammoni boshqa tomondan ko'rsatadi."
             },
             {
+              "id": "16.2-6",
               "q": "Zarinaning boti salom bermayapti. Qaysi biri muammoni boshqacha tushuntiradi?",
               "options": [
                 "\"Salom yozsam, bot jim turibdi\"",
@@ -4310,12 +4746,15 @@
           ]
         },
         {
+          "id": "16.3",
           "n": 3,
+          "name": "Yangi suhbat ochish",
           "text": "==Yangi suhbat== och va kerakli ma'lumotni qaytadan ber.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "16.3-1",
               "q": "Kamolaning SI'si xatoni 3 marta tuzata olmadi, boshqacha yozish ham foyda bermadi. Endi nima qiladi?",
               "options": [
                 "Yangi suhbat ochadi",
@@ -4327,6 +4766,7 @@
               "explain": "Boshqacha yozish yordam bermasa, yangi suhbat och."
             },
             {
+              "id": "16.3-2",
               "q": "Madina yangi suhbatda yozdi: \"O'sha xatoni tuzat\". Nega SI tushunmaydi?",
               "options": [
                 "Yangi suhbat eski gapni bilmaydi",
@@ -4338,6 +4778,7 @@
               "explain": "Yangi suhbatdagi SI oldingi suhbatni bilmaydi."
             },
             {
+              "id": "16.3-3",
               "q": "Qaysi xabar yangi suhbatni boshlash uchun yaxshi?",
               "options": [
                 "\"Gul saytimda savatcha tugmasi ishlamayapti\"",
@@ -4349,6 +4790,7 @@
               "explain": "Bu xabarda loyiha va muammo qaytadan aytilgan."
             },
             {
+              "id": "16.3-4",
               "q": "Sardor yangi suhbatda faqat xato xabarini yubordi. Nima yetishmayapti?",
               "options": [
                 "Loyiha nima haqida ekani",
@@ -4360,6 +4802,7 @@
               "explain": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayt."
             },
             {
+              "id": "16.3-5",
               "q": "Eski suhbatda Nilufar sayt rangini aytgan edi. Yangi suhbatda SI uni biladimi?",
               "options": [
                 "Yo'q, rangni qayta aytish kerak",
@@ -4371,6 +4814,7 @@
               "explain": "Yangi suhbat eski gaplarni bilmaydi, kerakli ma'lumotni qayta ber."
             },
             {
+              "id": "16.3-6",
               "q": "Nega yangi suhbat aylanib qolgan SI'ga yordam beradi?",
               "options": [
                 "SI ishni toza boshdan boshlaydi",
@@ -4384,7 +4828,9 @@
           ]
         },
         {
+          "id": "16.4",
           "n": 4,
+          "name": "Amaliyot: muammoni qayta yozish",
           "text": "Endi muammoni boshqacha so'zlar bilan yoz.",
           "example": [
             {
@@ -4399,6 +4845,7 @@
           "kind": "practice",
           "pool": [
             {
+              "id": "16.4-1",
               "q": "Oldin: \"Rasm chiqmayapti\". Qaysi yangi gap aniqroq?",
               "options": [
                 "\"Bosh sahifada mushuk rasmi ko'rinmayapti\"",
@@ -4410,6 +4857,7 @@
               "explain": "Bu gapda qaysi rasm va qayerda ekani aytilgan."
             },
             {
+              "id": "16.4-2",
               "q": "Laylo yozdi: \"Tugma bosilsa xabar chiqishi kerak.\" Yana nimani qo'shsin?",
               "options": [
                 "Hozir nima bo'layotganini",
@@ -4421,6 +4869,7 @@
               "explain": "Nima bo'lishi kerakligi bor, endi nima bo'layotganini ham ayt."
             },
             {
+              "id": "16.4-3",
               "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",
               "options": [
                 "Bot nima qilishi kerakligi",
@@ -4432,6 +4881,7 @@
               "explain": "\"Yomon\" so'zi muammo nimada ekanini aytmaydi."
             },
             {
+              "id": "16.4-4",
               "q": "Sport zali sayti. Qaysi gapda kutilgan va bo'lgan narsa bor?",
               "options": [
                 "\"Soat chiqishi kerak, bo'sh joy chiqyapti\"",
@@ -4443,6 +4893,7 @@
               "explain": "Bu gapda nima bo'lishi kerak edi va nima bo'ldi aytilgan."
             },
             {
+              "id": "16.4-5",
               "q": "Aziz \"Forma ishlamayapti\" o'rniga \"Forma buzildi\" deb yozdi. Bu yetarlimi?",
               "options": [
                 "Yo'q, faqat bitta so'z almashdi",
@@ -4454,6 +4905,7 @@
               "explain": "Bitta so'zni almashtirish muammoni yangicha tushuntirmaydi."
             },
             {
+              "id": "16.4-6",
               "q": "Bobur yozdi: \"/start bossam, bot hech narsa yozmayapti.\" Bu gap nimasi bilan yaxshi?",
               "options": [
                 "Nima qilgani va nima bo'lgani bor",
@@ -4479,12 +4931,15 @@
       ],
       "bns": [
         {
+          "id": "17.1",
           "n": 1,
+          "name": "Agent rejimi nima",
           "text": "Chatda SI javob yozadi. ==Agent rejimi==da esa SI fayllarni o'zi o'zgartiradi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "17.1-1",
               "q": "Agent rejimida SI nima qiladi?",
               "options": [
                 "Fayllarni o'zi o'zgartiradi",
@@ -4496,6 +4951,7 @@
               "explain": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
             },
             {
+              "id": "17.1-2",
               "q": "Chatda SI Aliga sarlavha matnini yozib berdi. Uni faylga kim qo'yadi?",
               "options": [
                 "Ali o'zi qo'yadi",
@@ -4507,6 +4963,7 @@
               "explain": "Chatda SI faqat javob yozadi, faylni sen o'zgartirasan."
             },
             {
+              "id": "17.1-3",
               "q": "Madina \"Saytga tugma qo'sh\" dedi va fayl o'zi o'zgardi. Bu qaysi rejim?",
               "options": [
                 "Agent rejimi",
@@ -4518,6 +4975,7 @@
               "explain": "Fayl o'zi o'zgardi, demak bu agent rejimi."
             },
             {
+              "id": "17.1-4",
               "q": "Chatda SI \"Tugma qo'shdim\" deb yozdi. Fayl o'zgardimi?",
               "options": [
                 "Yo'q, chat faqat javob yozadi",
@@ -4529,6 +4987,7 @@
               "explain": "Chatda SI faylni o'zgartirmaydi, faqat javob yozadi."
             },
             {
+              "id": "17.1-5",
               "q": "Nilufar faqat bitta she'r so'ramoqchi, fayl kerak emas. Qaysi rejim mos?",
               "options": [
                 "Oddiy chat",
@@ -4540,6 +4999,7 @@
               "explain": "Faqat javob kerak bo'lsa, oddiy chat yetadi."
             },
             {
+              "id": "17.1-6",
               "q": "Agent rejimi Otabekni qaysi ishdan qutqaradi?",
               "options": [
                 "Kodni faylga qo'lda ko'chirishdan",
@@ -4553,12 +5013,15 @@
           ]
         },
         {
+          "id": "17.2",
           "n": 2,
+          "name": "Agent o'zgarishni ko'rsatadi",
           "text": "Agent har bir o'zgarishni senga ko'rsatadi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "17.2-1",
               "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
               "options": [
                 "O'zgarishni senga ko'rsatadi",
@@ -4570,6 +5033,7 @@
               "explain": "Agent har bir o'zgarishni senga ko'rsatadi."
             },
             {
+              "id": "17.2-2",
               "q": "Agent 3 ta faylni o'zgartirdi. Nechtasini senga ko'rsatadi?",
               "options": [
                 "Uchalasini ham",
@@ -4581,6 +5045,7 @@
               "explain": "Agent har bir o'zgarishni ko'rsatadi, birortasini yashirmaydi."
             },
             {
+              "id": "17.2-3",
               "q": "Nega agent o'zgarishni senga ko'rsatadi?",
               "options": [
                 "Sen ko'rib chiqishing uchun",
@@ -4592,6 +5057,7 @@
               "explain": "Sen o'zgarishni ko'rib, to'g'rimi yo'qmi bilishing kerak."
             },
             {
+              "id": "17.2-4",
               "q": "Agent ishidan keyin Madina \"qizil\" o'chib, \"ko'k\" yozilganini ko'rdi. Bu nima?",
               "options": [
                 "Agent ko'rsatgan o'zgarish",
@@ -4603,6 +5069,7 @@
               "explain": "Agent nimani o'zgartirganini senga ko'rsatib beradi."
             },
             {
+              "id": "17.2-5",
               "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
               "options": [
                 "Ortiqcha o'zgarishni sezishga",
@@ -4614,6 +5081,7 @@
               "explain": "O'zgarishlar ko'rsatilgani uchun Jasur ortiqcha narsani sezdi."
             },
             {
+              "id": "17.2-6",
               "q": "Sardor ko'rsatilgan o'zgarishlarni o'qimay o'tkazib yubordi. Nima bo'lishi mumkin?",
               "options": [
                 "Xatoni sezmay qoladi",
@@ -4627,12 +5095,15 @@
           ]
         },
         {
+          "id": "17.3",
           "n": 3,
+          "name": "Qabulsiz saqlanmaydi",
           "text": "Sen ==qabul qilmaguningcha== o'zgarish saqlanmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "17.3-1",
               "q": "Agent o'zgarish qildi, Ali hali qabul qilmadi. O'zgarish saqlandimi?",
               "options": [
                 "Yo'q, hali saqlanmadi",
@@ -4644,6 +5115,7 @@
               "explain": "Sen qabul qilmaguningcha o'zgarish saqlanmaydi."
             },
             {
+              "id": "17.3-2",
               "q": "Madina o'zgarishni ko'rdi va qabul qildi. Endi nima bo'ladi?",
               "options": [
                 "O'zgarish faylda saqlanadi",
@@ -4655,6 +5127,7 @@
               "explain": "Qabul qilingan o'zgarish saqlanadi."
             },
             {
+              "id": "17.3-3",
               "q": "O'zgarish saqlanadimi yo'qmi — buni kim hal qiladi?",
               "options": [
                 "Sen o'zing",
@@ -4666,6 +5139,7 @@
               "explain": "O'zgarish faqat sen qabul qilsang saqlanadi."
             },
             {
+              "id": "17.3-4",
               "q": "Agent kafe menyusini o'zgartirdi, Kamolaga yoqmadi. Nima qiladi?",
               "options": [
                 "Qabul qilmaydi",
@@ -4677,6 +5151,7 @@
               "explain": "Qabul qilinmasa, yoqmagan o'zgarish saqlanmaydi."
             },
             {
+              "id": "17.3-5",
               "q": "Nega \"Qabul qilish\" tugmasi foydali?",
               "options": [
                 "Xato o'zgarish o'zi saqlanmaydi",
@@ -4688,6 +5163,7 @@
               "explain": "Sen ko'rib qabul qilmaguncha hech narsa saqlanmaydi."
             },
             {
+              "id": "17.3-6",
               "q": "Nilufar 2 ta o'zgarishdan faqat birinchisini qabul qildi. Qaysi biri saqlanadi?",
               "options": [
                 "Faqat birinchisi",
@@ -4701,7 +5177,9 @@
           ]
         },
         {
+          "id": "17.4",
           "n": 4,
+          "name": "Amaliyot: o'zgarishni ko'rib chiqish",
           "text": "Endi agent o'zgarishini ko'rib chiq.",
           "example": [
             {
@@ -4730,12 +5208,15 @@
       ],
       "bns": [
         {
+          "id": "18.1",
           "n": 1,
+          "name": "Avval reja so'rash",
           "text": "Katta ishdan oldin SI'dan ==reja== so'ra.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "18.1-1",
               "q": "Ali SI bilan butun kafe sayti qilmoqchi. Avval SI'dan nima so'raydi?",
               "options": [
                 "Ish rejasini",
@@ -4747,6 +5228,7 @@
               "explain": "Katta ishdan oldin SI'dan reja so'ra."
             },
             {
+              "id": "18.1-2",
               "q": "Qaysi ish uchun avval reja so'rash kerak?",
               "options": [
                 "Butun gul do'koni sayti",
@@ -4758,6 +5240,7 @@
               "explain": "Butun sayt — katta ish, unga reja kerak."
             },
             {
+              "id": "18.1-3",
               "q": "Qaysi prompt SI'dan reja so'raydi?",
               "options": [
                 "\"Boshlamay, avval reja yozib ber\"",
@@ -4769,6 +5252,7 @@
               "explain": "Bu prompt SI'dan ishdan oldin reja so'raydi."
             },
             {
+              "id": "18.1-4",
               "q": "Reja senga nimaga yordam beradi?",
               "options": [
                 "SI nima qilishini oldindan bilasan",
@@ -4780,6 +5264,7 @@
               "explain": "Reja SI qiladigan ishlarni oldindan ko'rsatadi."
             },
             {
+              "id": "18.1-5",
               "q": "Madina sarlavhadagi bitta harfni tuzatmoqchi. Reja kerakmi?",
               "options": [
                 "Yo'q, bu kichik ish",
@@ -4791,6 +5276,7 @@
               "explain": "Reja katta ish uchun kerak, bitta harf kichik ish."
             },
             {
+              "id": "18.1-6",
               "q": "Jasur reja so'ramay, darhol butun botni so'radi. Qanday xavf bor?",
               "options": [
                 "SI keraksiz ish qilgan bo'lishi mumkin",
@@ -4804,12 +5290,15 @@
           ]
         },
         {
+          "id": "18.2",
           "n": 2,
+          "name": "Keraksiz qadamni olib tashlash",
           "text": "Rejada ==keraksiz qadam== bo'lsa, uni olib tashlashni ayt.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "18.2-1",
               "q": "Alining logotipi tayyor, rejada esa \"Logotip chizish\" bor. Bu qadam qanday?",
               "options": [
                 "Keraksiz qadam",
@@ -4821,6 +5310,7 @@
               "explain": "Logotip tayyor, demak uni chizish qadami keraksiz."
             },
             {
+              "id": "18.2-2",
               "q": "Madinaga faqat gul narxlari sahifasi kerak. Qaysi qadam keraksiz?",
               "options": [
                 "Video qo'shish",
@@ -4832,6 +5322,7 @@
               "explain": "Narxlar sahifasiga video kerak emas."
             },
             {
+              "id": "18.2-3",
               "q": "Keraksiz qadam rejada qolib ketsa, nima bo'ladi?",
               "options": [
                 "SI ortiqcha ish qiladi",
@@ -4843,6 +5334,7 @@
               "explain": "SI rejadagi hamma qadamni bajaradi, keraksizini ham."
             },
             {
+              "id": "18.2-4",
               "q": "Kamolaning rejasida 2 ta keraksiz qadam bor. U nima qiladi?",
               "options": [
                 "Ikkalasini olib tashlashni aytadi",
@@ -4854,6 +5346,7 @@
               "explain": "Har bir keraksiz qadamni olib tashlashni ayt."
             },
             {
+              "id": "18.2-5",
               "q": "Sport zali rejasi: 1) Sarlavha 2) Narxlar 3) Musiqa. Musiqa kerak emas, nima yozasan?",
               "options": [
                 "\"3-qadamni olib tashla\"",
@@ -4865,6 +5358,7 @@
               "explain": "Musiqa 3-qadam, uni olib tashlashni aytasan."
             },
             {
+              "id": "18.2-6",
               "q": "SI \"Keraksiz qadamni olib tashla\" gapini tushunmadi. Nimani qo'shish kerak?",
               "options": [
                 "Qadamning raqami yoki nomi",
@@ -4878,12 +5372,15 @@
           ]
         },
         {
+          "id": "18.3",
           "n": 3,
+          "name": "Yetishmagan qadamni qo'shish",
           "text": "Rejada ==kerakli qadam== yetishmasa, uni qo'shishni ayt.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "18.3-1",
               "q": "Rejada keraksiz \"O'yin\" bor, \"Telefon raqami\" yo'q. Nima yozasan?",
               "options": [
                 "\"O'yinni olib tashla, raqamni qo'sh\"",
@@ -4895,6 +5392,7 @@
               "explain": "Keraksizini olib tashlaysan, yetishmaganini qo'shasan."
             },
             {
+              "id": "18.3-2",
               "q": "Bot buyurtma olishi kerak, rejada esa faqat salom va menyu bor. Nima yetishmaydi?",
               "options": [
                 "Buyurtma olish qadami",
@@ -4906,6 +5404,7 @@
               "explain": "Buyurtma olish kerak, lekin rejada u yo'q."
             },
             {
+              "id": "18.3-3",
               "q": "Yetishmagan qadamni qanday topasan?",
               "options": [
                 "Kerakli narsalarni rejadan qidiraman",
@@ -4917,6 +5416,7 @@
               "explain": "Har bir kerakli narsa rejada bormi, qarab chiq."
             },
             {
+              "id": "18.3-4",
               "q": "Jasur yetishmagan qadamni SI'ga aytmadi. Nima bo'ladi?",
               "options": [
                 "Saytda o'sha narsa bo'lmaydi",
@@ -4928,6 +5428,7 @@
               "explain": "Rejada yo'q qadamni SI bajarmaydi."
             },
             {
+              "id": "18.3-5",
               "q": "Kamolaga kitob rasmlari kerak, rejada ular yo'q. Qaysi prompt aniq?",
               "options": [
                 "\"Kitob rasmlari qadamini qo'sh\"",
@@ -4939,6 +5440,7 @@
               "explain": "Bu prompt qaysi qadamni qo'shishni aniq aytadi."
             },
             {
+              "id": "18.3-6",
               "q": "Otabek rejani o'qidi, hamma kerakli qadam bor. Nima qiladi?",
               "options": [
                 "Rejani shu holicha ma'qullaydi",
@@ -4952,7 +5454,9 @@
           ]
         },
         {
+          "id": "18.4",
           "n": 4,
+          "name": "Amaliyot: rejani tuzatish",
           "text": "Endi SI rejasini tuzat.",
           "example": [
             {
@@ -4977,12 +5481,15 @@
       ],
       "bns": [
         {
+          "id": "19.1",
           "n": 1,
+          "name": "Natijani ochib tekshirish",
           "text": "O'zgarishdan keyin natijani ochib tekshir.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "19.1-1",
               "q": "Agent botga /menu buyrug'ini qo'shdi. Madina qanday tekshiradi?",
               "options": [
                 "Botga /menu yozib ko'radi",
@@ -4994,6 +5501,7 @@
               "explain": "Natijani o'zing ishlatib ko'rib tekshirasan."
             },
             {
+              "id": "19.1-2",
               "q": "SI \"Hammasi tayyor!\" dedi. Ali nima qiladi?",
               "options": [
                 "Natijani o'zi ochib ko'radi",
@@ -5005,6 +5513,7 @@
               "explain": "SI xato qilganda ham \"tayyor\" deyishi mumkin."
             },
             {
+              "id": "19.1-3",
               "q": "Ochilgan natijani nima bilan solishtirasan?",
               "options": [
                 "Kutgan natijang bilan",
@@ -5016,6 +5525,7 @@
               "explain": "Natija kutilgan natija bilan solishtiriladi."
             },
             {
+              "id": "19.1-4",
               "q": "Agent telefon uchun menyuni o'zgartirdi. Nilufar qayerda tekshiradi?",
               "options": [
                 "Saytni telefonda ochib",
@@ -5027,6 +5537,7 @@
               "explain": "O'zgarish qayerda bo'lsa, o'sha yerda ochib ko'riladi."
             },
             {
+              "id": "19.1-5",
               "q": "Kamola saytni ochmay o'zgarishni qabul qildi. Qanday xavf bor?",
               "options": [
                 "Buzilgan narsa saqlanib qolishi mumkin",
@@ -5038,6 +5549,7 @@
               "explain": "Tekshirmasang, xato ham saqlanib qolishi mumkin."
             },
             {
+              "id": "19.1-6",
               "q": "Sardor sahifada sarlavhani ko'rdi, rasmga hali qaramadi. Tekshirish tugadimi?",
               "options": [
                 "Yo'q, rasmni ham ko'rish kerak",
@@ -5051,12 +5563,15 @@
           ]
         },
         {
+          "id": "19.2",
           "n": 2,
+          "name": "Kutilgandek bo'lsa — qabul",
           "text": "Natija kutilgandek bo'lsa, ==qabul qil==.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "19.2-1",
               "q": "Ali \"Gul do'koni\" sarlavhasini kutgan edi va aynan shu chiqdi. Nima qiladi?",
               "options": [
                 "Qabul qiladi",
@@ -5068,6 +5583,7 @@
               "explain": "Natija kutilgan bilan bir xil, demak qabul qilinadi."
             },
             {
+              "id": "19.2-2",
               "q": "Madina hali saytni ochib ko'rmadi. Hozir qabul qilsa bo'ladimi?",
               "options": [
                 "Yo'q, avval ochib ko'radi",
@@ -5079,6 +5595,7 @@
               "explain": "Qabul qilish uchun natija kutilgandek ekanini ko'rish kerak."
             },
             {
+              "id": "19.2-3",
               "q": "Jasur katta qizil tugma kutgan edi, kichik qizil tugma chiqdi. Nima qiladi?",
               "options": [
                 "Hali qabul qilmaydi",
@@ -5090,6 +5607,7 @@
               "explain": "Bitta band ham mos kelmasa, natija kutilgandek emas."
             },
             {
+              "id": "19.2-4",
               "q": "Sardor kutgan ko'k fon chiqdi, SI esa yana o'zgartirmoqchi. Sardor nima qiladi?",
               "options": [
                 "Shu natijani qabul qilib qo'yadi",
@@ -5101,6 +5619,7 @@
               "explain": "Hammasi kutilgandek, endi qabul qilish vaqti."
             },
             {
+              "id": "19.2-5",
               "q": "Nilufar o'zgarishni qabul qildi. U bilan nima bo'ladi?",
               "options": [
                 "Saqlanib qoladi",
@@ -5112,6 +5631,7 @@
               "explain": "Qabul qilingan o'zgarish saqlanadi."
             },
             {
+              "id": "19.2-6",
               "q": "Otabekning sayti kutilgandek ishlayapti, lekin u qabul qilmadi. Nima bo'ladi?",
               "options": [
                 "Yaxshi o'zgarish saqlanmaydi",
@@ -5125,12 +5645,15 @@
           ]
         },
         {
+          "id": "19.3",
           "n": 3,
+          "name": "Buzilgan bo'lsa — rad",
           "text": "Natija buzilgan bo'lsa, ==rad qil== va nima buzilganini SI'ga ayt.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "19.3-1",
               "q": "Agent ishidan keyin bot javob bermayapti. Bobur nima qiladi?",
               "options": [
                 "Rad qilib, SI'ga yozadi",
@@ -5142,6 +5665,7 @@
               "explain": "Buzilgan natija rad qilinadi va SI'ga aytiladi."
             },
             {
+              "id": "19.3-2",
               "q": "Logotip yo'qolib qoldi. Qaysi xabar SI'ga yaxshi?",
               "options": [
                 "\"Rad qilaman: logotip yo'qolib qoldi\"",
@@ -5153,6 +5677,7 @@
               "explain": "Bu xabarda nima buzilgani aniq aytilgan."
             },
             {
+              "id": "19.3-3",
               "q": "Sardor yozdi: \"Rad qilaman. Buzildi.\" Bu xabarda nima yetishmaydi?",
               "options": [
                 "Aynan nima buzilgani",
@@ -5164,6 +5689,7 @@
               "explain": "SI nima buzilganini bilmasa, uni tuzata olmaydi."
             },
             {
+              "id": "19.3-4",
               "q": "Jasur o'zgarishni rad qildi. Sayt endi qanday?",
               "options": [
                 "O'zgarishdan oldingidek",
@@ -5175,6 +5701,7 @@
               "explain": "Rad qilingan o'zgarish saqlanmaydi."
             },
             {
+              "id": "19.3-5",
               "q": "Yangi tugma ishlayapti, lekin sarlavha yo'qolgan. Kamola nima qiladi?",
               "options": [
                 "Sarlavha yo'qolgani uchun rad qiladi",
@@ -5186,6 +5713,7 @@
               "explain": "Bitta narsa buzilgan bo'lsa ham, natija buzilgan hisoblanadi."
             },
             {
+              "id": "19.3-6",
               "q": "Nega SI'ga nima buzilganini aytasan?",
               "options": [
                 "SI aynan shuni tuzatishi uchun",
@@ -5199,7 +5727,9 @@
           ]
         },
         {
+          "id": "19.4",
           "n": 4,
+          "name": "Amaliyot: qabul yoki rad",
           "text": "Endi o'zgarishni qabul yoki rad qil.",
           "example": [
             {
@@ -5223,12 +5753,15 @@
       ],
       "bns": [
         {
+          "id": "20.1",
           "n": 1,
+          "name": "Parol berilmaydi",
           "text": "==Parol== SI'ga berilmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "20.1-1",
               "q": "SI \"Parolingni yoz\" dedi. Ali nima qiladi?",
               "options": [
                 "Parolni yozmaydi",
@@ -5240,6 +5773,7 @@
               "explain": "Parol SI'ga berilmaydi, SI so'rasa ham."
             },
             {
+              "id": "20.1-2",
               "q": "Qaysi promptda parol bor?",
               "options": [
                 "\"Parolim gul-fake-1, saytga kirolmayapman\"",
@@ -5251,6 +5785,7 @@
               "explain": "Bu promptda parol yozilgan, uni SI'ga berish mumkin emas."
             },
             {
+              "id": "20.1-3",
               "q": "Madina saytga kira olmayapti. SI'ga qanday yozadi?",
               "options": [
                 "Xatoni yozadi, parolsiz",
@@ -5262,6 +5797,7 @@
               "explain": "Yordam so'rash uchun parol kerak emas, xatoni yozish yetadi."
             },
             {
+              "id": "20.1-4",
               "q": "Jasur promptdagi parolni yuborishdan oldin sezib qoldi. Nima qiladi?",
               "options": [
                 "Parolni o'chirib, keyin yuboradi",
@@ -5273,6 +5809,7 @@
               "explain": "Parol promptda qolmasligi kerak."
             },
             {
+              "id": "20.1-5",
               "q": "Nilufar SI'ga yozmoqchi. Qaysi birini yozsa bo'ladi?",
               "options": [
                 "Saytining nomini",
@@ -5284,6 +5821,7 @@
               "explain": "Sayt nomi maxfiy emas, parollar esa SI'ga berilmaydi."
             },
             {
+              "id": "20.1-6",
               "q": "Nega parol SI'ga berilmaydi?",
               "options": [
                 "Parol faqat senda qolishi kerak",
@@ -5297,12 +5835,15 @@
           ]
         },
         {
+          "id": "20.2",
           "n": 2,
+          "name": "Kalit va token berilmaydi",
           "text": "==Kalit va tokenlar== (masalan, bot tokeni) SI'ga berilmaydi.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "20.2-1",
               "q": "Qaysi biri bot tokeniga o'xshaydi?",
               "options": [
                 "7123456:ABC-fake",
@@ -5314,6 +5855,7 @@
               "explain": "Token raqam va harflardan iborat uzun maxfiy yozuv."
             },
             {
+              "id": "20.2-2",
               "q": "Gul do'koni boti ishlamayapti. Qaysi prompt xavfsiz?",
               "options": [
                 "\"@gul_bot javob bermayapti. Yordam ber\"",
@@ -5325,6 +5867,7 @@
               "explain": "Bu promptda token yo'q, faqat bot nomi bor."
             },
             {
+              "id": "20.2-3",
               "q": "SI \"Kalitni yubor, tekshirib beraman\" dedi. Ali nima qiladi?",
               "options": [
                 "Kalitni yubormaydi",
@@ -5336,6 +5879,7 @@
               "explain": "Kalit SI'ga berilmaydi, SI so'rasa ham."
             },
             {
+              "id": "20.2-4",
               "q": "Kalit va token nimaga o'xshaydi?",
               "options": [
                 "Parolga, ular ham maxfiy",
@@ -5347,6 +5891,7 @@
               "explain": "Kalit va token parolga o'xshab maxfiy saqlanadi."
             },
             {
+              "id": "20.2-5",
               "q": "Jasur ko'chirgan xato xabarida token ham bor. Nima qiladi?",
               "options": [
                 "Tokenni olib tashlab yuboradi",
@@ -5358,6 +5903,7 @@
               "explain": "Xato xabarini yuborishdan oldin tokenni olib tashla."
             },
             {
+              "id": "20.2-6",
               "q": "Kafe boti uchun SI'ga nimani aytsa bo'ladi?",
               "options": [
                 "Bot nima qilishi kerakligini",
@@ -5371,12 +5917,15 @@
           ]
         },
         {
+          "id": "20.3",
           "n": 3,
+          "name": "Shaxsiy ma'lumot berilmaydi",
           "text": "==Shaxsiy ma'lumotlar== SI'ga berilmaydi: telefon raqami, uy manzili, hujjat raqami.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "20.3-1",
               "q": "Qaysi biri shaxsiy ma'lumot?",
               "options": [
                 "Uy manziling",
@@ -5388,6 +5937,7 @@
               "explain": "Uy manzili shaxsiy ma'lumot, u SI'ga berilmaydi."
             },
             {
+              "id": "20.3-2",
               "q": "Saytga telefon raqami uchun joy kerak. Promptga nima yozasan?",
               "options": [
                 "\"Telefon raqami uchun joy qoldir\"",
@@ -5399,6 +5949,7 @@
               "explain": "Joy so'rash yetarli, haqiqiy raqam kerak emas."
             },
             {
+              "id": "20.3-3",
               "q": "Qaysi promptda shaxsiy ma'lumot bor?",
               "options": [
                 "\"Raqamim +998 90 000 00 00\"",
@@ -5410,6 +5961,7 @@
               "explain": "Telefon raqami shaxsiy ma'lumot."
             },
             {
+              "id": "20.3-4",
               "q": "Madina yetkazib berish formasi so'ramoqchi. U uy manzilini yozsinmi?",
               "options": [
                 "Yo'q, \"manzil joyi\" deydi",
@@ -5421,6 +5973,7 @@
               "explain": "Formaga manzil joyi kerak, haqiqiy manzil emas."
             },
             {
+              "id": "20.3-5",
               "q": "Jasur SI'ga hujjat raqamini yozmoqchi. Nima deysan?",
               "options": [
                 "Hujjat raqami berilmaydi",
@@ -5432,6 +5985,7 @@
               "explain": "Hujjat raqami shaxsiy ma'lumot, u SI'ga berilmaydi."
             },
             {
+              "id": "20.3-6",
               "q": "Kamola sinf boti qilyapti. Do'stlarining raqamlarini SI'ga beradimi?",
               "options": [
                 "Yo'q, ular ham shaxsiy",
@@ -5445,7 +5999,9 @@
           ]
         },
         {
+          "id": "20.4",
           "n": 4,
+          "name": "Amaliyot: maxfiysiz prompt",
           "text": "Endi maxfiy ma'lumotsiz prompt yoz.",
           "example": [
             {
@@ -5474,12 +6030,15 @@
       ],
       "bns": [
         {
+          "id": "21.1",
           "n": 1,
+          "name": "\"Hammasini o'chiraylik\"da to'xtash",
           "text": "SI \"hammasini o'chiraylik\" desa, ==to'xta== va tekshir.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "21.1-1",
               "q": "SI \"Hamma fayllarni o'chiraylik\" dedi. Ali nima qiladi?",
               "options": [
                 "To'xtab, tekshiradi",
@@ -5491,6 +6050,7 @@
               "explain": "SI hammasini o'chirishni taklif qilsa, to'xta va tekshir."
             },
             {
+              "id": "21.1-2",
               "q": "Qaysi taklif xavfli?",
               "options": [
                 "\"Butun saytni o'chirib yuboraman\"",
@@ -5502,6 +6062,7 @@
               "explain": "Butun saytni o'chirish hamma ishni yo'qotishi mumkin."
             },
             {
+              "id": "21.1-3",
               "q": "Nega bunday taklifda to'xtash kerak?",
               "options": [
                 "Kerakli fayllar ham yo'qolishi mumkin",
@@ -5513,6 +6074,7 @@
               "explain": "Hammasi o'chsa, kerakli narsalar ham yo'qoladi."
             },
             {
+              "id": "21.1-4",
               "q": "SI \"Eski fayllarni hammasini o'chiraman\" dedi. Madina nimani tekshiradi?",
               "options": [
                 "Ular orasida keraklisi bormi",
@@ -5524,6 +6086,7 @@
               "explain": "Tekshirish — o'chadigan narsa orasida kerakli fayl bormi qarash."
             },
             {
+              "id": "21.1-5",
               "q": "Jasur tekshirdi: o'chadigan fayllarda menyu ham bor. SI'ga nima deydi?",
               "options": [
                 "\"Yo'q, o'chirma\"",
@@ -5535,6 +6098,7 @@
               "explain": "Kerakli menyu o'chib ketmasligi kerak."
             },
             {
+              "id": "21.1-6",
               "q": "Kamola SI'ga \"Ha\" deb yozdi va hamma fayl o'chdi. U qayerda xato qildi?",
               "options": [
                 "To'xtab tekshirmadi",
@@ -5548,12 +6112,15 @@
           ]
         },
         {
+          "id": "21.2",
           "n": 2,
+          "name": "Kalitni sahifaga yozdirmaslik",
           "text": "SI kalitni sahifaga yozishni taklif qilsa, ==rad qil==.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "21.2-1",
               "q": "SI kalitni sahifaga yozishni taklif qildi. Ali nima qiladi?",
               "options": [
                 "Rad qiladi",
@@ -5565,6 +6132,7 @@
               "explain": "Kalitni sahifaga yozish taklifi rad qilinadi."
             },
             {
+              "id": "21.2-2",
               "q": "Kalit sahifada tursa, begona odam nima qila oladi?",
               "options": [
                 "Kalit bilan botingni boshqaradi",
@@ -5576,6 +6144,7 @@
               "explain": "Kalitni topgan odam uni o'zi ishlatishi mumkin."
             },
             {
+              "id": "21.2-3",
               "q": "Qaysi taklifni rad qilish kerak?",
               "options": [
                 "\"Tokenni sahifa pastiga yozaman\"",
@@ -5587,6 +6156,7 @@
               "explain": "Token maxfiy, u sahifaga yozilmaydi."
             },
             {
+              "id": "21.2-4",
               "q": "SI sahifa kodiga \"kalit = ABC-fake-123\" qatorini qo'shdi. Nima qilasan?",
               "options": [
                 "Rad qilib, olib tashlashni so'rayman",
@@ -5598,6 +6168,7 @@
               "explain": "Sahifa kodida kalit turmasligi kerak."
             },
             {
+              "id": "21.2-5",
               "q": "SI: \"Bot tokenini maktab sayti pastiga yozib qo'yaymi?\" Bu qanday taklif?",
               "options": [
                 "Xavfli taklif",
@@ -5609,6 +6180,7 @@
               "explain": "Tokenni saytga yozish uni hammaga ochib qo'yadi."
             },
             {
+              "id": "21.2-6",
               "q": "Kamolaning sahifasida kalit yozilib qoldi. Uni kim ko'rishi mumkin?",
               "options": [
                 "Sahifani ochgan har kim",
@@ -5622,12 +6194,15 @@
           ]
         },
         {
+          "id": "21.3",
           "n": 3,
+          "name": "Tushunmagan buyruqni bajarmaslik",
           "text": "Tushunmagan buyruqni bajarma. Avval SI'dan ==u nima qilishini== so'ra.",
           "example": [],
           "kind": "test",
           "pool": [
             {
+              "id": "21.3-1",
               "q": "SI \"Shu buyruqni ishga tushir\" dedi, Ali tushunmadi. Nima qiladi?",
               "options": [
                 "Avval nima qilishini so'raydi",
@@ -5639,6 +6214,7 @@
               "explain": "Tushunmagan buyruqni bajarma, avval SI'dan so'ra."
             },
             {
+              "id": "21.3-2",
               "q": "Qaysi prompt to'g'ri?",
               "options": [
                 "\"Bu buyruq nima qiladi? Sodda tushuntir\"",
@@ -5650,6 +6226,7 @@
               "explain": "Bu prompt buyruq nima qilishini so'raydi."
             },
             {
+              "id": "21.3-3",
               "q": "Nega tushunmagan buyruqni bajarmaysan?",
               "options": [
                 "U nimanidir o'chirishi mumkin",
@@ -5661,6 +6238,7 @@
               "explain": "Noma'lum buyruq kerakli narsani buzishi yoki o'chirishi mumkin."
             },
             {
+              "id": "21.3-4",
               "q": "SI aytdi: bu buyruq hamma rasmlarni o'chiradi. Madinaga bu kerak emas, nima qiladi?",
               "options": [
                 "Bu buyruqni bajarmaydi",
@@ -5672,6 +6250,7 @@
               "explain": "Buyruq nima qilishini bilding, u kerak emas — bajarmaysan."
             },
             {
+              "id": "21.3-5",
               "q": "SI aytdi: buyruq faqat saytni ochadi, Jasurga shu kerak. Nima qiladi?",
               "options": [
                 "Endi uni bajarsa bo'ladi",
@@ -5683,6 +6262,7 @@
               "explain": "Buyruq nima qilishini tushundi va u xavfsiz."
             },
             {
+              "id": "21.3-6",
               "q": "Kamola buyruqning faqat yarmini tushundi. Uni bajaradimi?",
               "options": [
                 "Yo'q, qolganini ham so'raydi",
@@ -5696,7 +6276,9 @@
           ]
         },
         {
+          "id": "21.4",
           "n": 4,
+          "name": "Amaliyot: xavfli taklifga javob",
           "text": "Endi SI taklifiga javob ber.",
           "example": [
             {

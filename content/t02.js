@@ -3,6 +3,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
+     "id": "02.1-1",
      "q": "Aziz va Bobur SI'ga bir xil savol berishdi. Javoblar qanday bo'ladi?",
      "o": [
       "Har xil bo'lishi mumkin",
@@ -13,6 +14,7 @@ CONTENT[2] = {
      "e": "SI har safar javobni yangidan yozadi."
     },
     {
+     "id": "02.1-2",
      "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasang nima bo'ladi?",
      "o": [
       "Boshqa nom chiqishi mumkin",
@@ -23,6 +25,7 @@ CONTENT[2] = {
      "e": "Bitta savolga SI har xil javob berishi mumkin."
     },
     {
+     "id": "02.1-3",
      "q": "Kecha SI bir she'r yozdi, bugun boshqasini. Nega?",
      "o": [
       "SI har safar yangidan yozadi",
@@ -33,6 +36,7 @@ CONTENT[2] = {
      "e": "SI javobni har safar yangidan yozadi."
     },
     {
+     "id": "02.1-4",
      "q": "Malika SI'ning yoqqan javobini saqlamadi. Nega saqlash foydali edi?",
      "o": [
       "Qayta so'rasa, boshqacha chiqadi",
@@ -43,6 +47,7 @@ CONTENT[2] = {
      "e": "SI har safar yangidan yozadi, o'sha javob qaytmasligi mumkin."
     },
     {
+     "id": "02.1-5",
      "q": "Gul do'koni uchun SI'dan 3 marta reklama gapi so'rading. Natija?",
      "o": [
       "Uchta har xil gap",
@@ -53,6 +58,7 @@ CONTENT[2] = {
      "e": "Har safar yangidan yozgani uchun gaplar har xil chiqadi."
     },
     {
+     "id": "02.1-6",
      "q": "Sanjar maktab sayti uchun yana bir sarlavha varianti olmoqchi. Nima qiladi?",
      "o": [
       "Savolni yana bir bor beradi",
@@ -67,6 +73,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
+     "id": "02.2-1",
      "q": "SI kitob do'koni ish vaqtini xato aytdi. Javobi qanday yozilgan edi?",
      "o": [
       "Xuddi to'g'ridek, ishonch bilan",
@@ -77,6 +84,7 @@ CONTENT[2] = {
      "e": "SI xato qilganda ham ishonch bilan gapiradi."
     },
     {
+     "id": "02.2-2",
      "q": "Lola: «SI ikkilanmay aytdi, demak to'g'ri». Lola nimani bilmaydi?",
      "o": [
       "SI xatoda ham ikkilanmaydi",
@@ -87,6 +95,7 @@ CONTENT[2] = {
      "e": "SI doim ishonch bilan gapiradi, xato qilganda ham."
     },
     {
+     "id": "02.2-3",
      "q": "Ikki javob bor: biri to'g'ri, biri xato. SI qaysini ishonchliroq aytadi?",
      "o": [
       "Ikkalasini bir xil ishonch bilan",
@@ -97,6 +106,7 @@ CONTENT[2] = {
      "e": "SI to'g'ri javobni ham, xatoni ham ishonch bilan aytadi."
     },
     {
+     "id": "02.2-4",
      "q": "Akmal so'ragan ertak qahramonini SI xato aytdi, lekin «albatta» dedi. Bu g'alatimi?",
      "o": [
       "Yo'q, SI shunday gapiradi",
@@ -107,6 +117,7 @@ CONTENT[2] = {
      "e": "SI xato qilganda ham ishonch bilan gapiradi."
     },
     {
+     "id": "02.2-5",
      "q": "Telegram bot sport zali narxini «100% aniq» deb yozdi. Nima qilasan?",
      "o": [
       "Avval tekshirib ko'raman",
@@ -117,6 +128,7 @@ CONTENT[2] = {
      "e": "SI ishonch bilan yozsa ham, xato bo'lishi mumkin."
     },
     {
+     "id": "02.2-6",
      "q": "Qaysi biri SI uchun odatiy?",
      "o": [
       "Xatoni ham ishonch bilan aytish",
@@ -131,6 +143,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
+     "id": "02.3-1",
      "q": "Sinfdoshing: «Ertaga dars yo'q, aniq bilaman!» dedi. Nima qilasan?",
      "o": [
       "Ustozdan so'rab bilaman",
@@ -141,6 +154,7 @@ CONTENT[2] = {
      "e": "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin."
     },
     {
+     "id": "02.3-2",
      "q": "Reklamada «Eng arzon gul do'koni!» deyilgan. Bu albatta rostmi?",
      "o": [
       "Shart emas, solishtirish kerak",
@@ -151,6 +165,7 @@ CONTENT[2] = {
      "e": "Ishonch bilan yozilgan gap har doim to'g'ri bo'lavermaydi."
     },
     {
+     "id": "02.3-3",
      "q": "Ishonch bilan aytilgan gap har doim to'g'rimi?",
      "o": [
       "Yo'q, xato bo'lishi mumkin",
@@ -161,6 +176,7 @@ CONTENT[2] = {
      "e": "Ishonch bilan aytilgan gap har doim ham to'g'ri emas."
     },
     {
+     "id": "02.3-4",
      "q": "SI «Bu kitob 1990-yilda chiqqan» dedi. Qanday bilasan?",
      "o": [
       "Kitobning o'zidan qarayman",
@@ -171,6 +187,7 @@ CONTENT[2] = {
      "e": "Ishonchli gapni haqiqiy manbadan tekshirish kerak."
     },
     {
+     "id": "02.3-5",
      "q": "Ikki do'st bahslashdi: biri ishonch bilan, biri ikkilanib gapirdi. Kim haq?",
      "o": [
       "Tekshirmasdan bilib bo'lmaydi",
@@ -181,6 +198,7 @@ CONTENT[2] = {
      "e": "Ishonch emas, tekshiruv kim haq ekanini ko'rsatadi."
     },
     {
+     "id": "02.3-6",
      "q": "Ukang juda ishonch bilan «Kit — baliq!» dedi. Bu haqda nima deysan?",
      "o": [
       "Ishonch rostlikni isbotlamaydi",
@@ -195,6 +213,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
+     "id": "02.4-1",
      "q": "SI: «Lola kafesi Navoiy ko'chasi, 12-uyda». Nimani tekshirasan?",
      "o": [
       "Manzilni",
@@ -205,6 +224,7 @@ CONTENT[2] = {
      "e": "SI javobidagi manzilni tekshirish kerak."
     },
     {
+     "id": "02.4-2",
      "q": "SI sport zali telefon raqamini berdi. Qanday tekshirasan?",
      "o": [
       "Zal saytidan raqamni topaman",
@@ -215,6 +235,7 @@ CONTENT[2] = {
      "e": "Raqamni SI emas, boshqa ishonchli joydan tekshiramiz."
     },
     {
+     "id": "02.4-3",
      "q": "SI javobidagi qaysi narsalarni tekshirish kerak?",
      "o": [
       "Nom, raqam va manzil",
@@ -225,6 +246,7 @@ CONTENT[2] = {
      "e": "SI javobidagi nom, raqam va manzilni tekshirish kerak."
     },
     {
+     "id": "02.4-4",
      "q": "SI uchta gap yozdi. Qaysi birini tekshirish shart?",
      "o": [
       "«Bayram 5-may kuni bo'ladi»",
@@ -235,6 +257,7 @@ CONTENT[2] = {
      "e": "Sanada raqam bor, raqamni tekshirish kerak."
     },
     {
+     "id": "02.4-5",
      "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasan?",
      "o": [
       "Kitob nomini tekshiraman",
@@ -245,6 +268,7 @@ CONTENT[2] = {
      "e": "SI aytgan nomni tekshirish kerak."
     },
     {
+     "id": "02.4-6",
      "q": "Do'sting SI bergan manzilga tekshirmasdan bordi. Nima bo'lishi mumkin?",
      "o": [
       "Noto'g'ri joyga borib qoladi",

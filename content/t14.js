@@ -3,6 +3,7 @@ CONTENT[14] = {
   {
    "pool": [
     {
+     "id": "14.1-1",
      "q": "Ekranda uzun inglizcha xato xabari chiqdi. Uni SI'ga qanday berasan?",
      "o": [
       "Nusxalab, promptga qo'yaman",
@@ -13,6 +14,7 @@ CONTENT[14] = {
      "e": "Nusxalasang, xabar aynan ekrandagidek boradi."
     },
     {
+     "id": "14.1-2",
      "q": "Nega xato xabarini qo'lda qayta yozmaysan?",
      "o": [
       "Bitta harf ham xato ketishi mumkin",
@@ -23,6 +25,7 @@ CONTENT[14] = {
      "e": "Qayta yozganda bitta harf adashsa ham, ma'no o'zgaradi."
     },
     {
+     "id": "14.1-3",
      "q": "Ekranda «defined» edi. Kamola qo'lda «defind» deb yozdi. Nima bo'ldi?",
      "o": [
       "Kamola xabarni xato ko'chirdi",
@@ -33,6 +36,7 @@ CONTENT[14] = {
      "e": "Qo'lda yozganda harf tushib qoldi — nusxalash kerak edi."
     },
     {
+     "id": "14.1-4",
      "q": "Jasur xato xabarini nusxalamoqchi. Birinchi nima qiladi?",
      "o": [
       "Xabar matnini belgilab oladi",
@@ -43,6 +47,7 @@ CONTENT[14] = {
      "e": "Nusxalash uchun avval xabar matnini belgilash kerak."
     },
     {
+     "id": "14.1-5",
      "q": "Xabar inglizcha. Nodira uni o'zbekchaga tarjima qilib bermoqchi. To'g'rimi?",
      "o": [
       "Yo'q, aynan o'zini nusxalashi kerak",
@@ -53,6 +58,7 @@ CONTENT[14] = {
      "e": "Xabar o'zgartirilmasdan, aynan o'zi nusxalab beriladi."
     },
     {
+     "id": "14.1-6",
      "q": "Xato xabari 3 qatorli. Qaysi yo'l tezroq va aniqroq?",
      "o": [
       "Nusxalash",
@@ -67,6 +73,7 @@ CONTENT[14] = {
   {
    "pool": [
     {
+     "id": "14.2-1",
      "q": "Xabar 4 qatorli. Ozoda faqat birinchi qatorini berdi. To'g'ri qildimi?",
      "o": [
       "Yo'q, 4 qatorni ham berishi kerak",
@@ -77,6 +84,7 @@ CONTENT[14] = {
      "e": "Xabar bir qismi emas, to'liq beriladi."
     },
     {
+     "id": "14.2-2",
      "q": "Nega xato xabarini to'liq berasan?",
      "o": [
       "Muhim qism oxirida bo'lishi mumkin",
@@ -87,6 +95,7 @@ CONTENT[14] = {
      "e": "Kerakli ma'lumot xabarning istalgan qismida bo'lishi mumkin."
     },
     {
+     "id": "14.2-3",
      "q": "Malika xabardan faqat «Error» so'zini berdi. SI nima qila oladi?",
      "o": [
       "Xato sababini bila olmaydi",
@@ -97,6 +106,7 @@ CONTENT[14] = {
      "e": "Bitta so'zdan SI xato sababini bila olmaydi, u ekranni ko'rmaydi."
     },
     {
+     "id": "14.2-4",
      "q": "Qaysi prompt xato xabarini to'liq beradi?",
      "o": [
       "Xato: TypeError: price is undefined, 12-qator",
@@ -107,6 +117,7 @@ CONTENT[14] = {
      "e": "Bu promptda xabarning hamma qismi bor."
     },
     {
+     "id": "14.2-5",
      "q": "Sherzod xabarni nusxaladi, lekin oxiri qolib ketdi. Endi nima qiladi?",
      "o": [
       "Qaytadan, oxirigacha nusxalaydi",
@@ -117,6 +128,7 @@ CONTENT[14] = {
      "e": "Xabar to'liq bo'lishi uchun oxirigacha nusxalash kerak."
     },
     {
+     "id": "14.2-6",
      "q": "SI xato sababini topa olmadi. Avval nimani tekshirasan?",
      "o": [
       "Xabarni to'liq berganimni",
@@ -131,6 +143,7 @@ CONTENT[14] = {
   {
    "pool": [
     {
+     "id": "14.3-1",
      "q": "Xato xabari rasm kabi chiqdi, uni belgilab bo'lmaydi. Nima qilasan?",
      "o": [
       "Skrinshot olib, SI'ga beraman",
@@ -141,6 +154,7 @@ CONTENT[14] = {
      "e": "Nusxalab bo'lmasa, skrinshot beriladi."
     },
     {
+     "id": "14.3-2",
      "q": "Skrinshot nima?",
      "o": [
       "Ekranning rasmi",
@@ -151,6 +165,7 @@ CONTENT[14] = {
      "e": "Skrinshot — ekranda ko'ringan narsaning rasmi."
     },
     {
+     "id": "14.3-3",
      "q": "Xato xabarining skrinshotini qachon berasan?",
      "o": [
       "Xabarni nusxalab bo'lmaganda",
@@ -161,6 +176,7 @@ CONTENT[14] = {
      "e": "Skrinshot — nusxalab bo'lmagandagi yo'l."
     },
     {
+     "id": "14.3-4",
      "q": "Xato xabarini bemalol belgilab, nusxalasa bo'ladi. Nima qilasan?",
      "o": [
       "Matnni nusxalab beraman",
@@ -171,6 +187,7 @@ CONTENT[14] = {
      "e": "Nusxalash mumkin bo'lsa, matnning o'zi beriladi."
     },
     {
+     "id": "14.3-5",
      "q": "Bobur skrinshot oldi, lekin xabarning yarmi rasmga tushmadi. Nima qiladi?",
      "o": [
       "Butun xabar bilan qayta oladi",
@@ -181,6 +198,7 @@ CONTENT[14] = {
      "e": "Skrinshotda ham xabar to'liq ko'rinishi kerak."
     },
     {
+     "id": "14.3-6",
      "q": "Laylo skrinshot oldi, lekin SI'ga yubormadi. SI xatoni biladimi?",
      "o": [
       "Yo'q, SI ekranni ko'rmaydi",

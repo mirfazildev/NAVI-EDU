@@ -3,6 +3,7 @@ CONTENT[3] = {
   {
    "pool": [
     {
+     "id": "03.1-1",
      "q": "Sardor SI'ga «Bu rasm chiroylimi?» deb yozdi, rasmni yubormadi. Muammo nima?",
      "o": [
       "SI rasmni ko'rmaydi",
@@ -13,6 +14,7 @@ CONTENT[3] = {
      "e": "SI ekraningni ko'rmaydi, rasmni unga berish kerak."
     },
     {
+     "id": "03.1-2",
      "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
      "o": [
       "Ali: «Sarlavha qizil chiqdi»",
@@ -23,6 +25,7 @@ CONTENT[3] = {
      "e": "SI ekranni ko'rmaydi, ko'rganingni so'z bilan yoz."
     },
     {
+     "id": "03.1-3",
      "q": "SI sening ekraningni ko'radimi?",
      "o": [
       "Yo'q, ko'rmaydi",
@@ -33,6 +36,7 @@ CONTENT[3] = {
      "e": "SI ekraningni ko'rmaydi."
     },
     {
+     "id": "03.1-4",
      "q": "Malika: «Bu yerdagi rangni o'zgartir» dedi. SI nega tushunmadi?",
      "o": [
       "«Bu yer» qayerligini bilmaydi",
@@ -43,6 +47,7 @@ CONTENT[3] = {
      "e": "SI ekranni ko'rmaydi, «bu yer» qayerligini bilmaydi."
     },
     {
+     "id": "03.1-5",
      "q": "Kafe menyusida narx xato chiqdi. SI'ga nimani yozish kerak?",
      "o": [
       "Qaysi taomda qanday narx chiqqanini",
@@ -53,6 +58,7 @@ CONTENT[3] = {
      "e": "SI ko'rmaydi, shuning uchun ko'rganingni aniq yozasan."
     },
     {
+     "id": "03.1-6",
      "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
      "o": [
       "Sen yozib berganingda",
@@ -67,6 +73,7 @@ CONTENT[3] = {
   {
    "pool": [
     {
+     "id": "03.2-1",
      "q": "Aziz: «Saytimga sarlavha yoz» dedi. SI nimani bilmaydi?",
      "o": [
       "Sayt nima haqida ekanini",
@@ -77,6 +84,7 @@ CONTENT[3] = {
      "e": "Sen aytmasang, SI loyihangni bilmaydi."
     },
     {
+     "id": "03.2-2",
      "q": "Kafe saytiga matn kerak. SI'ga avval nimani aytasan?",
      "o": [
       "Kafe nomi va taomlarini",
@@ -87,6 +95,7 @@ CONTENT[3] = {
      "e": "SI loyihani bilmaydi, kerakli ma'lumotni sen aytasan."
     },
     {
+     "id": "03.2-3",
      "q": "Nodira gul do'koni saytini bir oy qurdi. SI bu haqda biladimi?",
      "o": [
       "Yo'q, Nodira aytmaguncha",
@@ -97,6 +106,7 @@ CONTENT[3] = {
      "e": "Sen aytmasang, SI loyihangni bilmaydi."
     },
     {
+     "id": "03.2-4",
      "q": "SI sport zali saytiga «Kafemizga xush kelibsiz» deb yozdi. Nega?",
      "o": [
       "Unga sayt haqida aytilmagan",
@@ -107,6 +117,7 @@ CONTENT[3] = {
      "e": "Loyiha haqida aytilmasa, SI taxmin qilib yozadi."
     },
     {
+     "id": "03.2-5",
      "q": "Kitob do'koni boti uchun qaysi so'rov yaxshiroq?",
      "o": [
       "«Kitob do'koni botiga salom yoz»",
@@ -117,6 +128,7 @@ CONTENT[3] = {
      "e": "Faqat shu so'rovda loyiha nima ekani aytilgan."
     },
     {
+     "id": "03.2-6",
      "q": "SI loyihangga mos javob berishi uchun nima qilish kerak?",
      "o": [
       "Loyiha haqida yozib berish",
@@ -131,6 +143,7 @@ CONTENT[3] = {
   {
    "pool": [
     {
+     "id": "03.3-1",
      "q": "Kecha SI bilan kafe nomini tanlading. Bugun yangi suhbatda SI uni eslaydimi?",
      "o": [
       "Yo'q, eslamaydi",
@@ -141,6 +154,7 @@ CONTENT[3] = {
      "e": "Yangi suhbatda SI oldingi suhbatni bilmaydi."
     },
     {
+     "id": "03.3-2",
      "q": "Lola yangi suhbatda «Kechagi rasmni tuzat» dedi. Nima bo'ladi?",
      "o": [
       "SI qaysi rasmligini bilmaydi",
@@ -151,6 +165,7 @@ CONTENT[3] = {
      "e": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
     },
     {
+     "id": "03.3-3",
      "q": "Yangi suhbatda SI ishni davom ettirishi uchun nima qilasan?",
      "o": [
       "Kerakli ma'lumotni qayta yozaman",
@@ -161,6 +176,7 @@ CONTENT[3] = {
      "e": "SI oldingi suhbatni bilmaydi, ma'lumotni qayta berish kerak."
     },
     {
+     "id": "03.3-4",
      "q": "SI gul do'koni haqidagi gapni qaysi holatda biladi?",
      "o": [
       "Shu suhbatda aytilgan bo'lsa",
@@ -171,6 +187,7 @@ CONTENT[3] = {
      "e": "SI faqat shu suhbatda aytilganni biladi."
     },
     {
+     "id": "03.3-5",
      "q": "Bobur ikki suhbat ochdi: biri sport zali, biri kitob do'koni haqida. Ikkinchisidagi SI zalni biladimi?",
      "o": [
       "Yo'q, zal boshqa suhbatda",
@@ -181,6 +198,7 @@ CONTENT[3] = {
      "e": "Har bir suhbat alohida, SI boshqa suhbatni bilmaydi."
     },
     {
+     "id": "03.3-6",
      "q": "Kecha botga 5 ta qoida aytding. Bugun yangi suhbatda SI ularga nega amal qilmadi?",
      "o": [
       "U qoidalarni bilmaydi",
@@ -195,6 +213,7 @@ CONTENT[3] = {
   {
    "pool": [
     {
+     "id": "03.4-1",
      "q": "Sardor sahifada xato ko'rdi, lekin SI'ga yozmadi. Xato nima bo'ladi?",
      "o": [
       "Tuzatilmay qoladi",
@@ -205,6 +224,7 @@ CONTENT[3] = {
      "e": "SI ekranni ko'rmaydi, unga yozmasang xato qoladi."
     },
     {
+     "id": "03.4-2",
      "q": "Kafe sahifasida narx «0 so'm» chiqdi. Birinchi qadam nima?",
      "o": [
       "SI'ga yozib, tuzatishni so'rash",
@@ -215,6 +235,7 @@ CONTENT[3] = {
      "e": "Xato ko'rsang, SI'ga yoz va tuzatishni so'ra."
     },
     {
+     "id": "03.4-3",
      "q": "Telegram bot noto'g'ri tugma chiqardi. Xatoni kim tuzatib beradi?",
      "o": [
       "SI, sen so'rasang",
@@ -225,6 +246,7 @@ CONTENT[3] = {
      "e": "SI sen yozib so'rasang tuzatadi."
     },
     {
+     "id": "03.4-4",
      "q": "SI xatoni tuzatdi. Keyin nima qilasan?",
      "o": [
       "Sahifani qayta ko'rib chiqaman",
@@ -235,6 +257,7 @@ CONTENT[3] = {
      "e": "Tuzatish to'g'ri bo'lganini ko'zing bilan tekshirasan."
     },
     {
+     "id": "03.4-5",
      "q": "Nilufar SI'ga faqat «Sarlavha qiyshiq» deb yozdi. U nimani yozmadi?",
      "o": [
       "Tuzatishni so'rashni",
@@ -245,6 +268,7 @@ CONTENT[3] = {
      "e": "Xatoni yozgach, tuzatishni ham so'rash kerak."
     },
     {
+     "id": "03.4-6",
      "q": "Kitob do'koni sahifasida narx ikki marta yozilgan. SI'ga eng yaxshi so'rov qaysi?",
      "o": [
       "«Narx ikki marta yozilgan, bittasini o'chir»",
