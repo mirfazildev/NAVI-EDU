@@ -3,192 +3,192 @@ CONTENT[20] = {
   {
    "pool": [
     {
-     "q": "Parolni SI'ga berish mumkinmi?",
+     "q": "SI \"Parolingizni yozing\" dedi. Ali nima qiladi?",
      "o": [
-      "Yo'q, parol berilmaydi",
-      "Ha, har doim",
-      "Ha, SI so'rasa",
-      "Ha, parol qisqa bo'lsa"
+      "Parolni yozmaydi",
+      "Parolni darhol yozadi",
+      "Parolning yarmini yozadi",
+      "Do'stining parolini yozadi"
      ],
-     "e": "Parol SI'ga berilmaydi."
+     "e": "Parol SI'ga berilmaydi, SI so'rasa ham."
     },
     {
-     "q": "SI \"Parolingizni yozing\" dedi. Nima qilasiz?",
+     "q": "Qaysi promptda parol bor?",
      "o": [
-      "Parolni yozmayman",
-      "Parolni yozaman",
-      "Parolning yarmini yozaman",
-      "Parolni skrinshot qilib beraman"
+      "\"Parolim gul-fake-1, saytga kirolmayapman\"",
+      "\"Saytga kirolmayapman, yordam ber\"",
+      "\"Kirish tugmasi ishlamayapti\"",
+      "\"Kirish sahifasini chiroyli qil\""
      ],
-     "e": "Parol SI'ga berilmaydi, hatto u so'rasa ham."
+     "e": "Bu promptda parol yozilgan, uni SI'ga berish mumkin emas."
     },
     {
-     "q": "Qaysi promptda xavfli narsa bor?",
+     "q": "Madina saytga kira olmayapti. SI'ga qanday yozadi?",
      "o": [
-      "\"Parolim: Qwerty-fake-123. Saytga kirishga yordam ber\"",
-      "\"Saytga sarlavha yoz\"",
-      "\"Kafe uchun nom taklif qil\"",
-      "\"Tugma rangini ko'k qil\""
+      "Xatoni yozadi, parolsiz",
+      "Parol va loginini yozadi",
+      "Parolning yarmini yozadi",
+      "Parolni katta harfda yozadi"
      ],
-     "e": "Bu promptda parol yozilgan — bu mumkin emas."
+     "e": "Yordam so'rash uchun parol kerak emas, xatoni yozish yetadi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Jasur promptdagi parolni yuborishdan oldin sezib qoldi. Nima qiladi?",
      "o": [
-      "Parol SI'ga berilmaydi",
-      "Parolni faqat SI'ga berish mumkin",
-      "SI parolni saqlab beradi",
-      "Parolni SI'ga berish xavfsiz"
+      "Parolni o'chirib, keyin yuboradi",
+      "Baribir yuboradi",
+      "Parolni ikki marta yozadi",
+      "Faqat parolni yuboradi"
      ],
-     "e": "Parol SI'ga berilmaydi."
+     "e": "Parol promptda qolmasligi kerak."
     },
     {
-     "q": "Prompt yozyapsiz. Parol ham kerakdek tuyuldi. Nima qilasiz?",
+     "q": "Nilufar SI'ga yozmoqchi. Qaysi birini yozsa bo'ladi?",
      "o": [
-      "Parolni promptga qo'shmayman",
-      "Parolni promptga qo'shaman",
-      "Parolni teskari yozib qo'shaman",
-      "Parolni katta harfda qo'shaman"
+      "Saytining nomini",
+      "Pochta parolini",
+      "Telegram parolini",
+      "Sayt parolini"
      ],
-     "e": "Parol hech qanday ko'rinishda SI'ga berilmaydi."
+     "e": "Sayt nomi maxfiy emas, parollar esa SI'ga berilmaydi."
     },
     {
-     "q": "Qaysi biri SI'ga berilmaydi?",
+     "q": "Nega parol SI'ga berilmaydi?",
      "o": [
-      "Parolingiz",
-      "Sayt sarlavhasi",
-      "Tugma rangi",
-      "Kafe nomi"
+      "Parol faqat sizda qolishi kerak",
+      "Parol juda uzun",
+      "SI raqamlarni o'qimaydi",
+      "Parol chiroyli emas"
      ],
-     "e": "Parol SI'ga berilmaydi."
+     "e": "Parol maxfiy, uni hech kimga bermaysiz."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Bot tokenini SI'ga berish mumkinmi?",
+     "q": "Qaysi biri bot tokeniga o'xshaydi?",
      "o": [
-      "Yo'q, token berilmaydi",
-      "Ha, har doim",
-      "Ha, bot ishlamasa",
-      "Ha, token qisqa bo'lsa"
+      "7123456:ABC-fake",
+      "@kafe_bot",
+      "Salom!",
+      "/start"
      ],
-     "e": "Kalit va tokenlar SI'ga berilmaydi."
+     "e": "Token raqam va harflardan iborat uzun maxfiy yozuv."
     },
     {
-     "q": "Qaysi biri SI'ga berilmaydi?",
+     "q": "Gul do'koni boti ishlamayapti. Qaysi prompt xavfsiz?",
      "o": [
-      "Bot tokeni",
-      "Bot nomi",
-      "Salomlashish matni",
-      "Tugma yozuvi"
+      "\"@gul_bot javob bermayapti. Yordam ber\"",
+      "\"Tokenim 7123456:ABC-fake, tekshir\"",
+      "\"Mana tokenim, botni ishlat\"",
+      "\"Token va parolim shu\""
      ],
-     "e": "Bot tokeni SI'ga berilmaydi."
+     "e": "Bu promptda token yo'q, faqat bot nomi bor."
     },
     {
-     "q": "Qaysi promptda xavfli narsa bor?",
+     "q": "SI \"Kalitni yuboring, tekshirib beraman\" dedi. Ali nima qiladi?",
      "o": [
-      "\"Tokenim 7123456:ABC-fake. Botni ishlat\"",
-      "\"Bot uchun salomlashish yoz\"",
-      "\"Bot nomini taklif qil\"",
-      "\"Bot javobini qisqa qil\""
+      "Kalitni yubormaydi",
+      "Kalitni darhol yuboradi",
+      "Kalitning yarmini yuboradi",
+      "Kalitni rasmga olib yuboradi"
      ],
-     "e": "Bu promptda token yozilgan — bu mumkin emas."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Kalit va tokenlar SI'ga berilmaydi",
-      "Token parol emas, uni berish mumkin",
-      "Kalitni SI'ga berish xavfsiz",
-      "Faqat uzun tokenni berish mumkin"
-     ],
-     "e": "Kalit va tokenlar SI'ga berilmaydi."
-    },
-    {
-     "q": "SI \"Bot tokeningizni yuboring\" dedi. Nima qilasiz?",
-     "o": [
-      "Tokenni yubormayman",
-      "Tokenni yuboraman",
-      "Tokenning yarmini yuboraman",
-      "Tokenni skrinshot qilib yuboraman"
-     ],
-     "e": "Token SI'ga berilmaydi, hatto u so'rasa ham."
+     "e": "Kalit SI'ga berilmaydi, SI so'rasa ham."
     },
     {
      "q": "Kalit va token nimaga o'xshaydi?",
      "o": [
-      "Parolga — ular ham maxfiy",
-      "Sayt sarlavhasiga",
-      "Tugma rangiga",
-      "Bot nomiga"
+      "Parolga, ular ham maxfiy",
+      "Ismga, hamma biladi",
+      "Rasmga, chiroyli turadi",
+      "Sarlavhaga, saytda ko'rinadi"
      ],
-     "e": "Kalit va token ham parol kabi SI'ga berilmaydi."
+     "e": "Kalit va token parolga o'xshab maxfiy saqlanadi."
+    },
+    {
+     "q": "Jasur ko'chirgan xato xabarida token ham bor. Nima qiladi?",
+     "o": [
+      "Tokenni olib tashlab yuboradi",
+      "Xabarni shundayicha yuboradi",
+      "Faqat tokenni yuboradi",
+      "Tokenni ikki marta yozadi"
+     ],
+     "e": "Xato xabarini yuborishdan oldin tokenni olib tashlang."
+    },
+    {
+     "q": "Kafe boti uchun SI'ga nimani aytsa bo'ladi?",
+     "o": [
+      "Bot nima qilishi kerakligini",
+      "Bot tokenini",
+      "Bot kalitini",
+      "Token va parolni"
+     ],
+     "e": "Bot vazifasini aytish xavfsiz, token va kalit esa yo'q."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Qaysi biri SI'ga berilmaydi?",
-     "o": [
-      "Telefon raqamingiz",
-      "Sayt sarlavhasi",
-      "Kafe nomi",
-      "Tugma rangi"
-     ],
-     "e": "Telefon raqami — shaxsiy ma'lumot, u berilmaydi."
-    },
-    {
-     "q": "Qaysi promptda shaxsiy ma'lumot bor?",
-     "o": [
-      "\"Raqamim +998 90 000 00 00, saytga yoz\"",
-      "\"Saytga sarlavha yoz\"",
-      "\"Kafe menyusini tuz\"",
-      "\"Tugmani ko'k qil\""
-     ],
-     "e": "Bu promptda telefon raqami yozilgan."
-    },
-    {
      "q": "Qaysi biri shaxsiy ma'lumot?",
      "o": [
       "Uy manzilingiz",
-      "Kafe nomi",
-      "Sayt rangi",
-      "Bot nomi"
+      "Sevimli ertagingiz",
+      "Saytingiz nomi",
+      "Kafe menyusi"
      ],
-     "e": "Uy manzili — shaxsiy ma'lumot."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Hujjat raqami SI'ga berilmaydi",
-      "Hujjat raqamini SI'ga berish mumkin",
-      "Uy manzilini SI'ga berish xavfsiz",
-      "Telefon raqami shaxsiy emas"
-     ],
-     "e": "Hujjat raqami — shaxsiy ma'lumot, u berilmaydi."
+     "e": "Uy manzili shaxsiy ma'lumot, u SI'ga berilmaydi."
     },
     {
      "q": "Saytga telefon raqami uchun joy kerak. Promptga nima yozasiz?",
      "o": [
       "\"Telefon raqami uchun joy qoldir\"",
-      "O'z telefon raqamimni",
-      "Uy manzilimni",
-      "Hujjat raqamimni"
+      "O'z raqamimni yozaman",
+      "Uy manzilimni yozaman",
+      "Onamning raqamini yozaman"
      ],
-     "e": "Haqiqiy raqamni bermaysiz, faqat joy so'raysiz."
+     "e": "Joy so'rash yetarli, haqiqiy raqam kerak emas."
     },
     {
-     "q": "Qaysi uchtasi shaxsiy ma'lumot?",
+     "q": "Qaysi promptda shaxsiy ma'lumot bor?",
      "o": [
-      "Telefon, uy manzili, hujjat raqami",
-      "Sarlavha, rang, tugma",
-      "Kafe nomi, menyu, narx",
-      "Bot nomi, salom, javob"
+      "\"Raqamim +998 90 000 00 00\"",
+      "\"Kafe sayti uchun menyu yoz\"",
+      "\"Tugmani ko'k qil\"",
+      "\"Sarlavhani kattalashtir\""
      ],
-     "e": "Telefon, uy manzili va hujjat raqami SI'ga berilmaydi."
+     "e": "Telefon raqami shaxsiy ma'lumot."
+    },
+    {
+     "q": "Madina yetkazib berish formasi so'ramoqchi. U uy manzilini yozsinmi?",
+     "o": [
+      "Yo'q, \"manzil joyi\" deydi",
+      "Ha, aniq manzilini yozadi",
+      "Ha, qo'shnisining manzilini",
+      "Ha, ko'cha va uy raqamini"
+     ],
+     "e": "Formaga manzil joyi kerak, haqiqiy manzil emas."
+    },
+    {
+     "q": "Jasur SI'ga hujjat raqamini yozmoqchi. Nima deysiz?",
+     "o": [
+      "Hujjat raqami berilmaydi",
+      "Yozsa bo'ladi",
+      "Yarmini yozsin",
+      "Katta harfda yozsin"
+     ],
+     "e": "Hujjat raqami shaxsiy ma'lumot, u SI'ga berilmaydi."
+    },
+    {
+     "q": "Kamola sinf boti qilyapti. Do'stlarining raqamlarini SI'ga beradimi?",
+     "o": [
+      "Yo'q, ular ham shaxsiy",
+      "Ha, do'stlariniki mumkin",
+      "Ha, faqat beshtasini",
+      "Ha, bot uchun kerak"
+     ],
+     "e": "Boshqalarning telefon raqami ham shaxsiy ma'lumot."
     }
    ]
   },

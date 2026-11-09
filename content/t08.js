@@ -5,190 +5,190 @@ CONTENT[8] = {
     {
      "q": "Misol nima?",
      "o": [
-      "SI'ga \"shunga o'xshash qil\" deb ko'rsatilgan namuna",
-      "SI nima qilmasligi kerakligi",
-      "Sayt kim uchun ekani",
-      "SI yozgan javob"
+      "SI'ga ko'rsatilgan namuna",
+      "SI yozgan xato javob",
+      "Promptning oxirgi so'zi",
+      "Saytning nomi va manzili"
      ],
-     "e": "Misol — SI'ga \"shunga o'xshash qil\" deb ko'rsatilgan namuna."
+     "e": "Misol — SI'ga «shunga o'xshash qil» deb ko'rsatilgan namuna."
     },
     {
-     "q": "Siz SI'ga do'stingiz saytini ko'rsatib, \"shunga o'xshash qil\" dedingiz. Do'stingiz sayti nima?",
+     "q": "Aziz «Bahor» kafesi saytiga o'xshash sayt istaydi. Bu yerda misol qaysi?",
      "o": [
-      "Misol",
-      "Cheklov",
-      "SI javobi",
-      "Xato"
+      "«Bahor» kafesining sayti",
+      "Azizning yangi sayti",
+      "SI yozadigan javob",
+      "Kafedagi taomlar ro'yxati"
      ],
-     "e": "\"Shunga o'xshash qil\" deb ko'rsatilgan narsa — misol."
+     "e": "Aziz «Bahor» saytini namuna qilib ko'rsatyapti."
     },
     {
      "q": "Qaysi promptda misol bor?",
      "o": [
-      "\"Shunga o'xshash yoz: Mazali somsa shu yerda!\"",
-      "\"Sarlavha yoz\"",
-      "\"Narx yozma\"",
-      "\"Bu kafe sayti\""
+      "«Mana shu matnga o'xshatib yoz: ...»",
+      "«Qisqa matn yozib ber»",
+      "«O'zbekcha matn yoz»",
+      "«Kafe uchun matn yoz»"
      ],
-     "e": "Unda SI'ga namuna ko'rsatilgan."
+     "e": "Unda SI'ga o'xshatish uchun namuna berilgan."
     },
     {
-     "q": "SI'ga misol ko'rsatsangiz, u nima qiladi?",
+     "q": "Sardor qanday tugma kerakligini so'z bilan tushuntira olmayapti. Nima qilgani yaxshi?",
      "o": [
-      "Shunga o'xshash narsa qiladi",
-      "Misolni o'chirib tashlaydi",
-      "Ishni to'xtatadi",
-      "Mutlaqo boshqa narsa qiladi"
+      "O'xshash tugmani misol qilib beradi",
+      "«Yaxshi tugma qil» deb yozadi",
+      "SI o'zi topishini kutadi",
+      "Promptni qisqaroq qiladi"
      ],
-     "e": "Misol SI'ga \"shunga o'xshash qil\" deb ko'rsatiladi."
+     "e": "Misol so'z bilan aytish qiyin narsani ko'rsatib beradi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Nodira do'stining tabrik matnini misol qilib berdi. SI qanday matn yozadi?",
      "o": [
-      "Misol SI'ga qanday narsa kerakligini ko'rsatadi",
-      "Misol — SI nima qilmasligi",
-      "Misol — SI yozgan javob",
-      "Misolni SI o'zi topadi"
+      "Shu tabrikka o'xshash matn",
+      "Ob-havo haqida matn",
+      "Juda uzun ertak",
+      "Faqat bitta so'z"
      ],
-     "e": "Misol — SI'ga ko'rsatilgan namuna."
+     "e": "Misol bersangiz, SI shunga o'xshash narsa qiladi."
     },
     {
-     "q": "Sizga do'stingiz she'riga o'xshash she'r kerak. Nima qilasiz?",
+     "q": "Malika SI'ga yoqqan e'lonni yubordi: «Shunga o'xshash yoz». U nima qildi?",
      "o": [
-      "Do'stingiz she'rini SI'ga misol qilib berasiz",
-      "Faqat \"She'r yoz\" deysiz",
-      "SI o'zi topadi deb kutasiz",
-      "\"She'r yozma\" deysiz"
+      "SI'ga misol ko'rsatdi",
+      "SI'ga savol berdi",
+      "SI'dan rasm so'radi",
+      "SI'ga rahmat aytdi"
      ],
-     "e": "Misol bersangiz, SI shunga o'xshash yozadi."
+     "e": "Yoqqan e'lonni namuna qilib berish — bu misol."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Misol nima bo'lishi mumkin?",
+     "q": "Lola SI'ga do'kon saytining rasmini yubordi. Bu misol bo'ladimi?",
+     "o": [
+      "Ha, rasm ham misol bo'ladi",
+      "Yo'q, misol faqat matn",
+      "Yo'q, misol faqat sayt",
+      "Yo'q, rasm misolga yaramaydi"
+     ],
+     "e": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
+    },
+    {
+     "q": "Jasur «Shu saytdagidek menyu qil» deb boshqa saytni ko'rsatdi. Misol qaysi turda?",
+     "o": [
+      "Boshqa sayt",
+      "Rasm",
+      "Matn",
+      "Qo'shiq"
+     ],
+     "e": "Jasur namuna sifatida boshqa saytni ko'rsatdi."
+    },
+    {
+     "q": "Gul do'koni sayti uchun rang tanlayapsiz. Qaysi misol eng qulay?",
+     "o": [
+      "Yoqqan gul do'konining rasmi",
+      "Gullar haqidagi qalin kitob",
+      "Do'konning telefon raqami",
+      "Do'kon egasining ismi"
+     ],
+     "e": "Rasmda ranglar ko'rinadi, u yaxshi misol bo'ladi."
+    },
+    {
+     "q": "Nodira yoqqan matnni misol qilmoqchi. Uni SI'ga qanday beradi?",
+     "o": [
+      "Matnni promptga qo'yib yuboradi",
+      "Matnni faqat o'ylab qo'yadi",
+      "Faqat matn nomini aytadi",
+      "Matnni o'chirib tashlaydi"
+     ],
+     "e": "SI ekraningizni ko'rmaydi, matnni promptga qo'yish kerak."
+    },
+    {
+     "q": "Misol qanday bo'lishi mumkin?",
      "o": [
       "Matn, rasm yoki boshqa sayt",
       "Faqat matn",
       "Faqat rasm",
-      "Faqat raqam"
+      "Faqat boshqa sayt"
      ],
      "e": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
     },
     {
-     "q": "Siz SI'ga sayt rasmini yuborib, \"shunga o'xshash qil\" dedingiz. Bu misolmi?",
+     "q": "Boshqa Telegram botning javobi sizga yoqdi. O'z botingiz uchun nima qilasiz?",
      "o": [
-      "Ha, rasm ham misol bo'ladi",
-      "Yo'q, misol faqat matn bo'ladi",
-      "Yo'q, bu cheklov",
-      "Yo'q, bu SI javobi"
+      "Uni SI'ga misol qilib beraman",
+      "Uni hech kimga ko'rsatmayman",
+      "O'z botimni o'chirib qo'yaman",
+      "SI o'zi topishini kutaman"
      ],
-     "e": "Misol rasm ham bo'lishi mumkin."
-    },
-    {
-     "q": "Qaysi biri misol emas, balki cheklov?",
-     "o": [
-      "\"Rasm qo'shma\"",
-      "Boshqa saytning manzili",
-      "Yoqqan rasm",
-      "Yoqqan matn"
-     ],
-     "e": "\"Rasm qo'shma\" — SI nima qilmasligi, ya'ni cheklov."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Boshqa sayt ham misol bo'lishi mumkin",
-      "Misol faqat matn bo'ladi",
-      "Rasmni misol qilib bo'lmaydi",
-      "Misol faqat SI'dan olinadi"
-     ],
-     "e": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
-    },
-    {
-     "q": "Sizga bir sayt juda yoqdi. Uni SI'ga qanday ko'rsatasiz?",
-     "o": [
-      "Shu saytni misol qilib beraman",
-      "\"Yaxshi sayt qil\" deyman",
-      "Hech narsa demayman",
-      "\"Sayt qilma\" deyman"
-     ],
-     "e": "Boshqa sayt ham misol bo'lishi mumkin."
-    },
-    {
-     "q": "Qaysi promptda misol sifatida boshqa sayt berilgan?",
-     "o": [
-      "\"Shu saytga o'xshash menyu qil: kafe-misol.uz\"",
-      "\"Shu matnga o'xshash yoz: Xush kelibsiz!\"",
-      "\"Menyu qil\"",
-      "\"Menyu qil, rasm qo'shma\""
-     ],
-     "e": "Unda misol — boshqa sayt."
+     "e": "Yoqqan javob matni yaxshi misol bo'ladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Qaysi promptda misoldan nima olinishi aytilgan?",
+     "q": "Sizga «Bahor» saytining faqat rangi yoqdi. Promptga nima yozasiz?",
      "o": [
-      "\"Shu saytdagi kabi ko'k rangli tugma qil\"",
-      "\"Shu saytga o'xshash qil\"",
-      "\"Tugma qil\"",
-      "\"Chiroyli tugma qil\""
+      "«Faqat rangini ol»",
+      "«Hamma narsasini ol»",
+      "«Shunga o'xshash qil»",
+      "«Tuzilishini ol»"
      ],
-     "e": "Unda misoldan rang olinishi aytilgan."
+     "e": "Nimani olishni aytsangiz, SI faqat rangni oladi."
     },
     {
-     "q": "\"Shu saytdagi kabi ko'k rangli tugma qil\". Misoldan nima olinadi?",
+     "q": "Ali misol berdi, lekin nimani olishni aytmadi. Nima bo'lishi mumkin?",
      "o": [
-      "Tugmaning rangi",
-      "Saytning nomi",
-      "Butun sayt",
-      "Saytdagi narxlar"
+      "SI keraksiz narsani ham oladi",
+      "SI misolni umuman ko'rmaydi",
+      "SI ishni boshlamaydi",
+      "SI faqat sarlavha yozadi"
      ],
-     "e": "Misoldan faqat rang olinadi: ko'k."
+     "e": "Nima kerakligini bilmasa, SI misoldan boshqa narsalarni ham oladi."
     },
     {
-     "q": "Misoldan nimalarni olish mumkin?",
+     "q": "Prompt: «Shu menyu kabi qil. Faqat tuzilishini ol». SI nimani oladi?",
+     "o": [
+      "Bo'limlar tartibini",
+      "Taomlar nomini",
+      "Menyu ranglarini",
+      "Taomlar narxini"
+     ],
+     "e": "Tuzilish — qismlar qanday tartibda turgani."
+    },
+    {
+     "q": "Misoldan nimalarni olishni aytish mumkin?",
      "o": [
       "Rangini, uslubini yoki tuzilishini",
-      "Faqat nomini",
-      "Faqat narxini",
-      "Faqat manzilini"
+      "Faqat egasining ismini",
+      "Faqat telefon raqamini",
+      "Faqat undagi xatolarni"
      ],
-     "e": "Misoldan rangini, uslubini yoki tuzilishini olish mumkin."
+     "e": "Misoldan rang, uslub yoki tuzilishni olishni aytasiz."
     },
     {
-     "q": "Siz faqat \"Shu saytga o'xshash qil\" deb yozdingiz. Nima bo'lishi mumkin?",
+     "q": "Do'stingizning tabrigi quvnoq ohangda, sizga ham shunday kerak. Nimani olasiz?",
      "o": [
-      "SI siz xohlamagan narsani ham olishi mumkin",
-      "SI aynan siz o'ylagan narsani qiladi",
-      "SI hech narsa qilmaydi",
-      "SI saytni o'chiradi"
+      "Uslubini",
+      "Rangini",
+      "Tuzilishini",
+      "Uzunligini"
      ],
-     "e": "Nimani olish kerakligi aytilmasa, SI o'zi tanlaydi."
+     "e": "Matnning ohangi — uning uslubi."
     },
     {
-     "q": "Sizga misoldagi saytning faqat ranglari yoqdi. Qaysi prompt to'g'ri?",
+     "q": "«Faqat rangini ol» degan edingiz, SI matnni ham ko'chirdi. Bu to'g'rimi?",
      "o": [
-      "\"Shu saytdagi ranglardan foydalan\"",
-      "\"Shu saytga o'xshash qil\"",
-      "\"Shu saytni to'liq ko'chir\"",
-      "\"Sayt qil\""
+      "Yo'q, faqat rangni olishi kerak edi",
+      "Ha, matnni ham olishi kerak",
+      "Ha, SI hamma narsani oladi",
+      "Yo'q, rangni ham olmasligi kerak"
      ],
-     "e": "Misoldan nima olinishi aniq aytilgan: ranglar."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Misoldan nima olinishini aytish kerak",
-      "SI misoldan keraklisini o'zi biladi",
-      "Misolni doim butunlay ko'chirish kerak",
-      "Misol bersangiz, boshqa hech narsa yozilmaydi"
-     ],
-     "e": "Rangini, uslubini yoki tuzilishini olishni ayting."
+     "e": "Promptda faqat rang so'ralgan, matn olinmasligi kerak edi."
     }
    ]
   },

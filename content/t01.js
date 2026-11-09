@@ -6,61 +6,61 @@ CONTENT[1] = {
      "q": "Sun'iy intellekt qisqacha qanday yoziladi?",
      "o": [
       "SI",
-      "SN",
       "IS",
-      "SIN"
+      "SN",
+      "SII"
      ],
      "e": "Sun'iy intellekt qisqacha SI deb yoziladi."
     },
     {
-     "q": "SI nimaning qisqartmasi?",
-     "o": [
-      "Sun'iy intellekt",
-      "Sinov ishi",
-      "Sahifa ilovasi",
-      "Server internet"
-     ],
-     "e": "SI — Sun'iy intellekt."
-    },
-    {
-     "q": "Qaysi yozuv to'g'ri?",
-     "o": [
-      "Sun'iy intellekt — SI",
-      "Sun'iy intellekt — IS",
-      "Sun'iy intellekt — SN",
-      "Sun'iy intellekt — S"
-     ],
-     "e": "Sun'iy intellekt qisqacha SI deb yoziladi."
-    },
-    {
-     "q": "Matnda \"SI javob berdi\" deyilgan. Kim javob berdi?",
+     "q": "Matnda: «SI menga she'r yozib berdi». SI kim?",
      "o": [
       "Sun'iy intellekt",
       "Sinf ustozi",
       "Sayt egasi",
-      "Sizning do'stingiz"
+      "Sinfdosh do'st"
      ],
-     "e": "SI — Sun'iy intellekt."
+     "e": "Matndagi SI — Sun'iy intellektning qisqa yozilishi."
     },
     {
-     "q": "\"SI\" harflari qaysi so'zlarning bosh harflari?",
+     "q": "«SI» so'zidagi «I» harfi qaysi so'zdan olingan?",
      "o": [
-      "Sun'iy va Intellekt",
-      "Sahifa va Internet",
-      "Sinov va Ish",
-      "Server va Ilova"
+      "Intellekt",
+      "Internet",
+      "Ilova",
+      "Ish"
      ],
-     "e": "S — Sun'iy, I — Intellekt."
+     "e": "SI — Sun'iy Intellekt, I harfi «Intellekt» so'zidan."
     },
     {
-     "q": "Do'stingiz \"IS bilan ishladim\" dedi. Sun'iy intellektning to'g'ri qisqartmasi qaysi?",
+     "q": "Malika «Sun'iy intellekt»ni qisqa yozmoqchi. Nechta harf yozadi?",
      "o": [
-      "SI",
-      "IS",
-      "SN",
-      "II"
+      "Ikkita harf",
+      "Uchta harf",
+      "To'rtta harf",
+      "Bitta harf"
      ],
-     "e": "Sun'iy intellekt qisqacha SI deb yoziladi."
+     "e": "Qisqasi SI — ikki harfdan iborat."
+    },
+    {
+     "q": "Jasur «Sun'iy intellekt»ni «IS» deb yozdi. Xatosi nimada?",
+     "o": [
+      "Harflar o'rni almashgan",
+      "Bitta harf ortiqcha",
+      "Harflar kichik yozilgan",
+      "Xato yo'q, to'g'ri yozgan"
+     ],
+     "e": "To'g'risi SI: avval S, keyin I yoziladi."
+    },
+    {
+     "q": "Telegram botda «SI» va «Sun'iy intellekt» tugmalari bor. Ular farqlimi?",
+     "o": [
+      "Yo'q, ikkalasi bir narsa",
+      "Ha, butunlay boshqa narsa",
+      "Biri dastur, biri odam",
+      "Biri yangi, biri eski"
+     ],
+     "e": "SI — Sun'iy intellektning qisqa nomi, ma'nosi bir xil."
     }
    ]
   },
@@ -69,62 +69,62 @@ CONTENT[1] = {
     {
      "q": "SI nima?",
      "o": [
-      "So'rovingizga javob beradigan dastur",
+      "So'rovga javob beradigan dastur",
       "Kompyuter ichidagi odam",
       "Internet kabeli",
-      "Kompyuterning ehtiyot qismi"
+      "Telefonning ekrani"
      ],
      "e": "SI — so'rovingizga javob beradigan dastur."
     },
     {
-     "q": "SI qachon javob beradi?",
+     "q": "Dilnoza SI'ga «Gul nomlarini yoz» deb yozdi. Keyin nima bo'ladi?",
      "o": [
-      "Siz so'rov yuborganingizda",
-      "O'zi xohlagan paytda",
-      "Kompyuter yoqilishi bilan",
-      "Hech qachon"
+      "SI gul nomlarini yozadi",
+      "Gul do'koni ochiladi",
+      "Telefon o'chib qoladi",
+      "SI gul sotib oladi"
      ],
-     "e": "SI sizning so'rovingizga javob beradi."
+     "e": "SI so'rovga javob beradi, shuning uchun gul nomlarini yozadi."
     },
     {
-     "q": "SI'ga \"Salom\" deb yozdingiz. Keyin nima bo'ladi?",
+     "q": "Sardor SI'dan javob olmoqchi. Avval nima qilishi kerak?",
      "o": [
-      "SI javob beradi",
-      "Kompyuter o'chadi",
-      "Internet uziladi",
-      "Hech narsa bo'lmaydi"
+      "SI'ga so'rov yozishi",
+      "Kompyuterni o'chirishi",
+      "Jim kutib o'tirishi",
+      "Do'stiga qo'ng'iroq qilishi"
      ],
-     "e": "Siz so'rov yozdingiz — SI unga javob beradi."
+     "e": "SI so'rovga javob beradi, demak avval so'rov yoziladi."
     },
     {
-     "q": "Qaysi biri SI?",
+     "q": "Sport zali murabbiyi so'radi: «SI odammi?» To'g'ri javob qaysi?",
      "o": [
-      "So'rovingizga javob yozadigan dastur",
-      "Rasm chiqaradigan printer",
-      "Kompyuter klaviaturasi",
-      "Wi-Fi qurilmasi"
+      "Yo'q, u dastur",
+      "Ha, u odam",
+      "U zal murabbiyi",
+      "U kompyuter qismi"
      ],
-     "e": "SI — dastur, u so'rovingizga javob beradi."
+     "e": "SI odam emas, u — dastur."
     },
     {
-     "q": "SI dasturmi yoki odammi?",
+     "q": "Qaysi holatda SI ishlayapti?",
      "o": [
-      "Dastur",
-      "Odam",
-      "Kompyuter detali",
-      "Internet sayti egasi"
+      "Bot savolingizga javob yozdi",
+      "Chiroq o'zi yonib ketdi",
+      "Eshik qo'ng'irog'i chaldi",
+      "Soat vaqtni ko'rsatdi"
      ],
-     "e": "SI — dastur."
+     "e": "So'rovga javob yozish — SI ishi."
     },
     {
-     "q": "\"Kafe uchun nom taklif qil\" deb yozdingiz. SI nima qiladi?",
+     "q": "Bekzod SI'ga uchta savol yozdi. Qaysilariga javob oladi?",
      "o": [
-      "So'rovingizga javob beradi",
-      "So'rovni o'chirib tashlaydi",
-      "Kompyuterni qayta yoqadi",
-      "Kafega qo'ng'iroq qiladi"
+      "Uchala savoliga",
+      "Faqat birinchisiga",
+      "Faqat oxirgisiga",
+      "Faqat ikkitasiga"
      ],
-     "e": "SI so'rovingizga javob beradi — bu holda nom taklif qiladi."
+     "e": "SI har bir so'rovingizga javob beradi."
     }
    ]
   },
@@ -133,126 +133,126 @@ CONTENT[1] = {
     {
      "q": "SI qayerdan o'rgangan?",
      "o": [
-      "Internetdagi juda ko'p ma'lumotlardan",
-      "Faqat sizning fayllaringizdan",
-      "Hech narsadan o'rganmagan",
-      "Faqat bitta kitobdan"
+      "Internetdagi ko'p ma'lumotlardan",
+      "Bitta darslikdan",
+      "Faqat sizning xabaringizdan",
+      "Hech qayerdan o'rganmagan"
      ],
      "e": "SI internetdagi juda ko'p ma'lumotlardan o'rgangan."
     },
     {
-     "q": "SI javobni nimaga asoslanib beradi?",
+     "q": "SI «Toshkent — O'zbekiston poytaxti» dedi. Buni qanday bildi?",
      "o": [
-      "O'rgangan ma'lumotlariga",
-      "Tasodifiy harflarga",
-      "Sizning kayfiyatingizga",
-      "Kompyuter rangiga"
+      "Ko'p matnlarda o'qigan",
+      "Toshkentga borib kelgan",
+      "Xaritaga qarab turgan",
+      "Telefoningizdan olgan"
+     ],
+     "e": "SI bu ma'lumotni o'rgangan ko'p matnlaridan biladi."
+    },
+    {
+     "q": "Nega SI ham gul, ham futbol haqida javob bera oladi?",
+     "o": [
+      "Ko'p mavzudan o'rgangan",
+      "U bog'bon va futbolchi",
+      "Har kuni stadionga boradi",
+      "Gul do'konida ishlaydi"
+     ],
+     "e": "SI juda ko'p mavzudagi ma'lumotlardan o'rgangan."
+    },
+    {
+     "q": "Kafe egasi hayron: «SI kafemni qayerdan biladi?» Qachon bilishi mumkin?",
+     "o": [
+      "Kafe haqida internetda yozilgan bo'lsa",
+      "Kafeda ovqat yegan bo'lsa",
+      "Kafe yonidan o'tgan bo'lsa",
+      "Kafe egasini tanisa"
+     ],
+     "e": "SI internetdagi ma'lumotlardan o'rganadi."
+    },
+    {
+     "q": "Laylo uyda daftariga she'r yozdi, hech kimga ko'rsatmadi. SI uni biladimi?",
+     "o": [
+      "Yo'q, u internetda yo'q",
+      "Ha, SI daftarlarni ko'radi",
+      "Ha, daftarni o'qib chiqqan",
+      "Faqat kechasi biladi"
+     ],
+     "e": "SI faqat o'rgangan ma'lumotini biladi, daftar internetda yo'q."
+    },
+    {
+     "q": "Sport zali haqida so'radingiz. SI javobni qanday tuzadi?",
+     "o": [
+      "O'rganganlari asosida yozadi",
+      "Zalga borib ko'radi",
+      "Murabbiydan so'rab oladi",
+      "Tanga tashlab tanlaydi"
      ],
      "e": "SI o'rgangan ma'lumotlari asosida javob beradi."
-    },
-    {
-     "q": "Nega SI ko'p mavzuda javob bera oladi?",
-     "o": [
-      "Juda ko'p ma'lumotdan o'rgangani uchun",
-      "Odam bo'lgani uchun",
-      "Hamma joyga borib ko'rgani uchun",
-      "Kompyuter qimmat bo'lgani uchun"
-     ],
-     "e": "SI juda ko'p ma'lumotdan o'rgangan, shuning uchun ko'p mavzuda javob beradi."
-    },
-    {
-     "q": "SI \"Toshkent — O'zbekiston poytaxti\" dedi. Bu bilimni qayerdan oldi?",
-     "o": [
-      "O'rgangan ma'lumotlaridan",
-      "Toshkentga borib ko'rgan",
-      "Sizdan so'rab bilgan",
-      "Xaritaga qarab turgan"
-     ],
-     "e": "SI bu bilimni o'rgangan ma'lumotlaridan oldi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "SI ma'lumotlardan o'rganib, javob beradi",
-      "SI hech narsa o'rganmagan",
-      "SI faqat bitta saytni biladi",
-      "SI javobni telefoningizdan oladi"
-     ],
-     "e": "SI ko'p ma'lumotlardan o'rgangan va shu asosda javob beradi."
-    },
-    {
-     "q": "SI'ning bilimi qayerdan keladi?",
-     "o": [
-      "U o'rgangan ko'p ma'lumotlardan",
-      "Faqat rasmlardan",
-      "Faqat raqamlardan",
-      "Sizning xabarlaringizdan"
-     ],
-     "e": "SI'ning bilimi u o'rgangan ma'lumotlardan keladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI his qila oladimi?",
+     "q": "SI «Men juda xursandman!» deb yozdi. Bu nimani bildiradi?",
      "o": [
-      "Yo'q",
-      "Ha, inson kabi",
-      "Faqat kechasi",
-      "Faqat xursand bo'lganda"
+      "Bu shunchaki so'z",
+      "SI rostdan xursand",
+      "SI sizni yaxshi ko'rib qoldi",
+      "SI kulib yubordi"
      ],
-     "e": "SI inson kabi his qila olmaydi."
+     "e": "SI inson kabi his qila olmaydi, bu faqat so'z."
     },
     {
-     "q": "SI biror ishni o'zi boshlaydimi?",
+     "q": "Tun bo'yi hech kim SI'ga yozmadi. Ertalab SI nima qilgan bo'ladi?",
      "o": [
-      "Yo'q, siz buyursangiz ishlaydi",
-      "Ha, xohlagan paytda",
-      "Ha, har soatda",
-      "Faqat dam olish kunlari"
+      "Hech narsa qilmagan",
+      "Sayt qurib qo'ygan",
+      "Xat yozib qo'ygan",
+      "Rasm chizib qo'ygan"
      ],
-     "e": "SI ishni o'zi boshlamaydi — siz buyursangiz ishlaydi."
+     "e": "SI ishni o'zi boshlamaydi, buyruq bo'lmasa ishlamaydi."
     },
     {
-     "q": "Bola: \"SI xafa bo'lganimni sezdi\" dedi. To'g'rimi?",
+     "q": "Gul do'koniga reklama matni kerak. Matn paydo bo'lishi uchun nima qilish kerak?",
      "o": [
-      "Yo'q, SI his qila olmaydi",
-      "Ha, SI hamma narsani sezadi",
-      "Faqat telefonda sezadi",
-      "Faqat ertalab sezadi"
+      "SI'ga matn yozishni buyurish",
+      "SI o'zi sezishini kutish",
+      "Kompyuterni qayta yoqish",
+      "Gulni ekran yoniga qo'yish"
      ],
-     "e": "SI inson kabi his qila olmaydi."
+     "e": "SI siz buyursangiz ishlaydi."
     },
     {
-     "q": "Sayt uchun matn kerak. SI qachon yozadi?",
+     "q": "Ali tun bo'yi SI bilan gaplashdi. SI charchaydimi?",
      "o": [
-      "Siz unga buyurganingizda",
-      "O'zi sezib yozadi",
-      "Kompyuter yoqilishi bilan",
-      "Hech qachon"
+      "Charchamaydi, u his qilmaydi",
+      "Ha, dam olishi kerak",
+      "Ha, uxlab qoladi",
+      "Faqat kechqurun charchaydi"
      ],
-     "e": "SI siz buyurganingizda ishlaydi."
+     "e": "Charchash — his qilish, SI esa his qila olmaydi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Ishni kim boshlaydi: siz yoki SI?",
      "o": [
-      "SI siz buyurgan ishni bajaradi",
-      "SI o'zi ish topib bajaradi",
-      "SI inson kabi charchaydi",
-      "SI inson kabi xursand bo'ladi"
+      "Siz buyruq berasiz",
+      "SI o'zi boshlaydi",
+      "Kompyuter o'zi boshlaydi",
+      "Internet o'zi boshlaydi"
      ],
-     "e": "SI his qilmaydi va faqat siz buyurgan ishni bajaradi."
+     "e": "SI ishni o'zi boshlamaydi, siz buyurasiz."
     },
     {
-     "q": "Kompyuter kechasi yoniq qoldi, siz SI'ga hech narsa yozmadingiz. SI nima qiladi?",
+     "q": "Telegram botga SI ulangan. Bot qachon xabar yozadi?",
      "o": [
-      "Hech narsa — unga buyruq berilmagan",
-      "O'zi sayt quradi",
-      "Sizga xat yozadi",
-      "Yangi loyiha boshlaydi"
+      "Siz unga yozganingizda",
+      "O'zi xohlagan paytda",
+      "Har tongda o'zi",
+      "Kayfiyati yaxshi bo'lsa"
      ],
-     "e": "SI ishni o'zi boshlamaydi. Buyruq bo'lmasa, ishlamaydi."
+     "e": "SI o'zi boshlamaydi va kayfiyati yo'q, siz yozsangiz javob beradi."
     }
    ]
   }

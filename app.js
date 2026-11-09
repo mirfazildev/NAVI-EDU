@@ -347,7 +347,7 @@ function practiceItem(kick){
           const g = task.ai.guard ? task.ai.guard(raw) : null;
           if(a.injection || a.offtopic) final={ok:false, msg:["Faqat shu vazifa bo'yicha yozing."], ans:a.reply||"Men faqat shu vazifa bo'yicha yordam beraman."};
           else { const miss=task.ai.rubric.filter((x,i)=>!a.checks[i]).map(x=>x.miss);
-            final = (!miss.length && !g) ? {ok:true, msg:["SI vazifani to'liq tushundi."], ans:a.reply} : {ok:false, msg:g?[g,...miss]:miss, ans:a.reply}; }
+            final = (!miss.length && !g) ? {ok:true, msg:["SI vazifani to'liq tushundi."], ans:a.reply} : {ok:false, msg:g?[g,...r.msg]:r.msg, ans:r.ans||a.reply}; }
         }
       }
       if(!isW && final.ans) chat.insertAdjacentHTML("beforeend", `<div class="msg ai"><span class="who">SI</span>${esc(final.ans)}</div>`);

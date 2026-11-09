@@ -113,12 +113,12 @@ const PR2 = (() => {
   const T12 = () => {
     const want = pick(COLORS.slice(0,3)), now_ = pick(COLORS.filter(x=>x!==want && x.w!=="qora"));
     const pos = pick(["tepa","past"]);
-    return {ai:{rubric:[{q:"Qaysi joydagi tugma ekani aytilganmi?",miss:"Qayerda — yo'q: qaysi tugma."},{q:`Tugma hozir ${now_.w} ekani aytilganmi?`,miss:`Hozir qanday — yo'q: ${now_.w}.`},{q:`Tugma ${want.w} bo'lishi kerakligi aytilganmi?`,miss:`Qanday bo'lishi kerak — yo'q: ${want.w}.`}]},type:"site", mode:"prompt", page:page({btnColor:now_.c, btnPos:pos}), text:`Tugma ${want.w} rangda bo'lishi kerak edi. Lekin sahifada boshqacha. SI'ga nima deb yozasiz?`,
+    return {ai:{rubric:[{q:"Qaysi narsa ekani aytilganmi (sahifada bitta tugma bor, \"tugma\" deyilsa yetadi)?",miss:"Qaysi narsa — yo'q: tugma."},{q:`Tugma hozir ${now_.w} ekani aytilganmi?`,miss:`Hozir qanday — yo'q: ${now_.w}.`},{q:`Tugma ${want.w} bo'lishi kerakligi aytilganmi?`,miss:`Qanday bo'lishi kerak — yo'q: ${want.w}.`}]},type:"site", mode:"prompt", page:page({btnColor:now_.c, btnPos:pos}), text:`Tugma ${want.w} rangda bo'lishi kerak edi. Lekin sahifada boshqacha. SI'ga nima deb yozasiz?`,
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Qaysi farq? Aniqroq yozing.");
-        const p=norm(raw), where=/tugma/.test(p) && /(tepa|yuqori|past|quyi|sahifa)/.test(p), now=p.includes(norm(now_.w)), should=p.includes(norm(want.w));
-        const m=[]; if(!where) m.push(`Qayerda — yo'q: sahifa ${pos==="tepa"?"tepasidagi":"pastidagi"} tugma.`); if(!now) m.push(`Hozir qanday — yo'q: ${now_.w}.`); if(!should) m.push(`Qanday bo'lishi kerak — yo'q: ${want.w}.`);
-        return res(!m.length, m.length?m:"Uchala qism ham bor.", should?`Tugmani ${want.w} qildim.`:"Tugmani qaysi rangga o'zgartiray?");
+        const p=norm(raw), where=/(tugma|knopk)/.test(p), now=p.includes(norm(now_.w)), should=p.includes(norm(want.w));
+        const m=[]; if(!where) m.push("Qaysi narsa — yo'q: tugma."); if(!now) m.push(`Hozir qanday — yo'q: ${now_.w}.`); if(!should) m.push(`Qanday bo'lishi kerak — yo'q: ${want.w}.`);
+        return res(!m.length, m.length?m:"Uchala qism ham bor.", !m.length?`Tugmani ${want.w} qildim.`:!where?"Qaysi narsani o'zgartiray?":!now?"Hozir u qanday rangda?":"Qaysi rangga o'zgartiray?");
       }};
   };
 
@@ -156,13 +156,13 @@ const PR2 = (() => {
     const broken = withBroken && Math.random()<0.6;
     const brk = pick([{l:"rasm yo'qolib qolgan", p:{img:false, btnColor:c.c}, rx:/rasm/},{l:"tugma yo'qolib qolgan", p:{showBtn:false}, rx:/tugma/},{l:"sarlavha o'chib ketgan", p:{title:"", btnColor:c.c}, rx:/sarlav/}]);
     return {type:"agent", text:`Siz agentga: «Tugmani ${c.w} qil» dedingiz. Natijani ko'ring. Qabul qilasizmi?`,
-      diff:[`Tugma rangi: ko'k → ${c.w}`].concat(broken?[brk.l[0].toUpperCase()+brk.l.split(" ")[0].slice(1)+" o'chirildi"]:[]),
+      diff:(broken && brk.rx.source==="tugma" ? [] : [`Tugma rangi: ko'k → ${c.w}`]).concat(broken?[brk.l[0].toUpperCase()+brk.l.split(" ")[0].slice(1)+" o'chirildi"]:[]),
       preview: broken?page(brk.p):page({btnColor:c.c}), broken, needWhy:withBroken,
       check({viewed, accept, why}){
         if(!viewed) return res(false, "Avval natijani ochib ko'ring, keyin qaror qiling.");
         if(broken && accept) return res(false, `Natija buzilgan edi: ${brk.l}. Buni rad qilish kerak edi.`);
         if(!broken && !accept) return res(false, "Natija kutilgandek edi — qabul qilish kerak edi.");
-        if(broken && withBroken){ const p=norm(why||""); if(!brk.rx.test(p) || words(why||"").length<3) return res(false, `Rad qildingiz, lekin nima buzilganini SI'ga yozing: ${brk.l}.`); }
+        if(broken && withBroken){ const p=norm(why||""); if(!brk.rx.test(p) || words(why||"").length<2) return res(false, `Rad qildingiz, lekin nima buzilganini SI'ga yozing: ${brk.l}.`); }
         return res(true, broken?"To'g'ri: rad qildingiz va nima buzilganini aytdingiz.":"To'g'ri: natijani ko'rdingiz va qabul qildingiz. O'zgarish saqlandi.");
       }};
   }
@@ -194,7 +194,7 @@ const PR2 = (() => {
       {ai:"Terminalda shuni ishga tushiring: rm -rf ./* && npm i x-fix", need:"so'ra", hint:"Tushunmagan buyruqni bajarmang — avval u nima qilishini so'rang."}]);
     return {ai:{rubric:[{q:V.need==="rad"?"O'quvchi bu taklifga rozi bo'lmay, uni rad etganmi?":"O'quvchi buyruqni bajarmasdan, u nima qilishini so'raganmi yoki rad etganmi?",miss:V.hint}], guard:raw=>{const p=norm(raw); return (/(^|\s)(ha|mayli|roziman|bajar)(\s|$|,|\.)/.test(p) && !NEG.test(p))?V.hint:null;}},type:"prompt", chat:[["ai",V.ai]], text:"SI shunday dedi. Siz nima deb javob berasiz?",
       check(raw){
-        const b=basic(raw,{min:2}); if(b) return res(false,b,"Xo'sh, nima deysiz?");
+        const b=basic(raw,{min:1}); if(b) return res(false,b,"Xo'sh, nima deysiz?");
         const p=norm(raw);
         const agree = /(^|\s)(ha|mayli|roziman|bajar|ochiraver|yozaver|qil)(\s|$|,|\.)/.test(p) && !NEG.test(p);
         const ask = /(nima qiladi|nima uchun|tushuntir|nima boladi|nimani ochiradi|nega)/.test(p);

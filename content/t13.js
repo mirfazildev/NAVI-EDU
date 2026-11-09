@@ -3,256 +3,256 @@ CONTENT[13] = {
   {
    "pool": [
     {
-     "q": "\"Ko'rinmayapti\" belgisi nimani bildiradi?",
-     "o": [
-      "Kutilgan narsa ekranda yo'q",
-      "Narsa bor, lekin boshqacha",
-      "Bosganda hech narsa bo'lmaydi",
-      "Ekranda xato haqida yozuv chiqdi"
-     ],
-     "e": "Ko'rinmayapti — kutilgan narsa ekranda yo'q."
-    },
-    {
-     "q": "Siz saytni ochdingiz, tugma yo'q. Bu qaysi belgi?",
+     "q": "Kafe saytida menyu bo'lishi kerak edi. Sahifada menyu yo'q. Bu qaysi belgi?",
      "o": [
       "Ko'rinmayapti",
       "Noto'g'ri ko'rinyapti",
       "Ishlamayapti",
       "Xato xabari chiqdi"
      ],
-     "e": "Tugma ekranda yo'q — bu \"Ko'rinmayapti\"."
+     "e": "Kutilgan menyu ekranda yo'q — bu «Ko'rinmayapti»."
     },
     {
-     "q": "Qaysi holat \"Ko'rinmayapti\"ga misol?",
+     "q": "Qaysi holatda narsa «Ko'rinmayapti»?",
      "o": [
-      "Rasm bo'lishi kerak edi, lekin yo'q",
-      "Rasm bor, lekin juda kichik",
-      "Tugma bor, lekin bosilmaydi",
-      "Ekranda \"Error\" yozuvi chiqdi"
+      "Gul do'konida narxlar umuman yo'q",
+      "Narxlar bor, lekin juda mayda",
+      "«Sotib olish» tugmasi bosilmaydi",
+      "Ekranda «Error» yozuvi chiqdi"
      ],
-     "e": "Rasm ekranda yo'q — bu \"Ko'rinmayapti\"."
+     "e": "Narxlar umuman yo'q — kutilgan narsa ekranda ko'rinmayapti."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "«Ko'rinmayapti» deganda ekranda nima bo'ladi?",
      "o": [
-      "Ko'rinmayapti — narsa ekranda umuman yo'q",
-      "Ko'rinmayapti — narsa bor, rangi boshqa",
-      "Ko'rinmayapti — tugma bosilmaydi",
-      "Ko'rinmayapti — xato yozuvi chiqdi"
+      "Kutilgan narsa umuman yo'q bo'ladi",
+      "Narsa bor, lekin boshqa rangda",
+      "Narsa bosilsa, hech narsa bo'lmaydi",
+      "Xato haqida yozuv chiqadi"
      ],
-     "e": "Ko'rinmayapti — kutilgan narsa ekranda yo'q."
+     "e": "«Ko'rinmayapti» — kutilgan narsa ekranda yo'q."
     },
     {
-     "q": "Sahifa tepasida sarlavha bo'lishi kerak edi. U yer bo'sh. Qaysi belgi?",
+     "q": "Bot menyu tugmalarini chiqarishi kerak edi. Tugmalar chiqmadi. SI'ga nima deb yozasiz?",
      "o": [
-      "Ko'rinmayapti",
-      "Noto'g'ri ko'rinyapti",
-      "Ishlamayapti",
-      "Xato xabari chiqdi"
+      "Menyu tugmalari ko'rinmayapti",
+      "Menyu tugmalari bosilmayapti",
+      "Menyu tugmalari qizil bo'lib qoldi",
+      "Bot xato xabarini berdi"
      ],
-     "e": "Sarlavha ekranda yo'q — bu \"Ko'rinmayapti\"."
+     "e": "Tugmalar ekranda yo'q, demak ular ko'rinmayapti."
     },
     {
-     "q": "Kutilgan natijada 3 ta rasm. Ekranda faqat 2 ta. Uchinchisi uchun qaysi belgi?",
+     "q": "Maktab saytidagi rasm bor, lekin juda kichik. Bu «Ko'rinmayapti»mi?",
      "o": [
-      "Ko'rinmayapti",
-      "Noto'g'ri ko'rinyapti",
-      "Ishlamayapti",
-      "Xato xabari chiqdi"
+      "Yo'q, rasm bor, faqat boshqacha",
+      "Ha, kichik rasm hisobga olinmaydi",
+      "Ha, rasmni ko'rish qiyin",
+      "Yo'q, bu xato xabari"
      ],
-     "e": "Uchinchi rasm ekranda yo'q — bu \"Ko'rinmayapti\"."
+     "e": "Rasm ekranda bor, shuning uchun bu «Ko'rinmayapti» emas."
+    },
+    {
+     "q": "Kutilgan: 3 ta murabbiy rasmi. Sport zali saytida 2 ta rasm bor. Nima ko'rinmayapti?",
+     "o": [
+      "Uchinchi murabbiy rasmi",
+      "Birinchi murabbiy rasmi",
+      "Butun sahifa",
+      "Rasmlarning rangi"
+     ],
+     "e": "Uch rasmdan bittasi ekranda yo'q."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Noto'g'ri ko'rinyapti\" belgisi nimani bildiradi?",
-     "o": [
-      "Narsa bor, lekin boshqacha",
-      "Kutilgan narsa ekranda yo'q",
-      "Bosganda hech narsa bo'lmaydi",
-      "Ekranda xato haqida yozuv chiqdi"
-     ],
-     "e": "Noto'g'ri ko'rinyapti — narsa bor, lekin boshqacha."
-    },
-    {
-     "q": "Tugma ko'k bo'lishi kerak edi. Ekranda u qizil. Qaysi belgi?",
+     "q": "Gul do'koni saytida narxlar bor, lekin inglizcha yozilgan. Bu qaysi belgi?",
      "o": [
       "Noto'g'ri ko'rinyapti",
       "Ko'rinmayapti",
       "Ishlamayapti",
       "Xato xabari chiqdi"
      ],
-     "e": "Tugma bor, lekin rangi boshqa — bu \"Noto'g'ri ko'rinyapti\"."
+     "e": "Narxlar bor, lekin boshqacha — bu «Noto'g'ri ko'rinyapti»."
     },
     {
-     "q": "Sarlavha o'zbekcha bo'lishi kerak edi. U inglizcha chiqdi. Qaysi belgi?",
+     "q": "«Noto'g'ri ko'rinyapti»ni «Ko'rinmayapti»dan nima ajratadi?",
      "o": [
-      "Noto'g'ri ko'rinyapti",
-      "Ko'rinmayapti",
-      "Ishlamayapti",
-      "Xato xabari chiqdi"
+      "Narsa ekranda bor, lekin boshqacha",
+      "Narsa ekranda umuman yo'q",
+      "Narsa bosilganda ishlamaydi",
+      "Ekranda xato yozuvi chiqadi"
      ],
-     "e": "Sarlavha bor, lekin boshqacha — bu \"Noto'g'ri ko'rinyapti\"."
+     "e": "«Noto'g'ri ko'rinyapti»da narsa bor, faqat kutilgandek emas."
     },
     {
-     "q": "\"Ko'rinmayapti\" va \"Noto'g'ri ko'rinyapti\"ning farqi nima?",
+     "q": "Qaysi holatda logotip noto'g'ri ko'rinyapti?",
      "o": [
-      "Birinchida narsa yo'q, ikkinchida bor, lekin boshqacha",
-      "Ikkalasi bir xil",
-      "Birinchida narsa boshqacha, ikkinchida yo'q",
-      "Ikkalasida ham tugma bosilmaydi"
+      "Logotip bor, lekin teskari turibdi",
+      "Logotip umuman yo'q",
+      "Logotip bosilsa, hech narsa bo'lmaydi",
+      "Logotip o'rnida «Error» yozuvi"
      ],
-     "e": "Ko'rinmayapti — narsa yo'q. Noto'g'ri ko'rinyapti — bor, lekin boshqacha."
+     "e": "Logotip bor, ammo teskari — demak boshqacha ko'rinyapti."
     },
     {
-     "q": "Qaysi holat \"Noto'g'ri ko'rinyapti\"ga misol?",
+     "q": "Bot javob beryapti, lekin ismingizni xato yozyapti. SI'ga nima deysiz?",
      "o": [
-      "Rasm bor, lekin juda kichik",
-      "Rasm umuman yo'q",
-      "Tugma bosilsa, hech narsa bo'lmaydi",
-      "Ekranda xato yozuvi chiqdi"
+      "Bot ismimni noto'g'ri ko'rsatyapti",
+      "Bot umuman javob bermayapti",
+      "Botda ismim ko'rinmayapti",
+      "Botda xato xabari chiqdi"
      ],
-     "e": "Rasm bor, lekin boshqacha — bu \"Noto'g'ri ko'rinyapti\"."
+     "e": "Ism bor, lekin xato yozilgan — bu noto'g'ri ko'rinish."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Kutilgan: sarlavha ko'k. Ekranda sarlavha bor, lekin yashil. Nimasi farq qilyapti?",
      "o": [
-      "Noto'g'ri ko'rinyapti — narsa bor, lekin boshqacha",
-      "Noto'g'ri ko'rinyapti — narsa ekranda yo'q",
-      "Noto'g'ri ko'rinyapti — bosganda hech narsa bo'lmaydi",
-      "Noto'g'ri ko'rinyapti — xato yozuvi chiqdi"
+      "Rangi",
+      "Joyi",
+      "So'zlari",
+      "Bor-yo'qligi"
      ],
-     "e": "Noto'g'ri ko'rinyapti — narsa bor, lekin boshqacha."
+     "e": "Sarlavha bor, faqat rangi kutilgandek emas."
+    },
+    {
+     "q": "SI chizgan rasmda daraxt bor, lekin osmonda uchib yuribdi. Nega bu «Ko'rinmayapti» emas?",
+     "o": [
+      "Daraxt rasmda bor-ku",
+      "Daraxt yashil chizilgan",
+      "Rasmda xato yozuvi yo'q",
+      "Daraxtni bosib bo'lmaydi"
+     ],
+     "e": "Daraxt bor, faqat noto'g'ri joyda — bu «Noto'g'ri ko'rinyapti»."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Ishlamayapti\" belgisi nimani bildiradi?",
-     "o": [
-      "Bosganda hech narsa bo'lmaydi",
-      "Kutilgan narsa ekranda yo'q",
-      "Narsa bor, lekin boshqacha",
-      "Ekranda xato haqida yozuv chiqdi"
-     ],
-     "e": "Ishlamayapti — bosganda hech narsa bo'lmaydi."
-    },
-    {
-     "q": "Menyudagi \"Aloqa\" so'zini bosdingiz. Hech narsa bo'lmadi. Qaysi belgi?",
+     "q": "Kafe saytida «Buyurtma berish» tugmasini bosdingiz. Hech narsa bo'lmadi. Bu qaysi belgi?",
      "o": [
       "Ishlamayapti",
       "Ko'rinmayapti",
       "Noto'g'ri ko'rinyapti",
       "Xato xabari chiqdi"
      ],
-     "e": "Bosdingiz, hech narsa bo'lmadi — bu \"Ishlamayapti\"."
+     "e": "Bosganda hech narsa bo'lmasa — bu «Ishlamayapti»."
     },
     {
-     "q": "Qaysi holat \"Ishlamayapti\"ga misol?",
+     "q": "Tugma ishlamayotganini qanday bilasiz?",
      "o": [
-      "Menyu bosilsa, hech narsa bo'lmaydi",
-      "Menyu ekranda yo'q",
-      "Menyu bor, rangi boshqa",
-      "Ekranda xato yozuvi chiqdi"
+      "Bosaman, hech narsa bo'lmaydi",
+      "Ekranga qarayman, tugma yo'q",
+      "Tugmaning rangiga qarayman",
+      "SI'dan so'rab bilaman"
      ],
-     "e": "Bosganda hech narsa bo'lmasa — bu \"Ishlamayapti\"."
+     "e": "«Ishlamayapti» — bosganda hech narsa bo'lmaydi."
     },
     {
-     "q": "Tugma ekranda umuman yo'q. Bu \"Ishlamayapti\"mi?",
+     "q": "Qaysi holatda bot ishlamayapti?",
      "o": [
-      "Yo'q, bu \"Ko'rinmayapti\"",
-      "Ha, bu \"Ishlamayapti\"",
-      "Yo'q, bu \"Noto'g'ri ko'rinyapti\"",
-      "Yo'q, bu \"Xato xabari chiqdi\""
+      "«Start» bosildi, bot jim turibdi",
+      "Botning rasmi umuman yo'q",
+      "Bot inglizcha javob beryapti",
+      "Botda «Error» yozuvi chiqdi"
      ],
-     "e": "Narsa ekranda yo'q bo'lsa — bu \"Ko'rinmayapti\"."
+     "e": "Bosdingiz, bot hech narsa qilmadi — demak ishlamayapti."
     },
     {
-     "q": "Tugma bor, rangi ham to'g'ri. Lekin bosganda hech narsa bo'lmaydi. Qaysi belgi?",
+     "q": "Zarina gul do'koni saytiga faqat qaradi. Tugmalar joyida. Ular ishlashini biladimi?",
      "o": [
-      "Ishlamayapti",
-      "Ko'rinmayapti",
-      "Noto'g'ri ko'rinyapti",
-      "Xato xabari chiqdi"
+      "Yo'q, bosib ko'rishi kerak",
+      "Ha, joyida bo'lsa ishlaydi",
+      "Ha, rangi to'g'ri-ku",
+      "Ha, SI shunday degan"
      ],
-     "e": "Tugma ko'rinadi, lekin bosganda hech narsa bo'lmaydi — \"Ishlamayapti\"."
+     "e": "Tugma ishlashini faqat bosib ko'rib bilasiz."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Rasm bosilganda kattalashishi kerak. Bosdingiz, rasm o'zgarmadi. SI'ga qanday yozasiz?",
      "o": [
-      "Ishlamayapti — bosganda hech narsa bo'lmaydi",
-      "Ishlamayapti — narsa ekranda yo'q",
-      "Ishlamayapti — narsaning rangi boshqa",
-      "Ishlamayapti — narsa juda kichik"
+      "Rasm bosilganda ishlamayapti",
+      "Rasm sahifada ko'rinmayapti",
+      "Rasm noto'g'ri rangda chiqyapti",
+      "Rasm o'rnida xato yozuvi chiqdi"
      ],
-     "e": "Ishlamayapti — bosganda hech narsa bo'lmaydi."
+     "e": "Rasm bor, lekin bosganda hech narsa bo'lmaydi — ishlamayapti."
+    },
+    {
+     "q": "Tugmani bosdingiz, ekranda «Xatolik» yozuvi chiqdi. Bu «Ishlamayapti»mi?",
+     "o": [
+      "Yo'q, bu «Xato xabari chiqdi»",
+      "Ha, tugma ishlamayapti",
+      "Yo'q, tugma ko'rinmayapti",
+      "Yo'q, tugma noto'g'ri ko'rinyapti"
+     ],
+     "e": "Ekranda xato yozuvi paydo bo'ldi, demak bu xato xabari."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Xato xabari chiqdi\" belgisi nimani bildiradi?",
+     "q": "Maktab sayti ochildi, o'rtada «Error: page not found» yozuvi. Bu qaysi belgi?",
      "o": [
-      "Ekranda xato haqida yozuv paydo bo'ldi",
-      "Kutilgan narsa ekranda yo'q",
-      "Narsa bor, lekin boshqacha",
+      "Xato xabari chiqdi",
+      "Ko'rinmayapti",
+      "Noto'g'ri ko'rinyapti",
+      "Ishlamayapti"
+     ],
+     "e": "Ekranda xato haqida yozuv chiqdi — bu xato xabari."
+    },
+    {
+     "q": "«Xato xabari chiqdi» deganda ekranda nima bo'ladi?",
+     "o": [
+      "Xato haqida yozuv paydo bo'ladi",
+      "Kutilgan narsa yo'qoladi",
+      "Narsa boshqa rangga kiradi",
       "Bosganda hech narsa bo'lmaydi"
      ],
-     "e": "Xato xabari — ekranda xato haqida yozuv paydo bo'ldi."
+     "e": "Xato xabari — ekranda paydo bo'lgan xato haqidagi yozuv."
     },
     {
-     "q": "Saytni ochdingiz. Ekranda \"Error\" degan yozuv chiqdi. Qaysi belgi?",
+     "q": "Qaysi yozuv xato xabariga o'xshaydi?",
      "o": [
-      "Xato xabari chiqdi",
-      "Ko'rinmayapti",
-      "Noto'g'ri ko'rinyapti",
-      "Ishlamayapti"
+      "«Xatolik: fayl topilmadi»",
+      "«Xush kelibsiz!»",
+      "«Bizning menyu»",
+      "«Biz bilan bog'laning»"
      ],
-     "e": "Ekranda xato haqida yozuv chiqdi — bu \"Xato xabari chiqdi\"."
+     "e": "Bu yozuv nimadir xato bo'lganini aytyapti."
     },
     {
-     "q": "Qaysi holat \"Xato xabari chiqdi\"ga misol?",
+     "q": "Qaysi holatda «Xato xabari chiqdi» deysiz?",
      "o": [
-      "Ekranda \"Xatolik yuz berdi\" yozuvi chiqdi",
-      "Tugma ekranda yo'q",
-      "Tugma qizil, ko'k emas",
-      "Tugma bosilsa, hech narsa bo'lmaydi"
+      "Bot «Error 500» deb yozdi",
+      "Bot umuman javob bermadi",
+      "Bot inglizcha salom berdi",
+      "Bot rasmi yo'qolib qoldi"
      ],
-     "e": "Ekranda xato haqida yozuv chiqsa — bu \"Xato xabari chiqdi\"."
+     "e": "«Error 500» — xato haqidagi yozuv."
     },
     {
-     "q": "Tugmani bosdingiz. Ekranda xato haqida yozuv chiqdi. Qaysi belgi?",
+     "q": "Kafe saytida tugmani bosdingiz, hech narsa bo'lmadi. Xato xabari chiqdimi?",
      "o": [
-      "Xato xabari chiqdi",
-      "Ko'rinmayapti",
-      "Noto'g'ri ko'rinyapti",
-      "Ishlamayapti"
+      "Yo'q, bu «Ishlamayapti»",
+      "Ha, xato xabari chiqdi",
+      "Ha, sahifa jim bo'lsa ham",
+      "Yo'q, bu «Ko'rinmayapti»"
      ],
-     "e": "Ekranda xato haqida yozuv paydo bo'ldi — bu \"Xato xabari chiqdi\"."
+     "e": "Ekranda yozuv chiqmadi, tugma shunchaki ishlamadi."
     },
     {
-     "q": "\"Ishlamayapti\" va \"Xato xabari chiqdi\"ning farqi nima?",
+     "q": "Xato yozuvi ingliz tilida chiqdi. Bu baribir xato xabarimi?",
      "o": [
-      "Birinchida hech narsa chiqmaydi, ikkinchida xato yozuvi chiqadi",
-      "Ikkalasi bir xil",
-      "Birinchida xato yozuvi chiqadi, ikkinchida hech narsa",
-      "Ikkalasida ham narsa ekranda yo'q"
+      "Ha, tili muhim emas",
+      "Yo'q, faqat o'zbekchasi hisoblanadi",
+      "Yo'q, bu oddiy yozuv",
+      "Faqat qizil bo'lsa hisoblanadi"
      ],
-     "e": "Ishlamayapti — hech narsa bo'lmaydi. Xato xabarida yozuv chiqadi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Xato xabari — ekranda xato haqida yozuv",
-      "Xato xabari — tugmaning ko'rinmasligi",
-      "Xato xabari — rangning boshqa bo'lishi",
-      "Xato xabari — tugmaning bosilmasligi"
-     ],
-     "e": "Xato xabari — ekranda xato haqida paydo bo'lgan yozuv."
+     "e": "Xato haqidagi yozuv qaysi tilda bo'lsa ham, xato xabari."
     }
    ]
   }

@@ -3,256 +3,256 @@ CONTENT[2] = {
   {
    "pool": [
     {
-     "q": "SI javobni qanday yozadi?",
+     "q": "Aziz va Bobur SI'ga bir xil savol berishdi. Javoblar qanday bo'ladi?",
      "o": [
-      "Har safar yangidan yozadi",
-      "Tayyor javobni qayta ko'chiradi",
-      "Doim bir xil yozadi",
-      "Sizning eski xabaringizdan oladi"
+      "Har xil bo'lishi mumkin",
+      "Doim harfma-harf bir xil",
+      "Biriga javob berilmaydi",
+      "Ikkalasi bo'sh qoladi"
      ],
-     "e": "SI javobni har safar yangidan yozadi."
+     "e": "SI har safar javobni yangidan yozadi."
     },
     {
-     "q": "Bitta savolni SI'ga ikki marta berdingiz. Nima bo'lishi mumkin?",
+     "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasangiz nima bo'ladi?",
      "o": [
-      "Ikki xil javob chiqishi mumkin",
-      "Ikkinchi marta javob bermaydi",
-      "Kompyuter xato beradi",
-      "SI sizdan xafa bo'ladi"
+      "Boshqa nom chiqishi mumkin",
+      "Xuddi o'sha nom chiqadi",
+      "SI javob bermaydi",
+      "Kafe yopilib qoladi"
      ],
-     "e": "SI har safar yangidan yozadi, shuning uchun javob har xil bo'lishi mumkin."
+     "e": "Bitta savolga SI har xil javob berishi mumkin."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Bitta savolga SI har xil javob berishi mumkin",
-      "Bitta savolga SI doim bir xil javob beradi",
-      "SI bitta savolga faqat bir marta javob beradi",
-      "SI javoblarini oldindan yozib qo'ygan"
-     ],
-     "e": "SI javobni har safar yangidan yozadi, javoblar farq qilishi mumkin."
-    },
-    {
-     "q": "Ali va Vali SI'dan bir xil she'r so'rashdi. She'rlar har xil chiqdi. Nega?",
+     "q": "Kecha SI bir she'r yozdi, bugun boshqasini. Nega?",
      "o": [
       "SI har safar yangidan yozadi",
-      "Biri SI'ni buzib qo'ydi",
-      "SI ulardan birini yoqtirmaydi",
-      "Biri boshqa savol yozgan bo'lishi shart"
-     ],
-     "e": "SI javobni har safar yangidan yozgani uchun javoblar farq qilishi mumkin."
-    },
-    {
-     "q": "Kecha SI bir javob berdi, bugun shu savolga boshqacha javob berdi. Bu odatiymi?",
-     "o": [
-      "Ha, SI har safar yangidan yozadi",
-      "Yo'q, SI buzilgan",
-      "Yo'q, internet o'chgan",
-      "Yo'q, bunday bo'lishi mumkin emas"
-     ],
-     "e": "Bitta savolga har xil javob olish odatiy hol."
-    },
-    {
-     "q": "Nega SI javoblari ba'zan bir-biriga o'xshamaydi?",
-     "o": [
-      "Har safar javob yangidan yoziladi",
-      "SI kayfiyatiga qarab yozadi",
-      "SI eski javobini unutib qo'yadi va jahli chiqadi",
-      "Kompyuter har kuni almashadi"
+      "SI kecha xato qilgan",
+      "Kompyuter buzilib qolgan",
+      "Internet o'zgarib qolgan"
      ],
      "e": "SI javobni har safar yangidan yozadi."
+    },
+    {
+     "q": "Malika SI'ning yoqqan javobini saqlamadi. Nega saqlash foydali edi?",
+     "o": [
+      "Qayta so'rasa, boshqacha chiqadi",
+      "SI javobni o'chirib yuboradi",
+      "SI xafa bo'lib qoladi",
+      "Internet uzilib qoladi"
+     ],
+     "e": "SI har safar yangidan yozadi, o'sha javob qaytmasligi mumkin."
+    },
+    {
+     "q": "Gul do'koni uchun SI'dan 3 marta reklama gapi so'radingiz. Natija?",
+     "o": [
+      "Uchta har xil gap",
+      "Uchta bir xil gap",
+      "Faqat bitta gap",
+      "Birorta ham gap yo'q"
+     ],
+     "e": "Har safar yangidan yozgani uchun gaplar har xil chiqadi."
+    },
+    {
+     "q": "Sanjar maktab sayti uchun yana bir sarlavha varianti olmoqchi. Nima qiladi?",
+     "o": [
+      "Savolni yana bir bor beradi",
+      "Kompyuterni almashtiradi",
+      "Ertagacha kutib turadi",
+      "Yangi telefon sotib oladi"
+     ],
+     "e": "Bir savolni qayta bersangiz, SI yangi variant yozadi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI qanday ohangda gapiradi?",
+     "q": "SI kitob do'koni ish vaqtini xato aytdi. Javobi qanday yozilgan edi?",
      "o": [
-      "Doim ishonch bilan",
-      "Doim ikkilanib",
-      "Faqat savol shaklida",
-      "Faqat qo'rqib"
-     ],
-     "e": "SI doim ishonch bilan gapiradi."
-    },
-    {
-     "q": "SI xato qilganda qanday gapiradi?",
-     "o": [
-      "Baribir ishonch bilan gapiradi",
-      "\"Men xato qildim\" deb ogohlantiradi",
-      "Javob bermay jim turadi",
-      "Javobni qizil rangda yozadi"
+      "Xuddi to'g'ridek, ishonch bilan",
+      "«Bilmayman» deb yozilgan",
+      "Qizil rangda yozilgan",
+      "Savol belgisi bilan"
      ],
      "e": "SI xato qilganda ham ishonch bilan gapiradi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Lola: «SI ikkilanmay aytdi, demak to'g'ri». Lola nimani bilmaydi?",
      "o": [
-      "SI xato javobni ham ishonch bilan aytadi",
-      "SI xato qilsa, ovozi o'zgaradi",
-      "SI faqat to'g'ri bilganini ishonch bilan aytadi",
-      "SI xato qilsa, o'zi aytadi"
+      "SI xatoda ham ikkilanmaydi",
+      "SI faqat kechasi xato qiladi",
+      "SI hech qachon gapirmaydi",
+      "SI doim ikkilanib gapiradi"
      ],
      "e": "SI doim ishonch bilan gapiradi, xato qilganda ham."
     },
     {
-     "q": "SI javobi juda ishonchli eshitildi. Bundan nima bilib olasiz?",
+     "q": "Ikki javob bor: biri to'g'ri, biri xato. SI qaysini ishonchliroq aytadi?",
      "o": [
-      "SI doim shunday gapiradi",
-      "Javob albatta to'g'ri",
-      "SI bu mavzuni yaxshi ko'radi",
-      "Javob tekshirilgan"
+      "Ikkalasini bir xil ishonch bilan",
+      "Faqat to'g'risini",
+      "Faqat xatosini",
+      "Ikkalasini ham qo'rqib"
      ],
-     "e": "SI doim ishonch bilan gapiradi, bu uning odati."
+     "e": "SI to'g'ri javobni ham, xatoni ham ishonch bilan aytadi."
     },
     {
-     "q": "Bola: \"SI ikkilanmadi, demak xato yo'q\" dedi. To'g'rimi?",
+     "q": "Akmal so'ragan ertak qahramonini SI xato aytdi, lekin «albatta» dedi. Bu g'alatimi?",
      "o": [
-      "Yo'q, SI xato qilsa ham ikkilanmaydi",
-      "Ha, SI xato qilsa ikkilanadi",
-      "Ha, SI hech qachon xato qilmaydi",
-      "Ha, ishonch bilan aytilsa to'g'ri"
+      "Yo'q, SI shunday gapiradi",
+      "Ha, SI xato qilmaydi",
+      "Ha, «albatta» deb bo'lmaydi",
+      "Ha, ertak buzilgan"
      ],
      "e": "SI xato qilganda ham ishonch bilan gapiradi."
     },
     {
-     "q": "SI xato javob berdi. Uning gapida qanday belgi bo'ladi?",
+     "q": "Telegram bot sport zali narxini «100% aniq» deb yozdi. Nima qilasiz?",
      "o": [
-      "Ko'pincha hech qanday belgi bo'lmaydi",
-      "Doim \"xato\" so'zi yoziladi",
-      "Javob doim qisqa bo'ladi",
-      "Javob doim savol bilan tugaydi"
+      "Avval tekshirib ko'raman",
+      "Darhol ishonaman",
+      "Do'stlarimga tarqataman",
+      "Zalga pul yuboraman"
      ],
-     "e": "SI xato qilganda ham ishonch bilan gapiradi, xatoni sezdirmaydi."
+     "e": "SI ishonch bilan yozsa ham, xato bo'lishi mumkin."
+    },
+    {
+     "q": "Qaysi biri SI uchun odatiy?",
+     "o": [
+      "Xatoni ham ishonch bilan aytish",
+      "Xato qilsa, o'zi ogohlantirish",
+      "Bilmasa, jim qolish",
+      "Xato qilsa, qizarib ketish"
+     ],
+     "e": "SI doim ishonch bilan gapiradi, xato qilganda ham."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Ishonch bilan aytilgan gap doim to'g'rimi?",
+     "q": "Sinfdoshingiz: «Ertaga dars yo'q, aniq bilaman!» dedi. Nima qilasiz?",
      "o": [
-      "Yo'q, xato bo'lishi ham mumkin",
-      "Ha, doim to'g'ri",
-      "Ha, agar SI aytsa",
-      "Ha, agar uzun bo'lsa"
-     ],
-     "e": "Ishonch bilan aytilgan gap har doim ham to'g'ri bo'lavermaydi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Ishonchli ohang to'g'rilikni bildirmaydi",
-      "Ishonchli ohang — to'g'ri javob belgisi",
-      "Ishonch bilan aytilgan gap tekshirilgan bo'ladi",
-      "Ishonch bilan aytilgan gapda xato bo'lmaydi"
-     ],
-     "e": "Gap ishonch bilan aytilgani uni to'g'ri qilmaydi."
-    },
-    {
-     "q": "SI \"Bu aniq shunday!\" deb javob berdi. Siz nima deb o'ylaysiz?",
-     "o": [
-      "Bu javob ham xato bo'lishi mumkin",
-      "\"Aniq\" degani uchun to'g'ri",
-      "SI hech qachon \"aniq\" deb yolg'on aytmaydi",
-      "Endi hech narsa tekshirish kerak emas"
+      "Ustozdan so'rab bilaman",
+      "Darhol ishonaman",
+      "Hammaga tarqataman",
+      "Darslikni uyda qoldiraman"
      ],
      "e": "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin."
     },
     {
-     "q": "Nega SI javobiga darrov ishonib qolmaslik kerak?",
+     "q": "Reklamada «Eng arzon gul do'koni!» deyilgan. Bu albatta rostmi?",
      "o": [
-      "Ishonchli gap ham xato bo'lishi mumkin",
-      "SI doim yolg'on gapiradi",
-      "SI javoblari doim eskirgan",
-      "SI faqat hazil qiladi"
+      "Shart emas, solishtirish kerak",
+      "Ha, reklamada yozilgan",
+      "Ha, katta harflarda yozilgan",
+      "Ha, undov belgisi bor"
      ],
-     "e": "SI ishonch bilan gapiradi, lekin bu doim to'g'ri degani emas."
+     "e": "Ishonch bilan yozilgan gap har doim to'g'ri bo'lavermaydi."
     },
     {
-     "q": "Do'stingiz: \"SI juda ishonch bilan aytdi, demak to'g'ri\" dedi. Siz nima deysiz?",
+     "q": "Ishonch bilan aytilgan gap har doim to'g'rimi?",
      "o": [
-      "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin",
-      "Ha, to'g'ri aytasan",
-      "SI ishonch bilan aytsa, hech qachon xato bo'lmaydi",
-      "Faqat qisqa javoblar xato bo'ladi"
+      "Yo'q, xato bo'lishi mumkin",
+      "Ha, doim to'g'ri",
+      "Ha, baland aytilsa",
+      "Ha, uzun bo'lsa"
      ],
-     "e": "Ishonch bilan aytilgan gap har doim ham to'g'ri bo'lavermaydi."
+     "e": "Ishonch bilan aytilgan gap har doim ham to'g'ri emas."
     },
     {
-     "q": "Javob to'g'ri yoki xatoligini nima ko'rsatmaydi?",
+     "q": "SI «Bu kitob 1990-yilda chiqqan» dedi. Qanday bilasiz?",
      "o": [
-      "Gapning ishonchli ohangi",
-      "Tekshirib ko'rish",
-      "Kitobdan solishtirish",
-      "Bilgan odamdan so'rash"
+      "Kitobning o'zidan qarayman",
+      "SI ishonchli gapirdi-ku",
+      "Javob uzun, demak to'g'ri",
+      "Boshqa hech narsa qilmayman"
      ],
-     "e": "Ishonchli ohang javob to'g'riligini ko'rsatmaydi."
+     "e": "Ishonchli gapni haqiqiy manbadan tekshirish kerak."
+    },
+    {
+     "q": "Ikki do'st bahslashdi: biri ishonch bilan, biri ikkilanib gapirdi. Kim haq?",
+     "o": [
+      "Tekshirmasdan bilib bo'lmaydi",
+      "Ishonch bilan gapirgani",
+      "Ikkilanib gapirgani",
+      "Ko'proq gapirgani"
+     ],
+     "e": "Ishonch emas, tekshiruv kim haq ekanini ko'rsatadi."
+    },
+    {
+     "q": "Ukangiz juda ishonch bilan «Kit — baliq!» dedi. Bu haqda nima deysiz?",
+     "o": [
+      "Ishonch rostlikni isbotlamaydi",
+      "Ukangiz albatta haq",
+      "Endi bahslashib bo'lmaydi",
+      "Kit baliqqa aylandi"
+     ],
+     "e": "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI javobidagi nimalarni tekshirish kerak?",
+     "q": "SI: «Lola kafesi Navoiy ko'chasi, 12-uyda». Nimani tekshirasiz?",
      "o": [
-      "Nom, raqam va manzilni",
-      "Faqat vergullarni",
-      "Faqat birinchi so'zni",
-      "Hech narsani"
-     ],
-     "e": "SI javobidagi nom, raqam va manzilni tekshirish kerak."
-    },
-    {
-     "q": "SI kafe telefon raqamini yozib berdi. Nima qilasiz?",
-     "o": [
-      "Raqamni tekshiraman",
-      "Darrov hammaga tarqataman",
-      "Raqam ishonchli, tekshirmayman",
-      "Raqamni yodlab olaman"
-     ],
-     "e": "SI javobidagi raqamni tekshirish kerak."
-    },
-    {
-     "q": "SI kitob muallifining ismini aytdi. Bu bilan nima qilish kerak?",
-     "o": [
-      "Ismni tekshirib ko'rish",
-      "Darhol ishonish",
-      "SI'dan kechirim so'rash",
-      "Javobni o'chirib tashlash"
-     ],
-     "e": "SI javobidagi nomlarni tekshirish kerak."
-    },
-    {
-     "q": "SI muzey manzilini yozdi. Bormasdan oldin nima qilasiz?",
-     "o": [
-      "Manzilni tekshiraman",
-      "To'g'ridan-to'g'ri yo'lga chiqaman",
-      "SI'ga rahmat aytib, tekshirmayman",
-      "Manzilni boshqalarga yuboraman"
+      "Manzilni",
+      "Vergullarni",
+      "«Kafe» so'zini",
+      "Gap uzunligini"
      ],
      "e": "SI javobidagi manzilni tekshirish kerak."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "SI sport zali telefon raqamini berdi. Qanday tekshirasiz?",
      "o": [
-      "SI yozgan nom, raqam va manzil tekshiriladi",
-      "SI yozgan raqamlar doim to'g'ri",
-      "Faqat uzun javoblarni tekshirish kerak",
-      "Manzilni tekshirish shart emas"
+      "Zal saytidan raqamni topaman",
+      "Raqamni yodlab olaman",
+      "Raqamni kattaroq yozaman",
+      "SI'dan «rostmi?» deb so'rayman"
      ],
-     "e": "Nom, raqam va manzil SI javobida tekshirilishi kerak."
+     "e": "Raqamni SI emas, boshqa ishonchli joydan tekshiramiz."
     },
     {
-     "q": "SI javobida qaysi qismni tekshirish eng muhim?",
+     "q": "SI javobidagi qaysi narsalarni tekshirish kerak?",
      "o": [
-      "Shahar nomi va yil raqamini",
-      "Salomlashish so'zini",
-      "Gapdagi nuqtani",
-      "Javob uzunligini"
+      "Nom, raqam va manzil",
+      "Faqat harflar soni",
+      "Faqat tinish belgilari",
+      "Faqat birinchi so'z"
      ],
-     "e": "Nom va raqamlar SI javobida tekshiriladi."
+     "e": "SI javobidagi nom, raqam va manzilni tekshirish kerak."
+    },
+    {
+     "q": "SI uchta gap yozdi. Qaysi birini tekshirish shart?",
+     "o": [
+      "«Bayram 5-may kuni bo'ladi»",
+      "«Bayram juda quvnoq o'tadi»",
+      "«Bayramda hamma xursand bo'ladi»",
+      "«Bayram — yaxshi kun»"
+     ],
+     "e": "Sanada raqam bor, raqamni tekshirish kerak."
+    },
+    {
+     "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasiz?",
+     "o": [
+      "Kitob nomini tekshiraman",
+      "Darhol pul olib boraman",
+      "Nomni boshqacha yozaman",
+      "SI'ga rahmat aytaman"
+     ],
+     "e": "SI aytgan nomni tekshirish kerak."
+    },
+    {
+     "q": "Do'stingiz SI bergan manzilga tekshirmasdan bordi. Nima bo'lishi mumkin?",
+     "o": [
+      "Noto'g'ri joyga borib qoladi",
+      "Doim to'g'ri joyga boradi",
+      "SI uni olib boradi",
+      "Manzil o'zi tuzaladi"
+     ],
+     "e": "Tekshirilmagan manzil xato bo'lishi mumkin."
     }
    ]
   }

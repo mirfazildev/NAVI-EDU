@@ -3,79 +3,69 @@ CONTENT[10] = {
   {
    "pool": [
     {
-     "q": "Kutilgan natijani qachon yozish kerak?",
+     "q": "Kutilgan natijani qachon yozasiz?",
      "o": [
       "Prompt yozishdan oldin",
       "SI javob bergandan keyin",
       "Sayt tayyor bo'lgach",
-      "Hech qachon yozilmaydi"
+      "Do'stingiz so'raganda"
      ],
      "e": "Natija qanday bo'lishini prompt yozishdan oldin yozib qo'yasiz."
     },
     {
-     "q": "Kutilgan natija nima?",
+     "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
      "o": [
-      "Natija qanday bo'lishi kerakligi haqida yozuv",
-      "SI yozgan javob",
-      "Saytning nomi",
-      "Ekrandagi xato xabari"
+      "Tugma qanday bo'lishini yozib qo'yadi",
+      "Darhol SI'ga prompt yuboradi",
+      "Saytni yopib qo'yadi",
+      "SI javobini kutib turadi"
      ],
-     "e": "Kutilgan natija — natija qanday bo'lishi kerakligi haqida yozuv."
+     "e": "Avval natija qanday bo'lishini yozadi, keyin prompt."
     },
     {
-     "q": "Siz saytga tugma qo'shmoqchisiz. Birinchi nima qilasiz?",
+     "q": "Malika avval prompt yubordi, keyin natijani yozdi. Nimani o'zgartirishi kerak?",
      "o": [
-      "Tugma qanday bo'lishini yozib qo'yaman",
-      "Darhol SI'ga prompt yuboraman",
-      "Saytni yopib qo'yaman",
-      "SI javobini kutaman"
+      "Ish tartibini",
+      "Promptdagi so'zlarni",
+      "SI'ning javobini",
+      "Saytning rangini"
      ],
-     "e": "Prompt yozishdan oldin natija qanday bo'lishini yozib qo'yasiz."
+     "e": "Avval kutilgan natija, keyin prompt yoziladi."
     },
     {
-     "q": "Qaysi tartib to'g'ri?",
+     "q": "Bozorga borishdan oldin xarid ro'yxatini yozasiz. Bu nimaga o'xshaydi?",
      "o": [
-      "Avval kutilgan natija, keyin prompt",
-      "Avval prompt, keyin kutilgan natija",
-      "Avval natijani ko'rish, keyin prompt",
-      "Faqat prompt, kutilgan natija kerak emas"
+      "Natijani oldindan yozib qo'yishga",
+      "SI javobini o'qishga",
+      "Promptni o'chirishga",
+      "Yangi suhbat ochishga"
      ],
-     "e": "Kutilgan natija promptdan oldin yoziladi."
+     "e": "Ro'yxat ham nima kerakligini oldindan yozib qo'yadi."
     },
     {
-     "q": "Ali avval prompt yubordi. Keyin kutilgan natijani yozdi. U nimani xato qildi?",
+     "q": "Jasur menyu qanday bo'lishini oldin yozdi, keyin SI javob berdi. Endi nima qiladi?",
      "o": [
-      "Kutilgan natijani promptdan oldin yozishi kerak edi",
-      "Promptni umuman yozmasligi kerak edi",
-      "Kutilgan natija kerak emas edi",
-      "Hech narsani xato qilmadi"
+      "Javobni yozganiga solishtiradi",
+      "Yozganini o'chirib tashlaydi",
+      "Javobni o'qimay saqlaydi",
+      "Kompyuterni o'chiradi"
      ],
-     "e": "Kutilgan natija prompt yozishdan oldin yoziladi."
+     "e": "Oldindan yozilgan natija bilan javobni solishtirish mumkin."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Nodira gul do'koni sayti ustida ishlayapti. Qaysi tartib to'g'ri?",
      "o": [
-      "Natija qanday bo'lishini oldindan yozib qo'yish kerak",
-      "Kutilgan natijani SI o'zi yozadi",
-      "Natija qanday bo'lishini o'ylash shart emas",
-      "Kutilgan natija ish tugagach yoziladi"
+      "Natijani yozish → prompt → javob",
+      "Prompt → javob → natijani yozish",
+      "Javob → prompt → natijani yozish",
+      "Prompt → natijani yozish → javob"
      ],
-     "e": "Natija qanday bo'lishini prompt yozishdan oldin o'zingiz yozasiz."
+     "e": "Kutilgan natija eng birinchi, promptdan oldin yoziladi."
     }
    ]
   },
   {
    "pool": [
-    {
-     "q": "Yaxshi kutilgan natija qanday bo'ladi?",
-     "o": [
-      "Uni ko'rib tekshirsa bo'ladi",
-      "U juda uzun bo'ladi",
-      "Uni faqat SI tushunadi",
-      "Unda hech narsa aniq yozilmaydi"
-     ],
-     "e": "Yaxshi kutilgan natijani ko'rib tekshirsa bo'ladi."
-    },
     {
      "q": "Qaysi kutilgan natija yaxshi?",
      "o": [
@@ -84,111 +74,121 @@ CONTENT[10] = {
       "Tugma zo'r chiqsin",
       "Tugma menga yoqsin"
      ],
-     "e": "\"Tugma ko'k\" — buni ko'rib tekshirsa bo'ladi."
+     "e": "«Tugma ko'k» — buni ko'rib tekshirsa bo'ladi."
     },
     {
-     "q": "Kutilgan natija: \"Sarlavha 6 so'zdan oshmaydi\". Buni qanday tekshirasiz?",
+     "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasiz?",
      "o": [
       "Sarlavhadagi so'zlarni sanayman",
       "SI'dan yoqdimi deb so'rayman",
-      "Sarlavhaning rangiga qarayman",
-      "Buni tekshirib bo'lmaydi"
+      "Sarlavha rangiga qarayman",
+      "Do'stimdan fikrini so'rayman"
      ],
      "e": "So'zlarni sanab, 6 tadan oshmaganini ko'rasiz."
     },
     {
-     "q": "Qaysi gapni ko'rib tekshirsa bo'ladi?",
+     "q": "Kutilgan natija «Saytda 5 ta kitob», lekin saytda 4 ta. Nima deysiz?",
      "o": [
-      "Sahifada 3 ta rasm bor",
-      "Sahifa ajoyib bo'lsin",
-      "Sahifa hammaga yoqsin",
-      "Sahifa zamonaviy bo'lsin"
-     ],
-     "e": "Rasmlarni sanab ko'rsa bo'ladi."
-    },
-    {
-     "q": "Kutilgan natija: \"Tugma ko'k\". Saytni ochdingiz, tugma ko'k. Nima deysiz?",
-     "o": [
-      "Bu band bajarilgan",
-      "Bu band bajarilmagan",
+      "Natija bajarilmagan",
+      "Natija bajarilgan",
       "Buni tekshirib bo'lmaydi",
-      "Buni faqat SI biladi"
+      "4 ta ham yetarli"
      ],
-     "e": "Ko'rib tekshirdingiz: tugma ko'k, demak bajarilgan."
+     "e": "Sanab ko'rdingiz: 5 emas, 4 ta, demak bajarilmagan."
     },
     {
-     "q": "Yaxshi kutilgan natijani qanday tekshirasiz?",
+     "q": "Bot «Assalomu alaykum» deyishi kerak. Buni ko'rish uchun nima qilasiz?",
      "o": [
-      "Saytni ochib, ekranga qarab",
-      "SI'ning gapiga ishonib",
-      "Promptni qayta o'qib",
-      "Uni tekshirib bo'lmaydi"
+      "Botga yozib, javobiga qarayman",
+      "Botning nomini o'qiyman",
+      "SI'ning gapiga ishonaman",
+      "Promptni qayta o'qiyman"
      ],
-     "e": "Yaxshi kutilgan natijani ekranga qarab tekshirsa bo'ladi."
+     "e": "Bot javobini ko'rib, natijani tekshirasiz."
+    },
+    {
+     "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
+     "o": [
+      "Alining, uni sanab ko'rsa bo'ladi",
+      "Valining, u qiziqroq",
+      "Ikkalasi bir xil yaxshi",
+      "Ikkalasi ham yomon"
+     ],
+     "e": "Qatorlarni sanab tekshirsa bo'ladi, «qiziq»ni esa yo'q."
+    },
+    {
+     "q": "Yaxshi kutilgan natijaning belgisi nima?",
+     "o": [
+      "Uni ko'rib tekshirsa bo'ladi",
+      "U juda uzun yoziladi",
+      "Uni faqat SI tushunadi",
+      "Unda chiroyli so'zlar ko'p"
+     ],
+     "e": "Yaxshi kutilgan natijani ko'rib tekshirsa bo'ladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Chiroyli bo'lsin\" degan gapni tekshirsa bo'ladimi?",
+     "q": "Qaysi so'z ham «chiroyli» kabi tekshirib bo'lmaydigan?",
      "o": [
-      "Yo'q, uni tekshirib bo'lmaydi",
-      "Ha, juda oson",
-      "Ha, SI aytib beradi",
-      "Ha, rangiga qarab"
+      "«Ajoyib»",
+      "«Ko'k»",
+      "«Uchta»",
+      "«O'ngda»"
      ],
-     "e": "\"Chiroyli bo'lsin\" degan gapni tekshirib bo'lmaydi."
+     "e": "«Ajoyib» ham har kimga har xil, uni o'lchab bo'lmaydi."
     },
     {
      "q": "Qaysi kutilgan natijani tekshirib bo'lmaydi?",
      "o": [
-      "Sayt chiroyli bo'lsin",
-      "Tugma ko'k",
-      "Sarlavha 6 so'zdan oshmaydi",
-      "Sahifada 2 ta rasm bor"
+      "Menyu chiroyli bo'lsin",
+      "Menyuda 8 ta taom bor",
+      "Menyu sarlavhasi «Taomlar»",
+      "Har taom yonida narx bor"
      ],
-     "e": "\"Chiroyli\" so'zini ko'rib tekshirib bo'lmaydi."
+     "e": "«Chiroyli»ni ko'rib tekshirib bo'lmaydi, qolganlarini bo'ladi."
     },
     {
-     "q": "Nega \"chiroyli bo'lsin\" yomon kutilgan natija?",
+     "q": "Sardor «Logo chiroyli bo'lsin» deb yozdi. Uni qanday tuzatadi?",
      "o": [
-      "Uni ko'rib tekshirib bo'lmaydi",
-      "U juda uzun",
-      "U ingliz tilida",
-      "Unda raqam juda ko'p"
+      "«Logo yashil va dumaloq» deb",
+      "«Logo juda chiroyli bo'lsin» deb",
+      "«Logo ajoyib bo'lsin» deb",
+      "«Logo zo'r chiqsin» deb"
      ],
-     "e": "Yaxshi kutilgan natijani tekshirsa bo'ladi, \"chiroyli\"ni esa yo'q."
+     "e": "Rang va shaklni ko'rib tekshirsa bo'ladi."
     },
     {
-     "q": "Dilnoza \"Sayt chiroyli bo'lsin\" deb yozdi. Uni qanday yaxshilaydi?",
-     "o": [
-      "\"Tugma ko'k bo'lsin\" deb yozadi",
-      "\"Sayt juda chiroyli bo'lsin\" deb yozadi",
-      "\"Sayt zo'r bo'lsin\" deb yozadi",
-      "Hech narsa yozmaydi"
-     ],
-     "e": "\"Tugma ko'k\" — buni ko'rib tekshirsa bo'ladi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "\"Chiroyli\" so'zini tekshirib bo'lmaydi",
-      "\"Chiroyli\" — eng yaxshi kutilgan natija",
-      "\"Tugma ko'k\"ni tekshirib bo'lmaydi",
-      "Kutilgan natija qanday yozilsa ham bo'ladi"
-     ],
-     "e": "\"Chiroyli bo'lsin\" degan gapni tekshirib bo'lmaydi."
-    },
-    {
-     "q": "Kutilgan natija: \"Sayt chiroyli\". Saytni ochdingiz. Bu band bajarildimi?",
+     "q": "Kutilgan natija «Rasm chiroyli» edi, SI rasm chizdi. Natija bajarildimi?",
      "o": [
       "Aniq aytib bo'lmaydi",
       "Ha, albatta bajarildi",
       "Yo'q, albatta bajarilmadi",
-      "SI nima desa, shu"
+      "SI «ha» desa, bajarildi"
      ],
-     "e": "\"Chiroyli\"ni tekshirib bo'lmaydi, shuning uchun aniq aytib bo'lmaydi."
+     "e": "«Chiroyli»ni tekshirib bo'lmaydi, shuning uchun aniq javob yo'q."
+    },
+    {
+     "q": "Ali bitta saytni «chiroyli» dedi, Vali «chiroyli emas» dedi. Nega shunday?",
+     "o": [
+      "Har kimga har xil yoqadi",
+      "Ali ekranga yaxshi qaramadi",
+      "Vali boshqa saytni ochdi",
+      "Sayt ikki xil ochildi"
+     ],
+     "e": "Chiroyli yoki yo'qligi har kimga har xil ko'rinadi."
+    },
+    {
+     "q": "Nega «chiroyli bo'lsin» yomon kutilgan natija?",
+     "o": [
+      "Uni ko'rib tekshirib bo'lmaydi",
+      "U juda uzun gap",
+      "U boshqa tilda yozilgan",
+      "Unda raqam juda ko'p"
+     ],
+     "e": "Yaxshi natijani tekshirsa bo'ladi, «chiroyli»ni esa yo'q."
     }
    ]
   }

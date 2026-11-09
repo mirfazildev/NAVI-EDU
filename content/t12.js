@@ -3,192 +3,192 @@ CONTENT[12] = {
   {
    "pool": [
     {
-     "q": "\"Sahifa tepasidagi tugma\" — bu gap nimani aytadi?",
+     "q": "Ali SI'ga «Tugma noto'g'ri» deb yozdi. Saytda 5 ta tugma bor. Nima yetishmaydi?",
      "o": [
-      "Farq qayerda ekanini",
-      "Tugma qanday bo'lishi kerakligini",
-      "Tugma hozir qanday ekanini",
-      "Xato xabarini"
+      "Qaysi tugma ekani, qayerdaligi",
+      "SI'ga rahmat so'zi",
+      "Ko'proq undov belgisi",
+      "Saytning eski nomi"
      ],
-     "e": "Bu gap farq qayerda ekanini aytadi."
+     "e": "SI qaysi tugmani tuzatishni bilishi uchun joyini aytish kerak."
     },
     {
-     "q": "Qaysi gap farq qayerda ekanini aytadi?",
+     "q": "Kafe saytida bitta rasm xira. Qaysi so'zlar joyni aniq aytadi?",
      "o": [
-      "Sahifa pastidagi rasm",
-      "Qizil rangda",
-      "Ko'k bo'lsin",
+      "Menyu ostidagi birinchi rasm",
+      "Bitta rasm",
+      "Anavi rasm",
+      "Saytdagi rasm"
+     ],
+     "e": "«Menyu ostidagi birinchi» deganda SI qaysi rasmligini aniq biladi."
+    },
+    {
+     "q": "Gul do'koni saytida pastdagi tugma noto'g'ri. «Qayerda?» savoliga javob qaysi?",
+     "o": [
+      "Sahifaning pastida",
+      "Ko'k rangda",
+      "Ertaga ertalab",
       "Kattaroq bo'lsin"
      ],
-     "e": "\"Sahifa pastidagi rasm\" — joyni aytadi."
+     "e": "«Qayerda?» savoliga joy bilan javob beriladi."
     },
     {
-     "q": "Siz SI'ga \"Tugma ko'k bo'lsin\" dedingiz. Sahifada 3 ta tugma bor. Nima yetishmayapti?",
+     "q": "Nega farq qayerda ekanini SI'ga aytasiz?",
      "o": [
-      "Qaysi tugma ekani",
-      "Tugmaning rangi",
-      "Tugma kerakligi",
-      "SI'ga salom"
+      "SI qaysi joyni tuzatishni bilishi uchun",
+      "Prompt uzunroq bo'lishi uchun",
+      "SI tezroq javob berishi uchun",
+      "Saytning rangi o'zgarishi uchun"
      ],
-     "e": "Farq qayerda ekanini aytmadingiz — qaysi tugma."
+     "e": "Joyni bilmasa, SI boshqa joyni o'zgartirib yuborishi mumkin."
     },
     {
-     "q": "Nega farq qayerda ekanini aytish kerak?",
+     "q": "Laylo botga yozdi. Botning ikkinchi javobida xato bor. Laylo SI'ga qaysi joyni aytadi?",
      "o": [
-      "SI ekraningizni ko'rmaydi",
-      "SI hamma narsani ko'radi",
-      "Shunda javob tezroq keladi",
-      "Shunda prompt uzunroq bo'ladi"
+      "Botning ikkinchi javobini",
+      "Butun botni",
+      "Botning nomini",
+      "O'z telefonini"
      ],
-     "e": "SI ekraningizni ko'rmaydi, joyni siz aytasiz."
+     "e": "Xato ikkinchi javobda, shuni aniq aytish kerak."
     },
     {
-     "q": "Qaysi gapda joy aniq aytilgan?",
+     "q": "Sardor SI yozgan hikoyaning uchinchi gapida xato ko'rdi. Joyni qanday aytadi?",
      "o": [
-      "Menyu ostidagi sarlavha",
-      "Bir joydagi narsa",
-      "Anavi narsa",
-      "Shu yerda"
+      "«Uchinchi gapda»",
+      "«Hikoyada qayerdadir»",
+      "«Hikoya yomon chiqdi»",
+      "«Matnning hamma joyida»"
      ],
-     "e": "\"Menyu ostidagi sarlavha\" — joy aniq."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Farq qayerda ekanini aniq aytish kerak",
-      "Joyni aytish shart emas",
-      "SI joyni o'zi topadi",
-      "Faqat \"xato\" deyish yetarli"
-     ],
-     "e": "Farqni aytganda, u qayerda ekanini aytasiz."
+     "e": "«Uchinchi gapda» deyish xato joyini aniq ko'rsatadi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Hozir qizil rangda\" — bu gap nimani aytadi?",
+     "q": "Ali SI'ga «Sarlavha yomon» deb yozdi. Gapni qanday aniqroq qiladi?",
      "o": [
-      "Narsa hozir qanday ekanini",
-      "Farq qayerda ekanini",
-      "Qanday bo'lishi kerakligini",
-      "Kutilgan natijani"
+      "«Sarlavha hozir juda kichik» deb",
+      "«Sarlavha juda yomon» deb",
+      "«Sarlavhani tuzat» deb",
+      "«Sarlavhada muammo bor» deb"
      ],
-     "e": "Bu gap narsa hozir qanday ekanini aytadi."
+     "e": "«Hozir juda kichik» deganda SI sarlavha qanday ekanini biladi."
     },
     {
-     "q": "Qaysi gap hozirgi holatni aytadi?",
+     "q": "Rasmdagi mushuk ko'k, lekin kulrang bo'lishi kerak. Qaysi so'z hozirgi holatni aytadi?",
      "o": [
-      "Sarlavha hozir inglizcha",
-      "Sarlavha o'zbekcha bo'lsin",
-      "Sahifa tepasidagi sarlavha",
-      "Sarlavhani tekshiring"
+      "Ko'k",
+      "Kulrang",
+      "Mushuk",
+      "Rasm"
      ],
-     "e": "\"Hozir inglizcha\" — hozirgi holat."
+     "e": "Hozir mushuk ko'k, kulrang esa bo'lishi kerak bo'lgan rang."
     },
     {
-     "q": "Tugma ko'k bo'lishi kerak edi. Ekranda u qizil. Hozirgi holatni qanday aytasiz?",
+     "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasiz?",
      "o": [
-      "Tugma hozir qizil",
-      "Tugma ko'k bo'lsin",
-      "Tugma yaxshi emas",
-      "Tugmada nimadir bor"
-     ],
-     "e": "Ekranda nimani ko'rsangiz, shuni aytasiz: hozir qizil."
-    },
-    {
-     "q": "Nega hozir qanday ekanini SI'ga aytasiz?",
-     "o": [
-      "SI ekranda nima borligini bilmaydi",
-      "SI buni allaqachon ko'rgan",
+      "SI sizning ekraningizni ko'rmaydi",
+      "SI ko'p so'zni yaxshi ko'radi",
       "Shunda sayt o'zi tuzaladi",
-      "Bu shart emas"
+      "SI rasm chiza olmaydi"
      ],
-     "e": "SI ekraningizni ko'rmaydi, hozirgi holatni siz aytasiz."
+     "e": "SI ekraningizni ko'rmaydi, shuning uchun holatni siz aytasiz."
     },
     {
-     "q": "Qaysi gap hozirgi holatni aniq aytadi?",
+     "q": "«Savat tugmasi bosilganda sahifa oqarib qoladi.» Bu gap nimani aytyapti?",
      "o": [
-      "Sarlavha hozir 12 so'z",
-      "Sarlavha g'alati",
-      "Sarlavha menga yoqmadi",
-      "Sarlavha boshqacha"
+      "Hozir qanday ekanini",
+      "Qanday bo'lishi kerakligini",
+      "Kim xato qilganini",
+      "Qachon xato chiqqanini"
      ],
-     "e": "\"Hozir 12 so'z\" — aniq va tekshirsa bo'ladi."
+     "e": "Bu gap hozir nima bo'layotganini tasvirlaydi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Kutilgan matn 5 gapli edi. SI 9 gap yozdi. «Hozir qanday?» savoliga javob?",
      "o": [
-      "Narsa hozir qanday ko'rinishini aytish kerak",
-      "Hozirgi holatni aytish shart emas",
-      "\"Yomon\" deyish yetarli",
-      "SI hozirgi holatni o'zi ko'radi"
+      "Matnda 9 ta gap bor",
+      "Matn 5 gapli bo'lsin",
+      "Matn yoqmadi",
+      "Matn ekranning tepasida"
      ],
-     "e": "Farqni aytganda, hozir qanday ekanini ham aytasiz."
+     "e": "Hozirgi holat — matnda 9 ta gap borligi."
+    },
+    {
+     "q": "Bot «Salom» o'rniga «Hello» deyapti. Qaysi gap hozirgi holatni aniq aytadi?",
+     "o": [
+      "Bot hozir «Hello» deyapti",
+      "Bot «Salom» desin",
+      "Bot yomon ishlayapti",
+      "Botda nimadir boshqacha"
+     ],
+     "e": "Bu gap bot hozir aynan nima deyayotganini aytadi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "\"Ko'k bo'lsin\" — bu gap nimani aytadi?",
+     "q": "Siz SI'ga «Tugma hozir qizil» deb yozdingiz. SI yana nimani bilishi kerak?",
      "o": [
-      "Qanday bo'lishi kerakligini",
-      "Hozir qanday ekanini",
-      "Farq qayerda ekanini",
-      "Xato xabarini"
+      "Tugma qaysi rangda bo'lishi kerakligini",
+      "Tugma qachon qilinganini",
+      "Qizil rang nega yoqmasligini",
+      "Tugmani kim bosishini"
      ],
-     "e": "\"Ko'k bo'lsin\" — qanday bo'lishi kerakligi."
+     "e": "Qanday bo'lishi kerakligini aytmasangiz, SI qaysi rangni qo'yishni bilmaydi."
     },
     {
-     "q": "Qaysi gap qanday bo'lishi kerakligini aytadi?",
+     "q": "Kafe saytida narxlar dollarda, so'mda bo'lishi kerak. Qaysi qism istakni aytadi?",
      "o": [
-      "Sarlavha o'zbekcha bo'lsin",
-      "Sarlavha hozir inglizcha",
-      "Sahifa tepasidagi sarlavha",
-      "Sarlavhada farq bor"
+      "«So'mda bo'lsin»",
+      "«Hozir dollarda»",
+      "«Narxlar bo'limida»",
+      "«Narx noto'g'ri»"
      ],
-     "e": "\"O'zbekcha bo'lsin\" — qanday bo'lishi kerakligi."
+     "e": "«So'mda bo'lsin» — narx qanday bo'lishi kerakligi."
     },
     {
-     "q": "Siz \"Sahifa tepasidagi tugma qizil\" dedingiz. Yana nimani aytish kerak?",
+     "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasiz?",
      "o": [
-      "Qanday bo'lishi kerakligini",
-      "Tugma qayerdaligini",
-      "Tugma hozir qanday ekanini",
-      "Hech narsa kerak emas"
+      "SI o'zicha taxmin qilmasligi uchun",
+      "Prompt chiroyli ko'rinishi uchun",
+      "SI tezroq ishlashi uchun",
+      "Sayt ko'proq ochilishi uchun"
      ],
-     "e": "Joy va hozirgi holat bor. Qanday bo'lishi kerakligi yetishmayapti."
+     "e": "Aytmasangiz, SI o'zicha taxmin qilib, xato qilishi mumkin."
     },
     {
-     "q": "Qaysi gapda farq to'liq aytilgan?",
+     "q": "Gul do'koni sarlavhasi juda kichik. Qaysi istakni tekshirib ko'rsa bo'ladi?",
      "o": [
-      "Tepadagi tugma qizil, ko'k bo'lsin",
-      "Tepadagi tugma qizil",
-      "Tugma ko'k bo'lsin",
-      "Tugma menga yoqmadi"
-     ],
-     "e": "Unda joy, hozirgi holat va qanday bo'lishi kerakligi bor."
-    },
-    {
-     "q": "Nega qanday bo'lishi kerakligini aytasiz?",
-     "o": [
-      "Aytmasangiz, SI o'zi to'ldirib yuboradi",
-      "Shunda SI tezroq ishlaydi",
-      "Shunda sayt o'zi chiroyli bo'ladi",
-      "Bu shart emas"
-     ],
-     "e": "SI bilmagan narsani o'zi to'ldiradi, shuning uchun aniq ayting."
-    },
-    {
-     "q": "Sarlavha qanday bo'lishi kerakligini qaysi gap aniq aytadi?",
-     "o": [
-      "Sarlavha 6 so'zdan oshmasin",
+      "Sarlavha ikki barobar katta bo'lsin",
       "Sarlavha yaxshiroq bo'lsin",
-      "Sarlavha boshqacha bo'lsin",
-      "Sarlavha zo'r bo'lsin"
+      "Sarlavha chiroyli bo'lsin",
+      "Sarlavha boshqacha bo'lsin"
      ],
-     "e": "\"6 so'zdan oshmasin\" — aniq, tekshirsa bo'ladi."
+     "e": "«Ikki barobar katta» deganni ekranda aniq tekshirsa bo'ladi."
+    },
+    {
+     "q": "Hikoya 9 gapli, 5 gapli bo'lishi kerak. «Qanday bo'lsin?» savoliga javob?",
+     "o": [
+      "5 ta gapdan iborat bo'lsin",
+      "Hozir 9 ta gap bor",
+      "Hikoyaning oxirida",
+      "Hikoya juda qiziq"
+     ],
+     "e": "«Qanday bo'lsin?» — kerakli holatni aytadi: 5 ta gap."
+    },
+    {
+     "q": "Jasur yozdi: «Jadval hozir bo'sh.» Boshqa hech narsa yozmadi. SI nima qilishi mumkin?",
+     "o": [
+      "Jadvalni o'zicha, noto'g'ri to'ldirishi",
+      "Jasur xohlaganini aniq bilishi",
+      "Saytni butunlay o'chirishi",
+      "Jadvalga tegmay, jim turishi"
+     ],
+     "e": "Nima bo'lishi kerakligi aytilmasa, SI o'zicha taxmin qiladi."
     }
    ]
   }

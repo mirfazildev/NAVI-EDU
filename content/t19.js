@@ -3,44 +3,24 @@ CONTENT[19] = {
   {
    "pool": [
     {
-     "q": "Agent o'zgarish qildi. Birinchi nima qilasiz?",
+     "q": "Agent botga /menu buyrug'ini qo'shdi. Madina qanday tekshiradi?",
      "o": [
-      "Natijani ochib tekshiraman",
-      "Darhol qabul qilaman",
-      "Darhol rad qilaman",
-      "Kompyuterni o'chiraman"
+      "Botga /menu yozib ko'radi",
+      "SI'dan \"to'g'rimi?\" deb so'raydi",
+      "Faqat fayl nomini o'qiydi",
+      "Hech narsa qilmaydi"
      ],
-     "e": "O'zgarishdan keyin natijani ochib tekshiring."
+     "e": "Natijani o'zingiz ishlatib ko'rib tekshirasiz."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "SI \"Hammasi tayyor!\" dedi. Ali nima qiladi?",
      "o": [
-      "O'zgarishdan keyin natijani ochib tekshirish kerak",
-      "SI o'zgarishi doim to'g'ri bo'ladi",
-      "Tekshirish shart emas",
-      "SI'ning gapini o'qish yetarli"
+      "Natijani o'zi ochib ko'radi",
+      "Ishonib, darhol qabul qiladi",
+      "Rahmat deb yopadi",
+      "Tekshirmay rad qiladi"
      ],
-     "e": "Natijani o'zingiz ochib tekshiring."
-    },
-    {
-     "q": "SI \"Hammasi tayyor!\" dedi. Nima qilasiz?",
-     "o": [
-      "Natijani o'zim ochib tekshiraman",
-      "Ishonaman va qabul qilaman",
-      "Rahmat deb yopaman",
-      "Tekshirmasdan rad qilaman"
-     ],
-     "e": "SI xato qilganda ham ishonch bilan gapiradi."
-    },
-    {
-     "q": "Agent saytga tugma qo'shdi. Qanday tekshirasiz?",
-     "o": [
-      "Saytni ochib, tugmani bosib ko'raman",
-      "SI'dan \"To'g'rimi?\" deb so'rayman",
-      "Hech narsa qilmayman",
-      "Faqat fayl nomini o'qiyman"
-     ],
-     "e": "Natijani ochib, o'zingiz ko'rib tekshiring."
+     "e": "SI xato qilganda ham \"tayyor\" deyishi mumkin."
     },
     {
      "q": "Ochilgan natijani nima bilan solishtirasiz?",
@@ -53,107 +33,117 @@ CONTENT[19] = {
      "e": "Natija kutilgan natija bilan solishtiriladi."
     },
     {
-     "q": "Nega natijani o'zingiz ochib ko'rasiz?",
+     "q": "Agent telefon uchun menyuni o'zgartirdi. Nilufar qayerda tekshiradi?",
      "o": [
-      "SI xato qilishi mumkin",
-      "SI hech qachon xato qilmaydi",
-      "Ochish chiroyli ko'rinadi",
-      "Kompyuter shuni xohlaydi"
+      "Saytni telefonda ochib",
+      "Faqat SI javobida",
+      "Fayl nomiga qarab",
+      "Do'stining saytida"
      ],
-     "e": "SI xato qilishi mumkin, shuning uchun tekshiriladi."
+     "e": "O'zgarish qayerda bo'lsa, o'sha yerda ochib ko'riladi."
+    },
+    {
+     "q": "Kamola saytni ochmay o'zgarishni qabul qildi. Qanday xavf bor?",
+     "o": [
+      "Buzilgan narsa saqlanib qolishi mumkin",
+      "Sayt tezroq ishlaydi",
+      "Xavf yo'q, SI aytdi",
+      "Agent xafa bo'ladi"
+     ],
+     "e": "Tekshirmasangiz, xato ham saqlanib qolishi mumkin."
+    },
+    {
+     "q": "Sardor sahifada sarlavhani ko'rdi, rasmga hali qaramadi. Tekshirish tugadimi?",
+     "o": [
+      "Yo'q, rasmni ham ko'rish kerak",
+      "Ha, sarlavha yetarli",
+      "Ha, SI tayyor degan",
+      "Ha, sahifa ochildi-ku"
+     ],
+     "e": "O'zgargan hamma narsani ochib ko'rish kerak."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Natija kutilgandek chiqdi. Nima qilasiz?",
+     "q": "Ali \"Gul do'koni\" sarlavhasini kutgan edi va aynan shu chiqdi. Nima qiladi?",
      "o": [
-      "Qabul qilaman",
-      "Rad qilaman",
-      "Yangi suhbat ochaman",
-      "Hammasini o'chiraman"
+      "Qabul qiladi",
+      "Rad qiladi",
+      "Yangi suhbat ochadi",
+      "Saytni o'chiradi"
      ],
-     "e": "Natija kutilgandek bo'lsa, qabul qiling."
+     "e": "Natija kutilgan bilan bir xil, demak qabul qilinadi."
     },
     {
-     "q": "Siz qizil tugma kutgan edingiz. Qizil tugma chiqdi va ishlayapti. Nima qilasiz?",
+     "q": "Madina hali saytni ochib ko'rmadi. Hozir qabul qilsa bo'ladimi?",
      "o": [
-      "Qabul qilaman",
-      "Rad qilaman",
-      "SI'ga xato bor deyman",
-      "Saytni yopib ketaman"
+      "Yo'q, avval ochib ko'radi",
+      "Ha, SI tayyor dedi",
+      "Ha, tezroq bo'ladi",
+      "Ha, keyin ko'radi"
      ],
-     "e": "Natija kutilgandek — qabul qilinadi."
+     "e": "Qabul qilish uchun natija kutilgandek ekanini ko'rish kerak."
     },
     {
-     "q": "Qachon o'zgarishni qabul qilish kerak?",
+     "q": "Jasur katta qizil tugma kutgan edi, kichik qizil tugma chiqdi. Nima qiladi?",
      "o": [
-      "Natija kutilgandek bo'lganda",
-      "Natijani ko'rmasdan oldin",
-      "Natija buzilganda",
-      "SI so'rashi bilan darhol"
+      "Hali qabul qilmaydi",
+      "Qabul qiladi, rangi to'g'ri",
+      "Qabul qiladi, tugma bor",
+      "Saytni yopib ketadi"
      ],
-     "e": "Tekshirib, kutilgandek bo'lsa qabul qilinadi."
+     "e": "Bitta band ham mos kelmasa, natija kutilgandek emas."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Sardor kutgan ko'k fon chiqdi, SI esa yana o'zgartirmoqchi. Sardor nima qiladi?",
      "o": [
-      "Natija to'g'ri bo'lsa, qabul qilinadi",
-      "Har bir o'zgarish tekshirmasdan qabul qilinadi",
-      "To'g'ri natija rad qilinadi",
-      "Qabul qilish faqat SI'ning ishi"
+      "Shu natijani qabul qilib qo'yadi",
+      "Yana o'zgartirishga ruxsat beradi",
+      "Ishonmay rad qiladi",
+      "Saytni o'chirib tashlaydi"
      ],
-     "e": "Natija kutilgandek bo'lsa, qabul qiling."
+     "e": "Hammasi kutilgandek, endi qabul qilish vaqti."
     },
     {
-     "q": "Sarlavha \"Gul do'koni\" bo'lishi kerak edi. Ekranda \"Gul do'koni\" chiqdi. Nima qilasiz?",
+     "q": "Nilufar o'zgarishni qabul qildi. U bilan nima bo'ladi?",
      "o": [
-      "Qabul qilaman",
-      "Rad qilaman",
-      "Xato xabarini qidiraman",
-      "Yangi suhbat ochaman"
-     ],
-     "e": "Natija kutilgan bilan bir xil — qabul qilinadi."
-    },
-    {
-     "q": "Qabul qilsangiz, o'zgarish bilan nima bo'ladi?",
-     "o": [
-      "Saqlanadi",
+      "Saqlanib qoladi",
       "O'chib ketadi",
       "SI'ga qaytib ketadi",
       "Yashirinib qoladi"
      ],
      "e": "Qabul qilingan o'zgarish saqlanadi."
+    },
+    {
+     "q": "Otabekning sayti kutilgandek ishlayapti, lekin u qabul qilmadi. Nima bo'ladi?",
+     "o": [
+      "Yaxshi o'zgarish saqlanmaydi",
+      "O'zgarish baribir saqlanadi",
+      "Sayt butunlay buziladi",
+      "SI o'zi qabul qiladi"
+     ],
+     "e": "Qabul qilinmagan o'zgarish yaxshi bo'lsa ham saqlanmaydi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "O'zgarishdan keyin sayt buzildi. Nima qilasiz?",
+     "q": "Agent ishidan keyin bot javob bermayapti. Bobur nima qiladi?",
      "o": [
-      "Rad qilaman va nima buzilganini aytaman",
-      "Qabul qilaman",
-      "Indamay qabul qilaman",
-      "Kompyuterni o'chiraman"
+      "Rad qilib, SI'ga yozadi",
+      "Qabul qilib, kutib turadi",
+      "Botni o'chirib tashlaydi",
+      "Yangi bot ochadi"
      ],
      "e": "Buzilgan natija rad qilinadi va SI'ga aytiladi."
     },
     {
-     "q": "Rad qilgandan keyin SI'ga nima aytasiz?",
+     "q": "Logotip yo'qolib qoldi. Qaysi xabar SI'ga yaxshi?",
      "o": [
-      "Nima buzilganini",
-      "Faqat \"Rahmat\"",
-      "Hech narsa",
-      "Faqat \"Yomon\""
-     ],
-     "e": "SI'ga nima buzilganini ayting."
-    },
-    {
-     "q": "Tugma endi ishlamayapti. Qaysi xabar yaxshi?",
-     "o": [
-      "\"Rad qildim. Tugma bosilganda hech narsa bo'lmayapti\"",
+      "\"Rad qilaman: logotip yo'qolib qoldi\"",
       "\"Yomon bo'ldi\"",
       "\"Qaytadan qil\"",
       "\"Hammasi joyida\""
@@ -161,27 +151,17 @@ CONTENT[19] = {
      "e": "Bu xabarda nima buzilgani aniq aytilgan."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Sardor yozdi: \"Rad qilaman. Buzildi.\" Bu xabarda nima yetishmaydi?",
      "o": [
-      "Buzilgan natija rad qilinadi",
-      "Buzilgan natija qabul qilinadi",
-      "Nima buzilganini aytish shart emas",
-      "Rad qilib bo'lmaydi"
+      "Aynan nima buzilgani",
+      "Undov belgisi",
+      "Salom so'zi",
+      "Sardorning ismi"
      ],
-     "e": "Natija buzilgan bo'lsa, rad qiling."
+     "e": "SI nima buzilganini bilmasa, uni tuzata olmaydi."
     },
     {
-     "q": "Rasm yo'qolib qoldi. Rad qildingiz. Nega nima buzilganini aytasiz?",
-     "o": [
-      "SI nimani tuzatishni bilishi uchun",
-      "SI'ni xafa qilish uchun",
-      "Vaqt o'tkazish uchun",
-      "Shunchaki, SI o'zi biladi"
-     ],
-     "e": "Nima buzilganini bilsa, SI uni tuzata oladi."
-    },
-    {
-     "q": "O'zgarishni rad qildingiz. Sayt qanday bo'ladi?",
+     "q": "Jasur o'zgarishni rad qildi. Sayt endi qanday?",
      "o": [
       "O'zgarishdan oldingidek",
       "Buzilgan holicha",
@@ -189,6 +169,26 @@ CONTENT[19] = {
       "Butunlay yangi"
      ],
      "e": "Rad qilingan o'zgarish saqlanmaydi."
+    },
+    {
+     "q": "Yangi tugma ishlayapti, lekin sarlavha yo'qolgan. Kamola nima qiladi?",
+     "o": [
+      "Sarlavha yo'qolgani uchun rad qiladi",
+      "Tugma ishlagani uchun qabul qiladi",
+      "Indamay qabul qiladi",
+      "Tugmani o'chirib tashlaydi"
+     ],
+     "e": "Bitta narsa buzilgan bo'lsa ham, natija buzilgan hisoblanadi."
+    },
+    {
+     "q": "Nega SI'ga nima buzilganini aytasiz?",
+     "o": [
+      "SI aynan shuni tuzatishi uchun",
+      "SI'ni xafa qilish uchun",
+      "Vaqt o'tkazish uchun",
+      "Xabar uzun bo'lishi uchun"
+     ],
+     "e": "Nima buzilganini bilsa, SI uni tuzata oladi."
     }
    ]
   }

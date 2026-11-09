@@ -3,256 +3,256 @@ CONTENT[3] = {
   {
    "pool": [
     {
+     "q": "Sardor SI'ga «Bu rasm chiroylimi?» deb yozdi, rasmni yubormadi. Muammo nima?",
+     "o": [
+      "SI rasmni ko'rmaydi",
+      "SI rasmni yoqtirmaydi",
+      "Rasm juda katta",
+      "SI charchab qolgan"
+     ],
+     "e": "SI ekraningizni ko'rmaydi, rasmni unga berish kerak."
+    },
+    {
+     "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
+     "o": [
+      "Ali: «Sarlavha qizil chiqdi»",
+      "Vali: «Buni ko'ryapsanmi?»",
+      "Gul: «Anavini tuzat»",
+      "Sami: «Shu yerda xato»"
+     ],
+     "e": "SI ekranni ko'rmaydi, ko'rganingizni so'z bilan yozing."
+    },
+    {
      "q": "SI sizning ekraningizni ko'radimi?",
      "o": [
       "Yo'q, ko'rmaydi",
-      "Ha, doim ko'rib turadi",
-      "Ha, faqat kunduzi",
-      "Ha, kamera orqali"
+      "Ha, doim ko'radi",
+      "Faqat kunduzi ko'radi",
+      "Faqat katta ekranni"
      ],
-     "e": "SI sizning ekraningizni ko'rmaydi."
+     "e": "SI ekraningizni ko'rmaydi."
     },
     {
-     "q": "Ekraningizda nima borligini SI qanday biladi?",
+     "q": "Malika: «Bu yerdagi rangni o'zgartir» dedi. SI nega tushunmadi?",
      "o": [
-      "Siz unga yozib berasiz",
-      "O'zi qarab turadi",
-      "Kompyuterdan o'zi o'qiydi",
-      "Hech qachon bila olmaydi"
+      "«Bu yer» qayerligini bilmaydi",
+      "SI ranglarni yomon ko'radi",
+      "Malika juda tez yozdi",
+      "Rangni o'zgartirib bo'lmaydi"
      ],
-     "e": "Nimani ko'rayotganingizni SI'ga yozib bering."
+     "e": "SI ekranni ko'rmaydi, «bu yer» qayerligini bilmaydi."
     },
     {
-     "q": "Bola SI'ga \"Ekranimdagi tugma nega bunday?\" deb yozdi. Muammo nimada?",
+     "q": "Kafe menyusida narx xato chiqdi. SI'ga nimani yozish kerak?",
      "o": [
-      "SI ekranni ko'rmaydi, tugma haqida yozilmagan",
-      "SI tugmalarni yoqtirmaydi",
-      "Savol o'zbekcha yozilgan",
-      "SI tugma so'zini bilmaydi"
+      "Qaysi taomda qanday narx chiqqanini",
+      "Faqat «xato bor» degan gapni",
+      "Faqat kafe nomini",
+      "Faqat «tuzat» so'zini"
      ],
-     "e": "SI ekranni ko'rmaydi, tugma qandayligini yozib berish kerak."
+     "e": "SI ko'rmaydi, shuning uchun ko'rganingizni aniq yozasiz."
     },
     {
-     "q": "Qaysi prompt yaxshiroq?",
+     "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
      "o": [
-      "\"Ekranimda qizil tugma bor, u bosilmayapti\"",
-      "\"Ekranimga qara\"",
-      "\"Buni ko'ryapsanmi?\"",
-      "\"Mana shu narsa ishlamayapti\""
+      "Siz yozib berganingizda",
+      "Darhol o'zi ko'radi",
+      "Sayt ochilganda",
+      "Ertasi kuni o'zi"
      ],
-     "e": "Ekranda nimani ko'rayotganingiz yozilgan prompt yaxshiroq."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Ko'rgan narsangizni SI'ga so'z bilan yozing",
-      "SI ekraningizni o'zi ko'rib oladi",
-      "SI'ga \"qara\" desangiz yetadi",
-      "SI ekrandagi hamma narsani biladi"
-     ],
-     "e": "SI ekranni ko'rmaydi, shuning uchun ko'rganingizni yozib berasiz."
-    },
-    {
-     "q": "Saytingizda sarlavha juda kichik chiqdi. SI'ga nima deysiz?",
-     "o": [
-      "\"Sarlavha juda kichik chiqdi\" deb yozaman",
-      "\"Ko'rib tur, nima bo'ldi?\" deb yozaman",
-      "Hech narsa yozmayman, SI o'zi ko'radi",
-      "\"Tuzat\" deb yozaman"
-     ],
-     "e": "SI ekranni ko'rmaydi, nimani ko'rganingizni aniq yozing."
+     "e": "SI ekranni ko'rmaydi, siz yozsangiz biladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI loyihangizni qachon biladi?",
+     "q": "Aziz: «Saytimga sarlavha yoz» dedi. SI nimani bilmaydi?",
      "o": [
-      "Siz u haqida aytganingizda",
-      "Doim o'zi biladi",
-      "Kompyuter yoqilganda",
-      "Internetdan topib oladi"
+      "Sayt nima haqida ekanini",
+      "Sarlavha nima ekanini",
+      "Qanday yozishni",
+      "O'zbekcha so'zlarni"
      ],
      "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
     },
     {
-     "q": "Siz kafe sayti qilyapsiz. SI buni biladimi?",
+     "q": "Kafe saytiga matn kerak. SI'ga avval nimani aytasiz?",
      "o": [
-      "Yo'q, agar siz aytmasangiz",
-      "Ha, o'zi sezadi",
-      "Ha, hamma loyihalarni biladi",
-      "Ha, kafe nomidan biladi"
+      "Kafe nomi va taomlarini",
+      "Bugungi ob-havoni",
+      "O'zingizning yoshingizni",
+      "Sevimli multfilmingizni"
      ],
-     "e": "SI loyihangizni faqat siz aytsangiz biladi."
+     "e": "SI loyihani bilmaydi, kerakli ma'lumotni siz aytasiz."
     },
     {
-     "q": "Bola SI'ga \"Loyihamga sarlavha yoz\" dedi. Nima yetishmayapti?",
+     "q": "Nodira gul do'koni saytini bir oy qurdi. SI bu haqda biladimi?",
      "o": [
-      "Loyiha nima haqida ekani",
-      "Salomlashish",
-      "Undov belgisi",
-      "SI'ning ismi"
-     ],
-     "e": "SI loyihani bilmaydi, u nima haqida ekanini aytish kerak."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Loyihangiz haqida SI'ga o'zingiz aytasiz",
-      "SI hamma loyihalarni oldindan biladi",
-      "SI loyihangizni kompyuterdan o'zi o'qiydi",
-      "Loyiha haqida aytish shart emas"
+      "Yo'q, Nodira aytmaguncha",
+      "Ha, internetdan ko'rgan",
+      "Ha, bir oy kuzatib turgan",
+      "Ha, u har bir saytni biladi"
      ],
      "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
     },
     {
-     "q": "SI internetdan o'rgangan. Sizning yangi loyihangizni ham biladimi?",
+     "q": "SI sport zali saytiga «Kafemizga xush kelibsiz» deb yozdi. Nega?",
      "o": [
-      "Yo'q, siz aytmaguningizcha bilmaydi",
-      "Ha, internetda hammasi bor",
-      "Ha, chunki u juda aqlli",
-      "Ha, agar loyiha kichik bo'lsa"
+      "Unga sayt haqida aytilmagan",
+      "SI sportni yoqtirmaydi",
+      "SI hazil qilmoqchi bo'ldi",
+      "Sayt o'zi o'zgarib qoldi"
      ],
-     "e": "Sizning loyihangiz haqida SI faqat siz aytgandan biladi."
+     "e": "Loyiha haqida aytilmasa, SI taxmin qilib yozadi."
     },
     {
-     "q": "SI sport sayti uchun matn yozib berdi. Lekin loyihangiz kitob do'koni edi. Nega?",
+     "q": "Kitob do'koni boti uchun qaysi so'rov yaxshiroq?",
      "o": [
-      "Siz loyiha haqida aytmagansiz",
-      "SI sportni yaxshi ko'radi",
-      "SI kitoblarni bilmaydi",
-      "Internet sekin ishlagan"
+      "«Kitob do'koni botiga salom yoz»",
+      "«Menga bitta salom matni yoz»",
+      "«Bot uchun chiroyli matn yoz»",
+      "«Tezroq bir salom yozib ber»"
      ],
-     "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
+     "e": "Faqat shu so'rovda loyiha nima ekani aytilgan."
+    },
+    {
+     "q": "SI loyihangizga mos javob berishi uchun nima qilish kerak?",
+     "o": [
+      "Loyiha haqida yozib berish",
+      "Uzoq kutib turish",
+      "Kompyuterni yangilash",
+      "SI'ni maqtab qo'yish"
+     ],
+     "e": "SI loyihani faqat siz aytsangiz biladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Yangi suhbat ochdingiz. SI oldingi suhbatni biladimi?",
+     "q": "Kecha SI bilan kafe nomini tanladingiz. Bugun yangi suhbatda SI uni eslaydimi?",
      "o": [
-      "Yo'q, bilmaydi",
-      "Ha, hammasini eslaydi",
-      "Ha, faqat oxirgi gapni",
-      "Ha, agar bugun bo'lsa"
+      "Yo'q, eslamaydi",
+      "Ha, albatta eslaydi",
+      "Faqat yarmini eslaydi",
+      "Ha, chunki kompyuter bitta"
      ],
      "e": "Yangi suhbatda SI oldingi suhbatni bilmaydi."
     },
     {
-     "q": "Kecha SI'ga loyihangizni aytdingiz. Bugun yangi suhbat ochdingiz. Nima qilasiz?",
+     "q": "Lola yangi suhbatda «Kechagi rasmni tuzat» dedi. Nima bo'ladi?",
      "o": [
-      "Loyiha haqida qaytadan aytaman",
-      "Hech narsa aytmayman, u eslaydi",
-      "\"Kechagini davom ettir\" deyman, yetadi",
-      "Kompyuterni qayta yoqaman"
+      "SI qaysi rasmligini bilmaydi",
+      "SI rasmni darhol tuzatadi",
+      "SI kechagi rasmni ochadi",
+      "SI rasmni o'chirib yuboradi"
      ],
-     "e": "Yangi suhbatda SI oldingi suhbatni bilmaydi, ma'lumotni qayta bering."
+     "e": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Yangi suhbatda SI ishni davom ettirishi uchun nima qilasiz?",
      "o": [
-      "Yangi suhbat — SI uchun toza boshlanish",
-      "Yangi suhbatda SI hamma eski gaplarni biladi",
-      "SI barcha suhbatlarni bir joyda eslaydi",
-      "Yangi suhbat ochsangiz, SI xafa bo'ladi"
+      "Kerakli ma'lumotni qayta yozaman",
+      "Hech narsa eslatmayman",
+      "Faqat «davom et» deyman",
+      "Suhbatni yopib qo'yaman"
      ],
-     "e": "Yangi suhbat ochsangiz, SI oldingi suhbatni bilmaydi."
+     "e": "SI oldingi suhbatni bilmaydi, ma'lumotni qayta berish kerak."
     },
     {
-     "q": "Bola yangi suhbatda \"Kechagi saytni davom ettir\" dedi. SI nima qiladi?",
+     "q": "SI gul do'koni haqidagi gapni qaysi holatda biladi?",
      "o": [
-      "Kechagi saytni bilmaydi",
-      "Kechagi saytni darrov topadi",
-      "Kechagi suhbatni ochib o'qiydi",
-      "Bolaga qo'ng'iroq qiladi"
+      "Shu suhbatda aytilgan bo'lsa",
+      "Boshqa suhbatda aytilgan bo'lsa",
+      "Do'stingizga aytilgan bo'lsa",
+      "Daftarga yozilgan bo'lsa"
      ],
-     "e": "Yangi suhbatda SI oldingi suhbatni bilmaydi."
+     "e": "SI faqat shu suhbatda aytilganni biladi."
     },
     {
-     "q": "SI oldingi gaplaringizni bilishi uchun nima qilish kerak?",
+     "q": "Bobur ikki suhbat ochdi: biri sport zali, biri kitob do'koni haqida. Ikkinchisidagi SI zalni biladimi?",
      "o": [
-      "Shu suhbatni davom ettirish yoki qayta aytish",
-      "Yangi suhbat ochish",
-      "Kompyuterni o'chirib yoqish",
-      "SI'ga \"esla\" deb buyurish"
+      "Yo'q, zal boshqa suhbatda",
+      "Ha, ikkalasini ham biladi",
+      "Ha, bitta kompyuterda-ku",
+      "Faqat zal nomini biladi"
      ],
-     "e": "Yangi suhbat ochsangiz, SI oldingi suhbatni bilmaydi."
+     "e": "Har bir suhbat alohida, SI boshqa suhbatni bilmaydi."
     },
     {
-     "q": "Nega yangi suhbatda SI loyihangizni \"unutgan\"dek bo'ladi?",
+     "q": "Kecha botga 5 ta qoida aytdingiz. Bugun yangi suhbatda SI ularga nega amal qilmadi?",
      "o": [
-      "U oldingi suhbatni bilmaydi",
-      "U sizdan xafa bo'lgan",
-      "U charchagan",
-      "Internet o'chib qolgan"
+      "U qoidalarni bilmaydi",
+      "SI xafa bo'lgan",
+      "Bot eskirib qolgan",
+      "Qoidalar o'chib ketgan"
      ],
-     "e": "Yangi suhbat ochilganda SI oldingi suhbatni bilmaydi."
+     "e": "Yangi suhbatda SI oldingi suhbatdagi qoidalarni bilmaydi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI bir narsani bilmasa, nima qiladi?",
+     "q": "Sardor sahifada xato ko'rdi, lekin SI'ga yozmadi. Xato nima bo'ladi?",
      "o": [
-      "O'zi to'ldirib yuboradi",
-      "Doim sizdan so'raydi",
-      "Javob bermaydi",
-      "Kompyuterni o'chiradi"
+      "Tuzatilmay qoladi",
+      "O'zi yo'qolib ketadi",
+      "SI o'zi topib tuzatadi",
+      "Ertaga o'zi tuzaladi"
      ],
-     "e": "SI bilmagan narsasini so'ramaydi, o'zi to'ldirib yuboradi."
+     "e": "SI ekranni ko'rmaydi, unga yozmasangiz xato qoladi."
     },
     {
-     "q": "Bola \"Kafemga menyu yoz\" dedi, taomlarni aytmadi. SI nima qiladi?",
+     "q": "Kafe sahifasida narx «0 so'm» chiqdi. Birinchi qadam nima?",
      "o": [
-      "Taomlarni o'zi o'ylab yozadi",
-      "Albatta taomlarni so'raydi",
-      "Hech narsa yozmaydi",
-      "Bolaning kafesiga boradi"
+      "SI'ga yozib, tuzatishni so'rash",
+      "Hech kimga aytmaslik",
+      "Sahifani yopib qo'yish",
+      "Xato o'zi tuzalishini kutish"
      ],
-     "e": "SI bilmagan narsasini o'zi to'ldirib yuboradi."
+     "e": "Xato ko'rsangiz, SI'ga yozing va tuzatishni so'rang."
     },
     {
-     "q": "SI to'ldirib yubormasligi uchun nima qilish kerak?",
+     "q": "Telegram bot noto'g'ri tugma chiqardi. Xatoni kim tuzatib beradi?",
      "o": [
-      "Kerakli ma'lumotni o'zingiz bering",
-      "SI'ga qisqa yozing",
-      "Har safar yangi suhbat oching",
-      "Savolni katta harflarda yozing"
+      "SI, siz so'rasangiz",
+      "Bot o'zi tuzatadi",
+      "Telefoningiz tuzatadi",
+      "Hech kim, shunday qoladi"
      ],
-     "e": "Kerakli ma'lumotni o'zingiz bersangiz, SI to'ldirmaydi."
+     "e": "SI siz yozib so'rasangiz tuzatadi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "SI xatoni tuzatdi. Keyin nima qilasiz?",
      "o": [
-      "SI bilmaganini so'ramay, o'zi to'ldirishi mumkin",
-      "SI bilmasa, har doim savol beradi",
-      "SI bilmagan narsasini hech qachon yozmaydi",
-      "SI bilmasa, \"bilmayman\" deb to'xtaydi"
+      "Sahifani qayta ko'rib chiqaman",
+      "SI'ni o'chirib qo'yaman",
+      "Sahifani butunlay o'chiraman",
+      "Xatoni yana qaytaraman"
      ],
-     "e": "SI bilmagan narsasini so'ramaydi, o'zi to'ldirib yuboradi."
+     "e": "Tuzatish to'g'ri bo'lganini ko'zingiz bilan tekshirasiz."
     },
     {
-     "q": "Bola SI'dan do'koni uchun e'lon so'radi. SI noto'g'ri manzil yozdi. Nega?",
+     "q": "Nilufar SI'ga faqat «Sarlavha qiyshiq» deb yozdi. U nimani yozmadi?",
      "o": [
-      "Bola manzilni bermagan, SI o'zi to'ldirgan",
-      "SI manzillarni yomon ko'radi",
-      "Do'kon yopilgan",
-      "SI bolaning uyini ko'rgan"
+      "Tuzatishni so'rashni",
+      "Salom berishni",
+      "O'z ismini",
+      "Bugungi sanani"
      ],
-     "e": "Ma'lumot berilmasa, SI uni o'zi to'ldirib yuboradi."
+     "e": "Xatoni yozgach, tuzatishni ham so'rash kerak."
     },
     {
-     "q": "Qaysi prompt yaxshiroq?",
+     "q": "Kitob do'koni sahifasida narx ikki marta yozilgan. SI'ga eng yaxshi so'rov qaysi?",
      "o": [
-      "\"Mening ismim Anvar. Menga tabriknoma yoz\"",
-      "\"Menga tabriknoma yoz\"",
-      "\"Tabriknoma\"",
-      "\"Biror narsa yoz\""
+      "«Narx ikki marta yozilgan, bittasini o'chir»",
+      "«Sahifada nimadir g'alati ko'rinyapti»",
+      "«Kitoblar sahifasini menga ko'rsat»",
+      "«Narxlar haqida nima deysan?»"
      ],
-     "e": "Kerakli ma'lumot berilsa, SI o'zidan to'ldirmaydi."
+     "e": "Unda xato ham, tuzatish so'rovi ham aniq yozilgan."
     }
    ]
   }

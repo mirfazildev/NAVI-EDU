@@ -7,188 +7,188 @@ CONTENT[17] = {
      "o": [
       "Fayllarni o'zi o'zgartiradi",
       "Faqat javob yozadi",
-      "Kompyuterni o'chiradi",
-      "Internetni uzadi"
+      "Faqat rasm chizadi",
+      "Kompyuterni o'chiradi"
      ],
      "e": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
     },
     {
-     "q": "Oddiy chatda SI nima qiladi?",
+     "q": "Chatda SI Aliga sarlavha matnini yozib berdi. Uni faylga kim qo'yadi?",
      "o": [
-      "Javob yozadi",
-      "Fayllarni o'zi o'zgartiradi",
-      "Kompyuterni qayta yoqadi",
-      "Ishni o'zi boshlaydi"
+      "Ali o'zi qo'yadi",
+      "SI o'zi qo'yadi",
+      "Sayt o'zi qo'yadi",
+      "Kompyuter o'zi qo'yadi"
      ],
-     "e": "Chatda SI faqat javob yozadi."
+     "e": "Chatda SI faqat javob yozadi, faylni siz o'zgartirasiz."
     },
     {
-     "q": "SI saytingiz faylini o'zi o'zgartirdi. Bu qaysi rejim?",
+     "q": "Madina \"Saytga tugma qo'sh\" dedi va fayl o'zi o'zgardi. Bu qaysi rejim?",
      "o": [
       "Agent rejimi",
       "Oddiy chat",
-      "Xato xabari",
-      "Skrinshot"
+      "Rasm rejimi",
+      "Tungi rejim"
      ],
-     "e": "Fayllarni o'zi o'zgartirsa — bu agent rejimi."
+     "e": "Fayl o'zi o'zgardi, demak bu agent rejimi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Chatda SI \"Tugma qo'shdim\" deb yozdi. Fayl o'zgardimi?",
      "o": [
-      "Agent rejimida SI fayllarni o'zgartiradi",
-      "Chatda SI fayllarni o'zi o'zgartiradi",
-      "Agent rejimida SI hech narsa qilmaydi",
-      "Agent rejimi — bu kompyuter nomi"
+      "Yo'q, chat faqat javob yozadi",
+      "Ha, chat faylni o'zgartirdi",
+      "Ha, SI shunday dedi",
+      "Ha, hamma rejim bir xil"
      ],
-     "e": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
+     "e": "Chatda SI faylni o'zgartirmaydi, faqat javob yozadi."
     },
     {
-     "q": "Chatda SI sarlavha yozib berdi. Uni faylga kim qo'yadi?",
+     "q": "Nilufar faqat bitta she'r so'ramoqchi, fayl kerak emas. Qaysi rejim mos?",
      "o": [
-      "Siz o'zingiz",
-      "SI o'zi qo'yadi",
-      "Kompyuter o'zi qo'yadi",
-      "Internet qo'yadi"
+      "Oddiy chat",
+      "Agent rejimi",
+      "Ikkalasi ham yaramaydi",
+      "Faqat yangi kompyuter"
      ],
-     "e": "Chatda SI faqat javob yozadi, faylni o'zgartirmaydi."
+     "e": "Faqat javob kerak bo'lsa, oddiy chat yetadi."
     },
     {
-     "q": "Chat va agent rejimining farqi nima?",
+     "q": "Agent rejimi Otabekni qaysi ishdan qutqaradi?",
      "o": [
-      "Agentda SI fayllarni o'zi o'zgartiradi",
-      "Chatda SI javob bermaydi",
-      "Agentda SI'ga prompt yozilmaydi",
-      "Ikkalasi bir xil"
+      "Kodni faylga qo'lda ko'chirishdan",
+      "Prompt yozishdan",
+      "Natijani ko'rishdan",
+      "O'ylab ko'rishdan"
      ],
-     "e": "Chatda SI javob yozadi, agentda fayllarni o'zgartiradi."
+     "e": "Agent faylni o'zi o'zgartiradi, kodni qo'lda ko'chirish shart emas."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Agent faylni o'zgartirdi. Keyin u nima qiladi?",
+     "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
      "o": [
       "O'zgarishni sizga ko'rsatadi",
-      "O'zgarishni yashiradi",
-      "Faylni o'chiradi",
-      "Kompyuterni o'chiradi"
+      "Indamay ishni tugatadi",
+      "Saytni o'chirib qo'yadi",
+      "Yangi suhbat ochadi"
      ],
      "e": "Agent har bir o'zgarishni sizga ko'rsatadi."
-    },
-    {
-     "q": "Agent qaysi o'zgarishlarni sizga ko'rsatadi?",
-     "o": [
-      "Har bir o'zgarishni",
-      "Faqat birinchisini",
-      "Faqat kattalarini",
-      "Faqat oxirgisini"
-     ],
-     "e": "Agent har bir o'zgarishni ko'rsatadi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Agent o'zgarishlarni sizga ko'rsatadi",
-      "Agent o'zgarishlarni yashirin qiladi",
-      "Agent faqat xatolarni ko'rsatadi",
-      "Agent hech narsani ko'rsatmaydi"
-     ],
-     "e": "Agent har bir o'zgarishni sizga ko'rsatadi."
-    },
-    {
-     "q": "Nega agent o'zgarishni sizga ko'rsatadi?",
-     "o": [
-      "Siz uni ko'rib chiqishingiz uchun",
-      "Sizni chalg'itish uchun",
-      "Faylni o'chirish uchun",
-      "Vaqt o'tkazish uchun"
-     ],
-     "e": "O'zgarishni ko'rib, siz qaror qilasiz."
     },
     {
      "q": "Agent 3 ta faylni o'zgartirdi. Nechtasini sizga ko'rsatadi?",
      "o": [
       "Uchalasini ham",
-      "Faqat bittasini",
-      "Faqat ikkitasini",
-      "Faqat oxirgisini"
+      "Faqat birinchisini",
+      "Faqat oxirgisini",
+      "Faqat eng kattasini"
      ],
-     "e": "Agent har bir o'zgarishni ko'rsatadi."
+     "e": "Agent har bir o'zgarishni ko'rsatadi, birortasini yashirmaydi."
     },
     {
-     "q": "Agent saytga yangi tugma qo'shdi. Siz buni qanday bilasiz?",
+     "q": "Nega agent o'zgarishni sizga ko'rsatadi?",
      "o": [
-      "Agent o'zgarishni ko'rsatadi",
-      "Bilishning iloji yo'q",
-      "Do'stingiz aytadi",
-      "Kompyuter ovoz chiqaradi"
+      "Siz ko'rib chiqishingiz uchun",
+      "Maqtanish uchun",
+      "Vaqt o'tishi uchun",
+      "Faylni o'chirish uchun"
      ],
-     "e": "Agent har bir o'zgarishni sizga ko'rsatadi."
+     "e": "Siz o'zgarishni ko'rib, to'g'rimi yo'qmi bilishingiz kerak."
+    },
+    {
+     "q": "Agent ishidan keyin Madina \"qizil\" o'chib, \"ko'k\" yozilganini ko'rdi. Bu nima?",
+     "o": [
+      "Agent ko'rsatgan o'zgarish",
+      "Saytdagi yangi xato",
+      "Kompyuterning xabari",
+      "Do'stining xabari"
+     ],
+     "e": "Agent nimani o'zgartirganini sizga ko'rsatib beradi."
+    },
+    {
+     "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
+     "o": [
+      "Ortiqcha o'zgarishni sezishga",
+      "Saytni tezlashtirishga",
+      "Prompt yozishga",
+      "Rasm chizishga"
+     ],
+     "e": "O'zgarishlar ko'rsatilgani uchun Jasur ortiqcha narsani sezdi."
+    },
+    {
+     "q": "Sardor ko'rsatilgan o'zgarishlarni o'qimay o'tkazib yubordi. Nima bo'lishi mumkin?",
+     "o": [
+      "Xatoni sezmay qoladi",
+      "Sayt tezroq ishlaydi",
+      "SI xursand bo'ladi",
+      "Fayl o'zi tuzaladi"
+     ],
+     "e": "O'zgarishni ko'rmasangiz, undagi xatoni ham sezmaysiz."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Agent qilgan o'zgarish qachon saqlanadi?",
+     "q": "Agent o'zgarish qildi, Ali hali qabul qilmadi. O'zgarish saqlandimi?",
      "o": [
-      "Siz qabul qilganingizda",
-      "Darhol, o'zi",
-      "Kompyuter o'chganda",
-      "Ertasi kuni"
+      "Yo'q, hali saqlanmadi",
+      "Ha, darhol saqlandi",
+      "Ha, agent saqlab qo'ydi",
+      "Ha, yarmi saqlandi"
      ],
      "e": "Siz qabul qilmaguningizcha o'zgarish saqlanmaydi."
     },
     {
-     "q": "Agent o'zgarish qildi. Siz hali qabul qilmadingiz. U saqlandimi?",
+     "q": "Madina o'zgarishni ko'rdi va qabul qildi. Endi nima bo'ladi?",
      "o": [
-      "Yo'q, hali saqlanmadi",
-      "Ha, saqlandi",
-      "Ha, yarmi saqlandi",
-      "Ha, internetga yuborildi"
+      "O'zgarish faylda saqlanadi",
+      "O'zgarish o'chib ketadi",
+      "Agent hammasini qaytaradi",
+      "Fayl yopilib qoladi"
      ],
-     "e": "Qabul qilinmagan o'zgarish saqlanmaydi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Qabul qilmasangiz, o'zgarish saqlanmaydi",
-      "Agent o'zgarishni o'zi saqlaydi",
-      "Har bir o'zgarish darhol saqlanadi",
-      "Qabul qilish shart emas"
-     ],
-     "e": "O'zgarish faqat siz qabul qilganda saqlanadi."
-    },
-    {
-     "q": "O'zgarish saqlanishi uchun nima qilish kerak?",
-     "o": [
-      "Uni qabul qilish",
-      "SI'ga rahmat yozish",
-      "Kompyuterni o'chirish",
-      "Yangi suhbat ochish"
-     ],
-     "e": "Siz qabul qilsangiz, o'zgarish saqlanadi."
+     "e": "Qabul qilingan o'zgarish saqlanadi."
     },
     {
      "q": "O'zgarish saqlanadimi yo'qmi — buni kim hal qiladi?",
      "o": [
-      "Siz",
-      "SI",
+      "Siz o'zingiz",
+      "Agent o'zi",
       "Kompyuter",
-      "Internet"
+      "Sayt egasi"
      ],
-     "e": "Siz qabul qilmaguningizcha o'zgarish saqlanmaydi."
+     "e": "O'zgarish faqat siz qabul qilsangiz saqlanadi."
     },
     {
-     "q": "Agent saytni o'zgartirdi, siz qabul qilmadingiz. Sayt qanday?",
+     "q": "Agent kafe menyusini o'zgartirdi, Kamolaga yoqmadi. Nima qiladi?",
      "o": [
-      "Avvalgidek, o'zgarmagan",
-      "Yangi o'zgarish bilan",
-      "O'chib ketgan",
-      "Yarmi o'zgargan"
+      "Qabul qilmaydi",
+      "Baribir qabul qiladi",
+      "Saytni o'chiradi",
+      "Kompyuterni o'chiradi"
      ],
-     "e": "Qabul qilinmagan o'zgarish saqlanmaydi."
+     "e": "Qabul qilinmasa, yoqmagan o'zgarish saqlanmaydi."
+    },
+    {
+     "q": "Nega \"Qabul qilish\" tugmasi foydali?",
+     "o": [
+      "Xato o'zgarish o'zi saqlanmaydi",
+      "Agent tezroq ishlaydi",
+      "Sayt chiroyliroq bo'ladi",
+      "SI ko'proq yozadi"
+     ],
+     "e": "Siz ko'rib qabul qilmaguncha hech narsa saqlanmaydi."
+    },
+    {
+     "q": "Nilufar 2 ta o'zgarishdan faqat birinchisini qabul qildi. Qaysi biri saqlanadi?",
+     "o": [
+      "Faqat birinchisi",
+      "Ikkalasi ham",
+      "Faqat ikkinchisi",
+      "Ikkalasi ham emas"
+     ],
+     "e": "Faqat qabul qilingan o'zgarish saqlanadi."
     }
    ]
   }

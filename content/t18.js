@@ -3,192 +3,192 @@ CONTENT[18] = {
   {
    "pool": [
     {
-     "q": "Katta ishdan oldin SI'dan nima so'rash kerak?",
+     "q": "Ali SI bilan butun kafe sayti qilmoqchi. Avval SI'dan nima so'raydi?",
      "o": [
       "Ish rejasini",
-      "Hazil",
-      "Uning ismini",
-      "Rasm"
+      "Darhol tayyor saytni",
+      "Saytning rangini",
+      "Faqat bitta rasmni"
      ],
      "e": "Katta ishdan oldin SI'dan reja so'rang."
-    },
-    {
-     "q": "Siz SI bilan butun sayt qilmoqchisiz. Avval nima qilasiz?",
-     "o": [
-      "SI'dan reja so'rayman",
-      "Darhol \"Hammasini qil\" deyman",
-      "Kompyuterni qayta yoqaman",
-      "Hech narsa demayman"
-     ],
-     "e": "Katta ishdan oldin reja so'raladi."
-    },
-    {
-     "q": "Qaysi prompt reja so'raydi?",
-     "o": [
-      "\"Avval ish rejasini yozib ber\"",
-      "\"Hammasini hozir qil\"",
-      "\"Salom\"",
-      "\"Tezroq bo'l\""
-     ],
-     "e": "Bu promptda SI'dan reja so'ralgan."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Katta ishdan oldin reja so'rash kerak",
-      "Reja faqat kichik ishga kerak",
-      "Reja so'rash — vaqtni yo'qotish",
-      "SI reja tuza olmaydi"
-     ],
-     "e": "Katta ishdan oldin SI'dan reja so'rang."
-    },
-    {
-     "q": "Reja nima uchun kerak?",
-     "o": [
-      "SI nima qilishini oldindan ko'rish uchun",
-      "SI'ni sekinlashtirish uchun",
-      "Faylni o'chirish uchun",
-      "Kompyuterni tozalash uchun"
-     ],
-     "e": "Rejadan SI qiladigan qadamlarni oldindan ko'rasiz."
     },
     {
      "q": "Qaysi ish uchun avval reja so'rash kerak?",
      "o": [
-      "Butun do'kon sayti qilish",
+      "Butun gul do'koni sayti",
       "Bitta so'zni tuzatish",
-      "Salomlashish",
-      "Bitta harfni almashtirish"
+      "Sarlavha rangini o'zgartirish",
+      "Bitta vergul qo'yish"
      ],
-     "e": "Reja katta ishdan oldin so'raladi."
+     "e": "Butun sayt — katta ish, unga reja kerak."
+    },
+    {
+     "q": "Qaysi prompt SI'dan reja so'raydi?",
+     "o": [
+      "\"Boshlamay, avval reja yozib ber\"",
+      "\"Saytni hoziroq qilib ber\"",
+      "\"Tezroq bo'l\"",
+      "\"Rangni ko'k qil\""
+     ],
+     "e": "Bu prompt SI'dan ishdan oldin reja so'raydi."
+    },
+    {
+     "q": "Reja sizga nimaga yordam beradi?",
+     "o": [
+      "SI nima qilishini oldindan bilasiz",
+      "SI tezroq yozadi",
+      "Sayt chiroyli bo'ladi",
+      "Xato umuman bo'lmaydi"
+     ],
+     "e": "Reja SI qiladigan ishlarni oldindan ko'rsatadi."
+    },
+    {
+     "q": "Madina sarlavhadagi bitta harfni tuzatmoqchi. Reja kerakmi?",
+     "o": [
+      "Yo'q, bu kichik ish",
+      "Ha, har doim reja kerak",
+      "Ha, 10 qadamli reja kerak",
+      "Ha, avval bot kerak"
+     ],
+     "e": "Reja katta ish uchun kerak, bitta harf kichik ish."
+    },
+    {
+     "q": "Jasur reja so'ramay, darhol butun botni so'radi. Qanday xavf bor?",
+     "o": [
+      "SI keraksiz ish qilgan bo'lishi mumkin",
+      "Bot juda chiroyli chiqadi",
+      "SI charchab qoladi",
+      "Xavf umuman yo'q"
+     ],
+     "e": "Rejasiz SI nima qilishini oldindan bilmaysiz."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Rejada keraksiz qadam bor. Nima qilasiz?",
+     "q": "Alining logotipi tayyor, rejada esa \"Logotip chizish\" bor. Bu qadam qanday?",
      "o": [
-      "Uni olib tashlashni aytaman",
-      "Indamay qabul qilaman",
-      "Yana bitta qadam qo'shtiraman",
-      "Rejani o'qimay boshlataman"
-     ],
-     "e": "Keraksiz qadamni olib tashlashni SI'ga ayting."
-    },
-    {
-     "q": "Sizga oddiy sahifa kerak. Rejada \"O'yin qo'shish\" bor. Bu qadam qanday?",
-     "o": [
-      "Keraksiz",
-      "Juda kerakli",
+      "Keraksiz qadam",
       "Eng muhim qadam",
-      "Majburiy"
+      "Kerakli qadam",
+      "Birinchi qadam"
      ],
-     "e": "Sizga o'yin kerak emas — bu keraksiz qadam."
+     "e": "Logotip tayyor, demak uni chizish qadami keraksiz."
     },
     {
-     "q": "Qaysi prompt keraksiz qadamni olib tashlaydi?",
+     "q": "Madinaga faqat gul narxlari sahifasi kerak. Qaysi qadam keraksiz?",
      "o": [
-      "\"3-qadamni olib tashla, u kerak emas\"",
-      "\"Rejang zo'r\"",
-      "\"Yana qadam qo'sh\"",
-      "\"Qaytadan salom\""
+      "Video qo'shish",
+      "Gul nomlarini yozish",
+      "Narxlarni yozish",
+      "Sarlavha qo'yish"
      ],
-     "e": "Bu promptda qaysi qadam olib tashlanishi aytilgan."
+     "e": "Narxlar sahifasiga video kerak emas."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Keraksiz qadam rejada qolib ketsa, nima bo'ladi?",
      "o": [
-      "Keraksiz qadamni olib tashlashni aytish mumkin",
-      "Rejani o'zgartirib bo'lmaydi",
-      "Rejadagi hamma qadam doim kerak",
-      "Keraksiz qadamni SI o'zi biladi"
+      "SI ortiqcha ish qiladi",
+      "SI uni o'zi tashlaydi",
+      "Sayt tezroq tayyor bo'ladi",
+      "Reja qisqaroq bo'ladi"
      ],
-     "e": "Rejada keraksiz qadam bo'lsa, olib tashlashni ayting."
+     "e": "SI rejadagi hamma qadamni bajaradi, keraksizini ham."
     },
     {
-     "q": "Kafe sayti rejasida \"Musiqa qo'shish\" bor. Sizga musiqa kerak emas. Nima deysiz?",
+     "q": "Kamolaning rejasida 2 ta keraksiz qadam bor. U nima qiladi?",
      "o": [
-      "\"Musiqa qadamini olib tashla\"",
-      "\"Yana musiqa qo'sh\"",
-      "\"Rejani shunday qoldir\"",
-      "\"Tezroq boshla\""
+      "Ikkalasini olib tashlashni aytadi",
+      "Faqat bittasini aytadi",
+      "Rejani shundayicha qoldiradi",
+      "Butun rejani o'chiradi"
      ],
-     "e": "Keraksiz qadamni olib tashlashni ayting."
+     "e": "Har bir keraksiz qadamni olib tashlashni ayting."
     },
     {
-     "q": "Keraksiz qadam rejada qolsa, nima bo'ladi?",
+     "q": "Sport zali rejasi: 1) Sarlavha 2) Narxlar 3) Musiqa. Musiqa kerak emas, nima yozasiz?",
      "o": [
-      "SI keraksiz ish ham qiladi",
-      "Ish tezroq bitadi",
-      "SI ishni to'xtatadi",
-      "Kompyuter buziladi"
+      "\"3-qadamni olib tashla\"",
+      "\"Rejani qaytadan yoz\"",
+      "\"Musiqani balandroq qil\"",
+      "\"1-qadamni olib tashla\""
      ],
-     "e": "Rejadagi har bir qadam bajariladi, keraksizi ham."
+     "e": "Musiqa 3-qadam, uni olib tashlashni aytasiz."
+    },
+    {
+     "q": "SI \"Keraksiz qadamni olib tashla\" gapini tushunmadi. Nimani qo'shish kerak?",
+     "o": [
+      "Qadamning raqami yoki nomi",
+      "Undov belgisi",
+      "Salom so'zi",
+      "Katta harflar"
+     ],
+     "e": "Qaysi qadam ekanini aniq ayting: raqami yoki nomi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Rejada kerakli qadam yetishmayapti. Nima qilasiz?",
+     "q": "Rejada keraksiz \"O'yin\" bor, \"Telefon raqami\" yo'q. Nima yozasiz?",
      "o": [
-      "Uni qo'shishni aytaman",
-      "Indamay qabul qilaman",
-      "Boshqa qadamni o'chirtiraman",
-      "Rejani tashlab ketaman"
+      "\"O'yinni olib tashla, raqamni qo'sh\"",
+      "\"Rejani shundayicha bajar\"",
+      "\"O'yinni ham, raqamni ham qo'sh\"",
+      "\"Ikkalasini ham olib tashla\""
      ],
-     "e": "Yetishmagan qadamni qo'shishni SI'ga ayting."
+     "e": "Keraksizini olib tashlaysiz, yetishmaganini qo'shasiz."
     },
     {
-     "q": "Kafe saytiga menyu kerak. Rejada menyu yo'q. Qaysi prompt to'g'ri?",
+     "q": "Bot buyurtma olishi kerak, rejada esa faqat salom va menyu bor. Nima yetishmaydi?",
      "o": [
-      "\"Rejaga menyu qadamini qo'sh\"",
-      "\"Rejang zo'r, boshla\"",
-      "\"Menyu qadamini olib tashla\"",
-      "\"Salom\""
+      "Buyurtma olish qadami",
+      "Salom berish qadami",
+      "Menyu ko'rsatish qadami",
+      "Rang tanlash qadami"
      ],
-     "e": "Kerakli qadam yo'q bo'lsa, uni qo'shishni ayting."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Yetishmagan qadamni qo'shishni aytish kerak",
-      "SI doim hamma qadamni o'ylaydi",
-      "Rejaga qadam qo'shib bo'lmaydi",
-      "Yetishmagan qadam muhim emas"
-     ],
-     "e": "Rejada kerakli qadam bo'lmasa, uni qo'shishni ayting."
-    },
-    {
-     "q": "Bot rejasida \"Salomlashish\" yo'q. Sizga u kerak. Nima deysiz?",
-     "o": [
-      "\"Salomlashish qadamini qo'sh\"",
-      "\"Rejani shunday qoldir\"",
-      "\"Salomlashishni olib tashla\"",
-      "\"Tezroq boshla\""
-     ],
-     "e": "Kerakli qadamni qo'shishni ayting."
+     "e": "Buyurtma olish kerak, lekin rejada u yo'q."
     },
     {
      "q": "Yetishmagan qadamni qanday topasiz?",
      "o": [
-      "Rejani o'qib, kerakli hammasi bormi qarayman",
-      "Rejani o'qimasdan boshlayman",
-      "Faqat birinchi qadamni o'qiyman",
-      "SI'ga ishonaman, o'qimayman"
+      "Kerakli narsalarni rejadan qidiraman",
+      "SI o'zi aytguncha kutaman",
+      "Rejani o'qimay qabul qilaman",
+      "Faqat birinchi qadamni o'qiyman"
      ],
-     "e": "Rejani o'qib, kerakli qadamlar borligini tekshiring."
+     "e": "Har bir kerakli narsa rejada bormi, qarab chiqing."
     },
     {
-     "q": "Keraksiz va yetishmagan qadam bilan nima qilinadi?",
+     "q": "Jasur yetishmagan qadamni SI'ga aytmadi. Nima bo'ladi?",
      "o": [
-      "Keraksiz olib tashlanadi, yetishmagan qo'shiladi",
-      "Ikkalasi ham olib tashlanadi",
-      "Ikkalasi ham qo'shiladi",
-      "Keraksiz qo'shiladi, yetishmagan olib tashlanadi"
+      "Saytda o'sha narsa bo'lmaydi",
+      "SI baribir o'zi qo'shadi",
+      "Sayt tezroq ishlaydi",
+      "Reja o'zi to'lib qoladi"
      ],
-     "e": "Keraksiz qadam olib tashlanadi, kerakli qadam qo'shiladi."
+     "e": "Rejada yo'q qadamni SI bajarmaydi."
+    },
+    {
+     "q": "Kamolaga kitob rasmlari kerak, rejada ular yo'q. Qaysi prompt aniq?",
+     "o": [
+      "\"Kitob rasmlari qadamini qo'sh\"",
+      "\"Yaxshi reja emas\"",
+      "\"Rejani qaytadan yoz\"",
+      "\"Rasmlar kerak emas\""
+     ],
+     "e": "Bu prompt qaysi qadamni qo'shishni aniq aytadi."
+    },
+    {
+     "q": "Otabek rejani o'qidi, hamma kerakli qadam bor. Nima qiladi?",
+     "o": [
+      "Rejani shu holicha ma'qullaydi",
+      "Baribir yangi qadam qo'shadi",
+      "Rejani o'chirib tashlaydi",
+      "Boshqa reja so'raydi"
+     ],
+     "e": "Hech narsa yetishmasa, qo'shadigan narsa ham yo'q."
     }
    ]
   }

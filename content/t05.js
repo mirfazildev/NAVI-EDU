@@ -7,60 +7,60 @@ CONTENT[5] = {
      "o": [
       "SI'ga yozgan so'rovingiz",
       "SI yozgan javob",
-      "Kompyuter dasturi",
-      "Saytning nomi"
+      "Saytning nomi",
+      "Kompyuter dasturi"
      ],
      "e": "Prompt — siz SI'ga yozgan so'rov."
     },
     {
-     "q": "Siz SI'ga \"Kafe uchun nom taklif qil\" deb yozdingiz. Bu nima?",
+     "q": "Aziz SI'ga «Gul do'koniga nom top» deb yozdi. Bu gap nima?",
      "o": [
       "Prompt",
       "SI javobi",
-      "Sayt",
-      "Xato xabari"
+      "Xato xabari",
+      "Sayt manzili"
      ],
-     "e": "Siz SI'ga yozgan so'rov — prompt."
+     "e": "SI'ga yozilgan so'rov prompt deyiladi."
     },
     {
-     "q": "Promptni kim yozadi?",
+     "q": "SI «Somsa House» deb javob berdi. Bu prompt hisoblanadimi?",
      "o": [
-      "Siz",
-      "SI",
-      "Kompyuter",
-      "Internet"
+      "Yo'q, bu SI javobi",
+      "Ha, bu prompt",
+      "Ha, chunki qisqa",
+      "Ha, chunki inglizcha"
      ],
-     "e": "Promptni siz yozasiz, SI unga javob beradi."
+     "e": "Prompt — siz yozgan so'rov, bu esa SI javobi."
     },
     {
-     "q": "SI \"Somsa House\" deb javob berdi. Bu nima?",
+     "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
      "o": [
-      "SI javobi",
-      "Prompt",
-      "Siz yozgan so'rov",
-      "Dastur nomi"
+      "Siz yozgan «Rasm chiz» xabari",
+      "SI chizgan rasm",
+      "SI yozgan izoh",
+      "Ekrandagi sana"
      ],
-     "e": "Bu — SI javobi. Prompt esa siz yozgan so'rov."
+     "e": "Prompt — siz SI'ga yozgan so'rov."
     },
     {
-     "q": "Qaysi biri prompt?",
+     "q": "Bobur SI'ga hali hech narsa yozmadi. SI javob beradimi?",
      "o": [
-      "\"Saytga sarlavha yozib ber\"",
-      "SI qaytargan javob matni",
-      "Kompyuterning nomi",
-      "Saytning manzili"
+      "Yo'q, avval prompt kerak",
+      "Ha, o'zi biladi",
+      "Ha, har daqiqada",
+      "Faqat ertalab beradi"
      ],
-     "e": "Prompt — SI'ga yozilgan so'rov."
+     "e": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
     },
     {
-     "q": "Promptni kimga yozasiz?",
+     "q": "Do'stingiz SI'ga nima deb yozganini ko'rsatdi. Siz nimani ko'ryapsiz?",
      "o": [
-      "Sun'iy intellektga",
-      "Do'stingizga",
-      "Kompyuterning o'ziga",
-      "Sayt egasiga"
+      "Uning promptini",
+      "SI javobini",
+      "Sayt manzilini",
+      "Xato xabarini"
      ],
-     "e": "Prompt — Sun'iy intellektga yozgan so'rovingiz."
+     "e": "Do'stingiz SI'ga yozgan so'rov — uning prompti."
     }
    ]
   },
@@ -69,126 +69,126 @@ CONTENT[5] = {
     {
      "q": "Qaysi prompt aniqroq?",
      "o": [
-      "\"Kafe saytiga sarlavha yoz\"",
-      "\"Biror narsa yoz\"",
-      "\"Yordam ber\"",
-      "\"Salom\""
+      "«Kafe saytiga sarlavha yoz»",
+      "«Menga bir narsa yoz»",
+      "«Iltimos, yordam berib yubor»",
+      "«Sayt haqida o'ylab ko'r»"
      ],
-     "e": "Unda nima kerakligi yozilgan: kafe saytiga sarlavha."
+     "e": "Unda nima kerakligi aniq yozilgan: kafe saytiga sarlavha."
     },
     {
-     "q": "\"Yordam ber\" promptida nima yo'q?",
+     "q": "Lola «Gul do'koni uchun yoz» dedi. Nima yetishmayapti?",
      "o": [
-      "Nima kerakligi",
-      "Salomlashish",
-      "Tinish belgisi",
-      "Katta harf"
+      "Nima yozish kerakligi",
+      "«Salom» so'zi",
+      "Lolaning yoshi",
+      "Undov belgisi"
      ],
-     "e": "SI nima kerakligini bilmaydi."
+     "e": "Aniq promptda nima kerakligi yoziladi."
     },
     {
-     "q": "Bot uchun salomlashish matni kerak. Qaysi prompt aniq?",
+     "q": "«Maktab saytiga ... yoz» promptida nuqtalar o'rniga nima yoziladi?",
      "o": [
-      "\"Bot uchun salomlashish matni yoz\"",
-      "\"Matn yoz\"",
-      "\"Bot\"",
-      "\"Yordam kerak\""
+      "yangilik matni",
+      "nimadir",
+      "bir narsa",
+      "xohlaganingni"
      ],
-     "e": "Unda nima kerakligi aniq yozilgan."
+     "e": "Nima kerakligi aniq aytilishi kerak: yangilik matni."
     },
     {
-     "q": "Qaysi promptda nima kerakligi yozilgan?",
+     "q": "Prompt faqat «Rasm» deb yozildi. SI nima qiladi?",
      "o": [
-      "\"Gul do'koni saytiga sarlavha yoz\"",
-      "\"Gul\"",
-      "\"Menga kerak\"",
-      "\"Qani boshladik\""
+      "Nima kerakligini taxmin qiladi",
+      "Siz xohlagan rasmni chizadi",
+      "Javob bermay o'chib qoladi",
+      "Rasm do'koniga boradi"
      ],
-     "e": "Nima kerak: gul do'koni saytiga sarlavha."
+     "e": "Nima kerakligi yozilmasa, SI taxmin qilishga majbur."
     },
     {
-     "q": "\"Biror narsa yoz\" — bu prompt aniqmi?",
+     "q": "Jasur faqat «Kitob do'koni» deb yozdi. Qanday tuzatish kerak?",
      "o": [
-      "Yo'q, nima kerakligi yo'q",
-      "Ha",
-      "Ha, chunki qisqa",
-      "Ha, chunki \"yoz\" so'zi bor"
+      "«Kitob do'koniga sarlavha yoz»",
+      "«Kitob do'koni!!!»",
+      "«KITOB DO'KONI»",
+      "«Kitob do'koni haqida»"
      ],
-     "e": "Nima kerakligi yozilmagan."
+     "e": "Promptga nima kerakligi qo'shildi: sarlavha."
     },
     {
-     "q": "Sport zali saytiga sarlavha kerak. Qaysi prompt to'g'ri?",
+     "q": "«Botga salomlashish matni yoz». Bu promptda nima kerakligi aytilganmi?",
      "o": [
-      "\"Sport zali saytiga sarlavha yoz\"",
-      "\"Sport\"",
-      "\"Sarlavha\"",
-      "\"Sayt qil\""
+      "Ha, salomlashish matni",
+      "Yo'q, hech narsa aytilmagan",
+      "Yo'q, faqat bot nomi bor",
+      "Yo'q, faqat «yoz» so'zi bor"
      ],
-     "e": "Unda nima kerakligi to'liq yozilgan."
+     "e": "Promptda nima kerakligi bor: salomlashish matni."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Qaysi promptda til aytilgan?",
+     "q": "Promptga til va uzunlik qo'shmoqchisiz. Qaysi qo'shimcha to'g'ri?",
      "o": [
-      "\"O'zbekcha sarlavha yoz\"",
-      "\"Sarlavha yoz\"",
-      "\"Qisqa sarlavha yoz\"",
-      "\"Chiroyli sarlavha yoz\""
+      "«O'zbekcha, 6 so'zgacha»",
+      "«Chiroyli va yaxshi»",
+      "«Tezroq, hoziroq»",
+      "«Kafe uchun, sayt uchun»"
      ],
-     "e": "Til — \"o'zbekcha\"."
+     "e": "Bu qo'shimchada til ham, uzunlik ham bor."
     },
     {
-     "q": "Qaysi promptda uzunlik aytilgan?",
+     "q": "«Gul do'koniga sarlavha yoz. 5 so'zgacha.» Nima yetishmayapti?",
      "o": [
-      "\"Sarlavha 6 so'zdan oshmasin\"",
-      "\"O'zbekcha sarlavha yoz\"",
-      "\"Chiroyli sarlavha yoz\"",
-      "\"Kafe uchun sarlavha yoz\""
+      "Qaysi tilda ekani",
+      "Necha so'z ekani",
+      "Nima yozish kerakligi",
+      "Qaysi do'kon ekani"
      ],
-     "e": "Uzunlik — \"6 so'zdan oshmasin\"."
+     "e": "Uzunlik bor, lekin til yozilmagan."
     },
     {
-     "q": "Promptda til yozilmagan. SI qaysi tilda yozadi?",
+     "q": "SI juda uzun sarlavha yozdi. Promptga nima qo'shish kerak edi?",
      "o": [
-      "Bilmaymiz, istalgan tilda yozishi mumkin",
-      "Doim o'zbekcha",
-      "Doim inglizcha",
-      "Hech qaysi tilda"
+      "So'zlar soni chegarasi",
+      "Sarlavha rangi",
+      "Sayt manzili",
+      "Bugungi sana"
      ],
-     "e": "Til yozilmasa, SI o'zi tanlaydi."
+     "e": "Uzunlik yozilsa, SI qisqa sarlavha yozadi."
     },
     {
-     "q": "Eng aniq prompt qaysi?",
+     "q": "SI matnni ruscha yozdi, sizga o'zbekcha kerak edi. Promptda nima yo'q edi?",
      "o": [
-      "\"Kafe saytiga o'zbekcha sarlavha yoz, 6 so'zdan oshmasin\"",
-      "\"Kafe saytiga sarlavha yoz\"",
-      "\"Sarlavha yoz\"",
-      "\"O'zbekcha yoz\""
+      "Matn tili",
+      "Matn rangi",
+      "Matn sanasi",
+      "Matn egasi"
      ],
-     "e": "Unda nima kerak, tili va uzunligi bor."
+     "e": "Til yozilmagani uchun SI boshqa tilda yozdi."
     },
     {
-     "q": "\"Gul do'koni saytiga sarlavha yoz\". Nima qo'shilsa aniqroq bo'ladi?",
+     "q": "Aniq promptda nima kerakligidan tashqari yana nima yoziladi?",
      "o": [
-      "\"o'zbekcha, 6 so'zdan oshmasin\"",
-      "\"iltimos\"",
-      "\"tezroq\"",
-      "\"rahmat\""
+      "Tili va uzunligi",
+      "Rangi va shrifti",
+      "Narxi va sanasi",
+      "Ismingiz va yoshingiz"
      ],
-     "e": "Til va uzunlik qo'shilsa, prompt aniq bo'ladi."
+     "e": "Aniq promptda tili va uzunligi ham yoziladi."
     },
     {
-     "q": "SI 20 so'zlik sarlavha yozdi, sizga qisqasi kerak edi. Promptga nima yozish kerak edi?",
+     "q": "«Kitob do'koni botiga salom yoz. O'zbekcha, 2 gap.» Uzunlik qayerda?",
      "o": [
-      "Uzunlikni: \"6 so'zdan oshmasin\"",
-      "Tilni",
-      "Salomlashishni",
-      "Hech narsa"
+      "«2 gap» qismida",
+      "«O'zbekcha» qismida",
+      "«salom» qismida",
+      "«botiga» qismida"
      ],
-     "e": "Uzunlik yozilmasa, SI uzun yozishi mumkin."
+     "e": "«2 gap» matn qancha uzun bo'lishini bildiradi."
     }
    ]
   },

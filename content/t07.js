@@ -7,188 +7,188 @@ CONTENT[7] = {
      "o": [
       "SI nima qilmasligi kerakligi",
       "SI nima qilishi kerakligi",
-      "Sayt kim uchun ekani",
-      "SI yozgan javob"
+      "SI yozib bergan javob",
+      "Saytning eng katta sarlavhasi"
      ],
-     "e": "Cheklov — SI nima qilmasligi kerakligi."
+     "e": "Cheklov SI'ga nima qilmaslik kerakligini aytadi."
     },
     {
-     "q": "Qaysi gap cheklov?",
+     "q": "«Rasm qo'shma». Bu gap SI'ga nimani aytadi?",
      "o": [
-      "\"Rasm qo'shma\"",
-      "\"Sarlavha yoz\"",
-      "\"Bu kafe sayti\"",
-      "\"Saytga bolalar kiradi\""
+      "Nima qilmaslik kerakligini",
+      "Nima qilish kerakligini",
+      "Javob qaysi tilda bo'lishini",
+      "Javob qancha uzun bo'lishini"
      ],
-     "e": "\"Rasm qo'shma\" — SI nima qilmasligini aytadi."
+     "e": "«Qo'shma» — qilmaslik haqida, demak bu cheklov."
     },
     {
-     "q": "SI keraksiz narsalarni ham qo'shib yuboryapti. Promptga nima qo'shasiz?",
+     "q": "SI sport zali matniga keraksiz narx qo'shdi. Promptda nima yetishmadi?",
      "o": [
-      "Cheklov",
-      "Salomlashish",
-      "\"Rahmat\" so'zi",
-      "Undov belgisi"
+      "Promptda cheklov yo'q edi",
+      "Promptda salom yo'q edi",
+      "Promptda undov belgisi yo'q edi",
+      "SI juda tez yozdi"
      ],
-     "e": "Cheklov SI'ga nima qilmaslikni aytadi."
+     "e": "«Narx yozma» desangiz, SI narx qo'shmasdi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Jasur gul do'koni matnini so'raydi, telefon raqami kerak emas. U nima yozadi?",
      "o": [
-      "Cheklov SI'ga nima qilmaslikni aytadi",
-      "Cheklov SI'ga sayt nomini aytadi",
-      "Cheklov — SI javobi",
-      "Cheklov SI'ni tezlashtiradi"
+      "«Telefon raqamini yozma»",
+      "«Telefon raqamini yoz»",
+      "«Gullar haqida yoz»",
+      "«Matn qisqa bo'lsin»"
      ],
-     "e": "Cheklov — SI nima qilmasligi kerakligi."
+     "e": "Bu cheklov — SI telefon raqamini yozmaydi."
     },
     {
-     "q": "\"Narx yozma\" — bu nima?",
-     "o": [
-      "Cheklov",
-      "Kontekst",
-      "SI javobi",
-      "Sayt sarlavhasi"
-     ],
-     "e": "U SI nima qilmasligini aytadi."
-    },
-    {
-     "q": "Cheklovda ko'pincha qanday so'zlar bo'ladi?",
-     "o": [
-      "\"yozma\", \"qo'shma\", \"tegma\"",
-      "\"yoz\", \"qo'sh\", \"qil\"",
-      "\"salom\", \"rahmat\"",
-      "\"tez\", \"chiroyli\""
-     ],
-     "e": "Cheklov SI nima qilmasligini aytadi: yozma, qo'shma, tegma."
-    }
-   ]
-  },
-  {
-   "pool": [
-    {
-     "q": "Siz faqat sarlavhani o'zgartirmoqchisiz. Qaysi prompt to'g'ri?",
-     "o": [
-      "\"Faqat sarlavhani o'zgartir, qolganiga tegma\"",
-      "\"Saytni o'zgartir\"",
-      "\"Hammasini yangidan qil\"",
-      "\"Sarlavha va menyuni o'zgartir\""
-     ],
-     "e": "Unda nimaga tegmaslik kerakligi aytilgan."
-    },
-    {
-     "q": "SI sarlavha bilan birga menyuni ham o'zgartirib yubordi. Promptga nima yozish kerak edi?",
-     "o": [
-      "\"Qolganiga tegma\"",
-      "\"Tezroq qil\"",
-      "\"Iltimos\"",
-      "\"Chiroyli qil\""
-     ],
-     "e": "\"Qolganiga tegma\" SI'ga ortiqcha joyni o'zgartirmaslikni aytadi."
-    },
-    {
-     "q": "\"Faqat tugmani o'zgartir, qolganiga tegma\". SI nimani o'zgartiradi?",
-     "o": [
-      "Faqat tugmani",
-      "Butun saytni",
-      "Tugma va sarlavhani",
-      "Faqat sarlavhani"
-     ],
-     "e": "Promptda faqat tugma so'ralgan, qolganiga tegish mumkin emas."
-    },
-    {
-     "q": "Nega \"qolganiga tegma\" deb yozamiz?",
-     "o": [
-      "SI so'ralmagan joyni o'zgartirmasligi uchun",
-      "SI tezroq yozishi uchun",
-      "Prompt chiroyli bo'lishi uchun",
-      "SI o'zbekcha yozishi uchun"
-     ],
-     "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
-    },
-    {
-     "q": "Qaysi promptda nimaga tegmaslik aytilgan?",
-     "o": [
-      "\"Rangni o'zgartir, matnga tegma\"",
-      "\"Rangni o'zgartir\"",
-      "\"Ko'k rang qil\"",
-      "\"Matnni chiroyli qil\""
-     ],
-     "e": "\"Matnga tegma\" — nimaga tegmaslik kerakligi."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Nimaga tegmaslik kerakligini SI'ga aytish kerak",
-      "SI qayerga tegmaslikni o'zi biladi",
-      "SI doim faqat so'ralganini o'zgartiradi",
-      "SI \"tegma\" so'zini tushunmaydi"
-     ],
-     "e": "Aytmasangiz, SI so'ralmagan joyni ham o'zgartirishi mumkin."
-    }
-   ]
-  },
-  {
-   "pool": [
-    {
-     "q": "Menyuda narx kerak emas. Promptga nima yozasiz?",
-     "o": [
-      "\"Narx yozma\"",
-      "\"Narx yoz\"",
-      "\"Menyu chiroyli bo'lsin\"",
-      "\"Tezroq yoz\""
-     ],
-     "e": "Keraksiz narsani aniq yozing: \"Narx yozma\"."
-    },
-    {
-     "q": "Qaysi promptda keraksiz narsa aniq yozilgan?",
-     "o": [
-      "\"Menyu yoz, narx yozma, rasm qo'shma\"",
-      "\"Menyu yoz, ortiqchasi kerak emas\"",
-      "\"Menyu yoz\"",
-      "\"Yaxshi menyu yoz\""
-     ],
-     "e": "Unda nima keraksizligi aniq aytilgan: narx va rasm."
-    },
-    {
-     "q": "\"Ortiqcha narsa qo'shma\". Bu cheklov aniqmi?",
-     "o": [
-      "Yo'q, nima ortiqchaligi aytilmagan",
-      "Ha, juda aniq",
-      "Ha, chunki qisqa",
-      "Ha, chunki \"qo'shma\" so'zi bor"
-     ],
-     "e": "SI qaysi narsa ortiqcha ekanini bilmaydi."
-    },
-    {
-     "q": "SI menyuga rasm qo'shdi. Sizga rasm kerak emas edi. Keyingi safar nima yozasiz?",
-     "o": [
-      "\"Rasm qo'shma\"",
-      "\"Rasm qo'sh\"",
-      "\"Menyuni chiroyli qil\"",
-      "\"Yana yoz\""
-     ],
-     "e": "Keraksiz narsani aniq yozing: \"Rasm qo'shma\"."
-    },
-    {
-     "q": "\"Narx yozma, rasm qo'shma\". Bu promptda nechta cheklov bor?",
+     "q": "«Matn yoz. Rasm qo'shma. Narx yozma». Bu promptda nechta cheklov bor?",
      "o": [
       "2 ta",
       "1 ta",
       "3 ta",
       "4 ta"
      ],
-     "e": "Ikkita cheklov: narx yozma va rasm qo'shma."
+     "e": "«Rasm qo'shma» va «Narx yozma» — ikkalasi ham cheklov."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Hayotda qaysi gap cheklovga o'xshaydi?",
      "o": [
-      "Keraksiz narsani nomi bilan aniq yozing",
-      "\"Ortiqchasi kerak emas\" deyish yetarli",
-      "SI keraksiz narsani o'zi biladi",
-      "Cheklovni yozmagan yaxshi"
+      "«Darsda telefon ishlatma»",
+      "«Uyga vazifani bajar»",
+      "«Kitobni o'qib chiq»",
+      "«Doskaga misol yoz»"
      ],
-     "e": "Nima keraksizligini aniq yozsangiz, SI uni qilmaydi."
+     "e": "Bu gap ham nima qilmaslik kerakligini aytadi."
+    }
+   ]
+  },
+  {
+   "pool": [
+    {
+     "q": "Siz faqat sarlavhani o'zgartirmoqchisiz. Promptga yana nima qo'shasiz?",
+     "o": [
+      "«Qolganiga tegma»",
+      "«Butun sahifani yangidan qil»",
+      "«Rangini ham o'zgartir»",
+      "«Tezroq bajar»"
+     ],
+     "e": "«Qolganiga tegma» deganda SI faqat sarlavhani o'zgartiradi."
+    },
+    {
+     "q": "Lola tugmani qizil qilishni so'radi, SI yozuvni ham o'zgartirdi. Nima yetishmadi?",
+     "o": [
+      "«Yozuvga tegma» degan gap",
+      "«Iltimos» degan so'z",
+      "Saytning to'liq nomi",
+      "Promptdagi undov belgisi"
+     ],
+     "e": "Nimaga tegmaslikni aytmasa, SI boshqa joyni ham o'zgartirishi mumkin."
+    },
+    {
+     "q": "Kafe saytidagi menyu tayyor va yaxshi. Promptda menyu haqida nima deysiz?",
+     "o": [
+      "«Menyuga tegma»",
+      "«Menyuni o'chir»",
+      "«Menyuni yangidan yoz»",
+      "«Menyuni uzunroq qil»"
+     ],
+     "e": "Tayyor menyu buzilmasligi uchun «tegma» deb yozasiz."
+    },
+    {
+     "q": "Qaysi promptda nimaga tegmaslik aytilgan?",
+     "o": [
+      "«Rasmni almashtir, matnga tegma»",
+      "«Rasmni almashtir, matnni yoz»",
+      "«Rasmni kattaroq qil»",
+      "«Yangi rasm qo'sh»"
+     ],
+     "e": "«Matnga tegma» — SI matnni o'zgartirmasligi kerak."
+    },
+    {
+     "q": "«Faqat narxlarni yangila. Qolganiga tegma». SI nimani o'zgartiradi?",
+     "o": [
+      "Faqat narxlarni",
+      "Narx va rasmlarni",
+      "Butun sahifani",
+      "Sahifa sarlavhasini"
+     ],
+     "e": "Promptda faqat narxlar so'ralgan, qolgani o'zgarmaydi."
+    },
+    {
+     "q": "Nega «qolganiga tegma» deb yozish foydali?",
+     "o": [
+      "SI so'ralmagan joyni o'zgartirmaydi",
+      "SI tezroq ishlaydi",
+      "Prompt chiroyli ko'rinadi",
+      "SI ko'proq matn yozadi"
+     ],
+     "e": "Bu gap SI'ni boshqa joylarga tegishdan to'xtatadi."
+    }
+   ]
+  },
+  {
+   "pool": [
+    {
+     "q": "SI kafe matniga keraksiz narx qo'shdi. Keyingi safar nima yozasiz?",
+     "o": [
+      "«Narx yozma»",
+      "«Narxni kattaroq yoz»",
+      "«Matnni qayta yoz»",
+      "«Narxni oxiriga yoz»"
+     ],
+     "e": "«Narx yozma» deb aniq aytsangiz, SI narx qo'shmaydi."
+    },
+    {
+     "q": "Qaysi cheklov keraksiz narsani aniq aytadi?",
+     "o": [
+      "«Rasm qo'shma»",
+      "«Ortiqcha narsa qo'shma»",
+      "«Yaxshi qilib yoz»",
+      "«Keraksiz narsani yozma»"
+     ],
+     "e": "Unda nima keraksizligi — rasm — aniq aytilgan."
+    },
+    {
+     "q": "Dilnoza «Keraksiz narsa yozma» deb yozdi. Nega bu yaxshi emas?",
+     "o": [
+      "SI nima keraksizligini bilmaydi",
+      "Bu gap juda uzun",
+      "SI bu so'zni tushunmaydi",
+      "Bu gap boshqa tilda"
+     ],
+     "e": "Nima keraksizligini SI bilmaydi, uni nomi bilan yozish kerak."
+    },
+    {
+     "q": "Keraksiz narsani promptda qanday yozgan yaxshi?",
+     "o": [
+      "Har birini nomi bilan yozish",
+      "Umuman yozmaslik",
+      "«Ortiqcha» so'zi bilan yozish",
+      "Faqat o'ylab qo'yish"
+     ],
+     "e": "Aniq nomini yozsangiz, SI nima kerak emasligini biladi."
+    },
+    {
+     "q": "Maktab e'loniga telefon va manzil kerak emas. Qaysi prompt to'g'ri?",
+     "o": [
+      "«E'lon yoz. Telefon, manzil yozma»",
+      "«E'lon yoz. Telefon va manzil yoz»",
+      "«E'lon yoz. Telefon yozma»",
+      "«E'lon yoz. Manzilni oxiriga yoz»"
+     ],
+     "e": "Ikkala keraksiz narsa ham aniq aytilgan."
+    },
+    {
+     "q": "Prompt: «Menyu yoz. Ichimliklarni yozma». SI nimani yozmaydi?",
+     "o": [
+      "Choy va sharbatlarni",
+      "Osh va sho'rvani",
+      "Taomlar nomini",
+      "Menyu sarlavhasini"
+     ],
+     "e": "Choy va sharbat — ichimlik, ular yozilmaydi."
     }
    ]
   },

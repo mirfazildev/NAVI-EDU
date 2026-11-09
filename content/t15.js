@@ -3,192 +3,192 @@ CONTENT[15] = {
   {
    "pool": [
     {
-     "q": "Nega SI'ga nima qilganingizni aytasiz?",
+     "q": "Bot ishlamay qoldi. Qaysi gapda Madina nima qilganini aytgan?",
+     "o": [
+      "«Botga /start deb yozdim»",
+      "«Bot yomon ishlayapti»",
+      "«Botni tuzatib ber»",
+      "«Bu bot meniki»"
+     ],
+     "e": "Bu gap Madina aynan nima qilganini aytadi."
+    },
+    {
+     "q": "Nega nima qilganingizni SI'ga aytasiz?",
      "o": [
       "Xato qayerdan chiqqanini bilishi uchun",
-      "SI zerikmasligi uchun",
-      "Prompt chiroyli bo'lishi uchun",
-      "SI sizni tanishi uchun"
+      "Prompt uzunroq bo'lishi uchun",
+      "SI xursand bo'lishi uchun",
+      "Prompt chiroyli ko'rinishi uchun"
      ],
-     "e": "Nima qilganingizni bilsa, SI xato qayerdan chiqqanini tushunadi."
+     "e": "Nima qilganingizni bilsa, SI xato qayerdan chiqqanini topadi."
     },
     {
-     "q": "Siz faqat \"Xato chiqdi\" deb yozdingiz. SI nimani bilmaydi?",
+     "q": "SI ekraningizni ko'rmaydi. Siz nima qilganingizni qayerdan biladi?",
      "o": [
-      "Siz nima qilganingizni",
-      "\"Xato\" so'zining ma'nosini",
-      "O'zining ismini",
-      "Qaysi tilda yozganingizni"
+      "Faqat siz yozib bersangiz",
+      "O'zi kuzatib turadi",
+      "Saytdan o'qib oladi",
+      "Har doim to'g'ri taxmin qiladi"
      ],
-     "e": "SI nima qilganingizni ko'rmaydi, siz aytishingiz kerak."
+     "e": "SI ekranni ko'rmaydi, shuning uchun qilganingizni o'zingiz yozasiz."
     },
     {
-     "q": "Qaysi prompt yaxshiroq?",
+     "q": "Xato faqat savatga gul qo'shganda chiqadi. Buni aytmasangiz, nima bo'ladi?",
      "o": [
-      "\"Yuborish tugmasini bosdim, xato chiqdi\"",
-      "\"Xato chiqdi\"",
-      "\"Yana xato\"",
-      "\"Tuzat\""
+      "SI xatoni boshqa joydan qidiradi",
+      "SI darhol to'g'ri tuzatadi",
+      "Xato o'zi yo'qoladi",
+      "Sayt tezroq ishlaydi"
      ],
-     "e": "Bu promptda nima qilganingiz aytilgan."
+     "e": "Qayerda xato chiqqanini bilmasa, SI noto'g'ri joyni qidiradi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Qaysi prompt SI'ga ko'proq yordam beradi?",
      "o": [
-      "Nima qilganingizni aytsangiz, SI xatoni osonroq topadi",
-      "SI nima qilganingizni o'zi ko'rib turadi",
-      "Nima qilganingizni aytish shart emas",
-      "Faqat \"xato\" so'zini yozish yetarli"
+      "«Jadvalni ochdim, xato chiqdi»",
+      "«Saytda xato bor»",
+      "«Xato chiqdi, tuzat»",
+      "«Nimadir buzildi»"
      ],
-     "e": "Nima qilganingizni bilsa, SI xatoni osonroq topadi."
+     "e": "Bu promptda xato chiqishidan oldin nima qilingani aytilgan."
     },
     {
-     "q": "Rasm yuklaganingizda xato chiqdi. SI'ga yana nimani aytish kerak?",
+     "q": "Maktab saytiga rasm yuklaganda xato chiqdi. SI'ga yana nimani aytasiz?",
      "o": [
-      "Rasm yuklaganimda xato chiqqanini",
-      "Sevimli rangimni",
-      "Kompyuterim narxini",
-      "Faqat \"yordam ber\" deyman"
+      "Qaysi rasmni yuklaganimni",
+      "Rasm qanchalik chiroyliligini",
+      "Maktabimning raqamini",
+      "Rasmni kim chizganini"
      ],
-     "e": "Xato qaysi ishdan keyin chiqqanini aytish kerak."
-    },
-    {
-     "q": "Siz aytmasangiz, SI nima qilganingizni biladimi?",
-     "o": [
-      "Yo'q, bilmaydi",
-      "Ha, o'zi biladi",
-      "Ha, internetdan topadi",
-      "Ha, kompyuter aytib beradi"
-     ],
-     "e": "SI nima qilganingizni faqat siz aytsangiz biladi."
+     "e": "Qaysi rasmni yuklaganingiz — siz qilgan ish, u xatoga yo'l ko'rsatadi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Qadamlarni qanday yozasiz?",
+     "q": "Sardor yozdi: «Xato chiqdi. Tugmani bosdim. Saytni ochdim.» Nima noto'g'ri?",
      "o": [
-      "Tartib bilan: avval..., keyin...",
-      "Aralash tartibda",
+      "Qadamlar teskari tartibda",
+      "Gaplar juda qisqa",
+      "Nuqtalar ko'p qo'yilgan",
+      "Xato so'zi bor"
+     ],
+     "e": "Qadamlar «avval…, keyin…» tartibida yozilishi kerak."
+    },
+    {
+     "q": "Kafe saytida 3 qadam qildingiz. SI'ga qaysi qadamdan boshlab yozasiz?",
+     "o": [
+      "Eng birinchi qilgan qadamdan",
+      "Xato chiqqan oxirgi qadamdan",
+      "Eng muhim qadamdan",
+      "Istalgan qadamdan"
+     ],
+     "e": "Qadamlar avvalgisidan boshlab, tartib bilan yoziladi."
+    },
+    {
+     "q": "Nega qadamlarni tartib bilan yozasiz?",
+     "o": [
+      "SI nima ketidan nima bo'lganini bilishi uchun",
+      "Prompt chiroyli ko'rinishi uchun",
+      "SI tezroq o'qishi uchun",
+      "Qadamlar kamroq bo'lishi uchun"
+     ],
+     "e": "Tartib bo'lsa, SI qaysi qadamdan keyin xato chiqqanini tushunadi."
+    },
+    {
+     "q": "Jasur: «Avval saytni ochdim, keyin xato chiqdi.» Aslida u «Kirish»ni bosgandi. Nima yetishmaydi?",
+     "o": [
+      "«Kirish»ni bosgan qadami",
+      "Saytning nomi",
+      "Xatoning rangi",
+      "Jasurning ismi"
+     ],
+     "e": "Bitta qadam tushib qolsa, SI xato qayerdan chiqqanini bilmaydi."
+    },
+    {
+     "q": "Botda nima qilganingizni qanday yozgan ma'qul?",
+     "o": [
+      "Har qadamni alohida, ketma-ket",
+      "Bitta uzun gapda aralashtirib",
       "Faqat oxirgi qadamni",
-      "Teskari tartibda"
+      "Esga kelgan tartibda"
      ],
-     "e": "Qadamlar tartib bilan yoziladi: avval..., keyin...."
+     "e": "Qadamlar alohida va ketma-ket yozilsa, tushunish oson."
     },
     {
-     "q": "Qaysi yozuv to'g'ri tartibda?",
+     "q": "Dilnoza o'yinda avval «Boshlash»ni, keyin «Ovoz»ni bosdi. Xato chiqdi. Qanday yozadi?",
      "o": [
-      "Avval saytni ochdim, keyin tugmani bosdim",
-      "Keyin tugmani bosdim, avval saytni ochdim",
-      "Tugmani bosdim, oldin nimadir qildim",
-      "Nimadir qildim, xato chiqdi"
+      "Avval Boshlashni, keyin Ovozni bosdim",
+      "Avval Ovozni, keyin Boshlashni bosdim",
+      "Ovozni bosdim, xato chiqdi",
+      "Tugmalarni bosdim, xato chiqdi"
      ],
-     "e": "Avval birinchi qadam, keyin ikkinchisi yoziladi."
-    },
-    {
-     "q": "Siz ism yozdingiz, keyin \"Saqlash\"ni bosdingiz, so'ng xato chiqdi. Qaysi qadam birinchi yoziladi?",
-     "o": [
-      "Ism yozish",
-      "\"Saqlash\"ni bosish",
-      "Xato chiqishi",
-      "SI'ga yozish"
-     ],
-     "e": "Birinchi qilgan ishingiz — ism yozish."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Qadamlar qanday bo'lgan bo'lsa, shu tartibda yoziladi",
-      "Qadamlar tartibi muhim emas",
-      "Faqat birinchi qadam yetarli",
-      "Qadamlarni teskari yozish kerak"
-     ],
-     "e": "Qadamlar bo'lgan tartibda yoziladi."
-    },
-    {
-     "q": "Nega qadamlar tartibi muhim?",
-     "o": [
-      "SI nima qachon bo'lganini tushunadi",
-      "Prompt qisqaroq bo'ladi",
-      "SI tezroq yozadi",
-      "Xato o'z-o'zidan yo'qoladi"
-     ],
-     "e": "Tartib bilan yozsangiz, SI nima qachon bo'lganini tushunadi."
-    },
-    {
-     "q": "\"Avval\" so'zidan keyin qaysi qadamni yozasiz?",
-     "o": [
-      "Birinchi qilgan ishingizni",
-      "Oxirgi qilgan ishingizni",
-      "Xato xabarini",
-      "SI javobini"
-     ],
-     "e": "\"Avval\" — birinchi qilgan ishingiz."
+     "e": "Ikkala qadam ham, o'z tartibida yozilgan."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI'ga qaysi ikkisini aytasiz?",
+     "q": "Aziz yozdi: «Aloqa tugmasini bosdim, sahifa oqarib qoldi.» Yana nima kerak?",
      "o": [
-      "Nima bo'lishi kerak edi va nima bo'ldi",
-      "Ismingiz va yoshingiz",
-      "Sana va vaqt",
-      "Saytning rangi va nomi"
+      "Nima bo'lishi kerak edi",
+      "Qachon bosgani",
+      "Necha marta bosgani",
+      "Qaysi kompyuterda bosgani"
      ],
-     "e": "Kutilgan va bo'lgan natijani ikkalasini ham ayting."
+     "e": "Aziz nima bo'lganini aytdi, lekin nima kutganini aytmadi."
     },
     {
-     "q": "Tugmani bosdingiz. Rasm chiqishi kerak edi, lekin sahifa oq bo'lib qoldi. Aslida nima bo'ldi?",
+     "q": "Shaxzoda yozdi: «Bot hech narsa demadi.» Bu promptning qaysi qismi?",
      "o": [
-      "Sahifa oq bo'lib qoldi",
-      "Rasm chiqdi",
-      "Tugma yo'qoldi",
-      "Sayt yopildi"
+      "Aslida nima bo'lgani",
+      "Nima bo'lishi kerakligi",
+      "Qayerda ekani",
+      "Qachon bo'lgani"
      ],
-     "e": "Aslida bo'lgan narsa — sahifa oq bo'lib qoldi."
+     "e": "«Hech narsa demadi» — aslida nima bo'lganini aytadi."
     },
     {
-     "q": "\"Savatga\" tugmasini bosdim. Mahsulot savatga tushishi kerak edi, lekin tushmadi. Nima bo'lishi kerak edi?",
+     "q": "Nega ikkalasini ham aytasiz: nima kutildi va nima bo'ldi?",
      "o": [
-      "Mahsulot savatga tushishi",
-      "Mahsulot tushmasligi",
-      "Tugma yo'qolishi",
-      "Savat o'chishi"
+      "SI farqni ko'rib, nimani tuzatishni bilishi uchun",
+      "Prompt uzunroq bo'lishi uchun",
+      "SI ko'proq so'z o'rganishi uchun",
+      "Shunda xato o'zi yo'qoladi"
      ],
-     "e": "Kutilgan natija — mahsulot savatga tushishi."
+     "e": "Ikkalasini bilsa, SI farqni ko'radi va nimani tuzatishni biladi."
     },
     {
-     "q": "Qaysi prompt to'liqroq?",
+     "q": "Kafe sayti. Qaysi promptda ikkala qism ham bor?",
      "o": [
-      "\"Rasm chiqishi kerak edi, lekin hech narsa chiqmadi\"",
-      "\"Rasm chiqmadi\"",
-      "\"Rasm chiqishi kerak edi\"",
-      "\"Ishlamayapti\""
+      "Menyu ochilishi kerak edi, lekin ochilmadi",
+      "Menyu ochilishi kerak edi",
+      "Menyu ochilmadi",
+      "Menyu tugmasini bosdim"
      ],
-     "e": "Bu promptda ikkalasi ham bor: nima kutilgan va nima bo'lgan."
+     "e": "Bu promptda ham kutilgani, ham bo'lgani aytilgan."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Savatga 1 ta gul qo'shdingiz, savatda 3 ta chiqdi. Kutilganini qanday aytasiz?",
      "o": [
-      "Kutilgan natijani ham, bo'lgan natijani ham ayting",
-      "Faqat nima bo'lganini aytish yetarli",
-      "Faqat nima kutganingizni ayting",
-      "Natija haqida aytish shart emas"
+      "«Savatda 1 ta gul bo'lishi kerak edi»",
+      "«Savatda 3 ta gul chiqdi»",
+      "«Savat tugmasini bosdim»",
+      "«Savat sahifaning tepasida»"
      ],
-     "e": "Ikkalasini ham ayting: nima bo'lishi kerak edi va nima bo'ldi."
+     "e": "Kutilgani — savatda 1 ta gul bo'lishi."
     },
     {
-     "q": "Nega \"nima bo'lishi kerak edi\"ni ham aytasiz?",
+     "q": "«Jadval» tugmasini bosdingiz, hech narsa bo'lmadi. «Nima bo'ldi» qismiga nima yozasiz?",
      "o": [
-      "SI qanday natija kerakligini bilsin",
-      "Prompt uzunroq bo'lsin",
-      "SI sizni maqtasin",
-      "Xato tezroq chiqsin"
+      "Hech narsa bo'lmadi",
+      "Jadval ochilishi kerak edi",
+      "«Jadval» tugmasini bosdim",
+      "Tugma tepada turibdi"
      ],
-     "e": "Kutilgan natijani bilsa, SI nimaga erishish kerakligini tushunadi."
+     "e": "Aslida hech narsa bo'lmadi — shuni o'zi yoziladi."
     }
    ]
   },

@@ -3,192 +3,192 @@ CONTENT[21] = {
   {
    "pool": [
     {
-     "q": "SI \"Hammasini o'chiraylik\" dedi. Nima qilasiz?",
+     "q": "SI \"Hamma fayllarni o'chiraylik\" dedi. Ali nima qiladi?",
      "o": [
-      "To'xtab, tekshiraman",
-      "Darhol rozi bo'laman",
-      "O'zim hammasini o'chiraman",
-      "O'ylamasdan qabul qilaman"
+      "To'xtab, tekshiradi",
+      "Darhol rozi bo'ladi",
+      "O'zi hammasini o'chiradi",
+      "Kompyuterni o'chiradi"
      ],
-     "e": "Bunday taklifda to'xtang va tekshiring."
+     "e": "SI hammasini o'chirishni taklif qilsa, to'xtang va tekshiring."
     },
     {
      "q": "Qaysi taklif xavfli?",
      "o": [
-      "\"Hamma fayllarni o'chiraylik\"",
-      "\"Sarlavhani qisqartiraylik\"",
-      "\"Tugmani ko'k qilaylik\"",
-      "\"Rasm qo'shaylik\""
+      "\"Butun saytni o'chirib yuboraman\"",
+      "\"Tugma rangini o'zgartiraman\"",
+      "\"Sarlavhani kattalashtiraman\"",
+      "\"Rasm qo'shaman\""
      ],
-     "e": "Hammasini o'chirish taklifi xavfli."
+     "e": "Butun saytni o'chirish hamma ishni yo'qotishi mumkin."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "\"Hammasini o'chiraylik\" desa, to'xtash kerak",
-      "O'chirish taklifiga darhol rozi bo'lish kerak",
-      "O'chirish hech qachon xavfli emas",
-      "SI hech qachon xato taklif bermaydi"
-     ],
-     "e": "SI hammasini o'chirishni taklif qilsa, to'xtang."
-    },
-    {
-     "q": "Nega \"hammasini o'chiraylik\" desa to'xtash kerak?",
+     "q": "Nega bunday taklifda to'xtash kerak?",
      "o": [
       "Kerakli fayllar ham yo'qolishi mumkin",
-      "SI charchagan bo'ladi",
-      "O'chirish juda sekin",
-      "Kompyuter shovqin qiladi"
+      "SI charchab qolishi mumkin",
+      "Sayt sekinlashib qoladi",
+      "Fayllar rangi o'zgaradi"
      ],
      "e": "Hammasi o'chsa, kerakli narsalar ham yo'qoladi."
     },
     {
-     "q": "SI xatoni tuzata olmadi va \"Hammasini o'chirib, boshidan boshlaylik\" dedi. Nima qilasiz?",
+     "q": "SI \"Eski fayllarni hammasini o'chiraman\" dedi. Madina nimani tekshiradi?",
      "o": [
-      "To'xtab, nima o'chishini tekshiraman",
-      "Darhol rozi bo'laman",
-      "O'zim o'chirib qo'yaman",
-      "SI'ga \"Tezroq\" deyman"
+      "Ular orasida keraklisi bormi",
+      "Fayllarning rangini",
+      "Fayl nomlari uzunligini",
+      "SI qancha tez ishlashini"
      ],
-     "e": "Hammasini o'chirish taklifida to'xtang va tekshiring."
+     "e": "Tekshirish — o'chadigan narsa orasida kerakli fayl bormi qarash."
     },
     {
-     "q": "SI o'chirishni taklif qildi. Siz to'xtadingiz. Keyin nima qilasiz?",
+     "q": "Jasur tekshirdi: o'chadigan fayllarda menyu ham bor. SI'ga nima deydi?",
      "o": [
-      "Nima o'chishini tekshiraman",
-      "Ko'zni yumib rozi bo'laman",
-      "Kompyuterni o'chiraman",
-      "Suhbatni yopib, hammasini o'chiraman"
+      "\"Yo'q, o'chirma\"",
+      "\"Ha, hammasini o'chir\"",
+      "\"Faqat menyuni o'chir\"",
+      "\"Tezroq o'chir\""
      ],
-     "e": "To'xtagandan keyin nima o'chishini tekshiring."
+     "e": "Kerakli menyu o'chib ketmasligi kerak."
+    },
+    {
+     "q": "Kamola SI'ga \"Ha\" deb yozdi va hamma fayl o'chdi. U qayerda xato qildi?",
+     "o": [
+      "To'xtab tekshirmadi",
+      "Juda sekin yozdi",
+      "SI'ga salom bermadi",
+      "Kichik harf ishlatdi"
+     ],
+     "e": "O'chirishdan oldin to'xtab tekshirish kerak edi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI kalitni sahifaga yozishni taklif qildi. Nima qilasiz?",
+     "q": "SI kalitni sahifaga yozishni taklif qildi. Ali nima qiladi?",
      "o": [
-      "Rad qilaman",
-      "Qabul qilaman",
-      "Kalitning yarmini yozdiraman",
-      "Kalitni kattaroq yozdiraman"
+      "Rad qiladi",
+      "Rozi bo'ladi",
+      "Kalitni kattaroq yozdiradi",
+      "Do'stlariga yuboradi"
      ],
-     "e": "Kalitni sahifaga yozish taklifini rad qiling."
+     "e": "Kalitni sahifaga yozish taklifi rad qilinadi."
     },
     {
-     "q": "Nega kalit sahifaga yozilmaydi?",
+     "q": "Kalit sahifada tursa, begona odam nima qila oladi?",
      "o": [
-      "Kalit maxfiy, uni hech kim ko'rmasligi kerak",
-      "Kalit juda uzun",
-      "Sahifa xunuk bo'ladi",
-      "SI kalitni yoqtirmaydi"
+      "Kalit bilan botingizni boshqaradi",
+      "Hech narsa qila olmaydi",
+      "Faqat rangini ko'radi",
+      "Sahifani chiroyli qiladi"
      ],
-     "e": "Kalit parol kabi maxfiy."
+     "e": "Kalitni topgan odam uni o'zi ishlatishi mumkin."
     },
     {
      "q": "Qaysi taklifni rad qilish kerak?",
      "o": [
-      "\"Bot tokenini sahifaga yozib qo'yaman\"",
-      "\"Sarlavhani kattaroq qilaman\"",
-      "\"Tugmani yashil qilaman\"",
-      "\"Rasm qo'shaman\""
+      "\"Tokenni sahifa pastiga yozaman\"",
+      "\"Sahifaga rasm qo'shaman\"",
+      "\"Sarlavhani kattalashtiraman\"",
+      "\"Menyu tugmasini qo'shaman\""
      ],
-     "e": "Token yoki kalitni sahifaga yozish rad qilinadi."
+     "e": "Token maxfiy, u sahifaga yozilmaydi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "SI sahifa kodiga \"kalit = ABC-fake-123\" qatorini qo'shdi. Nima qilasiz?",
      "o": [
-      "Kalitni sahifaga yozish taklifi rad qilinadi",
-      "Kalitni sahifaga yozish xavfsiz",
-      "Kalit sahifada turishi kerak",
-      "SI taklifi doim qabul qilinadi"
+      "Rad qilib, olib tashlashni so'rayman",
+      "Shundayicha qoldiraman",
+      "Kalitni kattaroq yozdiraman",
+      "Sahifani do'stlarga yuboraman"
      ],
-     "e": "SI kalitni sahifaga yozmoqchi bo'lsa, rad qiling."
+     "e": "Sahifa kodida kalit turmasligi kerak."
     },
     {
-     "q": "Agent o'zgarishni ko'rsatdi: sahifada tokeningiz yozilgan. Nima qilasiz?",
+     "q": "SI: \"Bot tokenini maktab sayti pastiga yozib qo'yaymi?\" Bu qanday taklif?",
      "o": [
-      "Rad qilaman",
-      "Qabul qilaman",
-      "Hech narsa qilmayman",
-      "Do'stlarimga ko'rsataman"
+      "Xavfli taklif",
+      "Foydali maslahat",
+      "Chiroyli g'oya",
+      "Oddiy savol"
      ],
-     "e": "Kalit yoki token sahifaga yozilsa, rad qiling."
+     "e": "Tokenni saytga yozish uni hammaga ochib qo'yadi."
     },
     {
-     "q": "SI \"Kalitni sahifaga yozsak, oson bo'ladi\" dedi. Nima deysiz?",
+     "q": "Kamolaning sahifasida kalit yozilib qoldi. Uni kim ko'rishi mumkin?",
      "o": [
-      "\"Yo'q, kalit sahifaga yozilmaydi\"",
-      "\"Ha, oson bo'lsa yoz\"",
-      "\"Ha, lekin kichik harfda\"",
-      "\"Ha, faqat bugunga\""
+      "Sahifani ochgan har kim",
+      "Faqat Kamola",
+      "Faqat SI",
+      "Uni hech kim ko'rmaydi"
      ],
-     "e": "Oson bo'lsa ham, kalit sahifaga yozilmaydi."
+     "e": "Sahifa hammaga ochiq, undagi kalitni ham hamma ko'radi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI siz tushunmagan buyruq berdi. Nima qilasiz?",
+     "q": "SI \"Shu buyruqni ishga tushiring\" dedi, Ali tushunmadi. Nima qiladi?",
      "o": [
-      "Avval u nima qilishini so'rayman",
-      "Darhol bajaraman",
-      "Ikki marta bajaraman",
-      "Do'stimga bajartiraman"
+      "Avval nima qilishini so'raydi",
+      "Darhol ishga tushiradi",
+      "Buyruqni o'zgartirib yuboradi",
+      "Do'stiga bajartiradi"
      ],
-     "e": "Tushunmagan buyruqni bajarmang, avval so'rang."
+     "e": "Tushunmagan buyruqni bajarmang, avval SI'dan so'rang."
     },
     {
      "q": "Qaysi prompt to'g'ri?",
      "o": [
       "\"Bu buyruq nima qiladi? Sodda tushuntir\"",
-      "\"Mayli, bajardim\"",
-      "\"Yana bitta buyruq ber\"",
-      "\"Tushunmasam ham bajaraman\""
+      "\"Tushunmadim, baribir bajaraman\"",
+      "\"Yana uzunroq buyruq yoz\"",
+      "\"Buyruqni ikki marta ber\""
      ],
-     "e": "Avval buyruq nima qilishini SI'dan so'rang."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Tushunmagan buyruqni bajarmaslik kerak",
-      "SI bergan har buyruqni bajarish kerak",
-      "Qisqa buyruqni tushunmasa ham bajarsa bo'ladi",
-      "Buyruqni tushunish shart emas"
-     ],
-     "e": "Tushunmagan buyruqni bajarmang."
+     "e": "Bu prompt buyruq nima qilishini so'raydi."
     },
     {
      "q": "Nega tushunmagan buyruqni bajarmaysiz?",
      "o": [
-      "U nimanidir buzishi yoki o'chirishi mumkin",
-      "Buyruq juda uzun",
-      "Bajarish uzoq vaqt oladi",
-      "SI xafa bo'ladi"
+      "U nimanidir o'chirishi mumkin",
+      "Buyruq juda qisqa",
+      "Kompyuter charchaydi",
+      "Buyruq ingliz tilida"
      ],
-     "e": "Tushunmagan buyruq nima qilishini bilmaysiz."
+     "e": "Noma'lum buyruq kerakli narsani buzishi yoki o'chirishi mumkin."
     },
     {
-     "q": "SI uzun, g'alati buyruq yozdi: \"Shuni ishga tushiring\". Birinchi nima qilasiz?",
+     "q": "SI aytdi: bu buyruq hamma rasmlarni o'chiradi. Madinaga bu kerak emas, nima qiladi?",
      "o": [
-      "SI'dan buyruq nima qilishini so'rayman",
-      "Darhol ishga tushiraman",
-      "Buyruqni o'zgartirib ishga tushiraman",
-      "Buyruqni do'stimga yuboraman"
+      "Bu buyruqni bajarmaydi",
+      "Baribir bajaradi",
+      "Buyruqni ikki marta bajaradi",
+      "Rasmlarni o'zi o'chiradi"
      ],
-     "e": "Avval buyruq nima qilishini so'rang."
+     "e": "Buyruq nima qilishini bildingiz, u kerak emas — bajarmaysiz."
     },
     {
-     "q": "Buyruqni bajarishdan oldin nimani bilishingiz kerak?",
+     "q": "SI aytdi: buyruq faqat saytni ochadi, Jasurga shu kerak. Nima qiladi?",
      "o": [
-      "U nima qilishini",
-      "Uning uzunligini",
-      "Uning rangini",
-      "Uni kim o'ylab topganini"
+      "Endi uni bajarsa bo'ladi",
+      "Hech qachon bajarmaydi",
+      "Yana yangi buyruq so'raydi",
+      "Kompyuterni o'chiradi"
      ],
-     "e": "Buyruq nima qilishini bilmasangiz, bajarmang."
+     "e": "Buyruq nima qilishini tushundi va u xavfsiz."
+    },
+    {
+     "q": "Kamola buyruqning faqat yarmini tushundi. Uni bajaradimi?",
+     "o": [
+      "Yo'q, qolganini ham so'raydi",
+      "Ha, yarmi yetarli",
+      "Ha, tezroq bajaradi",
+      "Ha, faqat yarmini bajaradi"
+     ],
+     "e": "Buyruqni to'liq tushunmaguncha bajarmang."
     }
    ]
   }

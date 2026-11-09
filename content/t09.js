@@ -3,192 +3,192 @@ CONTENT[9] = {
   {
    "pool": [
     {
-     "q": "Katta vazifani bitta promptda bersangiz nima bo'lishi mumkin?",
+     "q": "Ali bitta promptda butun do'kon saytini so'radi. Nima bo'lishi mumkin?",
      "o": [
       "SI ko'proq xato qilishi mumkin",
-      "SI hech qachon xato qilmaydi",
-      "SI tezroq ishlaydi",
-      "SI ishni rad etadi"
+      "SI umuman xato qilmaydi",
+      "SI faqat sarlavhani yozadi",
+      "SI ishni boshlamaydi"
      ],
-     "e": "Katta vazifa bitta promptda bo'lsa, SI ko'proq xato qilishi mumkin."
+     "e": "Katta vazifa bitta promptda bo'lsa, SI ko'proq xato qiladi."
     },
     {
-     "q": "Qaysi prompt katta vazifa?",
+     "q": "Qaysi prompt juda katta vazifa?",
      "o": [
-      "\"Butun saytni qil: sarlavha, menyu, rasm, narx\"",
-      "\"Faqat sarlavhani qil\"",
-      "\"Tugma rangini ko'k qil\"",
-      "\"Menyuga bitta taom qo'sh\""
+      "«Butun kafe saytini to'liq qil»",
+      "«Sarlavhani qizil qil»",
+      "«Tugma yozuvini o'zgartir»",
+      "«Bitta rasm qo'sh»"
      ],
-     "e": "Unda bir nechta ish birdan so'ralgan."
+     "e": "Butun sayt — ko'p ishdan iborat katta vazifa."
     },
     {
-     "q": "Siz bitta promptda butun o'yinni so'radingiz. SI ko'p xato qildi. Nega?",
+     "q": "Malika bitta promptda 10 ta ish so'radi va SI adashdi. Sabab nima?",
      "o": [
-      "Vazifa bitta prompt uchun juda katta edi",
-      "Prompt o'zbekcha edi",
-      "Siz \"iltimos\" demadingiz",
-      "SI charchab qoldi"
+      "Bir promptda juda ko'p ish bor",
+      "Malika «iltimos» demadi",
+      "Promptda nuqta yo'q edi",
+      "Prompt o'zbekcha yozilgan edi"
      ],
-     "e": "Katta vazifada SI ko'proq xato qilishi mumkin."
+     "e": "Ish ko'p bo'lsa, SI ko'proq adashadi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "A — bitta katta prompt, B — bir nechta kichik prompt. Qayerda xato ko'proq?",
      "o": [
-      "Katta vazifani bitta promptda bersangiz, xato ko'payishi mumkin",
-      "Katta vazifada SI xato qilmaydi",
-      "Katta vazifani bitta promptda berish eng yaxshi",
-      "Kichik vazifada SI ko'proq xato qiladi"
+      "A yo'lda",
+      "B yo'lda",
+      "Ikkalasida bir xil",
+      "Xato umuman chiqmaydi"
      ],
-     "e": "Katta vazifa bitta promptda bo'lsa, SI ko'proq xato qilishi mumkin."
+     "e": "Bitta katta promptda SI ko'proq xato qilishi mumkin."
     },
     {
-     "q": "Qaysi promptda SI kamroq xato qilishi mumkin?",
+     "q": "Qaysi holatda SI kamroq xato qiladi?",
      "o": [
-      "\"Kafe saytiga faqat sarlavha yoz\"",
-      "\"Kafe saytini to'liq qil: menyu, rasm, narx\"",
-      "\"Butun saytni bir zumda qil\"",
-      "\"Sayt, o'yin va botni qil\""
+      "Vazifa kichik bo'lganda",
+      "Vazifa juda katta bo'lganda",
+      "Bir promptda 10 ta ish bo'lsa",
+      "Butun sayt birdan so'ralganda"
      ],
-     "e": "Vazifa kichik bo'lsa, xato kamroq bo'ladi."
+     "e": "Kichik vazifada SI kamroq adashadi."
     },
     {
-     "q": "Ali bitta promptda butun saytni so'radi. Vali faqat sarlavhani so'radi. Kimda xato ko'proq bo'lishi mumkin?",
+     "q": "Qaysi o'quvchi SI'dan ko'proq xato javob olishi mumkin?",
      "o": [
-      "Alida",
-      "Valida",
-      "Ikkalasida teng",
-      "Ikkalasida ham xato bo'lmaydi"
+      "Butun saytni birdan so'ragan Ali",
+      "Faqat sarlavha so'ragan Vali",
+      "Faqat tugma so'ragan Lola",
+      "Bitta rasm so'ragan Zarina"
      ],
-     "e": "Ali katta vazifani bitta promptda berdi."
+     "e": "Ali bitta promptda eng katta vazifani berdi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Katta vazifa bilan nima qilish kerak?",
+     "q": "Kafe sayti katta vazifa. Uni qanday so'raysiz?",
      "o": [
-      "Kichik qadamlarga bo'lish",
-      "Bitta promptda berish",
-      "Tashlab qo'yish",
-      "Promptni juda uzun qilish"
+      "Kichik qadamlarga bo'lib so'rayman",
+      "Bitta promptda birdan so'rayman",
+      "Ishni tashlab qo'yaman",
+      "SI o'zi bo'lishini kutaman"
      ],
-     "e": "Katta vazifani kichik qadamlarga bo'ling."
+     "e": "Katta vazifani kichik qadamlarga bo'lish kerak."
     },
     {
-     "q": "Kafe sayti kerak. Qaysi biri kichik qadam?",
+     "q": "Gul do'koni saytini qadamlarga bo'lyapsiz. Qaysi biri kichik qadam?",
      "o": [
-      "Sarlavha qilish",
+      "Sarlavha yozish",
       "Butun saytni qilish",
-      "Hamma sahifalarni qilish",
-      "Saytni boshidan oxirigacha qilish"
+      "Saytni zo'r qilish",
+      "Saytni birdan tugatish"
      ],
-     "e": "Sarlavha — katta vazifaning bitta kichik qadami."
+     "e": "Sarlavha — saytning kichik bir qismi."
     },
     {
-     "q": "Qaysi reja qadamlarga bo'lingan?",
+     "q": "Qaysi reja kichik qadamlarga bo'lingan?",
      "o": [
-      "1) Sarlavha 2) Menyu 3) Rasmlar",
-      "Hammasini birdan qilish",
-      "Butun sayt — bitta ish",
-      "Saytni bitta promptda so'rash"
-     ],
-     "e": "Unda katta vazifa kichik qadamlarga bo'lingan."
-    },
-    {
-     "q": "Siz bot qilmoqchisiz. Ishni qanday boshlaysiz?",
-     "o": [
-      "Vazifani kichik qadamlarga bo'lib chiqaman",
-      "Butun botni bitta promptda so'rayman",
-      "SI'ga \"hammasini qil\" deyman",
-      "Hech narsa yozmasdan kutaman"
-     ],
-     "e": "Katta vazifani avval kichik qadamlarga bo'ling."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Kichik qadamlarda SI kamroq xato qiladi",
-      "Qadamlarga bo'lish vaqtni behuda ketkazadi",
-      "Kichik qadamda SI ko'proq xato qiladi",
-      "Katta vazifani bo'lib bo'lmaydi"
-     ],
-     "e": "Katta vazifani kichik qadamlarga bo'lsangiz, xato kamayadi."
-    },
-    {
-     "q": "Katta vazifa 3 ta qadamga bo'lindi. Nechta kichik ish bo'ldi?",
-     "o": [
-      "3 ta",
-      "1 ta",
-      "2 ta",
-      "6 ta"
+      "1) Sarlavha, 2) Menyu, 3) Tugma",
+      "1) Butun sayt",
+      "1) Sayt va bot, 2) Qolgani",
+      "1) Sayt, menyu, tugma birdan"
      ],
      "e": "Har bir qadam — bitta kichik ish."
+    },
+    {
+     "q": "Tort pishirish ham katta ish. Uni qanday qadamlarga bo'lasiz?",
+     "o": [
+      "Xamir qorish, pishirish, bezash",
+      "Bir zumda tort tayyorlash",
+      "Faqat bezashning o'zi",
+      "Tortni do'kondan sotib olish"
+     ],
+     "e": "Katta ish kichik qadamlarga bo'linsa, oson bajariladi."
+    },
+    {
+     "q": "Jasur maktab sayti uchun 4 ta qadam yozdi. Bu nega yaxshi?",
+     "o": [
+      "Har qadamda SI kamroq adashadi",
+      "Ish ko'proq vaqt oladi",
+      "Prompt uzunroq bo'ladi",
+      "SI qadamlarni o'zi biladi"
+     ],
+     "e": "Kichik qadamda SI kamroq xato qiladi."
+    },
+    {
+     "q": "Sport zali sayti: sarlavha, jadval, narxlar, aloqa. Nechta qadamga bo'lsa bo'ladi?",
+     "o": [
+      "4 ta qadamga",
+      "1 ta qadamga",
+      "Bo'lib bo'lmaydi",
+      "100 ta qadamga"
+     ],
+     "e": "Har bir qism — alohida kichik qadam."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Bitta promptda nechta qadamni so'rash kerak?",
+     "q": "Qaysi prompt faqat bitta qadamni so'raydi?",
      "o": [
-      "Faqat bitta",
-      "Hamma qadamlarni",
-      "Kamida uchta",
-      "Ikkita"
+      "«Faqat sarlavhani qil»",
+      "«Sarlavha va menyuni qil»",
+      "«Butun saytni qil»",
+      "«Menyu, tugma va rasm qil»"
      ],
-     "e": "Bitta promptda faqat bitta qadamni so'rang."
+     "e": "Unda faqat bitta ish — sarlavha so'ralgan."
     },
     {
-     "q": "Qaysi prompt to'g'ri?",
+     "q": "Ali 1-promptda sarlavhani oldi. 2-promptda nima so'raydi?",
      "o": [
-      "\"Avval faqat sarlavhani qil. Keyin menyuni qilamiz\"",
-      "\"Sarlavha, menyu va rasmlarni qil\"",
-      "\"Butun saytni qil\"",
-      "\"Menyu va narxlarni birga qil\""
+      "Endi faqat menyuni",
+      "Yana butun saytni",
+      "Sarlavha va qolganini birdan",
+      "Hech narsa so'ramaydi"
      ],
-     "e": "Unda faqat bitta qadam so'ralgan."
+     "e": "Har promptda keyingi bitta qadam so'raladi."
     },
     {
-     "q": "\"Avval faqat sarlavhani qil. Keyin menyuni qilamiz\". Hozir SI nima qiladi?",
+     "q": "Prompt: «Sarlavha yoz, menyu qil, rasm qo'sh». Nima xato?",
      "o": [
-      "Faqat sarlavhani",
-      "Sarlavha va menyuni",
-      "Faqat menyuni",
-      "Butun saytni"
-     ],
-     "e": "Hozir faqat birinchi qadam — sarlavha so'ralgan."
-    },
-    {
-     "q": "Sarlavha tayyor bo'ldi. Keyingi promptda nima so'raysiz?",
-     "o": [
-      "Keyingi bitta qadamni, masalan menyuni",
-      "Qolgan hamma ishni birdan",
-      "Butun saytni boshidan",
-      "Menyu, rasm va narxni birga"
-     ],
-     "e": "Har promptda bitta qadam: endi menyu."
-    },
-    {
-     "q": "Siz \"Sarlavha va menyuni qil\" deb yozdingiz. Nima xato?",
-     "o": [
-      "Bitta promptda ikkita qadam so'ralgan",
+      "Bitta promptda uchta qadam bor",
       "Prompt juda qisqa",
-      "Prompt o'zbekcha yozilgan",
-      "\"Iltimos\" so'zi yo'q"
+      "Promptda salom yo'q",
+      "Prompt o'zbekcha yozilgan"
      ],
-     "e": "Bitta promptda faqat bitta qadamni so'rang."
+     "e": "Bitta promptda faqat bitta qadam so'rash kerak."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Lola gul do'koni saytini 3 qadamga bo'ldi. Qadamlarni SI'ga qanday beradi?",
      "o": [
-      "Har promptda bitta qadam, keyin keyingisi",
-      "Hamma qadamni bitta promptga yozish kerak",
-      "Qadamlarni aralash tartibda so'rash kerak",
-      "Faqat oxirgi qadamni so'rash kerak"
+      "Har birini alohida promptda",
+      "Uchala qadamni bitta promptda",
+      "Faqat oxirgi qadamni",
+      "Qadamlarni aralashtirib"
      ],
-     "e": "Qadamlarni birma-bir, bittadan so'rang."
+     "e": "Bitta promptda bitta qadam bo'lishi kerak."
+    },
+    {
+     "q": "Bot uchun prompt: «Faqat salom xabarini qil». Bu nechta qadam?",
+     "o": [
+      "Bitta qadam",
+      "Ikki qadam",
+      "Uch qadam",
+      "Butun bot"
+     ],
+     "e": "Unda faqat bitta ish so'ralgan."
+    },
+    {
+     "q": "Zarina «Menyu va tugma qil» deb yozdi. Promptni qanday tuzatadi?",
+     "o": [
+      "Uni ikki promptga bo'ladi",
+      "Unga yana so'z qo'shadi",
+      "Undov belgisi qo'yadi",
+      "Promptni o'chirib tashlaydi"
+     ],
+     "e": "Menyu bir prompt, tugma boshqa prompt bo'ladi."
     }
    ]
   },

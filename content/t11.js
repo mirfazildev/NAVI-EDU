@@ -3,142 +3,152 @@ CONTENT[11] = {
   {
    "pool": [
     {
-     "q": "SI ishni tugatdi. Endi nima qilasiz?",
+     "q": "SI kafe sayti uchun menyu qildi va «Tayyor!» dedi. Ali endi nima qiladi?",
      "o": [
-      "Natijani o'zim ochib ko'raman",
-      "Darhol keyingi ishga o'taman",
-      "SI \"tayyor\" dedi, ishonaman",
-      "Kompyuterni o'chiraman"
+      "Saytni ochib, menyuni o'zi ko'radi",
+      "SI'ga rahmat aytib, ishni yopadi",
+      "Do'stlariga «tayyor» deb yozadi",
+      "SI'dan yana bitta menyu so'raydi"
      ],
-     "e": "SI ishni tugatgach, natijani o'zingiz ochib ko'rasiz."
+     "e": "SI «tayyor» desa ham, natijani o'zingiz ochib ko'rasiz."
     },
     {
-     "q": "Natijani kim ochib ko'rishi kerak?",
-     "o": [
-      "Siz o'zingiz",
-      "Faqat SI",
-      "Hech kim",
-      "Faqat sayt egasi"
-     ],
-     "e": "Natijani o'zingiz ochib ko'rasiz."
-    },
-    {
-     "q": "SI \"Hammasi tayyor\" dedi. Qaysi gap to'g'ri?",
-     "o": [
-      "Baribir saytni ochib ko'rish kerak",
-      "Endi tekshirish shart emas",
-      "SI doim to'g'ri aytadi",
-      "Saytni ochish xavfli"
-     ],
-     "e": "SI xato qilsa ham ishonch bilan gapiradi. Natijani o'zingiz ko'ring."
-    },
-    {
-     "q": "Natijani qachon ochib ko'rasiz?",
-     "o": [
-      "SI ishni tugatgach",
-      "Prompt yozishdan oldin",
-      "Bir haftadan keyin",
-      "Hech qachon"
-     ],
-     "e": "SI ishni tugatgach, natijani ochib ko'rasiz."
-    },
-    {
-     "q": "Nega natijani o'zingiz ochib ko'rasiz?",
+     "q": "Nega natijani SI'ning so'ziga emas, o'zingizga ishonib tekshirasiz?",
      "o": [
       "SI xato qilsa ham ishonch bilan gapiradi",
-      "Sayt o'zi o'chib qoladi",
-      "SI buni so'ragan",
-      "Shunda sayt tezroq ishlaydi"
+      "SI hech qachon ishni tugatmaydi",
+      "SI natijani yashirib qo'yadi",
+      "Shunda sayt tezroq ochiladi"
      ],
-     "e": "SI \"tayyor\" desa ham, xato bo'lishi mumkin."
+     "e": "SI xato qilganda ham ishonch bilan «tayyor» deyishi mumkin."
     },
     {
-     "q": "Siz SI bilan sayt qildingiz. Natijani qayerda ko'rasiz?",
+     "q": "Sardor rasmni ochmay «zo'r» dedi. Keyin qarasa, mushuk o'rniga it. Qayerda adashdi?",
      "o": [
-      "Saytni ochib, ekranda",
-      "SI javobidagi so'zlarda",
-      "O'z promptimda",
-      "Natijani ko'rib bo'lmaydi"
+      "Rasmni o'zi ochib ko'rmadi",
+      "Promptni juda uzun yozdi",
+      "SI'ga rahmat aytmadi",
+      "Rasmni juda tez so'radi"
      ],
-     "e": "Saytni o'zingiz ochib, ekranda ko'rasiz."
+     "e": "Rasmni o'zi ochib ko'rganida, xatoni darhol sezardi."
+    },
+    {
+     "q": "Telegram bot salom berishi kerak. SI «Bot tayyor» dedi. Qanday tekshirasiz?",
+     "o": [
+      "Botga o'zim yozib ko'raman",
+      "Botning nomiga qarab qo'yaman",
+      "SI javobini yana o'qib chiqaman",
+      "Ertaga do'stimdan so'rayman"
+     ],
+     "e": "Botga o'zingiz yozsangiz, u salom beradimi-yo'qmi ko'rasiz."
+    },
+    {
+     "q": "Nilufar SI bilan buvisiga tabrik yozdi. Yuborishdan oldin uni kim o'qiydi?",
+     "o": [
+      "Nilufarning o'zi",
+      "Faqat SI'ning o'zi",
+      "Hech kim, SI yozgan",
+      "Faqat buvisi o'qiydi"
+     ],
+     "e": "Natijani boshqaga berishdan oldin o'zingiz ko'rib chiqasiz."
+    },
+    {
+     "q": "SI sport zali saytiga dars jadvalini qo'shdi. Tekshirish uchun nimaga qaraysiz?",
+     "o": [
+      "Ekrandagi jadvalning o'ziga",
+      "SI yozgan izohga",
+      "O'zim yozgan promptga",
+      "SI javobining uzunligiga"
+     ],
+     "e": "Natija — ekranda ko'ringan narsa, SI'ning gapi emas."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Kutilgan natijada 3 ta band bor. Nechtasini tekshirasiz?",
+     "q": "Kutilgan natijada kafe nomi, telefon raqami va xarita bor. Nechtasini tekshirasiz?",
      "o": [
-      "Hammasini, 3 tasini",
-      "Faqat birinchisini",
-      "Faqat oxirgisini",
-      "Bittasini ham emas"
+      "Uchalasini, birma-bir",
+      "Faqat kafe nomini",
+      "Faqat xaritani",
+      "Eng ko'zga tashlanganini"
      ],
-     "e": "Har bir bandni bittalab tekshirasiz."
+     "e": "Kutilgan natijadagi har bir band bittalab tekshiriladi."
     },
     {
-     "q": "Bandlarni qanday tekshirasiz?",
+     "q": "Kutilgan: gul nomi, rasmi, narxi. Aziza nom va rasmni ko'rdi. Endi nima qiladi?",
      "o": [
-      "Bittalab, har birini alohida",
-      "Bir qarashda hammasini birga",
-      "Faqat eng muhimini",
-      "Tasodifiy bittasini"
+      "Narxni ham tekshiradi",
+      "Ishni tugatib, saytni yopadi",
+      "Rasmni yana bir ko'radi",
+      "SI'ga rahmat aytadi"
      ],
-     "e": "Har bir band bittalab tekshiriladi."
-    },
-    {
-     "q": "Kutilgan: \"Tugma ko'k. Sarlavha o'zbekcha.\" Tugma ko'k ekan. Endi nima qilasiz?",
-     "o": [
-      "Sarlavhani ham tekshiraman",
-      "Ish tugadi deb hisoblayman",
-      "Tugmani yana tekshiraman",
-      "Kompyuterni o'chiraman"
-     ],
-     "e": "Har bir band tekshiriladi — sarlavha ham."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "Har bir band alohida tekshiriladi",
-      "Bitta bandni tekshirish yetarli",
-      "Bandlarni faqat SI tekshiradi",
-      "Bandlar umuman tekshirilmaydi"
-     ],
-     "e": "Kutilgan natijadagi har bir bandni bittalab tekshirasiz."
-    },
-    {
-     "q": "Ro'yxatda 4 ta band bor. Siz 2 tasini tekshirdingiz. Tekshirish tugadimi?",
-     "o": [
-      "Yo'q, yana 2 ta band qoldi",
-      "Ha, yarmi yetarli",
-      "Ha, 2 ta band yetadi",
-      "Ha, qolganini SI biladi"
-     ],
-     "e": "Hamma bandlar bittalab tekshirilishi kerak."
+     "e": "Narx ham kutilgan natijadagi band, uni ham ko'rish kerak."
     },
     {
      "q": "Bandlarni bittalab tekshirish nega kerak?",
      "o": [
       "Birorta band tushib qolmasligi uchun",
-      "Vaqt ko'proq ketishi uchun",
+      "Ko'proq vaqt ketishi uchun",
       "SI'ni xursand qilish uchun",
-      "Saytni chiroyli qilish uchun"
+      "Sayt chiroyli bo'lishi uchun"
      ],
-     "e": "Bittalab tekshirsangiz, hech bir band tushib qolmaydi."
+     "e": "Bittalab tekshirsangiz, hech bir band esdan chiqmaydi."
+    },
+    {
+     "q": "Bobur gul do'koni saytiga bir qaradi-yu, «Zo'r, tayyor» dedi. U to'g'ri qildimi?",
+     "o": [
+      "Yo'q, har bandni alohida ko'rishi kerak",
+      "Ha, bir qarash yetarli",
+      "Ha, sayt chiroyli bo'lsa bo'ldi",
+      "Yo'q, buni SI tekshirishi kerak"
+     ],
+     "e": "Bir qarashda band tushib qolishi mumkin, har biri alohida ko'riladi."
+    },
+    {
+     "q": "Kutilgan natijada 5 ta band bor. Qaysi usul to'g'ri?",
+     "o": [
+      "Birinchisidan boshlab, bittalab ko'rish",
+      "Faqat oxirgisini ko'rish",
+      "Tasodifan ikkitasini tanlash",
+      "Faqat eng qiyinini ko'rish"
+     ],
+     "e": "Bandlarni tartib bilan, bittalab tekshirasiz."
+    },
+    {
+     "q": "Kutilgan: hikoya o'zbekcha, 5 gapli, sarlavhali. Nodir faqat sarlavhaga qaradi. Nima qoldi?",
+     "o": [
+      "Tili va gaplar soni",
+      "Faqat sarlavha",
+      "Hikoyaning rasmi",
+      "Hech narsa qolmadi"
+     ],
+     "e": "Nodir uchta banddan faqat bittasini tekshirdi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "5 ta banddan 4 tasi bajarildi. Ish tugadimi?",
+     "q": "Kafe saytida menyu va manzil bor, telefon raqami yo'q. Ish tugadimi?",
      "o": [
-      "Yo'q, hali tugamagan",
-      "Ha, tugadi",
-      "Ha, 4 ta yetarli",
-      "Ha, deyarli hammasi"
+      "Yo'q, telefon raqami yetishmaydi",
+      "Ha, ko'pi bajarildi",
+      "Ha, raqam unchalik muhim emas",
+      "Ha, sayt ochilyapti-ku"
      ],
      "e": "Bitta band bajarilmasa ham, ish hali tugamagan."
+    },
+    {
+     "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasiz?",
+     "o": [
+      "SI'dan narxlarni qo'shishni so'rayman",
+      "Saytni do'stlarimga yuboraman",
+      "Yangi sayt boshlayman",
+      "Narxlarsiz ham qoldiraman"
+     ],
+     "e": "Bajarilmagan band bor ekan, ish davom etadi."
     },
     {
      "q": "Ish qachon tugagan bo'ladi?",
@@ -146,49 +156,39 @@ CONTENT[11] = {
       "Hamma bandlar bajarilganda",
       "Ko'p bandlar bajarilganda",
       "Birinchi band bajarilganda",
-      "SI \"tayyor\" deganda"
+      "SI «tayyor» deganda"
      ],
      "e": "Ish faqat hamma bandlar bajarilganda tugaydi."
     },
     {
-     "q": "Kutilgan: sarlavha 6 so'zdan oshmaydi. Ekranda 10 so'z. Tugma esa to'g'ri. Nima deysiz?",
+     "q": "Ali: «9 ta band bor, bittasi qolgan, bo'ldi». Vali: «Davom etamiz». Kim haq?",
      "o": [
-      "Ish hali tugamagan",
-      "Ish tugadi",
-      "Tugma to'g'ri, shu yetarli",
-      "Sarlavha muhim emas"
+      "Vali haq, bitta band qolgan",
+      "Ali haq, 9 tasi yetadi",
+      "Ali haq, ko'pi bajarildi",
+      "Ali haq, oxirgisi muhim emas"
      ],
-     "e": "Bitta band bajarilmagan — demak ish tugamagan."
+     "e": "Bitta band qolgan bo'lsa ham, ish tugamagan."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Kutilgan rasmda quyosh, daraxt va it bor. Qaysi rasm tayyor?",
      "o": [
-      "Bitta band bajarilmasa ham, ish tugamagan",
-      "Ko'p band bajarilsa, ish tugagan",
-      "Birinchi band bajarilsa, ish tugagan",
-      "Bandlarning yarmi yetarli"
+      "Quyosh, daraxt va it bor",
+      "Quyosh va daraxt bor",
+      "Daraxt va it bor",
+      "Faqat katta it bor"
      ],
-     "e": "Bitta band bajarilmagan bo'lsa ham, ish hali tugamagan."
+     "e": "Faqat uchala band ham bor rasm tayyor hisoblanadi."
     },
     {
-     "q": "Kutilgan natijadagi hamma bandlar bajarildi. Ish tugadimi?",
+     "q": "Maktab saytida bitta band bajarilmagan. Saytni hozir hammaga ko'rsatasizmi?",
      "o": [
-      "Ha, ish tugadi",
-      "Yo'q, hali tugamagan",
-      "Buni bilib bo'lmaydi",
-      "Faqat SI biladi"
+      "Yo'q, avval o'sha band to'g'rilanadi",
+      "Ha, bitta band sezilmaydi",
+      "Ha, keyin to'g'rilasa bo'ladi",
+      "Ha, ko'pi tayyor-ku"
      ],
-     "e": "Hamma bandlar bajarilsa, ish tugagan bo'ladi."
-    },
-    {
-     "q": "Bitta band bajarilmadi. Qaysi gap to'g'ri?",
-     "o": [
-      "Ish davom etadi",
-      "Ish tugadi, yopsa bo'ladi",
-      "Bu bandni o'chirib tashlash kerak",
-      "Bitta band muhim emas"
-     ],
-     "e": "Bitta band bajarilmasa, ish hali tugamagan — davom etasiz."
+     "e": "Bitta band bajarilmagan bo'lsa, ish hali tugamagan."
     }
    ]
   }

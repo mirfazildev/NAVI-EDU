@@ -6,253 +6,253 @@ CONTENT[16] = {
      "q": "SI qachon aylanib qolgan bo'ladi?",
      "o": [
       "Bitta xatoni 3 marta tuzata olmasa",
-      "Javobi uzun bo'lsa",
-      "Birinchi marta xato qilsa",
-      "Tez javob bersa"
+      "Javobni sekin yozsa",
+      "Bir marta xato qilsa",
+      "Juda uzun javob yozsa"
      ],
      "e": "Bitta xatoni 3 marta tuzata olmasa, SI aylanib qolgan bo'ladi."
     },
     {
-     "q": "SI bitta xatoni 3 marta tuzatdi, lekin xato hali ham bor. Bu nima?",
-     "o": [
-      "SI aylanib qoldi",
-      "Hammasi joyida",
-      "Sayt tayyor",
-      "SI yaxshi ishlayapti"
-     ],
-     "e": "3 marta tuzatolmasa, SI aylanib qolgan."
-    },
-    {
-     "q": "SI xatoni birinchi urinishda tuzata olmadi. SI aylanib qoldimi?",
-     "o": [
-      "Yo'q, hali 3 marta bo'lmadi",
-      "Ha, darhol aylanib qoldi",
-      "Ha, SI buzilib qoldi",
-      "Ha, endi SI ishlamaydi"
-     ],
-     "e": "Aylanib qolish — bitta xatoni 3 marta tuzata olmaslik."
-    },
-    {
-     "q": "Qaysi gap to'g'ri?",
-     "o": [
-      "3 marta tuzatolmasa, SI aylanib qolgan bo'ladi",
-      "SI hech qachon aylanib qolmaydi",
-      "Bitta xato bo'lsa, SI aylanib qolgan",
-      "SI aylanib qolsa, kompyuter o'chadi"
-     ],
-     "e": "SI bitta xatoni 3 marta tuzata olmasa, aylanib qolgan bo'ladi."
-    },
-    {
-     "q": "\"SI aylanib qoldi\" nimani bildiradi?",
-     "o": [
-      "SI bir xatoni qayta-qayta tuzata olmayapti",
-      "SI juda tez ishlayapti",
-      "Ekran aylanyapti",
-      "SI yangi g'oyalar beryapti"
-     ],
-     "e": "Aylanib qolgan SI bir xatoni qayta-qayta tuzata olmaydi."
-    },
-    {
-     "q": "SI to'rtinchi marta ham o'sha xatoni tuzata olmadi. Nima deysiz?",
+     "q": "SI Alining menyusini 3 marta tuzatdi, menyu hali buzuq. SI qanday holatda?",
      "o": [
       "SI aylanib qolgan",
-      "Yana 10 marta so'rash kerak",
-      "SI to'g'ri ishlayapti",
-      "Xato o'zi tuzaladi"
+      "SI ishni yaxshi bitirgan",
+      "Menyu o'zi tuzaladi",
+      "SI endi boshlayapti"
      ],
-     "e": "3 martadan keyin ham tuzatolmasa, SI aylanib qolgan."
+     "e": "Bitta xato 3 marta tuzalmadi, demak SI aylanib qolgan."
+    },
+    {
+     "q": "SI Madinaning rasmini bir marta tuzata olmadi. SI aylanib qoldimi?",
+     "o": [
+      "Yo'q, bu faqat birinchi urinish",
+      "Ha, darhol aylanib qoldi",
+      "Ha, SI butunlay buzildi",
+      "Ha, chunki rasm katta"
+     ],
+     "e": "Aylanib qolish uchun bitta xato 3 marta tuzalmasligi kerak."
+    },
+    {
+     "q": "SI 3 xil xatoni tuzatdi, har birini birinchi urinishda. Bu aylanib qolishmi?",
+     "o": [
+      "Yo'q, har biri birdan tuzaldi",
+      "Ha, 3 ta xato bo'ldi",
+      "Ha, SI ko'p ishladi",
+      "Ha, uch marta yozdi"
+     ],
+     "e": "Aylanib qolish — bitta xatoni qayta-qayta tuzata olmaslik."
+    },
+    {
+     "q": "SI gul do'koni narxini 2 marta tuzata olmadi. Jasur endi nima qiladi?",
+     "o": [
+      "Uchinchi marta so'rab ko'radi",
+      "Saytni butunlay o'chiradi",
+      "SI aylanib qoldi deydi",
+      "Kompyuterni o'chirib qo'yadi"
+     ],
+     "e": "Hali 2 marta bo'ldi, aylanib qolish uchun 3 marta kerak."
+    },
+    {
+     "q": "SI matndagi xatoni faqat uchinchi urinishda tuzatdi. SI aylanib qoldimi?",
+     "o": [
+      "Yo'q, oxiri tuzatdi",
+      "Ha, 3 marta urindi",
+      "Ha, juda sekin ishladi",
+      "Ha, birinchida tuzatmadi"
+     ],
+     "e": "Xato tuzaldi, demak SI aylanib qolmagan."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI aylanib qoldi. Qaysi biri yordam beradi?",
+     "q": "Ali 3 marta \"Rasm chiqmayapti\" deb yozdi, foyda yo'q. Endi nima qiladi?",
      "o": [
-      "Muammoni boshqacha so'zlar bilan tushuntirish",
-      "Aynan o'sha gapni qayta yozish",
-      "Kompyuterni o'chirish",
-      "SI'ga katta harflar bilan yozish"
+      "Muammoni boshqa so'zlar bilan yozadi",
+      "Xuddi shu gapni yana yozadi",
+      "Gapni katta harflar bilan yozadi",
+      "Hech narsa yozmay kutadi"
      ],
-     "e": "Muammoni boshqacha so'zlar bilan tushuntiring."
+     "e": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntiring."
     },
     {
-     "q": "Siz \"Tugma ishlamayapti\" deb 3 marta yozdingiz. Qaysi biri boshqacha tushuntirish?",
+     "q": "Nega o'sha gapni yana yuborish yordam bermaydi?",
      "o": [
-      "\"Tugmani bossam, hech narsa bo'lmayapti\"",
-      "\"Tugma ishlamayapti\"",
-      "\"TUGMA ISHLAMAYAPTI!!!\"",
-      "\"Tugma ishlamayapti, tugma ishlamayapti\""
-     ],
-     "e": "Boshqacha tushuntirish — muammoni yangi so'zlar bilan aytish."
-    },
-    {
-     "q": "Nega o'sha gapni yana yozish yordam bermaydi?",
-     "o": [
-      "SI yana o'sha javobni berishi mumkin",
-      "SI bir xil gapni o'qimaydi",
-      "Bir xil gap yozish taqiqlangan",
-      "Kompyuter qotib qoladi"
+      "SI yana o'sha javobni beradi",
+      "SI uzun gapni o'qimaydi",
+      "SI kichik harfni ko'rmaydi",
+      "Takror gapni SI o'chiradi"
      ],
      "e": "Bir xil gapga SI yana o'sha javobni berishi mumkin."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Jasur gapini o'zgartirdi: \"Tugma ishlamayapti!!!\". Bu boshqacha tushuntirishmi?",
      "o": [
-      "Aylanib qolganda muammoni boshqacha so'zlar bilan ayting",
-      "Aylanib qolganda o'sha gapni takrorlang",
-      "Aylanib qolganda faqat katta harflar bilan yozing",
-      "Aylanib qolganda SI'ga hech narsa yozmang"
+      "Yo'q, faqat belgi qo'shildi",
+      "Ha, endi gap boshqa",
+      "Ha, undov belgisi yetarli",
+      "Ha, endi SI tushunadi"
      ],
-     "e": "Muammoni boshqacha so'zlar bilan tushuntirish yordam beradi."
+     "e": "Undov belgisi qo'shish yangi so'zlar bilan tushuntirish emas."
     },
     {
-     "q": "SI sarlavha rangini 3 marta noto'g'ri o'zgartirdi. Endi nima yozasiz?",
+     "q": "Kamola muammoni boshqacha yozmoqchi. Gapiga nimani qo'shsa yaxshi?",
      "o": [
-      "Muammoni yangi so'zlar bilan tushuntiraman",
-      "\"Rangni to'g'rila\" deb yana yozaman",
-      "Faqat \"yana\" deb yozaman",
-      "Hech narsa yozmay kutaman"
+      "Nima bo'lishi kerak edi, nima bo'ldi",
+      "Sevimli rangi va yoshini",
+      "O'sha gapni ikki marta",
+      "Faqat \"tezroq\" so'zini"
      ],
-     "e": "Aylanib qolganda muammoni boshqacha tushuntiring."
+     "e": "Nima kutilgani va nima bo'lgani muammoni aniq ko'rsatadi."
     },
     {
-     "q": "\"Boshqacha tushuntirish\" nimani bildiradi?",
+     "q": "Sardor aylanib qolgan SI'ga muammoni yangi so'zlar bilan yozdi. Bu nimaga yordam beradi?",
      "o": [
-      "Muammoni yangi so'zlar bilan aytish",
-      "O'sha gapni nusxalab qayta yuborish",
-      "Boshqa muammo haqida yozish",
-      "Faqat bitta so'z yozish"
+      "SI muammoni yangicha tushunadi",
+      "SI tezroq yoza boshlaydi",
+      "Sayt rangi o'zgaradi",
+      "SI eski javobni qaytaradi"
      ],
-     "e": "Boshqacha tushuntirish — o'sha muammoni yangi so'zlar bilan aytish."
+     "e": "Yangi so'zlar SI'ga muammoni boshqa tomondan ko'rsatadi."
+    },
+    {
+     "q": "Zarinaning boti salom bermayapti. Qaysi biri muammoni boshqacha tushuntiradi?",
+     "o": [
+      "\"Salom yozsam, bot jim turibdi\"",
+      "\"Bot ishlamayapti, bot ishlamayapti\"",
+      "\"BOT ISHLAMAYAPTI!!!\"",
+      "\"Bot yana ishlamayapti\""
+     ],
+     "e": "Bu gapda nima qilingani va nima bo'lgani yangicha aytilgan."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "SI aylanib qoldi va yangi suhbat ochdingiz. Endi nima qilasiz?",
+     "q": "Kamolaning SI'si xatoni 3 marta tuzata olmadi, boshqacha yozish ham foyda bermadi. Endi nima qiladi?",
      "o": [
-      "Kerakli ma'lumotni qaytadan beraman",
-      "Hech narsa yozmayman",
-      "Faqat \"davom et\" deb yozaman",
-      "Faqat \"salom\" deb yozaman"
+      "Yangi suhbat ochadi",
+      "O'sha suhbatda yana so'raydi",
+      "Loyihani tashlab ketadi",
+      "Xuddi o'sha gapni yozadi"
      ],
-     "e": "Yangi suhbatda kerakli ma'lumotni qaytadan bering."
+     "e": "Boshqacha yozish yordam bermasa, yangi suhbat oching."
     },
     {
-     "q": "Nega yangi suhbatda ma'lumotni qaytadan berasiz?",
+     "q": "Madina yangi suhbatda yozdi: \"O'sha xatoni tuzat\". Nega SI tushunmaydi?",
      "o": [
-      "Yangi suhbat eski gaplarni bilmaydi",
-      "SI eski gaplarni yaxshi eslaydi",
-      "Ma'lumot berish shart emas",
-      "Yangi suhbat o'zi hammasini topadi"
+      "Yangi suhbat eski gapni bilmaydi",
+      "SI xatolarni tuzatmaydi",
+      "Madina katta harf ishlatmadi",
+      "Gap juda uzun yozilgan"
      ],
-     "e": "Yangi suhbat eski suhbatdagi gaplarni bilmaydi."
+     "e": "Yangi suhbatdagi SI oldingi suhbatni bilmaydi."
     },
     {
-     "q": "Yangi suhbat ochib, faqat \"Davom et\" deb yozdingiz. Nima xato?",
+     "q": "Qaysi xabar yangi suhbatni boshlash uchun yaxshi?",
      "o": [
-      "SI nima haqida gap ketayotganini bilmaydi",
-      "Hech qanday xato yo'q",
-      "\"Davom et\" juda uzun",
-      "Yangi suhbat ochib bo'lmaydi"
+      "\"Gul saytimda savatcha tugmasi ishlamayapti\"",
+      "\"Hali ham ishlamayapti\"",
+      "\"O'sha xatoni tuzat\"",
+      "\"Yana urinib ko'r\""
      ],
-     "e": "Yangi suhbatda SI oldingi gaplarni bilmaydi."
+     "e": "Bu xabarda loyiha va muammo qaytadan aytilgan."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Sardor yangi suhbatda faqat xato xabarini yubordi. Nima yetishmayapti?",
      "o": [
-      "SI aylanib qolsa, yangi suhbat ochish mumkin",
-      "Yangi suhbat ochish taqiqlangan",
-      "Yangi suhbatda hech narsa tushuntirmang",
-      "Yangi suhbat eski suhbatni eslaydi"
+      "Loyiha nima haqida ekani",
+      "Undov belgilari",
+      "Salomlashish so'zi",
+      "Xato xabarining rangi"
      ],
-     "e": "Aylanib qolganda yangi suhbat ochib, ma'lumotni qaytadan bering."
+     "e": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayting."
     },
     {
-     "q": "Yangi suhbatda SI'ga nimalarni berasiz?",
+     "q": "Eski suhbatda Nilufar sayt rangini aytgan edi. Yangi suhbatda SI uni biladimi?",
      "o": [
-      "Vazifa, xato xabari va qadamlaringiz",
-      "Faqat \"tuzat\" so'zini",
-      "Faqat ismingizni",
-      "Hech narsa bermayman"
+      "Yo'q, rangni qayta aytish kerak",
+      "Ha, SI hammasini eslaydi",
+      "Ha, agar so'rasa eslaydi",
+      "Ha, rang ekranda ko'rinib turibdi"
      ],
-     "e": "Yangi suhbatda kerakli ma'lumotni qaytadan berasiz."
+     "e": "Yangi suhbat eski gaplarni bilmaydi, kerakli ma'lumotni qayta bering."
     },
     {
-     "q": "Eski suhbatda SI 3 marta urindi, lekin foyda yo'q. Qaysi qadam to'g'ri?",
+     "q": "Nega yangi suhbat aylanib qolgan SI'ga yordam beradi?",
      "o": [
-      "Yangi suhbat ochib, hammasini qaytadan tushuntirish",
-      "O'sha suhbatda yana 5 marta so'rash",
-      "Yangi suhbatda faqat \"yana\" deyish",
-      "Xatoni tuzatmay tashlab ketish"
+      "SI ishni toza boshdan boshlaydi",
+      "SI tezroq yoza boshlaydi",
+      "Sayt o'zi tuzalib qoladi",
+      "Eski xato javoblar saqlanadi"
      ],
-     "e": "Yangi suhbat ochib, kerakli ma'lumotni qaytadan bering."
+     "e": "Yangi suhbatda SI eski xato yo'lini takrorlamaydi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Tuzatishlardan keyin hammasi battar buzildi. Nima qilish mumkin?",
+     "q": "Oldin: \"Rasm chiqmayapti\". Qaysi yangi gap aniqroq?",
      "o": [
-      "Hammasi ishlagan oxirgi holatga qaytish",
-      "Yana ko'p tuzatish so'rash",
-      "Saytni butunlay o'chirish",
-      "Xatoga e'tibor bermaslik"
+      "\"Bosh sahifada mushuk rasmi ko'rinmayapti\"",
+      "\"Rasm chiqmayapti, tuzat\"",
+      "\"RASM CHIQMAYAPTI\"",
+      "\"Rasm yana chiqmayapti\""
      ],
-     "e": "Hammasi ishlagan oxirgi holatga qayting."
+     "e": "Bu gapda qaysi rasm va qayerda ekani aytilgan."
     },
     {
-     "q": "\"Hammasi ishlagan oxirgi holat\" nima?",
+     "q": "Laylo yozdi: \"Tugma bosilsa xabar chiqishi kerak.\" Yana nimani qo'shsin?",
      "o": [
-      "Hammasi ishlagan eng so'nggi nusxa",
-      "Saytning eng birinchi kuni",
-      "Eng ko'p xato bo'lgan nusxa",
-      "SI'ning oxirgi javobi"
+      "Hozir nima bo'layotganini",
+      "Tugma rangi yoqishini",
+      "O'sha gapni yana bir marta",
+      "Faqat \"tezroq\" so'zini"
      ],
-     "e": "Bu — hammasi ishlagan eng so'nggi nusxa."
+     "e": "Nima bo'lishi kerakligi bor, endi nima bo'layotganini ham ayting."
     },
     {
-     "q": "Kecha sayt ishlardi. Bugun 3 marta tuzatdingiz, endi u umuman ochilmayapti. Qayerga qaytasiz?",
+     "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",
      "o": [
-      "Kechagi ishlagan holatga",
-      "Bugungi buzilgan holatga",
-      "Bo'sh sahifaga",
-      "Eng oxirgi tuzatishga"
+      "Bot nima qilishi kerakligi",
+      "Botning chiroyli ismi",
+      "Undov belgilari",
+      "Katta harflar"
      ],
-     "e": "Hammasi ishlagan oxirgi holatga qaytiladi."
+     "e": "\"Yomon\" so'zi muammo nimada ekanini aytmaydi."
     },
     {
-     "q": "Qaysi gap to'g'ri?",
+     "q": "Sport zali sayti. Qaysi gapda kutilgan va bo'lgan narsa bor?",
      "o": [
-      "Buzilib ketsa, ishlagan oxirgi holatga qaytish mumkin",
-      "Buzilgan narsani hech qachon qaytarib bo'lmaydi",
-      "Eng oxirgi o'zgarish har doim eng yaxshisi",
-      "Ishlagan holatga qaytish xato"
+      "\"Soat chiqishi kerak, bo'sh joy chiqyapti\"",
+      "\"Soat ishlamayapti\"",
+      "\"Soatni tuzat\"",
+      "\"Soat yana buzildi\""
      ],
-     "e": "Hammasi ishlagan oxirgi holatga qaytish mumkin."
+     "e": "Bu gapda nima bo'lishi kerak edi va nima bo'ldi aytilgan."
     },
     {
-     "q": "Nega ishlagan holatga qaytish foydali?",
+     "q": "Aziz \"Forma ishlamayapti\" o'rniga \"Forma buzildi\" deb yozdi. Bu yetarlimi?",
      "o": [
-      "Buzgan tuzatishlardan qutulasiz",
-      "Sayt rangi chiroyli bo'ladi",
-      "SI tezroq javob beradi",
-      "Yangi xatolar paydo bo'ladi"
+      "Yo'q, faqat bitta so'z almashdi",
+      "Ha, so'z boshqa bo'ldi",
+      "Ha, endi gap qisqaroq",
+      "Ha, SI albatta tushunadi"
      ],
-     "e": "Qaytsangiz, hammasini buzgan tuzatishlar yo'qoladi."
+     "e": "Bitta so'zni almashtirish muammoni yangicha tushuntirmaydi."
     },
     {
-     "q": "Uchta nusxa bor: 1-chisi ishlaydi, 2-chisi ishlaydi, 3-chisi buzilgan. Qaysi biriga qaytasiz?",
+     "q": "Bobur yozdi: \"/start bossam, bot hech narsa yozmayapti.\" Bu gap nimasi bilan yaxshi?",
      "o": [
-      "2-nusxaga",
-      "3-nusxaga",
-      "1-nusxaga",
-      "Yangi bo'sh nusxaga"
+      "Nima qilgani va nima bo'lgani bor",
+      "U juda uzun yozilgan",
+      "Unda undov belgisi bor",
+      "U eski gapning o'zi"
      ],
-     "e": "2-nusxa — hammasi ishlagan oxirgi holat."
+     "e": "Gapda Bobur nima qilgani va nima bo'lgani aniq aytilgan."
     }
    ]
   }
