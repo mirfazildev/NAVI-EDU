@@ -13,7 +13,7 @@ CONTENT[4] = {
      "e": "SI yo'q narsani o'ylab topishi mumkin."
     },
     {
-     "q": "SI bergan manzil bo'yicha sayt topilmadi. Endi nima qilasiz?",
+     "q": "SI bergan manzil bo'yicha sayt topilmadi. Endi nima qilasan?",
      "o": [
       "Saytni boshqa yo'l bilan qidiraman",
       "Kompyuterni almashtiraman",
@@ -33,7 +33,7 @@ CONTENT[4] = {
      "e": "SI ishonch bilan gapiradi, o'ylab topgani ham haqiqiydek ko'rinadi."
     },
     {
-     "q": "SI gul do'koniga «Moviy lola» gulini maqtadi. Bunday gul borligini qanday bilasiz?",
+     "q": "SI gul do'koniga «Moviy lola» gulini maqtadi. Bunday gul borligini qanday bilasan?",
      "o": [
       "Gulchidan so'rab bilaman",
       "SI maqtagan, demak bor",
@@ -67,7 +67,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
-     "q": "«Sarlavhani kattalashtir» dedingiz, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
+     "q": "«Sarlavhani kattalashtir» deding, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
      "o": [
       "Nimani kattalashtirish kerakligini",
       "Qaysi rangni tanlashni",
@@ -77,9 +77,9 @@ CONTENT[4] = {
      "e": "SI sarlavha o'rniga rasmni olib, vazifani noto'g'ri tushundi."
     },
     {
-     "q": "Kafe uchun qisqa menyu so'radingiz, SI uzun hikoya yozdi. Nima bo'ldi?",
+     "q": "Kafe uchun qisqa menyu so'rading, SI uzun hikoya yozdi. Nima bo'ldi?",
      "o": [
-      "Siz so'ragan narsa chiqmadi",
+      "Sen so'ragan narsa chiqmadi",
       "Menyu juda mazali chiqdi",
       "SI menyuni o'chirib yubordi",
       "Kafe yopilib qoldi"
@@ -107,7 +107,7 @@ CONTENT[4] = {
      "e": "Do'kon nomi so'ralgan edi, SI buni noto'g'ri tushundi."
     },
     {
-     "q": "SI vazifani noto'g'ri tushunsa, nima qilasiz?",
+     "q": "SI vazifani noto'g'ri tushunsa, nima qilasan?",
      "o": [
       "Vazifani aniqroq qilib qayta yozaman",
       "SI'ga boshqa yozmayman",
@@ -117,7 +117,7 @@ CONTENT[4] = {
      "e": "Aniqroq yozilgan vazifani SI to'g'riroq tushunadi."
     },
     {
-     "q": "Botga «Salom» tugmasini so'radingiz, SI faqat «Salom» matnini yozdi. Bu qaysi xato?",
+     "q": "Botga «Salom» tugmasini so'rading, SI faqat «Salom» matnini yozdi. Bu qaysi xato?",
      "o": [
       "Vazifani noto'g'ri tushunish",
       "Yo'q narsani o'ylab topish",
@@ -131,7 +131,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
-     "q": "«Faqat sarlavhani o'zgartir» dedingiz, SI tugma rangini ham o'zgartirdi. Bu qanday xato?",
+     "q": "«Faqat sarlavhani o'zgartir» deding, SI tugma rangini ham o'zgartirdi. Bu qanday xato?",
      "o": [
       "Ortiqcha joyni o'zgartirdi",
       "Vazifani to'g'ri bajardi",
@@ -141,7 +141,7 @@ CONTENT[4] = {
      "e": "SI so'ralmagan joyni ham o'zgartirib yubordi."
     },
     {
-     "q": "Kafe sahifasida faqat narxni tuzattirdingiz, lekin kafe nomi ham o'zgaribdi. Nima qilasiz?",
+     "q": "Kafe sahifasida faqat narxni tuzattirding, lekin kafe nomi ham o'zgaribdi. Nima qilasan?",
      "o": [
       "Nomni qaytarishni so'rayman",
       "Yangi nom bilan qoldiraman",
@@ -166,12 +166,12 @@ CONTENT[4] = {
       "Ha, shunday bo'lishi mumkin",
       "Yo'q, hech qachon",
       "Faqat dam olish kuni",
-      "Faqat siz uxlasangiz"
+      "Faqat sen uxlasang"
      ],
      "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
     },
     {
-     "q": "Siz faqat telefon raqamini tuzattirdingiz. Qaysi o'zgarish ortiqcha?",
+     "q": "Sen faqat telefon raqamini tuzattirding. Qaysi o'zgarish ortiqcha?",
      "o": [
       "Gullar rasmi almashgan",
       "Yangi raqam yozilgan",
@@ -181,7 +181,7 @@ CONTENT[4] = {
      "e": "Rasm so'ralmagan edi, uni o'zgartirish ortiqcha."
     },
     {
-     "q": "Qanday yozsangiz, SI ortiqcha joyga kamroq tegadi?",
+     "q": "Qanday yozsang, SI ortiqcha joyga kamroq tegadi?",
      "o": [
       "«Faqat shu joyni o'zgartir» deb",
       "«Xohlaganingni qil» deb",
@@ -195,7 +195,7 @@ CONTENT[4] = {
   {
    "pool": [
     {
-     "q": "«Kafe menyusini yoz» dedingiz, SI kafe tarixini yozdi. Xato turi qaysi?",
+     "q": "«Kafe menyusini yoz» deding, SI kafe tarixini yozdi. Xato turi qaysi?",
      "o": [
       "Vazifani noto'g'ri tushundi",
       "Yo'q narsani o'ylab topdi",
@@ -235,7 +235,7 @@ CONTENT[4] = {
      "e": "Yo'q chegirma — SI o'ylab topgan narsa."
     },
     {
-     "q": "«Osmonni ko'k qil» dedingiz, SI daraxtlarni ham o'chirdi. Qaysi qism xato?",
+     "q": "«Osmonni ko'k qil» deding, SI daraxtlarni ham o'chirdi. Qaysi qism xato?",
      "o": [
       "Daraxtlarni o'chirish",
       "Osmonni ko'k qilish",
@@ -252,7 +252,7 @@ CONTENT[4] = {
       "Xatoni yashirish uchun",
       "Vaqtni o'tkazish uchun"
      ],
-     "e": "Xato turini bilsangiz, SI'dan nimani tuzatishni aniq so'raysiz."
+     "e": "Xato turini bilsang, SI'dan nimani tuzatishni aniq so'raysan."
     }
    ]
   }

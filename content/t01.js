@@ -74,7 +74,7 @@ CONTENT[1] = {
       "Internet kabeli",
       "Telefonning ekrani"
      ],
-     "e": "SI — so'rovingizga javob beradigan dastur."
+     "e": "SI — so'rovingga javob beradigan dastur."
     },
     {
      "q": "Dilnoza SI'ga «Gul nomlarini yoz» deb yozdi. Keyin nima bo'ladi?",
@@ -109,7 +109,7 @@ CONTENT[1] = {
     {
      "q": "Qaysi holatda SI ishlayapti?",
      "o": [
-      "Bot savolingizga javob yozdi",
+      "Bot savolingga javob yozdi",
       "Chiroq o'zi yonib ketdi",
       "Eshik qo'ng'irog'i chaldi",
       "Soat vaqtni ko'rsatdi"
@@ -124,7 +124,7 @@ CONTENT[1] = {
       "Faqat oxirgisiga",
       "Faqat ikkitasiga"
      ],
-     "e": "SI har bir so'rovingizga javob beradi."
+     "e": "SI har bir so'rovingga javob beradi."
     }
    ]
   },
@@ -135,7 +135,7 @@ CONTENT[1] = {
      "o": [
       "Internetdagi ko'p ma'lumotlardan",
       "Bitta darslikdan",
-      "Faqat sizning xabaringizdan",
+      "Faqat sening xabaringdan",
       "Hech qayerdan o'rganmagan"
      ],
      "e": "SI internetdagi juda ko'p ma'lumotlardan o'rgangan."
@@ -146,7 +146,7 @@ CONTENT[1] = {
       "Ko'p matnlarda o'qigan",
       "Toshkentga borib kelgan",
       "Xaritaga qarab turgan",
-      "Telefoningizdan olgan"
+      "Telefoningdan olgan"
      ],
      "e": "SI bu ma'lumotni o'rgangan ko'p matnlaridan biladi."
     },
@@ -181,7 +181,7 @@ CONTENT[1] = {
      "e": "SI faqat o'rgangan ma'lumotini biladi, daftar internetda yo'q."
     },
     {
-     "q": "Sport zali haqida so'radingiz. SI javobni qanday tuzadi?",
+     "q": "Sport zali haqida so'rading. SI javobni qanday tuzadi?",
      "o": [
       "O'rganganlari asosida yozadi",
       "Zalga borib ko'radi",
@@ -199,7 +199,7 @@ CONTENT[1] = {
      "o": [
       "Bu shunchaki so'z",
       "SI rostdan xursand",
-      "SI sizni yaxshi ko'rib qoldi",
+      "SI seni yaxshi ko'rib qoldi",
       "SI kulib yubordi"
      ],
      "e": "SI inson kabi his qila olmaydi, bu faqat so'z."
@@ -222,7 +222,7 @@ CONTENT[1] = {
       "Kompyuterni qayta yoqish",
       "Gulni ekran yoniga qo'yish"
      ],
-     "e": "SI siz buyursangiz ishlaydi."
+     "e": "SI sen buyursang ishlaydi."
     },
     {
      "q": "Ali tun bo'yi SI bilan gaplashdi. SI charchaydimi?",
@@ -235,24 +235,24 @@ CONTENT[1] = {
      "e": "Charchash — his qilish, SI esa his qila olmaydi."
     },
     {
-     "q": "Ishni kim boshlaydi: siz yoki SI?",
+     "q": "Ishni kim boshlaydi: sen yoki SI?",
      "o": [
-      "Siz buyruq berasiz",
+      "Sen buyruq berasan",
       "SI o'zi boshlaydi",
       "Kompyuter o'zi boshlaydi",
       "Internet o'zi boshlaydi"
      ],
-     "e": "SI ishni o'zi boshlamaydi, siz buyurasiz."
+     "e": "SI ishni o'zi boshlamaydi, sen buyurasan."
     },
     {
      "q": "Telegram botga SI ulangan. Bot qachon xabar yozadi?",
      "o": [
-      "Siz unga yozganingizda",
+      "Sen unga yozganingda",
       "O'zi xohlagan paytda",
       "Har tongda o'zi",
       "Kayfiyati yaxshi bo'lsa"
      ],
-     "e": "SI o'zi boshlamaydi va kayfiyati yo'q, siz yozsangiz javob beradi."
+     "e": "SI o'zi boshlamaydi va kayfiyati yo'q, sen yozsang javob beradi."
     }
    ]
   }

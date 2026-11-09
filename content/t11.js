@@ -10,10 +10,10 @@ CONTENT[11] = {
       "Do'stlariga «tayyor» deb yozadi",
       "SI'dan yana bitta menyu so'raydi"
      ],
-     "e": "SI «tayyor» desa ham, natijani o'zingiz ochib ko'rasiz."
+     "e": "SI «tayyor» desa ham, natijani o'zing ochib ko'rasan."
     },
     {
-     "q": "Nega natijani SI'ning so'ziga emas, o'zingizga ishonib tekshirasiz?",
+     "q": "Nega natijani SI'ning so'ziga emas, o'zingga ishonib tekshirasan?",
      "o": [
       "SI xato qilsa ham ishonch bilan gapiradi",
       "SI hech qachon ishni tugatmaydi",
@@ -33,14 +33,14 @@ CONTENT[11] = {
      "e": "Rasmni o'zi ochib ko'rganida, xatoni darhol sezardi."
     },
     {
-     "q": "Telegram bot salom berishi kerak. SI «Bot tayyor» dedi. Qanday tekshirasiz?",
+     "q": "Telegram bot salom berishi kerak. SI «Bot tayyor» dedi. Qanday tekshirasan?",
      "o": [
       "Botga o'zim yozib ko'raman",
       "Botning nomiga qarab qo'yaman",
       "SI javobini yana o'qib chiqaman",
       "Ertaga do'stimdan so'rayman"
      ],
-     "e": "Botga o'zingiz yozsangiz, u salom beradimi-yo'qmi ko'rasiz."
+     "e": "Botga o'zing yozsang, u salom beradimi-yo'qmi ko'rasan."
     },
     {
      "q": "Nilufar SI bilan buvisiga tabrik yozdi. Yuborishdan oldin uni kim o'qiydi?",
@@ -50,10 +50,10 @@ CONTENT[11] = {
       "Hech kim, SI yozgan",
       "Faqat buvisi o'qiydi"
      ],
-     "e": "Natijani boshqaga berishdan oldin o'zingiz ko'rib chiqasiz."
+     "e": "Natijani boshqaga berishdan oldin o'zing ko'rib chiqasan."
     },
     {
-     "q": "SI sport zali saytiga dars jadvalini qo'shdi. Tekshirish uchun nimaga qaraysiz?",
+     "q": "SI sport zali saytiga dars jadvalini qo'shdi. Tekshirish uchun nimaga qaraysan?",
      "o": [
       "Ekrandagi jadvalning o'ziga",
       "SI yozgan izohga",
@@ -67,7 +67,7 @@ CONTENT[11] = {
   {
    "pool": [
     {
-     "q": "Kutilgan natijada kafe nomi, telefon raqami va xarita bor. Nechtasini tekshirasiz?",
+     "q": "Kutilgan natijada kafe nomi, telefon raqami va xarita bor. Nechtasini tekshirasan?",
      "o": [
       "Uchalasini, birma-bir",
       "Faqat kafe nomini",
@@ -94,7 +94,7 @@ CONTENT[11] = {
       "SI'ni xursand qilish uchun",
       "Sayt chiroyli bo'lishi uchun"
      ],
-     "e": "Bittalab tekshirsangiz, hech bir band esdan chiqmaydi."
+     "e": "Bittalab tekshirsang, hech bir band esdan chiqmaydi."
     },
     {
      "q": "Bobur gul do'koni saytiga bir qaradi-yu, «Zo'r, tayyor» dedi. U to'g'ri qildimi?",
@@ -114,7 +114,7 @@ CONTENT[11] = {
       "Tasodifan ikkitasini tanlash",
       "Faqat eng qiyinini ko'rish"
      ],
-     "e": "Bandlarni tartib bilan, bittalab tekshirasiz."
+     "e": "Bandlarni tartib bilan, bittalab tekshirasan."
     },
     {
      "q": "Kutilgan: hikoya o'zbekcha, 5 gapli, sarlavhali. Nodir faqat sarlavhaga qaradi. Nima qoldi?",
@@ -141,7 +141,7 @@ CONTENT[11] = {
      "e": "Bitta band bajarilmasa ham, ish hali tugamagan."
     },
     {
-     "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasiz?",
+     "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasan?",
      "o": [
       "SI'dan narxlarni qo'shishni so'rayman",
       "Saytni do'stlarimga yuboraman",
@@ -181,7 +181,7 @@ CONTENT[11] = {
      "e": "Faqat uchala band ham bor rasm tayyor hisoblanadi."
     },
     {
-     "q": "Maktab saytida bitta band bajarilmagan. Saytni hozir hammaga ko'rsatasizmi?",
+     "q": "Maktab saytida bitta band bajarilmagan. Saytni hozir hammaga ko'rsatasanmi?",
      "o": [
       "Yo'q, avval o'sha band to'g'rilanadi",
       "Ha, bitta band sezilmaydi",

@@ -33,7 +33,7 @@ CONTENT[12] = {
      "e": "«Qayerda?» savoliga joy bilan javob beriladi."
     },
     {
-     "q": "Nega farq qayerda ekanini SI'ga aytasiz?",
+     "q": "Nega farq qayerda ekanini SI'ga aytasan?",
      "o": [
       "SI qaysi joyni tuzatishni bilishi uchun",
       "Prompt uzunroq bo'lishi uchun",
@@ -87,14 +87,14 @@ CONTENT[12] = {
      "e": "Hozir mushuk ko'k, kulrang esa bo'lishi kerak bo'lgan rang."
     },
     {
-     "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasiz?",
+     "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasan?",
      "o": [
-      "SI sizning ekraningizni ko'rmaydi",
+      "SI sening ekraningni ko'rmaydi",
       "SI ko'p so'zni yaxshi ko'radi",
       "Shunda sayt o'zi tuzaladi",
       "SI rasm chiza olmaydi"
      ],
-     "e": "SI ekraningizni ko'rmaydi, shuning uchun holatni siz aytasiz."
+     "e": "SI ekraningni ko'rmaydi, shuning uchun holatni sen aytasan."
     },
     {
      "q": "«Savat tugmasi bosilganda sahifa oqarib qoladi.» Bu gap nimani aytyapti?",
@@ -131,14 +131,14 @@ CONTENT[12] = {
   {
    "pool": [
     {
-     "q": "Siz SI'ga «Tugma hozir qizil» deb yozdingiz. SI yana nimani bilishi kerak?",
+     "q": "Sen SI'ga «Tugma hozir qizil» deb yozding. SI yana nimani bilishi kerak?",
      "o": [
       "Tugma qaysi rangda bo'lishi kerakligini",
       "Tugma qachon qilinganini",
       "Qizil rang nega yoqmasligini",
       "Tugmani kim bosishini"
      ],
-     "e": "Qanday bo'lishi kerakligini aytmasangiz, SI qaysi rangni qo'yishni bilmaydi."
+     "e": "Qanday bo'lishi kerakligini aytmasang, SI qaysi rangni qo'yishni bilmaydi."
     },
     {
      "q": "Kafe saytida narxlar dollarda, so'mda bo'lishi kerak. Qaysi qism istakni aytadi?",
@@ -151,14 +151,14 @@ CONTENT[12] = {
      "e": "«So'mda bo'lsin» — narx qanday bo'lishi kerakligi."
     },
     {
-     "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasiz?",
+     "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasan?",
      "o": [
       "SI o'zicha taxmin qilmasligi uchun",
       "Prompt chiroyli ko'rinishi uchun",
       "SI tezroq ishlashi uchun",
       "Sayt ko'proq ochilishi uchun"
      ],
-     "e": "Aytmasangiz, SI o'zicha taxmin qilib, xato qilishi mumkin."
+     "e": "Aytmasang, SI o'zicha taxmin qilib, xato qilishi mumkin."
     },
     {
      "q": "Gul do'koni sarlavhasi juda kichik. Qaysi istakni tekshirib ko'rsa bo'ladi?",

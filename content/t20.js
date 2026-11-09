@@ -3,7 +3,7 @@ CONTENT[20] = {
   {
    "pool": [
     {
-     "q": "SI \"Parolingizni yozing\" dedi. Ali nima qiladi?",
+     "q": "SI \"Parolingni yoz\" dedi. Ali nima qiladi?",
      "o": [
       "Parolni yozmaydi",
       "Parolni darhol yozadi",
@@ -55,12 +55,12 @@ CONTENT[20] = {
     {
      "q": "Nega parol SI'ga berilmaydi?",
      "o": [
-      "Parol faqat sizda qolishi kerak",
+      "Parol faqat senda qolishi kerak",
       "Parol juda uzun",
       "SI raqamlarni o'qimaydi",
       "Parol chiroyli emas"
      ],
-     "e": "Parol maxfiy, uni hech kimga bermaysiz."
+     "e": "Parol maxfiy, uni hech kimga bermaysan."
     }
    ]
   },
@@ -87,7 +87,7 @@ CONTENT[20] = {
      "e": "Bu promptda token yo'q, faqat bot nomi bor."
     },
     {
-     "q": "SI \"Kalitni yuboring, tekshirib beraman\" dedi. Ali nima qiladi?",
+     "q": "SI \"Kalitni yubor, tekshirib beraman\" dedi. Ali nima qiladi?",
      "o": [
       "Kalitni yubormaydi",
       "Kalitni darhol yuboradi",
@@ -114,7 +114,7 @@ CONTENT[20] = {
       "Faqat tokenni yuboradi",
       "Tokenni ikki marta yozadi"
      ],
-     "e": "Xato xabarini yuborishdan oldin tokenni olib tashlang."
+     "e": "Xato xabarini yuborishdan oldin tokenni olib tashla."
     },
     {
      "q": "Kafe boti uchun SI'ga nimani aytsa bo'ladi?",
@@ -133,15 +133,15 @@ CONTENT[20] = {
     {
      "q": "Qaysi biri shaxsiy ma'lumot?",
      "o": [
-      "Uy manzilingiz",
-      "Sevimli ertagingiz",
-      "Saytingiz nomi",
+      "Uy manziling",
+      "Sevimli ertaging",
+      "Sayting nomi",
       "Kafe menyusi"
      ],
      "e": "Uy manzili shaxsiy ma'lumot, u SI'ga berilmaydi."
     },
     {
-     "q": "Saytga telefon raqami uchun joy kerak. Promptga nima yozasiz?",
+     "q": "Saytga telefon raqami uchun joy kerak. Promptga nima yozasan?",
      "o": [
       "\"Telefon raqami uchun joy qoldir\"",
       "O'z raqamimni yozaman",
@@ -171,7 +171,7 @@ CONTENT[20] = {
      "e": "Formaga manzil joyi kerak, haqiqiy manzil emas."
     },
     {
-     "q": "Jasur SI'ga hujjat raqamini yozmoqchi. Nima deysiz?",
+     "q": "Jasur SI'ga hujjat raqamini yozmoqchi. Nima deysan?",
      "o": [
       "Hujjat raqami berilmaydi",
       "Yozsa bo'ladi",

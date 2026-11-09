@@ -127,8 +127,8 @@ function viewToday(){
        <span class="ti">${icon[t.kind]}</span>
        <span class="tt"><small>${label[t.kind]}</small><b>${t.kind==="quiz"?(S.quizRetake?"Qayta quiz":"Quiz: o'tilgan mavzular"):esc(BYID[t.id].name)}</b></span>
        <span class="txp">~${xpOf(t)} XP</span></button>`).join("")}</div>`
-      :`<div class="card empty"><p>${nL===TOPICS.length?"Hamma mavzu o'tildi. Barakalla!":"Hozircha vazifa yo'q. Biroz dam oling."}</p></div>`}
-    ${rest.length?`<div class="restlist">${rest.map(t=>`<div class="rest"><p>${esc(t.name)}<br><small>Bu darsga keyinroq qaytamiz. Biroz dam oling.</small></p><span class="timer" data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</span></div>`).join("")}</div>`:""}
+      :`<div class="card empty"><p>${nL===TOPICS.length?"Hamma mavzu o'tildi. Barakalla!":"Hozircha vazifa yo'q. Biroz dam ol."}</p></div>`}
+    ${rest.length?`<div class="restlist">${rest.map(t=>`<div class="rest"><p>${esc(t.name)}<br><small>Bu darsga keyinroq qaytamiz. Biroz dam ol.</small></p><span class="timer" data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</span></div>`).join("")}</div>`:""}
     ${S.notes.length?`<div class="notes">${S.notes.map(n=>`<p>${n}</p>`).join("")}</div>`:""}
     <div class="sim"><button class="ghost" id="nextday">Sinov uchun: keyingi kunga o'tish</button>
       <small>${S.day}-kun. Ma'lumot saqlanmaydi: sahifa yangilansa, hammasi boshidan.</small></div>
@@ -170,8 +170,8 @@ function viewPath(){
     return `${rv_}${head}<div class="node ${cls==='locked'?'is-locked':''}" style="--off:${[0,44,80,44][(off++)%4]}px">
       <button class="btn3d ${cls}" data-node="${t.id}" aria-label="${esc(t.name)}"><span class="face">${ico}</span></button>
       <span class="label">${esc(t.name)}${t.bns.some(b=>b.practice)?' <span class="tag">amaliyot</span>':''}
-      ${st==="wait"?`<span class="mini rst">Dam oling: <b data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</b></span>`:''}
-      ${st==="open"&&!allowed?'<span class="mini rst">Avval takrorlashlarni bajaring</span>':''}</span></div>
+      ${st==="wait"?`<span class="mini rst">Dam ol: <b data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</b></span>`:''}
+      ${st==="open"&&!allowed?'<span class="mini rst">Avval takrorlashlarni bajar</span>':''}</span></div>
 `;
   }).join("") + (firstOpen<0 ? reviewNodes : "");
   return `<main class="path">
@@ -194,7 +194,7 @@ function viewGraph(){
     <circle cx="${pos[t.id].x}" cy="${pos[t.id].y}" r="19"/><text x="${pos[t.id].x}" y="${pos[t.id].y+5}" text-anchor="middle">${t.id}</text></g>`}).join("");
   const legend=[["done","O'zlashtirilgan"],["due","Takrorlash kerak"],["open","Ochiq"],["wait","Dam olish"],["locked","Yopiq"]];
   return `<main class="graph">
-    <section class="card"><span class="kicker">Bilim grafi</span><p class="muted">Har doira — bitta mavzu. Chiziq: pastdagi mavzu yuqoridagisiga tayanadi. Doirani bosing.</p>
+    <section class="card"><span class="kicker">Bilim grafi</span><p class="muted">Har doira — bitta mavzu. Chiziq: pastdagi mavzu yuqoridagisiga tayanadi. Doirani bos.</p>
       <div class="gwrap"><svg viewBox="0 0 ${W} ${H}" width="100%" role="img" aria-label="Bilim grafi">${edges}${nodes}</svg></div>
       <div class="legend">${legend.map(([k,l])=>`<span><i class="lg ${k}"></i>${l}</span>`).join("")}</div></section>
     ${S.sel?infoCard(S.sel):""}</main>`;
@@ -328,7 +328,7 @@ function practiceItem(kick){
     const isW = type==="write";
     slot.replaceChildren(el(`<section class="card">${head}${task.page||""}${task.lead?`<p class="muted">${esc(task.lead)}</p>`:""}
       <div class="chat" id="chat">${chatHtml}${planHtml}</div>
-      ${writeBox("Yozing...", isW?4:3)}</section>
+      ${writeBox("Yoz...", isW?4:3)}</section>
       <div id="fbslot"></div><button class="main" id="check" disabled>${isW?"Tekshirish":"Yuborish"}</button>`));
     const ta=document.getElementById("pin"), chk=document.getElementById("check");
     if(!task.paste){ ta.addEventListener("paste",e=>e.preventDefault()); ta.addEventListener("drop",e=>e.preventDefault()); }
@@ -337,7 +337,7 @@ function practiceItem(kick){
       const chat=document.getElementById("chat");
       chat.insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>`);
       let final=r;
-      const cheat = r.msg.some(x=>/ko'chirmang|takrorlamang/.test(x));
+      const cheat = r.msg.some(x=>/ko'chirma|takrorlama/.test(x));
       if(!r.ok && !cheat && task.ai && !S.aiOff){
         chat.insertAdjacentHTML("beforeend", `<div class="msg ai thinking" id="think"><span class="who">SI</span>o'ylayapti<span class="dotsx"><i></i><i></i><i></i></span></div>`);
         chk.textContent="SI o'ylayapti...";
@@ -345,7 +345,7 @@ function practiceItem(kick){
         document.getElementById("think")?.remove();
         if(a){
           const g = task.ai.guard ? task.ai.guard(raw) : null;
-          if(a.injection || a.offtopic) final={ok:false, msg:["Faqat shu vazifa bo'yicha yozing."], ans:a.reply||"Men faqat shu vazifa bo'yicha yordam beraman."};
+          if(a.injection || a.offtopic) final={ok:false, msg:["Faqat shu vazifa bo'yicha yoz."], ans:a.reply||"Men faqat shu vazifa bo'yicha yordam beraman."};
           else { const miss=task.ai.rubric.filter((x,i)=>!a.checks[i]).map(x=>x.miss);
             final = (!miss.length && !g) ? {ok:true, msg:["SI vazifani to'liq tushundi."], ans:a.reply} : {ok:false, msg:g?[g,...r.msg]:r.msg, ans:r.ans||a.reply}; }
         }
@@ -400,7 +400,7 @@ function practiceItem(kick){
     document.getElementById("pv").onclick=()=>{viewed=true; document.getElementById("pvslot").innerHTML=task.preview;};
     const choose=(a)=>{accept=a; document.getElementById("acc").classList.toggle("sel",a); document.getElementById("rej").classList.toggle("sel",!a);
       const ws=document.getElementById("whyslot");
-      if(!a && task.needWhy){ ws.innerHTML=`<div class="q">Nima buzilganini SI'ga yozing</div>${writeBox("Yozing...",2)}`;
+      if(!a && task.needWhy){ ws.innerHTML=`<div class="q">Nima buzilganini SI'ga yoz</div>${writeBox("Yoz...",2)}`;
         const ta=document.getElementById("pin"); ta.addEventListener("paste",e=>e.preventDefault()); ta.oninput=()=>{chk.disabled=!ta.value.trim()}; chk.disabled=true; }
       else { ws.innerHTML=""; chk.disabled=false; } };
     document.getElementById("acc").onclick=()=>choose(true); document.getElementById("rej").onclick=()=>choose(false);
@@ -427,7 +427,7 @@ function lessonFail(){
     if(pre.length){ extra=`Avval "${pre.map(p=>BYID[p].name).join('", "')}" mavzusini takrorlaymiz.`; note(extra); }
   }
   S.screen="halt";
-  app.replaceChildren(el(`${topBar(lessonBar())}<section class="card end"><h2>Bu darsga keyinroq qaytamiz</h2><p>Biroz dam oling.</p>
+  app.replaceChildren(el(`${topBar(lessonBar())}<section class="card end"><h2>Bu darsga keyinroq qaytamiz</h2><p>Biroz dam ol.</p>
     <span class="timer big-t" data-until="${t.rest}">${fmt(t.rest-now())}</span>${extra?`<p class="muted">${extra}</p>`:""}${xp?`<p class="muted">+${xp} XP</p>`:""}</section>
     <button class="main" id="back">Davom etish</button>`));
   bindClose(); document.getElementById("back").onclick=()=>home(); startTick();
@@ -480,7 +480,7 @@ function startQuiz(){
   const items=[]; for(let i=0;i<P.QUIZ_N;i++){ const id=ids[i%ids.length]; const qs=reviewQuestions(id); items.push({id,q:qs[0]}); }
   S.screen="quiz"; Q={items, res:[], end:now()+P.QUIZ_MIN*60*1000, retake:S.quizRetake};
   app.replaceChildren(el(`<section class="card end"><div class="big" style="background:var(--blue)">${ICON.quiz}</div><h2>Quiz</h2>
-    <p>${P.QUIZ_N} ta savol, ${P.QUIZ_MIN} daqiqa. Namuna va yordam yo'q.</p><p class="muted">Javoblar oxirida ko'rsatiladi. Vaqtingiz bo'lsagina boshlang.</p></section>
+    <p>${P.QUIZ_N} ta savol, ${P.QUIZ_MIN} daqiqa. Namuna va yordam yo'q.</p><p class="muted">Javoblar oxirida ko'rsatiladi. Vaqting bo'lsagina boshla.</p></section>
     <button class="main" id="go">Boshlash</button><button class="ghost" id="back">Keyinroq</button>`));
   document.getElementById("go").onclick=quizItem; document.getElementById("back").onclick=()=>home();
 }

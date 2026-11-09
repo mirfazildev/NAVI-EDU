@@ -13,7 +13,7 @@ CONTENT[2] = {
      "e": "SI har safar javobni yangidan yozadi."
     },
     {
-     "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasangiz nima bo'ladi?",
+     "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasang nima bo'ladi?",
      "o": [
       "Boshqa nom chiqishi mumkin",
       "Xuddi o'sha nom chiqadi",
@@ -43,7 +43,7 @@ CONTENT[2] = {
      "e": "SI har safar yangidan yozadi, o'sha javob qaytmasligi mumkin."
     },
     {
-     "q": "Gul do'koni uchun SI'dan 3 marta reklama gapi so'radingiz. Natija?",
+     "q": "Gul do'koni uchun SI'dan 3 marta reklama gapi so'rading. Natija?",
      "o": [
       "Uchta har xil gap",
       "Uchta bir xil gap",
@@ -60,7 +60,7 @@ CONTENT[2] = {
       "Ertagacha kutib turadi",
       "Yangi telefon sotib oladi"
      ],
-     "e": "Bir savolni qayta bersangiz, SI yangi variant yozadi."
+     "e": "Bir savolni qayta bersang, SI yangi variant yozadi."
     }
    ]
   },
@@ -107,7 +107,7 @@ CONTENT[2] = {
      "e": "SI xato qilganda ham ishonch bilan gapiradi."
     },
     {
-     "q": "Telegram bot sport zali narxini «100% aniq» deb yozdi. Nima qilasiz?",
+     "q": "Telegram bot sport zali narxini «100% aniq» deb yozdi. Nima qilasan?",
      "o": [
       "Avval tekshirib ko'raman",
       "Darhol ishonaman",
@@ -131,7 +131,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
-     "q": "Sinfdoshingiz: «Ertaga dars yo'q, aniq bilaman!» dedi. Nima qilasiz?",
+     "q": "Sinfdoshing: «Ertaga dars yo'q, aniq bilaman!» dedi. Nima qilasan?",
      "o": [
       "Ustozdan so'rab bilaman",
       "Darhol ishonaman",
@@ -161,7 +161,7 @@ CONTENT[2] = {
      "e": "Ishonch bilan aytilgan gap har doim ham to'g'ri emas."
     },
     {
-     "q": "SI «Bu kitob 1990-yilda chiqqan» dedi. Qanday bilasiz?",
+     "q": "SI «Bu kitob 1990-yilda chiqqan» dedi. Qanday bilasan?",
      "o": [
       "Kitobning o'zidan qarayman",
       "SI ishonchli gapirdi-ku",
@@ -181,10 +181,10 @@ CONTENT[2] = {
      "e": "Ishonch emas, tekshiruv kim haq ekanini ko'rsatadi."
     },
     {
-     "q": "Ukangiz juda ishonch bilan «Kit — baliq!» dedi. Bu haqda nima deysiz?",
+     "q": "Ukang juda ishonch bilan «Kit — baliq!» dedi. Bu haqda nima deysan?",
      "o": [
       "Ishonch rostlikni isbotlamaydi",
-      "Ukangiz albatta haq",
+      "Ukang albatta haq",
       "Endi bahslashib bo'lmaydi",
       "Kit baliqqa aylandi"
      ],
@@ -195,7 +195,7 @@ CONTENT[2] = {
   {
    "pool": [
     {
-     "q": "SI: «Lola kafesi Navoiy ko'chasi, 12-uyda». Nimani tekshirasiz?",
+     "q": "SI: «Lola kafesi Navoiy ko'chasi, 12-uyda». Nimani tekshirasan?",
      "o": [
       "Manzilni",
       "Vergullarni",
@@ -205,7 +205,7 @@ CONTENT[2] = {
      "e": "SI javobidagi manzilni tekshirish kerak."
     },
     {
-     "q": "SI sport zali telefon raqamini berdi. Qanday tekshirasiz?",
+     "q": "SI sport zali telefon raqamini berdi. Qanday tekshirasan?",
      "o": [
       "Zal saytidan raqamni topaman",
       "Raqamni yodlab olaman",
@@ -235,7 +235,7 @@ CONTENT[2] = {
      "e": "Sanada raqam bor, raqamni tekshirish kerak."
     },
     {
-     "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasiz?",
+     "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasan?",
      "o": [
       "Kitob nomini tekshiraman",
       "Darhol pul olib boraman",
@@ -245,7 +245,7 @@ CONTENT[2] = {
      "e": "SI aytgan nomni tekshirish kerak."
     },
     {
-     "q": "Do'stingiz SI bergan manzilga tekshirmasdan bordi. Nima bo'lishi mumkin?",
+     "q": "Do'sting SI bergan manzilga tekshirmasdan bordi. Nima bo'lishi mumkin?",
      "o": [
       "Noto'g'ri joyga borib qoladi",
       "Doim to'g'ri joyga boradi",

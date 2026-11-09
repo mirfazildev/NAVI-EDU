@@ -74,7 +74,7 @@ CONTENT[16] = {
       "Gapni katta harflar bilan yozadi",
       "Hech narsa yozmay kutadi"
      ],
-     "e": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntiring."
+     "e": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntir."
     },
     {
      "q": "Nega o'sha gapni yana yuborish yordam bermaydi?",
@@ -138,7 +138,7 @@ CONTENT[16] = {
       "Loyihani tashlab ketadi",
       "Xuddi o'sha gapni yozadi"
      ],
-     "e": "Boshqacha yozish yordam bermasa, yangi suhbat oching."
+     "e": "Boshqacha yozish yordam bermasa, yangi suhbat och."
     },
     {
      "q": "Madina yangi suhbatda yozdi: \"O'sha xatoni tuzat\". Nega SI tushunmaydi?",
@@ -168,7 +168,7 @@ CONTENT[16] = {
       "Salomlashish so'zi",
       "Xato xabarining rangi"
      ],
-     "e": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayting."
+     "e": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayt."
     },
     {
      "q": "Eski suhbatda Nilufar sayt rangini aytgan edi. Yangi suhbatda SI uni biladimi?",
@@ -178,7 +178,7 @@ CONTENT[16] = {
       "Ha, agar so'rasa eslaydi",
       "Ha, rang ekranda ko'rinib turibdi"
      ],
-     "e": "Yangi suhbat eski gaplarni bilmaydi, kerakli ma'lumotni qayta bering."
+     "e": "Yangi suhbat eski gaplarni bilmaydi, kerakli ma'lumotni qayta ber."
     },
     {
      "q": "Nega yangi suhbat aylanib qolgan SI'ga yordam beradi?",
@@ -212,7 +212,7 @@ CONTENT[16] = {
       "O'sha gapni yana bir marta",
       "Faqat \"tezroq\" so'zini"
      ],
-     "e": "Nima bo'lishi kerakligi bor, endi nima bo'layotganini ham ayting."
+     "e": "Nima bo'lishi kerakligi bor, endi nima bo'layotganini ham ayt."
     },
     {
      "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",

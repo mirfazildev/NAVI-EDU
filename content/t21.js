@@ -10,7 +10,7 @@ CONTENT[21] = {
       "O'zi hammasini o'chiradi",
       "Kompyuterni o'chiradi"
      ],
-     "e": "SI hammasini o'chirishni taklif qilsa, to'xtang va tekshiring."
+     "e": "SI hammasini o'chirishni taklif qilsa, to'xta va tekshir."
     },
     {
      "q": "Qaysi taklif xavfli?",
@@ -79,7 +79,7 @@ CONTENT[21] = {
     {
      "q": "Kalit sahifada tursa, begona odam nima qila oladi?",
      "o": [
-      "Kalit bilan botingizni boshqaradi",
+      "Kalit bilan botingni boshqaradi",
       "Hech narsa qila olmaydi",
       "Faqat rangini ko'radi",
       "Sahifani chiroyli qiladi"
@@ -97,7 +97,7 @@ CONTENT[21] = {
      "e": "Token maxfiy, u sahifaga yozilmaydi."
     },
     {
-     "q": "SI sahifa kodiga \"kalit = ABC-fake-123\" qatorini qo'shdi. Nima qilasiz?",
+     "q": "SI sahifa kodiga \"kalit = ABC-fake-123\" qatorini qo'shdi. Nima qilasan?",
      "o": [
       "Rad qilib, olib tashlashni so'rayman",
       "Shundayicha qoldiraman",
@@ -131,14 +131,14 @@ CONTENT[21] = {
   {
    "pool": [
     {
-     "q": "SI \"Shu buyruqni ishga tushiring\" dedi, Ali tushunmadi. Nima qiladi?",
+     "q": "SI \"Shu buyruqni ishga tushir\" dedi, Ali tushunmadi. Nima qiladi?",
      "o": [
       "Avval nima qilishini so'raydi",
       "Darhol ishga tushiradi",
       "Buyruqni o'zgartirib yuboradi",
       "Do'stiga bajartiradi"
      ],
-     "e": "Tushunmagan buyruqni bajarmang, avval SI'dan so'rang."
+     "e": "Tushunmagan buyruqni bajarma, avval SI'dan so'ra."
     },
     {
      "q": "Qaysi prompt to'g'ri?",
@@ -151,7 +151,7 @@ CONTENT[21] = {
      "e": "Bu prompt buyruq nima qilishini so'raydi."
     },
     {
-     "q": "Nega tushunmagan buyruqni bajarmaysiz?",
+     "q": "Nega tushunmagan buyruqni bajarmaysan?",
      "o": [
       "U nimanidir o'chirishi mumkin",
       "Buyruq juda qisqa",
@@ -168,7 +168,7 @@ CONTENT[21] = {
       "Buyruqni ikki marta bajaradi",
       "Rasmlarni o'zi o'chiradi"
      ],
-     "e": "Buyruq nima qilishini bildingiz, u kerak emas — bajarmaysiz."
+     "e": "Buyruq nima qilishini bilding, u kerak emas — bajarmaysan."
     },
     {
      "q": "SI aytdi: buyruq faqat saytni ochadi, Jasurga shu kerak. Nima qiladi?",
@@ -188,7 +188,7 @@ CONTENT[21] = {
       "Ha, tezroq bajaradi",
       "Ha, faqat yarmini bajaradi"
      ],
-     "e": "Buyruqni to'liq tushunmaguncha bajarmang."
+     "e": "Buyruqni to'liq tushunmaguncha bajarma."
     }
    ]
   }

@@ -13,27 +13,27 @@ CONTENT[15] = {
      "e": "Bu gap Madina aynan nima qilganini aytadi."
     },
     {
-     "q": "Nega nima qilganingizni SI'ga aytasiz?",
+     "q": "Nega nima qilganingni SI'ga aytasan?",
      "o": [
       "Xato qayerdan chiqqanini bilishi uchun",
       "Prompt uzunroq bo'lishi uchun",
       "SI xursand bo'lishi uchun",
       "Prompt chiroyli ko'rinishi uchun"
      ],
-     "e": "Nima qilganingizni bilsa, SI xato qayerdan chiqqanini topadi."
+     "e": "Nima qilganingni bilsa, SI xato qayerdan chiqqanini topadi."
     },
     {
-     "q": "SI ekraningizni ko'rmaydi. Siz nima qilganingizni qayerdan biladi?",
+     "q": "SI ekraningni ko'rmaydi. Sen nima qilganingni qayerdan biladi?",
      "o": [
-      "Faqat siz yozib bersangiz",
+      "Faqat sen yozib bersang",
       "O'zi kuzatib turadi",
       "Saytdan o'qib oladi",
       "Har doim to'g'ri taxmin qiladi"
      ],
-     "e": "SI ekranni ko'rmaydi, shuning uchun qilganingizni o'zingiz yozasiz."
+     "e": "SI ekranni ko'rmaydi, shuning uchun qilganingni o'zing yozasan."
     },
     {
-     "q": "Xato faqat savatga gul qo'shganda chiqadi. Buni aytmasangiz, nima bo'ladi?",
+     "q": "Xato faqat savatga gul qo'shganda chiqadi. Buni aytmasang, nima bo'ladi?",
      "o": [
       "SI xatoni boshqa joydan qidiradi",
       "SI darhol to'g'ri tuzatadi",
@@ -53,14 +53,14 @@ CONTENT[15] = {
      "e": "Bu promptda xato chiqishidan oldin nima qilingani aytilgan."
     },
     {
-     "q": "Maktab saytiga rasm yuklaganda xato chiqdi. SI'ga yana nimani aytasiz?",
+     "q": "Maktab saytiga rasm yuklaganda xato chiqdi. SI'ga yana nimani aytasan?",
      "o": [
       "Qaysi rasmni yuklaganimni",
       "Rasm qanchalik chiroyliligini",
       "Maktabimning raqamini",
       "Rasmni kim chizganini"
      ],
-     "e": "Qaysi rasmni yuklaganingiz — siz qilgan ish, u xatoga yo'l ko'rsatadi."
+     "e": "Qaysi rasmni yuklaganing — sen qilgan ish, u xatoga yo'l ko'rsatadi."
     }
    ]
   },
@@ -77,7 +77,7 @@ CONTENT[15] = {
      "e": "Qadamlar «avval…, keyin…» tartibida yozilishi kerak."
     },
     {
-     "q": "Kafe saytida 3 qadam qildingiz. SI'ga qaysi qadamdan boshlab yozasiz?",
+     "q": "Kafe saytida 3 qadam qilding. SI'ga qaysi qadamdan boshlab yozasan?",
      "o": [
       "Eng birinchi qilgan qadamdan",
       "Xato chiqqan oxirgi qadamdan",
@@ -87,7 +87,7 @@ CONTENT[15] = {
      "e": "Qadamlar avvalgisidan boshlab, tartib bilan yoziladi."
     },
     {
-     "q": "Nega qadamlarni tartib bilan yozasiz?",
+     "q": "Nega qadamlarni tartib bilan yozasan?",
      "o": [
       "SI nima ketidan nima bo'lganini bilishi uchun",
       "Prompt chiroyli ko'rinishi uchun",
@@ -107,7 +107,7 @@ CONTENT[15] = {
      "e": "Bitta qadam tushib qolsa, SI xato qayerdan chiqqanini bilmaydi."
     },
     {
-     "q": "Botda nima qilganingizni qanday yozgan ma'qul?",
+     "q": "Botda nima qilganingni qanday yozgan ma'qul?",
      "o": [
       "Har qadamni alohida, ketma-ket",
       "Bitta uzun gapda aralashtirib",
@@ -151,7 +151,7 @@ CONTENT[15] = {
      "e": "«Hech narsa demadi» — aslida nima bo'lganini aytadi."
     },
     {
-     "q": "Nega ikkalasini ham aytasiz: nima kutildi va nima bo'ldi?",
+     "q": "Nega ikkalasini ham aytasan: nima kutildi va nima bo'ldi?",
      "o": [
       "SI farqni ko'rib, nimani tuzatishni bilishi uchun",
       "Prompt uzunroq bo'lishi uchun",
@@ -171,7 +171,7 @@ CONTENT[15] = {
      "e": "Bu promptda ham kutilgani, ham bo'lgani aytilgan."
     },
     {
-     "q": "Savatga 1 ta gul qo'shdingiz, savatda 3 ta chiqdi. Kutilganini qanday aytasiz?",
+     "q": "Savatga 1 ta gul qo'shding, savatda 3 ta chiqdi. Kutilganini qanday aytasan?",
      "o": [
       "«Savatda 1 ta gul bo'lishi kerak edi»",
       "«Savatda 3 ta gul chiqdi»",
@@ -181,7 +181,7 @@ CONTENT[15] = {
      "e": "Kutilgani — savatda 1 ta gul bo'lishi."
     },
     {
-     "q": "«Jadval» tugmasini bosdingiz, hech narsa bo'lmadi. «Nima bo'ldi» qismiga nima yozasiz?",
+     "q": "«Jadval» tugmasini bosding, hech narsa bo'lmadi. «Nima bo'ldi» qismiga nima yozasan?",
      "o": [
       "Hech narsa bo'lmadi",
       "Jadval ochilishi kerak edi",

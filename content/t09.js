@@ -67,7 +67,7 @@ CONTENT[9] = {
   {
    "pool": [
     {
-     "q": "Kafe sayti katta vazifa. Uni qanday so'raysiz?",
+     "q": "Kafe sayti katta vazifa. Uni qanday so'raysan?",
      "o": [
       "Kichik qadamlarga bo'lib so'rayman",
       "Bitta promptda birdan so'rayman",
@@ -77,7 +77,7 @@ CONTENT[9] = {
      "e": "Katta vazifani kichik qadamlarga bo'lish kerak."
     },
     {
-     "q": "Gul do'koni saytini qadamlarga bo'lyapsiz. Qaysi biri kichik qadam?",
+     "q": "Gul do'koni saytini qadamlarga bo'lyapsan. Qaysi biri kichik qadam?",
      "o": [
       "Sarlavha yozish",
       "Butun saytni qilish",
@@ -97,7 +97,7 @@ CONTENT[9] = {
      "e": "Har bir qadam — bitta kichik ish."
     },
     {
-     "q": "Tort pishirish ham katta ish. Uni qanday qadamlarga bo'lasiz?",
+     "q": "Tort pishirish ham katta ish. Uni qanday qadamlarga bo'lasan?",
      "o": [
       "Xamir qorish, pishirish, bezash",
       "Bir zumda tort tayyorlash",

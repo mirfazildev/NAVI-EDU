@@ -30,7 +30,7 @@ CONTENT[7] = {
       "Promptda undov belgisi yo'q edi",
       "SI juda tez yozdi"
      ],
-     "e": "«Narx yozma» desangiz, SI narx qo'shmasdi."
+     "e": "«Narx yozma» desang, SI narx qo'shmasdi."
     },
     {
      "q": "Jasur gul do'koni matnini so'raydi, telefon raqami kerak emas. U nima yozadi?",
@@ -67,7 +67,7 @@ CONTENT[7] = {
   {
    "pool": [
     {
-     "q": "Siz faqat sarlavhani o'zgartirmoqchisiz. Promptga yana nima qo'shasiz?",
+     "q": "Sen faqat sarlavhani o'zgartirmoqchisan. Promptga yana nima qo'shasan?",
      "o": [
       "«Qolganiga tegma»",
       "«Butun sahifani yangidan qil»",
@@ -87,14 +87,14 @@ CONTENT[7] = {
      "e": "Nimaga tegmaslikni aytmasa, SI boshqa joyni ham o'zgartirishi mumkin."
     },
     {
-     "q": "Kafe saytidagi menyu tayyor va yaxshi. Promptda menyu haqida nima deysiz?",
+     "q": "Kafe saytidagi menyu tayyor va yaxshi. Promptda menyu haqida nima deysan?",
      "o": [
       "«Menyuga tegma»",
       "«Menyuni o'chir»",
       "«Menyuni yangidan yoz»",
       "«Menyuni uzunroq qil»"
      ],
-     "e": "Tayyor menyu buzilmasligi uchun «tegma» deb yozasiz."
+     "e": "Tayyor menyu buzilmasligi uchun «tegma» deb yozasan."
     },
     {
      "q": "Qaysi promptda nimaga tegmaslik aytilgan?",
@@ -131,14 +131,14 @@ CONTENT[7] = {
   {
    "pool": [
     {
-     "q": "SI kafe matniga keraksiz narx qo'shdi. Keyingi safar nima yozasiz?",
+     "q": "SI kafe matniga keraksiz narx qo'shdi. Keyingi safar nima yozasan?",
      "o": [
       "«Narx yozma»",
       "«Narxni kattaroq yoz»",
       "«Matnni qayta yoz»",
       "«Narxni oxiriga yoz»"
      ],
-     "e": "«Narx yozma» deb aniq aytsangiz, SI narx qo'shmaydi."
+     "e": "«Narx yozma» deb aniq aytsang, SI narx qo'shmaydi."
     },
     {
      "q": "Qaysi cheklov keraksiz narsani aniq aytadi?",
@@ -168,7 +168,7 @@ CONTENT[7] = {
       "«Ortiqcha» so'zi bilan yozish",
       "Faqat o'ylab qo'yish"
      ],
-     "e": "Aniq nomini yozsangiz, SI nima kerak emasligini biladi."
+     "e": "Aniq nomini yozsang, SI nima kerak emasligini biladi."
     },
     {
      "q": "Maktab e'loniga telefon va manzil kerak emas. Qaysi prompt to'g'ri?",

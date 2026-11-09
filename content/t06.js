@@ -67,7 +67,7 @@ CONTENT[6] = {
   {
    "pool": [
     {
-     "q": "Gul do'koni uchun sayt qilyapsiz. Promptga qaysi gapni qo'shasiz?",
+     "q": "Gul do'koni uchun sayt qilyapsan. Promptga qaysi gapni qo'shasan?",
      "o": [
       "«Bu gul do'konining sayti»",
       "«Bu juda muhim ish»",
@@ -80,9 +80,9 @@ CONTENT[6] = {
      "q": "SI sport zali saytiga taomlar menyusini yozdi. Promptda nima aytilmagan edi?",
      "o": [
       "Sayt sport zali haqida ekani",
-      "Sizning ismingiz",
+      "Sening isming",
       "Bugungi sana",
-      "Kompyuteringiz nomi"
+      "Kompyutering nomi"
      ],
      "e": "Loyiha aytilmasa, SI o'zi taxmin qiladi va adashadi."
     },
@@ -97,17 +97,17 @@ CONTENT[6] = {
      "e": "Ikkinchi promptda sayt nima haqida ekani bor, SI adashmaydi."
     },
     {
-     "q": "Siz «Bu bolalar kutubxonasi sayti» deb yozdingiz. Bu SI'ga nimani aytadi?",
+     "q": "Sen «Bu bolalar kutubxonasi sayti» deb yozding. Bu SI'ga nimani aytadi?",
      "o": [
       "Sayt nima haqida ekanini",
       "Javob qaysi tilda bo'lishini",
       "Javob qancha uzun bo'lishini",
-      "Siz qachon ishlashingizni"
+      "Sen qachon ishlashingni"
      ],
      "e": "Bu gap loyiha — bolalar kutubxonasi ekanini aytadi."
     },
     {
-     "q": "Telegram bot uchun prompt yozyapsiz. Qaysi gap bot nima haqida ekanini aytadi?",
+     "q": "Telegram bot uchun prompt yozyapsan. Qaysi gap bot nima haqida ekanini aytadi?",
      "o": [
       "«Bu bot kino chiptalarini sotadi»",
       "«Bot tez javob bersin»",
@@ -119,19 +119,19 @@ CONTENT[6] = {
     {
      "q": "Nega loyiha nima haqida ekanini aytish kerak?",
      "o": [
-      "SI loyihangizni o'zi bilmaydi",
+      "SI loyihangni o'zi bilmaydi",
       "Prompt uzunroq bo'lishi uchun",
       "SI tezroq javob berishi uchun",
       "SI'ga hurmat ko'rsatish uchun"
      ],
-     "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
+     "e": "Sen aytmasang, SI loyihangni bilmaydi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Sayt bobolar va buvilar uchun. Promptga nima yozasiz?",
+     "q": "Sayt bobolar va buvilar uchun. Promptga nima yozasan?",
      "o": [
       "«Saytga keksa odamlar kiradi»",
       "«Saytga sarlavha yozib ber»",

@@ -5,12 +5,12 @@ CONTENT[5] = {
     {
      "q": "Prompt nima?",
      "o": [
-      "SI'ga yozgan so'rovingiz",
+      "SI'ga yozgan so'roving",
       "SI yozgan javob",
       "Saytning nomi",
       "Kompyuter dasturi"
      ],
-     "e": "Prompt — siz SI'ga yozgan so'rov."
+     "e": "Prompt — sen SI'ga yozgan so'rov."
     },
     {
      "q": "Aziz SI'ga «Gul do'koniga nom top» deb yozdi. Bu gap nima?",
@@ -30,17 +30,17 @@ CONTENT[5] = {
       "Ha, chunki qisqa",
       "Ha, chunki inglizcha"
      ],
-     "e": "Prompt — siz yozgan so'rov, bu esa SI javobi."
+     "e": "Prompt — sen yozgan so'rov, bu esa SI javobi."
     },
     {
      "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
      "o": [
-      "Siz yozgan «Rasm chiz» xabari",
+      "Sen yozgan «Rasm chiz» xabari",
       "SI chizgan rasm",
       "SI yozgan izoh",
       "Ekrandagi sana"
      ],
-     "e": "Prompt — siz SI'ga yozgan so'rov."
+     "e": "Prompt — sen SI'ga yozgan so'rov."
     },
     {
      "q": "Bobur SI'ga hali hech narsa yozmadi. SI javob beradimi?",
@@ -53,14 +53,14 @@ CONTENT[5] = {
      "e": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
     },
     {
-     "q": "Do'stingiz SI'ga nima deb yozganini ko'rsatdi. Siz nimani ko'ryapsiz?",
+     "q": "Do'sting SI'ga nima deb yozganini ko'rsatdi. Sen nimani ko'ryapsan?",
      "o": [
       "Uning promptini",
       "SI javobini",
       "Sayt manzilini",
       "Xato xabarini"
      ],
-     "e": "Do'stingiz SI'ga yozgan so'rov — uning prompti."
+     "e": "Do'sting SI'ga yozgan so'rov — uning prompti."
     }
    ]
   },
@@ -100,7 +100,7 @@ CONTENT[5] = {
      "q": "Prompt faqat «Rasm» deb yozildi. SI nima qiladi?",
      "o": [
       "Nima kerakligini taxmin qiladi",
-      "Siz xohlagan rasmni chizadi",
+      "Sen xohlagan rasmni chizadi",
       "Javob bermay o'chib qoladi",
       "Rasm do'koniga boradi"
      ],
@@ -131,7 +131,7 @@ CONTENT[5] = {
   {
    "pool": [
     {
-     "q": "Promptga til va uzunlik qo'shmoqchisiz. Qaysi qo'shimcha to'g'ri?",
+     "q": "Promptga til va uzunlik qo'shmoqchisan. Qaysi qo'shimcha to'g'ri?",
      "o": [
       "«O'zbekcha, 6 so'zgacha»",
       "«Chiroyli va yaxshi»",
@@ -161,7 +161,7 @@ CONTENT[5] = {
      "e": "Uzunlik yozilsa, SI qisqa sarlavha yozadi."
     },
     {
-     "q": "SI matnni ruscha yozdi, sizga o'zbekcha kerak edi. Promptda nima yo'q edi?",
+     "q": "SI matnni ruscha yozdi, senga o'zbekcha kerak edi. Promptda nima yo'q edi?",
      "o": [
       "Matn tili",
       "Matn rangi",
@@ -176,7 +176,7 @@ CONTENT[5] = {
       "Tili va uzunligi",
       "Rangi va shrifti",
       "Narxi va sanasi",
-      "Ismingiz va yoshingiz"
+      "Isming va yoshing"
      ],
      "e": "Aniq promptda tili va uzunligi ham yoziladi."
     },

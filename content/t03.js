@@ -10,7 +10,7 @@ CONTENT[3] = {
       "Rasm juda katta",
       "SI charchab qolgan"
      ],
-     "e": "SI ekraningizni ko'rmaydi, rasmni unga berish kerak."
+     "e": "SI ekraningni ko'rmaydi, rasmni unga berish kerak."
     },
     {
      "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
@@ -20,17 +20,17 @@ CONTENT[3] = {
       "Gul: «Anavini tuzat»",
       "Sami: «Shu yerda xato»"
      ],
-     "e": "SI ekranni ko'rmaydi, ko'rganingizni so'z bilan yozing."
+     "e": "SI ekranni ko'rmaydi, ko'rganingni so'z bilan yoz."
     },
     {
-     "q": "SI sizning ekraningizni ko'radimi?",
+     "q": "SI sening ekraningni ko'radimi?",
      "o": [
       "Yo'q, ko'rmaydi",
       "Ha, doim ko'radi",
       "Faqat kunduzi ko'radi",
       "Faqat katta ekranni"
      ],
-     "e": "SI ekraningizni ko'rmaydi."
+     "e": "SI ekraningni ko'rmaydi."
     },
     {
      "q": "Malika: «Bu yerdagi rangni o'zgartir» dedi. SI nega tushunmadi?",
@@ -50,17 +50,17 @@ CONTENT[3] = {
       "Faqat kafe nomini",
       "Faqat «tuzat» so'zini"
      ],
-     "e": "SI ko'rmaydi, shuning uchun ko'rganingizni aniq yozasiz."
+     "e": "SI ko'rmaydi, shuning uchun ko'rganingni aniq yozasan."
     },
     {
      "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
      "o": [
-      "Siz yozib berganingizda",
+      "Sen yozib berganingda",
       "Darhol o'zi ko'radi",
       "Sayt ochilganda",
       "Ertasi kuni o'zi"
      ],
-     "e": "SI ekranni ko'rmaydi, siz yozsangiz biladi."
+     "e": "SI ekranni ko'rmaydi, sen yozsang biladi."
     }
    ]
   },
@@ -74,17 +74,17 @@ CONTENT[3] = {
       "Qanday yozishni",
       "O'zbekcha so'zlarni"
      ],
-     "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
+     "e": "Sen aytmasang, SI loyihangni bilmaydi."
     },
     {
-     "q": "Kafe saytiga matn kerak. SI'ga avval nimani aytasiz?",
+     "q": "Kafe saytiga matn kerak. SI'ga avval nimani aytasan?",
      "o": [
       "Kafe nomi va taomlarini",
       "Bugungi ob-havoni",
-      "O'zingizning yoshingizni",
-      "Sevimli multfilmingizni"
+      "O'zingning yoshingni",
+      "Sevimli multfilmingni"
      ],
-     "e": "SI loyihani bilmaydi, kerakli ma'lumotni siz aytasiz."
+     "e": "SI loyihani bilmaydi, kerakli ma'lumotni sen aytasan."
     },
     {
      "q": "Nodira gul do'koni saytini bir oy qurdi. SI bu haqda biladimi?",
@@ -94,7 +94,7 @@ CONTENT[3] = {
       "Ha, bir oy kuzatib turgan",
       "Ha, u har bir saytni biladi"
      ],
-     "e": "Siz aytmasangiz, SI loyihangizni bilmaydi."
+     "e": "Sen aytmasang, SI loyihangni bilmaydi."
     },
     {
      "q": "SI sport zali saytiga «Kafemizga xush kelibsiz» deb yozdi. Nega?",
@@ -117,21 +117,21 @@ CONTENT[3] = {
      "e": "Faqat shu so'rovda loyiha nima ekani aytilgan."
     },
     {
-     "q": "SI loyihangizga mos javob berishi uchun nima qilish kerak?",
+     "q": "SI loyihangga mos javob berishi uchun nima qilish kerak?",
      "o": [
       "Loyiha haqida yozib berish",
       "Uzoq kutib turish",
       "Kompyuterni yangilash",
       "SI'ni maqtab qo'yish"
      ],
-     "e": "SI loyihani faqat siz aytsangiz biladi."
+     "e": "SI loyihani faqat sen aytsang biladi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Kecha SI bilan kafe nomini tanladingiz. Bugun yangi suhbatda SI uni eslaydimi?",
+     "q": "Kecha SI bilan kafe nomini tanlading. Bugun yangi suhbatda SI uni eslaydimi?",
      "o": [
       "Yo'q, eslamaydi",
       "Ha, albatta eslaydi",
@@ -151,7 +151,7 @@ CONTENT[3] = {
      "e": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
     },
     {
-     "q": "Yangi suhbatda SI ishni davom ettirishi uchun nima qilasiz?",
+     "q": "Yangi suhbatda SI ishni davom ettirishi uchun nima qilasan?",
      "o": [
       "Kerakli ma'lumotni qayta yozaman",
       "Hech narsa eslatmayman",
@@ -165,7 +165,7 @@ CONTENT[3] = {
      "o": [
       "Shu suhbatda aytilgan bo'lsa",
       "Boshqa suhbatda aytilgan bo'lsa",
-      "Do'stingizga aytilgan bo'lsa",
+      "Do'stingga aytilgan bo'lsa",
       "Daftarga yozilgan bo'lsa"
      ],
      "e": "SI faqat shu suhbatda aytilganni biladi."
@@ -181,7 +181,7 @@ CONTENT[3] = {
      "e": "Har bir suhbat alohida, SI boshqa suhbatni bilmaydi."
     },
     {
-     "q": "Kecha botga 5 ta qoida aytdingiz. Bugun yangi suhbatda SI ularga nega amal qilmadi?",
+     "q": "Kecha botga 5 ta qoida aytding. Bugun yangi suhbatda SI ularga nega amal qilmadi?",
      "o": [
       "U qoidalarni bilmaydi",
       "SI xafa bo'lgan",
@@ -202,7 +202,7 @@ CONTENT[3] = {
       "SI o'zi topib tuzatadi",
       "Ertaga o'zi tuzaladi"
      ],
-     "e": "SI ekranni ko'rmaydi, unga yozmasangiz xato qoladi."
+     "e": "SI ekranni ko'rmaydi, unga yozmasang xato qoladi."
     },
     {
      "q": "Kafe sahifasida narx «0 so'm» chiqdi. Birinchi qadam nima?",
@@ -212,27 +212,27 @@ CONTENT[3] = {
       "Sahifani yopib qo'yish",
       "Xato o'zi tuzalishini kutish"
      ],
-     "e": "Xato ko'rsangiz, SI'ga yozing va tuzatishni so'rang."
+     "e": "Xato ko'rsang, SI'ga yoz va tuzatishni so'ra."
     },
     {
      "q": "Telegram bot noto'g'ri tugma chiqardi. Xatoni kim tuzatib beradi?",
      "o": [
-      "SI, siz so'rasangiz",
+      "SI, sen so'rasang",
       "Bot o'zi tuzatadi",
-      "Telefoningiz tuzatadi",
+      "Telefoning tuzatadi",
       "Hech kim, shunday qoladi"
      ],
-     "e": "SI siz yozib so'rasangiz tuzatadi."
+     "e": "SI sen yozib so'rasang tuzatadi."
     },
     {
-     "q": "SI xatoni tuzatdi. Keyin nima qilasiz?",
+     "q": "SI xatoni tuzatdi. Keyin nima qilasan?",
      "o": [
       "Sahifani qayta ko'rib chiqaman",
       "SI'ni o'chirib qo'yaman",
       "Sahifani butunlay o'chiraman",
       "Xatoni yana qaytaraman"
      ],
-     "e": "Tuzatish to'g'ri bo'lganini ko'zingiz bilan tekshirasiz."
+     "e": "Tuzatish to'g'ri bo'lganini ko'zing bilan tekshirasan."
     },
     {
      "q": "Nilufar SI'ga faqat «Sarlavha qiyshiq» deb yozdi. U nimani yozmadi?",

@@ -33,7 +33,7 @@ CONTENT[13] = {
      "e": "«Ko'rinmayapti» — kutilgan narsa ekranda yo'q."
     },
     {
-     "q": "Bot menyu tugmalarini chiqarishi kerak edi. Tugmalar chiqmadi. SI'ga nima deb yozasiz?",
+     "q": "Bot menyu tugmalarini chiqarishi kerak edi. Tugmalar chiqmadi. SI'ga nima deb yozasan?",
      "o": [
       "Menyu tugmalari ko'rinmayapti",
       "Menyu tugmalari bosilmayapti",
@@ -97,7 +97,7 @@ CONTENT[13] = {
      "e": "Logotip bor, ammo teskari — demak boshqacha ko'rinyapti."
     },
     {
-     "q": "Bot javob beryapti, lekin ismingizni xato yozyapti. SI'ga nima deysiz?",
+     "q": "Bot javob beryapti, lekin ismingni xato yozyapti. SI'ga nima deysan?",
      "o": [
       "Bot ismimni noto'g'ri ko'rsatyapti",
       "Bot umuman javob bermayapti",
@@ -131,7 +131,7 @@ CONTENT[13] = {
   {
    "pool": [
     {
-     "q": "Kafe saytida «Buyurtma berish» tugmasini bosdingiz. Hech narsa bo'lmadi. Bu qaysi belgi?",
+     "q": "Kafe saytida «Buyurtma berish» tugmasini bosding. Hech narsa bo'lmadi. Bu qaysi belgi?",
      "o": [
       "Ishlamayapti",
       "Ko'rinmayapti",
@@ -141,7 +141,7 @@ CONTENT[13] = {
      "e": "Bosganda hech narsa bo'lmasa — bu «Ishlamayapti»."
     },
     {
-     "q": "Tugma ishlamayotganini qanday bilasiz?",
+     "q": "Tugma ishlamayotganini qanday bilasan?",
      "o": [
       "Bosaman, hech narsa bo'lmaydi",
       "Ekranga qarayman, tugma yo'q",
@@ -158,7 +158,7 @@ CONTENT[13] = {
       "Bot inglizcha javob beryapti",
       "Botda «Error» yozuvi chiqdi"
      ],
-     "e": "Bosdingiz, bot hech narsa qilmadi — demak ishlamayapti."
+     "e": "Bosding, bot hech narsa qilmadi — demak ishlamayapti."
     },
     {
      "q": "Zarina gul do'koni saytiga faqat qaradi. Tugmalar joyida. Ular ishlashini biladimi?",
@@ -168,10 +168,10 @@ CONTENT[13] = {
       "Ha, rangi to'g'ri-ku",
       "Ha, SI shunday degan"
      ],
-     "e": "Tugma ishlashini faqat bosib ko'rib bilasiz."
+     "e": "Tugma ishlashini faqat bosib ko'rib bilasan."
     },
     {
-     "q": "Rasm bosilganda kattalashishi kerak. Bosdingiz, rasm o'zgarmadi. SI'ga qanday yozasiz?",
+     "q": "Rasm bosilganda kattalashishi kerak. Bosding, rasm o'zgarmadi. SI'ga qanday yozasan?",
      "o": [
       "Rasm bosilganda ishlamayapti",
       "Rasm sahifada ko'rinmayapti",
@@ -181,7 +181,7 @@ CONTENT[13] = {
      "e": "Rasm bor, lekin bosganda hech narsa bo'lmaydi — ishlamayapti."
     },
     {
-     "q": "Tugmani bosdingiz, ekranda «Xatolik» yozuvi chiqdi. Bu «Ishlamayapti»mi?",
+     "q": "Tugmani bosding, ekranda «Xatolik» yozuvi chiqdi. Bu «Ishlamayapti»mi?",
      "o": [
       "Yo'q, bu «Xato xabari chiqdi»",
       "Ha, tugma ishlamayapti",
@@ -225,7 +225,7 @@ CONTENT[13] = {
      "e": "Bu yozuv nimadir xato bo'lganini aytyapti."
     },
     {
-     "q": "Qaysi holatda «Xato xabari chiqdi» deysiz?",
+     "q": "Qaysi holatda «Xato xabari chiqdi» deysan?",
      "o": [
       "Bot «Error 500» deb yozdi",
       "Bot umuman javob bermadi",
@@ -235,7 +235,7 @@ CONTENT[13] = {
      "e": "«Error 500» — xato haqidagi yozuv."
     },
     {
-     "q": "Kafe saytida tugmani bosdingiz, hech narsa bo'lmadi. Xato xabari chiqdimi?",
+     "q": "Kafe saytida tugmani bosding, hech narsa bo'lmadi. Xato xabari chiqdimi?",
      "o": [
       "Yo'q, bu «Ishlamayapti»",
       "Ha, xato xabari chiqdi",

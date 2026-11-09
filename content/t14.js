@@ -3,17 +3,17 @@ CONTENT[14] = {
   {
    "pool": [
     {
-     "q": "Ekranda uzun inglizcha xato xabari chiqdi. Uni SI'ga qanday berasiz?",
+     "q": "Ekranda uzun inglizcha xato xabari chiqdi. Uni SI'ga qanday berasan?",
      "o": [
       "Nusxalab, promptga qo'yaman",
       "O'z so'zlarim bilan aytaman",
       "Eslab qolib, keyin yozaman",
       "Faqat «xato chiqdi» deyman"
      ],
-     "e": "Nusxalasangiz, xabar aynan ekrandagidek boradi."
+     "e": "Nusxalasang, xabar aynan ekrandagidek boradi."
     },
     {
-     "q": "Nega xato xabarini qo'lda qayta yozmaysiz?",
+     "q": "Nega xato xabarini qo'lda qayta yozmaysan?",
      "o": [
       "Bitta harf ham xato ketishi mumkin",
       "Qo'lda yozish taqiqlangan",
@@ -77,7 +77,7 @@ CONTENT[14] = {
      "e": "Xabar bir qismi emas, to'liq beriladi."
     },
     {
-     "q": "Nega xato xabarini to'liq berasiz?",
+     "q": "Nega xato xabarini to'liq berasan?",
      "o": [
       "Muhim qism oxirida bo'lishi mumkin",
       "Prompt uzun bo'lishi uchun",
@@ -117,7 +117,7 @@ CONTENT[14] = {
      "e": "Xabar to'liq bo'lishi uchun oxirigacha nusxalash kerak."
     },
     {
-     "q": "SI xato sababini topa olmadi. Avval nimani tekshirasiz?",
+     "q": "SI xato sababini topa olmadi. Avval nimani tekshirasan?",
      "o": [
       "Xabarni to'liq berganimni",
       "Kompyuterim yangi ekanini",
@@ -131,7 +131,7 @@ CONTENT[14] = {
   {
    "pool": [
     {
-     "q": "Xato xabari rasm kabi chiqdi, uni belgilab bo'lmaydi. Nima qilasiz?",
+     "q": "Xato xabari rasm kabi chiqdi, uni belgilab bo'lmaydi. Nima qilasan?",
      "o": [
       "Skrinshot olib, SI'ga beraman",
       "Xabarni taxminan aytib beraman",
@@ -151,7 +151,7 @@ CONTENT[14] = {
      "e": "Skrinshot — ekranda ko'ringan narsaning rasmi."
     },
     {
-     "q": "Xato xabarining skrinshotini qachon berasiz?",
+     "q": "Xato xabarining skrinshotini qachon berasan?",
      "o": [
       "Xabarni nusxalab bo'lmaganda",
       "Har doim, nusxalashdan oldin",
@@ -161,7 +161,7 @@ CONTENT[14] = {
      "e": "Skrinshot — nusxalab bo'lmagandagi yo'l."
     },
     {
-     "q": "Xato xabarini bemalol belgilab, nusxalasa bo'ladi. Nima qilasiz?",
+     "q": "Xato xabarini bemalol belgilab, nusxalasa bo'ladi. Nima qilasan?",
      "o": [
       "Matnni nusxalab beraman",
       "Faqat skrinshot beraman",
@@ -188,7 +188,7 @@ CONTENT[14] = {
       "Ha, rasm telefonda bor-ku",
       "Ha, SI o'zi topib oladi"
      ],
-     "e": "SI ekraningizni ko'rmaydi, skrinshotni unga yuborish kerak."
+     "e": "SI ekraningni ko'rmaydi, skrinshotni unga yuborish kerak."
     }
    ]
   },

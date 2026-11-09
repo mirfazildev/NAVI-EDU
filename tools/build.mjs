@@ -88,7 +88,7 @@ function runCheck(t, answer){
   if (type === "agent") return t.check(answer || {});
   return t.check(String(answer ?? ""));
 }
-const CHEAT = /ko'chirmang|takrorlamang/;
+const CHEAT = /ko'chirma|takrorlama/;
 export function check(state, answer){
   if (state.v !== VERSION) throw new Error("versiya mos emas: " + state.v + " != " + VERSION);
   const t = build(state.topicId, state.seed), r = runCheck(t, answer);

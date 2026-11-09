@@ -10,7 +10,7 @@ CONTENT[19] = {
       "Faqat fayl nomini o'qiydi",
       "Hech narsa qilmaydi"
      ],
-     "e": "Natijani o'zingiz ishlatib ko'rib tekshirasiz."
+     "e": "Natijani o'zing ishlatib ko'rib tekshirasan."
     },
     {
      "q": "SI \"Hammasi tayyor!\" dedi. Ali nima qiladi?",
@@ -23,10 +23,10 @@ CONTENT[19] = {
      "e": "SI xato qilganda ham \"tayyor\" deyishi mumkin."
     },
     {
-     "q": "Ochilgan natijani nima bilan solishtirasiz?",
+     "q": "Ochilgan natijani nima bilan solishtirasan?",
      "o": [
-      "Kutgan natijangiz bilan",
-      "Do'stingiz sayti bilan",
+      "Kutgan natijang bilan",
+      "Do'sting sayti bilan",
       "SI'ning gapi bilan",
       "Boshqa kompyuter bilan"
      ],
@@ -50,7 +50,7 @@ CONTENT[19] = {
       "Xavf yo'q, SI aytdi",
       "Agent xafa bo'ladi"
      ],
-     "e": "Tekshirmasangiz, xato ham saqlanib qolishi mumkin."
+     "e": "Tekshirmasang, xato ham saqlanib qolishi mumkin."
     },
     {
      "q": "Sardor sahifada sarlavhani ko'rdi, rasmga hali qaramadi. Tekshirish tugadimi?",
@@ -181,7 +181,7 @@ CONTENT[19] = {
      "e": "Bitta narsa buzilgan bo'lsa ham, natija buzilgan hisoblanadi."
     },
     {
-     "q": "Nega SI'ga nima buzilganini aytasiz?",
+     "q": "Nega SI'ga nima buzilganini aytasan?",
      "o": [
       "SI aynan shuni tuzatishi uchun",
       "SI'ni xafa qilish uchun",

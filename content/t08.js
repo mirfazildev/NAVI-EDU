@@ -50,7 +50,7 @@ CONTENT[8] = {
       "Juda uzun ertak",
       "Faqat bitta so'z"
      ],
-     "e": "Misol bersangiz, SI shunga o'xshash narsa qiladi."
+     "e": "Misol bersang, SI shunga o'xshash narsa qiladi."
     },
     {
      "q": "Malika SI'ga yoqqan e'lonni yubordi: «Shunga o'xshash yoz». U nima qildi?",
@@ -87,7 +87,7 @@ CONTENT[8] = {
      "e": "Jasur namuna sifatida boshqa saytni ko'rsatdi."
     },
     {
-     "q": "Gul do'koni sayti uchun rang tanlayapsiz. Qaysi misol eng qulay?",
+     "q": "Gul do'koni sayti uchun rang tanlayapsan. Qaysi misol eng qulay?",
      "o": [
       "Yoqqan gul do'konining rasmi",
       "Gullar haqidagi qalin kitob",
@@ -104,7 +104,7 @@ CONTENT[8] = {
       "Faqat matn nomini aytadi",
       "Matnni o'chirib tashlaydi"
      ],
-     "e": "SI ekraningizni ko'rmaydi, matnni promptga qo'yish kerak."
+     "e": "SI ekraningni ko'rmaydi, matnni promptga qo'yish kerak."
     },
     {
      "q": "Misol qanday bo'lishi mumkin?",
@@ -117,7 +117,7 @@ CONTENT[8] = {
      "e": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
     },
     {
-     "q": "Boshqa Telegram botning javobi sizga yoqdi. O'z botingiz uchun nima qilasiz?",
+     "q": "Boshqa Telegram botning javobi senga yoqdi. O'z boting uchun nima qilasan?",
      "o": [
       "Uni SI'ga misol qilib beraman",
       "Uni hech kimga ko'rsatmayman",
@@ -131,14 +131,14 @@ CONTENT[8] = {
   {
    "pool": [
     {
-     "q": "Sizga «Bahor» saytining faqat rangi yoqdi. Promptga nima yozasiz?",
+     "q": "Senga «Bahor» saytining faqat rangi yoqdi. Promptga nima yozasan?",
      "o": [
       "«Faqat rangini ol»",
       "«Hamma narsasini ol»",
       "«Shunga o'xshash qil»",
       "«Tuzilishini ol»"
      ],
-     "e": "Nimani olishni aytsangiz, SI faqat rangni oladi."
+     "e": "Nimani olishni aytsang, SI faqat rangni oladi."
     },
     {
      "q": "Ali misol berdi, lekin nimani olishni aytmadi. Nima bo'lishi mumkin?",
@@ -168,10 +168,10 @@ CONTENT[8] = {
       "Faqat telefon raqamini",
       "Faqat undagi xatolarni"
      ],
-     "e": "Misoldan rang, uslub yoki tuzilishni olishni aytasiz."
+     "e": "Misoldan rang, uslub yoki tuzilishni olishni aytasan."
     },
     {
-     "q": "Do'stingizning tabrigi quvnoq ohangda, sizga ham shunday kerak. Nimani olasiz?",
+     "q": "Do'stingning tabrigi quvnoq ohangda, senga ham shunday kerak. Nimani olasan?",
      "o": [
       "Uslubini",
       "Rangini",
@@ -181,7 +181,7 @@ CONTENT[8] = {
      "e": "Matnning ohangi — uning uslubi."
     },
     {
-     "q": "«Faqat rangini ol» degan edingiz, SI matnni ham ko'chirdi. Bu to'g'rimi?",
+     "q": "«Faqat rangini ol» degan eding, SI matnni ham ko'chirdi. Bu to'g'rimi?",
      "o": [
       "Yo'q, faqat rangni olishi kerak edi",
       "Ha, matnni ham olishi kerak",

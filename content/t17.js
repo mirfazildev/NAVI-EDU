@@ -20,7 +20,7 @@ CONTENT[17] = {
       "Sayt o'zi qo'yadi",
       "Kompyuter o'zi qo'yadi"
      ],
-     "e": "Chatda SI faqat javob yozadi, faylni siz o'zgartirasiz."
+     "e": "Chatda SI faqat javob yozadi, faylni sen o'zgartirasan."
     },
     {
      "q": "Madina \"Saytga tugma qo'sh\" dedi va fayl o'zi o'zgardi. Bu qaysi rejim?",
@@ -69,15 +69,15 @@ CONTENT[17] = {
     {
      "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
      "o": [
-      "O'zgarishni sizga ko'rsatadi",
+      "O'zgarishni senga ko'rsatadi",
       "Indamay ishni tugatadi",
       "Saytni o'chirib qo'yadi",
       "Yangi suhbat ochadi"
      ],
-     "e": "Agent har bir o'zgarishni sizga ko'rsatadi."
+     "e": "Agent har bir o'zgarishni senga ko'rsatadi."
     },
     {
-     "q": "Agent 3 ta faylni o'zgartirdi. Nechtasini sizga ko'rsatadi?",
+     "q": "Agent 3 ta faylni o'zgartirdi. Nechtasini senga ko'rsatadi?",
      "o": [
       "Uchalasini ham",
       "Faqat birinchisini",
@@ -87,14 +87,14 @@ CONTENT[17] = {
      "e": "Agent har bir o'zgarishni ko'rsatadi, birortasini yashirmaydi."
     },
     {
-     "q": "Nega agent o'zgarishni sizga ko'rsatadi?",
+     "q": "Nega agent o'zgarishni senga ko'rsatadi?",
      "o": [
-      "Siz ko'rib chiqishingiz uchun",
+      "Sen ko'rib chiqishing uchun",
       "Maqtanish uchun",
       "Vaqt o'tishi uchun",
       "Faylni o'chirish uchun"
      ],
-     "e": "Siz o'zgarishni ko'rib, to'g'rimi yo'qmi bilishingiz kerak."
+     "e": "Sen o'zgarishni ko'rib, to'g'rimi yo'qmi bilishing kerak."
     },
     {
      "q": "Agent ishidan keyin Madina \"qizil\" o'chib, \"ko'k\" yozilganini ko'rdi. Bu nima?",
@@ -104,7 +104,7 @@ CONTENT[17] = {
       "Kompyuterning xabari",
       "Do'stining xabari"
      ],
-     "e": "Agent nimani o'zgartirganini sizga ko'rsatib beradi."
+     "e": "Agent nimani o'zgartirganini senga ko'rsatib beradi."
     },
     {
      "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
@@ -124,7 +124,7 @@ CONTENT[17] = {
       "SI xursand bo'ladi",
       "Fayl o'zi tuzaladi"
      ],
-     "e": "O'zgarishni ko'rmasangiz, undagi xatoni ham sezmaysiz."
+     "e": "O'zgarishni ko'rmasang, undagi xatoni ham sezmaysan."
     }
    ]
   },
@@ -138,7 +138,7 @@ CONTENT[17] = {
       "Ha, agent saqlab qo'ydi",
       "Ha, yarmi saqlandi"
      ],
-     "e": "Siz qabul qilmaguningizcha o'zgarish saqlanmaydi."
+     "e": "Sen qabul qilmaguningcha o'zgarish saqlanmaydi."
     },
     {
      "q": "Madina o'zgarishni ko'rdi va qabul qildi. Endi nima bo'ladi?",
@@ -153,12 +153,12 @@ CONTENT[17] = {
     {
      "q": "O'zgarish saqlanadimi yo'qmi — buni kim hal qiladi?",
      "o": [
-      "Siz o'zingiz",
+      "Sen o'zing",
       "Agent o'zi",
       "Kompyuter",
       "Sayt egasi"
      ],
-     "e": "O'zgarish faqat siz qabul qilsangiz saqlanadi."
+     "e": "O'zgarish faqat sen qabul qilsang saqlanadi."
     },
     {
      "q": "Agent kafe menyusini o'zgartirdi, Kamolaga yoqmadi. Nima qiladi?",
@@ -178,7 +178,7 @@ CONTENT[17] = {
       "Sayt chiroyliroq bo'ladi",
       "SI ko'proq yozadi"
      ],
-     "e": "Siz ko'rib qabul qilmaguncha hech narsa saqlanmaydi."
+     "e": "Sen ko'rib qabul qilmaguncha hech narsa saqlanmaydi."
     },
     {
      "q": "Nilufar 2 ta o'zgarishdan faqat birinchisini qabul qildi. Qaysi biri saqlanadi?",

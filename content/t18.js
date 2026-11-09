@@ -10,7 +10,7 @@ CONTENT[18] = {
       "Saytning rangini",
       "Faqat bitta rasmni"
      ],
-     "e": "Katta ishdan oldin SI'dan reja so'rang."
+     "e": "Katta ishdan oldin SI'dan reja so'ra."
     },
     {
      "q": "Qaysi ish uchun avval reja so'rash kerak?",
@@ -33,9 +33,9 @@ CONTENT[18] = {
      "e": "Bu prompt SI'dan ishdan oldin reja so'raydi."
     },
     {
-     "q": "Reja sizga nimaga yordam beradi?",
+     "q": "Reja senga nimaga yordam beradi?",
      "o": [
-      "SI nima qilishini oldindan bilasiz",
+      "SI nima qilishini oldindan bilasan",
       "SI tezroq yozadi",
       "Sayt chiroyli bo'ladi",
       "Xato umuman bo'lmaydi"
@@ -60,7 +60,7 @@ CONTENT[18] = {
       "SI charchab qoladi",
       "Xavf umuman yo'q"
      ],
-     "e": "Rejasiz SI nima qilishini oldindan bilmaysiz."
+     "e": "Rejasiz SI nima qilishini oldindan bilmaysan."
     }
    ]
   },
@@ -104,17 +104,17 @@ CONTENT[18] = {
       "Rejani shundayicha qoldiradi",
       "Butun rejani o'chiradi"
      ],
-     "e": "Har bir keraksiz qadamni olib tashlashni ayting."
+     "e": "Har bir keraksiz qadamni olib tashlashni ayt."
     },
     {
-     "q": "Sport zali rejasi: 1) Sarlavha 2) Narxlar 3) Musiqa. Musiqa kerak emas, nima yozasiz?",
+     "q": "Sport zali rejasi: 1) Sarlavha 2) Narxlar 3) Musiqa. Musiqa kerak emas, nima yozasan?",
      "o": [
       "\"3-qadamni olib tashla\"",
       "\"Rejani qaytadan yoz\"",
       "\"Musiqani balandroq qil\"",
       "\"1-qadamni olib tashla\""
      ],
-     "e": "Musiqa 3-qadam, uni olib tashlashni aytasiz."
+     "e": "Musiqa 3-qadam, uni olib tashlashni aytasan."
     },
     {
      "q": "SI \"Keraksiz qadamni olib tashla\" gapini tushunmadi. Nimani qo'shish kerak?",
@@ -124,21 +124,21 @@ CONTENT[18] = {
       "Salom so'zi",
       "Katta harflar"
      ],
-     "e": "Qaysi qadam ekanini aniq ayting: raqami yoki nomi."
+     "e": "Qaysi qadam ekanini aniq ayt: raqami yoki nomi."
     }
    ]
   },
   {
    "pool": [
     {
-     "q": "Rejada keraksiz \"O'yin\" bor, \"Telefon raqami\" yo'q. Nima yozasiz?",
+     "q": "Rejada keraksiz \"O'yin\" bor, \"Telefon raqami\" yo'q. Nima yozasan?",
      "o": [
       "\"O'yinni olib tashla, raqamni qo'sh\"",
       "\"Rejani shundayicha bajar\"",
       "\"O'yinni ham, raqamni ham qo'sh\"",
       "\"Ikkalasini ham olib tashla\""
      ],
-     "e": "Keraksizini olib tashlaysiz, yetishmaganini qo'shasiz."
+     "e": "Keraksizini olib tashlaysan, yetishmaganini qo'shasan."
     },
     {
      "q": "Bot buyurtma olishi kerak, rejada esa faqat salom va menyu bor. Nima yetishmaydi?",
@@ -151,14 +151,14 @@ CONTENT[18] = {
      "e": "Buyurtma olish kerak, lekin rejada u yo'q."
     },
     {
-     "q": "Yetishmagan qadamni qanday topasiz?",
+     "q": "Yetishmagan qadamni qanday topasan?",
      "o": [
       "Kerakli narsalarni rejadan qidiraman",
       "SI o'zi aytguncha kutaman",
       "Rejani o'qimay qabul qilaman",
       "Faqat birinchi qadamni o'qiyman"
      ],
-     "e": "Har bir kerakli narsa rejada bormi, qarab chiqing."
+     "e": "Har bir kerakli narsa rejada bormi, qarab chiq."
     },
     {
      "q": "Jasur yetishmagan qadamni SI'ga aytmadi. Nima bo'ladi?",

@@ -3,14 +3,14 @@ CONTENT[10] = {
   {
    "pool": [
     {
-     "q": "Kutilgan natijani qachon yozasiz?",
+     "q": "Kutilgan natijani qachon yozasan?",
      "o": [
       "Prompt yozishdan oldin",
       "SI javob bergandan keyin",
       "Sayt tayyor bo'lgach",
-      "Do'stingiz so'raganda"
+      "Do'sting so'raganda"
      ],
-     "e": "Natija qanday bo'lishini prompt yozishdan oldin yozib qo'yasiz."
+     "e": "Natija qanday bo'lishini prompt yozishdan oldin yozib qo'yasan."
     },
     {
      "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
@@ -33,7 +33,7 @@ CONTENT[10] = {
      "e": "Avval kutilgan natija, keyin prompt yoziladi."
     },
     {
-     "q": "Bozorga borishdan oldin xarid ro'yxatini yozasiz. Bu nimaga o'xshaydi?",
+     "q": "Bozorga borishdan oldin xarid ro'yxatini yozasan. Bu nimaga o'xshaydi?",
      "o": [
       "Natijani oldindan yozib qo'yishga",
       "SI javobini o'qishga",
@@ -77,34 +77,34 @@ CONTENT[10] = {
      "e": "«Tugma ko'k» — buni ko'rib tekshirsa bo'ladi."
     },
     {
-     "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasiz?",
+     "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasan?",
      "o": [
       "Sarlavhadagi so'zlarni sanayman",
       "SI'dan yoqdimi deb so'rayman",
       "Sarlavha rangiga qarayman",
       "Do'stimdan fikrini so'rayman"
      ],
-     "e": "So'zlarni sanab, 6 tadan oshmaganini ko'rasiz."
+     "e": "So'zlarni sanab, 6 tadan oshmaganini ko'rasan."
     },
     {
-     "q": "Kutilgan natija «Saytda 5 ta kitob», lekin saytda 4 ta. Nima deysiz?",
+     "q": "Kutilgan natija «Saytda 5 ta kitob», lekin saytda 4 ta. Nima deysan?",
      "o": [
       "Natija bajarilmagan",
       "Natija bajarilgan",
       "Buni tekshirib bo'lmaydi",
       "4 ta ham yetarli"
      ],
-     "e": "Sanab ko'rdingiz: 5 emas, 4 ta, demak bajarilmagan."
+     "e": "Sanab ko'rding: 5 emas, 4 ta, demak bajarilmagan."
     },
     {
-     "q": "Bot «Assalomu alaykum» deyishi kerak. Buni ko'rish uchun nima qilasiz?",
+     "q": "Bot «Assalomu alaykum» deyishi kerak. Buni ko'rish uchun nima qilasan?",
      "o": [
       "Botga yozib, javobiga qarayman",
       "Botning nomini o'qiyman",
       "SI'ning gapiga ishonaman",
       "Promptni qayta o'qiyman"
      ],
-     "e": "Bot javobini ko'rib, natijani tekshirasiz."
+     "e": "Bot javobini ko'rib, natijani tekshirasan."
     },
     {
      "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
