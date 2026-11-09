@@ -266,6 +266,17 @@ function lessonItem(){
   const qi=pick(free); L.used[L.kp].add(qi);
   mcq(pl[qi], kick, ok=>lessonAfter(ok), {dots:dots(L.streak), next:lessonNext});
 }
+async function askSI(task, raw){
+  try{
+    const ctl=new AbortController(); const tm=setTimeout(()=>ctl.abort(),12000);
+    const r=await fetch("/api/si",{method:"POST",headers:{"Content-Type":"application/json"},signal:ctl.signal,
+      body:JSON.stringify({topic:BYID[L.id].name, task:task.text, rubric:task.ai.rubric.map(x=>x.q), prompt:raw})});
+    clearTimeout(tm);
+    if(r.status===503||r.status===404){ S.aiOff=true; return null; }   // SI ulanmagan — algoritm bahosi qoladi
+    if(!r.ok) return null;
+    const j=await r.json(); return Array.isArray(j.checks)?j:null;
+  }catch(e){ return null; }
+}
 function practiceItem(kick){
   const task = PR.has(L.id) ? PR.make(L.id) : PR2.make(L.id);
   const type = task.type || "prompt";
@@ -277,28 +288,45 @@ function practiceItem(kick){
   };
   const chatHtml = task.chat ? task.chat.map(([w,t])=>`<div class="msg ${w==="me"?"me":"ai"}">${w==="ai"?'<span class="who">SI</span>':''}${esc(t)}</div>`).join("") : "";
   const planHtml = task.plan ? `<div class="msg ai"><span class="who">SI · reja</span>${task.plan.map((x,i)=>`${i+1}. ${esc(x)}`).join("<br>")}</div>` : "";
-  const head = `<span class="kicker">${kick} · amaliyot</span><div class="ptask">${esc(task.text)}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
+  const sent = String(task.text).split(/(?<=[.:?!])\s+(?=[A-ZА-Я«"'0-9SI])/).filter(Boolean);
+  const head = `<div class="pt-head"><span class="pt-badge">Amaliyot</span><ul class="pt-list">${sent.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
   const writeBox = (ph, rows=3) => `<label class="sr" for="pin">Javob</label><textarea id="pin" rows="${rows}" placeholder="${ph}" autocomplete="off" spellcheck="false"></textarea>`;
 
   if(type==="prompt" || type==="write" || (type==="site" && task.mode==="prompt")){
     const isW = type==="write";
     slot.replaceChildren(el(`<section class="card">${head}${task.page||""}${task.lead?`<p class="muted">${esc(task.lead)}</p>`:""}
       <div class="chat" id="chat">${chatHtml}${planHtml}</div><div class="q">${isW?"Kutilgan natijani yozing":"SI'ga prompt yozing"}</div>
-      ${writeBox(isW?(task.placeholder||""):"Promptni shu yerga yozing...", isW?4:3)}${dots(L.streak)}</section>
+      ${writeBox(isW?(task.placeholder||""):"Promptni shu yerga yozing...", isW?4:3)}</section>
       <div id="fbslot"></div><button class="main" id="check" disabled>${isW?"Tekshirish":"Yuborish"}</button>`));
     const ta=document.getElementById("pin"), chk=document.getElementById("check");
     if(!task.paste){ ta.addEventListener("paste",e=>e.preventDefault()); ta.addEventListener("drop",e=>e.preventDefault()); }
     ta.oninput=()=>{chk.disabled=!ta.value.trim()};
-    chk.onclick=()=>{ const raw=ta.value, r=task.check(raw); ta.disabled=true; chk.disabled=true;
-      if(!isW) document.getElementById("chat").insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>${r.ans?`<div class="msg ai"><span class="who">SI</span>${esc(r.ans)}</div>`:""}`);
-      finish(r); };
+    chk.onclick=async ()=>{ const raw=ta.value, r=task.check(raw); ta.disabled=true; chk.disabled=true;
+      const chat=document.getElementById("chat");
+      if(!isW) chat.insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>`);
+      let final=r;
+      const cheat = r.msg.some(x=>/ko'chirmang|takrorlamang/.test(x));
+      if(!r.ok && !cheat && task.ai && !S.aiOff){
+        chat.insertAdjacentHTML("beforeend", `<div class="msg ai thinking" id="think"><span class="who">SI</span>o'ylayapti<span class="dotsx"><i></i><i></i><i></i></span></div>`);
+        chk.textContent="SI o'ylayapti...";
+        const a = await askSI(task, raw);
+        document.getElementById("think")?.remove();
+        if(a){
+          const g = task.ai.guard ? task.ai.guard(raw) : null;
+          if(a.injection || a.offtopic) final={ok:false, msg:["Faqat shu vazifa bo'yicha yozing."], ans:a.reply||"Men faqat shu vazifa bo'yicha yordam beraman."};
+          else { const miss=task.ai.rubric.filter((x,i)=>!a.checks[i]).map(x=>x.miss);
+            final = (!miss.length && !g) ? {ok:true, msg:["SI vazifani to'liq tushundi."], ans:a.reply} : {ok:false, msg:g?[g,...miss]:miss, ans:a.reply}; }
+        }
+      }
+      if(!isW && final.ans) chat.insertAdjacentHTML("beforeend", `<div class="msg ai"><span class="who">SI</span>${esc(final.ans)}</div>`);
+      finish(final); };
     return;
   }
   if(type==="mark"){
     const sel=new Set(); let ch=-1;
     slot.replaceChildren(el(`<section class="card">${head}${task.lead?`<div class="msg me">${esc(task.lead)}</div>`:""}
       <div class="marks ${task.lines?'lines':''}">${task.chunks.map((c,i)=>`<button class="mk" data-i="${i}">${esc(c.t)}</button>`).join(task.lines?"":"")}</div>
-      ${task.choices?`<div class="q">Xato turi</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`:""}${dots(L.streak)}</section>
+      ${task.choices?`<div class="q">Xato turi</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`:""}</section>
       <div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
     const chk=document.getElementById("check"), ready=()=>{chk.disabled=!(sel.size && (!task.choices||ch>=0));};
     slot.querySelectorAll(".mk").forEach(b=>b.onclick=()=>{const i=+b.dataset.i; sel.has(i)?sel.delete(i):sel.add(i); b.classList.toggle("on"); ready();});
@@ -313,7 +341,7 @@ function practiceItem(kick){
     const mid = task.mode==="checklist"
       ? `<div class="q">Bajarilgan bandlarni belgilang</div><div class="opts">${task.items.map((t,i)=>`<button class="opt cl" data-i="${i}"><span class="k">✓</span><span>${esc(t)}</span></button>`).join("")}</div>`
       : `<div class="q">Xato belgisi qaysi?</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`;
-    slot.replaceChildren(el(`<section class="card">${head}${task.page}${mid}${dots(L.streak)}</section><div id="fbslot"></div><button class="main" id="check" ${task.mode==="checklist"?"":"disabled"}>Tekshirish</button>`));
+    slot.replaceChildren(el(`<section class="card">${head}${task.page}${mid}</section><div id="fbslot"></div><button class="main" id="check" ${task.mode==="checklist"?"":"disabled"}>Tekshirish</button>`));
     const chk=document.getElementById("check"), mock=slot.querySelector(".mock"), out=slot.querySelector("#mout");
     mock.addEventListener("click",()=>{touched=true;});
     const mb=slot.querySelector("#mbtn");
@@ -334,7 +362,7 @@ function practiceItem(kick){
       <div class="diff">${task.diff.map(([s,t])=>`<div class="dl ${s==="+"?"add":"del"}"><b>${s}</b> ${esc(t)}</div>`).join("")}</div>
       <button class="ghost" id="pv">Natijani ko'rish</button><div id="pvslot"></div>
       <div class="agbtns"><button class="opt" id="acc"><span>Qabul qilish</span></button><button class="opt" id="rej"><span>Rad qilish</span></button></div>
-      <div id="whyslot"></div>${dots(L.streak)}</section><div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
+      <div id="whyslot"></div></section><div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
     const chk=document.getElementById("check"); let accept=null;
     document.getElementById("pv").onclick=()=>{viewed=true; document.getElementById("pvslot").innerHTML=task.preview;};
     const choose=(a)=>{accept=a; document.getElementById("acc").classList.toggle("sel",a); document.getElementById("rej").classList.toggle("sel",!a);

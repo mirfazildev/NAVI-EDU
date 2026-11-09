@@ -12,3 +12,8 @@ Math Academy usulida qurilgan namunaviy ilova (faqat front-end, ma'lumot saqlanm
 
 Fayllar: `index.html`, `styles.css`, `data.js` (mavzular va BN'lar), `content/tNN.js` (savollar), `practice.js`, `practice2.js` (amaliyot tekshiruvchilari), `app.js` (dvigatel va ekranlar).
 Qoidalar manbasi: Navi Global Product/Mirfazil/Arxitektura (12, 22-fayllar va 01 qarorlar).
+
+## Amaliyot SI'si (Gemini, sinov uchun)
+- `api/si.js` — Vercel serverless funksiya. Algoritm ikkilangan javoblarnigina SI'ga yuboradi; SI faqat shu vazifa doirasida javob beradi va mezonlarga "ha/yo'q" qaytaradi, yakuniy bahoni ilova chiqaradi.
+- Kalit faqat Vercel'da: Settings → Environment Variables → `GEMINI_API_KEY`. Model: `GEMINI_MODEL` (standart: `gemini-3.5-flash-lite`).
+- Kalit bo'lmasa yoki SI ishlamasa — algoritm bahosi qo'llanadi.
