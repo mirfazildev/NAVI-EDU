@@ -1,16 +1,23 @@
 /* Algoritmli amaliyot — "soxta SI" (Q-604). Haqiqiy SI ham, SI tekshiruvchi ham yo'q. */
 const PR = (() => {
   const pick = a => a[Math.floor(Math.random()*a.length)];
-  const norm = s => s.toLowerCase()
-    .replace(/[‘’`ʻʼ´]/g,"'").replace(/[«»"“”]/g," ").replace(/\s+/g," ").trim();
+  const TR={"а":"a","б":"b","в":"v","г":"g","д":"d","е":"e","ё":"yo","ж":"j","з":"z","и":"i","й":"y","к":"k","л":"l","м":"m","н":"n","о":"o","п":"p","р":"r","с":"s","т":"t","у":"u","ф":"f","х":"x","ц":"s","ч":"ch","ш":"sh","щ":"sh","ъ":"","ы":"i","ь":"","э":"e","ю":"yu","я":"ya","ў":"o","қ":"q","ғ":"g","ҳ":"h"};
+  const SYN=[[/\b(button|buton|knopka|knopkasi|btn)\b/g,"tugma"],[/\b(image|img|photo|picture|foto|surat|kartinka|rasim)\b/g,"rasm"],[/\b(title|header|heading|zagolovok)\b/g,"sarlavha"],
+    [/\b(text|tekst)\b/g,"matn"],[/\b(menu)\b/g,"menyu"],[/\b(color|colour|svet|tsvet)\b/g,"rang"],[/\b(red|krasniy)\b/g,"qizil"],[/\b(blue|siniy)\b/g,"kok"],[/\b(green|zelyoniy)\b/g,"yashil"],
+    [/\b(yellow)\b/g,"sariq"],[/\b(black)\b/g,"qora"],[/\b(white)\b/g,"oq"],[/\b(fix|ispravit|ispravi)\b/g,"tuzat"],[/\b(lkn|lekn|lekim)\b/g,"lekin"],[/\b(hato|xatto)\b/g,"xato"],
+    [/\b(page|stranitsa)\b/g,"sahifa"],[/\b(site|sayit)\b/g,"sayt"],[/\b(error|oshibka)\b/g,"xato"],[/\b(ishalyapti|ishlavotti|ishlayabdi)\b/g,"ishlayapti"],[/yabdi\b/g,"yapti"],[/vot(ti|di)\b/g,"yapti"]];
+  const STOP=/^(bor|va|yoq|lekin|ham|bu|u|men|menda|uchun|bilan|emas|kerak|edi|qil|yoz|ni|da|ga|bir|shu|endi|yana|hech|narsa)$/;
+  const norm = s => { let t=s.toLowerCase().replace(/[а-яёўқғҳ]/g,c=>TR[c]??c).replace(/[‘’`ʻʼ´']/g,"").replace(/[«»"“”]/g," ");
+    for(const [a,b] of SYN) t=t.replace(a,b); return t.replace(/\s+/g," ").trim(); };
   const words = s => norm(s).split(/[\s,.;:!?()]+/).filter(Boolean);
+  const RX = (x,fl) => new RegExp(String(x).replace(/'/g,""),fl);
   const NEG = "(yozma|qo'shma|qo'yma|ishlatma|bo'lmasin|kerak emas|kerakmas|tegma|o'zgartirma|qilma|chiqarma|olma)";
 
   /* Hamma amaliyot uchun umumiy tekshiruvlar */
   function common(raw, taskText, opt={}){
     const p = norm(raw), w = words(raw), r = {p};
     const cnt = {}; w.forEach(x=>cnt[x]=(cnt[x]||0)+1);
-    r.spam = Object.values(cnt).some(c=>c>2) && w.length < 40;
+    r.spam = Object.entries(cnt).some(([x,c])=>c>=5 || (c>=3 && !STOP.test(x))) && w.length < 40;
     r.short = w.length < (opt.minWords||5);
     if (!opt.noCopy) {
       const tw = words(taskText), grams = new Set();
@@ -18,7 +25,7 @@ const PR = (() => {
       let hit=0; for (let i=0;i+5<=w.length;i++) if (grams.has(w.slice(i,i+5).join(" "))) hit++;
       r.copy = (grams.size && hit/grams.size >= 0.7) || (opt.marker ? opt.marker.test(p) : false);
     } else r.copy = false;
-    r.verb = (opt.verb || /(yoz|tuz|yarat|o'ylab|taklif|qil|o'zgartir|yangila|almashtir|tuzat|to'g'irla|tushuntir|yordam|nega|sabab|hal qil|ol\b|ber\b)/).test(p);
+    r.verb = (opt.verb || /(yoz|tuz|yarat|oylab|taklif|qil|ozgartir|yangila|almashtir|tuzat|togirla|tushuntir|yordam|nega|sabab|hal qil|ol\b|ber\b)/).test(p);
     return r;
   }
   function gate(r){
@@ -29,7 +36,7 @@ const PR = (() => {
   }
   /* bitta bo'lak ichida so'z va inkor birga kelganmi ("narx yozma", "narxsiz") */
   function negated(p, rx){
-    return p.split(/[.,;!?]| va | lekin /).some(part => rx.test(part) && new RegExp(NEG).test(part));
+    return p.split(/[.,;!?]| va | lekin /).some(part => rx.test(part) && RX(NEG).test(part));
   }
 
   /* ---------- 5. Aniq vazifa berish ---------- */
@@ -39,7 +46,7 @@ const PR = (() => {
       gul:{l:"gul do'koni", t:{uz:"eng chiroyli gullar shu yerda",ru:"самые красивые цветы здесь",en:"the most beautiful flowers in town"}},
       sport:{l:"sport zali", t:{uz:"kuchli bo'lish shu yerdan boshlanadi",ru:"сила начинается здесь",en:"your strength starts here"}},
       kitob:{l:"kitob do'koni", t:{uz:"har bir kitob yangi dunyo",ru:"каждая книга — новый мир",en:"every book is a new world"}}};
-    const LANG = {uz:"o'zbekcha",ru:"ruscha",en:"inglizcha"}, RXL = {uz:/o'?zbek|uzbek/, ru:/rus/, en:/ingliz|angliz|english/};
+    const LANG = {uz:"o'zbekcha",ru:"ruscha",en:"inglizcha"}, RXL = {uz:/o?zbek|uzbek/, ru:/rus/, en:/ingliz|angliz|english/};
     const LONG = {uz:": har kuni sizni kutamiz, do'stlaringiz bilan keling!",ru:": ждём вас каждый день, приходите с друзьями!",en:": we wait for you every day, come with friends!"};
     const NUMW = {7:["7","yetti"],8:["8","sakkiz"]};
     const k = {type:pick(Object.keys(TYPES)), name:pick(["Lola","Bahor","Sevara","Zafar","Anvar","Nilufar"]), lang:pick(Object.keys(LANG)), limit:pick([7,8])};
@@ -49,7 +56,7 @@ const PR = (() => {
       const p = r.p, langs = Object.keys(RXL).filter(l=>RXL[l].test(p));
       const has = { obj:/sarlav/.test(p), name:p.includes(k.name.toLowerCase()),
         lang: langs.length===1 && langs[0]===k.lang,
-        limit: NUMW[k.limit].some(n=>new RegExp("(^|[^0-9a-z'])"+n+"( ta)? so'z(dan|li|gacha| bo'l)").test(p)) };
+        limit: NUMW[k.limit].some(n=>RX("(^|[^0-9a-z'])"+n+"( ta)? so'z(dan|li|gacha| bo'l)").test(p)) };
       const m=[];
       if(!has.obj) m.push("Nima kerakligi yo'q: sarlavha.");
       if(!has.name) m.push(`Nomi yo'q: «${k.name}».`);
@@ -69,7 +76,7 @@ const PR = (() => {
   /* ---------- 6. Kontekst berish ---------- */
   const T6 = () => {
     const TY = [{l:"kafe",rx:/kafe|oshxona|restoran/,w:"mazali taomlar"},{l:"gul do'koni",rx:/gul/,w:"chiroyli gullar"},{l:"sport zali",rx:/sport|zal\b|fitnes/,w:"kuchli mashg'ulotlar"},{l:"kitob do'koni",rx:/kitob/,w:"qiziqarli kitoblar"}];
-    const AU = [{l:"talabalar",rx:/talaba|student/,s:"Darsdan keyin dam olishga keling!"},{l:"12–15 yoshli bolalar",rx:/bola|o'smir|yoshli|maktab/,s:"Qiziqarli narsalar seni kutmoqda!"},{l:"keksa odamlar",rx:/keksa|qariya|katta yosh|nafaqa/,s:"Sizni hurmat bilan kutamiz."},{l:"ota-onalar",rx:/ota-ona|ota ona|onalar|otalar/,s:"Farzandingiz bilan keling!"}];
+    const AU = [{l:"talabalar",rx:/talaba|student/,s:"Darsdan keyin dam olishga keling!"},{l:"12–15 yoshli bolalar",rx:/bola|osmir|yoshli|maktab/,s:"Qiziqarli narsalar seni kutmoqda!"},{l:"keksa odamlar",rx:/keksa|qariya|katta yosh|nafaqa/,s:"Sizni hurmat bilan kutamiz."},{l:"ota-onalar",rx:/ota-ona|ota ona|onalar|otalar/,s:"Farzandingiz bilan keling!"}];
     const ty = pick(TY), au = pick(AU), name = pick(["Orzu","Bahor","Lola","Yulduz"]);
     const text = `«${name}» — bu ${ty.l}. Uning saytiga qisqa xush kelibsiz matni kerak. Saytga asosan ${au.l} kiradi.`;
     return { text, check(raw){
@@ -95,8 +102,8 @@ const PR = (() => {
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
       const hasPart = pt.rx.test(p);
-      const rest = /faqat/.test(p) || (/(qolgan|boshqa|hech nima|hech narsa)/.test(p) && new RegExp(NEG+"|o'zgarmasin|tegmasin|qoldir").test(p));
-      const noOk = negated(p, no.rx) || new RegExp(no.rx.source+"[a-z']*siz").test(p);
+      const rest = /faqat/.test(p) || (/(qolgan|boshqa|hech nima|hech narsa)/.test(p) && RX(NEG+"|o'zgarmasin|tegmasin|qoldir").test(p));
+      const noOk = negated(p, no.rx) || RX(no.rx.source+"[a-z']*siz").test(p);
       const m=[];
       if(!hasPart) m.push(`Nimani o'zgartirish kerakligi yo'q: ${pt.l}.`);
       if(!rest) m.push("Qolgan qismga tegmaslik aytilmagan.");
@@ -113,13 +120,13 @@ const PR = (() => {
   /* ---------- 8. Misol bilan tushuntirish ---------- */
   const T8 = () => {
     const OBJ = [{l:"tugma",rx:/tugma/},{l:"sarlavha",rx:/sarlav/},{l:"menyu",rx:/menyu/}];
-    const AT = [{l:"rangini",rx:/rang/,d:"ko'k rangli"},{l:"shaklini",rx:/shakl|dumaloq|burchak/,d:"dumaloq burchakli"},{l:"o'lchamini",rx:/o'lcham|kattalig|hajm/,d:"katta o'lchamli"}];
+    const AT = [{l:"rangini",rx:/rang/,d:"ko'k rangli"},{l:"shaklini",rx:/shakl|dumaloq|burchak/,d:"dumaloq burchakli"},{l:"o'lchamini",rx:/olcham|kattalig|hajm/,d:"katta o'lchamli"}];
     const o = pick(OBJ), a = pick(AT), site = pick(["Bahor","Orzu","Yulduz","Nur"]);
     const text = `Sizga yangi ${o.l} kerak. «${site}» saytidagi ${o.l} sizga yoqdi. Undan faqat ${a.l} olish kerak.`;
     return { text, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
-      const hasObj=o.rx.test(p), hasEx=p.includes(site.toLowerCase()) || /(misol|namuna|o'xshash|kabi|singari|xuddi)/.test(p), hasAt=a.rx.test(p);
+      const hasObj=o.rx.test(p), hasEx=p.includes(site.toLowerCase()) || /(misol|namuna|oxshash|kabi|singari|xuddi)/.test(p), hasAt=a.rx.test(p);
       const m=[];
       if(!hasObj) m.push(`Nima kerakligi yo'q: ${o.l}.`);
       if(!hasEx) m.push(`Misol ko'rsatilmagan: «${site}» saytidagi ${o.l}.`);
@@ -140,7 +147,7 @@ const PR = (() => {
     const text = `Kafe saytiga ${sh[0].l}, ${sh[1].l} va ${sh[2].l} kerak. Hammasi birdaniga emas: birinchi qadam — ${sh[0].l}.`;
     return { text, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
-      const p=r.p, cut=p.search(/keyin|so'ng|keyinroq|boshqasini/), head=cut>=0?p.slice(0,cut):p;
+      const p=r.p, cut=p.search(/keyin|song|keyinroq|boshqasini/), head=cut>=0?p.slice(0,cut):p;
       const first=sh[0].rx.test(head), others=sh.slice(1).filter(x=>x.rx.test(head));
       const m=[];
       if(!first) m.push(`Birinchi qadam yo'q: ${sh[0].l}.`);
@@ -163,7 +170,7 @@ const PR = (() => {
     const e = pick(E);
     const text = `Saytni ochganingizda shu xato chiqdi. SI'dan uni tuzatishni so'rang.`;
     return { text, err:e.join("\n    "), paste:true, check(raw){
-      const r = common(raw, text, {noCopy:true, minWords:4, verb:/(tuzat|to'g'irla|nega|sabab|yordam|hal qil|ko'rib chiq)/}), g = gate(r); if (g) return {ok:false, ...g};
+      const r = common(raw, text, {noCopy:true, minWords:4, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil|korib chiq)/}), g = gate(r); if (g) return {ok:false, ...g};
       const flat = s => s.replace(/\s+/g," ").trim();
       const p = flat(raw), l1 = p.includes(e[0]), l2 = p.includes(e[1]);
       const m=[];
@@ -180,15 +187,15 @@ const PR = (() => {
 
   /* ---------- 15. Qadam-baqadam aytish ---------- */
   const T15 = () => {
-    const S = [{b:"Menyu",e:"menyu ochilishi",erx:/ochil/},{b:"Buyurtma berish",e:"buyurtma oynasi chiqishi",erx:/chiq|ochil/},{b:"Aloqa",e:"aloqa bo'limiga o'tishi",erx:/o't|ochil|chiq/},{b:"Kirish",e:"kirish oynasi chiqishi",erx:/chiq|ochil/}];
-    const A = [{a:"sahifa oq bo'lib qoldi",rx:/oq|bo'sh|oqarib/},{a:"hech narsa bo'lmadi",rx:/hech narsa|hech nima|ishlamadi|o'zgarmadi/},{a:"xato xabari chiqdi",rx:/xato/}];
+    const S = [{b:"Menyu",e:"menyu ochilishi",erx:/ochil/},{b:"Buyurtma berish",e:"buyurtma oynasi chiqishi",erx:/chiq|ochil/},{b:"Aloqa",e:"aloqa bo'limiga o'tishi",erx:/ot|ochil|chiq/},{b:"Kirish",e:"kirish oynasi chiqishi",erx:/chiq|ochil/}];
+    const A = [{a:"sahifa oq bo'lib qoldi",rx:/oq|bosh|oqarib/},{a:"hech narsa bo'lmadi",rx:/hech narsa|hech nima|ishlamadi|ozgarmadi/},{a:"xato xabari chiqdi",rx:/xato/}];
     const s = pick(S), a = pick(A);
     const text = `Siz saytdagi «${s.b}» tugmasini bosdingiz. ${s.e[0].toUpperCase()+s.e.slice(1)} kerak edi, lekin ${a.a}.`;
     return { text, check(raw){
-      const r = common(raw, text, {marker:/bosdingiz|saytdagi/, verb:/(tuzat|to'g'irla|nega|sabab|yordam|hal qil)/}), g = gate(r); if (g) return {ok:false, ...g};
+      const r = common(raw, text, {marker:/bosdingiz|saytdagi/, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil)/}), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p, bn=s.b.toLowerCase().split(" ")[0];
       const iAct = p.includes(bn) && /bos/.test(p) ? p.indexOf(bn) : -1;
-      const hasExp = s.erx.test(p) && /(kerak edi|kerak|kutgandim|kutdim|bo'lishi)/.test(p);
+      const hasExp = s.erx.test(p) && /(kerak edi|kerak|kutgandim|kutdim|bolishi)/.test(p);
       const iRes = p.search(a.rx);
       const m=[];
       if(iAct<0) m.push(`Nima qilganingiz yo'q: «${s.b}» tugmasini bosdim.`);
@@ -212,7 +219,7 @@ const PR = (() => {
     const phone = "+998 90 000 00 00";
     const text = `Botingiz @${bot} ${pr.l}. Sizda shu ma'lumotlar bor: bot tokeni — ${token}, egasining telefoni — ${phone}. SI'dan yordam so'rang.`;
     return { text, check(raw){
-      const r = common(raw, text, {marker:/sizda shu|egasining/, verb:/(tuzat|to'g'irla|nega|sabab|yordam|hal qil|tekshir)/}), g = gate(r); if (g) return {ok:false, ...g};
+      const r = common(raw, text, {marker:/sizda shu|egasining/, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil|tekshir)/}), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
       const leakT = p.includes(token.toLowerCase().split(":")[0]) || /\d{5,}:[a-z0-9_-]+/.test(p);
       const leakP = /998|000 00 00|\+?\d[\d ]{8,}/.test(p);

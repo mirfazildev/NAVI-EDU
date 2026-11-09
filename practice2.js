@@ -1,14 +1,21 @@
 /* Yangi amaliyot turlari: belgilash (mark), soxta sayt (site), soxta agent (agent), yozish. Hammasi algoritm — haqiqiy SI yo'q (Q-604). */
 const PR2 = (() => {
   const pick = a => a[Math.floor(Math.random()*a.length)];
-  const norm = s => s.toLowerCase().replace(/[‘’`ʻʼ´]/g,"'").replace(/[«»"“”]/g," ").replace(/\s+/g," ").trim();
+  const TR={"а":"a","б":"b","в":"v","г":"g","д":"d","е":"e","ё":"yo","ж":"j","з":"z","и":"i","й":"y","к":"k","л":"l","м":"m","н":"n","о":"o","п":"p","р":"r","с":"s","т":"t","у":"u","ф":"f","х":"x","ц":"s","ч":"ch","ш":"sh","щ":"sh","ъ":"","ы":"i","ь":"","э":"e","ю":"yu","я":"ya","ў":"o","қ":"q","ғ":"g","ҳ":"h"};
+  const SYN=[[/\b(button|buton|knopka|knopkasi|btn)\b/g,"tugma"],[/\b(image|img|photo|picture|foto|surat|kartinka|rasim)\b/g,"rasm"],[/\b(title|header|heading|zagolovok)\b/g,"sarlavha"],
+    [/\b(text|tekst)\b/g,"matn"],[/\b(menu)\b/g,"menyu"],[/\b(color|colour|svet|tsvet)\b/g,"rang"],[/\b(red|krasniy)\b/g,"qizil"],[/\b(blue|siniy)\b/g,"kok"],[/\b(green|zelyoniy)\b/g,"yashil"],
+    [/\b(yellow)\b/g,"sariq"],[/\b(black)\b/g,"qora"],[/\b(white)\b/g,"oq"],[/\b(fix|ispravit|ispravi)\b/g,"tuzat"],[/\b(lkn|lekn|lekim)\b/g,"lekin"],[/\b(hato|xatto)\b/g,"xato"],
+    [/\b(page|stranitsa)\b/g,"sahifa"],[/\b(site|sayit)\b/g,"sayt"],[/\b(error|oshibka)\b/g,"xato"],[/\b(ishalyapti|ishlavotti|ishlayabdi)\b/g,"ishlayapti"],[/yabdi\b/g,"yapti"],[/vot(ti|di)\b/g,"yapti"]];
+  const STOP=/^(bor|va|yoq|lekin|ham|bu|u|men|menda|uchun|bilan|emas|kerak|edi|qil|yoz|ni|da|ga|bir|shu|endi|yana|hech|narsa)$/;
+  const norm = s => { let t=s.toLowerCase().replace(/[а-яёўқғҳ]/g,c=>TR[c]??c).replace(/[‘’`ʻʼ´']/g,"").replace(/[«»"“”]/g," ");
+    for(const [a,b] of SYN) t=t.replace(a,b); return t.replace(/\s+/g," ").trim(); };
   const words = s => norm(s).split(/[\s,.;:!?()]+/).filter(Boolean);
-  const NEG = /(yozma|qo'shma|qo'yma|qilma|o'chirma|kerak emas|kerakmas|yo'q|rad|bajarma|ishga tushirma|yozib qo'yma|tegma)/;
+  const NEG = /(yozma|qoshma|qoyma|qilma|ochirma|kerak emas|kerakmas|yoq|rad|bajarma|ishga tushirma|yozib qoyma|tegma)/;
   const COLORS = [{w:"ko'k",c:"#2d5bf0"},{w:"qizil",c:"#d6453d"},{w:"yashil",c:"#1f9d55"},{w:"sariq",c:"#e0a800"},{w:"qora",c:"#151a2d"}];
   function basic(raw, opt={}){
     const w = words(raw), cnt={}; w.forEach(x=>cnt[x]=(cnt[x]||0)+1);
     if (w.length < (opt.min||4)) return "Juda qisqa. To'liq gap qilib yozing.";
-    if (Object.values(cnt).some(c=>c>2) && w.length<40) return "So'zlarni takrorlamang. Oddiy gap qilib yozing.";
+    if (Object.entries(cnt).some(([x,c])=>c>=5 || (c>=3 && !STOP.test(x))) && w.length<40) return "So'zlarni takrorlamang. Oddiy gap qilib yozing.";
     return null;
   }
   const res = (ok, msg, ans) => ({ok, msg: Array.isArray(msg)?msg:[msg], ans});
@@ -40,17 +47,17 @@ const PR2 = (() => {
   /* 3. Ko'rgan narsani SI'ga yozib berish */
   const T3 = () => {
     const P = [
-      {p:{btnColor:"#e6e7ec", btn:"Buyurtma berish"}, el:/tugma/, st:/(ko'rinmay|oq|kulrang|bilinmay|xira|och)/, d:"tugma rangi juda och, deyarli ko'rinmayapti"},
-      {p:{titleSize:11}, el:/sarlav|nom/, st:/(kichik|mayda|ko'rinmay)/, d:"sarlavha juda kichik"},
-      {p:{img:false, extra:'<div class="mimg broken">✕</div>'}, el:/rasm/, st:/(chiqmay|ko'rinmay|yo'q|buzil|ochilmay)/, d:"rasm chiqmayapti"},
-      {p:{btnPos:"tepa"}, el:/tugma/, st:/(tepa|yuqori|ustida|boshida)/, d:"tugma sahifaning tepasida turibdi, pastda bo'lishi kerak"}];
+      {p:{btnColor:"#e6e7ec", btn:"Buyurtma berish"}, exp:"«Buyurtma berish» tugmasi ko'k rangda va aniq ko'rinadi", el:/tugma/, st:/(korinmay|oq|kulrang|bilinmay|xira|och|rangsiz|kok emas)/, d:"tugma rangi juda och, deyarli ko'rinmayapti"},
+      {p:{titleSize:11}, exp:"sarlavha katta va aniq ko'rinadi", el:/sarlav|nom/, st:/(kichik|mayda|korinmay)/, d:"sarlavha juda kichik"},
+      {p:{img:false, extra:'<div class="mimg broken">✕ kafe.jpg yuklanmadi</div>'}, exp:"kafe rasmi ko'rinadi", el:/rasm/, st:/(chiqmay|korinmay|yoq|buzil|ochilmay|yuklanmadi|yuklanmay)/, d:"rasm chiqmayapti"},
+      {p:{btnPos:"tepa"}, exp:"tugma sahifaning eng pastida turadi", el:/tugma/, st:/(tepa|yuqori|ustida|boshida|joyi)/, d:"tugma sahifaning tepasida turibdi, pastda bo'lishi kerak"}];
     const s = pick(P);
-    return {type:"site", mode:"prompt", page:page(s.p), text:"SI sizning ekraningizni ko'rmaydi. Sahifadagi muammoni SI'ga yozib bering va tuzatishni so'rang.",
+    return {type:"site", mode:"prompt", page:page(s.p), text:`Kutilgan: ${s.exp}. Sahifada bitta narsa boshqacha. SI sizning ekraningizni ko'rmaydi — nima noto'g'ri ekanini unga yozing va tuzatishni so'rang.`,
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Nima bo'ldi? Aniqroq yozing.");
-        const p=norm(raw), hasEl=s.el.test(p), hasSt=s.st.test(p), verb=/(tuzat|to'g'irla|o'zgartir|qil|yordam)/.test(p);
-        const m=[]; if(!hasEl) m.push("Qaysi qism ekani yo'q."); if(!hasSt) m.push(`Nima bo'lgani yo'q: ${s.d}.`); if(!verb) m.push("SI'dan nima qilishni so'rang: masalan, \"tuzat\".");
-        return res(!m.length, m.length?m:"SI endi muammoni biladi.", !hasEl||!hasSt?"Men sahifangizni ko'rmayapman. Qayerda, nima bo'ldi?":`Tushundim: ${s.d}. Tuzataman.`);
+        const p=norm(raw), hasEl=s.el.test(p), hasSt=s.st.test(p), verb=/(tuzat|togirla|ozgartir|qil|yordam|togril)/.test(p);
+        const m=[]; if(!hasEl||!hasSt) m.push(`Muammo yozilmagan: ${s.d}.`); if(!verb) m.push("SI'dan nima qilishni so'rang: masalan, \"tuzat\".");
+        return res(!m.length, m.length?m:"SI endi muammoni biladi.", !hasEl||!hasSt?"Men sahifangizni ko'rmayapman. Qayerda, nima noto'g'ri?":`Tushundim: ${s.d}. Tuzataman.`);
       }};
   };
 
@@ -74,8 +81,8 @@ const PR2 = (() => {
   /* 10. Kutilgan natijani yozish */
   const T10 = () => {
     const obj = pick([{l:"tugma",rx:/tugma/},{l:"sarlavha",rx:/sarlav/},{l:"aloqa bo'limi",rx:/aloqa/}]);
-    const VAGUE = /(chiroyli|zo'r|ajoyib|yaxshi|qulay|zamonaviy|qiziq|go'zal|yoqimli|normal)/;
-    const CHECK = /(\d|ko'k|qizil|yashil|sariq|qora|oq|kulrang|tepa|past|o'ng|chap|o'rta|markaz|«|so'z|harf|katta|kichik|qalin|bosilganda|ochiladi|chiqadi|yozuvi|matni)/;
+    const VAGUE = /(chiroyli|zor|ajoyib|yaxshi|qulay|zamonaviy|qiziq|gozal|yoqimli|normal)/;
+    const CHECK = /(\d|kok|qizil|yashil|sariq|qora|oq|kulrang|tepa|past|ong|chap|orta|markaz|«|soz|harf|katta|kichik|qalin|bosilganda|ochiladi|chiqadi|yozuvi|matni)/;
     return {type:"write", text:`Kafe saytiga ${obj.l} kerak. SI'dan so'rashdan oldin kutilgan natijani yozing: kamida 2 ta band, har qatorda bittadan.`,
       placeholder:"Masalan:\nTugma ko'k rangda\nTugmada «Buyurtma» yozuvi bor", check(raw){
         const lines=raw.split(/\n|;/).map(x=>x.trim()).filter(x=>x.length>2);
@@ -110,7 +117,7 @@ const PR2 = (() => {
     return {type:"site", mode:"prompt", page:page({btnColor:now_.c, btnPos:pos}), text:`Kutilgan natija: tugma ${want.w} rangda. Sahifadagi farqni SI'ga yozing: qayerda, hozir qanday, qanday bo'lishi kerak.`,
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Qaysi farq? Aniqroq yozing.");
-        const p=norm(raw), where=/tugma/.test(p) && /(tepa|yuqori|past|quyi|sahifa)/.test(p), now=p.includes(now_.w), should=p.includes(want.w);
+        const p=norm(raw), where=/tugma/.test(p) && /(tepa|yuqori|past|quyi|sahifa)/.test(p), now=p.includes(norm(now_.w)), should=p.includes(norm(want.w));
         const m=[]; if(!where) m.push(`Qayerda — yo'q: sahifa ${pos==="tepa"?"tepasidagi":"pastidagi"} tugma.`); if(!now) m.push(`Hozir qanday — yo'q: ${now_.w}.`); if(!should) m.push(`Qanday bo'lishi kerak — yo'q: ${want.w}.`);
         return res(!m.length, m.length?m:"Uchala qism ham bor.", should?`Tugmani ${want.w} qildim.`:"Tugmani qaysi rangga o'zgartiray?");
       }};
@@ -136,7 +143,7 @@ const PR2 = (() => {
       check(raw){
         const b=basic(raw,{min:6}); if(b) return res(false,b,"Yana o'sha... Batafsilroq yozing.");
         const p=norm(raw), A=new Set(words(V.p1)), B=words(raw), same=B.filter(x=>A.has(x)).length/Math.max(1,B.length);
-        const key=V.key.test(p), detail=/(kerak|bosil|lekin|o'rnida|chiqma|bo'lmay|ochilma|qachon|keyin)/.test(p);
+        const key=V.key.test(p), detail=/(kerak|bosil|lekin|ornida|chiqma|bolmay|ochilma|qachon|keyin)/.test(p);
         const m=[]; if(same>0.6) m.push("Bu deyarli oldingi prompt. Boshqacha so'zlar bilan yozing.");
         if(!key) m.push("Qaysi qism ekani yo'q."); if(!detail) m.push("Batafsil yozing: nima bo'lishi kerak va nima bo'lyapti.");
         return res(!m.length, m.length?m:"Endi SI muammoni boshqacha tushunadi.", m.length?"Tuzatdim!":"Endi tushundim — muammo boshqa joyda ekan. Tuzatdim, tekshirib ko'ring.");
@@ -172,8 +179,8 @@ const PR2 = (() => {
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Rejada nimani o'zgartiray?");
         const p=norm(raw);
-        const rem = (p.includes(String(exI)) || p.includes(exW)) && /(olib tashla|o'chir|kerak emas|kerakmas|qo'shma|olib tashlang|chiqarib tashla)/.test(p);
-        const add = missing.rx.test(p) && /(qo'sh|qo'shib)/.test(p);
+        const rem = (p.includes(String(exI)) || p.includes(exW)) && /(olib tashla|ochir|kerak emas|kerakmas|qoshma|olib tashlang|chiqarib tashla)/.test(p);
+        const add = missing.rx.test(p) && /(qosh|qoshib)/.test(p);
         const m=[]; if(!rem) m.push(`Keraksiz qadam olib tashlanmadi: ${exI}. ${extra}.`); if(!add) m.push(`Yetishmagan qadam qo'shilmadi: ${missing.l}.`);
         return res(!m.length, m.length?m:"Reja to'g'ri bo'ldi.", rem&&add?"Rejani yangiladim.":"Rejada nima o'zgarsin?");
       }};
@@ -189,8 +196,8 @@ const PR2 = (() => {
       check(raw){
         const b=basic(raw,{min:2}); if(b) return res(false,b,"Xo'sh, nima deysiz?");
         const p=norm(raw);
-        const agree = /(^|\s)(ha|mayli|roziman|bajar|o'chiraver|yozaver|qil)(\s|$|,|\.)/.test(p) && !NEG.test(p);
-        const ask = /(nima qiladi|nima uchun|tushuntir|nima bo'ladi|nimani o'chiradi|nega)/.test(p);
+        const agree = /(^|\s)(ha|mayli|roziman|bajar|ochiraver|yozaver|qil)(\s|$|,|\.)/.test(p) && !NEG.test(p);
+        const ask = /(nima qiladi|nima uchun|tushuntir|nima boladi|nimani ochiradi|nega)/.test(p);
         const rej = NEG.test(p);
         let ok = V.need==="rad" ? (rej && !agree) : (ask && !agree);
         if(V.need==="so'ra" && rej && !agree) ok = true;
