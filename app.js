@@ -16,7 +16,7 @@ const ICON = {
 
 /* ---------- holat (faqat xotirada) ---------- */
 const S = { offset:0, day:1, xp:0, xpDay:{1:0}, streak:0, freeze:1, xpSinceQuiz:0, quizRetake:false,
-  tp:{}, remedial:[], notes:[], tab:"today", sel:null };
+  tp:{}, remedial:[], notes:[], tab:"path", sel:null, revSinceLesson:3 };
 TOPICS.forEach(t => S.tp[t.id] = { learned:false, kpFails:{}, rest:0, due:0, ivl:0, reps:0, tries:0 });
 const now = () => Date.now() + S.offset;
 const learned = id => S.tp[id].learned;
@@ -70,23 +70,38 @@ function header(){
     </div></header>`;
 }
 function tabs(){
-  const T=[["today","Bugun"],["path","Yo'l"],["graph","Graf"]];
+  const T=[["path","Yo'l"],["graph","Graf"]];
   return `<nav class="tabs">${T.map(([k,l])=>`<button class="tab ${S.tab===k?'on':''}" data-tab="${k}">${l}</button>`).join("")}</nav>`;
 }
 function bindTabs(){app.querySelectorAll("[data-tab]").forEach(b=>b.onclick=()=>{S.tab=b.dataset.tab;S.sel=null;home();});}
 
 function home(){
   S.screen="home";
-  const body = S.tab==="today"?viewToday():S.tab==="path"?viewPath():viewGraph();
+  const body = S.tab==="path"?viewPath():viewGraph();
   app.replaceChildren(el(header()+tabs()+body));
   bindTabs();
   app.querySelectorAll("[data-task]").forEach(b=>b.onclick=()=>{const t=JSON.parse(b.dataset.task);
-    if(t.kind==="lesson") startLesson(t.id); else if(t.kind==="quiz") startQuiz(); else startReview(t.id, t.kind==="remedial");});
-  app.querySelectorAll("[data-node]").forEach(b=>b.onclick=()=>{S.sel=+b.dataset.node;home();
+    if(t.kind==="quiz") startQuiz(); else startReview(t.id, t.kind==="remedial");});
+  app.querySelectorAll("[data-node]").forEach(b=>b.onclick=()=>{
+    const id=+b.dataset.node;
+    if(S.tab==="path" && status(id)==="open" && lessonAllowed()) return startLesson(id);
+    S.sel = S.sel===id?null:id; home();
     const c=document.getElementById("info"); if(c) c.scrollIntoView({behavior:"smooth",block:"nearest"});});
   const nd=document.getElementById("nextday"); if(nd) nd.onclick=nextDay;
   if(document.querySelector("[data-until]")) startTick();
 }
+/* V-9: takrorlash qarzi katta bo'lsa (3+), har ~3 takrorlashga 1 dars */
+function reviewTasks(){
+  const out=S.remedial.slice(0,3).map(id=>({kind:"remedial", id}));
+  const due=TOPICS.filter(t=>learned(t.id) && S.tp[t.id].due<=now() && !S.remedial.includes(t.id));
+  due.filter(t=>!DEPS[t.id].some(d=>due.some(x=>x.id===d)))          // V-6: yuqori mavzu pastkisini yopadi
+     .sort((a,b)=>S.tp[a.id].due-S.tp[b.id].due).slice(0,3).forEach(t=>out.push({kind:"review", id:t.id}));
+  const nL=TOPICS.filter(t=>learned(t.id)).length;
+  if((S.xpSinceQuiz>=P.QUIZ_EVERY && nL>=3) || (S.quizRetake && !S.remedial.length)) out.push({kind:"quiz"});
+  return out;
+}
+function dueCount(){ return reviewTasks().filter(t=>t.kind!=="quiz").length; }
+function lessonAllowed(){ return dueCount()<3 || S.revSinceLesson>=3; }
 
 function viewToday(){
   const tasks=panel(), nL=TOPICS.filter(t=>learned(t.id)).length;
@@ -131,20 +146,40 @@ function infoCard(id){
     <ol class="bnl">${t.bns.map(b=>`<li>${b.t}${b.practice?' <span class="tag">amaliyot</span>':''}</li>`).join("")}</ol>
     <p class="muted">${t.pre.length?"Oldingi mavzu: "+t.pre.map(p=>`${p}. ${esc(BYID[p].name)}`).join(", "):"Oldingi mavzu yo'q — birinchi mavzu."}</p>
     ${learned(id)?`<p class="muted">Keyingi takrorlash: ${Math.max(0,Math.ceil((S.tp[id].due-now())/DAY))} kundan keyin</p>`:""}
-    <p class="muted">Darslarni tizim tanlaydi — "Bugun" bo'limidagi vazifalardan boshlang.</p></section>`;
+    </section>`;
 }
 function viewPath(){
-  const nodes=TOPICS.map((t,i)=>{
-    const st=status(t.id), cls=st==="done"||st==="due"?"done":st==="open"?"active":st==="wait"?"active resting":"locked";
+  const nL=TOPICS.filter(t=>learned(t.id)).length;
+  const days=Object.keys(S.xpDay).map(Number).filter(d=>d<S.day).slice(-10);
+  const pace=days.length?Math.max(P.STREAK_MIN, days.reduce((a,d)=>a+(S.xpDay[d]||0),0)/days.length):P.GOAL;
+  const left=TOPICS.filter(t=>!learned(t.id)).reduce((a,t)=>a+lessonXP(t.id),0);
+  const rv=reviewTasks(), allowed=lessonAllowed();
+  const firstOpen=TOPICS.findIndex(t=>!learned(t.id));
+  const reviewNodes = rv.map(t=>{
+    const isQ=t.kind==="quiz";
+    return `<div class="node rnode" style="--off:22px"><button class="btn3d ${isQ?'quizn':'review'}" data-task='${JSON.stringify(t)}' aria-label="${isQ?'Quiz':'Takrorlash'}"><span class="face">${isQ?ICON.quiz:ICON.repeat}</span></button>
+      <span class="label"><small class="rk">${isQ?(S.quizRetake?"Qayta quiz":"Quiz"):t.kind==="remedial"?"Yordamchi takrorlash":"Takrorlash"}</small>${isQ?"O'tilgan mavzular":esc(BYID[t.id].name)}</span></div>`;}).join("");
+  let off=0;
+  const items=TOPICS.map((t,i)=>{
+    const st=status(t.id), cls=st==="done"||st==="due"?"done":st==="open"?(allowed?"active":"active held"):st==="wait"?"active resting":"locked";
     const ico=cls==="done"?ICON.check:cls.startsWith("active")?ICON.play:ICON.bolt;
     const head = i===0||TOPICS[i-1].b!==t.b ? `<div class="blk">${BLOCKS[t.b]}</div>`:"";
-    return `${head}<div class="node ${cls==='locked'?'is-locked':''}" style="--off:${[0,44,80,44][i%4]}px">
+    const rv_ = i===firstOpen ? reviewNodes : "";
+    return `${rv_}${head}<div class="node ${cls==='locked'?'is-locked':''}" style="--off:${[0,44,80,44][(off++)%4]}px">
       <button class="btn3d ${cls}" data-node="${t.id}" aria-label="${esc(t.name)}"><span class="face">${ico}</span></button>
       <span class="label">${esc(t.name)}${t.bns.some(b=>b.practice)?' <span class="tag">amaliyot</span>':''}
-      ${st==="due"?'<span class="mini due">takrorlash</span>':''}${st==="wait"?`<span class="mini rst">dam: <b data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</b></span>`:''}</span></div>
+      ${st==="wait"?`<span class="mini rst">Dam oling: <b data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</b></span>`:''}
+      ${st==="open"&&!allowed?'<span class="mini rst">Avval takrorlashlarni bajaring</span>':''}</span></div>
       ${S.sel===t.id?infoCard(t.id):""}`;
-  }).join("");
-  return `<main class="path">${nodes}</main>`;
+  }).join("") + (firstOpen<0 ? reviewNodes : "");
+  return `<main class="path">
+    <section class="card prog"><div><span class="kicker">1-modul · Sun'iy intellekt asoslari</span>
+      <div class="bigline"><b>${nL}</b> / ${TOPICS.length} mavzu</div><div class="bar1"><i style="width:${nL/TOPICS.length*100}%"></i></div></div>
+      <p class="muted">${left?`Taxminiy tugash: ${Math.ceil(left/pace)} kun (kuniga ~${Math.round(pace)} XP)`:"Modul tugadi!"}</p></section>
+    ${items}
+    ${S.notes.length?`<div class="notes">${S.notes.map(n=>`<p>${n}</p>`).join("")}</div>`:""}
+    <div class="sim"><button class="ghost" id="nextday">Sinov uchun: keyingi kunga o'tish</button>
+      <small>${S.day}-kun. Ma'lumot saqlanmaydi: sahifa yangilansa, hammasi boshidan.</small></div></main>`;
 }
 function depth(id,m={}){ if(m[id]!=null) return m[id]; const t=BYID[id]; return m[id]=t.pre.length?1+Math.max(...t.pre.map(p=>depth(p,m))):0; }
 function viewGraph(){
@@ -200,7 +235,7 @@ function mcq(q, kicker, after, opts={}){
 /* ---------- dars (O-1…O-5) ---------- */
 let L=null;
 function startLesson(id){
-  S.screen="lesson"; S.tp[id].tries++;
+  S.screen="lesson"; S.tp[id].tries++; S.revSinceLesson=0;
   L={id, kp:0, used:BYID[id].bns.map(()=>new Set()), errors:0, streak:0, fails:0, asked:0};
   explain();
 }
@@ -308,6 +343,7 @@ function reviewEnd(){
   const n=R.res.length, pass=R.res[n-1]&&R.res[n-2], errors=R.res.filter(x=>!x).length, t=S.tp[R.id];  // T-2: tartib muhim
   const xp=addXP(pass?grade(P.XP_REVIEW,errors):P.XP_REVIEW*0.15);
   if(R.remedial) S.remedial=S.remedial.filter(x=>x!==R.id);
+  S.revSinceLesson++;
   if(pass){ t.reps++; t.ivl=Math.round(t.ivl*(errors?1.5:2.5)*10)/10; t.due=now()+t.ivl*DAY; fire(R.id,true); }
   else { t.ivl=1; t.due=now()+DAY; fire(R.id,false); }
   result(pass, `+${xp} XP`, pass?`Takrorlash o'tdi. Keyingisi ${Math.round(t.ivl)} kundan keyin.`:"Takrorlash o'tmadi. Ertaga yana takrorlaymiz.", `Javoblar: ${R.res.map(x=>x?"✔":"✖").join(" ")}`);

@@ -185,3 +185,10 @@ main{display:flex;flex-direction:column;gap:16px}
 .top .timer{font-size:16px}
 .xpbig{font-size:30px;font-weight:800;color:var(--ok);margin:0}
 .err{margin:0;background:#1b1f2e;color:#ffb4ae;border-radius:12px;padding:12px 14px;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;user-select:all}
+
+.rnode .label small.rk,.label small.rk{display:block;font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--ok)}
+.btn3d.review .face{background:radial-gradient(circle at 35% 30%,#5fe39a,var(--ok) 60%);box-shadow:0 6px 0 #13703b;color:#fff}
+.btn3d.quizn .face{background:radial-gradient(circle at 35% 30%,#ffc46b,#f08c00 60%);box-shadow:0 6px 0 #b86a00;color:#fff}
+.btn3d.review:hover .face,.btn3d.quizn:hover .face{transform:translateY(-5px)}
+.btn3d.held .face{opacity:.6}
+.rnode{padding-left:22px}
