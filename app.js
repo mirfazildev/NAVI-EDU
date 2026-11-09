@@ -84,7 +84,7 @@ function home(){
     if(t.kind==="quiz") startQuiz(); else startReview(t.id, t.kind==="remedial");});
   app.querySelectorAll("[data-node]").forEach(b=>b.onclick=()=>{
     const id=+b.dataset.node;
-    if(S.tab==="path" && status(id)==="open" && lessonAllowed()) return startLesson(id);
+    if(S.tab==="path"){ if(status(id)==="open" && lessonAllowed()) startLesson(id); return; }
     S.sel = S.sel===id?null:id; home();
     const c=document.getElementById("info"); if(c) c.scrollIntoView({behavior:"smooth",block:"nearest"});});
   const nd=document.getElementById("nextday"); if(nd) nd.onclick=nextDay;
@@ -170,16 +170,16 @@ function viewPath(){
       <span class="label">${esc(t.name)}${t.bns.some(b=>b.practice)?' <span class="tag">amaliyot</span>':''}
       ${st==="wait"?`<span class="mini rst">Dam oling: <b data-until="${S.tp[t.id].rest}">${fmt(S.tp[t.id].rest-now())}</b></span>`:''}
       ${st==="open"&&!allowed?'<span class="mini rst">Avval takrorlashlarni bajaring</span>':''}</span></div>
-      ${S.sel===t.id?infoCard(t.id):""}`;
+`;
   }).join("") + (firstOpen<0 ? reviewNodes : "");
   return `<main class="path">
     <section class="card prog"><div><span class="kicker">1-modul · Sun'iy intellekt asoslari</span>
       <div class="bigline"><b>${nL}</b> / ${TOPICS.length} mavzu</div><div class="bar1"><i style="width:${nL/TOPICS.length*100}%"></i></div></div>
-      <p class="muted">${left?`Taxminiy tugash: ${Math.ceil(left/pace)} kun (kuniga ~${Math.round(pace)} XP)`:"Modul tugadi!"}</p></section>
+      <p class="muted">${left?`Taxminiy tugash: ${Math.ceil(left/pace)} kun (kuniga ~${Math.round(pace)} XP)`:"Modul tugadi!"}</p>
+      <div class="simrow"><button class="ghost" id="nextday">Keyingi kunga o'tish</button><small>${S.day}-kun · sinov uchun</small></div></section>
+    ${S.notes.length?`<div class="notes">${S.notes.slice(0,2).map(n=>`<p>${n}</p>`).join("")}</div>`:""}
     ${items}
-    ${S.notes.length?`<div class="notes">${S.notes.map(n=>`<p>${n}</p>`).join("")}</div>`:""}
-    <div class="sim"><button class="ghost" id="nextday">Sinov uchun: keyingi kunga o'tish</button>
-      <small>${S.day}-kun. Ma'lumot saqlanmaydi: sahifa yangilansa, hammasi boshidan.</small></div></main>`;
+    <p class="muted center">Ma'lumot saqlanmaydi: sahifa yangilansa, hammasi boshidan boshlanadi.</p></main>`;
 }
 function depth(id,m={}){ if(m[id]!=null) return m[id]; const t=BYID[id]; return m[id]=t.pre.length?1+Math.max(...t.pre.map(p=>depth(p,m))):0; }
 function viewGraph(){
@@ -267,23 +267,86 @@ function lessonItem(){
   mcq(pl[qi], kick, ok=>lessonAfter(ok), {dots:dots(L.streak), next:lessonNext});
 }
 function practiceItem(kick){
-  const task=PR.make(L.id);
+  const task = PR.has(L.id) ? PR.make(L.id) : PR2.make(L.id);
+  const type = task.type || "prompt";
   const slot=document.getElementById("qslot");
-  slot.replaceChildren(el(`<section class="card"><span class="kicker">${kick} · amaliyot</span>
-    <div class="ptask">${esc(task.text)}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}
-    <div class="q">SI'ga prompt yozing</div><div class="chat" id="chat"></div>
-    <label class="sr" for="pin">Prompt</label><textarea id="pin" rows="3" placeholder="Promptni shu yerga yozing..." autocomplete="off" spellcheck="false"></textarea>${dots(L.streak)}</section>
-    <div id="fbslot"></div><button class="main" id="check" disabled>Yuborish</button>`));
-  const ta=document.getElementById("pin"), chk=document.getElementById("check");
-  if(!task.paste){ ta.addEventListener("paste",e=>e.preventDefault()); ta.addEventListener("drop",e=>e.preventDefault()); }
-  ta.oninput=()=>{chk.disabled=!ta.value.trim()}; ta.focus();
-  chk.onclick=()=>{
-    const raw=ta.value, r=task.check(raw); ta.disabled=true;
-    document.getElementById("chat").replaceChildren(el(`<div class="msg me">${esc(raw)}</div><div class="msg ai"><span class="who">SI</span>${esc(r.ans)}</div>`));
+  const finish=(r)=>{
     lessonAfter(r.ok);
     document.getElementById("fbslot").replaceChildren(el(`<div class="fb ${r.ok?'ok':'bad'}"><h3>${r.ok?"To'g'ri":"Noto'g'ri"}</h3>${r.msg.map(x=>`<p>${esc(x)}</p>`).join("")}</div>`));
-    chk.textContent="Davom etish"; chk.className="main "+(r.ok?"okb":"badb"); chk.onclick=lessonNext;
+    const chk=document.getElementById("check"); chk.disabled=false; chk.textContent="Davom etish"; chk.className="main "+(r.ok?"okb":"badb"); chk.onclick=lessonNext;
   };
+  const chatHtml = task.chat ? task.chat.map(([w,t])=>`<div class="msg ${w==="me"?"me":"ai"}">${w==="ai"?'<span class="who">SI</span>':''}${esc(t)}</div>`).join("") : "";
+  const planHtml = task.plan ? `<div class="msg ai"><span class="who">SI · reja</span>${task.plan.map((x,i)=>`${i+1}. ${esc(x)}`).join("<br>")}</div>` : "";
+  const head = `<span class="kicker">${kick} · amaliyot</span><div class="ptask">${esc(task.text)}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
+  const writeBox = (ph, rows=3) => `<label class="sr" for="pin">Javob</label><textarea id="pin" rows="${rows}" placeholder="${ph}" autocomplete="off" spellcheck="false"></textarea>`;
+
+  if(type==="prompt" || type==="write" || (type==="site" && task.mode==="prompt")){
+    const isW = type==="write";
+    slot.replaceChildren(el(`<section class="card">${head}${task.page||""}${task.lead?`<p class="muted">${esc(task.lead)}</p>`:""}
+      <div class="chat" id="chat">${chatHtml}${planHtml}</div><div class="q">${isW?"Kutilgan natijani yozing":"SI'ga prompt yozing"}</div>
+      ${writeBox(isW?(task.placeholder||""):"Promptni shu yerga yozing...", isW?4:3)}${dots(L.streak)}</section>
+      <div id="fbslot"></div><button class="main" id="check" disabled>${isW?"Tekshirish":"Yuborish"}</button>`));
+    const ta=document.getElementById("pin"), chk=document.getElementById("check");
+    if(!task.paste){ ta.addEventListener("paste",e=>e.preventDefault()); ta.addEventListener("drop",e=>e.preventDefault()); }
+    ta.oninput=()=>{chk.disabled=!ta.value.trim()};
+    chk.onclick=()=>{ const raw=ta.value, r=task.check(raw); ta.disabled=true; chk.disabled=true;
+      if(!isW) document.getElementById("chat").insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>${r.ans?`<div class="msg ai"><span class="who">SI</span>${esc(r.ans)}</div>`:""}`);
+      finish(r); };
+    return;
+  }
+  if(type==="mark"){
+    const sel=new Set(); let ch=-1;
+    slot.replaceChildren(el(`<section class="card">${head}${task.lead?`<div class="msg me">${esc(task.lead)}</div>`:""}
+      <div class="marks ${task.lines?'lines':''}">${task.chunks.map((c,i)=>`<button class="mk" data-i="${i}">${esc(c.t)}</button>`).join(task.lines?"":"")}</div>
+      ${task.choices?`<div class="q">Xato turi</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`:""}${dots(L.streak)}</section>
+      <div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
+    const chk=document.getElementById("check"), ready=()=>{chk.disabled=!(sel.size && (!task.choices||ch>=0));};
+    slot.querySelectorAll(".mk").forEach(b=>b.onclick=()=>{const i=+b.dataset.i; sel.has(i)?sel.delete(i):sel.add(i); b.classList.toggle("on"); ready();});
+    slot.querySelectorAll(".ch").forEach(b=>b.onclick=()=>{slot.querySelectorAll(".ch").forEach(x=>x.classList.remove("sel")); b.classList.add("sel"); ch=+b.dataset.c; ready();});
+    chk.onclick=()=>{ slot.querySelectorAll(".mk,.ch").forEach(b=>b.disabled=true);
+      task.chunks.forEach((c,i)=>{const b=slot.querySelector(`.mk[data-i="${i}"]`); if(c.need) b.classList.add("need"); else if(sel.has(i)) b.classList.add("wrongmk");});
+      chk.disabled=true; finish(task.check(sel, ch)); };
+    return;
+  }
+  if(type==="site"){
+    let touched=false;
+    const mid = task.mode==="checklist"
+      ? `<div class="q">Bajarilgan bandlarni belgilang</div><div class="opts">${task.items.map((t,i)=>`<button class="opt cl" data-i="${i}"><span class="k">✓</span><span>${esc(t)}</span></button>`).join("")}</div>`
+      : `<div class="q">Xato belgisi qaysi?</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`;
+    slot.replaceChildren(el(`<section class="card">${head}${task.page}${mid}${dots(L.streak)}</section><div id="fbslot"></div><button class="main" id="check" ${task.mode==="checklist"?"":"disabled"}>Tekshirish</button>`));
+    const chk=document.getElementById("check"), mock=slot.querySelector(".mock"), out=slot.querySelector("#mout");
+    mock.addEventListener("click",()=>{touched=true;});
+    const mb=slot.querySelector("#mbtn");
+    if(mb) mb.onclick=()=>{ touched=true;
+      if(task.behave===2) return;                                   // ishlamayapti: hech narsa bo'lmaydi
+      if(task.behave===3){ out.innerHTML='<div class="merr">Uncaught TypeError: order is undefined</div>'; return; }
+      out.innerHTML='<div class="mok">Buyurtma qabul qilindi</div>'; };
+    const sel=new Set(); let ch=-1;
+    slot.querySelectorAll(".cl").forEach(b=>b.onclick=()=>{const i=+b.dataset.i; sel.has(i)?sel.delete(i):sel.add(i); b.classList.toggle("sel");});
+    slot.querySelectorAll(".ch").forEach(b=>b.onclick=()=>{slot.querySelectorAll(".ch").forEach(x=>x.classList.remove("sel")); b.classList.add("sel"); ch=+b.dataset.c; chk.disabled=false;});
+    chk.onclick=()=>{ slot.querySelectorAll(".opt").forEach(b=>b.disabled=true); chk.disabled=true;
+      finish(task.mode==="checklist"? task.check(sel) : task.check(ch, touched)); };
+    return;
+  }
+  if(type==="agent"){
+    let viewed=false;
+    slot.replaceChildren(el(`<section class="card">${head}
+      <div class="diff">${task.diff.map(([s,t])=>`<div class="dl ${s==="+"?"add":"del"}"><b>${s}</b> ${esc(t)}</div>`).join("")}</div>
+      <button class="ghost" id="pv">Natijani ko'rish</button><div id="pvslot"></div>
+      <div class="agbtns"><button class="opt" id="acc"><span>Qabul qilish</span></button><button class="opt" id="rej"><span>Rad qilish</span></button></div>
+      <div id="whyslot"></div>${dots(L.streak)}</section><div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
+    const chk=document.getElementById("check"); let accept=null;
+    document.getElementById("pv").onclick=()=>{viewed=true; document.getElementById("pvslot").innerHTML=task.preview;};
+    const choose=(a)=>{accept=a; document.getElementById("acc").classList.toggle("sel",a); document.getElementById("rej").classList.toggle("sel",!a);
+      const ws=document.getElementById("whyslot");
+      if(!a && task.needWhy){ ws.innerHTML=`<div class="q">Nima buzilganini SI'ga yozing</div>${writeBox("Masalan: rasm yo'qolib qoldi, qaytar",2)}`;
+        const ta=document.getElementById("pin"); ta.addEventListener("paste",e=>e.preventDefault()); ta.oninput=()=>{chk.disabled=!ta.value.trim()}; chk.disabled=true; }
+      else { ws.innerHTML=""; chk.disabled=false; } };
+    document.getElementById("acc").onclick=()=>choose(true); document.getElementById("rej").onclick=()=>choose(false);
+    chk.onclick=()=>{ const ta=document.getElementById("pin"); slot.querySelectorAll("button,textarea").forEach(b=>b.disabled=true); chk.disabled=true;
+      finish(task.check({viewed, accept, why: ta?ta.value:""})); };
+    return;
+  }
 }
 function grade(base, errors){ return base*(errors===0?1.2:errors===1?1:0.75); }   // X-2
 function lessonPass(){
