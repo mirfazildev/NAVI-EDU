@@ -295,15 +295,15 @@ function practiceItem(kick){
   if(type==="prompt" || type==="write" || (type==="site" && task.mode==="prompt")){
     const isW = type==="write";
     slot.replaceChildren(el(`<section class="card">${head}${task.page||""}${task.lead?`<p class="muted">${esc(task.lead)}</p>`:""}
-      <div class="chat" id="chat">${chatHtml}${planHtml}</div><div class="q">${isW?"Kutilgan natijani yozing":"SI'ga prompt yozing"}</div>
-      ${writeBox(isW?(task.placeholder||""):"Promptni shu yerga yozing...", isW?4:3)}</section>
+      <div class="chat" id="chat">${chatHtml}${planHtml}</div>
+      ${writeBox("Yozing...", isW?4:3)}</section>
       <div id="fbslot"></div><button class="main" id="check" disabled>${isW?"Tekshirish":"Yuborish"}</button>`));
     const ta=document.getElementById("pin"), chk=document.getElementById("check");
     if(!task.paste){ ta.addEventListener("paste",e=>e.preventDefault()); ta.addEventListener("drop",e=>e.preventDefault()); }
     ta.oninput=()=>{chk.disabled=!ta.value.trim()};
-    chk.onclick=async ()=>{ const raw=ta.value, r=task.check(raw); ta.disabled=true; chk.disabled=true;
+    chk.onclick=async ()=>{ const raw=ta.value, r=task.check(raw); ta.value=""; ta.disabled=true; chk.disabled=true;
       const chat=document.getElementById("chat");
-      if(!isW) chat.insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>`);
+      chat.insertAdjacentHTML("beforeend", `<div class="msg me">${esc(raw)}</div>`);
       let final=r;
       const cheat = r.msg.some(x=>/ko'chirmang|takrorlamang/.test(x));
       if(!r.ok && !cheat && task.ai && !S.aiOff){
@@ -367,7 +367,7 @@ function practiceItem(kick){
     document.getElementById("pv").onclick=()=>{viewed=true; document.getElementById("pvslot").innerHTML=task.preview;};
     const choose=(a)=>{accept=a; document.getElementById("acc").classList.toggle("sel",a); document.getElementById("rej").classList.toggle("sel",!a);
       const ws=document.getElementById("whyslot");
-      if(!a && task.needWhy){ ws.innerHTML=`<div class="q">Nima buzilganini SI'ga yozing</div>${writeBox("Masalan: rasm yo'qolib qoldi, qaytar",2)}`;
+      if(!a && task.needWhy){ ws.innerHTML=`<div class="q">Nima buzilganini SI'ga yozing</div>${writeBox("Yozing...",2)}`;
         const ta=document.getElementById("pin"); ta.addEventListener("paste",e=>e.preventDefault()); ta.oninput=()=>{chk.disabled=!ta.value.trim()}; chk.disabled=true; }
       else { ws.innerHTML=""; chk.disabled=false; } };
     document.getElementById("acc").onclick=()=>choose(true); document.getElementById("rej").onclick=()=>choose(false);
