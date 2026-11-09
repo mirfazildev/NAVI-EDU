@@ -41,7 +41,7 @@ CONTENT[19] = {
      "o": [
       "Saytni telefonda ochib",
       "Faqat SI javobida",
-      "Fayl nomiga qarab",
+      "Faqat fayl nomiga qarab",
       "Do'stining saytida"
      ],
      "e": "O'zgarish qayerda bo'lsa, o'sha yerda ochib ko'riladi."
@@ -52,7 +52,7 @@ CONTENT[19] = {
      "o": [
       "Buzilgan narsa saqlanib qolishi mumkin",
       "Sayt tezroq ishlaydi",
-      "Xavf yo'q, SI aytdi",
+      "Xavf yo'q, chunki SI hammasi tayyor dedi",
       "Agent xafa bo'ladi"
      ],
      "e": "Tekshirmasang, xato ham saqlanib qolishi mumkin."
@@ -64,7 +64,7 @@ CONTENT[19] = {
       "Yo'q, rasmni ham ko'rish kerak",
       "Ha, sarlavha yetarli",
       "Ha, SI tayyor degan",
-      "Ha, sahifa ochildi-ku"
+      "Ha, sahifa ochildi-ku, shu yetarli"
      ],
      "e": "O'zgargan hamma narsani ochib ko'rish kerak."
     }
@@ -88,7 +88,7 @@ CONTENT[19] = {
      "q": "Madina hali saytni ochib ko'rmadi. Hozir qabul qilsa bo'ladimi?",
      "o": [
       "Yo'q, avval ochib ko'radi",
-      "Ha, SI tayyor dedi",
+      "Ha, SI hammasi tayyor dedi",
       "Ha, tezroq bo'ladi",
       "Ha, keyin ko'radi"
      ],
@@ -158,7 +158,7 @@ CONTENT[19] = {
      "q": "Logotip yo'qolib qoldi. Qaysi xabar SI'ga yaxshi?",
      "o": [
       "\"Rad qilaman: logotip yo'qolib qoldi\"",
-      "\"Yomon bo'ldi\"",
+      "\"Yomon bo'ldi, hammasini qaytadan qil\"",
       "\"Qaytadan qil\"",
       "\"Hammasi joyida\""
      ],
@@ -171,7 +171,7 @@ CONTENT[19] = {
       "Aynan nima buzilgani",
       "Undov belgisi",
       "Salom so'zi",
-      "Sardorning ismi"
+      "Sardorning ismi va familiyasi"
      ],
      "e": "SI nima buzilganini bilmasa, uni tuzata olmaydi."
     },
@@ -180,7 +180,7 @@ CONTENT[19] = {
      "q": "Jasur o'zgarishni rad qildi. Sayt endi qanday?",
      "o": [
       "O'zgarishdan oldingidek",
-      "Buzilgan holicha",
+      "Buzilgan holicha qolib ketadi",
       "Bo'm-bo'sh",
       "Butunlay yangi"
      ],
@@ -204,7 +204,7 @@ CONTENT[19] = {
       "SI aynan shuni tuzatishi uchun",
       "SI'ni xafa qilish uchun",
       "Vaqt o'tkazish uchun",
-      "Xabar uzun bo'lishi uchun"
+      "Xabar uzunroq va chiroyli bo'lishi uchun"
      ],
      "e": "Nima buzilganini bilsa, SI uni tuzata oladi."
     }

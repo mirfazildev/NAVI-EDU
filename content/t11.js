@@ -18,7 +18,7 @@ CONTENT[11] = {
      "q": "Nega natijani SI'ning so'ziga emas, o'zingga ishonib tekshirasan?",
      "o": [
       "SI xato qilsa ham ishonch bilan gapiradi",
-      "SI hech qachon ishni tugatmaydi",
+      "SI hech qachon ishni oxirigacha tugatmaydi",
       "SI natijani yashirib qo'yadi",
       "Shunda sayt tezroq ochiladi"
      ],
@@ -29,7 +29,7 @@ CONTENT[11] = {
      "q": "Sardor rasmni ochmay «zo'r» dedi. Keyin qarasa, mushuk o'rniga it. Qayerda adashdi?",
      "o": [
       "Rasmni o'zi ochib ko'rmadi",
-      "Promptni juda uzun yozdi",
+      "Promptni juda uzun va chalkash yozdi",
       "SI'ga rahmat aytmadi",
       "Rasmni juda tez so'radi"
      ],
@@ -101,7 +101,7 @@ CONTENT[11] = {
       "Birorta band tushib qolmasligi uchun",
       "Ko'proq vaqt ketishi uchun",
       "SI'ni xursand qilish uchun",
-      "Sayt chiroyli bo'lishi uchun"
+      "Sayt chiroyliroq va rangliroq bo'lishi uchun"
      ],
      "e": "Bittalab tekshirsang, hech bir band esdan chiqmaydi."
     },
@@ -112,7 +112,7 @@ CONTENT[11] = {
       "Yo'q, har bandni alohida ko'rishi kerak",
       "Ha, bir qarash yetarli",
       "Ha, sayt chiroyli bo'lsa bo'ldi",
-      "Yo'q, buni SI tekshirishi kerak"
+      "Yo'q, buni faqat SI o'zi tekshirishi kerak"
      ],
      "e": "Bir qarashda band tushib qolishi mumkin, har biri alohida ko'riladi."
     },
@@ -120,9 +120,9 @@ CONTENT[11] = {
      "id": "11.2-5",
      "q": "Kutilgan natijada 5 ta band bor. Qaysi usul to'g'ri?",
      "o": [
-      "Birinchisidan boshlab, bittalab ko'rish",
+      "Boshidan boshlab, bittalab ko'rish",
       "Faqat oxirgisini ko'rish",
-      "Tasodifan ikkitasini tanlash",
+      "Tasodifan ikkitasini tanlab, o'shani ko'rish",
       "Faqat eng qiyinini ko'rish"
      ],
      "e": "Bandlarni tartib bilan, bittalab tekshirasan."
@@ -134,7 +134,7 @@ CONTENT[11] = {
       "Tili va gaplar soni",
       "Faqat sarlavha",
       "Hikoyaning rasmi",
-      "Hech narsa qolmadi"
+      "Hech narsa qolmadi, hammasi ko'rildi"
      ],
      "e": "Nodir uchta banddan faqat bittasini tekshirdi."
     }
@@ -158,7 +158,7 @@ CONTENT[11] = {
      "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasan?",
      "o": [
       "SI'dan narxlarni qo'shishni so'rayman",
-      "Saytni do'stlarimga yuboraman",
+      "Saytni shu holicha do'stlarimga yuboraman",
       "Yangi sayt boshlayman",
       "Narxlarsiz ham qoldiraman"
      ],
@@ -203,7 +203,7 @@ CONTENT[11] = {
      "o": [
       "Yo'q, avval o'sha band to'g'rilanadi",
       "Ha, bitta band sezilmaydi",
-      "Ha, keyin to'g'rilasa bo'ladi",
+      "Ha, kamchilikni keyin to'g'rilasa ham bo'ladi",
       "Ha, ko'pi tayyor-ku"
      ],
      "e": "Bitta band bajarilmagan bo'lsa, ish hali tugamagan."

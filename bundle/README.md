@@ -1,4 +1,4 @@
-# NAVI matnli darslar paketi — v1.2.0
+# NAVI matnli darslar paketi — v1.3.0
 
 "Sun'iy intellekt asoslari" moduli matnli ko'rinishda: 21 mavzu, 84 BN, 414 savol va 20 ta amaliyot generatori.
 
@@ -82,6 +82,7 @@ Paket NAVI-EDU prototipidan `node build.mjs <navi-app> <chiqish> <versiya>` bila
 
 ## O'zgarishlar
 
+- **1.3.0** — variant uzunliklari muvozanatlandi (Ilyos IS-6): to'g'ri javob yagona eng uzun variant bo'lgan savollar 57% → 16%, yagona eng qisqa 10%. Asosan noto'g'ri variantlar uzaytirildi; savol, id va izohlar o'zgarmagan.
 - **1.2.0** — har savolga doimiy `id`, har BN'ga `id` va qisqa `name` (Ilyos IS-1, IS-2). Matnlar o'zgarmagan.
 - **1.1.0** — o'quvchiga murojaat «siz» → «sen» (Mirfazil qarori, S7): BN matnlari, namunalar, 414 savol, amaliyot vazifalari, izohlar va SI javoblari. «…» ichidagi iqtiboslar (bola prompti, sayt matni) o'zgarmagan. SI promptiga «sen» deb murojaat qilish qo'shildi. Savollar va tekshiruv mantig'i o'zgarmagan.
 - **1.0.2** — `siBody`: bola matnidagi `$` belgilari (`` $` ``, `$'`, `$&`) so'rov tanasini buzmaydi — almashtirish bir o'tishda, funksiya bilan (Ilyos topgan). Tizim promptiga til darajasi qo'shildi: o'quvchi 12–17 yosh, matnlar 8–10 yoshli bola tushunadigan sodda tilda.

@@ -62,7 +62,7 @@ CONTENT[7] = {
      "q": "Hayotda qaysi gap cheklovga o'xshaydi?",
      "o": [
       "«Darsda telefon ishlatma»",
-      "«Uyga vazifani bajar»",
+      "«Uyga berilgan vazifani bajarib kel»",
       "«Kitobni o'qib chiq»",
       "«Doskaga misol yoz»"
      ],
@@ -90,7 +90,7 @@ CONTENT[7] = {
       "«Yozuvga tegma» degan gap",
       "«Iltimos» degan so'z",
       "Saytning to'liq nomi",
-      "Promptdagi undov belgisi"
+      "Promptning oxiridagi undov belgisi"
      ],
      "e": "Nimaga tegmaslikni aytmasa, SI boshqa joyni ham o'zgartirishi mumkin."
     },
@@ -133,7 +133,7 @@ CONTENT[7] = {
      "o": [
       "SI so'ralmagan joyni o'zgartirmaydi",
       "SI tezroq ishlaydi",
-      "Prompt chiroyli ko'rinadi",
+      "Prompt chiroyli va tartibli ko'rinadi",
       "SI ko'proq matn yozadi"
      ],
      "e": "Bu gap SI'ni boshqa joylarga tegishdan to'xtatadi."
@@ -170,7 +170,7 @@ CONTENT[7] = {
      "o": [
       "SI nima keraksizligini bilmaydi",
       "Bu gap juda uzun",
-      "SI bu so'zni tushunmaydi",
+      "SI bu so'zlarni umuman tushunmaydi",
       "Bu gap boshqa tilda"
      ],
      "e": "Nima keraksizligini SI bilmaydi, uni nomi bilan yozish kerak."
@@ -204,7 +204,7 @@ CONTENT[7] = {
       "Choy va sharbatlarni",
       "Osh va sho'rvani",
       "Taomlar nomini",
-      "Menyu sarlavhasini"
+      "Menyuning katta sarlavhasini"
      ],
      "e": "Choy va sharbat — ichimlik, ular yozilmaydi."
     }

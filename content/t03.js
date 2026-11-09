@@ -18,7 +18,7 @@ CONTENT[3] = {
      "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
      "o": [
       "Ali: «Sarlavha qizil chiqdi»",
-      "Vali: «Buni ko'ryapsanmi?»",
+      "Vali: «Ekrandagini ko'ryapsanmi?»",
       "Gul: «Anavini tuzat»",
       "Sami: «Shu yerda xato»"
      ],
@@ -42,7 +42,7 @@ CONTENT[3] = {
       "«Bu yer» qayerligini bilmaydi",
       "SI ranglarni yomon ko'radi",
       "Malika juda tez yozdi",
-      "Rangni o'zgartirib bo'lmaydi"
+      "Rangni umuman o'zgartirib bo'lmaydi"
      ],
      "e": "SI ekranni ko'rmaydi, «bu yer» qayerligini bilmaydi."
     },
@@ -51,7 +51,7 @@ CONTENT[3] = {
      "q": "Kafe menyusida narx xato chiqdi. SI'ga nimani yozish kerak?",
      "o": [
       "Qaysi taomda qanday narx chiqqanini",
-      "Faqat «xato bor» degan gapni",
+      "Faqat «menyuda xato bor» degan gapni",
       "Faqat kafe nomini",
       "Faqat «tuzat» so'zini"
      ],
@@ -62,7 +62,7 @@ CONTENT[3] = {
      "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
      "o": [
       "Sen yozib berganingda",
-      "Darhol o'zi ko'radi",
+      "Darhol o'zi ko'rib qoladi",
       "Sayt ochilganda",
       "Ertasi kuni o'zi"
      ],
@@ -77,7 +77,7 @@ CONTENT[3] = {
      "q": "Aziz: «Saytimga sarlavha yoz» dedi. SI nimani bilmaydi?",
      "o": [
       "Sayt nima haqida ekanini",
-      "Sarlavha nima ekanini",
+      "Sarlavha so'zi nima ekanini",
       "Qanday yozishni",
       "O'zbekcha so'zlarni"
      ],
@@ -89,7 +89,7 @@ CONTENT[3] = {
      "o": [
       "Kafe nomi va taomlarini",
       "Bugungi ob-havoni",
-      "O'zingning yoshingni",
+      "O'zingning yoshing va sinfingni",
       "Sevimli multfilmingni"
      ],
      "e": "SI loyihani bilmaydi, kerakli ma'lumotni sen aytasan."
@@ -111,7 +111,7 @@ CONTENT[3] = {
      "o": [
       "Unga sayt haqida aytilmagan",
       "SI sportni yoqtirmaydi",
-      "SI hazil qilmoqchi bo'ldi",
+      "SI sen bilan hazil qilmoqchi bo'ldi",
       "Sayt o'zi o'zgarib qoldi"
      ],
      "e": "Loyiha haqida aytilmasa, SI taxmin qilib yozadi."
@@ -160,7 +160,7 @@ CONTENT[3] = {
       "SI qaysi rasmligini bilmaydi",
       "SI rasmni darhol tuzatadi",
       "SI kechagi rasmni ochadi",
-      "SI rasmni o'chirib yuboradi"
+      "SI rasmni butunlay o'chirib yuboradi"
      ],
      "e": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
     },
@@ -170,7 +170,7 @@ CONTENT[3] = {
      "o": [
       "Kerakli ma'lumotni qayta yozaman",
       "Hech narsa eslatmayman",
-      "Faqat «davom et» deyman",
+      "Faqat «kechagi ishni davom et» deyman",
       "Suhbatni yopib qo'yaman"
      ],
      "e": "SI oldingi suhbatni bilmaydi, ma'lumotni qayta berish kerak."
@@ -230,7 +230,7 @@ CONTENT[3] = {
       "SI'ga yozib, tuzatishni so'rash",
       "Hech kimga aytmaslik",
       "Sahifani yopib qo'yish",
-      "Xato o'zi tuzalishini kutish"
+      "Xato o'zi tuzalib qolishini kutish"
      ],
      "e": "Xato ko'rsang, SI'ga yoz va tuzatishni so'ra."
     },
@@ -263,7 +263,7 @@ CONTENT[3] = {
       "Tuzatishni so'rashni",
       "Salom berishni",
       "O'z ismini",
-      "Bugungi sanani"
+      "Bugungi sana va vaqtni"
      ],
      "e": "Xatoni yozgach, tuzatishni ham so'rash kerak."
     },
@@ -272,7 +272,7 @@ CONTENT[3] = {
      "q": "Kitob do'koni sahifasida narx ikki marta yozilgan. SI'ga eng yaxshi so'rov qaysi?",
      "o": [
       "«Narx ikki marta yozilgan, bittasini o'chir»",
-      "«Sahifada nimadir g'alati ko'rinyapti»",
+      "«Sahifada nimadir g'alati ko'rinyapti, tuzat»",
       "«Kitoblar sahifasini menga ko'rsat»",
       "«Narxlar haqida nima deysan?»"
      ],

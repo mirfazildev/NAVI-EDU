@@ -7,7 +7,7 @@ CONTENT[4] = {
      "q": "SI tavsiya qilgan «Quyosh bolalari» kitobi hech qayerda yo'q. Bu nimani bildiradi?",
      "o": [
       "SI kitobni o'zi to'qib chiqargan",
-      "Kitob ko'rinmas bo'lib qolgan",
+      "Kitob sehrli ko'rinmas bo'lib qolgan",
       "Kutubxona kitobni yashirgan",
       "Internet kitobni o'chirgan"
      ],
@@ -20,7 +20,7 @@ CONTENT[4] = {
       "Saytni boshqa yo'l bilan qidiraman",
       "Kompyuterni almashtiraman",
       "Manzilni qayta-qayta ochaman",
-      "Sayt paydo bo'lishini kutaman"
+      "Sayt o'zi paydo bo'lishini kutib turaman"
      ],
      "e": "SI manzilni o'ylab topgan bo'lishi mumkin, boshqacha qidirish kerak."
     },
@@ -62,7 +62,7 @@ CONTENT[4] = {
      "q": "SI sport zali murabbiyining ismini aytdi. Nega buni tekshiramiz?",
      "o": [
       "Ism o'ylab topilgan bo'lishi mumkin",
-      "Murabbiy ismini yashiradi",
+      "Murabbiy o'z ismini hammadan yashiradi",
       "Ism juda uzun",
       "SI sportni bilmaydi"
      ],
@@ -77,7 +77,7 @@ CONTENT[4] = {
      "q": "«Sarlavhani kattalashtir» deding, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
      "o": [
       "Nimani kattalashtirish kerakligini",
-      "Qaysi rangni tanlashni",
+      "Sarlavhani qaysi rangga bo'yash kerakligini",
       "Qaysi tilda yozishni",
       "Qachon ishlashni"
      ],
@@ -110,7 +110,7 @@ CONTENT[4] = {
      "q": "Ali «Gul do'koniga nom top» dedi, SI gul nomlarini yozdi. Xato qayerda?",
      "o": [
       "Do'kon nomi o'rniga gul nomlari",
-      "SI yo'q gullarni o'ylab topdi",
+      "SI dunyoda yo'q gullarni o'ylab topdi",
       "SI vazifani to'g'ri bajardi",
       "SI do'konni yopib qo'ydi"
      ],
@@ -158,7 +158,7 @@ CONTENT[4] = {
      "q": "Kafe sahifasida faqat narxni tuzattirding, lekin kafe nomi ham o'zgaribdi. Nima qilasan?",
      "o": [
       "Nomni qaytarishni so'rayman",
-      "Yangi nom bilan qoldiraman",
+      "Kafeni yangi nom bilan qoldiraman",
       "Hech narsa demayman",
       "Narxni yana o'zgartiraman"
      ],
@@ -170,7 +170,7 @@ CONTENT[4] = {
      "o": [
       "Boshqa joylar o'zgarmaganini",
       "Ekran yorqinligini",
-      "SI'ning kayfiyatini",
+      "SI'ning kayfiyati yaxshi ekanini",
       "Internet tezligini"
      ],
      "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
@@ -181,7 +181,7 @@ CONTENT[4] = {
      "o": [
       "Ha, shunday bo'lishi mumkin",
       "Yo'q, hech qachon",
-      "Faqat dam olish kuni",
+      "Faqat dam olish kunlari va bayramda",
       "Faqat sen uxlasang"
      ],
      "e": "SI so'ralmagan joyni ham o'zgartirib yuborishi mumkin."
@@ -193,7 +193,7 @@ CONTENT[4] = {
       "Gullar rasmi almashgan",
       "Yangi raqam yozilgan",
       "Eski raqam o'chgan",
-      "Raqam to'g'ri bo'lgan"
+      "Telefon raqami to'g'rilangan"
      ],
      "e": "Rasm so'ralmagan edi, uni o'zgartirish ortiqcha."
     },
@@ -218,7 +218,7 @@ CONTENT[4] = {
      "o": [
       "Vazifani noto'g'ri tushundi",
       "Yo'q narsani o'ylab topdi",
-      "Ortiqcha joyni o'zgartirdi",
+      "Ortiqcha joyni ham o'zgartirib qo'ydi",
       "Bu xato emas, to'g'ri"
      ],
      "e": "Menyu so'ralgan, tarix yozildi — vazifa noto'g'ri tushunilgan."
@@ -229,7 +229,7 @@ CONTENT[4] = {
      "o": [
       "So'ralmagan joyga tegdi",
       "Vazifani tushunmadi",
-      "Narxni o'ylab topdi",
+      "Yo'q narxni o'ylab topdi",
       "Bu xato emas, to'g'ri"
      ],
      "e": "Rasm so'ralmagan edi — bu ortiqcha o'zgartirish."
@@ -273,7 +273,7 @@ CONTENT[4] = {
      "o": [
       "To'g'ri tuzatishni so'rash uchun",
       "SI'ni jazolash uchun",
-      "Xatoni yashirish uchun",
+      "Xatoni boshqalardan yashirish uchun",
       "Vaqtni o'tkazish uchun"
      ],
      "e": "Xato turini bilsang, SI'dan nimani tuzatishni aniq so'raysan."

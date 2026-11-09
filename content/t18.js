@@ -29,7 +29,7 @@ CONTENT[18] = {
      "q": "Qaysi prompt SI'dan reja so'raydi?",
      "o": [
       "\"Boshlamay, avval reja yozib ber\"",
-      "\"Saytni hoziroq qilib ber\"",
+      "\"Saytni hoziroq to'liq qilib ber\"",
       "\"Tezroq bo'l\"",
       "\"Rangni ko'k qil\""
      ],
@@ -42,7 +42,7 @@ CONTENT[18] = {
       "SI nima qilishini oldindan bilasan",
       "SI tezroq yozadi",
       "Sayt chiroyli bo'ladi",
-      "Xato umuman bo'lmaydi"
+      "Saytda hech qachon xato bo'lmay qoladi"
      ],
      "e": "Reja SI qiladigan ishlarni oldindan ko'rsatadi."
     },
@@ -62,7 +62,7 @@ CONTENT[18] = {
      "q": "Jasur reja so'ramay, darhol butun botni so'radi. Qanday xavf bor?",
      "o": [
       "SI keraksiz ish qilgan bo'lishi mumkin",
-      "Bot juda chiroyli chiqadi",
+      "Bot juda chiroyli va tez bo'lib chiqadi",
       "SI charchab qoladi",
       "Xavf umuman yo'q"
      ],
@@ -111,7 +111,7 @@ CONTENT[18] = {
      "o": [
       "Ikkalasini olib tashlashni aytadi",
       "Faqat bittasini aytadi",
-      "Rejani shundayicha qoldiradi",
+      "Rejani hech o'zgartirmay shundayicha qoldiradi",
       "Butun rejani o'chiradi"
      ],
      "e": "Har bir keraksiz qadamni olib tashlashni ayt."
@@ -134,7 +134,7 @@ CONTENT[18] = {
       "Qadamning raqami yoki nomi",
       "Undov belgisi",
       "Salom so'zi",
-      "Katta harflar"
+      "Katta harflar va undov belgisi"
      ],
      "e": "Qaysi qadam ekanini aniq ayt: raqami yoki nomi."
     }
@@ -171,7 +171,7 @@ CONTENT[18] = {
       "Kerakli narsalarni rejadan qidiraman",
       "SI o'zi aytguncha kutaman",
       "Rejani o'qimay qabul qilaman",
-      "Faqat birinchi qadamni o'qiyman"
+      "Faqat birinchi qadamni diqqat bilan o'qiyman"
      ],
      "e": "Har bir kerakli narsa rejada bormi, qarab chiq."
     },
@@ -192,7 +192,7 @@ CONTENT[18] = {
      "o": [
       "\"Kitob rasmlari qadamini qo'sh\"",
       "\"Yaxshi reja emas\"",
-      "\"Rejani qaytadan yoz\"",
+      "\"Rejani boshidan qaytadan yozib ber\"",
       "\"Rasmlar kerak emas\""
      ],
      "e": "Bu prompt qaysi qadamni qo'shishni aniq aytadi."

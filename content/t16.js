@@ -8,7 +8,7 @@ CONTENT[16] = {
      "o": [
       "Bitta xatoni 3 marta tuzata olmasa",
       "Javobni sekin yozsa",
-      "Bir marta xato qilsa",
+      "Bir marta kichkina xato qilib qo'ysa",
       "Juda uzun javob yozsa"
      ],
      "e": "Bitta xatoni 3 marta tuzata olmasa, SI aylanib qolgan bo'ladi."
@@ -29,7 +29,7 @@ CONTENT[16] = {
      "q": "SI Madinaning rasmini bir marta tuzata olmadi. SI aylanib qoldimi?",
      "o": [
       "Yo'q, bu faqat birinchi urinish",
-      "Ha, darhol aylanib qoldi",
+      "Ha, birinchi urinishdayoq aylanib qoldi",
       "Ha, SI butunlay buzildi",
       "Ha, chunki rasm katta"
      ],
@@ -40,8 +40,8 @@ CONTENT[16] = {
      "q": "SI 3 xil xatoni tuzatdi, har birini birinchi urinishda. Bu aylanib qolishmi?",
      "o": [
       "Yo'q, har biri birdan tuzaldi",
-      "Ha, 3 ta xato bo'ldi",
-      "Ha, SI ko'p ishladi",
+      "Ha, 3 ta har xil xato bo'ldi",
+      "Ha, SI juda ko'p marta ishladi",
       "Ha, uch marta yozdi"
      ],
      "e": "Aylanib qolish — bitta xatoni qayta-qayta tuzata olmaslik."
@@ -78,7 +78,7 @@ CONTENT[16] = {
      "o": [
       "Muammoni boshqa so'zlar bilan yozadi",
       "Xuddi shu gapni yana yozadi",
-      "Gapni katta harflar bilan yozadi",
+      "Xuddi o'sha gapni katta harflar bilan yozadi",
       "Hech narsa yozmay kutadi"
      ],
      "e": "SI aylanib qolsa, muammoni boshqacha so'zlar bilan tushuntir."
@@ -100,7 +100,7 @@ CONTENT[16] = {
      "o": [
       "Yo'q, faqat belgi qo'shildi",
       "Ha, endi gap boshqa",
-      "Ha, undov belgisi yetarli",
+      "Ha, uchta undov belgisi yetarli bo'ladi",
       "Ha, endi SI tushunadi"
      ],
      "e": "Undov belgisi qo'shish yangi so'zlar bilan tushuntirish emas."
@@ -109,8 +109,8 @@ CONTENT[16] = {
      "id": "16.2-4",
      "q": "Kamola muammoni boshqacha yozmoqchi. Gapiga nimani qo'shsa yaxshi?",
      "o": [
-      "Nima bo'lishi kerak edi, nima bo'ldi",
-      "Sevimli rangi va yoshini",
+      "Nima kutgani va nima bo'lgani",
+      "O'zining sevimli rangi va yoshini",
       "O'sha gapni ikki marta",
       "Faqat \"tezroq\" so'zini"
      ],
@@ -123,7 +123,7 @@ CONTENT[16] = {
       "SI muammoni yangicha tushunadi",
       "SI tezroq yoza boshlaydi",
       "Sayt rangi o'zgaradi",
-      "SI eski javobni qaytaradi"
+      "SI yana o'sha eski javobini qaytaradi"
      ],
      "e": "Yangi so'zlar SI'ga muammoni boshqa tomondan ko'rsatadi."
     },
@@ -169,7 +169,7 @@ CONTENT[16] = {
      "q": "Qaysi xabar yangi suhbatni boshlash uchun yaxshi?",
      "o": [
       "\"Gul saytimda savatcha tugmasi ishlamayapti\"",
-      "\"Hali ham ishlamayapti\"",
+      "\"Hali ham ishlamayapti, iltimos, tezroq tuzat\"",
       "\"O'sha xatoni tuzat\"",
       "\"Yana urinib ko'r\""
      ],
@@ -182,7 +182,7 @@ CONTENT[16] = {
       "Loyiha nima haqida ekani",
       "Undov belgilari",
       "Salomlashish so'zi",
-      "Xato xabarining rangi"
+      "Xato xabarining rangi qanaqaligi"
      ],
      "e": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayt."
     },
@@ -204,7 +204,7 @@ CONTENT[16] = {
       "SI ishni toza boshdan boshlaydi",
       "SI tezroq yoza boshlaydi",
       "Sayt o'zi tuzalib qoladi",
-      "Eski xato javoblar saqlanadi"
+      "Eski xato javoblar ham saqlanib qoladi"
      ],
      "e": "Yangi suhbatda SI eski xato yo'lini takrorlamaydi."
     }
@@ -217,7 +217,7 @@ CONTENT[16] = {
      "q": "Oldin: \"Rasm chiqmayapti\". Qaysi yangi gap aniqroq?",
      "o": [
       "\"Bosh sahifada mushuk rasmi ko'rinmayapti\"",
-      "\"Rasm chiqmayapti, tuzat\"",
+      "\"Rasm hali ham chiqmayapti, iltimos tuzat\"",
       "\"RASM CHIQMAYAPTI\"",
       "\"Rasm yana chiqmayapti\""
      ],
@@ -239,7 +239,7 @@ CONTENT[16] = {
      "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",
      "o": [
       "Bot nima qilishi kerakligi",
-      "Botning chiroyli ismi",
+      "Botning chiroyli va qisqa ismi",
       "Undov belgilari",
       "Katta harflar"
      ],
@@ -250,7 +250,7 @@ CONTENT[16] = {
      "q": "Sport zali sayti. Qaysi gapda kutilgan va bo'lgan narsa bor?",
      "o": [
       "\"Soat chiqishi kerak, bo'sh joy chiqyapti\"",
-      "\"Soat ishlamayapti\"",
+      "\"Soat ishlamayapti, nimadir bo'sh chiqyapti\"",
       "\"Soatni tuzat\"",
       "\"Soat yana buzildi\""
      ],
@@ -263,7 +263,7 @@ CONTENT[16] = {
       "Yo'q, faqat bitta so'z almashdi",
       "Ha, so'z boshqa bo'ldi",
       "Ha, endi gap qisqaroq",
-      "Ha, SI albatta tushunadi"
+      "Ha, endi SI albatta yaxshi tushunadi"
      ],
      "e": "Bitta so'zni almashtirish muammoni yangicha tushuntirmaydi."
     },

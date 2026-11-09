@@ -41,7 +41,7 @@ CONTENT[20] = {
      "o": [
       "Parolni o'chirib, keyin yuboradi",
       "Baribir yuboradi",
-      "Parolni ikki marta yozadi",
+      "Parolni ikki marta qilib yozib yuboradi",
       "Faqat parolni yuboradi"
      ],
      "e": "Parol promptda qolmasligi kerak."
@@ -63,7 +63,7 @@ CONTENT[20] = {
      "o": [
       "Parol faqat senda qolishi kerak",
       "Parol juda uzun",
-      "SI raqamlarni o'qimaydi",
+      "SI uzun raqamlarni o'qiy olmaydi",
       "Parol chiroyli emas"
      ],
      "e": "Parol maxfiy, uni hech kimga bermaysan."
@@ -77,7 +77,7 @@ CONTENT[20] = {
      "q": "Qaysi biri bot tokeniga o'xshaydi?",
      "o": [
       "7123456:ABC-fake",
-      "@kafe_bot",
+      "@kafe_toshkent_bot",
       "Salom!",
       "/start"
      ],
@@ -87,7 +87,7 @@ CONTENT[20] = {
      "id": "20.2-2",
      "q": "Gul do'koni boti ishlamayapti. Qaysi prompt xavfsiz?",
      "o": [
-      "\"@gul_bot javob bermayapti. Yordam ber\"",
+      "\"@gul_bot jim turibdi. Yordam ber\"",
       "\"Tokenim 7123456:ABC-fake, tekshir\"",
       "\"Mana tokenim, botni ishlat\"",
       "\"Token va parolim shu\""
@@ -134,7 +134,7 @@ CONTENT[20] = {
       "Bot nima qilishi kerakligini",
       "Bot tokenini",
       "Bot kalitini",
-      "Token va parolni"
+      "Bot tokenini va o'zining parolini"
      ],
      "e": "Bot vazifasini aytish xavfsiz, token va kalit esa yo'q."
     }
@@ -160,7 +160,7 @@ CONTENT[20] = {
       "\"Telefon raqami uchun joy qoldir\"",
       "O'z raqamimni yozaman",
       "Uy manzilimni yozaman",
-      "Onamning raqamini yozaman"
+      "Onamning telefon raqamini to'liq yozaman"
      ],
      "e": "Joy so'rash yetarli, haqiqiy raqam kerak emas."
     },
@@ -193,7 +193,7 @@ CONTENT[20] = {
       "Hujjat raqami berilmaydi",
       "Yozsa bo'ladi",
       "Yarmini yozsin",
-      "Katta harfda yozsin"
+      "Katta harflar bilan yozsa bo'ladi"
      ],
      "e": "Hujjat raqami shaxsiy ma'lumot, u SI'ga berilmaydi."
     },

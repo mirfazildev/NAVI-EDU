@@ -9,7 +9,7 @@ CONTENT[17] = {
       "Fayllarni o'zi o'zgartiradi",
       "Faqat javob yozadi",
       "Faqat rasm chizadi",
-      "Kompyuterni o'chiradi"
+      "Kompyuterni o'zi o'chirib qo'yadi"
      ],
      "e": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
     },
@@ -31,7 +31,7 @@ CONTENT[17] = {
       "Agent rejimi",
       "Oddiy chat",
       "Rasm rejimi",
-      "Tungi rejim"
+      "Tungi qorong'i rejim"
      ],
      "e": "Fayl o'zi o'zgardi, demak bu agent rejimi."
     },
@@ -63,7 +63,7 @@ CONTENT[17] = {
      "o": [
       "Kodni faylga qo'lda ko'chirishdan",
       "Prompt yozishdan",
-      "Natijani ko'rishdan",
+      "Natijani o'z ko'zi bilan ko'rishdan",
       "O'ylab ko'rishdan"
      ],
      "e": "Agent faylni o'zi o'zgartiradi, kodni qo'lda ko'chirish shart emas."
@@ -77,7 +77,7 @@ CONTENT[17] = {
      "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
      "o": [
       "O'zgarishni senga ko'rsatadi",
-      "Indamay ishni tugatadi",
+      "Indamay ishni tugatib, ketib qoladi",
       "Saytni o'chirib qo'yadi",
       "Yangi suhbat ochadi"
      ],
@@ -101,7 +101,7 @@ CONTENT[17] = {
       "Sen ko'rib chiqishing uchun",
       "Maqtanish uchun",
       "Vaqt o'tishi uchun",
-      "Faylni o'chirish uchun"
+      "Eski faylni o'chirib tashlash uchun"
      ],
      "e": "Sen o'zgarishni ko'rib, to'g'rimi yo'qmi bilishing kerak."
     },
@@ -121,7 +121,7 @@ CONTENT[17] = {
      "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
      "o": [
       "Ortiqcha o'zgarishni sezishga",
-      "Saytni tezlashtirishga",
+      "Saytni ancha tezroq ishlatishga",
       "Prompt yozishga",
       "Rasm chizishga"
      ],
@@ -192,7 +192,7 @@ CONTENT[17] = {
      "o": [
       "Xato o'zgarish o'zi saqlanmaydi",
       "Agent tezroq ishlaydi",
-      "Sayt chiroyliroq bo'ladi",
+      "Sayt ancha chiroyliroq bo'lib qoladi",
       "SI ko'proq yozadi"
      ],
      "e": "Sen ko'rib qabul qilmaguncha hech narsa saqlanmaydi."

@@ -28,10 +28,10 @@ CONTENT[8] = {
      "id": "08.1-3",
      "q": "Qaysi promptda misol bor?",
      "o": [
-      "«Mana shu matnga o'xshatib yoz: ...»",
-      "«Qisqa matn yozib ber»",
-      "«O'zbekcha matn yoz»",
-      "«Kafe uchun matn yoz»"
+      "«Shu matnga o'xshatib yoz: ...»",
+      "«Qisqa va sodda matn yozib ber»",
+      "«O'zbek tilida matn yozib ber»",
+      "«Kafe uchun chiroyli matn yozib ber»"
      ],
      "e": "Unda SI'ga o'xshatish uchun namuna berilgan."
     },
@@ -40,7 +40,7 @@ CONTENT[8] = {
      "q": "Sardor qanday tugma kerakligini so'z bilan tushuntira olmayapti. Nima qilgani yaxshi?",
      "o": [
       "O'xshash tugmani misol qilib beradi",
-      "«Yaxshi tugma qil» deb yozadi",
+      "«Menga eng yaxshi tugma qil» deb yozadi",
       "SI o'zi topishini kutadi",
       "Promptni qisqaroq qiladi"
      ],
@@ -51,7 +51,7 @@ CONTENT[8] = {
      "q": "Nodira do'stining tabrik matnini misol qilib berdi. SI qanday matn yozadi?",
      "o": [
       "Shu tabrikka o'xshash matn",
-      "Ob-havo haqida matn",
+      "Bugungi ob-havo haqida qisqa matn",
       "Juda uzun ertak",
       "Faqat bitta so'z"
      ],
@@ -89,7 +89,7 @@ CONTENT[8] = {
      "o": [
       "Boshqa sayt",
       "Rasm",
-      "Matn",
+      "Yozilgan matn",
       "Qo'shiq"
      ],
      "e": "Jasur namuna sifatida boshqa saytni ko'rsatdi."
@@ -110,7 +110,7 @@ CONTENT[8] = {
      "q": "Nodira yoqqan matnni misol qilmoqchi. Uni SI'ga qanday beradi?",
      "o": [
       "Matnni promptga qo'yib yuboradi",
-      "Matnni faqat o'ylab qo'yadi",
+      "Matnni faqat ichida o'ylab qo'yadi",
       "Faqat matn nomini aytadi",
       "Matnni o'chirib tashlaydi"
      ],
@@ -123,7 +123,7 @@ CONTENT[8] = {
       "Matn, rasm yoki boshqa sayt",
       "Faqat matn",
       "Faqat rasm",
-      "Faqat boshqa sayt"
+      "Faqat boshqa saytning manzili"
      ],
      "e": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
     },
@@ -158,7 +158,7 @@ CONTENT[8] = {
      "q": "Ali misol berdi, lekin nimani olishni aytmadi. Nima bo'lishi mumkin?",
      "o": [
       "SI keraksiz narsani ham oladi",
-      "SI misolni umuman ko'rmaydi",
+      "SI misolni umuman ko'rib chiqmaydi",
       "SI ishni boshlamaydi",
       "SI faqat sarlavha yozadi"
      ],
@@ -170,7 +170,7 @@ CONTENT[8] = {
      "o": [
       "Bo'limlar tartibini",
       "Taomlar nomini",
-      "Menyu ranglarini",
+      "Menyudagi barcha ranglarni",
       "Taomlar narxini"
      ],
      "e": "Tuzilish — qismlar qanday tartibda turgani."
@@ -180,7 +180,7 @@ CONTENT[8] = {
      "q": "Misoldan nimalarni olishni aytish mumkin?",
      "o": [
       "Rangini, uslubini yoki tuzilishini",
-      "Faqat egasining ismini",
+      "Faqat egasining ismi va familiyasini",
       "Faqat telefon raqamini",
       "Faqat undagi xatolarni"
      ],

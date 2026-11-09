@@ -18,7 +18,7 @@ CONTENT[10] = {
      "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
      "o": [
       "Tugma qanday bo'lishini yozib qo'yadi",
-      "Darhol SI'ga prompt yuboradi",
+      "Hech o'ylamay darhol SI'ga prompt yuboradi",
       "Saytni yopib qo'yadi",
       "SI javobini kutib turadi"
      ],
@@ -40,7 +40,7 @@ CONTENT[10] = {
      "q": "Bozorga borishdan oldin xarid ro'yxatini yozasan. Bu nimaga o'xshaydi?",
      "o": [
       "Natijani oldindan yozib qo'yishga",
-      "SI javobini o'qishga",
+      "SI yozgan javobni boshidan o'qishga",
       "Promptni o'chirishga",
       "Yangi suhbat ochishga"
      ],
@@ -88,7 +88,7 @@ CONTENT[10] = {
      "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasan?",
      "o": [
       "Sarlavhadagi so'zlarni sanayman",
-      "SI'dan yoqdimi deb so'rayman",
+      "SI'dan sarlavha yoqdimi deb so'rayman",
       "Sarlavha rangiga qarayman",
       "Do'stimdan fikrini so'rayman"
      ],
@@ -111,7 +111,7 @@ CONTENT[10] = {
      "o": [
       "Botga yozib, javobiga qarayman",
       "Botning nomini o'qiyman",
-      "SI'ning gapiga ishonaman",
+      "SI'ning «bajardim» degan gapiga ishonaman",
       "Promptni qayta o'qiyman"
      ],
      "e": "Bot javobini ko'rib, natijani tekshirasan."
@@ -120,10 +120,10 @@ CONTENT[10] = {
      "id": "10.2-5",
      "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
      "o": [
-      "Alining, uni sanab ko'rsa bo'ladi",
-      "Valining, u qiziqroq",
-      "Ikkalasi bir xil yaxshi",
-      "Ikkalasi ham yomon"
+      "Alining, uni sanasa bo'ladi",
+      "Valining, chunki uniki qiziqroq",
+      "Ikkalasi ham birdek yaxshi yozgan",
+      "Ikkalasining ham matni yomon"
      ],
      "e": "Qatorlarni sanab tekshirsa bo'ladi, «qiziq»ni esa yo'q."
     },

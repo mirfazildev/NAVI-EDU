@@ -20,7 +20,7 @@ CONTENT[1] = {
       "Sun'iy intellekt",
       "Sinf ustozi",
       "Sayt egasi",
-      "Sinfdosh do'st"
+      "Sinfdagi do'sting"
      ],
      "e": "Matndagi SI — Sun'iy intellektning qisqa yozilishi."
     },
@@ -77,8 +77,8 @@ CONTENT[1] = {
      "q": "SI nima?",
      "o": [
       "So'rovga javob beradigan dastur",
-      "Kompyuter ichidagi odam",
-      "Internet kabeli",
+      "Kompyuter ichida yashaydigan kichkina odam",
+      "Internetni ulaydigan kabel",
       "Telefonning ekrani"
      ],
      "e": "SI — so'rovingga javob beradigan dastur."
@@ -122,7 +122,7 @@ CONTENT[1] = {
      "o": [
       "Bot savolingga javob yozdi",
       "Chiroq o'zi yonib ketdi",
-      "Eshik qo'ng'irog'i chaldi",
+      "Eshik qo'ng'irog'i baland chaldi",
       "Soat vaqtni ko'rsatdi"
      ],
      "e": "So'rovga javob yozish — SI ishi."
@@ -147,7 +147,7 @@ CONTENT[1] = {
      "q": "SI qayerdan o'rgangan?",
      "o": [
       "Internetdagi ko'p ma'lumotlardan",
-      "Bitta darslikdan",
+      "Maktabdagi bitta qalin darslikdan",
       "Faqat sening xabaringdan",
       "Hech qayerdan o'rganmagan"
      ],
@@ -181,7 +181,7 @@ CONTENT[1] = {
      "o": [
       "Kafe haqida internetda yozilgan bo'lsa",
       "Kafeda ovqat yegan bo'lsa",
-      "Kafe yonidan o'tgan bo'lsa",
+      "SI har kuni kafe yonidan o'tgan bo'lsa",
       "Kafe egasini tanisa"
      ],
      "e": "SI internetdagi ma'lumotlardan o'rganadi."
@@ -203,7 +203,7 @@ CONTENT[1] = {
      "o": [
       "O'rganganlari asosida yozadi",
       "Zalga borib ko'radi",
-      "Murabbiydan so'rab oladi",
+      "Zal murabbiyidan telefonda so'rab oladi",
       "Tanga tashlab tanlaydi"
      ],
      "e": "SI o'rgangan ma'lumotlari asosida javob beradi."
@@ -239,7 +239,7 @@ CONTENT[1] = {
      "q": "Gul do'koniga reklama matni kerak. Matn paydo bo'lishi uchun nima qilish kerak?",
      "o": [
       "SI'ga matn yozishni buyurish",
-      "SI o'zi sezishini kutish",
+      "SI o'zi sezib qolishini jim kutish",
       "Kompyuterni qayta yoqish",
       "Gulni ekran yoniga qo'yish"
      ],

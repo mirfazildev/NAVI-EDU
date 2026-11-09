@@ -1,10 +1,10 @@
 {
   "module": "si-asoslari",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "built": "2026-11-09",
   "sha256": {
-    "content.json": "fa10be8c5be90e8c2c59ba1015897cdbf0c08803d2bfdbd3df9584cc1eab4ce8",
-    "practice.mjs": "c5f84a7112df0a150a474519a2ee01a3b6aa45d5b04c2419c90af1abdc509966"
+    "content.json": "dee6a74d423a4ac1446b9b02f062c3c33ffd0b1e5302ca20fb1a91c1dd6ea8a3",
+    "practice.mjs": "5bbf6455d52cab1fabd5acf97551d18651b74880da02dfed4f6cb7133fb755ba"
   },
   "counts": {
     "topics": 21,

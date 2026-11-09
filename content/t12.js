@@ -8,7 +8,7 @@ CONTENT[12] = {
      "o": [
       "Qaysi tugma ekani, qayerdaligi",
       "SI'ga rahmat so'zi",
-      "Ko'proq undov belgisi",
+      "Ko'proq undov belgisi va katta harflar",
       "Saytning eski nomi"
      ],
      "e": "SI qaysi tugmani tuzatishni bilishi uchun joyini aytish kerak."
@@ -20,7 +20,7 @@ CONTENT[12] = {
       "Menyu ostidagi birinchi rasm",
       "Bitta rasm",
       "Anavi rasm",
-      "Saytdagi rasm"
+      "Saytdagi rasmlardan qaysidir bittasi"
      ],
      "e": "«Menyu ostidagi birinchi» deganda SI qaysi rasmligini aniq biladi."
     },
@@ -42,7 +42,7 @@ CONTENT[12] = {
       "SI qaysi joyni tuzatishni bilishi uchun",
       "Prompt uzunroq bo'lishi uchun",
       "SI tezroq javob berishi uchun",
-      "Saytning rangi o'zgarishi uchun"
+      "Saytning rangi chiroyliroq o'zgarishi uchun"
      ],
      "e": "Joyni bilmasa, SI boshqa joyni o'zgartirib yuborishi mumkin."
     },
@@ -51,7 +51,7 @@ CONTENT[12] = {
      "q": "Laylo botga yozdi. Botning ikkinchi javobida xato bor. Laylo SI'ga qaysi joyni aytadi?",
      "o": [
       "Botning ikkinchi javobini",
-      "Butun botni",
+      "Butun botni, boshidan oxirigacha",
       "Botning nomini",
       "O'z telefonini"
      ],
@@ -79,7 +79,7 @@ CONTENT[12] = {
       "«Sarlavha hozir juda kichik» deb",
       "«Sarlavha juda yomon» deb",
       "«Sarlavhani tuzat» deb",
-      "«Sarlavhada muammo bor» deb"
+      "«Sarlavhada qandaydir muammo bor» deb"
      ],
      "e": "«Hozir juda kichik» deganda SI sarlavha qanday ekanini biladi."
     },
@@ -99,7 +99,7 @@ CONTENT[12] = {
      "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasan?",
      "o": [
       "SI sening ekraningni ko'rmaydi",
-      "SI ko'p so'zni yaxshi ko'radi",
+      "SI ko'p so'zli xabarni yaxshi ko'radi",
       "Shunda sayt o'zi tuzaladi",
       "SI rasm chiza olmaydi"
      ],
@@ -169,7 +169,7 @@ CONTENT[12] = {
      "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasan?",
      "o": [
       "SI o'zicha taxmin qilmasligi uchun",
-      "Prompt chiroyli ko'rinishi uchun",
+      "Prompt chiroyliroq va uzunroq ko'rinishi uchun",
       "SI tezroq ishlashi uchun",
       "Sayt ko'proq ochilishi uchun"
      ],
@@ -181,7 +181,7 @@ CONTENT[12] = {
      "o": [
       "Sarlavha ikki barobar katta bo'lsin",
       "Sarlavha yaxshiroq bo'lsin",
-      "Sarlavha chiroyli bo'lsin",
+      "Sarlavha yanada chiroyliroq va yoqimli bo'lsin",
       "Sarlavha boshqacha bo'lsin"
      ],
      "e": "«Ikki barobar katta» deganni ekranda aniq tekshirsa bo'ladi."
@@ -204,7 +204,7 @@ CONTENT[12] = {
       "Jadvalni o'zicha, noto'g'ri to'ldirishi",
       "Jasur xohlaganini aniq bilishi",
       "Saytni butunlay o'chirishi",
-      "Jadvalga tegmay, jim turishi"
+      "Jadvalga umuman tegmay, jim turib qolishi"
      ],
      "e": "Nima bo'lishi kerakligi aytilmasa, SI o'zicha taxmin qiladi."
     }

@@ -1,7 +1,7 @@
 {
   "module": "si-asoslari",
   "title": "Sun'iy intellekt asoslari",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "topics": [
     {
       "id": 1,
@@ -37,7 +37,7 @@
                 "Sun'iy intellekt",
                 "Sinf ustozi",
                 "Sayt egasi",
-                "Sinfdosh do'st"
+                "Sinfdagi do'sting"
               ],
               "correct": 0,
               "explain": "Matndagi SI — Sun'iy intellektning qisqa yozilishi."
@@ -105,8 +105,8 @@
               "q": "SI nima?",
               "options": [
                 "So'rovga javob beradigan dastur",
-                "Kompyuter ichidagi odam",
-                "Internet kabeli",
+                "Kompyuter ichida yashaydigan kichkina odam",
+                "Internetni ulaydigan kabel",
                 "Telefonning ekrani"
               ],
               "correct": 0,
@@ -154,7 +154,7 @@
               "options": [
                 "Bot savolingga javob yozdi",
                 "Chiroq o'zi yonib ketdi",
-                "Eshik qo'ng'irog'i chaldi",
+                "Eshik qo'ng'irog'i baland chaldi",
                 "Soat vaqtni ko'rsatdi"
               ],
               "correct": 0,
@@ -187,7 +187,7 @@
               "q": "SI qayerdan o'rgangan?",
               "options": [
                 "Internetdagi ko'p ma'lumotlardan",
-                "Bitta darslikdan",
+                "Maktabdagi bitta qalin darslikdan",
                 "Faqat sening xabaringdan",
                 "Hech qayerdan o'rganmagan"
               ],
@@ -224,7 +224,7 @@
               "options": [
                 "Kafe haqida internetda yozilgan bo'lsa",
                 "Kafeda ovqat yegan bo'lsa",
-                "Kafe yonidan o'tgan bo'lsa",
+                "SI har kuni kafe yonidan o'tgan bo'lsa",
                 "Kafe egasini tanisa"
               ],
               "correct": 0,
@@ -248,7 +248,7 @@
               "options": [
                 "O'rganganlari asosida yozadi",
                 "Zalga borib ko'radi",
-                "Murabbiydan so'rab oladi",
+                "Zal murabbiyidan telefonda so'rab oladi",
                 "Tanga tashlab tanlaydi"
               ],
               "correct": 0,
@@ -293,7 +293,7 @@
               "q": "Gul do'koniga reklama matni kerak. Matn paydo bo'lishi uchun nima qilish kerak?",
               "options": [
                 "SI'ga matn yozishni buyurish",
-                "SI o'zi sezishini kutish",
+                "SI o'zi sezib qolishini jim kutish",
                 "Kompyuterni qayta yoqish",
                 "Gulni ekran yoniga qo'yish"
               ],
@@ -374,7 +374,7 @@
               "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasang nima bo'ladi?",
               "options": [
                 "Boshqa nom chiqishi mumkin",
-                "Xuddi o'sha nom chiqadi",
+                "Xuddi o'sha nom yana chiqadi",
                 "SI javob bermaydi",
                 "Kafe yopilib qoladi"
               ],
@@ -387,7 +387,7 @@
               "options": [
                 "SI har safar yangidan yozadi",
                 "SI kecha xato qilgan",
-                "Kompyuter buzilib qolgan",
+                "Kompyuter kechasi buzilib qolgan",
                 "Internet o'zgarib qolgan"
               ],
               "correct": 0,
@@ -424,7 +424,7 @@
                 "Savolni yana bir bor beradi",
                 "Kompyuterni almashtiradi",
                 "Ertagacha kutib turadi",
-                "Yangi telefon sotib oladi"
+                "Do'konga borib yangi telefon sotib oladi"
               ],
               "correct": 0,
               "explain": "Bir savolni qayta bersang, SI yangi variant yozadi."
@@ -469,7 +469,7 @@
               "options": [
                 "Ikkalasini bir xil ishonch bilan",
                 "Faqat to'g'risini",
-                "Faqat xatosini",
+                "To'g'risini ishonchli, xatosini qo'rqib",
                 "Ikkalasini ham qo'rqib"
               ],
               "correct": 0,
@@ -493,7 +493,7 @@
               "options": [
                 "Avval tekshirib ko'raman",
                 "Darhol ishonaman",
-                "Do'stlarimga tarqataman",
+                "Darhol hamma do'stlarimga tarqataman",
                 "Zalga pul yuboraman"
               ],
               "correct": 0,
@@ -504,7 +504,7 @@
               "q": "Qaysi biri SI uchun odatiy?",
               "options": [
                 "Xatoni ham ishonch bilan aytish",
-                "Xato qilsa, o'zi ogohlantirish",
+                "Xato qilsa, o'zi darhol ogohlantirish",
                 "Bilmasa, jim qolish",
                 "Xato qilsa, qizarib ketish"
               ],
@@ -539,7 +539,7 @@
               "options": [
                 "Shart emas, solishtirish kerak",
                 "Ha, reklamada yozilgan",
-                "Ha, katta harflarda yozilgan",
+                "Ha, juda katta harflarda yozilgan",
                 "Ha, undov belgisi bor"
               ],
               "correct": 0,
@@ -574,7 +574,7 @@
               "q": "Ikki do'st bahslashdi: biri ishonch bilan, biri ikkilanib gapirdi. Kim haq?",
               "options": [
                 "Tekshirmasdan bilib bo'lmaydi",
-                "Ishonch bilan gapirgani",
+                "Ishonch bilan baland gapirgan do'st",
                 "Ikkilanib gapirgani",
                 "Ko'proq gapirgani"
               ],
@@ -587,7 +587,7 @@
               "options": [
                 "Ishonch rostlikni isbotlamaydi",
                 "Ukang albatta haq",
-                "Endi bahslashib bo'lmaydi",
+                "Endi u bilan bahslashib bo'lmaydi",
                 "Kit baliqqa aylandi"
               ],
               "correct": 0,
@@ -665,7 +665,7 @@
               "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasan?",
               "options": [
                 "Kitob nomini tekshiraman",
-                "Darhol pul olib boraman",
+                "Darhol do'konga pul olib boraman",
                 "Nomni boshqacha yozaman",
                 "SI'ga rahmat aytaman"
               ],
@@ -723,7 +723,7 @@
               "q": "Saytda sarlavha qizil chiqdi. Kim SI'ga to'g'ri yozdi?",
               "options": [
                 "Ali: «Sarlavha qizil chiqdi»",
-                "Vali: «Buni ko'ryapsanmi?»",
+                "Vali: «Ekrandagini ko'ryapsanmi?»",
                 "Gul: «Anavini tuzat»",
                 "Sami: «Shu yerda xato»"
               ],
@@ -749,7 +749,7 @@
                 "«Bu yer» qayerligini bilmaydi",
                 "SI ranglarni yomon ko'radi",
                 "Malika juda tez yozdi",
-                "Rangni o'zgartirib bo'lmaydi"
+                "Rangni umuman o'zgartirib bo'lmaydi"
               ],
               "correct": 0,
               "explain": "SI ekranni ko'rmaydi, «bu yer» qayerligini bilmaydi."
@@ -759,7 +759,7 @@
               "q": "Kafe menyusida narx xato chiqdi. SI'ga nimani yozish kerak?",
               "options": [
                 "Qaysi taomda qanday narx chiqqanini",
-                "Faqat «xato bor» degan gapni",
+                "Faqat «menyuda xato bor» degan gapni",
                 "Faqat kafe nomini",
                 "Faqat «tuzat» so'zini"
               ],
@@ -771,7 +771,7 @@
               "q": "Gul do'koni saytida rasm ochilmadi. SI bu haqda qachon biladi?",
               "options": [
                 "Sen yozib berganingda",
-                "Darhol o'zi ko'radi",
+                "Darhol o'zi ko'rib qoladi",
                 "Sayt ochilganda",
                 "Ertasi kuni o'zi"
               ],
@@ -793,7 +793,7 @@
               "q": "Aziz: «Saytimga sarlavha yoz» dedi. SI nimani bilmaydi?",
               "options": [
                 "Sayt nima haqida ekanini",
-                "Sarlavha nima ekanini",
+                "Sarlavha so'zi nima ekanini",
                 "Qanday yozishni",
                 "O'zbekcha so'zlarni"
               ],
@@ -806,7 +806,7 @@
               "options": [
                 "Kafe nomi va taomlarini",
                 "Bugungi ob-havoni",
-                "O'zingning yoshingni",
+                "O'zingning yoshing va sinfingni",
                 "Sevimli multfilmingni"
               ],
               "correct": 0,
@@ -830,7 +830,7 @@
               "options": [
                 "Unga sayt haqida aytilmagan",
                 "SI sportni yoqtirmaydi",
-                "SI hazil qilmoqchi bo'ldi",
+                "SI sen bilan hazil qilmoqchi bo'ldi",
                 "Sayt o'zi o'zgarib qoldi"
               ],
               "correct": 0,
@@ -889,7 +889,7 @@
                 "SI qaysi rasmligini bilmaydi",
                 "SI rasmni darhol tuzatadi",
                 "SI kechagi rasmni ochadi",
-                "SI rasmni o'chirib yuboradi"
+                "SI rasmni butunlay o'chirib yuboradi"
               ],
               "correct": 0,
               "explain": "Yangi suhbatdagi SI kechagi suhbatni bilmaydi."
@@ -900,7 +900,7 @@
               "options": [
                 "Kerakli ma'lumotni qayta yozaman",
                 "Hech narsa eslatmayman",
-                "Faqat «davom et» deyman",
+                "Faqat «kechagi ishni davom et» deyman",
                 "Suhbatni yopib qo'yaman"
               ],
               "correct": 0,
@@ -980,7 +980,7 @@
                 "SI'ga yozib, tuzatishni so'rash",
                 "Hech kimga aytmaslik",
                 "Sahifani yopib qo'yish",
-                "Xato o'zi tuzalishini kutish"
+                "Xato o'zi tuzalib qolishini kutish"
               ],
               "correct": 0,
               "explain": "Xato ko'rsang, SI'ga yoz va tuzatishni so'ra."
@@ -1016,7 +1016,7 @@
                 "Tuzatishni so'rashni",
                 "Salom berishni",
                 "O'z ismini",
-                "Bugungi sanani"
+                "Bugungi sana va vaqtni"
               ],
               "correct": 0,
               "explain": "Xatoni yozgach, tuzatishni ham so'rash kerak."
@@ -1026,7 +1026,7 @@
               "q": "Kitob do'koni sahifasida narx ikki marta yozilgan. SI'ga eng yaxshi so'rov qaysi?",
               "options": [
                 "«Narx ikki marta yozilgan, bittasini o'chir»",
-                "«Sahifada nimadir g'alati ko'rinyapti»",
+                "«Sahifada nimadir g'alati ko'rinyapti, tuzat»",
                 "«Kitoblar sahifasini menga ko'rsat»",
                 "«Narxlar haqida nima deysan?»"
               ],
@@ -1060,7 +1060,7 @@
               "q": "SI tavsiya qilgan «Quyosh bolalari» kitobi hech qayerda yo'q. Bu nimani bildiradi?",
               "options": [
                 "SI kitobni o'zi to'qib chiqargan",
-                "Kitob ko'rinmas bo'lib qolgan",
+                "Kitob sehrli ko'rinmas bo'lib qolgan",
                 "Kutubxona kitobni yashirgan",
                 "Internet kitobni o'chirgan"
               ],
@@ -1074,7 +1074,7 @@
                 "Saytni boshqa yo'l bilan qidiraman",
                 "Kompyuterni almashtiraman",
                 "Manzilni qayta-qayta ochaman",
-                "Sayt paydo bo'lishini kutaman"
+                "Sayt o'zi paydo bo'lishini kutib turaman"
               ],
               "correct": 0,
               "explain": "SI manzilni o'ylab topgan bo'lishi mumkin, boshqacha qidirish kerak."
@@ -1120,7 +1120,7 @@
               "q": "SI sport zali murabbiyining ismini aytdi. Nega buni tekshiramiz?",
               "options": [
                 "Ism o'ylab topilgan bo'lishi mumkin",
-                "Murabbiy ismini yashiradi",
+                "Murabbiy o'z ismini hammadan yashiradi",
                 "Ism juda uzun",
                 "SI sportni bilmaydi"
               ],
@@ -1142,7 +1142,7 @@
               "q": "«Sarlavhani kattalashtir» deding, SI esa rasmni kattalashtirdi. SI nimani adashtirdi?",
               "options": [
                 "Nimani kattalashtirish kerakligini",
-                "Qaysi rangni tanlashni",
+                "Sarlavhani qaysi rangga bo'yash kerakligini",
                 "Qaysi tilda yozishni",
                 "Qachon ishlashni"
               ],
@@ -1178,7 +1178,7 @@
               "q": "Ali «Gul do'koniga nom top» dedi, SI gul nomlarini yozdi. Xato qayerda?",
               "options": [
                 "Do'kon nomi o'rniga gul nomlari",
-                "SI yo'q gullarni o'ylab topdi",
+                "SI dunyoda yo'q gullarni o'ylab topdi",
                 "SI vazifani to'g'ri bajardi",
                 "SI do'konni yopib qo'ydi"
               ],
@@ -1236,7 +1236,7 @@
               "q": "Kafe sahifasida faqat narxni tuzattirding, lekin kafe nomi ham o'zgaribdi. Nima qilasan?",
               "options": [
                 "Nomni qaytarishni so'rayman",
-                "Yangi nom bilan qoldiraman",
+                "Kafeni yangi nom bilan qoldiraman",
                 "Hech narsa demayman",
                 "Narxni yana o'zgartiraman"
               ],
@@ -1249,7 +1249,7 @@
               "options": [
                 "Boshqa joylar o'zgarmaganini",
                 "Ekran yorqinligini",
-                "SI'ning kayfiyatini",
+                "SI'ning kayfiyati yaxshi ekanini",
                 "Internet tezligini"
               ],
               "correct": 0,
@@ -1261,7 +1261,7 @@
               "options": [
                 "Ha, shunday bo'lishi mumkin",
                 "Yo'q, hech qachon",
-                "Faqat dam olish kuni",
+                "Faqat dam olish kunlari va bayramda",
                 "Faqat sen uxlasang"
               ],
               "correct": 0,
@@ -1274,7 +1274,7 @@
                 "Gullar rasmi almashgan",
                 "Yangi raqam yozilgan",
                 "Eski raqam o'chgan",
-                "Raqam to'g'ri bo'lgan"
+                "Telefon raqami to'g'rilangan"
               ],
               "correct": 0,
               "explain": "Rasm so'ralmagan edi, uni o'zgartirish ortiqcha."
@@ -1320,7 +1320,7 @@
               "options": [
                 "Vazifani noto'g'ri tushundi",
                 "Yo'q narsani o'ylab topdi",
-                "Ortiqcha joyni o'zgartirdi",
+                "Ortiqcha joyni ham o'zgartirib qo'ydi",
                 "Bu xato emas, to'g'ri"
               ],
               "correct": 0,
@@ -1332,7 +1332,7 @@
               "options": [
                 "So'ralmagan joyga tegdi",
                 "Vazifani tushunmadi",
-                "Narxni o'ylab topdi",
+                "Yo'q narxni o'ylab topdi",
                 "Bu xato emas, to'g'ri"
               ],
               "correct": 0,
@@ -1380,7 +1380,7 @@
               "options": [
                 "To'g'ri tuzatishni so'rash uchun",
                 "SI'ni jazolash uchun",
-                "Xatoni yashirish uchun",
+                "Xatoni boshqalardan yashirish uchun",
                 "Vaqtni o'tkazish uchun"
               ],
               "correct": 0,
@@ -1415,7 +1415,7 @@
                 "SI'ga yozgan so'roving",
                 "SI yozgan javob",
                 "Saytning nomi",
-                "Kompyuter dasturi"
+                "Kompyuterdagi maxsus dastur"
               ],
               "correct": 0,
               "explain": "Prompt — sen SI'ga yozgan so'rov."
@@ -1449,7 +1449,7 @@
               "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
               "options": [
                 "Sen yozgan «Rasm chiz» xabari",
-                "SI chizgan rasm",
+                "SI chizib bergan katta rangli rasm",
                 "SI yozgan izoh",
                 "Ekrandagi sana"
               ],
@@ -1463,7 +1463,7 @@
                 "Yo'q, avval prompt kerak",
                 "Ha, o'zi biladi",
                 "Ha, har daqiqada",
-                "Faqat ertalab beradi"
+                "Faqat har kuni ertalab beradi"
               ],
               "correct": 0,
               "explain": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
@@ -1474,7 +1474,7 @@
               "options": [
                 "Uning promptini",
                 "SI javobini",
-                "Sayt manzilini",
+                "Saytning manzilini",
                 "Xato xabarini"
               ],
               "correct": 0,
@@ -1526,7 +1526,7 @@
                 "yangilik matni",
                 "nimadir",
                 "bir narsa",
-                "xohlaganingni"
+                "xohlagan narsangni"
               ],
               "correct": 0,
               "explain": "Nima kerakligi aniq aytilishi kerak: yangilik matni."
@@ -1550,7 +1550,7 @@
                 "«Kitob do'koniga sarlavha yoz»",
                 "«Kitob do'koni!!!»",
                 "«KITOB DO'KONI»",
-                "«Kitob do'koni haqida»"
+                "«Kitob do'koni haqida biror narsa»"
               ],
               "correct": 0,
               "explain": "Promptga nima kerakligi qo'shildi: sarlavha."
@@ -1611,7 +1611,7 @@
               "q": "SI juda uzun sarlavha yozdi. Promptga nima qo'shish kerak edi?",
               "options": [
                 "So'zlar soni chegarasi",
-                "Sarlavha rangi",
+                "Sarlavha rangi va shrifti",
                 "Sayt manzili",
                 "Bugungi sana"
               ],
@@ -1698,7 +1698,7 @@
                 "SI bilmaydigan, lekin ishga kerak ma'lumot",
                 "SI yozib bergan tayyor javob",
                 "Promptdagi tinish belgilari",
-                "Saytning eng katta sarlavhasi"
+                "Saytning eng tepasidagi katta, chiroyli sarlavha"
               ],
               "correct": 0,
               "explain": "Kontekst — SI o'zi bilmaydigan, lekin ish uchun kerak ma'lumot."
@@ -1720,7 +1720,7 @@
               "q": "Malika gul do'koni sayti uchun matn so'raydi. Qaysi gap kontekst?",
               "options": [
                 "«Do'konda faqat atirgul sotiladi»",
-                "«Iltimos, tezroq yozib ber»",
+                "«Iltimos, matnni tezroq yozib ber»",
                 "«Salom, menga yordam kerak»",
                 "«Rahmat, sen juda zo'rsan»"
               ],
@@ -1744,7 +1744,7 @@
               "q": "Jasur kitob do'koni saytiga ish vaqtini yozdirmoqchi. SI'ga nimani aytishi kerak?",
               "options": [
                 "Do'kon soat 9 dan 18 gacha ochiq",
-                "Kecha havo yomg'irli bo'lgan",
+                "Kecha shaharda kun bo'yi yomg'ir yoqqan",
                 "Uning uyida mushuk bor",
                 "U choyni yaxshi ko'radi"
               ],
@@ -1797,7 +1797,7 @@
                 "Sayt sport zali haqida ekani",
                 "Sening isming",
                 "Bugungi sana",
-                "Kompyutering nomi"
+                "Kompyuteringning nomi va modeli"
               ],
               "correct": 0,
               "explain": "Loyiha aytilmasa, SI o'zi taxmin qiladi va adashadi."
@@ -1832,7 +1832,7 @@
               "options": [
                 "«Bu bot kino chiptalarini sotadi»",
                 "«Bot tez javob bersin»",
-                "«Bot o'zbekcha yozsin»",
+                "«Bot faqat o'zbek tilida javob yozsin»",
                 "«Botga chiroyli nom top»"
               ],
               "correct": 0,
@@ -1896,7 +1896,7 @@
                 "Qoidalarni kichik bola o'qishi",
                 "O'yinning chiqqan yili",
                 "Nilufarning sevimli rangi",
-                "Qoidalar soni nechta ekani"
+                "Qoidalar soni nechta bo'lishi kerakligi"
               ],
               "correct": 0,
               "explain": "SI kim o'qishini bilmagani uchun qiyin so'zlar yozdi."
@@ -1906,7 +1906,7 @@
               "q": "Qaysi gap sayt kim uchun ekanini aytadi?",
               "options": [
                 "«Saytga sayyohlar kiradi»",
-                "«Bu mehmonxona sayti»",
+                "«Bu shahar markazidagi mehmonxona sayti»",
                 "«Matn 5 gapdan oshmasin»",
                 "«Javobni o'zbekcha yoz»"
               ],
@@ -1918,7 +1918,7 @@
               "q": "Akmal 1-sinflar o'qiydigan sayt uchun matn so'raydi. Qaysi prompt yaxshi?",
               "options": [
                 "«Saytni 7 yoshli bolalar o'qiydi. Matn yoz»",
-                "«Maktab sayti uchun matn yoz»",
+                "«Maktab sayti uchun uzun va chiroyli matn yoz»",
                 "«Uzun va chiroyli matn yoz»",
                 "«Matn yoz, tezroq bo'lsin»"
               ],
@@ -1930,7 +1930,7 @@
               "q": "Nega sayt kim uchun ekanini aytish kerak?",
               "options": [
                 "SI kimga mos yozishni bilishi uchun",
-                "Prompt uzun ko'rinishi uchun",
+                "Prompt uzunroq va chiroyli ko'rinishi uchun",
                 "SI tezroq ishlashi uchun",
                 "SI rasm chizishi uchun"
               ],
@@ -2046,7 +2046,7 @@
               "q": "Hayotda qaysi gap cheklovga o'xshaydi?",
               "options": [
                 "«Darsda telefon ishlatma»",
-                "«Uyga vazifani bajar»",
+                "«Uyga berilgan vazifani bajarib kel»",
                 "«Kitobni o'qib chiq»",
                 "«Doskaga misol yoz»"
               ],
@@ -2087,7 +2087,7 @@
                 "«Yozuvga tegma» degan gap",
                 "«Iltimos» degan so'z",
                 "Saytning to'liq nomi",
-                "Promptdagi undov belgisi"
+                "Promptning oxiridagi undov belgisi"
               ],
               "correct": 0,
               "explain": "Nimaga tegmaslikni aytmasa, SI boshqa joyni ham o'zgartirishi mumkin."
@@ -2134,7 +2134,7 @@
               "options": [
                 "SI so'ralmagan joyni o'zgartirmaydi",
                 "SI tezroq ishlaydi",
-                "Prompt chiroyli ko'rinadi",
+                "Prompt chiroyli va tartibli ko'rinadi",
                 "SI ko'proq matn yozadi"
               ],
               "correct": 0,
@@ -2185,7 +2185,7 @@
               "options": [
                 "SI nima keraksizligini bilmaydi",
                 "Bu gap juda uzun",
-                "SI bu so'zni tushunmaydi",
+                "SI bu so'zlarni umuman tushunmaydi",
                 "Bu gap boshqa tilda"
               ],
               "correct": 0,
@@ -2222,7 +2222,7 @@
                 "Choy va sharbatlarni",
                 "Osh va sho'rvani",
                 "Taomlar nomini",
-                "Menyu sarlavhasini"
+                "Menyuning katta sarlavhasini"
               ],
               "correct": 0,
               "explain": "Choy va sharbat — ichimlik, ular yozilmaydi."
@@ -2295,10 +2295,10 @@
               "id": "08.1-3",
               "q": "Qaysi promptda misol bor?",
               "options": [
-                "«Mana shu matnga o'xshatib yoz: ...»",
-                "«Qisqa matn yozib ber»",
-                "«O'zbekcha matn yoz»",
-                "«Kafe uchun matn yoz»"
+                "«Shu matnga o'xshatib yoz: ...»",
+                "«Qisqa va sodda matn yozib ber»",
+                "«O'zbek tilida matn yozib ber»",
+                "«Kafe uchun chiroyli matn yozib ber»"
               ],
               "correct": 0,
               "explain": "Unda SI'ga o'xshatish uchun namuna berilgan."
@@ -2308,7 +2308,7 @@
               "q": "Sardor qanday tugma kerakligini so'z bilan tushuntira olmayapti. Nima qilgani yaxshi?",
               "options": [
                 "O'xshash tugmani misol qilib beradi",
-                "«Yaxshi tugma qil» deb yozadi",
+                "«Menga eng yaxshi tugma qil» deb yozadi",
                 "SI o'zi topishini kutadi",
                 "Promptni qisqaroq qiladi"
               ],
@@ -2320,7 +2320,7 @@
               "q": "Nodira do'stining tabrik matnini misol qilib berdi. SI qanday matn yozadi?",
               "options": [
                 "Shu tabrikka o'xshash matn",
-                "Ob-havo haqida matn",
+                "Bugungi ob-havo haqida qisqa matn",
                 "Juda uzun ertak",
                 "Faqat bitta so'z"
               ],
@@ -2367,7 +2367,7 @@
               "options": [
                 "Boshqa sayt",
                 "Rasm",
-                "Matn",
+                "Yozilgan matn",
                 "Qo'shiq"
               ],
               "correct": 0,
@@ -2390,7 +2390,7 @@
               "q": "Nodira yoqqan matnni misol qilmoqchi. Uni SI'ga qanday beradi?",
               "options": [
                 "Matnni promptga qo'yib yuboradi",
-                "Matnni faqat o'ylab qo'yadi",
+                "Matnni faqat ichida o'ylab qo'yadi",
                 "Faqat matn nomini aytadi",
                 "Matnni o'chirib tashlaydi"
               ],
@@ -2404,7 +2404,7 @@
                 "Matn, rasm yoki boshqa sayt",
                 "Faqat matn",
                 "Faqat rasm",
-                "Faqat boshqa sayt"
+                "Faqat boshqa saytning manzili"
               ],
               "correct": 0,
               "explain": "Misol matn, rasm yoki boshqa sayt bo'lishi mumkin."
@@ -2453,7 +2453,7 @@
               "q": "Ali misol berdi, lekin nimani olishni aytmadi. Nima bo'lishi mumkin?",
               "options": [
                 "SI keraksiz narsani ham oladi",
-                "SI misolni umuman ko'rmaydi",
+                "SI misolni umuman ko'rib chiqmaydi",
                 "SI ishni boshlamaydi",
                 "SI faqat sarlavha yozadi"
               ],
@@ -2466,7 +2466,7 @@
               "options": [
                 "Bo'limlar tartibini",
                 "Taomlar nomini",
-                "Menyu ranglarini",
+                "Menyudagi barcha ranglarni",
                 "Taomlar narxini"
               ],
               "correct": 0,
@@ -2477,7 +2477,7 @@
               "q": "Misoldan nimalarni olishni aytish mumkin?",
               "options": [
                 "Rangini, uslubini yoki tuzilishini",
-                "Faqat egasining ismini",
+                "Faqat egasining ismi va familiyasini",
                 "Faqat telefon raqamini",
                 "Faqat undagi xatolarni"
               ],
@@ -2565,10 +2565,10 @@
               "id": "09.1-2",
               "q": "Qaysi prompt juda katta vazifa?",
               "options": [
-                "«Butun kafe saytini to'liq qil»",
-                "«Sarlavhani qizil qil»",
+                "«Butun kafe saytini qil»",
+                "«Sarlavhani qizil rangga bo'ya»",
                 "«Tugma yozuvini o'zgartir»",
-                "«Bitta rasm qo'sh»"
+                "«Saytga bitta rasm qo'sh»"
               ],
               "correct": 0,
               "explain": "Butun sayt — ko'p ishdan iborat katta vazifa."
@@ -2614,7 +2614,7 @@
               "q": "Qaysi o'quvchi SI'dan ko'proq xato javob olishi mumkin?",
               "options": [
                 "Butun saytni birdan so'ragan Ali",
-                "Faqat sarlavha so'ragan Vali",
+                "Faqat sarlavha so'ragan sinfdoshi Vali",
                 "Faqat tugma so'ragan Lola",
                 "Bitta rasm so'ragan Zarina"
               ],
@@ -2636,9 +2636,9 @@
               "q": "Kafe sayti katta vazifa. Uni qanday so'raysan?",
               "options": [
                 "Kichik qadamlarga bo'lib so'rayman",
-                "Bitta promptda birdan so'rayman",
-                "Ishni tashlab qo'yaman",
-                "SI o'zi bo'lishini kutaman"
+                "Hammasini bitta promptda birdan so'rayman",
+                "Ishni butunlay tashlab qo'yaman",
+                "SI o'zi bo'lib berishini kutaman"
               ],
               "correct": 0,
               "explain": "Katta vazifani kichik qadamlarga bo'lish kerak."
@@ -2661,7 +2661,7 @@
               "options": [
                 "1) Sarlavha, 2) Menyu, 3) Tugma",
                 "1) Butun sayt",
-                "1) Sayt va bot, 2) Qolgani",
+                "1) Sayt va bot, 2) Qolganining hammasi",
                 "1) Sayt, menyu, tugma birdan"
               ],
               "correct": 0,
@@ -2674,7 +2674,7 @@
                 "Xamir qorish, pishirish, bezash",
                 "Bir zumda tort tayyorlash",
                 "Faqat bezashning o'zi",
-                "Tortni do'kondan sotib olish"
+                "Tortni yaqindagi do'kondan sotib olish"
               ],
               "correct": 0,
               "explain": "Katta ish kichik qadamlarga bo'linsa, oson bajariladi."
@@ -2753,7 +2753,7 @@
                 "Bitta promptda uchta qadam bor",
                 "Prompt juda qisqa",
                 "Promptda salom yo'q",
-                "Prompt o'zbekcha yozilgan"
+                "Prompt lotin harflarida yozilgan"
               ],
               "correct": 0,
               "explain": "Bitta promptda faqat bitta qadam so'rash kerak."
@@ -2777,7 +2777,7 @@
                 "Bitta qadam",
                 "Ikki qadam",
                 "Uch qadam",
-                "Butun bot"
+                "Butun bot birdan"
               ],
               "correct": 0,
               "explain": "Unda faqat bitta ish so'ralgan."
@@ -2847,7 +2847,7 @@
               "q": "Aziz saytga tugma qo'shmoqchi. U birinchi nima qiladi?",
               "options": [
                 "Tugma qanday bo'lishini yozib qo'yadi",
-                "Darhol SI'ga prompt yuboradi",
+                "Hech o'ylamay darhol SI'ga prompt yuboradi",
                 "Saytni yopib qo'yadi",
                 "SI javobini kutib turadi"
               ],
@@ -2871,7 +2871,7 @@
               "q": "Bozorga borishdan oldin xarid ro'yxatini yozasan. Bu nimaga o'xshaydi?",
               "options": [
                 "Natijani oldindan yozib qo'yishga",
-                "SI javobini o'qishga",
+                "SI yozgan javobni boshidan o'qishga",
                 "Promptni o'chirishga",
                 "Yangi suhbat ochishga"
               ],
@@ -2938,7 +2938,7 @@
               "q": "Kutilgan natija: «Sarlavha 6 so'zdan oshmaydi». Buni qanday tekshirasan?",
               "options": [
                 "Sarlavhadagi so'zlarni sanayman",
-                "SI'dan yoqdimi deb so'rayman",
+                "SI'dan sarlavha yoqdimi deb so'rayman",
                 "Sarlavha rangiga qarayman",
                 "Do'stimdan fikrini so'rayman"
               ],
@@ -2963,7 +2963,7 @@
               "options": [
                 "Botga yozib, javobiga qarayman",
                 "Botning nomini o'qiyman",
-                "SI'ning gapiga ishonaman",
+                "SI'ning «bajardim» degan gapiga ishonaman",
                 "Promptni qayta o'qiyman"
               ],
               "correct": 0,
@@ -2973,10 +2973,10 @@
               "id": "10.2-5",
               "q": "Ali «Matn 3 qator», Vali «Matn qiziq» deb yozdi. Kimniki yaxshi?",
               "options": [
-                "Alining, uni sanab ko'rsa bo'ladi",
-                "Valining, u qiziqroq",
-                "Ikkalasi bir xil yaxshi",
-                "Ikkalasi ham yomon"
+                "Alining, uni sanasa bo'ladi",
+                "Valining, chunki uniki qiziqroq",
+                "Ikkalasi ham birdek yaxshi yozgan",
+                "Ikkalasining ham matni yomon"
               ],
               "correct": 0,
               "explain": "Qatorlarni sanab tekshirsa bo'ladi, «qiziq»ni esa yo'q."
@@ -3132,7 +3132,7 @@
               "q": "Nega natijani SI'ning so'ziga emas, o'zingga ishonib tekshirasan?",
               "options": [
                 "SI xato qilsa ham ishonch bilan gapiradi",
-                "SI hech qachon ishni tugatmaydi",
+                "SI hech qachon ishni oxirigacha tugatmaydi",
                 "SI natijani yashirib qo'yadi",
                 "Shunda sayt tezroq ochiladi"
               ],
@@ -3144,7 +3144,7 @@
               "q": "Sardor rasmni ochmay «zo'r» dedi. Keyin qarasa, mushuk o'rniga it. Qayerda adashdi?",
               "options": [
                 "Rasmni o'zi ochib ko'rmadi",
-                "Promptni juda uzun yozdi",
+                "Promptni juda uzun va chalkash yozdi",
                 "SI'ga rahmat aytmadi",
                 "Rasmni juda tez so'radi"
               ],
@@ -3228,7 +3228,7 @@
                 "Birorta band tushib qolmasligi uchun",
                 "Ko'proq vaqt ketishi uchun",
                 "SI'ni xursand qilish uchun",
-                "Sayt chiroyli bo'lishi uchun"
+                "Sayt chiroyliroq va rangliroq bo'lishi uchun"
               ],
               "correct": 0,
               "explain": "Bittalab tekshirsang, hech bir band esdan chiqmaydi."
@@ -3240,7 +3240,7 @@
                 "Yo'q, har bandni alohida ko'rishi kerak",
                 "Ha, bir qarash yetarli",
                 "Ha, sayt chiroyli bo'lsa bo'ldi",
-                "Yo'q, buni SI tekshirishi kerak"
+                "Yo'q, buni faqat SI o'zi tekshirishi kerak"
               ],
               "correct": 0,
               "explain": "Bir qarashda band tushib qolishi mumkin, har biri alohida ko'riladi."
@@ -3249,9 +3249,9 @@
               "id": "11.2-5",
               "q": "Kutilgan natijada 5 ta band bor. Qaysi usul to'g'ri?",
               "options": [
-                "Birinchisidan boshlab, bittalab ko'rish",
+                "Boshidan boshlab, bittalab ko'rish",
                 "Faqat oxirgisini ko'rish",
-                "Tasodifan ikkitasini tanlash",
+                "Tasodifan ikkitasini tanlab, o'shani ko'rish",
                 "Faqat eng qiyinini ko'rish"
               ],
               "correct": 0,
@@ -3264,7 +3264,7 @@
                 "Tili va gaplar soni",
                 "Faqat sarlavha",
                 "Hikoyaning rasmi",
-                "Hech narsa qolmadi"
+                "Hech narsa qolmadi, hammasi ko'rildi"
               ],
               "correct": 0,
               "explain": "Nodir uchta banddan faqat bittasini tekshirdi."
@@ -3296,7 +3296,7 @@
               "q": "Gul do'koni saytida hamma narsa joyida, faqat narxlar yo'q. Endi nima qilasan?",
               "options": [
                 "SI'dan narxlarni qo'shishni so'rayman",
-                "Saytni do'stlarimga yuboraman",
+                "Saytni shu holicha do'stlarimga yuboraman",
                 "Yangi sayt boshlayman",
                 "Narxlarsiz ham qoldiraman"
               ],
@@ -3345,7 +3345,7 @@
               "options": [
                 "Yo'q, avval o'sha band to'g'rilanadi",
                 "Ha, bitta band sezilmaydi",
-                "Ha, keyin to'g'rilasa bo'ladi",
+                "Ha, kamchilikni keyin to'g'rilasa ham bo'ladi",
                 "Ha, ko'pi tayyor-ku"
               ],
               "correct": 0,
@@ -3406,7 +3406,7 @@
               "options": [
                 "Qaysi tugma ekani, qayerdaligi",
                 "SI'ga rahmat so'zi",
-                "Ko'proq undov belgisi",
+                "Ko'proq undov belgisi va katta harflar",
                 "Saytning eski nomi"
               ],
               "correct": 0,
@@ -3419,7 +3419,7 @@
                 "Menyu ostidagi birinchi rasm",
                 "Bitta rasm",
                 "Anavi rasm",
-                "Saytdagi rasm"
+                "Saytdagi rasmlardan qaysidir bittasi"
               ],
               "correct": 0,
               "explain": "«Menyu ostidagi birinchi» deganda SI qaysi rasmligini aniq biladi."
@@ -3443,7 +3443,7 @@
                 "SI qaysi joyni tuzatishni bilishi uchun",
                 "Prompt uzunroq bo'lishi uchun",
                 "SI tezroq javob berishi uchun",
-                "Saytning rangi o'zgarishi uchun"
+                "Saytning rangi chiroyliroq o'zgarishi uchun"
               ],
               "correct": 0,
               "explain": "Joyni bilmasa, SI boshqa joyni o'zgartirib yuborishi mumkin."
@@ -3453,7 +3453,7 @@
               "q": "Laylo botga yozdi. Botning ikkinchi javobida xato bor. Laylo SI'ga qaysi joyni aytadi?",
               "options": [
                 "Botning ikkinchi javobini",
-                "Butun botni",
+                "Butun botni, boshidan oxirigacha",
                 "Botning nomini",
                 "O'z telefonini"
               ],
@@ -3494,7 +3494,7 @@
                 "«Sarlavha hozir juda kichik» deb",
                 "«Sarlavha juda yomon» deb",
                 "«Sarlavhani tuzat» deb",
-                "«Sarlavhada muammo bor» deb"
+                "«Sarlavhada qandaydir muammo bor» deb"
               ],
               "correct": 0,
               "explain": "«Hozir juda kichik» deganda SI sarlavha qanday ekanini biladi."
@@ -3516,7 +3516,7 @@
               "q": "Nega hozir ekranda qanday ekanini SI'ga yozib berasan?",
               "options": [
                 "SI sening ekraningni ko'rmaydi",
-                "SI ko'p so'zni yaxshi ko'radi",
+                "SI ko'p so'zli xabarni yaxshi ko'radi",
                 "Shunda sayt o'zi tuzaladi",
                 "SI rasm chiza olmaydi"
               ],
@@ -3603,7 +3603,7 @@
               "q": "Nega SI'ga natija qanday bo'lishi kerakligini aytasan?",
               "options": [
                 "SI o'zicha taxmin qilmasligi uchun",
-                "Prompt chiroyli ko'rinishi uchun",
+                "Prompt chiroyliroq va uzunroq ko'rinishi uchun",
                 "SI tezroq ishlashi uchun",
                 "Sayt ko'proq ochilishi uchun"
               ],
@@ -3616,7 +3616,7 @@
               "options": [
                 "Sarlavha ikki barobar katta bo'lsin",
                 "Sarlavha yaxshiroq bo'lsin",
-                "Sarlavha chiroyli bo'lsin",
+                "Sarlavha yanada chiroyliroq va yoqimli bo'lsin",
                 "Sarlavha boshqacha bo'lsin"
               ],
               "correct": 0,
@@ -3641,7 +3641,7 @@
                 "Jadvalni o'zicha, noto'g'ri to'ldirishi",
                 "Jasur xohlaganini aniq bilishi",
                 "Saytni butunlay o'chirishi",
-                "Jadvalga tegmay, jim turishi"
+                "Jadvalga umuman tegmay, jim turib qolishi"
               ],
               "correct": 0,
               "explain": "Nima bo'lishi kerakligi aytilmasa, SI o'zicha taxmin qiladi."
@@ -3700,7 +3700,7 @@
               "options": [
                 "Gul do'konida narxlar umuman yo'q",
                 "Narxlar bor, lekin juda mayda",
-                "«Sotib olish» tugmasi bosilmaydi",
+                "«Sotib olish» tugmasi bosilsa ishlamaydi",
                 "Ekranda «Error» yozuvi chiqdi"
               ],
               "correct": 0,
@@ -3782,7 +3782,7 @@
               "options": [
                 "Narsa ekranda bor, lekin boshqacha",
                 "Narsa ekranda umuman yo'q",
-                "Narsa bosilganda ishlamaydi",
+                "Narsa bosilganda hech narsa bo'lmaydi",
                 "Ekranda xato yozuvi chiqadi"
               ],
               "correct": 0,
@@ -3805,7 +3805,7 @@
               "q": "Bot javob beryapti, lekin ismingni xato yozyapti. SI'ga nima deysan?",
               "options": [
                 "Bot ismimni noto'g'ri ko'rsatyapti",
-                "Bot umuman javob bermayapti",
+                "Bot umuman hech qanday javob bermayapti",
                 "Botda ismim ko'rinmayapti",
                 "Botda xato xabari chiqdi"
               ],
@@ -3876,7 +3876,7 @@
               "options": [
                 "«Start» bosildi, bot jim turibdi",
                 "Botning rasmi umuman yo'q",
-                "Bot inglizcha javob beryapti",
+                "Bot savolga inglizcha javob beryapti",
                 "Botda «Error» yozuvi chiqdi"
               ],
               "correct": 0,
@@ -3956,7 +3956,7 @@
                 "Xato haqida yozuv paydo bo'ladi",
                 "Kutilgan narsa yo'qoladi",
                 "Narsa boshqa rangga kiradi",
-                "Bosganda hech narsa bo'lmaydi"
+                "Tugma bosilganda hech narsa bo'lmaydi"
               ],
               "correct": 0,
               "explain": "Xato xabari — ekranda paydo bo'lgan xato haqidagi yozuv."
@@ -4050,7 +4050,7 @@
               "options": [
                 "Bitta harf ham xato ketishi mumkin",
                 "Qo'lda yozish taqiqlangan",
-                "SI qo'lda yozilganni o'qimaydi",
+                "SI qo'lda yozilgan matnni o'qiy olmaydi",
                 "Xabar o'zi yo'qolib qoladi"
               ],
               "correct": 0,
@@ -4073,7 +4073,7 @@
               "q": "Jasur xato xabarini nusxalamoqchi. Birinchi nima qiladi?",
               "options": [
                 "Xabar matnini belgilab oladi",
-                "Xabarni daftarga yozadi",
+                "Xabarni avval daftarga ko'chirib yozadi",
                 "Sahifani yopib qo'yadi",
                 "SI'dan xabarni so'raydi"
               ],
@@ -4086,7 +4086,7 @@
               "options": [
                 "Yo'q, aynan o'zini nusxalashi kerak",
                 "Ha, tarjima aniqroq bo'ladi",
-                "Ha, SI faqat o'zbekcha tushunadi",
+                "Ha, SI faqat o'zbekcha matnni tushunadi",
                 "Ha, qisqaroq bo'ladi"
               ],
               "correct": 0,
@@ -4121,7 +4121,7 @@
                 "Yo'q, 4 qatorni ham berishi kerak",
                 "Ha, birinchi qator yetadi",
                 "Ha, qolgani keraksiz",
-                "Ha, SI qolganini o'zi biladi"
+                "Ha, SI qolgan qatorlarni o'zi biladi"
               ],
               "correct": 0,
               "explain": "Xabar bir qismi emas, to'liq beriladi."
@@ -4144,7 +4144,7 @@
               "options": [
                 "Xato sababini bila olmaydi",
                 "Xatoni darhol tuzatadi",
-                "Ekranga qarab o'zi topadi",
+                "Ekranga qarab, xatoni o'zi topib oladi",
                 "Qolganini saytdan o'qiydi"
               ],
               "correct": 0,
@@ -4156,7 +4156,7 @@
               "options": [
                 "Xato: TypeError: price is undefined, 12-qator",
                 "Xato: TypeError",
-                "Saytda TypeError degan narsa bor",
+                "Saytda TypeError degan qandaydir narsa chiqyapti",
                 "Xato chiqdi, tuzatib ber"
               ],
               "correct": 0,
@@ -4169,7 +4169,7 @@
                 "Qaytadan, oxirigacha nusxalaydi",
                 "Shuni yuboraveradi",
                 "Oxirini o'zi to'qib yozadi",
-                "Boshini ham o'chirib tashlaydi"
+                "Boshini ham o'chirib, hammasini tashlaydi"
               ],
               "correct": 0,
               "explain": "Xabar to'liq bo'lishi uchun oxirigacha nusxalash kerak."
@@ -4313,7 +4313,7 @@
               "q": "Bot ishlamay qoldi. Qaysi gapda Madina nima qilganini aytgan?",
               "options": [
                 "«Botga /start deb yozdim»",
-                "«Bot yomon ishlayapti»",
+                "«Bot negadir yomon ishlayapti»",
                 "«Botni tuzatib ber»",
                 "«Bu bot meniki»"
               ],
@@ -4327,7 +4327,7 @@
                 "Xato qayerdan chiqqanini bilishi uchun",
                 "Prompt uzunroq bo'lishi uchun",
                 "SI xursand bo'lishi uchun",
-                "Prompt chiroyli ko'rinishi uchun"
+                "Prompt chiroyliroq va uzunroq ko'rinishi uchun"
               ],
               "correct": 0,
               "explain": "Nima qilganingni bilsa, SI xato qayerdan chiqqanini topadi."
@@ -4362,7 +4362,7 @@
               "options": [
                 "«Jadvalni ochdim, xato chiqdi»",
                 "«Saytda xato bor»",
-                "«Xato chiqdi, tuzat»",
+                "«Xato chiqdi, tezroq tuzatib ber»",
                 "«Nimadir buzildi»"
               ],
               "correct": 0,
@@ -4396,7 +4396,7 @@
               "options": [
                 "Qadamlar teskari tartibda",
                 "Gaplar juda qisqa",
-                "Nuqtalar ko'p qo'yilgan",
+                "Nuqtalar juda ko'p qo'yib yuborilgan",
                 "Xato so'zi bor"
               ],
               "correct": 0,
@@ -4431,7 +4431,7 @@
               "q": "Jasur: «Avval saytni ochdim, keyin xato chiqdi.» Aslida u «Kirish»ni bosgandi. Nima yetishmaydi?",
               "options": [
                 "«Kirish»ni bosgan qadami",
-                "Saytning nomi",
+                "Saytning to'liq nomi va manzili",
                 "Xatoning rangi",
                 "Jasurning ismi"
               ],
@@ -4443,7 +4443,7 @@
               "q": "Botda nima qilganingni qanday yozgan ma'qul?",
               "options": [
                 "Har qadamni alohida, ketma-ket",
-                "Bitta uzun gapda aralashtirib",
+                "Bitta uzun gapda, hammasini aralashtirib",
                 "Faqat oxirgi qadamni",
                 "Esga kelgan tartibda"
               ],
@@ -4595,7 +4595,7 @@
               "options": [
                 "Bitta xatoni 3 marta tuzata olmasa",
                 "Javobni sekin yozsa",
-                "Bir marta xato qilsa",
+                "Bir marta kichkina xato qilib qo'ysa",
                 "Juda uzun javob yozsa"
               ],
               "correct": 0,
@@ -4618,7 +4618,7 @@
               "q": "SI Madinaning rasmini bir marta tuzata olmadi. SI aylanib qoldimi?",
               "options": [
                 "Yo'q, bu faqat birinchi urinish",
-                "Ha, darhol aylanib qoldi",
+                "Ha, birinchi urinishdayoq aylanib qoldi",
                 "Ha, SI butunlay buzildi",
                 "Ha, chunki rasm katta"
               ],
@@ -4630,8 +4630,8 @@
               "q": "SI 3 xil xatoni tuzatdi, har birini birinchi urinishda. Bu aylanib qolishmi?",
               "options": [
                 "Yo'q, har biri birdan tuzaldi",
-                "Ha, 3 ta xato bo'ldi",
-                "Ha, SI ko'p ishladi",
+                "Ha, 3 ta har xil xato bo'ldi",
+                "Ha, SI juda ko'p marta ishladi",
                 "Ha, uch marta yozdi"
               ],
               "correct": 0,
@@ -4677,7 +4677,7 @@
               "options": [
                 "Muammoni boshqa so'zlar bilan yozadi",
                 "Xuddi shu gapni yana yozadi",
-                "Gapni katta harflar bilan yozadi",
+                "Xuddi o'sha gapni katta harflar bilan yozadi",
                 "Hech narsa yozmay kutadi"
               ],
               "correct": 0,
@@ -4701,7 +4701,7 @@
               "options": [
                 "Yo'q, faqat belgi qo'shildi",
                 "Ha, endi gap boshqa",
-                "Ha, undov belgisi yetarli",
+                "Ha, uchta undov belgisi yetarli bo'ladi",
                 "Ha, endi SI tushunadi"
               ],
               "correct": 0,
@@ -4711,8 +4711,8 @@
               "id": "16.2-4",
               "q": "Kamola muammoni boshqacha yozmoqchi. Gapiga nimani qo'shsa yaxshi?",
               "options": [
-                "Nima bo'lishi kerak edi, nima bo'ldi",
-                "Sevimli rangi va yoshini",
+                "Nima kutgani va nima bo'lgani",
+                "O'zining sevimli rangi va yoshini",
                 "O'sha gapni ikki marta",
                 "Faqat \"tezroq\" so'zini"
               ],
@@ -4726,7 +4726,7 @@
                 "SI muammoni yangicha tushunadi",
                 "SI tezroq yoza boshlaydi",
                 "Sayt rangi o'zgaradi",
-                "SI eski javobni qaytaradi"
+                "SI yana o'sha eski javobini qaytaradi"
               ],
               "correct": 0,
               "explain": "Yangi so'zlar SI'ga muammoni boshqa tomondan ko'rsatadi."
@@ -4782,7 +4782,7 @@
               "q": "Qaysi xabar yangi suhbatni boshlash uchun yaxshi?",
               "options": [
                 "\"Gul saytimda savatcha tugmasi ishlamayapti\"",
-                "\"Hali ham ishlamayapti\"",
+                "\"Hali ham ishlamayapti, iltimos, tezroq tuzat\"",
                 "\"O'sha xatoni tuzat\"",
                 "\"Yana urinib ko'r\""
               ],
@@ -4796,7 +4796,7 @@
                 "Loyiha nima haqida ekani",
                 "Undov belgilari",
                 "Salomlashish so'zi",
-                "Xato xabarining rangi"
+                "Xato xabarining rangi qanaqaligi"
               ],
               "correct": 0,
               "explain": "Yangi suhbatda SI loyihani bilmaydi, uni qaytadan ayt."
@@ -4820,7 +4820,7 @@
                 "SI ishni toza boshdan boshlaydi",
                 "SI tezroq yoza boshlaydi",
                 "Sayt o'zi tuzalib qoladi",
-                "Eski xato javoblar saqlanadi"
+                "Eski xato javoblar ham saqlanib qoladi"
               ],
               "correct": 0,
               "explain": "Yangi suhbatda SI eski xato yo'lini takrorlamaydi."
@@ -4849,7 +4849,7 @@
               "q": "Oldin: \"Rasm chiqmayapti\". Qaysi yangi gap aniqroq?",
               "options": [
                 "\"Bosh sahifada mushuk rasmi ko'rinmayapti\"",
-                "\"Rasm chiqmayapti, tuzat\"",
+                "\"Rasm hali ham chiqmayapti, iltimos tuzat\"",
                 "\"RASM CHIQMAYAPTI\"",
                 "\"Rasm yana chiqmayapti\""
               ],
@@ -4873,7 +4873,7 @@
               "q": "Otabek yozdi: \"Bot yomon.\" Bu gapda nima yetishmaydi?",
               "options": [
                 "Bot nima qilishi kerakligi",
-                "Botning chiroyli ismi",
+                "Botning chiroyli va qisqa ismi",
                 "Undov belgilari",
                 "Katta harflar"
               ],
@@ -4885,7 +4885,7 @@
               "q": "Sport zali sayti. Qaysi gapda kutilgan va bo'lgan narsa bor?",
               "options": [
                 "\"Soat chiqishi kerak, bo'sh joy chiqyapti\"",
-                "\"Soat ishlamayapti\"",
+                "\"Soat ishlamayapti, nimadir bo'sh chiqyapti\"",
                 "\"Soatni tuzat\"",
                 "\"Soat yana buzildi\""
               ],
@@ -4899,7 +4899,7 @@
                 "Yo'q, faqat bitta so'z almashdi",
                 "Ha, so'z boshqa bo'ldi",
                 "Ha, endi gap qisqaroq",
-                "Ha, SI albatta tushunadi"
+                "Ha, endi SI albatta yaxshi tushunadi"
               ],
               "correct": 0,
               "explain": "Bitta so'zni almashtirish muammoni yangicha tushuntirmaydi."
@@ -4945,7 +4945,7 @@
                 "Fayllarni o'zi o'zgartiradi",
                 "Faqat javob yozadi",
                 "Faqat rasm chizadi",
-                "Kompyuterni o'chiradi"
+                "Kompyuterni o'zi o'chirib qo'yadi"
               ],
               "correct": 0,
               "explain": "Agent rejimida SI fayllarni o'zi o'zgartiradi."
@@ -4969,7 +4969,7 @@
                 "Agent rejimi",
                 "Oddiy chat",
                 "Rasm rejimi",
-                "Tungi rejim"
+                "Tungi qorong'i rejim"
               ],
               "correct": 0,
               "explain": "Fayl o'zi o'zgardi, demak bu agent rejimi."
@@ -5004,7 +5004,7 @@
               "options": [
                 "Kodni faylga qo'lda ko'chirishdan",
                 "Prompt yozishdan",
-                "Natijani ko'rishdan",
+                "Natijani o'z ko'zi bilan ko'rishdan",
                 "O'ylab ko'rishdan"
               ],
               "correct": 0,
@@ -5025,7 +5025,7 @@
               "q": "Agent kafe saytiga tugma qo'shdi. Keyin nima qiladi?",
               "options": [
                 "O'zgarishni senga ko'rsatadi",
-                "Indamay ishni tugatadi",
+                "Indamay ishni tugatib, ketib qoladi",
                 "Saytni o'chirib qo'yadi",
                 "Yangi suhbat ochadi"
               ],
@@ -5051,7 +5051,7 @@
                 "Sen ko'rib chiqishing uchun",
                 "Maqtanish uchun",
                 "Vaqt o'tishi uchun",
-                "Faylni o'chirish uchun"
+                "Eski faylni o'chirib tashlash uchun"
               ],
               "correct": 0,
               "explain": "Sen o'zgarishni ko'rib, to'g'rimi yo'qmi bilishing kerak."
@@ -5073,7 +5073,7 @@
               "q": "Jasur agent ko'rsatgan o'zgarishda o'zi so'ramagan qatorni ko'rdi. Bu nimaga yordam berdi?",
               "options": [
                 "Ortiqcha o'zgarishni sezishga",
-                "Saytni tezlashtirishga",
+                "Saytni ancha tezroq ishlatishga",
                 "Prompt yozishga",
                 "Rasm chizishga"
               ],
@@ -5156,7 +5156,7 @@
               "options": [
                 "Xato o'zgarish o'zi saqlanmaydi",
                 "Agent tezroq ishlaydi",
-                "Sayt chiroyliroq bo'ladi",
+                "Sayt ancha chiroyliroq bo'lib qoladi",
                 "SI ko'proq yozadi"
               ],
               "correct": 0,
@@ -5244,7 +5244,7 @@
               "q": "Qaysi prompt SI'dan reja so'raydi?",
               "options": [
                 "\"Boshlamay, avval reja yozib ber\"",
-                "\"Saytni hoziroq qilib ber\"",
+                "\"Saytni hoziroq to'liq qilib ber\"",
                 "\"Tezroq bo'l\"",
                 "\"Rangni ko'k qil\""
               ],
@@ -5258,7 +5258,7 @@
                 "SI nima qilishini oldindan bilasan",
                 "SI tezroq yozadi",
                 "Sayt chiroyli bo'ladi",
-                "Xato umuman bo'lmaydi"
+                "Saytda hech qachon xato bo'lmay qoladi"
               ],
               "correct": 0,
               "explain": "Reja SI qiladigan ishlarni oldindan ko'rsatadi."
@@ -5280,7 +5280,7 @@
               "q": "Jasur reja so'ramay, darhol butun botni so'radi. Qanday xavf bor?",
               "options": [
                 "SI keraksiz ish qilgan bo'lishi mumkin",
-                "Bot juda chiroyli chiqadi",
+                "Bot juda chiroyli va tez bo'lib chiqadi",
                 "SI charchab qoladi",
                 "Xavf umuman yo'q"
               ],
@@ -5339,7 +5339,7 @@
               "options": [
                 "Ikkalasini olib tashlashni aytadi",
                 "Faqat bittasini aytadi",
-                "Rejani shundayicha qoldiradi",
+                "Rejani hech o'zgartirmay shundayicha qoldiradi",
                 "Butun rejani o'chiradi"
               ],
               "correct": 0,
@@ -5364,7 +5364,7 @@
                 "Qadamning raqami yoki nomi",
                 "Undov belgisi",
                 "Salom so'zi",
-                "Katta harflar"
+                "Katta harflar va undov belgisi"
               ],
               "correct": 0,
               "explain": "Qaysi qadam ekanini aniq ayt: raqami yoki nomi."
@@ -5410,7 +5410,7 @@
                 "Kerakli narsalarni rejadan qidiraman",
                 "SI o'zi aytguncha kutaman",
                 "Rejani o'qimay qabul qilaman",
-                "Faqat birinchi qadamni o'qiyman"
+                "Faqat birinchi qadamni diqqat bilan o'qiyman"
               ],
               "correct": 0,
               "explain": "Har bir kerakli narsa rejada bormi, qarab chiq."
@@ -5433,7 +5433,7 @@
               "options": [
                 "\"Kitob rasmlari qadamini qo'sh\"",
                 "\"Yaxshi reja emas\"",
-                "\"Rejani qaytadan yoz\"",
+                "\"Rejani boshidan qaytadan yozib ber\"",
                 "\"Rasmlar kerak emas\""
               ],
               "correct": 0,
@@ -5530,7 +5530,7 @@
               "options": [
                 "Saytni telefonda ochib",
                 "Faqat SI javobida",
-                "Fayl nomiga qarab",
+                "Faqat fayl nomiga qarab",
                 "Do'stining saytida"
               ],
               "correct": 0,
@@ -5542,7 +5542,7 @@
               "options": [
                 "Buzilgan narsa saqlanib qolishi mumkin",
                 "Sayt tezroq ishlaydi",
-                "Xavf yo'q, SI aytdi",
+                "Xavf yo'q, chunki SI hammasi tayyor dedi",
                 "Agent xafa bo'ladi"
               ],
               "correct": 0,
@@ -5555,7 +5555,7 @@
                 "Yo'q, rasmni ham ko'rish kerak",
                 "Ha, sarlavha yetarli",
                 "Ha, SI tayyor degan",
-                "Ha, sahifa ochildi-ku"
+                "Ha, sahifa ochildi-ku, shu yetarli"
               ],
               "correct": 0,
               "explain": "O'zgargan hamma narsani ochib ko'rish kerak."
@@ -5587,7 +5587,7 @@
               "q": "Madina hali saytni ochib ko'rmadi. Hozir qabul qilsa bo'ladimi?",
               "options": [
                 "Yo'q, avval ochib ko'radi",
-                "Ha, SI tayyor dedi",
+                "Ha, SI hammasi tayyor dedi",
                 "Ha, tezroq bo'ladi",
                 "Ha, keyin ko'radi"
               ],
@@ -5669,7 +5669,7 @@
               "q": "Logotip yo'qolib qoldi. Qaysi xabar SI'ga yaxshi?",
               "options": [
                 "\"Rad qilaman: logotip yo'qolib qoldi\"",
-                "\"Yomon bo'ldi\"",
+                "\"Yomon bo'ldi, hammasini qaytadan qil\"",
                 "\"Qaytadan qil\"",
                 "\"Hammasi joyida\""
               ],
@@ -5683,7 +5683,7 @@
                 "Aynan nima buzilgani",
                 "Undov belgisi",
                 "Salom so'zi",
-                "Sardorning ismi"
+                "Sardorning ismi va familiyasi"
               ],
               "correct": 0,
               "explain": "SI nima buzilganini bilmasa, uni tuzata olmaydi."
@@ -5693,7 +5693,7 @@
               "q": "Jasur o'zgarishni rad qildi. Sayt endi qanday?",
               "options": [
                 "O'zgarishdan oldingidek",
-                "Buzilgan holicha",
+                "Buzilgan holicha qolib ketadi",
                 "Bo'm-bo'sh",
                 "Butunlay yangi"
               ],
@@ -5719,7 +5719,7 @@
                 "SI aynan shuni tuzatishi uchun",
                 "SI'ni xafa qilish uchun",
                 "Vaqt o'tkazish uchun",
-                "Xabar uzun bo'lishi uchun"
+                "Xabar uzunroq va chiroyli bo'lishi uchun"
               ],
               "correct": 0,
               "explain": "Nima buzilganini bilsa, SI uni tuzata oladi."
@@ -5802,7 +5802,7 @@
               "options": [
                 "Parolni o'chirib, keyin yuboradi",
                 "Baribir yuboradi",
-                "Parolni ikki marta yozadi",
+                "Parolni ikki marta qilib yozib yuboradi",
                 "Faqat parolni yuboradi"
               ],
               "correct": 0,
@@ -5826,7 +5826,7 @@
               "options": [
                 "Parol faqat senda qolishi kerak",
                 "Parol juda uzun",
-                "SI raqamlarni o'qimaydi",
+                "SI uzun raqamlarni o'qiy olmaydi",
                 "Parol chiroyli emas"
               ],
               "correct": 0,
@@ -5847,7 +5847,7 @@
               "q": "Qaysi biri bot tokeniga o'xshaydi?",
               "options": [
                 "7123456:ABC-fake",
-                "@kafe_bot",
+                "@kafe_toshkent_bot",
                 "Salom!",
                 "/start"
               ],
@@ -5858,7 +5858,7 @@
               "id": "20.2-2",
               "q": "Gul do'koni boti ishlamayapti. Qaysi prompt xavfsiz?",
               "options": [
-                "\"@gul_bot javob bermayapti. Yordam ber\"",
+                "\"@gul_bot jim turibdi. Yordam ber\"",
                 "\"Tokenim 7123456:ABC-fake, tekshir\"",
                 "\"Mana tokenim, botni ishlat\"",
                 "\"Token va parolim shu\""
@@ -5909,7 +5909,7 @@
                 "Bot nima qilishi kerakligini",
                 "Bot tokenini",
                 "Bot kalitini",
-                "Token va parolni"
+                "Bot tokenini va o'zining parolini"
               ],
               "correct": 0,
               "explain": "Bot vazifasini aytish xavfsiz, token va kalit esa yo'q."
@@ -5943,7 +5943,7 @@
                 "\"Telefon raqami uchun joy qoldir\"",
                 "O'z raqamimni yozaman",
                 "Uy manzilimni yozaman",
-                "Onamning raqamini yozaman"
+                "Onamning telefon raqamini to'liq yozaman"
               ],
               "correct": 0,
               "explain": "Joy so'rash yetarli, haqiqiy raqam kerak emas."
@@ -5979,7 +5979,7 @@
                 "Hujjat raqami berilmaydi",
                 "Yozsa bo'ladi",
                 "Yarmini yozsin",
-                "Katta harfda yozsin"
+                "Katta harflar bilan yozsa bo'ladi"
               ],
               "correct": 0,
               "explain": "Hujjat raqami shaxsiy ma'lumot, u SI'ga berilmaydi."
@@ -6066,7 +6066,7 @@
               "q": "Nega bunday taklifda to'xtash kerak?",
               "options": [
                 "Kerakli fayllar ham yo'qolishi mumkin",
-                "SI charchab qolishi mumkin",
+                "SI ishlayverib charchab qolishi mumkin",
                 "Sayt sekinlashib qoladi",
                 "Fayllar rangi o'zgaradi"
               ],
@@ -6079,7 +6079,7 @@
               "options": [
                 "Ular orasida keraklisi bormi",
                 "Fayllarning rangini",
-                "Fayl nomlari uzunligini",
+                "Fayl nomlari qancha uzunligini",
                 "SI qancha tez ishlashini"
               ],
               "correct": 0,
@@ -6138,7 +6138,7 @@
                 "Kalit bilan botingni boshqaradi",
                 "Hech narsa qila olmaydi",
                 "Faqat rangini ko'radi",
-                "Sahifani chiroyli qiladi"
+                "Sahifani yanada chiroyliroq qilib qo'yadi"
               ],
               "correct": 0,
               "explain": "Kalitni topgan odam uni o'zi ishlatishi mumkin."
@@ -6162,7 +6162,7 @@
                 "Rad qilib, olib tashlashni so'rayman",
                 "Shundayicha qoldiraman",
                 "Kalitni kattaroq yozdiraman",
-                "Sahifani do'stlarga yuboraman"
+                "Sahifani shu holicha do'stlarga yuboraman"
               ],
               "correct": 0,
               "explain": "Sahifa kodida kalit turmasligi kerak."
@@ -6186,7 +6186,7 @@
                 "Sahifani ochgan har kim",
                 "Faqat Kamola",
                 "Faqat SI",
-                "Uni hech kim ko'rmaydi"
+                "Uni hech kim, hech qachon ko'rmaydi"
               ],
               "correct": 0,
               "explain": "Sahifa hammaga ochiq, undagi kalitni ham hamma ko'radi."
@@ -6218,7 +6218,7 @@
               "q": "Qaysi prompt to'g'ri?",
               "options": [
                 "\"Bu buyruq nima qiladi? Sodda tushuntir\"",
-                "\"Tushunmadim, baribir bajaraman\"",
+                "\"Tushunmadim, lekin baribir bajarib ko'raman\"",
                 "\"Yana uzunroq buyruq yoz\"",
                 "\"Buyruqni ikki marta ber\""
               ],
@@ -6230,7 +6230,7 @@
               "q": "Nega tushunmagan buyruqni bajarmaysan?",
               "options": [
                 "U nimanidir o'chirishi mumkin",
-                "Buyruq juda qisqa",
+                "Buyruq juda qisqa va oddiy ko'rinadi",
                 "Kompyuter charchaydi",
                 "Buyruq ingliz tilida"
               ],

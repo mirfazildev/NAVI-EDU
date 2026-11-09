@@ -18,7 +18,7 @@ CONTENT[2] = {
      "q": "SI taklif qilgan kafe nomi yoqmadi. Yana so'rasang nima bo'ladi?",
      "o": [
       "Boshqa nom chiqishi mumkin",
-      "Xuddi o'sha nom chiqadi",
+      "Xuddi o'sha nom yana chiqadi",
       "SI javob bermaydi",
       "Kafe yopilib qoladi"
      ],
@@ -30,7 +30,7 @@ CONTENT[2] = {
      "o": [
       "SI har safar yangidan yozadi",
       "SI kecha xato qilgan",
-      "Kompyuter buzilib qolgan",
+      "Kompyuter kechasi buzilib qolgan",
       "Internet o'zgarib qolgan"
      ],
      "e": "SI javobni har safar yangidan yozadi."
@@ -64,7 +64,7 @@ CONTENT[2] = {
       "Savolni yana bir bor beradi",
       "Kompyuterni almashtiradi",
       "Ertagacha kutib turadi",
-      "Yangi telefon sotib oladi"
+      "Do'konga borib yangi telefon sotib oladi"
      ],
      "e": "Bir savolni qayta bersang, SI yangi variant yozadi."
     }
@@ -100,7 +100,7 @@ CONTENT[2] = {
      "o": [
       "Ikkalasini bir xil ishonch bilan",
       "Faqat to'g'risini",
-      "Faqat xatosini",
+      "To'g'risini ishonchli, xatosini qo'rqib",
       "Ikkalasini ham qo'rqib"
      ],
      "e": "SI to'g'ri javobni ham, xatoni ham ishonch bilan aytadi."
@@ -122,7 +122,7 @@ CONTENT[2] = {
      "o": [
       "Avval tekshirib ko'raman",
       "Darhol ishonaman",
-      "Do'stlarimga tarqataman",
+      "Darhol hamma do'stlarimga tarqataman",
       "Zalga pul yuboraman"
      ],
      "e": "SI ishonch bilan yozsa ham, xato bo'lishi mumkin."
@@ -132,7 +132,7 @@ CONTENT[2] = {
      "q": "Qaysi biri SI uchun odatiy?",
      "o": [
       "Xatoni ham ishonch bilan aytish",
-      "Xato qilsa, o'zi ogohlantirish",
+      "Xato qilsa, o'zi darhol ogohlantirish",
       "Bilmasa, jim qolish",
       "Xato qilsa, qizarib ketish"
      ],
@@ -159,7 +159,7 @@ CONTENT[2] = {
      "o": [
       "Shart emas, solishtirish kerak",
       "Ha, reklamada yozilgan",
-      "Ha, katta harflarda yozilgan",
+      "Ha, juda katta harflarda yozilgan",
       "Ha, undov belgisi bor"
      ],
      "e": "Ishonch bilan yozilgan gap har doim to'g'ri bo'lavermaydi."
@@ -191,7 +191,7 @@ CONTENT[2] = {
      "q": "Ikki do'st bahslashdi: biri ishonch bilan, biri ikkilanib gapirdi. Kim haq?",
      "o": [
       "Tekshirmasdan bilib bo'lmaydi",
-      "Ishonch bilan gapirgani",
+      "Ishonch bilan baland gapirgan do'st",
       "Ikkilanib gapirgani",
       "Ko'proq gapirgani"
      ],
@@ -203,7 +203,7 @@ CONTENT[2] = {
      "o": [
       "Ishonch rostlikni isbotlamaydi",
       "Ukang albatta haq",
-      "Endi bahslashib bo'lmaydi",
+      "Endi u bilan bahslashib bo'lmaydi",
       "Kit baliqqa aylandi"
      ],
      "e": "Ishonch bilan aytilgan gap ham xato bo'lishi mumkin."
@@ -261,7 +261,7 @@ CONTENT[2] = {
      "q": "SI tavsiya qilgan kitobning nomi bor. Do'konga borishdan oldin nima qilasan?",
      "o": [
       "Kitob nomini tekshiraman",
-      "Darhol pul olib boraman",
+      "Darhol do'konga pul olib boraman",
       "Nomni boshqacha yozaman",
       "SI'ga rahmat aytaman"
      ],

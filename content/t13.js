@@ -19,7 +19,7 @@ CONTENT[13] = {
      "o": [
       "Gul do'konida narxlar umuman yo'q",
       "Narxlar bor, lekin juda mayda",
-      "«Sotib olish» tugmasi bosilmaydi",
+      "«Sotib olish» tugmasi bosilsa ishlamaydi",
       "Ekranda «Error» yozuvi chiqdi"
      ],
      "e": "Narxlar umuman yo'q — kutilgan narsa ekranda ko'rinmayapti."
@@ -89,7 +89,7 @@ CONTENT[13] = {
      "o": [
       "Narsa ekranda bor, lekin boshqacha",
       "Narsa ekranda umuman yo'q",
-      "Narsa bosilganda ishlamaydi",
+      "Narsa bosilganda hech narsa bo'lmaydi",
       "Ekranda xato yozuvi chiqadi"
      ],
      "e": "«Noto'g'ri ko'rinyapti»da narsa bor, faqat kutilgandek emas."
@@ -110,7 +110,7 @@ CONTENT[13] = {
      "q": "Bot javob beryapti, lekin ismingni xato yozyapti. SI'ga nima deysan?",
      "o": [
       "Bot ismimni noto'g'ri ko'rsatyapti",
-      "Bot umuman javob bermayapti",
+      "Bot umuman hech qanday javob bermayapti",
       "Botda ismim ko'rinmayapti",
       "Botda xato xabari chiqdi"
      ],
@@ -170,7 +170,7 @@ CONTENT[13] = {
      "o": [
       "«Start» bosildi, bot jim turibdi",
       "Botning rasmi umuman yo'q",
-      "Bot inglizcha javob beryapti",
+      "Bot savolga inglizcha javob beryapti",
       "Botda «Error» yozuvi chiqdi"
      ],
      "e": "Bosding, bot hech narsa qilmadi — demak ishlamayapti."
@@ -230,7 +230,7 @@ CONTENT[13] = {
       "Xato haqida yozuv paydo bo'ladi",
       "Kutilgan narsa yo'qoladi",
       "Narsa boshqa rangga kiradi",
-      "Bosganda hech narsa bo'lmaydi"
+      "Tugma bosilganda hech narsa bo'lmaydi"
      ],
      "e": "Xato xabari — ekranda paydo bo'lgan xato haqidagi yozuv."
     },

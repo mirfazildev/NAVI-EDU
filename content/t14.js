@@ -19,7 +19,7 @@ CONTENT[14] = {
      "o": [
       "Bitta harf ham xato ketishi mumkin",
       "Qo'lda yozish taqiqlangan",
-      "SI qo'lda yozilganni o'qimaydi",
+      "SI qo'lda yozilgan matnni o'qiy olmaydi",
       "Xabar o'zi yo'qolib qoladi"
      ],
      "e": "Qayta yozganda bitta harf adashsa ham, ma'no o'zgaradi."
@@ -40,7 +40,7 @@ CONTENT[14] = {
      "q": "Jasur xato xabarini nusxalamoqchi. Birinchi nima qiladi?",
      "o": [
       "Xabar matnini belgilab oladi",
-      "Xabarni daftarga yozadi",
+      "Xabarni avval daftarga ko'chirib yozadi",
       "Sahifani yopib qo'yadi",
       "SI'dan xabarni so'raydi"
      ],
@@ -52,7 +52,7 @@ CONTENT[14] = {
      "o": [
       "Yo'q, aynan o'zini nusxalashi kerak",
       "Ha, tarjima aniqroq bo'ladi",
-      "Ha, SI faqat o'zbekcha tushunadi",
+      "Ha, SI faqat o'zbekcha matnni tushunadi",
       "Ha, qisqaroq bo'ladi"
      ],
      "e": "Xabar o'zgartirilmasdan, aynan o'zi nusxalab beriladi."
@@ -79,7 +79,7 @@ CONTENT[14] = {
       "Yo'q, 4 qatorni ham berishi kerak",
       "Ha, birinchi qator yetadi",
       "Ha, qolgani keraksiz",
-      "Ha, SI qolganini o'zi biladi"
+      "Ha, SI qolgan qatorlarni o'zi biladi"
      ],
      "e": "Xabar bir qismi emas, to'liq beriladi."
     },
@@ -100,7 +100,7 @@ CONTENT[14] = {
      "o": [
       "Xato sababini bila olmaydi",
       "Xatoni darhol tuzatadi",
-      "Ekranga qarab o'zi topadi",
+      "Ekranga qarab, xatoni o'zi topib oladi",
       "Qolganini saytdan o'qiydi"
      ],
      "e": "Bitta so'zdan SI xato sababini bila olmaydi, u ekranni ko'rmaydi."
@@ -111,7 +111,7 @@ CONTENT[14] = {
      "o": [
       "Xato: TypeError: price is undefined, 12-qator",
       "Xato: TypeError",
-      "Saytda TypeError degan narsa bor",
+      "Saytda TypeError degan qandaydir narsa chiqyapti",
       "Xato chiqdi, tuzatib ber"
      ],
      "e": "Bu promptda xabarning hamma qismi bor."
@@ -123,7 +123,7 @@ CONTENT[14] = {
       "Qaytadan, oxirigacha nusxalaydi",
       "Shuni yuboraveradi",
       "Oxirini o'zi to'qib yozadi",
-      "Boshini ham o'chirib tashlaydi"
+      "Boshini ham o'chirib, hammasini tashlaydi"
      ],
      "e": "Xabar to'liq bo'lishi uchun oxirigacha nusxalash kerak."
     },

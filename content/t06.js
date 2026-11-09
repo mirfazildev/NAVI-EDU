@@ -9,7 +9,7 @@ CONTENT[6] = {
       "SI bilmaydigan, lekin ishga kerak ma'lumot",
       "SI yozib bergan tayyor javob",
       "Promptdagi tinish belgilari",
-      "Saytning eng katta sarlavhasi"
+      "Saytning eng tepasidagi katta, chiroyli sarlavha"
      ],
      "e": "Kontekst — SI o'zi bilmaydigan, lekin ish uchun kerak ma'lumot."
     },
@@ -29,7 +29,7 @@ CONTENT[6] = {
      "q": "Malika gul do'koni sayti uchun matn so'raydi. Qaysi gap kontekst?",
      "o": [
       "«Do'konda faqat atirgul sotiladi»",
-      "«Iltimos, tezroq yozib ber»",
+      "«Iltimos, matnni tezroq yozib ber»",
       "«Salom, menga yordam kerak»",
       "«Rahmat, sen juda zo'rsan»"
      ],
@@ -51,7 +51,7 @@ CONTENT[6] = {
      "q": "Jasur kitob do'koni saytiga ish vaqtini yozdirmoqchi. SI'ga nimani aytishi kerak?",
      "o": [
       "Do'kon soat 9 dan 18 gacha ochiq",
-      "Kecha havo yomg'irli bo'lgan",
+      "Kecha shaharda kun bo'yi yomg'ir yoqqan",
       "Uning uyida mushuk bor",
       "U choyni yaxshi ko'radi"
      ],
@@ -90,7 +90,7 @@ CONTENT[6] = {
       "Sayt sport zali haqida ekani",
       "Sening isming",
       "Bugungi sana",
-      "Kompyutering nomi"
+      "Kompyuteringning nomi va modeli"
      ],
      "e": "Loyiha aytilmasa, SI o'zi taxmin qiladi va adashadi."
     },
@@ -122,7 +122,7 @@ CONTENT[6] = {
      "o": [
       "«Bu bot kino chiptalarini sotadi»",
       "«Bot tez javob bersin»",
-      "«Bot o'zbekcha yozsin»",
+      "«Bot faqat o'zbek tilida javob yozsin»",
       "«Botga chiroyli nom top»"
      ],
      "e": "Bu gap bot qanday loyiha ekanini — kino chiptalari haqida ekanini aytadi."
@@ -171,7 +171,7 @@ CONTENT[6] = {
       "Qoidalarni kichik bola o'qishi",
       "O'yinning chiqqan yili",
       "Nilufarning sevimli rangi",
-      "Qoidalar soni nechta ekani"
+      "Qoidalar soni nechta bo'lishi kerakligi"
      ],
      "e": "SI kim o'qishini bilmagani uchun qiyin so'zlar yozdi."
     },
@@ -180,7 +180,7 @@ CONTENT[6] = {
      "q": "Qaysi gap sayt kim uchun ekanini aytadi?",
      "o": [
       "«Saytga sayyohlar kiradi»",
-      "«Bu mehmonxona sayti»",
+      "«Bu shahar markazidagi mehmonxona sayti»",
       "«Matn 5 gapdan oshmasin»",
       "«Javobni o'zbekcha yoz»"
      ],
@@ -191,7 +191,7 @@ CONTENT[6] = {
      "q": "Akmal 1-sinflar o'qiydigan sayt uchun matn so'raydi. Qaysi prompt yaxshi?",
      "o": [
       "«Saytni 7 yoshli bolalar o'qiydi. Matn yoz»",
-      "«Maktab sayti uchun matn yoz»",
+      "«Maktab sayti uchun uzun va chiroyli matn yoz»",
       "«Uzun va chiroyli matn yoz»",
       "«Matn yoz, tezroq bo'lsin»"
      ],
@@ -202,7 +202,7 @@ CONTENT[6] = {
      "q": "Nega sayt kim uchun ekanini aytish kerak?",
      "o": [
       "SI kimga mos yozishni bilishi uchun",
-      "Prompt uzun ko'rinishi uchun",
+      "Prompt uzunroq va chiroyli ko'rinishi uchun",
       "SI tezroq ishlashi uchun",
       "SI rasm chizishi uchun"
      ],

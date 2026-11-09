@@ -17,10 +17,10 @@ CONTENT[9] = {
      "id": "09.1-2",
      "q": "Qaysi prompt juda katta vazifa?",
      "o": [
-      "«Butun kafe saytini to'liq qil»",
-      "«Sarlavhani qizil qil»",
+      "«Butun kafe saytini qil»",
+      "«Sarlavhani qizil rangga bo'ya»",
       "«Tugma yozuvini o'zgartir»",
-      "«Bitta rasm qo'sh»"
+      "«Saytga bitta rasm qo'sh»"
      ],
      "e": "Butun sayt — ko'p ishdan iborat katta vazifa."
     },
@@ -62,7 +62,7 @@ CONTENT[9] = {
      "q": "Qaysi o'quvchi SI'dan ko'proq xato javob olishi mumkin?",
      "o": [
       "Butun saytni birdan so'ragan Ali",
-      "Faqat sarlavha so'ragan Vali",
+      "Faqat sarlavha so'ragan sinfdoshi Vali",
       "Faqat tugma so'ragan Lola",
       "Bitta rasm so'ragan Zarina"
      ],
@@ -77,9 +77,9 @@ CONTENT[9] = {
      "q": "Kafe sayti katta vazifa. Uni qanday so'raysan?",
      "o": [
       "Kichik qadamlarga bo'lib so'rayman",
-      "Bitta promptda birdan so'rayman",
-      "Ishni tashlab qo'yaman",
-      "SI o'zi bo'lishini kutaman"
+      "Hammasini bitta promptda birdan so'rayman",
+      "Ishni butunlay tashlab qo'yaman",
+      "SI o'zi bo'lib berishini kutaman"
      ],
      "e": "Katta vazifani kichik qadamlarga bo'lish kerak."
     },
@@ -100,7 +100,7 @@ CONTENT[9] = {
      "o": [
       "1) Sarlavha, 2) Menyu, 3) Tugma",
       "1) Butun sayt",
-      "1) Sayt va bot, 2) Qolgani",
+      "1) Sayt va bot, 2) Qolganining hammasi",
       "1) Sayt, menyu, tugma birdan"
      ],
      "e": "Har bir qadam — bitta kichik ish."
@@ -112,7 +112,7 @@ CONTENT[9] = {
       "Xamir qorish, pishirish, bezash",
       "Bir zumda tort tayyorlash",
       "Faqat bezashning o'zi",
-      "Tortni do'kondan sotib olish"
+      "Tortni yaqindagi do'kondan sotib olish"
      ],
      "e": "Katta ish kichik qadamlarga bo'linsa, oson bajariladi."
     },
@@ -171,7 +171,7 @@ CONTENT[9] = {
       "Bitta promptda uchta qadam bor",
       "Prompt juda qisqa",
       "Promptda salom yo'q",
-      "Prompt o'zbekcha yozilgan"
+      "Prompt lotin harflarida yozilgan"
      ],
      "e": "Bitta promptda faqat bitta qadam so'rash kerak."
     },
@@ -193,7 +193,7 @@ CONTENT[9] = {
       "Bitta qadam",
       "Ikki qadam",
       "Uch qadam",
-      "Butun bot"
+      "Butun bot birdan"
      ],
      "e": "Unda faqat bitta ish so'ralgan."
     },

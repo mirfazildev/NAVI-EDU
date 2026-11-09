@@ -7,7 +7,7 @@ CONTENT[15] = {
      "q": "Bot ishlamay qoldi. Qaysi gapda Madina nima qilganini aytgan?",
      "o": [
       "«Botga /start deb yozdim»",
-      "«Bot yomon ishlayapti»",
+      "«Bot negadir yomon ishlayapti»",
       "«Botni tuzatib ber»",
       "«Bu bot meniki»"
      ],
@@ -20,7 +20,7 @@ CONTENT[15] = {
       "Xato qayerdan chiqqanini bilishi uchun",
       "Prompt uzunroq bo'lishi uchun",
       "SI xursand bo'lishi uchun",
-      "Prompt chiroyli ko'rinishi uchun"
+      "Prompt chiroyliroq va uzunroq ko'rinishi uchun"
      ],
      "e": "Nima qilganingni bilsa, SI xato qayerdan chiqqanini topadi."
     },
@@ -52,7 +52,7 @@ CONTENT[15] = {
      "o": [
       "«Jadvalni ochdim, xato chiqdi»",
       "«Saytda xato bor»",
-      "«Xato chiqdi, tuzat»",
+      "«Xato chiqdi, tezroq tuzatib ber»",
       "«Nimadir buzildi»"
      ],
      "e": "Bu promptda xato chiqishidan oldin nima qilingani aytilgan."
@@ -78,7 +78,7 @@ CONTENT[15] = {
      "o": [
       "Qadamlar teskari tartibda",
       "Gaplar juda qisqa",
-      "Nuqtalar ko'p qo'yilgan",
+      "Nuqtalar juda ko'p qo'yib yuborilgan",
       "Xato so'zi bor"
      ],
      "e": "Qadamlar «avval…, keyin…» tartibida yozilishi kerak."
@@ -110,7 +110,7 @@ CONTENT[15] = {
      "q": "Jasur: «Avval saytni ochdim, keyin xato chiqdi.» Aslida u «Kirish»ni bosgandi. Nima yetishmaydi?",
      "o": [
       "«Kirish»ni bosgan qadami",
-      "Saytning nomi",
+      "Saytning to'liq nomi va manzili",
       "Xatoning rangi",
       "Jasurning ismi"
      ],
@@ -121,7 +121,7 @@ CONTENT[15] = {
      "q": "Botda nima qilganingni qanday yozgan ma'qul?",
      "o": [
       "Har qadamni alohida, ketma-ket",
-      "Bitta uzun gapda aralashtirib",
+      "Bitta uzun gapda, hammasini aralashtirib",
       "Faqat oxirgi qadamni",
       "Esga kelgan tartibda"
      ],

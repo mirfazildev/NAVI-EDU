@@ -29,7 +29,7 @@ CONTENT[21] = {
      "q": "Nega bunday taklifda to'xtash kerak?",
      "o": [
       "Kerakli fayllar ham yo'qolishi mumkin",
-      "SI charchab qolishi mumkin",
+      "SI ishlayverib charchab qolishi mumkin",
       "Sayt sekinlashib qoladi",
       "Fayllar rangi o'zgaradi"
      ],
@@ -41,7 +41,7 @@ CONTENT[21] = {
      "o": [
       "Ular orasida keraklisi bormi",
       "Fayllarning rangini",
-      "Fayl nomlari uzunligini",
+      "Fayl nomlari qancha uzunligini",
       "SI qancha tez ishlashini"
      ],
      "e": "Tekshirish — o'chadigan narsa orasida kerakli fayl bormi qarash."
@@ -90,7 +90,7 @@ CONTENT[21] = {
       "Kalit bilan botingni boshqaradi",
       "Hech narsa qila olmaydi",
       "Faqat rangini ko'radi",
-      "Sahifani chiroyli qiladi"
+      "Sahifani yanada chiroyliroq qilib qo'yadi"
      ],
      "e": "Kalitni topgan odam uni o'zi ishlatishi mumkin."
     },
@@ -112,7 +112,7 @@ CONTENT[21] = {
       "Rad qilib, olib tashlashni so'rayman",
       "Shundayicha qoldiraman",
       "Kalitni kattaroq yozdiraman",
-      "Sahifani do'stlarga yuboraman"
+      "Sahifani shu holicha do'stlarga yuboraman"
      ],
      "e": "Sahifa kodida kalit turmasligi kerak."
     },
@@ -134,7 +134,7 @@ CONTENT[21] = {
       "Sahifani ochgan har kim",
       "Faqat Kamola",
       "Faqat SI",
-      "Uni hech kim ko'rmaydi"
+      "Uni hech kim, hech qachon ko'rmaydi"
      ],
      "e": "Sahifa hammaga ochiq, undagi kalitni ham hamma ko'radi."
     }
@@ -158,7 +158,7 @@ CONTENT[21] = {
      "q": "Qaysi prompt to'g'ri?",
      "o": [
       "\"Bu buyruq nima qiladi? Sodda tushuntir\"",
-      "\"Tushunmadim, baribir bajaraman\"",
+      "\"Tushunmadim, lekin baribir bajarib ko'raman\"",
       "\"Yana uzunroq buyruq yoz\"",
       "\"Buyruqni ikki marta ber\""
      ],
@@ -169,7 +169,7 @@ CONTENT[21] = {
      "q": "Nega tushunmagan buyruqni bajarmaysan?",
      "o": [
       "U nimanidir o'chirishi mumkin",
-      "Buyruq juda qisqa",
+      "Buyruq juda qisqa va oddiy ko'rinadi",
       "Kompyuter charchaydi",
       "Buyruq ingliz tilida"
      ],

@@ -9,7 +9,7 @@ CONTENT[5] = {
       "SI'ga yozgan so'roving",
       "SI yozgan javob",
       "Saytning nomi",
-      "Kompyuter dasturi"
+      "Kompyuterdagi maxsus dastur"
      ],
      "e": "Prompt — sen SI'ga yozgan so'rov."
     },
@@ -40,7 +40,7 @@ CONTENT[5] = {
      "q": "Suhbatda to'rt narsa bor. Qaysi biri prompt?",
      "o": [
       "Sen yozgan «Rasm chiz» xabari",
-      "SI chizgan rasm",
+      "SI chizib bergan katta rangli rasm",
       "SI yozgan izoh",
       "Ekrandagi sana"
      ],
@@ -53,7 +53,7 @@ CONTENT[5] = {
       "Yo'q, avval prompt kerak",
       "Ha, o'zi biladi",
       "Ha, har daqiqada",
-      "Faqat ertalab beradi"
+      "Faqat har kuni ertalab beradi"
      ],
      "e": "SI ishni o'zi boshlamaydi, avval prompt yoziladi."
     },
@@ -63,7 +63,7 @@ CONTENT[5] = {
      "o": [
       "Uning promptini",
       "SI javobini",
-      "Sayt manzilini",
+      "Saytning manzilini",
       "Xato xabarini"
      ],
      "e": "Do'sting SI'ga yozgan so'rov — uning prompti."
@@ -101,7 +101,7 @@ CONTENT[5] = {
       "yangilik matni",
       "nimadir",
       "bir narsa",
-      "xohlaganingni"
+      "xohlagan narsangni"
      ],
      "e": "Nima kerakligi aniq aytilishi kerak: yangilik matni."
     },
@@ -123,7 +123,7 @@ CONTENT[5] = {
       "«Kitob do'koniga sarlavha yoz»",
       "«Kitob do'koni!!!»",
       "«KITOB DO'KONI»",
-      "«Kitob do'koni haqida»"
+      "«Kitob do'koni haqida biror narsa»"
      ],
      "e": "Promptga nima kerakligi qo'shildi: sarlavha."
     },
@@ -169,7 +169,7 @@ CONTENT[5] = {
      "q": "SI juda uzun sarlavha yozdi. Promptga nima qo'shish kerak edi?",
      "o": [
       "So'zlar soni chegarasi",
-      "Sarlavha rangi",
+      "Sarlavha rangi va shrifti",
       "Sayt manzili",
       "Bugungi sana"
      ],
