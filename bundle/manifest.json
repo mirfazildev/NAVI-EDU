@@ -1,0 +1,17 @@
+{
+  "module": "si-asoslari",
+  "version": "1.0.0",
+  "built": "2026-11-09",
+  "sha256": {
+    "content.json": "4bd4ebe32f4780ac16d662eb8ec057eaf9cf5d3ac6cdce16378704f85b97b52e",
+    "practice.mjs": "b2f419a06659eaa4ed4b8006b6750099a0e7176c68fa40665c289a6e3401944d"
+  },
+  "counts": {
+    "topics": 21,
+    "bns": 84,
+    "testBns": 64,
+    "practiceBns": 20,
+    "questions": 414,
+    "questionsInTestBns": 384
+  }
+}
