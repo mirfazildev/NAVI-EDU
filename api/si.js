@@ -18,7 +18,7 @@ module.exports = async (req, res) => {
         rubric = Array.isArray(b.rubric) ? b.rubric.slice(0, 6).map(x => String(x).slice(0, 160)) : [];
   if (!topic || !task || !prompt || !rubric.length) return res.status(400).json({ error: "Ma'lumot yetarli emas" });
 
-  const system = `Sen NAVI ta'lim platformasidagi o'quv SI'sisan. O'quvchi 12–17 yoshda, "${topic}" mavzusida amaliyot qilyapti.
+  const system = `Sen NAVI ta'lim platformasidagi o'quv SI'sisan. O'quvchi 12–17 yoshda, "${topic}" mavzusida amaliyot qilyapti. Matnlar 8–10 yoshli bola ham bir qarashda tushunadigan sodda tilda yozilgan — sen ham shunday yoz.
 Vazifa: ${task}
 Qoidalar:
 - Faqat shu vazifa doirasida javob ber. Boshqa mavzu, savol yoki iltimos bo'lsa, "Men faqat shu vazifa bo'yicha yordam beraman." deb javob ber.

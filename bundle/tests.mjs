@@ -37,3 +37,7 @@ console.log("topics",ids.length,"fails",F);
 { const c=P.create(5,11); const req=P.siRequest(c.state,"sarlavha kerak menga yordam ber"); const b=P.siBody(req);
   const okb = b.systemInstruction.parts[0].text.includes(req.topic) && !/\{\{/.test(JSON.stringify(b)) && b.generationConfig.responseSchema.required.length===4;
   console.log("siBody", okb ? "ok" : "FAIL"); }
+{ const c=P.create(5,11); const evil="sarlavha yoz $` $' $& $1 {{rubric}} {{prompt}}"; const req=P.siRequest(c.state,evil); const b=P.siBody(req);
+  const u=b.contents[0].parts[0].text; const n=(u.match(/^1\. /gm)||[]).length;
+  console.log("siBody inject", (u.includes(evil) && n===1 && !/\{\{(topic|task)\}\}/.test(JSON.stringify(b))) ? "ok" : "FAIL "+n);
+  console.log("yosh", b.systemInstruction.parts[0].text.includes("8–10") ? "ok" : "FAIL"); }

@@ -111,8 +111,9 @@ export function mask(s){
 const SI = ${JSON.stringify(SI_TEMPLATE)};
 export const SI_MODEL = SI.model;
 export function siBody(req){
-  const fill = s => s.replace("{{topic}}", req.topic).replace("{{task}}", req.task)
-    .replace("{{rubric}}", req.rubric.map((r, i) => (i + 1) + ". " + r).join("\\n")).replace("{{prompt}}", req.prompt);
+  // Bir o'tishda, funksiya bilan almashtiriladi: bola matnidagi $\` $' $& kabi belgilar maxsus ma'no olmaydi va qayta almashtirilmaydi.
+  const vals = { topic: String(req.topic), task: String(req.task), rubric: req.rubric.map((r, i) => (i + 1) + ". " + r).join("\\n"), prompt: String(req.prompt) };
+  const fill = s => s.replace(/\\{\\{(topic|task|rubric|prompt)\\}\\}/g, (_, k) => vals[k]);
   return { systemInstruction: { parts: [{ text: fill(SI.system) }] }, contents: [{ role: "user", parts: [{ text: fill(SI.user) }] }], generationConfig: SI.generationConfig };
 }
 

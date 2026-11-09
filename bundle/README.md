@@ -1,4 +1,4 @@
-# NAVI matnli darslar paketi — v1.0.1
+# NAVI matnli darslar paketi — v1.0.2
 
 "Sun'iy intellekt asoslari" moduli matnli ko'rinishda: 21 mavzu, 84 BN, 414 savol va 20 ta amaliyot generatori.
 
@@ -81,5 +81,6 @@ Paket NAVI-EDU prototipidan `node build.mjs <navi-app> <chiqish> <versiya>` bila
 
 ## O'zgarishlar
 
+- **1.0.2** — `siBody`: bola matnidagi `$` belgilari (`` $` ``, `$'`, `$&`) so'rov tanasini buzmaydi — almashtirish bir o'tishda, funksiya bilan (Ilyos topgan). Tizim promptiga til darajasi qo'shildi: o'quvchi 12–17 yosh, matnlar 8–10 yoshli bola tushunadigan sodda tilda.
 - **1.0.1** — `siBody(req)`, `SI_MODEL` va `si.template.json` qo'shildi (Gemini tizim prompti va sxemasi paket ichida). Kontent o'zgarmagan.
 - **1.0.0** — birinchi versiya.
