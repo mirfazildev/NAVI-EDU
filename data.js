@@ -16,7 +16,7 @@ const TOPICS = [
   {t:"SI sizning ekraningizni ko'rmaydi. Nimani ko'rayotganingizni unga yozib bering."},
   {t:"Siz aytmasangiz, SI loyihangizni bilmaydi."},
   {t:"Yangi suhbat ochsangiz, SI oldingi suhbatni bilmaydi."},
-  {t:"SI bilmagan narsasini so'ramaydi, o'zi to'ldirib yuboradi. Shuning uchun kerakli ma'lumotni o'zingiz bering.", ex:`Kutilgan: sarlavha katta. Sahifada esa ${M("sarlavha juda kichik")}. Prompt: «Sarlavha juda kichik, ${M("kattaroq qilib tuzat")}».`, practice:true}]},
+  {t:"Sahifada xato ko'rsangiz, SI'ga yozing va tuzatishni so'rang.", ex:`Siz ko'rdingiz: sarlavha juda kichik.<br>SI'ga yozasiz: «${M("Sarlavha juda kichik")}, ${M("kattaroq qil")}».`, practice:true}]},
  {id:4, b:"A", name:"SI xatolarining turlari", pre:[2], bns:[
   {t:`SI yo'q narsani ${M("o'ylab topishi")} mumkin.`},
   {t:`SI vazifani ${M("noto'g'ri tushunishi")} mumkin.`},

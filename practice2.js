@@ -46,18 +46,19 @@ const PR2 = (() => {
 
   /* 3. Ko'rgan narsani SI'ga yozib berish */
   const T3 = () => {
+    // Vazifa bitta savol: "X bo'lishi uchun SI'ga nima deb yozasiz?" (sodda, 8–10 yosh o'qish darajasi)
     const P = [
-      {p:{btnColor:"#e6e7ec", btn:"Buyurtma berish"}, exp:"«Buyurtma berish» tugmasi ko'k rangda va aniq ko'rinadi", el:/tugma/, st:/(korinmay|oq|kulrang|bilinmay|xira|och|rangsiz|kok emas)/, d:"tugma rangi juda och, deyarli ko'rinmayapti"},
-      {p:{titleSize:11}, exp:"sarlavha katta va aniq ko'rinadi", el:/sarlav|nom/, st:/(kichik|mayda|korinmay)/, d:"sarlavha juda kichik"},
-      {p:{img:false, extra:'<div class="mimg broken">✕ kafe.jpg yuklanmadi</div>'}, exp:"kafe rasmi ko'rinadi", el:/rasm/, st:/(chiqmay|korinmay|yoq|buzil|ochilmay|yuklanmadi|yuklanmay)/, d:"rasm chiqmayapti"},
-      {p:{btnPos:"tepa"}, exp:"tugma sahifaning eng pastida turadi", el:/tugma/, st:/(tepa|yuqori|ustida|boshida|joyi)/, d:"tugma sahifaning tepasida turibdi, pastda bo'lishi kerak"}];
+      {p:{btnColor:"#e6e7ec", btn:"Buyurtma berish"}, q:"Tugma aniq ko'rinishi uchun SI'ga nima deb yozasiz?", el:/(tugma|knopk)/, st:/(korinmay|oq|kulrang|bilinmay|xira|och|rangsiz|kok|aniq|yorqin|toq|rang|korinsin|korinadigan)/, d:"tugma aniq ko'rinsin"},
+      {p:{titleSize:11}, q:"Sarlavha katta bo'lishi uchun SI'ga nima deb yozasiz?", el:/sarlav|nom/, st:/(kichik|mayda|korinmay|katta|kattalashtir)/, d:"sarlavha kattaroq bo'lsin"},
+      {p:{img:false, extra:'<div class="mimg broken">✕ kafe.jpg yuklanmadi</div>'}, q:"Rasm chiqishi uchun SI'ga nima deb yozasiz?", el:/rasm/, st:/(chiqmay|korinmay|yoq|buzil|ochilmay|yuklanmadi|yuklanmay|chiqar|chiqsin|korinsin|qoy|joyla)/, d:"rasm chiqsin"},
+      {p:{btnPos:"tepa"}, q:"Tugma eng pastda turishi uchun SI'ga nima deb yozasiz?", el:/(tugma|knopk)/, st:/(tepa|yuqori|ustida|boshida|joyi|past|oxir|tag)/, d:"tugma eng pastda tursin"}];
     const s = pick(P);
-    return {ai:{rubric:[{q:`Muammo aytilganmi: ${s.d}?`,miss:`Muammo yozilmagan: ${s.d}.`},{q:"SI'dan tuzatish so'ralganmi?",miss:"SI'dan nima qilishni so'rang: masalan, \"tuzat\"."}]},type:"site", mode:"prompt", page:page(s.p), text:`Kutilgan: ${s.exp}. Sahifada bitta narsa boshqacha. SI sizning ekraningizni ko'rmaydi — nima noto'g'ri ekanini unga yozing va tuzatishni so'rang.`,
+    return {ai:{rubric:[{q:`Nima o'zgarishi aytilganmi: ${s.d}?`,miss:`Nima o'zgarishini yozing: ${s.d}.`},{q:"SI'dan buni qilish so'ralganmi?",miss:"SI'dan so'rang: masalan, \"qil\" yoki \"tuzat\"."}]},type:"site", mode:"prompt", page:page(s.p), text:s.q,
       check(raw){
-        const b=basic(raw); if(b) return res(false,b,"Nima bo'ldi? Aniqroq yozing.");
-        const p=norm(raw), hasEl=s.el.test(p), hasSt=s.st.test(p), verb=/(tuzat|togirla|ozgartir|qil|yordam|togril)/.test(p);
-        const m=[]; if(!hasEl||!hasSt) m.push(`Muammo yozilmagan: ${s.d}.`); if(!verb) m.push("SI'dan nima qilishni so'rang: masalan, \"tuzat\".");
-        return res(!m.length, m.length?m:"SI endi muammoni biladi.", !hasEl||!hasSt?"Men sahifangizni ko'rmayapman. Qayerda, nima noto'g'ri?":`Tushundim: ${s.d}. Tuzataman.`);
+        const b=basic(raw,{min:2}); if(b) return res(false,b,"Nima qilay? Aniqroq yozing.");
+        const p=norm(raw), hasEl=s.el.test(p), hasSt=s.st.test(p), verb=/(tuzat|togirla|ozgartir|qil|yordam|togril|tush|sur|qoy|chiqar|joyla|tursin|bolsin|korinsin|chiqsin|kattalashtir|olib bor|otkaz)/.test(p);
+        const m=[]; if(!hasEl||!hasSt) m.push(`Nima o'zgarishini yozing: ${s.d}.`); if(!verb) m.push("SI'dan so'rang: masalan, \"qil\" yoki \"tuzat\".");
+        return res(!m.length, m.length?m:"SI endi nima qilishni biladi.", !hasEl||!hasSt?"Men sahifangizni ko'rmayapman. Nimani o'zgartiray?":`Tushundim: ${s.d}. Qilaman.`);
       }};
   };
 
