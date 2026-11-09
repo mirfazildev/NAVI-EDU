@@ -175,11 +175,11 @@ function viewPath(){
   return `<main class="path">
     <section class="card prog"><div><span class="kicker">1-modul · Sun'iy intellekt asoslari</span>
       <div class="bigline"><b>${nL}</b> / ${TOPICS.length} mavzu</div><div class="bar1"><i style="width:${nL/TOPICS.length*100}%"></i></div></div>
-      <p class="muted">${left?`Taxminiy tugash: ${Math.ceil(left/pace)} kun (kuniga ~${Math.round(pace)} XP)`:"Modul tugadi!"}</p>
-      <div class="simrow"><button class="ghost" id="nextday">Keyingi kunga o'tish</button><small>${S.day}-kun · sinov uchun</small></div></section>
+      ${left?"":`<p class="muted">Modul tugadi!</p>`}
+      <div class="simrow"><button class="ghost" id="nextday">Keyingi kunga o'tish</button></div></section>
     ${S.notes.length?`<div class="notes">${S.notes.slice(0,2).map(n=>`<p>${n}</p>`).join("")}</div>`:""}
     ${items}
-    <p class="muted center">Ma'lumot saqlanmaydi: sahifa yangilansa, hammasi boshidan boshlanadi.</p></main>`;
+</main>`;
 }
 function depth(id,m={}){ if(m[id]!=null) return m[id]; const t=BYID[id]; return m[id]=t.pre.length?1+Math.max(...t.pre.map(p=>depth(p,m))):0; }
 function viewGraph(){
