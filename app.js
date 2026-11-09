@@ -319,8 +319,9 @@ function practiceItem(kick){
   };
   const chatHtml = task.chat ? task.chat.map(([w,t])=>`<div class="msg ${w==="me"?"me":"ai"}">${w==="ai"?'<span class="who">SI</span>':''}${esc(t)}</div>`).join("") : "";
   const planHtml = task.plan ? `<div class="msg ai"><span class="who">SI · reja</span>${task.plan.map((x,i)=>`${i+1}. ${esc(x)}`).join("<br>")}</div>` : "";
-  const sent = String(task.text).split(/(?<=[.:?!])\s+(?=[A-ZА-Я«"'0-9SI])/).filter(Boolean);
-  const head = `<div class="pt-head"><span class="pt-badge">Amaliyot</span>${sent.length===1?`<p class="pt-q">${esc(sent[0])}</p>`:`<ul class="pt-list">${sent.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
+  const sent = String(task.text).split(/(?<=[.?!])\s+(?=[A-ZА-Я«"'0-9SI])/).filter(Boolean);
+  const head = `<div class="pt-head"><span class="pt-badge">Amaliyot</span>${(()=>{ const q = sent.length===1 || /\?$/.test(sent[sent.length-1]) ? sent.pop() : null;   // savol — katta, faktlar — ro'yxat
+    return (sent.length?`<ul class="pt-list">${sent.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`:"")+(q?`<p class="pt-q">${esc(q)}</p>`:""); })()}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
   const writeBox = (ph, rows=3) => `<label class="sr" for="pin">Javob</label><textarea id="pin" rows="${rows}" placeholder="${ph}" autocomplete="off" spellcheck="false"></textarea>`;
 
   if(type==="prompt" || type==="write" || (type==="site" && task.mode==="prompt")){
@@ -355,23 +356,24 @@ function practiceItem(kick){
   }
   if(type==="mark"){
     const sel=new Set(); let ch=-1;
-    slot.replaceChildren(el(`<section class="card">${head}${task.lead?`<div class="msg me">${esc(task.lead)}</div>`:""}
-      <div class="marks ${task.lines?'lines':''}">${task.chunks.map((c,i)=>`<button class="mk" data-i="${i}">${esc(c.t)}</button>`).join(task.lines?"":"")}</div>
-      ${task.choices?`<div class="q">Xato turi</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`:""}</section>
+    slot.replaceChildren(el(`<section class="card">${task.static?`<div class="pt-head"><span class="pt-badge">Amaliyot</span></div>`:head}${task.lead?`<div class="msg me">${esc(task.lead)}</div>`:""}
+      ${task.static?`<div class="sires"><span class="el">SI qildi</span>${task.chunks.map(c=>`<div>${esc(c.t)}</div>`).join("")}${task.note?`<p class="muted">${esc(task.note)}</p>`:""}</div>`
+        :`<div class="marks ${task.lines?'lines':''}">${task.chunks.map((c,i)=>`<button class="mk" data-i="${i}">${esc(c.t)}</button>`).join("")}</div>`}
+      ${task.static?`<p class="pt-q">${esc(task.text)}</p>`:""}${task.choices?`<div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`:""}</section>
       <div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));
-    const chk=document.getElementById("check"), ready=()=>{chk.disabled=!(sel.size && (!task.choices||ch>=0));};
+    const chk=document.getElementById("check"), ready=()=>{chk.disabled=!((sel.size||task.static) && (!task.choices||ch>=0));};
     slot.querySelectorAll(".mk").forEach(b=>b.onclick=()=>{const i=+b.dataset.i; sel.has(i)?sel.delete(i):sel.add(i); b.classList.toggle("on"); ready();});
     slot.querySelectorAll(".ch").forEach(b=>b.onclick=()=>{slot.querySelectorAll(".ch").forEach(x=>x.classList.remove("sel")); b.classList.add("sel"); ch=+b.dataset.c; ready();});
     chk.onclick=()=>{ slot.querySelectorAll(".mk,.ch").forEach(b=>b.disabled=true);
-      task.chunks.forEach((c,i)=>{const b=slot.querySelector(`.mk[data-i="${i}"]`); if(c.need) b.classList.add("need"); else if(sel.has(i)) b.classList.add("wrongmk");});
+      if(!task.static) task.chunks.forEach((c,i)=>{const b=slot.querySelector(`.mk[data-i="${i}"]`); if(c.need) b.classList.add("need"); else if(sel.has(i)) b.classList.add("wrongmk");});
       chk.disabled=true; finish(task.check(sel, ch)); };
     return;
   }
   if(type==="site"){
     let touched=false;
     const mid = task.mode==="checklist"
-      ? `<div class="q">Bajarilgan bandlarni belgilang</div><div class="opts">${task.items.map((t,i)=>`<button class="opt cl" data-i="${i}"><span class="k">✓</span><span>${esc(t)}</span></button>`).join("")}</div>`
-      : `<div class="q">Xato belgisi qaysi?</div><div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`;
+      ? `<div class="opts">${task.items.map((t,i)=>`<button class="opt cl" data-i="${i}"><span class="k">✓</span><span>${esc(t)}</span></button>`).join("")}</div>`
+      : `<div class="opts">${task.choices.map((c,i)=>`<button class="opt ch" data-c="${i}"><span class="k">${L4[i]}</span><span>${c}</span></button>`).join("")}</div>`;
     slot.replaceChildren(el(`<section class="card">${head}${task.page}${mid}</section><div id="fbslot"></div><button class="main" id="check" ${task.mode==="checklist"?"":"disabled"}>Tekshirish</button>`));
     const chk=document.getElementById("check"), mock=slot.querySelector(".mock"), out=slot.querySelector("#mout");
     mock.addEventListener("click",()=>{touched=true;});
@@ -390,7 +392,7 @@ function practiceItem(kick){
   if(type==="agent"){
     let viewed=false;
     slot.replaceChildren(el(`<section class="card">${head}
-      <div class="diff">${task.diff.map(([s,t])=>`<div class="dl ${s==="+"?"add":"del"}"><b>${s}</b> ${esc(t)}</div>`).join("")}</div>
+      <div class="sires"><span class="el">Agent o'zgartirdi</span>${task.diff.map(t=>`<div>${esc(t)}</div>`).join("")}</div>
       <button class="ghost" id="pv">Natijani ko'rish</button><div id="pvslot"></div>
       <div class="agbtns"><button class="opt" id="acc"><span>Qabul qilish</span></button><button class="opt" id="rej"><span>Rad qilish</span></button></div>
       <div id="whyslot"></div></section><div id="fbslot"></div><button class="main" id="check" disabled>Tekshirish</button>`));

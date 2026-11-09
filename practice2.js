@@ -35,7 +35,7 @@ const PR2 = (() => {
       {t:`${name} kafesi`, need:true},{t:` ${st} ko'chasi, ${n}-uyda`, need:true},{t:" joylashgan."},
       {t:" U har kuni"},{t:` soat ${h}:00 da`, need:true},{t:" ochiladi."},
       {t:" Palov narxi"},{t:` ${price} so'm.`, need:true},{t:" Bu yerda"},{t:" taomlar juda mazali"},{t:" va xizmat yaxshi."}];
-    return {type:"mark", text:"SI javobida tekshirish kerak bo'lgan barcha nom, raqam va manzilni bosib belgilang.",
+    return {type:"mark", text:"Bosib belgilang: qaysi nom, raqam va manzilni tekshirish kerak?",
       chunks, check(sel){
         const need=chunks.map((c,i)=>c.need?i:-1).filter(i=>i>=0), miss=need.filter(i=>!sel.has(i)), extra=[...sel].filter(i=>!chunks[i].need);
         const m=[]; if(miss.length) m.push(`Belgilanmagan: ${miss.map(i=>chunks[i].t.trim().replace(/[.,]$/,"")).join(", ")}.`);
@@ -64,18 +64,16 @@ const PR2 = (() => {
 
   /* 4. Xatoni belgilash va turini aniqlash */
   const T4 = () => {
+    // Sodda ko'rinish: siz nima so'radingiz → SI nima qildi → xato turi (qator belgilash yo'q)
     const V = [
-      {prompt:"Kafe manzilini yoz.", lines:["Kafe manzili:","Navoiy ko'chasi, 125-uy","(Siz manzilni bermagansiz)"], bad:[1], type:0},
-      {prompt:"Faqat sarlavhani «Lola kafe» qilib o'zgartir.", lines:["Sarlavha: «Lola kafe»","Tugma rangi: ko'k → qizil","Menyu: olib tashlandi"], bad:[1,2], type:2},
-      {prompt:"Tugma matnini «Buyurtma» qil.", lines:["Sarlavha: «Buyurtma»","Tugma matni o'zgarmadi"], bad:[0], type:1},
-      {prompt:"Saytga ish vaqtini yoz.", lines:["Ish vaqti:","Har kuni 08:00 – 23:00","(Siz ish vaqtini bermagansiz)"], bad:[1], type:0}];
-    const v = pick(V), T=["O'ylab topdi","Noto'g'ri tushundi","Ortiqcha o'zgartirdi"];
-    return {type:"mark", lines:true, text:"SI xato qildi. Xato qatorni belgilang va xato turini tanlang.", lead:`Prompt: ${v.prompt}`,
-      chunks:v.lines.map((t,i)=>({t, need:v.bad.includes(i)})), choices:T, check(sel, ch){
-        const okSel = v.bad.every(i=>sel.has(i)) && [...sel].every(i=>v.bad.includes(i));
-        const m=[]; if(!okSel) m.push(`Xato qator: ${v.bad.map(i=>"«"+v.lines[i]+"»").join(", ")}.`);
-        if(ch!==v.type) m.push(`Xato turi: ${T[v.type].toLowerCase()}.`);
-        return res(!m.length, m.length?m:`To'g'ri: ${T[v.type].toLowerCase()}.`);
+      {prompt:"Kafe manzilini yoz.", lines:["Manzil: Navoiy ko'chasi, 125-uy"], note:"Siz SI'ga manzilni aytmagan edingiz.", type:0},
+      {prompt:"Faqat sarlavhani «Lola kafe» qil.", lines:["Sarlavhani «Lola kafe» qildi","Tugma rangini ham o'zgartirdi","Menyuni o'chirib tashladi"], type:2},
+      {prompt:"Tugma yozuvini «Buyurtma» qil.", lines:["Sarlavhani «Buyurtma» qildi","Tugma yozuvi o'zgarmadi"], type:1},
+      {prompt:"Saytga ish vaqtini yoz.", lines:["Ish vaqti: har kuni 08:00 – 23:00"], note:"Siz SI'ga ish vaqtini aytmagan edingiz.", type:0}];
+    const v = pick(V), T=["O'ylab topdi","Noto'g'ri tushundi","Ortiqcha o'zgartirdi"], H=["o'zidan to'qib yozdi","boshqa narsani qildi","so'ralmaganini ham o'zgartirdi"];
+    return {type:"mark", static:true, text:"SI qanday xato qildi?", lead:`Siz: ${v.prompt}`, note:v.note,
+      chunks:v.lines.map(t=>({t})), choices:T.map((t,i)=>`${t} <small class="hint">— ${H[i]}</small>`), check(sel, ch){
+        return res(ch===v.type, ch===v.type?`To'g'ri: ${T[v.type].toLowerCase()}.`:`Bu — ${T[v.type].toLowerCase()}: SI ${H[v.type]}.`);
       }};
   };
 
@@ -84,7 +82,7 @@ const PR2 = (() => {
     const obj = pick([{l:"tugma",rx:/tugma/},{l:"sarlavha",rx:/sarlav/},{l:"aloqa bo'limi",rx:/aloqa/}]);
     const VAGUE = /(chiroyli|zor|ajoyib|yaxshi|qulay|zamonaviy|qiziq|gozal|yoqimli|normal)/;
     const CHECK = /(\d|kok|qizil|yashil|sariq|qora|oq|kulrang|tepa|past|ong|chap|orta|markaz|«|soz|harf|katta|kichik|qalin|bosilganda|ochiladi|chiqadi|yozuvi|matni)/;
-    return {ai:{rubric:[{q:`Ro'yxat ${obj.l} haqidami?`,miss:`Qaysi narsa haqida ekani yo'q: ${obj.l}.`},{q:"Kamida 2 ta alohida band bormi?",miss:"Kamida 2 ta band yozing, har qatorda bittadan."},{q:"Har bir bandni ko'rib tekshirsa bo'ladimi (rang, son, joy yoki aniq matn; 'chiroyli' kabi noaniq so'z yo'q)?",miss:"Har bandni ko'rib tekshirsa bo'ladigan qilib yozing: rang, son, joy yoki matn."}]},type:"write", text:`Kafe saytiga ${obj.l} kerak. SI'dan so'rashdan oldin kutilgan natijani yozing: kamida 2 ta band, har qatorda bittadan.`,
+    return {ai:{rubric:[{q:`Ro'yxat ${obj.l} haqidami?`,miss:`Qaysi narsa haqida ekani yo'q: ${obj.l}.`},{q:"Kamida 2 ta alohida band bormi?",miss:"Kamida 2 ta band yozing, har qatorda bittadan."},{q:"Har bir bandni ko'rib tekshirsa bo'ladimi (rang, son, joy yoki aniq matn; 'chiroyli' kabi noaniq so'z yo'q)?",miss:"Har bandni ko'rib tekshirsa bo'ladigan qilib yozing: rang, son, joy yoki matn."}]},type:"write", text:`Kafe saytiga ${obj.l} kerak. Har qatorga bittadan 2 ta narsa yozing. U qanday bo'lishi kerak?`,
       placeholder:"Masalan:\nTugma ko'k rangda\nTugmada «Buyurtma» yozuvi bor", check(raw){
         const lines=raw.split(/\n|;/).map(x=>x.trim()).filter(x=>x.length>2);
         const m=[];
@@ -106,7 +104,7 @@ const PR2 = (() => {
       {t:"Sahifada rasm bor", ok:Math.random()<.5}];
     if(items.every(x=>x.ok)) items[Math.floor(Math.random()*4)].ok=false;
     const pg = page({btnColor: items[0].ok?c.c:other.c, btn: items[1].ok?"Buyurtma berish":"Yuborish", title: items[2].ok?"Kafe «Lola»":"Kafe", img: items[3].ok});
-    return {type:"site", mode:"checklist", page:pg, items:items.map(x=>x.t), text:"Kutilgan natijadagi har bir bandni sahifa bilan solishtiring. Bajarilgan bandlarni belgilang.",
+    return {type:"site", mode:"checklist", page:pg, items:items.map(x=>x.t), text:"Sahifaga qarang. Qaysi biri bajarilgan?",
       check(sel){ const m=[]; items.forEach((x,i)=>{ if(x.ok!==sel.has(i)) m.push(`«${x.t}» — ${x.ok?"bajarilgan":"bajarilmagan"}.`); });
         const done=items.every(x=>x.ok); return res(!m.length, m.length?m:(done?"Hammasi bajarilgan.":"To'g'ri. Bitta band ham bajarilmasa, ish hali tugamagan."));}};
   };
@@ -115,7 +113,7 @@ const PR2 = (() => {
   const T12 = () => {
     const want = pick(COLORS.slice(0,3)), now_ = pick(COLORS.filter(x=>x!==want && x.w!=="qora"));
     const pos = pick(["tepa","past"]);
-    return {ai:{rubric:[{q:"Qaysi joydagi tugma ekani aytilganmi?",miss:"Qayerda — yo'q: qaysi tugma."},{q:`Tugma hozir ${now_.w} ekani aytilganmi?`,miss:`Hozir qanday — yo'q: ${now_.w}.`},{q:`Tugma ${want.w} bo'lishi kerakligi aytilganmi?`,miss:`Qanday bo'lishi kerak — yo'q: ${want.w}.`}]},type:"site", mode:"prompt", page:page({btnColor:now_.c, btnPos:pos}), text:`Kutilgan natija: tugma ${want.w} rangda. Sahifadagi farqni SI'ga yozing: qayerda, hozir qanday, qanday bo'lishi kerak.`,
+    return {ai:{rubric:[{q:"Qaysi joydagi tugma ekani aytilganmi?",miss:"Qayerda — yo'q: qaysi tugma."},{q:`Tugma hozir ${now_.w} ekani aytilganmi?`,miss:`Hozir qanday — yo'q: ${now_.w}.`},{q:`Tugma ${want.w} bo'lishi kerakligi aytilganmi?`,miss:`Qanday bo'lishi kerak — yo'q: ${want.w}.`}]},type:"site", mode:"prompt", page:page({btnColor:now_.c, btnPos:pos}), text:`Tugma ${want.w} rangda bo'lishi kerak edi. Lekin sahifada boshqacha. SI'ga nima deb yozasiz?`,
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Qaysi farq? Aniqroq yozing.");
         const p=norm(raw), where=/tugma/.test(p) && /(tepa|yuqori|past|quyi|sahifa)/.test(p), now=p.includes(norm(now_.w)), should=p.includes(norm(want.w));
@@ -127,9 +125,10 @@ const PR2 = (() => {
   /* 13. Xato belgisini aniqlash (sinab ko'rib) */
   const T13 = () => {
     const K = ["Ko'rinmayapti","Noto'g'ri ko'rinyapti","Ishlamayapti","Xato xabari chiqdi"];
+    const KH = ["ekranda yo'q","bor, lekin boshqacha","bosilsa hech narsa bo'lmaydi","xato yozuvi chiqdi"];
     const k = Math.floor(Math.random()*4);
     const p = k===0 ? page({showBtn:false}) : k===1 ? page({btn:"Buyurt ma ber ish", btnColor:"#d6453d"}) : page({});
-    return {type:"site", mode:"choice", page:p, behave:k, choices:K, text:"Kutilgan natija: sahifada ko'k «Buyurtma berish» tugmasi bor, bosilganda «Buyurtma qabul qilindi» yozuvi chiqadi. Sahifani sinab ko'ring va xato belgisini tanlang.",
+    return {type:"site", mode:"choice", page:p, behave:k, choices:K.map((t,i)=>`${t} <small class="hint">— ${KH[i]}</small>`), text:"Sahifada ko'k «Buyurtma berish» tugmasi bo'lishi kerak. Bosilsa, «Buyurtma qabul qilindi» chiqishi kerak. Sinab ko'ring: qanday xato bor?",
       check(ch, touched){ if(!touched) return res(false,"Avval sahifani sinab ko'ring: tugmani bosing yoki uni qidiring.");
         return res(ch===k, ch===k?`To'g'ri: ${K[k].toLowerCase()}.`:`Bu — ${K[k].toLowerCase()}.`); }};
   };
@@ -140,7 +139,7 @@ const PR2 = (() => {
                     {p1:"Rasm chiqmayapti, tuzat.", key:/rasm/, d:"bosh sahifadagi kafe rasmi o'rnida bo'sh joy turibdi"},
                     {p1:"Tugma ishlamayapti, tuzat.", key:/tugma/, d:"«Yuborish» tugmasi bosilganda xabar chiqishi kerak, lekin chiqmayapti"}]);
     return {ai:{rubric:[{q:`Muammo «${V.p1}» promptidan boshqacha so'zlar bilan yozilganmi?`,miss:"Oldingi promptni takrorlamang, boshqacha yozing."},{q:"Nima bo'lishi kerakligi va nima bo'layotgani batafsil yozilganmi?",miss:"Batafsil yozing: nima bo'lishi kerak va nima bo'lyapti."}], guard:raw=>{const A=new Set(words(V.p1)),B=words(raw); return B.filter(x=>A.has(x)).length/Math.max(1,B.length)>0.6?"Bu deyarli oldingi prompt. Boshqacha so'zlar bilan yozing.":null;}},type:"prompt", chat:[["me",V.p1],["ai","Tuzatdim!"],["me",V.p1],["ai","Tuzatdim, endi ishlaydi!"],["me",V.p1],["ai","Tuzatdim!"]],
-      text:`SI 3 marta "tuzatdim" dedi, lekin muammo qolyapti: ${V.d}. Muammoni boshqacha so'zlar bilan, batafsilroq tushuntiring.`,
+      text:`SI 3 marta «tuzatdim» dedi. Lekin muammo qoldi: ${V.d}. Endi boshqacha so'zlar bilan yozing.`,
       check(raw){
         const b=basic(raw,{min:6}); if(b) return res(false,b,"Yana o'sha... Batafsilroq yozing.");
         const p=norm(raw), A=new Set(words(V.p1)), B=words(raw), same=B.filter(x=>A.has(x)).length/Math.max(1,B.length);
@@ -153,11 +152,11 @@ const PR2 = (() => {
 
   /* 17 va 19. Agent o'zgarishi */
   function agentTask(withBroken){
-    const c = pick(COLORS.slice(0,3));
+    const c = pick(COLORS.slice(1,3));   // ko'kdan boshqa rang (oldin ham ko'k edi)
     const broken = withBroken && Math.random()<0.6;
     const brk = pick([{l:"rasm yo'qolib qolgan", p:{img:false, btnColor:c.c}, rx:/rasm/},{l:"tugma yo'qolib qolgan", p:{showBtn:false}, rx:/tugma/},{l:"sarlavha o'chib ketgan", p:{title:"", btnColor:c.c}, rx:/sarlav/}]);
-    return {type:"agent", text:`Siz agentga: "Tugmani ${c.w} qil" dedingiz. Agent o'zgarishni tayyorladi.`,
-      diff:[["-","tugma rangi: ko'k"],["+",`tugma rangi: ${c.w}`]].concat(broken?[["-",brk.l.split(" ")[0]+" bloki"]]:[]),
+    return {type:"agent", text:`Siz agentga: «Tugmani ${c.w} qil» dedingiz. Natijani ko'ring. Qabul qilasizmi?`,
+      diff:[`Tugma rangi: ko'k → ${c.w}`].concat(broken?[brk.l[0].toUpperCase()+brk.l.split(" ")[0].slice(1)+" o'chirildi"]:[]),
       preview: broken?page(brk.p):page({btnColor:c.c}), broken, needWhy:withBroken,
       check({viewed, accept, why}){
         if(!viewed) return res(false, "Avval natijani ochib ko'ring, keyin qaror qiling.");
@@ -176,7 +175,7 @@ const PR2 = (() => {
     const missing = pick([{l:"telefon raqamini qo'shish", rx:/telefon|raqam/},{l:"manzilni qo'shish", rx:/manzil/},{l:"xaritani qo'shish", rx:/xarita/}]);
     const steps = ["Aloqa bo'limi sarlavhasini yozish","Ish vaqtini qo'shish", extra, "Bo'limni sahifa pastiga joylash"].sort(()=>Math.random()-.5);
     const exI = steps.indexOf(extra)+1, exW = norm(extra).split(" ")[0];
-    return {ai:{rubric:[{q:`${exI}-qadam (${extra}) olib tashlanishi so'ralganmi?`,miss:`Keraksiz qadam olib tashlanmadi: ${exI}. ${extra}.`},{q:`${missing.l} qo'shilishi so'ralganmi?`,miss:`Yetishmagan qadam qo'shilmadi: ${missing.l}.`}]},type:"prompt", plan:steps, text:`Vazifa: kafe saytiga aloqa bo'limi. Unda ${missing.l.replace(" qo'shish","")} bo'lishi shart. SI reja tuzdi. Keraksiz qadamni olib tashlatib, yetishmaganini qo'shtiring.`,
+    return {ai:{rubric:[{q:`${exI}-qadam (${extra}) olib tashlanishi so'ralganmi?`,miss:`Keraksiz qadam olib tashlanmadi: ${exI}. ${extra}.`},{q:`${missing.l} qo'shilishi so'ralganmi?`,miss:`Yetishmagan qadam qo'shilmadi: ${missing.l}.`}]},type:"prompt", plan:steps, text:`Kafe saytiga aloqa bo'limi kerak. Unda ${missing.l.replace(/(ni)? qo'shish$/,"")} bo'lishi shart. SI rejasida bitta keraksiz qadam bor va bittasi yetishmaydi. SI'ga nima deb yozasiz?`,
       check(raw){
         const b=basic(raw); if(b) return res(false,b,"Rejada nimani o'zgartiray?");
         const p=norm(raw);
@@ -193,7 +192,7 @@ const PR2 = (() => {
       {ai:"Xato ko'p. Keling, loyihadagi hamma fayllarni o'chirib, boshidan boshlaymiz. Roziman deng.", need:"rad", hint:"Hamma fayllarni o'chirish xavfli — to'xtab, rad qiling."},
       {ai:"Bot ishlashi uchun tokenni sahifaga yozib qo'yaman: 7123456:ABC-fake. Mayli?", need:"rad", hint:"Kalit yoki token sahifaga yozilmaydi — rad qiling."},
       {ai:"Terminalda shuni ishga tushiring: rm -rf ./* && npm i x-fix", need:"so'ra", hint:"Tushunmagan buyruqni bajarmang — avval u nima qilishini so'rang."}]);
-    return {ai:{rubric:[{q:V.need==="rad"?"O'quvchi bu taklifga rozi bo'lmay, uni rad etganmi?":"O'quvchi buyruqni bajarmasdan, u nima qilishini so'raganmi yoki rad etganmi?",miss:V.hint}], guard:raw=>{const p=norm(raw); return (/(^|\s)(ha|mayli|roziman|bajar)(\s|$|,|\.)/.test(p) && !NEG.test(p))?V.hint:null;}},type:"prompt", chat:[["ai",V.ai]], text:"SI shunday taklif qildi. Unga javob yozing.",
+    return {ai:{rubric:[{q:V.need==="rad"?"O'quvchi bu taklifga rozi bo'lmay, uni rad etganmi?":"O'quvchi buyruqni bajarmasdan, u nima qilishini so'raganmi yoki rad etganmi?",miss:V.hint}], guard:raw=>{const p=norm(raw); return (/(^|\s)(ha|mayli|roziman|bajar)(\s|$|,|\.)/.test(p) && !NEG.test(p))?V.hint:null;}},type:"prompt", chat:[["ai",V.ai]], text:"SI shunday dedi. Siz nima deb javob berasiz?",
       check(raw){
         const b=basic(raw,{min:2}); if(b) return res(false,b,"Xo'sh, nima deysiz?");
         const p=norm(raw);

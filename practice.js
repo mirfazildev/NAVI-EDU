@@ -50,9 +50,9 @@ const PR = (() => {
     const LONG = {uz:": har kuni sizni kutamiz, do'stlaringiz bilan keling!",ru:": ждём вас каждый день, приходите с друзьями!",en:": we wait for you every day, come with friends!"};
     const NUMW = {7:["7","yetti"],8:["8","sakkiz"]};
     const k = {type:pick(Object.keys(TYPES)), name:pick(["Lola","Bahor","Sevara","Zafar","Anvar","Nilufar"]), lang:pick(Object.keys(LANG)), limit:pick([7,8])};
-    const text = `«${k.name}» ${TYPES[k.type].l} ochildi. Saytiga sarlavha kerak: ${LANG[k.lang]}, ${k.limit} so'zdan oshmasin.`;
+    const text = `«${k.name}» ${TYPES[k.type].l} saytiga sarlavha kerak. Tili: ${LANG[k.lang]}. Uzunligi: ${k.limit} so'zgacha. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:"Promptda sarlavha (bosh yozuv) so'ralganmi?",miss:"Nima kerakligi yo'q: sarlavha."},{q:`«${k.name}» nomi bormi?`,miss:`Nomi yo'q: «${k.name}».`},{q:`Til ${LANG[k.lang]} ekani aytilganmi (boshqa til emas)?`,miss:`Til yo'q yoki noto'g'ri: ${LANG[k.lang]}.`},{q:`Uzunlik ${k.limit} so'zdan oshmasligi aytilganmi?`,miss:`Uzunlik yo'q: ${k.limit} so'zdan oshmasin.`}]}, check(raw){
-      const r = common(raw, text, {marker:/ochildi|kerak:/}), g = gate(r); if (g) return {ok:false, ...g};
+      const r = common(raw, text, {marker:/tili:|uzunligi:/}), g = gate(r); if (g) return {ok:false, ...g};
       const p = r.p, langs = Object.keys(RXL).filter(l=>RXL[l].test(p));
       const has = { obj:/sarlav/.test(p), name:p.includes(k.name.toLowerCase()),
         lang: langs.length===1 && langs[0]===k.lang,
@@ -78,7 +78,7 @@ const PR = (() => {
     const TY = [{l:"kafe",rx:/kafe|oshxona|restoran/,w:"mazali taomlar"},{l:"gul do'koni",rx:/gul/,w:"chiroyli gullar"},{l:"sport zali",rx:/sport|zal\b|fitnes/,w:"kuchli mashg'ulotlar"},{l:"kitob do'koni",rx:/kitob/,w:"qiziqarli kitoblar"}];
     const AU = [{l:"talabalar",rx:/talaba|student/,s:"Darsdan keyin dam olishga keling!"},{l:"12–15 yoshli bolalar",rx:/bola|osmir|yoshli|maktab/,s:"Qiziqarli narsalar seni kutmoqda!"},{l:"keksa odamlar",rx:/keksa|qariya|katta yosh|nafaqa/,s:"Sizni hurmat bilan kutamiz."},{l:"ota-onalar",rx:/ota-ona|ota ona|onalar|otalar/,s:"Farzandingiz bilan keling!"}];
     const ty = pick(TY), au = pick(AU), name = pick(["Orzu","Bahor","Lola","Yulduz"]);
-    const text = `«${name}» — bu ${ty.l}. Uning saytiga qisqa xush kelibsiz matni kerak. Saytga asosan ${au.l} kiradi.`;
+    const text = `«${name}» — bu ${ty.l}. Saytga ${au.l} kiradi. Saytga qisqa xush kelibsiz matni kerak. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:"Xush kelibsiz (salomlashish) matni so'ralganmi?",miss:"Nima kerakligi yo'q: xush kelibsiz matni."},{q:`Loyiha ${ty.l} ekani aytilganmi?`,miss:`Loyiha nima haqida ekani yo'q: ${ty.l}.`},{q:`Saytga ${au.l} kirishi aytilganmi?`,miss:`Kim uchun ekani yo'q: ${au.l}.`}]}, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p, obj=/xush kelib|salomla|kutib ol|matn/.test(p), hT=ty.rx.test(p), hA=au.rx.test(p);
@@ -97,7 +97,7 @@ const PR = (() => {
     const PART = [{l:"sarlavha",acc:"sarlavhani",rx:/sarlav/,v:"Yangi sarlavha"},{l:"tugma matni",acc:"tugma matnini",rx:/tugma/,v:"Yangi tugma matni"},{l:"pastki yozuv",acc:"pastki yozuvni",rx:/pastki/,v:"Yangi pastki yozuv"}];
     const NO = [{l:"narx",rx:/narx/,add:"narxi 25 000 so'm"},{l:"rasm",rx:/rasm/,add:"yoniga rasm qo'shdim"},{l:"telefon raqami",rx:/telefon|raqam/,add:"tel: +998 90 000 00 00"}];
     const pt = pick(PART), no = pick(NO);
-    const text = `Saytdagi ${pt.l} yangilanishi kerak. Saytning qolgan qismi o'zgarmasin. Yangi yozuvda ${no.l} bo'lmasin.`;
+    const text = `Saytdagi ${pt.acc} yangilash kerak. Boshqa joyiga tegilmasin. Yangi yozuvda ${no.l} bo'lmasin. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:`${pt.l} o'zgartirilishi so'ralganmi?`,miss:`Nimani o'zgartirish kerakligi yo'q: ${pt.l}.`},{q:"Saytning qolgan qismiga tegmaslik (faqat shuni o'zgartirish) aytilganmi?",miss:"Qolgan qismga tegmaslik aytilmagan."},{q:`Yangi yozuvda ${no.l} bo'lmasligi aytilganmi?`,miss:`Cheklov yo'q: ${no.l} bo'lmasin.`}]}, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
@@ -122,7 +122,7 @@ const PR = (() => {
     const OBJ = [{l:"tugma",rx:/tugma/},{l:"sarlavha",rx:/sarlav/},{l:"menyu",rx:/menyu/}];
     const AT = [{l:"rangini",rx:/rang/,d:"ko'k rangli"},{l:"shaklini",rx:/shakl|dumaloq|burchak/,d:"dumaloq burchakli"},{l:"o'lchamini",rx:/olcham|kattalig|hajm/,d:"katta o'lchamli"}];
     const o = pick(OBJ), a = pick(AT), site = pick(["Bahor","Orzu","Yulduz","Nur"]);
-    const text = `Sizga yangi ${o.l} kerak. «${site}» saytidagi ${o.l} sizga yoqdi. Undan faqat ${a.l} olish kerak.`;
+    const text = `Sizga yangi ${o.l} kerak. «${site}» saytidagi ${o.l} sizga yoqdi. Undan faqat ${a.l} olish kerak. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:`${o.l} so'ralganmi?`,miss:`Nima kerakligi yo'q: ${o.l}.`},{q:`Misol sifatida «${site}» saytidagi ${o.l} ko'rsatilganmi (yoki "shunga o'xshash" deyilganmi)?`,miss:`Misol ko'rsatilmagan: «${site}» saytidagi ${o.l}.`},{q:`Misoldan faqat ${a.l} olinishi aytilganmi?`,miss:`Misoldan nima olinishi aytilmagan: ${a.l}.`}]}, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
@@ -144,7 +144,7 @@ const PR = (() => {
   const T9 = () => {
     const P = [{l:"sarlavha",rx:/sarlav/},{l:"menyu",rx:/menyu/},{l:"aloqa bo'limi",rx:/aloqa|kontakt/},{l:"rasmlar galereyasi",rx:/galereya|rasmlar/},{l:"narxlar jadvali",rx:/narx|jadval/}];
     const sh = P.slice().sort(()=>Math.random()-.5).slice(0,3);
-    const text = `Kafe saytiga ${sh[0].l}, ${sh[1].l} va ${sh[2].l} kerak. Hammasi birdaniga emas: birinchi qadam — ${sh[0].l}.`;
+    const text = `Kafe saytiga ${sh[0].l}, ${sh[1].l} va ${sh[2].l} kerak. Bugun faqat ${sh[0].l} qilinadi. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:`Hozir faqat ${sh[0].l} qilish so'ralganmi?`,miss:`Birinchi qadam yo'q: ${sh[0].l}.`},{q:`${sh[1].l} va ${sh[2].l} hozir qilinishi so'ralmaganmi (aytilmagan yoki keyinga qoldirilgan)?`,miss:"Bitta promptda faqat bitta qadam so'rang."}]}, check(raw){
       const r = common(raw, text), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p, cut=p.search(/keyin|song|keyinroq|boshqasini/), head=cut>=0?p.slice(0,cut):p;
@@ -168,7 +168,7 @@ const PR = (() => {
       ["SyntaxError: Unexpected token '}'","at index.js:21:1"],
       ["TypeError: button is null","at script.js:4:9"]];
     const e = pick(E);
-    const text = `Saytni ochganingizda shu xato chiqdi. SI'dan uni tuzatishni so'rang.`;
+    const text = `Saytni ochganingizda shu xato chiqdi. SI'ga nima deb yozasiz?`;
     return { text, err:e.join("\n    "), paste:true, check(raw){
       const r = common(raw, text, {noCopy:true, minWords:4, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil|korib chiq)/}), g = gate(r); if (g) return {ok:false, ...g};
       const flat = s => s.replace(/\s+/g," ").trim();
@@ -190,7 +190,7 @@ const PR = (() => {
     const S = [{b:"Menyu",e:"menyu ochilishi",erx:/ochil/},{b:"Buyurtma berish",e:"buyurtma oynasi chiqishi",erx:/chiq|ochil/},{b:"Aloqa",e:"aloqa bo'limiga o'tishi",erx:/ot|ochil|chiq/},{b:"Kirish",e:"kirish oynasi chiqishi",erx:/chiq|ochil/}];
     const A = [{a:"sahifa oq bo'lib qoldi",rx:/oq|bosh|oqarib/},{a:"hech narsa bo'lmadi",rx:/hech narsa|hech nima|ishlamadi|ozgarmadi/},{a:"xato xabari chiqdi",rx:/xato/}];
     const s = pick(S), a = pick(A);
-    const text = `Siz saytdagi «${s.b}» tugmasini bosdingiz. ${s.e[0].toUpperCase()+s.e.slice(1)} kerak edi, lekin ${a.a}.`;
+    const text = `Siz saytdagi «${s.b}» tugmasini bosdingiz. ${s.e[0].toUpperCase()+s.e.slice(1)} kerak edi. Lekin ${a.a}. SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:`O'quvchi «${s.b}» tugmasini bosganini aytganmi?`,miss:`Nima qilganingiz yo'q: «${s.b}» tugmasini bosdim.`},{q:`${s.e} kerak bo'lgani aytilganmi?`,miss:`Nima bo'lishi kerak edi — yo'q: ${s.e}.`},{q:`Aslida nima bo'lgani (${a.a}) aytilganmi?`,miss:`Nima bo'ldi — yo'q: ${a.a}.`}]}, check(raw){
       const r = common(raw, text, {marker:/bosdingiz|saytdagi/, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil)/}), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p, bn=s.b.toLowerCase().split(" ")[0];
@@ -217,9 +217,9 @@ const PR = (() => {
     const pr = pick([{l:"/start buyrug'iga javob bermayapti",rx:/javob|start|jim/},{l:"xabarlarga javob bermayapti",rx:/javob|xabar|jim/},{l:"ishga tushmayapti",rx:/ishga tush|ishlamay|ochilmay/}]);
     const token = `${Math.floor(1e6+Math.random()*9e6)}:ABC-fake-${Math.random().toString(36).slice(2,8)}`;
     const phone = "+998 90 000 00 00";
-    const text = `Botingiz @${bot} ${pr.l}. Sizda shu ma'lumotlar bor: bot tokeni — ${token}, egasining telefoni — ${phone}. SI'dan yordam so'rang.`;
+    const text = `@${bot} botingiz ${pr.l}. Bot tokeni: ${token}. Telefoningiz: ${phone}. Yordam so'rash uchun SI'ga nima deb yozasiz?`;
     return { text, ai:{rubric:[{q:`@${bot} boti tilga olinganmi?`,miss:`Qaysi bot ekani yo'q: @${bot}.`},{q:`Muammo (${pr.l}) aytilganmi?`,miss:`Muammo yo'q: ${pr.l}.`}], guard:raw=>{const p=norm(raw); if(/\d{5,}:[a-z0-9_-]+/.test(p)||p.includes(token.toLowerCase().split(":")[0])) return "Bot tokeni yuborildi! Token SI'ga berilmaydi."; if(/998|000 00 00/.test(p)) return "Telefon raqami yuborildi! Bu shaxsiy ma'lumot."; return null;}}, check(raw){
-      const r = common(raw, text, {marker:/sizda shu|egasining/, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil|tekshir)/}), g = gate(r); if (g) return {ok:false, ...g};
+      const r = common(raw, text, {marker:/botingiz|telefoningiz/, verb:/(tuzat|togirla|nega|sabab|yordam|hal qil|tekshir)/}), g = gate(r); if (g) return {ok:false, ...g};
       const p=r.p;
       const leakT = p.includes(token.toLowerCase().split(":")[0]) || /\d{5,}:[a-z0-9_-]+/.test(p);
       const leakP = /998|000 00 00|\+?\d[\d ]{8,}/.test(p);
