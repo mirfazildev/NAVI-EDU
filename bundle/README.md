@@ -1,4 +1,4 @@
-# NAVI matnli darslar paketi — v1.0.0
+# NAVI matnli darslar paketi — v1.0.1
 
 "Sun'iy intellekt asoslari" moduli matnli ko'rinishda: 21 mavzu, 84 BN, 414 savol va 20 ta amaliyot generatori.
 
@@ -6,6 +6,7 @@
 |---|---|
 | `content.json` | Mavzular, BN'lar va savollar |
 | `practice.mjs` | Amaliyot: vazifa yaratish va tekshirish (ES modul, sof JS; Node va QuickJS'da sinalgan) |
+| `si.template.json` | Gemini tizim prompti, so'rov shabloni va `responseSchema` (o'qish uchun; `practice.mjs` ichida ham bor) |
 | `manifest.json` | Versiya, har fayl uchun `sha256` va sonlar |
 | `tests.mjs` | Sinovlar: `node tests.mjs` → `fails 0` |
 
@@ -30,7 +31,7 @@ Fayl butunligini tekshirish: `sha256sum content.json practice.mjs` natijasi `man
 ## practice.mjs — API
 
 ```js
-import { create, check, press, siRequest, siVerdict, mask, has, VERSION } from "./practice.mjs";
+import { create, check, press, siRequest, siBody, SI_MODEL, siVerdict, mask, has, VERSION } from "./practice.mjs";
 
 const { task, state } = create(topicId, seed);   // seed — butun son. Bir xil seed → bir xil vazifa
 // task  → brauzerga (javob kaliti yo'q)
@@ -63,16 +64,22 @@ let r = check(state, answer);
 if (!r.ok && !r.cheat) {
   const req = siRequest(state, answer);      // { topic, task, rubric:[...], prompt } yoki null
   if (req) {
-    const si = await callGemini(req);          // { reply, checks:[bool], offtopic, injection } yoki null
+    // POST https://generativelanguage.googleapis.com/v1beta/models/${SI_MODEL}:generateContent  (header: x-goog-api-key)
+    const si = await callGemini(siBody(req));  // javob matnidagi JSON: { reply, checks:[bool], offtopic, injection } yoki null
     r = siVerdict(state, answer, r, si);       // yakuniy baho — kodda
   }
 }
 ```
 
 - `req.prompt` allaqachon `mask()`dan o'tgan: token, kalit, parol, e-pochta, karta va telefon yashirilgan.
-- Gemini'ga faqat `req` ketadi. Tizim prompti va `responseSchema` uchun prototipdagi `api/si.js` dan foydalaning.
+- Gemini'ga faqat `siBody(req)` ketadi: tizim prompti, mezonlar va maskalangan javob. Model nomini `SI_MODEL` dan oling yoki serverda o'zgartiring.
 - SI ishlamasa, `si = null` → algoritm natijasi qoladi.
 
 ## Yangilash
 
 Paket NAVI-EDU prototipidan `node build.mjs <navi-app> <chiqish> <versiya>` bilan yig'iladi. Har o'zgarishda versiya oshiriladi va `sha256` yangilanadi.
+
+## O'zgarishlar
+
+- **1.0.1** — `siBody(req)`, `SI_MODEL` va `si.template.json` qo'shildi (Gemini tizim prompti va sxemasi paket ichida). Kontent o'zgarmagan.
+- **1.0.0** — birinchi versiya.

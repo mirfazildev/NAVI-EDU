@@ -48,10 +48,11 @@ const contentStr = JSON.stringify(content, null, 2) + "\n";
 fs.writeFileSync(path.join(OUT, "content.json"), contentStr);
 
 /* ---------- 2. Amaliyot moduli (ES modul, QuickJS va Node'da ishlaydi) ---------- */
+const SI_TEMPLATE = JSON.parse(fs.readFileSync(new URL("./si.template.json", import.meta.url), "utf8"));
 const practiceSrc = `// NAVI amaliyot moduli v${VERSION}. Generatorlar va tekshiruv — sof JS (DOM yo'q, tarmoq yo'q).
 // API: create(topicId, seed) -> {task, state};  check(state, answer) -> {ok, messages, reply, cheat}
 //      siRequest(state, answer) -> {topic, task, rubric, prompt} | null;  siVerdict(state, answer, algo, si) -> {ok, messages, reply}
-//      mask(text) -> text (Gemini'ga yuborishdan oldin);  has(topicId) -> boolean
+//      siBody(req) -> Gemini so'rov tanasi;  mask(text) -> text (Gemini'ga yuborishdan oldin);  has(topicId) -> boolean
 ${rd("practice.js")}
 ${rd("practice2.js")}
 
@@ -104,6 +105,15 @@ export function mask(s){
     .replace(/\\b(?:\\d[ -]?){16}\\b/g, "[KARTA]")
     .replace(/\\+?998[\\s-]?\\(?\\d{2}\\)?[\\s-]?\\d{3}[\\s-]?\\d{2}[\\s-]?\\d{2}/g, "[TELEFON]")
     .replace(/\\b\\d{2}[\\s-]?\\d{3}[\\s-]?\\d{2}[\\s-]?\\d{2}\\b/g, "[TELEFON]");
+}
+
+// Gemini so'rovi tanasi (POST .../models/{model}:generateContent). Tizim prompti va responseSchema shu yerda — Q-609.
+const SI = ${JSON.stringify(SI_TEMPLATE)};
+export const SI_MODEL = SI.model;
+export function siBody(req){
+  const fill = s => s.replace("{{topic}}", req.topic).replace("{{task}}", req.task)
+    .replace("{{rubric}}", req.rubric.map((r, i) => (i + 1) + ". " + r).join("\\n")).replace("{{prompt}}", req.prompt);
+  return { systemInstruction: { parts: [{ text: fill(SI.system) }] }, contents: [{ role: "user", parts: [{ text: fill(SI.user) }] }], generationConfig: SI.generationConfig };
 }
 
 // 13-mavzu ("site" + mode:"choice"): bola sahifadagi #mbtn tugmasini bosganda nima chiqishi. Javob kaliti brauzerga bermaslik uchun serverda.

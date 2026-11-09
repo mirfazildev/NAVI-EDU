@@ -34,3 +34,6 @@ let vErr=false; try{P.check({...c.state,v:"0.9"},"x")}catch(e){vErr=true} ok(vEr
 console.log("topics",ids.length,"fails",F);
 { let F2=0; for(let s=1;s<=40;s++){ const c=P.create(13,s); const pr=P.press(c.state); const right=[0,1,2,3].find(ch=>P.check(c.state,{choice:ch,touched:true}).ok); const exp=["none","ok","none","error"][right]; if(right===0){ if(pr.kind!=="ok"&&pr.kind!=="none") F2++; } else if(pr.kind!==(right===2?"none":right===3?"error":"ok")) F2++; }
   console.log("press fails",F2); }
+{ const c=P.create(5,11); const req=P.siRequest(c.state,"sarlavha kerak menga yordam ber"); const b=P.siBody(req);
+  const okb = b.systemInstruction.parts[0].text.includes(req.topic) && !/\{\{/.test(JSON.stringify(b)) && b.generationConfig.responseSchema.required.length===4;
+  console.log("siBody", okb ? "ok" : "FAIL"); }
