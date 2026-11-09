@@ -3,6 +3,8 @@ const P = { NEED:2, HALT:3, MAXQ:5, REST_MIN:30, GOAL:40, STREAK_MIN:10, QUIZ_EV
   XP_BN:3, XP_PRACTICE:5, XP_REVIEW:4, XP_QUIZ:10, FIRST_IVL:2, FIRE:0.5 };
 const DAY = 864e5;
 const ICON = {
+  back:'<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
+  fwd:'<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
   play:'<svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="#fff"/></svg>',
   bolt:'<svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>',
   check:'<svg width="30" height="30" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -211,8 +213,32 @@ function nextDay(){
 
 /* ---------- sessiya ekrani ---------- */
 const L4=["A","B","C","D"];
-function topBar(segs){return `<div class="top"><button class="x" id="close" aria-label="Yopish">${ICON.x}</button><div class="bar">${segs}</div></div>`}
-function bindClose(onClose){document.getElementById("close").onclick=onClose||(()=>home());}
+function topBar(segs){
+  const nav = S.screen==="lesson" && L;   // orqaga/oldinga faqat darsda
+  const back = nav ? `<button class="x nav" id="navBack" aria-label="Orqaga" ${(L.view==null?L.hist.length:L.view)>0?"":"style=\"visibility:hidden\""}>${ICON.back}</button>` : "";
+  const fwd = nav ? `<button class="x nav" id="navFwd" aria-label="Oldinga" ${L.view!=null?"":"style=\"visibility:hidden\""}>${ICON.fwd}</button>` : "";
+  return `<div class="top">${back}<button class="x" id="close" aria-label="Yopish">${ICON.x}</button><div class="bar">${segs}</div>${fwd}</div>`}
+function bindClose(onClose){document.getElementById("close").onclick=onClose||(()=>home()); bindNav();}
+
+/* Orqaga/oldinga: o'tilgan ekranlar faqat ko'rish uchun ochiladi (javobni o'zgartirib bo'lmaydi).
+   Joriy ekran saqlanib turadi; "oldinga" orqali unga qaytiladi. */
+function snap(){
+  if(!L || !L.ready) return;
+  const c=app.cloneNode(true);
+  c.querySelectorAll("textarea").forEach((t,i)=>{ t.textContent=app.querySelectorAll("textarea")[i]?.value||""; });
+  c.querySelector(".top")?.remove(); c.querySelectorAll("#check,#go,.main").forEach(e=>e.remove());
+  L.hist.push(c.innerHTML);
+}
+function bindNav(){
+  const b=document.getElementById("navBack"), f=document.getElementById("navFwd");
+  if(b) b.onclick=()=>{ if(L.view==null){ L.live=document.createDocumentFragment(); L.live.append(...app.childNodes); L.view=L.hist.length; } L.view--; showHist(); };
+  if(f) f.onclick=()=>{ L.view++; if(L.view>=L.hist.length){ L.view=null; app.replaceChildren(L.live); L.live=null; return; } showHist(); };
+}
+function showHist(){
+  app.replaceChildren(el(`${topBar(lessonBar())}<div class="hist">${L.hist[L.view]}</div>`));
+  app.querySelectorAll(".hist button,.hist textarea,.hist input").forEach(e=>{ e.disabled=true; e.setAttribute("tabindex","-1"); });
+  bindClose();
+}
 function dots(n){return `<div class="streak">${Array.from({length:P.NEED},(_,i)=>`<i class="${i<n?'on':''}"></i>`).join("")}</div>`}
 function mcq(q, kicker, after, opts={}){
   const o=shuffle(q.o.map((t,i)=>({t,ok:i===0}))); let sel=-1;
@@ -236,16 +262,16 @@ function mcq(q, kicker, after, opts={}){
 let L=null;
 function startLesson(id){
   S.screen="lesson"; S.tp[id].tries++; S.revSinceLesson=0;
-  L={id, kp:0, used:BYID[id].bns.map(()=>new Set()), errors:0, streak:0, fails:0, asked:0};
+  L={id, kp:0, used:BYID[id].bns.map(()=>new Set()), errors:0, streak:0, fails:0, asked:0, hist:[], view:null, live:null, ready:false};
   explain();
 }
 function lessonBar(){return BYID[L.id].bns.map((_,i)=>i<L.kp?'<span class="full"><i></i></span>':i===L.kp?`<span class="cur" style="--w:${L.streak/P.NEED*100}%"><i></i></span>`:'<span><i></i></span>').join("")}
 function explain(){
-  const b=BYID[L.id].bns[L.kp]; L.streak=0; L.fails=0; L.asked=0;
+  snap(); const b=BYID[L.id].bns[L.kp]; L.streak=0; L.fails=0; L.asked=0;
   app.replaceChildren(el(`${topBar(lessonBar())}<section class="card"><span class="kicker">Bilim nuqtasi ${L.kp+1} / ${BYID[L.id].bns.length}</span>
     <p class="lead">${b.t}</p>${b.ex?`<div class="ex"><b>Namuna</b><div class="pr">${b.ex}</div></div>`:''}</section>
     <button class="main" id="go">${b.practice?"Boshlash":"Savollarga o'tish"}</button>`));
-  bindClose(); document.getElementById("go").onclick=lessonItem;
+  bindClose(); L.ready=true; document.getElementById("go").onclick=lessonItem;
 }
 function lessonShell(){ app.replaceChildren(el(`${topBar(lessonBar())}<div id="qslot" class="qslot"></div>`)); bindClose(); }
 function lessonAfter(ok){
@@ -258,7 +284,7 @@ function lessonNext(){
   lessonItem();
 }
 function lessonItem(){
-  lessonShell();
+  snap(); lessonShell();
   const kick=`Bilim nuqtasi ${L.kp+1} / ${BYID[L.id].bns.length}`;
   if(isPractice(L.id,L.kp)) return practiceItem(kick);
   const pl=pool(L.id,L.kp), free=pl.map((_,i)=>i).filter(i=>!L.used[L.kp].has(i));

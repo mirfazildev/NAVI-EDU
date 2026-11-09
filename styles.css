@@ -53,6 +53,8 @@ button:focus-visible{outline:3px solid var(--blue-hi);outline-offset:3px}
 .top{display:flex;align-items:center;gap:12px}
 .x{border:0;background:none;color:var(--muted);width:36px;height:36px;border-radius:10px;display:grid;place-items:center}
 .x:hover{background:var(--line)}
+.x.nav{color:var(--ink)}
+.hist{pointer-events:none;opacity:.85}
 .bar{flex:1;display:flex;gap:6px}
 .bar span{flex:1;height:10px;border-radius:99px;background:var(--line);overflow:hidden;position:relative}
 .bar span i{position:absolute;inset:0;width:0;background:var(--blue);border-radius:99px;transition:width .3s}
