@@ -304,7 +304,12 @@ async function askSI(task, raw){
   }catch(e){ return null; }
 }
 function practiceItem(kick){
-  const task = PR.has(L.id) ? PR.make(L.id) : PR2.make(L.id);
+  // Xatodan keyin yangi vazifa: oldingi vazifalardan farqli bo'lguncha qayta yaratiladi
+  const gen=()=>PR.has(L.id) ? PR.make(L.id) : PR2.make(L.id), key=t=>String(t.text)+"|"+(t.page||"")+"|"+JSON.stringify(t.chat||"");
+  L.seen=L.seen||new Set(); let task=gen();
+  for(let i=0;i<30 && L.seen.has(key(task));i++) task=gen();
+  if(L.seen.has(key(task))) L.seen.clear();   // hammasi ko'rilgan bo'lsa, qaytadan
+  L.seen.add(key(task));
   const type = task.type || "prompt";
   const slot=document.getElementById("qslot");
   const finish=(r)=>{
