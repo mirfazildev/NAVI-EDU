@@ -1,6 +1,6 @@
 /* NAVI — 1-modul ilovasi. Dvigatel qoidalari: 12-fayl (V, O, T, QZ, X), Q-605, Q-607. Ma'lumot saqlanmaydi. */
 const P = { NEED:2, HALT:3, MAXQ:5, REST_MIN:30, GOAL:40, STREAK_MIN:10, QUIZ_EVERY:100, QUIZ_N:5, QUIZ_MIN:10,
-  XP_BN:3, XP_PRACTICE:5, XP_REVIEW:4, XP_QUIZ:10, FIRST_IVL:2, FIRE:0.5 };
+  XP_LESSON:5, XP_REVIEW:4, XP_QUIZ:10, FIRST_IVL:2, FIRE:0.5 };
 const DAY = 864e5;
 const ICON = {
   back:'<svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>',
@@ -27,7 +27,7 @@ const frontier = id => !learned(id) && BYID[id].pre.every(learned);
 const resting = id => S.tp[id].rest > now();
 const isPractice = (id,k) => !!BYID[id].bns[k].practice;
 const pool = (id,k) => (CONTENT[id] && CONTENT[id].bns[k] && CONTENT[id].bns[k].pool) || [];
-const lessonXP = id => BYID[id].bns.reduce((a,b)=>a+(b.practice?P.XP_PRACTICE:P.XP_BN),0);
+const lessonXP = id => P.XP_LESSON;   // Q-611: bitta dars = 5 XP (hozirgi 1-modul darslari kabi)
 function note(t){ S.notes.unshift(t); S.notes = S.notes.slice(0,5); }
 function addXP(n){ n=Math.round(n); S.xp+=n; S.xpDay[S.day]=(S.xpDay[S.day]||0)+n; S.xpSinceQuiz+=Math.max(0,n); return n; }
 
@@ -411,15 +411,15 @@ function practiceItem(kick){
 }
 function grade(base, errors){ return base*(errors===0?1.2:errors===1?1:0.75); }   // X-2
 function lessonPass(){
-  const id=L.id, t=S.tp[id], xp=addXP(grade(lessonXP(id), L.errors));
+  const id=L.id, t=S.tp[id], xp=addXP(lessonXP(id));
   t.learned=true; t.reps=1; t.ivl=P.FIRST_IVL; t.due=now()+t.ivl*DAY;   // T-3: darsdan o'tish = "Good", ~2 kun
   fire(id, true);
   const unlocked=DEPS[id].filter(d=>frontier(d)).map(d=>BYID[d].name);
-  result(true, `+${xp} XP`, L.errors===0?"Xatosiz! +20% bonus.":"Mavzu o'tildi.", unlocked.length?`Yangi ochildi: ${unlocked.join(", ")}`:"");
+  result(true, `+${xp} XP`, "Mavzu o'tildi.", unlocked.length?`Yangi ochildi: ${unlocked.join(", ")}`:"");
 }
 function lessonFail(){
   const id=L.id, t=S.tp[id], k=L.kp;
-  const xp=addXP(lessonXP(id)*(k>0?0.15:0));
+  const xp=addXP(0);
   t.rest=now()+P.REST_MIN*60*1000; t.kpFails[k]=(t.kpFails[k]||0)+1;
   let extra="";
   if(t.kpFails[k]>=2){ // O-4: ikkinchi marta o'sha joyda — asosiy oldingi mavzu takrori

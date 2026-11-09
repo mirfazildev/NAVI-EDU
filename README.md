@@ -5,7 +5,7 @@ Math Academy usulida qurilgan namunaviy ilova (faqat front-end, ma'lumot saqlanm
 - 21 mavzu, ~75 bilim nuqtasi (BN), 414 ta 4 variantli savol
 - Dars oqimi: ketma-ket 2 to'g'ri → keyingi BN; ketma-ket 3 xato → dars to'xtaydi, 30 daqiqa dam (Q-605, Q-607)
 - 20 ta mavzuda oxirgi BN — algoritmli amaliyot ("soxta SI", soxta sayt, agent o'zgarishi, belgilash; haqiqiy SI yo'q — Q-604, Q-608)
-- XP (X-2 darajalari), kunlik maqsad 40 XP, streak (≥10 XP/kun, haftasiga 1 muzlatish)
+- XP (dars = 5 XP, Q-611; takrorlash 4, quiz 10), kunlik maqsad 40 XP, streak (≥10 XP/kun, haftasiga 1 muzlatish)
 - Vazifani tizim tanlaydi (V-1…V-10), oraliqli takrorlash va FIRe (T-1…T-5), quiz (QZ-1…QZ-8)
 - Bilim grafi ko'rinishi
 - "Sinov uchun: keyingi kunga o'tish" tugmasi vaqtni 1 kunga suradi
