@@ -315,7 +315,7 @@ function practiceItem(kick){
   const chatHtml = task.chat ? task.chat.map(([w,t])=>`<div class="msg ${w==="me"?"me":"ai"}">${w==="ai"?'<span class="who">SI</span>':''}${esc(t)}</div>`).join("") : "";
   const planHtml = task.plan ? `<div class="msg ai"><span class="who">SI · reja</span>${task.plan.map((x,i)=>`${i+1}. ${esc(x)}`).join("<br>")}</div>` : "";
   const sent = String(task.text).split(/(?<=[.:?!])\s+(?=[A-ZА-Я«"'0-9SI])/).filter(Boolean);
-  const head = `<div class="pt-head"><span class="pt-badge">Amaliyot</span><ul class="pt-list">${sent.map(x=>`<li>${esc(x)}</li>`).join("")}</ul></div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
+  const head = `<div class="pt-head"><span class="pt-badge">Amaliyot</span>${sent.length===1?`<p class="pt-q">${esc(sent[0])}</p>`:`<ul class="pt-list">${sent.map(x=>`<li>${esc(x)}</li>`).join("")}</ul>`}</div>${task.err?`<pre class="err">${esc(task.err)}</pre>`:""}`;
   const writeBox = (ph, rows=3) => `<label class="sr" for="pin">Javob</label><textarea id="pin" rows="${rows}" placeholder="${ph}" autocomplete="off" spellcheck="false"></textarea>`;
 
   if(type==="prompt" || type==="write" || (type==="site" && task.mode==="prompt")){
